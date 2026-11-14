@@ -102,7 +102,7 @@ Không có lỗi provider trong các lần chạy chính (OpenAI). Context Evide
 
 ## Thử thách nâng cao (nếu thực hiện)
 
-**Đã thực hiện nhưng CHƯA ĐẠT ngưỡng: test 25/30 = 83.3% (< 27/30). Không nhận bonus.** Chi tiết, code và cách chạy: [advanced/README.md](../../advanced/README.md).
+**Đã thực hiện nhưng CHƯA ĐẠT ngưỡng: test lần 1 25/30 = 83.3%; test2 (bộ test mới) 26/30 = 86.7% (< 27/30). Không nhận bonus.** Chi tiết, code và cách chạy: [advanced/README.md](../../advanced/README.md).
 
 - **Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:** USGS, *Mineral Commodity Summaries 2024* (DOI 10.3133/mcs2024), 216 trang PDF (212 trang in), public domain (tác phẩm chính phủ Mỹ); SHA-256 `a4da4050…a562`; PDF không nộp kèm, tải lại bằng link gốc.
 - **Cách xử lý text, bảng, ảnh, biểu đồ; phạm vi index và phần chưa xử lý:** text layer PyMuPDF cho cả 216 trang; mỗi trang render 150 dpi và được `gpt-4.1-mini` (vision) trích bảng (markdown), biểu đồ (trục, chú giải, giá trị), bản đồ (lớp chú giải theo vùng), sơ đồ (hộp, mũi tên, số) → 264 phần tử, 0 lỗi parse ($0.50). Index 1,270 chunk (987 text + 283 visual), embedding `text-embedding-3-small` → Chroma + BM25 + RRF; tra theo tên Figure/Table nêu trong câu hỏi. Agent có `view_page` để model xem ảnh trang gốc, verifier `gpt-4.1` kiểm từng khẳng định với đoạn được cite. Chưa xử lý: crop vùng ảnh (dẫn chiếu bằng trang + tiêu đề + vị trí); lỗi chép của vision (ví dụ "550" thay cho chú thích ⁵ + 50 ở bảng helium); giá trị biểu đồ không in số chỉ đọc gần đúng.
@@ -119,4 +119,16 @@ Không có lỗi provider trong các lần chạy chính (OpenAI). Context Evide
 | **Toàn bộ** | **25/30** | **83.3%** | 0 lỗi hệ thống; trung vị 5.8 s/câu; $0.21 cho 30 câu |
 
 - **Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:** trace `advanced/results/<split>/<config>/traces.json` + `review_sheet.md`; nhãn test [advanced/labels/test_labels.json](../../advanced/labels/test_labels.json). Tổng chi phí phần nâng cao ≈ $5.4.
-- **Giới hạn, cách tái lập và đường dẫn benchmark:** [advanced/benchmark.json](../../advanced/benchmark.json). Sau test lần 1, tôi chỉ sửa trên dev (verifier `gpt-4.1`, câu từ chối chuẩn hoá, guard citation, agent `gpt-4.1`; V12 ≈ 21/22 dev) và viết **test2** mới 30 câu (chốt trước khi chạy) đúng quy tắc "đã dùng test để chỉnh thì tạo test mới". test2 **chưa chạy được** vì hết credit OpenAI (lần chạy dừng trước khi có câu trả lời, ghi ở `advanced/run_log.md`); vì vậy điểm báo cáo vẫn là test lần 1. Kết quả dao động giữa các lần chạy (V11 dev: 21/22 và 20/22), nên dù test2 chạy được cũng chưa chắc vượt 90%.
+- **Giới hạn, cách tái lập và đường dẫn benchmark:** [advanced/benchmark.json](../../advanced/benchmark.json). Sau test lần 1, tôi chỉ sửa trên dev (verifier `gpt-4.1`, câu từ chối chuẩn hoá, guard citation, agent `gpt-4.1`; V12 ≈ 21/22 dev) và viết **test2** mới 30 câu (chốt trước khi chạy) đúng quy tắc "đã dùng test để chỉnh thì tạo test mới". V12 không chạy được test2 vì hết credit OpenAI, Gemini free tier hết hạn mức embedding (1.000/ngày) và `gemini-3.5-flash` free chỉ 20 request/ngày (`advanced/run_log.md`). Vì vậy tôi giữ nguyên pipeline V12 và chỉ đổi provider sang miễn phí: embedding `multilingual-e5-small` chạy local + agent/verifier `gemini-3.5-flash-lite` (**L2_e5_gemini35lite**), dev 22/22, chốt trước khi chạy test2 ([advanced/selection.md](../../advanced/selection.md)).
+
+| Nhóm test2 (L2, chạy 1 lần) | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
+|---|---|---|---|
+| Bảng | 6/6 | 100% | — |
+| Ảnh, sơ đồ | 4/5 | 80% | AT2-I5: khẳng định sai Cu có biểu đồ xanh (ảnh gốc p.28: Cu trắng) |
+| Biểu đồ | 2/5 | 40% | AT2-C1, AT2-C3 từ chối nhầm (không lấy được giá trị cột); AT2-C2 lỗi chép vision (Gold/Platinum/Indium cùng ~100%, ảnh gốc chỉ Indium chạm đỉnh) |
+| Multi-hop | 4/4 | 100% | — |
+| Text | 4/4 | 100% | — |
+| Thiếu bằng chứng | 6/6 | 100% | — |
+| **Toàn bộ** | **26/30** | **86.7%** | 0 lỗi hệ thống; trung vị 16.2 s/câu; $0 (free tier + embedding local) |
+
+Nhãn test2: [advanced/labels/test2_labels.json](../../advanced/labels/test2_labels.json). So với test lần 1, câu thiếu bằng chứng cải thiện rõ (3/6 → 6/6 nhờ verifier và câu từ chối chuẩn hoá), nhưng **biểu đồ cột** là điểm yếu còn lại: bản chép vision ước lượng sai giá trị cột không in số và model lite không tự sửa khi xem ảnh trang. Hai lần test khác cấu hình (V6 `gpt-4.1-mini` vs L2 e5 + Gemini lite) và mỗi lần chạy một lần, nên không so sánh trực tiếp được.

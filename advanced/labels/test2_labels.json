@@ -1,0 +1,125 @@
+{
+ "_how": "Manual pass/fail per ADVANCED.md. Each answer read against the frozen gold; every value string-checked in the cited chunk; AT2-C2 and AT2-I5 checked on the original PDF page images (pages 31, 28). Run once; labels final.",
+ "L2_e5_gemini35lite": {
+  "AT2-T1": {
+   "pass": true,
+   "reason": "1,230 (2022) and ~1,100 thousand t / 1.1 million t (2023e); p068-v1 Salient Statistics + p068-t1 text."
+  },
+  "AT2-T2": {
+   "pass": true,
+   "reason": "19 million m3; p092-v1 row 'Withdrawn from storage' 2023e = 19."
+  },
+  "AT2-T3": {
+   "pass": true,
+   "reason": "190.2 -> 152 cents/lb, -38.2 (~20%); p206-v1."
+  },
+  "AT2-T4": {
+   "pass": true,
+   "reason": "400,000 t; p129-v1 row Philippines 2023e."
+  },
+  "AT2-T5": {
+   "pass": true,
+   "reason": "Brazil, 90%; Table 5 chunk p027-v1c row Niobium."
+  },
+  "AT2-T6": {
+   "pass": true,
+   "reason": "$9,500 million, rank 2, 9.07%; Table 3 chunk p014-v1a row Arizona."
+  },
+  "AT2-I1": {
+   "pass": true,
+   "reason": "$4.7B (exports $10.6B, imports $5.9B); gold, soda ash, zinc concentrates; Figure 1 chunk p008-v1."
+  },
+  "AT2-I2": {
+   "pass": true,
+   "reason": "South 15.1, Northeast 1.7 (billion $); Figure 6 chunk p018-v1 legend + region colours."
+  },
+  "AT2-I3": {
+   "pass": true,
+   "reason": "Reserve Base; Figure C2 chunk p213-v2."
+  },
+  "AT2-I4": {
+   "pass": true,
+   "reason": "B3 = lead and zinc ± copper ± silver (p017-v1 legend); Midwest/Missouri read from the original page 17 (viewed, Figure 5 cited) - matches gold."
+  },
+  "AT2-I5": {
+   "pass": false,
+   "reason": "Says Co AND Cu have blue graphs; original page 28 shows Cu (29) white with no graph (only Co blue). False claim."
+  },
+  "AT2-C1": {
+   "pass": false,
+   "reason": "Abstained on an answerable question (California ~$1,400 million, Figure 8 p.20); verifier rejected the draft because the map-legend chunk lacked the bar values."
+  },
+  "AT2-C2": {
+   "pass": false,
+   "reason": "Says Gold, Platinum and Indium tie at ~100%. Original page 31: only the rightmost bar (Indium) reaches the top; the vision transcription (p031-v1) put all three at '~100'. Wrong answer."
+  },
+  "AT2-C3": {
+   "pass": false,
+   "reason": "Abstained on an answerable question (Texas, Arizona, Nevada; Figure 4 bar chart p.16); never retrieved the bar chart."
+  },
+  "AT2-C4": {
+   "pass": true,
+   "reason": "Abrasives (fused aluminum oxide), nepheline syenite, rare earths, titanium sponge; Figure 2 chunks p011-v1a/v1b."
+  },
+  "AT2-C5": {
+   "pass": true,
+   "reason": "Rhodium -51%; Figure 10 chunk p029-v1."
+  },
+  "AT2-M1": {
+   "pass": true,
+   "reason": "83%; South Africa, Switzerland, Germany, Belgium (Figure 2 p011-v1b); South Africa 120,000/180,000 kg = 66.7% ~ 67% from the platinum world table p141-v2 (gold uses Table 5, 67%) - correct value with supporting evidence."
+  },
+  "AT2-M2": {
+   "pass": true,
+   "reason": "$6,480 million vs $9.9 billion, ~65%; p032-v1 (Figure 13) + p068-t1."
+  },
+  "AT2-M3": {
+   "pass": true,
+   "reason": "77% (p206-v1) and Canada 62% of refined-metal imports (p206-t2 'Refined metal: Canada, 62%')."
+  },
+  "AT2-M4": {
+   "pass": true,
+   "reason": "Indonesia (1,800,000 t, 50%; Table 5 p027-v1c) and reserves 55,000,000 t (p129-v1)."
+  },
+  "AT2-X1": {
+   "pass": true,
+   "reason": "45%; p068-t2."
+  },
+  "AT2-X2": {
+   "pass": true,
+   "reason": "Five plants, three in Texas and two in Kansas; p092-t1 ('Five plants (three in Texas and two in Kansas)')."
+  },
+  "AT2-X3": {
+   "pass": true,
+   "reason": "Arizona, ~70%; p068-t1."
+  },
+  "AT2-X4": {
+   "pass": true,
+   "reason": "Five States, seven operations, five companies; p206-t1."
+  },
+  "AT2-U1": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AT2-U2": {
+   "pass": true,
+   "reason": "Abstained (trap: mine production not used)."
+  },
+  "AT2-U3": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AT2-U4": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AT2-U5": {
+   "pass": true,
+   "reason": "Abstained (trap: 2023 price change not used)."
+  },
+  "AT2-U6": {
+   "pass": true,
+   "reason": "Abstained."
+  }
+ }
+}

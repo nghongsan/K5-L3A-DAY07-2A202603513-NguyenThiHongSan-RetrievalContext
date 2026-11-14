@@ -33,3 +33,20 @@ abstention text, gpt-4.1 agent, rate-limit backoff + one question-level retry on
 | **V12_final** | 20/22 (+AD-U6 rerun after 429 fix: pass) → 21/22 | only AD-M3 (ambiguous dev item) |
 
 Chosen for test2: **V12_final**. test2 (30 new questions, frozen before this run) is run once for V12_final and V0_text_dense.
+
+## Round 3 — free fallback (written BEFORE any test2 run, 2026-11-14)
+
+test2 could not be run with V12_final: OpenAI credit exhausted (embedding 429 `insufficient_quota`), Gemini embedding
+free tier capped at 1,000 requests/day (index needs 1,270), `gemini-2.5-flash` closed to new users, and
+`gemini-3.5-flash` free tier allows only 20 requests/day (L1 run aborted after a few questions, kept as
+`results/dev/L1_e5_gemini35_aborted_quota/` if present; not used). Same V12 pipeline (hybrid RRF + title lookup + view_page +
+claim verifier + standardised abstention), changing only the providers:
+
+| Config (dev, 22 q) | Embeddings | Agent + verifier | Dev pass | Unanswerable | LLM cost | Median s/q |
+|---|---|---|---|---|---|---|
+| V12_final (round 2) | text-embedding-3-small | gpt-4.1 | 21/22 | 7/7 | $0.69 | 6.9 |
+| **L2_e5_gemini35lite** | multilingual-e5-small (local, 384 d) | gemini-3.5-flash-lite (free tier) | **22/22** | 7/7 (6 abstain + AD-U7 states reserves unavailable) | $0 | 28.5 |
+
+Dev labels and reasons: [labels/dev_labels_L2.json](labels/dev_labels_L2.json). Retrieval on dev: page_hit@3 15/15, cited all gold pages 15/15.
+Chosen for test2: **L2_e5_gemini35lite**, baseline **L0_e5_text_dense** (text layer only, dense e5, gemini-3.5-flash-lite agent, no view/verifier).
+test2 (30 questions, frozen before round 2) is run once for both; nothing is changed after.

@@ -1,7 +1,7 @@
 # Day 7 — Agentic RAG
 
 > **Bài làm — 2A202603513 Nguyễn Thị Hồng San.** Báo cáo: [report/individual/2A202603513_NguyenThiHongSan.md](report/individual/2A202603513_NguyenThiHongSan.md).
-> Thử thách nâng cao (chưa đạt, 25/30): [advanced/README.md](advanced/README.md).
+> Thử thách nâng cao (chưa đạt: test 25/30, test2 26/30): [advanced/README.md](advanced/README.md).
 > Code: [src/](src/) · dữ liệu và benchmark: [data/chunks.json](data/chunks.json), [data/benchmark.json](data/benchmark.json) · kết quả và trace: [results/](results/).
 >
 > **Cách chạy** (Python 3.12, cùng môi trường với Day 6):

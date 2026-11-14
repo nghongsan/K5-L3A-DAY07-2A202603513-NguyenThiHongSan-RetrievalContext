@@ -1,2 +1,4 @@
 - 2026-11-14 16:45 test2 run #0 aborted before any answer was written: embedding call HTTP 429 insufficient_quota (OpenAI credit exhausted). No test2 output was produced or seen.
 - 2026-11-14 20:36 Gemini fallback (G1_gemini_flash / G0_gemini_text_dense, `EMB_PROVIDER=gemini`): rebuilding the index with `gemini-embedding-001` stopped at the embedding step — HTTP 429 RESOURCE_EXHAUSTED, free-tier limit of 1,000 embed requests/day (the index needs 1,270 chunks). Nothing was written to the index; no dev or test2 run happened. test2 is still unseen and unrun.
+- 2026-11-14 22:08 test2 run #1 started: L2_e5_gemini35lite (chosen) + L0_e5_text_dense (baseline), EMB_PROVIDER=local, LLM_PROVIDER=gemini. Run once; no changes after.
+- 2026-11-14 22:29 test2 run #1 finished: 0 system errors. Manual labels: L2_e5_gemini35lite 26/30 = 86.7% (fail, < 27/30). Baseline L0 not hand-labelled (automatic metrics only).

@@ -1,0 +1,93 @@
+{
+ "_how": "Manual pass/fail per ADVANCED.md; every cited chunk read and each value string-checked against it (see run log). Labels written BEFORE any test2 run.",
+ "L2_e5_gemini35lite": {
+  "AD-T1": {
+   "pass": true,
+   "reason": "41 thousand (2023e); Table 1 chunk p013-v1 row 'Coal mining, all employees' = 41; page viewed."
+  },
+  "AD-T2": {
+   "pass": true,
+   "reason": "350,000 t REO and 110,000,000 t reserves; p149-v1 'World total (rounded)' row contains both."
+  },
+  "AD-T3": {
+   "pass": true,
+   "reason": "9,600 t; p066-v1 Salient Statistics 'Imports for consumption' 2023e = 9,600."
+  },
+  "AD-I1": {
+   "pass": true,
+   "reason": "$17 billion net exports (exports $25B, imports $8B), examples gold, steel; p008-t1 (Figure 1 text layer) contains all values."
+  },
+  "AD-I2": {
+   "pass": true,
+   "reason": "Measured and Indicated; Figure C1 chunk p213-v1 cited."
+  },
+  "AD-I3": {
+   "pass": true,
+   "reason": "7 to 12; Figure 3 chunk p012-v1 'Brazil: Orange (7 to 12)'; page 12 viewed."
+  },
+  "AD-C1": {
+   "pass": true,
+   "reason": "100%; China, Mexico, Canada, Madagascar; Figure 2 chunk p011-v1a row GRAPHITE (NATURAL)."
+  },
+  "AD-C2": {
+   "pass": true,
+   "reason": "40%; Figure 10 chunk p029-v1 'Lithium, battery grade: -32, 40'."
+  },
+  "AD-C3": {
+   "pass": true,
+   "reason": "Natural aggregates $35.2 billion; Figure 4 pie chunk p016-v2."
+  },
+  "AD-M1": {
+   "pass": true,
+   "reason": "34,900/105,000 = 33.2%; Table 1 p013-v1 (Metals 34,900) + p016-t1 ('U.S. total: $105 billion'). Calls Figure 4 'by State' (the page carries both Figure 4 maps/pie) - value and citation correct."
+  },
+  "AD-M2": {
+   "pass": true,
+   "reason": "Argentina; 3,600,000 t; Figure 2 p011-v1c (LITHIUM: Argentina, Chile, China, Russia) + p115-v1 reserves row."
+  },
+  "AD-M3": {
+   "pass": true,
+   "reason": "9,500/45,000 = 21.1%; both values cited (p032-v1 Figure 13, p008-v1 Figure 1)."
+  },
+  "AD-X1": {
+   "pass": true,
+   "reason": "About 40 (Canada + U.S.) and 50 (Europe); p114-t3."
+  },
+  "AD-X2": {
+   "pass": true,
+   "reason": "Bastnaesite, Mountain Pass, CA; p148-t1."
+  },
+  "AD-X3": {
+   "pass": true,
+   "reason": "Ore extraction commenced, commissioning suspended in March (low cobalt prices); p066-t1."
+  },
+  "AD-U1": {
+   "pass": true,
+   "reason": "Abstained (standard refusal, no extra claims)."
+  },
+  "AD-U2": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AD-U3": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AD-U4": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AD-U5": {
+   "pass": true,
+   "reason": "Abstained (trap: China spot LiOH price not used)."
+  },
+  "AD-U6": {
+   "pass": true,
+   "reason": "Abstained (trap: number of companies not used as employment)."
+  },
+  "AD-U7": {
+   "pass": true,
+   "reason": "Status 'answered' but the answer only states that quantitative estimates of world gallium reserves were not available, citing p079-t3 which says exactly that - clearly states the evidence is missing, no unsupported claim -> pass per ADVANCED.md."
+  }
+ }
+}

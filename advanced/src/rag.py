@@ -57,7 +57,7 @@ class Retriever:
 
     def _embed(self, q: str) -> list[float]:
         from emb import embed
-        v, t = embed([q])
+        v, t = embed([q], query=True)
         self.emb_tokens += t
         return v[0]
 

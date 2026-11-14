@@ -51,6 +51,15 @@ CONFIGS = {
     "G1_gemini_flash": Config("G1_gemini_flash", method="hybrid", title_lookup=True, prompt_v2=True, prompt_v3=True, view_page=True,
                               verify=True, verifier_model="gemini-2.5-flash", model="gemini-2.5-flash", max_turns=14, clean_abstain=True),
     "G0_gemini_text_dense": Config("G0_gemini_text_dense", method="dense", kinds=("text",), model="gemini-2.5-flash"),
+    # Free fallback (OpenAI credit + Gemini embedding quota exhausted; gemini-2.5-flash closed to new users):
+    # V12 pipeline with local e5-small embeddings (EMB_PROVIDER=local) and gemini-3.5-flash (free tier) as agent + verifier
+    "L1_e5_gemini35": Config("L1_e5_gemini35", method="hybrid", title_lookup=True, prompt_v2=True, prompt_v3=True, view_page=True,
+                             verify=True, verifier_model="gemini-3.5-flash", model="gemini-3.5-flash", max_turns=14, clean_abstain=True),
+    # gemini-3.5-flash free tier allows only 20 requests/day -> same pipeline on gemini-3.5-flash-lite
+    "L2_e5_gemini35lite": Config("L2_e5_gemini35lite", method="hybrid", title_lookup=True, prompt_v2=True, prompt_v3=True, view_page=True,
+                                 verify=True, verifier_model="gemini-3.5-flash-lite", model="gemini-3.5-flash-lite", max_turns=14,
+                                 clean_abstain=True),
+    "L0_e5_text_dense": Config("L0_e5_text_dense", method="dense", kinds=("text",), model="gemini-3.5-flash-lite"),
 }
 
 

@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import ssl
 import time
 import urllib.error
@@ -109,8 +110,8 @@ class LLM:
         if self.provider == "anthropic":
             return self._anthropic(messages, tools or [], max_tokens)
         payload = {"model": self.model, "messages": messages, "temperature": self.temperature, "max_tokens": max_tokens}
-        if self.provider == "gemini" and "2.5" in self.model:
-            # Gemini 2.5 counts thinking tokens against max_tokens; keep reasoning bounded and leave room for the answer.
+        if self.provider == "gemini" and re.search(r"gemini-(2\.5|[3-9])", self.model):
+            # Gemini 2.5+ counts thinking tokens against max_tokens; keep reasoning bounded and leave room for the answer.
             payload["reasoning_effort"] = os.getenv("LLM_REASONING_EFFORT", "low")
             payload["max_tokens"] = max_tokens + 3000
         if tools:
