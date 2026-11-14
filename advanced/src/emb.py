@@ -42,6 +42,8 @@ def settings() -> dict:
     load_dotenv()
     p = os.getenv("EMB_PROVIDER", "openai")
     key_name, url, model, collection, batch = PROVIDERS[p]
+    if os.getenv("FIG_LABELS") == "1":   # round 4: separate collection for the figure-labelled chunks
+        collection += "_fl"
     return {"provider": p, "key_name": key_name, "url": url, "model": os.getenv("EMB_MODEL", model),
             "collection": collection, "batch": batch}
 

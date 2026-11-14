@@ -96,6 +96,26 @@ def visual_chunks(page: int, rec: dict, section: str) -> list[dict]:
     return out
 
 
+_FIG = re.compile(r"\b(Figure|Table)\s+([A-Z]?\d+)\s*\.?\s*[—-]")
+
+
+def label_figures(chunks: list[dict], page_texts: dict[int, str]) -> int:
+    """Round 4 (FIG_LABELS=1): a visual element whose title carries no 'Figure N'/'Table N' label inherits the label
+    when its page's text layer names exactly one figure/table (e.g. the bar chart under the Figure 7 map on p.19).
+    Uses only the PDF text, never gold. Returns the number of relabelled chunks."""
+    n = 0
+    for c in chunks:
+        if c["kind"] != "visual" or _FIG.search(c["title"]):
+            continue
+        labels = {f"{k.title()} {num}" for k, num in _FIG.findall(page_texts.get(c["page"], ""))}
+        if len(labels) == 1:
+            lab = labels.pop()
+            c["title"] = f"{lab}.— {c['title']}"
+            c["text"] = c["text"].replace(c["text"].split(": ", 1)[0] + ": ", c["text"].split(": ", 1)[0] + f": {lab}.— ", 1)
+            n += 1
+    return n
+
+
 def embed(texts: list[str]) -> tuple[list[list[float]], int]:
     from emb import embed as _embed
     return _embed(texts)
@@ -123,6 +143,10 @@ def main() -> None:
             chunks += visual_chunks(p["page"], rec, sec)
         else:
             missing.append(p["page"])
+    relabelled = 0
+    if os.getenv("FIG_LABELS") == "1":
+        relabelled = label_figures(chunks, {p["page"]: p["text"] for p in pages})
+        print("figure labels added:", relabelled)
     IDX.mkdir(parents=True, exist_ok=True)
     vecs, tokens = embed([embed_input(c) for c in chunks])
     client = chromadb.PersistentClient(path=str(IDX / "chroma"))
@@ -138,7 +162,7 @@ def main() -> None:
         b = chunks[i:i + 500]
         col.add(ids=[c["id"] for c in b], embeddings=vecs[i:i + 500], documents=[c["text"] for c in b],
                 metadatas=[{"page": c["page"], "kind": c["kind"], "etype": c["etype"], "section": c["section"]} for c in b])
-    (IDX / "chunks.json").write_text(json.dumps(chunks, ensure_ascii=False, indent=0))
+    (IDX / ("chunks_fl.json" if os.getenv("FIG_LABELS") == "1" else "chunks.json")).write_text(json.dumps(chunks, ensure_ascii=False, indent=0))
     stats = {"chunks": len(chunks), "text_chunks": sum(c["kind"] == "text" for c in chunks),
              "visual_chunks": sum(c["kind"] == "visual" for c in chunks),
              "visual_by_type": {t: sum(c["etype"] == t for c in chunks if c["kind"] == "visual")
@@ -148,7 +172,8 @@ def main() -> None:
              "vision_missing_or_unparsed_pages": missing, "embedding_provider": es["provider"], "embedding_model": es["model"], "dimensions": len(vecs[0]),
              "embedding_tokens": tokens, "embedding_cost_usd_openai_list_price": round(tokens * EMB_PRICE / 1e6, 4) if es["provider"] == "openai" else 0.0,
              "seconds": round(time.perf_counter() - t0, 1)}
-    (IDX / f"index_stats_{es['provider']}.json").write_text(json.dumps(stats, indent=1))
+    stats["figure_labels_added"] = relabelled
+    (IDX / f"index_stats_{es['provider']}{'_fl' if os.getenv('FIG_LABELS') == '1' else ''}.json").write_text(json.dumps(stats, indent=1))
     print(json.dumps(stats, indent=1))
 
 

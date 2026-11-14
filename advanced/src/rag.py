@@ -33,7 +33,8 @@ PAGES = ROOT / "advanced" / "pages"
 
 
 def load_chunks() -> list[dict]:
-    chunks = json.loads((IDX / "chunks.json").read_text())
+    load_dotenv()
+    chunks = json.loads((IDX / ("chunks_fl.json" if os.getenv("FIG_LABELS") == "1" else "chunks.json")).read_text())
     for c in chunks:
         c.setdefault("metadata", {"page": c["page"], "kind": c["kind"]})
         c.setdefault("source_id", "mcs2024")
@@ -167,6 +168,14 @@ def block(c: dict) -> str:
     return f"[{c['id']}] (page {c['page']}, printed p.{c['printed_page']}, {c['section']}, {tag}{': ' + c['title'] if c['title'] else ''})\n{c['text']}"
 
 
+V4_RULES = """
+- Visual passages are approximate machine transcriptions. For which bar is highest/lowest, colours, shading or symbols,
+  the original page image (view_page) wins over the transcription; if they disagree, say what the image shows.
+- List only items that are explicitly present in a cited passage or clearly visible on the viewed page; never add items
+  by analogy (e.g. a neighbouring element or a similar commodity). If several items seem tied, check the image before
+  claiming a tie."""
+
+
 @dataclass
 class Config:
     name: str
@@ -184,6 +193,7 @@ class Config:
     verify: bool = False           # claim-level check of the answer against the CITED passages only
     verifier_model: str | None = None   # None = same model as the agent
     prompt_v3: bool = False        # abstain hygiene: no speculation when abstaining
+    prompt_v4: bool = False        # round 4: image beats transcription; no items added by analogy
     clean_abstain: bool = False    # final abstain text is a fixed statement; the model's note is kept in the trace only
 
 
@@ -195,7 +205,8 @@ class Agent:
             self.page_chunks.setdefault(c["page"], []).append(c["id"])
         self.tools = [t for t in TOOLS if cfg.view_page or t["function"]["name"] != "view_page"]
         self.system = SYSTEM.format(view_rule=VIEW_RULE if cfg.view_page else "",
-                                    v2_rules=(V2_RULES if cfg.prompt_v2 else "") + (V3_RULES if cfg.prompt_v3 else ""))
+                                    v2_rules=(V2_RULES if cfg.prompt_v2 else "") + (V3_RULES if cfg.prompt_v3 else "")
+                                    + (V4_RULES if cfg.prompt_v4 else ""))
         self.vllm = llm
         if cfg.verifier_model and cfg.verifier_model != llm.model:
             from src.llm import LLM
