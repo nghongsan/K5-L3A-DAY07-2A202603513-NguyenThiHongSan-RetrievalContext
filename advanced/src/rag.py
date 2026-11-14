@@ -193,6 +193,7 @@ class Config:
     verify: bool = False           # claim-level check of the answer against the CITED passages only
     verifier_model: str | None = None   # None = same model as the agent
     prompt_v3: bool = False        # abstain hygiene: no speculation when abstaining
+    fig_labels: bool = False       # round 4: requires FIG_LABELS=1 (figure-labelled chunks + collection *_fl)
     prompt_v4: bool = False        # round 4: image beats transcription; no items added by analogy
     clean_abstain: bool = False    # final abstain text is a fixed statement; the model's note is kept in the trace only
 

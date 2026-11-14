@@ -62,7 +62,7 @@ CONFIGS = {
     # Round 4 (after test2; tuned on dev + test2 only, test3 frozen before): run with FIG_LABELS=1 (bar charts inherit the
     # page's 'Figure N' label -> title lookup finds them) + prompt v4 (image beats transcription, no items by analogy)
     "L3_e5_lite_figlabels": Config("L3_e5_lite_figlabels", method="hybrid", title_lookup=True, prompt_v2=True, prompt_v3=True,
-                                   prompt_v4=True, view_page=True, verify=True, verifier_model="gemini-3.5-flash-lite",
+                                   prompt_v4=True, fig_labels=True, view_page=True, verify=True, verifier_model="gemini-3.5-flash-lite",
                                    model="gemini-3.5-flash-lite", max_turns=14, clean_abstain=True),
     "L0_e5_text_dense": Config("L0_e5_text_dense", method="dense", kinds=("text",), model="gemini-3.5-flash-lite"),
 }
@@ -83,6 +83,10 @@ def main() -> None:
     bench = [q for q in json.loads((ROOT / "advanced" / "benchmark.json").read_text())["questions"] if q["split"] == a.split]
     if a.ids:
         bench = [q for q in bench if q["id"] in a.ids]
+    import os
+    for name in a.configs:
+        if CONFIGS[name].fig_labels != (os.getenv("FIG_LABELS") == "1"):
+            raise SystemExit(f"{name}: run with FIG_LABELS={'1' if CONFIGS[name].fig_labels else '0 (unset)'} so the matching index is used")
     chunks = load_chunks()
     for name in a.configs:
         cfg = CONFIGS[name]

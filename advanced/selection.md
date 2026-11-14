@@ -50,3 +50,12 @@ claim verifier + standardised abstention), changing only the providers:
 Dev labels and reasons: [labels/dev_labels_L2.json](labels/dev_labels_L2.json). Retrieval on dev: page_hit@3 15/15, cited all gold pages 15/15.
 Chosen for test2: **L2_e5_gemini35lite**, baseline **L0_e5_text_dense** (text layer only, dense e5, gemini-3.5-flash-lite agent, no view/verifier).
 test2 (30 questions, frozen before round 2) is run once for both; nothing is changed after.
+
+## Round 4 — in progress (test3 frozen first)
+
+test3 (30 new questions, same group mix) was written and committed (9d0a1f8) after test2 was labelled and BEFORE any
+round-4 change. Changes are motivated only by dev/test2 errors: FIG_LABELS=1 (unlabelled bar charts on pages 16, 19, 20
+inherit the page's Figure label so title lookup finds them; fixes the AT2-C1/AT2-C3 refusals) and prompt v4 (page image
+beats transcription; no items added by analogy; aimed at AT2-C2/AT2-I5). Candidate: L3_e5_lite_figlabels. Selection rule
+(fixed now): choose L3 for test3 only if its dev pass is >= L2's 22/22 minus at most one question; otherwise run L2 on test3.
+The dev run was stopped by the gemini-3.5-flash-lite daily quota; no selection made yet, test3 not run.

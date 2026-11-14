@@ -22,6 +22,7 @@ Phần chưa xử lý / giới hạn: vision có thể chép sai (ví dụ bản
 | dev | 3 | 3 | 3 | 3 | 3 | 7 (4 + 3 bẫy thêm sau test-1) | 22 |
 | test (lần 1, đã dùng) | 6 | 5 | 5 | 4 | 4 | 6 | 30 |
 | test2 (mới, đã chạy 1 lần) | 6 | 5 | 5 | 4 | 4 | 6 | 30 |
+| test3 (mới, chốt trước vòng 4, **chưa chạy**) | 6 | 5 | 5 | 4 | 4 | 6 | 30 |
 
 Mỗi câu có trang, vùng (hàng/cột/ô, hình), evidence; evidence text được kiểm nguyên văn trên trang, evidence hình được kiểm trên ảnh trang gốc; câu thiếu bằng chứng kiểm bằng regex toàn tài liệu (test2: thêm đọc top-3 kết quả tìm kiếm ngữ nghĩa).
 
@@ -39,6 +40,7 @@ Mỗi câu có trang, vùng (hàng/cột/ô, hình), evidence; evidence text đ�
   - Điểm yếu chính: **biểu đồ cột** — vision ước lượng giá trị cột không in số kém, và model lite không tự sửa được khi xem ảnh trang.
   - Lỗi hệ thống 0/30; thời gian trung vị 16.2 s/câu; chi phí LLM $0 (free tier), embedding local $0.
   - Baseline L0_e5_text_dense (chỉ text layer, dense): page_hit@3 15/24, cite đủ trang gold 12/24, từ chối nhầm 8/24 (chỉ số tự động, chưa chấm tay) — so với L2: 22/24, 20/24, 2/24.
+- **Vòng 4 (đang làm, chưa có kết quả):** sau khi chấm test2, viết **test3** mới 30 câu và commit (`9d0a1f8`) **trước** mọi thay đổi pipeline; test3 chưa chạy lần nào. Sửa dựa trên lỗi dev/test2 (test2 giờ chỉ dùng làm dữ liệu phát triển): (1) `FIG_LABELS=1` — biểu đồ cột Figure 4/7/8 không có nhãn "Figure N" nên tra theo tên hình không tìm thấy, nay thừa hưởng nhãn từ text của trang; (2) prompt v4 — ảnh trang thắng bản chép vision, không thêm phần tử suy diễn. Cấu hình `L3_e5_lite_figlabels`. Lần chạy dev bị dừng vì `gemini-3.5-flash-lite` hết 500 request/ngày ([run_log.md](run_log.md)); kế hoạch: chạy dev → chốt → chạy test3 một lần → chấm tay. Lưu ý: test3 do cùng người làm pipeline viết; mọi thay đổi vòng 4 chỉ dựa trên lỗi dev/test2 đã ghi ở trên.
 - Chi phí phần nâng cao: ≈ $5.4 (agent runs $4.9, vision $0.50, embedding $0.01); vòng 3 miễn phí.
 
 ## Tái lập
