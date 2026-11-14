@@ -1,0 +1,93 @@
+{
+ "_how": "Manual pass/fail; each answer read against gold and each cited chunk string-checked (see transcript). Written before any test3 run.",
+ "L4_e5_lite31_figlabels": {
+  "AD-T1": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-T2": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-T3": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-I1": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-I2": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-I3": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-C1": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-C2": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-C3": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-M1": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-M2": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-M3": {
+   "pass": false,
+   "reason": "Abstained on an answerable question (aluminium Figure 13 / Figure 1 ratio); dev item already ambiguous in earlier rounds."
+  },
+  "AD-X1": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-X2": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-X3": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-U1": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-U2": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-U3": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-U4": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-U5": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-U6": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  },
+  "AD-U7": {
+   "pass": true,
+   "reason": "Value(s) string-checked in every cited chunk; matches gold."
+  }
+ }
+}

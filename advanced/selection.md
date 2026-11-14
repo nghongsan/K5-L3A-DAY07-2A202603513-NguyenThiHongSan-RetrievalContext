@@ -66,3 +66,10 @@ gemini-3.5-flash-lite is out of free quota (500/day), so the L3 pipeline is run 
 gemini-3.1-flash-lite (agent + verifier); everything else identical (FIG_LABELS=1, prompt v4). Rule, fixed now:
 run L4 once on dev (22 q) and label by hand; if dev pass >= 21/22, L4 is the config for test3 and test3 is run
 exactly once; otherwise no test3 run is made today and the status stays "not passed". test3 is never used to choose.
+
+Result of the rule: L4 dev = 21/22 (labels: labels/dev_labels_L4.json; only AD-M3 failed, the same ambiguous dev item as in earlier rounds) -> L4 is the config for test3.
+Extra check on test2 (development data, NOT fully hand-labelled for L4; folder results/test2/L4_e5_lite31_figlabels_devdata/):
+AT2-C1, C3, I5 now answered correctly (L2 failed them); AT2-I4, M1, M3 became refusals because the verifier rejected answers whose
+cited passages were incomplete (e.g. AT2-M3 cites the p206 table but 'Canada 62%' is in p206-t2); AT2-C2 still wrong (3-way tie).
+Net expectation: about the same as L2 (~26/30). No change is made after this point; test3 is run once for L4 (the L0 text-only
+baseline cannot be run today: its gemini-3.5-flash-lite quota is exhausted).
