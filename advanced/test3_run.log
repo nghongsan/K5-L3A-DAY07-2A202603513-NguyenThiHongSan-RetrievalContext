@@ -1,0 +1,7 @@
+W1114 23:40:52.412000 95165 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/intfloat/multilingual-e5-small: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'intfloat/multilingual-e5-small'.
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/intfloat/multilingual-e5-small: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'intfloat/multilingual-e5-small'.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 199/199 [00:00<00:00, 4988.74it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9478.06it/s]
+{"config": "L4_e5_lite31_figlabels", "split": "test3", "model": "gemini-3.1-flash-lite", "n": 30, "errors": 0, "page_hit1": "21/24", "page_hit3": "22/24", "all_gold_pages_top6": "24/24", "context_all_gold_pages": "24/24", "cited_all_gold_pages": "20/24", "answered": 21, "abstained": 9, "abstain_on_unanswerable": "5/6", "abstain_on_answerable": "4/24", "searches_mean": 1.13, "views_mean": 0.47, "tokens_in": 279781, "tokens_out": 8308, "verifier_tokens_in": 32993, "verifier_tokens_out": 1305, "cost_usd_llm": 0.0, "embedding_query_tokens": 1520, "median_seconds": 33.55, "wall_seconds": 1004.4}

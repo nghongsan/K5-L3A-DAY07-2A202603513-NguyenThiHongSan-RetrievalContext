@@ -1,0 +1,125 @@
+{
+ "_how": "Manual pass/fail per ADVANCED.md. Each answer read against the frozen gold; each cited chunk string-checked; AT3-C1 checked on the original page 30. test3 was run once for L4_e5_lite31_figlabels; labels final.",
+ "L4_e5_lite31_figlabels": {
+  "AT3-T1": {
+   "pass": true,
+   "reason": "$1,802 (2022) and $1,900 (2023); p086-v1 'Price, dollars per troy ounce'."
+  },
+  "AT3-T2": {
+   "pass": false,
+   "reason": "Abstained on an answerable question (Mexico 6,400 t, world 26,000 t, p167): verifier rejected the draft for incomplete citation."
+  },
+  "AT3-T3": {
+   "pass": true,
+   "reason": "1,500 t; p194-v1 row 'Ores and concentrates' 2023e."
+  },
+  "AT3-T4": {
+   "pass": true,
+   "reason": "8,400 t; p166-v1 COMEX row."
+  },
+  "AT3-T5": {
+   "pass": true,
+   "reason": "59% (2023) vs 68% (2019); Table 2 chunk p013-v2 row Metals."
+  },
+  "AT3-T6": {
+   "pass": true,
+   "reason": "China, 370 t; p087-v1."
+  },
+  "AT3-I1": {
+   "pass": true,
+   "reason": "Imports $203B, exports $101B, net imports $102B; Figure 1 chunk p008-v1."
+  },
+  "AT3-I2": {
+   "pass": false,
+   "reason": "Abstained on an answerable question (Figure 14: gallium next to the Al host); two views of p33 did not help."
+  },
+  "AT3-I3": {
+   "pass": false,
+   "reason": "Abstained on an answerable question (Figure 7 map: Louisiana withheld/gray)."
+  },
+  "AT3-I4": {
+   "pass": true,
+   "reason": "Only Al has a blue graph; Si and P unshaded; viewed page 28; matches original page."
+  },
+  "AT3-I5": {
+   "pass": true,
+   "reason": "4 to 6; p012-v1 'Australia: Yellow (4 to 6)'."
+  },
+  "AT3-C1": {
+   "pass": false,
+   "reason": "Says platinum and indium both ~+50%. Original Figure 11: only Indium ~+49%, Platinum ~+32%. The vision transcription (p030-v1) put Platinum at ~50 and the model followed it although it viewed the page."
+  },
+  "AT3-C2": {
+   "pass": true,
+   "reason": "Seven States listed correctly; Figure 7 bar chunk p019-v2 and text p010-t5 ('seven States produced more than $1 billion')."
+  },
+  "AT3-C3": {
+   "pass": true,
+   "reason": "-40% and 15%; p029-v1 row Neodymium."
+  },
+  "AT3-C4": {
+   "pass": true,
+   "reason": "Titanium, ~80% (3% to 83% segment) read from the viewed page; matches original page 32."
+  },
+  "AT3-C5": {
+   "pass": true,
+   "reason": ">75%; Jamaica, Turkey, Guyana, Australia. Value is in sibling part p011-v1b of the same Figure 2 element, but the cited part id is p011-v1a: page and figure are correct. Counted pass; would be a fail under the strictest chunk-level citation reading."
+  },
+  "AT3-M1": {
+   "pass": true,
+   "reason": "4,694/760 = 6.18 (~6.2x); p032-v1 + p166-t1."
+  },
+  "AT3-M2": {
+   "pass": false,
+   "reason": "Abstained on an answerable question (170/3,000 = 5.7% from p086-p087); verifier rejected the draft."
+  },
+  "AT3-M3": {
+   "pass": true,
+   "reason": "China first (Figure 2); reserves 2,300,000 of 4,400,000 t (~52%); p011-v1c + p195-v1."
+  },
+  "AT3-M4": {
+   "pass": true,
+   "reason": "3,840/27,356 = 14.0%; p008-v1 + p013-v2."
+  },
+  "AT3-X1": {
+   "pass": true,
+   "reason": "Nevada ~73%, Alaska ~13%; p086-t1."
+  },
+  "AT3-X2": {
+   "pass": true,
+   "reason": "Bars 34%, photovoltaics 10%; p166-t2."
+  },
+  "AT3-X3": {
+   "pass": true,
+   "reason": "Not mined since 2015; ~60% cemented carbide; p194-t1."
+  },
+  "AT3-X4": {
+   "pass": true,
+   "reason": "Fire in August, no personnel, production suspended for the rest of 2023; p167-t1 (also repeated in the lead/zinc chapters p111-t2, p207-t1)."
+  },
+  "AT3-U1": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AT3-U2": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AT3-U3": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AT3-U4": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AT3-U5": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AT3-U6": {
+   "pass": true,
+   "reason": "Answered that Burkina Faso's reserves are 'NA' (not available), citing p087-v1: states the data is missing, no unsupported claim -> pass."
+  }
+ }
+}

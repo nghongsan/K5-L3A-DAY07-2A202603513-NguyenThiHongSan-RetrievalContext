@@ -5,3 +5,4 @@
 - 2026-11-14 22:48 round 4 (test3 frozen at commit 9d0a1f8 before this): FIG_LABELS index + prompt v4 = L3_e5_lite_figlabels; evaluated on dev + test2 (test2 now used as development data).
 - 2026-11-14 23:11 round 4 dev run stopped: gemini-3.5-flash-lite free tier hit its 500 requests/day limit (resets in ~16 h). Before that, a 4-question development check on the failed test2 items (AT2-C1, AT2-C2, AT2-C3, AT2-I5) showed AT2-C1 and AT2-C3 now answered correctly and AT2-C2, AT2-I5 still wrong; its output folder was deleted before the full run, so these 4 results are noted here only and are not used for selection. test3 not run.
 - 2026-11-14 23:40 test3 run #1 started: L4_e5_lite31_figlabels (FIG_LABELS=1, EMB_PROVIDER=local, LLM_PROVIDER=gemini). Run once; no change after.
+- test3 run #1 finished: 0 system errors; manual labels L4_e5_lite31_figlabels 25/30 = 83.3% (fail, < 27/30). Text-only baseline not run (quota).

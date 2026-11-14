@@ -1,6 +1,6 @@
 # Thử thách nâng cao — USGS Mineral Commodity Summaries 2024
 
-**Trạng thái: CHƯA ĐẠT.** Test lần 1 (V6) = 25/30 (83.3%); test2 (bộ test mới, L2_e5_gemini35lite, chạy 1 lần) = **26/30 (86.7%)** < 27/30. Không nhận điểm bonus.
+**Trạng thái: CHƯA ĐẠT.** Test lần 1 (V6) = 25/30 (83.3%); test2 (bộ test mới, L2_e5_gemini35lite, chạy 1 lần) = **26/30 (86.7%)** < 27/30. Test3 (vòng 4, chạy 1 lần) = **25/30 (83.3%)**. Không nhận điểm bonus.
 
 ## Tài liệu
 - U.S. Geological Survey, 2024, *Mineral Commodity Summaries 2024*, 212 p. (PDF 216 trang vật lý). DOI https://doi.org/10.3133/mcs2024 — PDF: https://pubs.usgs.gov/periodicals/mcs2024/mcs2024.pdf
@@ -22,7 +22,7 @@ Phần chưa xử lý / giới hạn: vision có thể chép sai (ví dụ bản
 | dev | 3 | 3 | 3 | 3 | 3 | 7 (4 + 3 bẫy thêm sau test-1) | 22 |
 | test (lần 1, đã dùng) | 6 | 5 | 5 | 4 | 4 | 6 | 30 |
 | test2 (mới, đã chạy 1 lần) | 6 | 5 | 5 | 4 | 4 | 6 | 30 |
-| test3 (mới, chốt trước vòng 4, **chưa chạy**) | 6 | 5 | 5 | 4 | 4 | 6 | 30 |
+| test3 (mới, chốt trước vòng 4, đã chạy 1 lần) | 6 | 5 | 5 | 4 | 4 | 6 | 30 |
 
 Mỗi câu có trang, vùng (hàng/cột/ô, hình), evidence; evidence text được kiểm nguyên văn trên trang, evidence hình được kiểm trên ảnh trang gốc; câu thiếu bằng chứng kiểm bằng regex toàn tài liệu (test2: thêm đọc top-3 kết quả tìm kiếm ngữ nghĩa).
 
@@ -40,7 +40,12 @@ Mỗi câu có trang, vùng (hàng/cột/ô, hình), evidence; evidence text đ�
   - Điểm yếu chính: **biểu đồ cột** — vision ước lượng giá trị cột không in số kém, và model lite không tự sửa được khi xem ảnh trang.
   - Lỗi hệ thống 0/30; thời gian trung vị 16.2 s/câu; chi phí LLM $0 (free tier), embedding local $0.
   - Baseline L0_e5_text_dense (chỉ text layer, dense): page_hit@3 15/24, cite đủ trang gold 12/24, từ chối nhầm 8/24 (chỉ số tự động, chưa chấm tay) — so với L2: 22/24, 20/24, 2/24.
-- **Vòng 4 (đang làm, chưa có kết quả):** sau khi chấm test2, viết **test3** mới 30 câu và commit (`9d0a1f8`) **trước** mọi thay đổi pipeline; test3 chưa chạy lần nào. Sửa dựa trên lỗi dev/test2 (test2 giờ chỉ dùng làm dữ liệu phát triển): (1) `FIG_LABELS=1` — biểu đồ cột Figure 4/7/8 không có nhãn "Figure N" nên tra theo tên hình không tìm thấy, nay thừa hưởng nhãn từ text của trang; (2) prompt v4 — ảnh trang thắng bản chép vision, không thêm phần tử suy diễn. Cấu hình `L3_e5_lite_figlabels`. Lần chạy dev bị dừng vì `gemini-3.5-flash-lite` hết 500 request/ngày ([run_log.md](run_log.md)); kế hoạch: chạy dev → chốt → chạy test3 một lần → chấm tay. Lưu ý: test3 do cùng người làm pipeline viết; mọi thay đổi vòng 4 chỉ dựa trên lỗi dev/test2 đã ghi ở trên.
+- **Vòng 4:** sau khi chấm test2 viết **test3** mới 30 câu và commit (`9d0a1f8`) **trước** mọi thay đổi pipeline. Sửa dựa trên lỗi dev/test2: (1) `FIG_LABELS=1` — biểu đồ cột Figure 4/7/8 thừa hưởng nhãn "Figure N" từ text của trang; (2) prompt v4 (ảnh trang thắng bản chép; không thêm phần tử suy diễn). `gemini-3.5-flash-lite` hết 500 request/ngày nên chạy bằng `gemini-3.1-flash-lite` (**L4_e5_lite31_figlabels**); quy tắc chọn ghi trước trong [selection.md](selection.md): dev ≥ 21/22 → chạy test3. Dev: **21/22** ([labels/dev_labels_L4.json](labels/dev_labels_L4.json)).
+- **test3 (L4, chạy 1 lần): 25/30 = 83.3%** — nhãn và lý do từng câu: [labels/test3_labels.json](labels/test3_labels.json); trace: `results/test3/L4_e5_lite31_figlabels/`.
+  - Theo nhóm: bảng 5/6, ảnh 3/5, biểu đồ 4/5, multi-hop 3/4, text 4/4, thiếu bằng chứng 6/6.
+  - Lỗi: 4 câu từ chối nhầm (AT3-T2, I2, I3, M2: bộ kiểm tra bác câu trả lời vì cite thiếu đoạn chứa giá trị hoặc model không đọc được hình) và AT3-C1 (nói Platinum cũng ~50%: bản chép vision sai, model xem ảnh nhưng vẫn theo bản chép). AT3-C5 chấm đạt nhưng cite id của phần anh em (p011-v1a, giá trị ở p011-v1b); nếu chấm chặt nhất sẽ là 24/30.
+  - Lỗi hệ thống 0/30; thời gian trung vị 33.6 s/câu; chi phí LLM $0 (free tier). Không chạy baseline text-only vì hạn mức đã hết.
+  - **Kết luận: không đạt 90% (cần ≥ 27/30).** Ba bộ test khác nhau (25/30, 26/30, 25/30) cho kết quả ổn định quanh 83–87%: điểm yếu còn lại là đọc hình/màu/chiều cao cột bằng model nhỏ và citation đủ-đoạn của các câu cần nhiều phần của cùng một hình/bảng.
 - Chi phí phần nâng cao: ≈ $5.4 (agent runs $4.9, vision $0.50, embedding $0.01); vòng 3 miễn phí.
 
 ## Tái lập

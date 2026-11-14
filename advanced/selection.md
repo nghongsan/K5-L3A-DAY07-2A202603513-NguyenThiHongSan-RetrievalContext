@@ -73,3 +73,5 @@ AT2-C1, C3, I5 now answered correctly (L2 failed them); AT2-I4, M1, M3 became re
 cited passages were incomplete (e.g. AT2-M3 cites the p206 table but 'Canada 62%' is in p206-t2); AT2-C2 still wrong (3-way tie).
 Net expectation: about the same as L2 (~26/30). No change is made after this point; test3 is run once for L4 (the L0 text-only
 baseline cannot be run today: its gemini-3.5-flash-lite quota is exhausted).
+
+Test3 result (run once): L4 = 25/30 = 83.3% (labels/test3_labels.json) -> not passed. No further change was made after the run.

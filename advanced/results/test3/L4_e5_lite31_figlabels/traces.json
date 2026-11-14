@@ -1,0 +1,5220 @@
+[
+ {
+  "query_id": "AT3-T1",
+  "group": "table",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "What was the average gold price in 2022 and in 2023 (dollars per troy ounce)?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p166-t4",
+    "page": 166
+   },
+   {
+    "rank": 2,
+    "id": "p166-t5",
+    "page": 166
+   },
+   {
+    "rank": 3,
+    "id": "p087-t4",
+    "page": 87
+   },
+   {
+    "rank": 4,
+    "id": "p086-t4",
+    "page": 86
+   },
+   {
+    "rank": 5,
+    "id": "p086-v1",
+    "page": 86
+   },
+   {
+    "rank": 6,
+    "id": "p086-t2",
+    "page": 86
+   }
+  ],
+  "status": "answered",
+  "answer": "Based on the \"Salient Statistics—United States\" table for gold, the average price in dollars per troy ounce was $1,802 in 2022 and $1,900 in 2023 [p086-v1].",
+  "citations": [
+   "p086-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "gold price 2022 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p086-t4",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p087-t1",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "p086-t1",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p086-t3",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03031
+     },
+     {
+      "rank": 5,
+      "id": "p010-t3",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02881
+     },
+     {
+      "rank": 6,
+      "id": "p039-t1",
+      "page": 39,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02853
+     }
+    ],
+    "returned_ids": [
+     "p086-t4",
+     "p087-t1",
+     "p086-t1",
+     "p086-t3",
+     "p010-t3",
+     "p039-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 86,
+    "ids": [
+     "p086-t1",
+     "p086-t2",
+     "p086-t3",
+     "p086-t4",
+     "p086-v1",
+     "p086-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p086-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p086-t4",
+   "p087-t1",
+   "p086-t1",
+   "p086-t3",
+   "p010-t3",
+   "p039-t1",
+   "p086-t2",
+   "p086-v1",
+   "p086-v2"
+  ],
+  "cited_pages": [
+   86
+  ],
+  "usage": {
+   "in": 7454,
+   "out": 194,
+   "llm_calls": 3,
+   "verifier_in": 978,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 6.4,
+  "question_retries": 1,
+  "page_hit1": false,
+  "page_hit3": false,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-T2",
+  "group": "table",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "How much silver did Mexico's mines produce in 2023, and what was the world total silver mine production?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p167-t1",
+    "page": 167
+   },
+   {
+    "rank": 2,
+    "id": "p166-t1",
+    "page": 166
+   },
+   {
+    "rank": 3,
+    "id": "p167-t2",
+    "page": 167
+   },
+   {
+    "rank": 4,
+    "id": "p111-t2",
+    "page": 111
+   },
+   {
+    "rank": 5,
+    "id": "p167-v1",
+    "page": 167
+   },
+   {
+    "rank": 6,
+    "id": "p166-t5",
+    "page": 166
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "verifier_rejected",
+  "rejected_answer": "In 2023, Mexico's mines produced an estimated 6,400 metric tons of silver [p167-t1]. The world total silver mine production for 2023 was estimated at 26,000 metric tons [p167-t1].",
+  "abstain_note": "Not enough verified evidence in the report.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "silver mine production 2023 Mexico world total",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p167-t1",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p167-v1",
+      "page": 167,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03105
+     },
+     {
+      "rank": 3,
+      "id": "p111-t2",
+      "page": 111,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03037
+     },
+     {
+      "rank": 4,
+      "id": "p166-t1",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     },
+     {
+      "rank": 5,
+      "id": "p167-t2",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02863
+     },
+     {
+      "rank": 6,
+      "id": "p087-t2",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02727
+     }
+    ],
+    "returned_ids": [
+     "p167-t1",
+     "p167-v1",
+     "p111-t2",
+     "p166-t1",
+     "p167-t2",
+     "p087-t2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p167-t1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 1,
+    "verdict": "unsupported",
+    "problems": [
+     "The draft answer claims Mexico produced 6,400 metric tons of silver, but the provided passage [p167-t1] does not contain this figure. The passage mentions Mexico in the context of increased production but does not provide a specific tonnage for Mexico."
+    ]
+   },
+   {
+    "event": "verify_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p167-t1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "unsupported",
+    "problems": [
+     "The draft answer claims Mexico produced 6,400 metric tons of silver, but the provided passage [p167-t1] does not contain this figure. The passage mentions Mexico in the context of increased production but does not provide a specific tonnage for Mexico."
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p167-t1",
+   "p167-v1",
+   "p111-t2",
+   "p166-t1",
+   "p167-t2",
+   "p087-t2"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 7146,
+   "out": 358,
+   "llm_calls": 3,
+   "verifier_in": 1058,
+   "verifier_out": 138,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 8.4,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": false
+ },
+ {
+  "query_id": "AT3-T3",
+  "group": "table",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "How much tungsten in ores and concentrates did the United States import for consumption in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p194-t3",
+    "page": 194
+   },
+   {
+    "rank": 2,
+    "id": "p194-t2",
+    "page": 194
+   },
+   {
+    "rank": 3,
+    "id": "p195-t1",
+    "page": 195
+   },
+   {
+    "rank": 4,
+    "id": "p194-t1",
+    "page": 194
+   },
+   {
+    "rank": 5,
+    "id": "p104-t3",
+    "page": 104
+   },
+   {
+    "rank": 6,
+    "id": "p010-t1",
+    "page": 10
+   }
+  ],
+  "status": "answered",
+  "answer": "The United States imported 1,500 metric tons of tungsten in ores and concentrates for consumption in 2023 [p194-v1].",
+  "citations": [
+   "p194-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "tungsten imports for consumption 2023 ores and concentrates",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p194-t3",
+      "page": 194,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p194-t2",
+      "page": 194,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "p195-t1",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03021
+     },
+     {
+      "rank": 4,
+      "id": "p195-t5",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02848
+     },
+     {
+      "rank": 5,
+      "id": "p194-t4",
+      "page": 194,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02837
+     },
+     {
+      "rank": 6,
+      "id": "p194-v1",
+      "page": 194,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02828
+     }
+    ],
+    "returned_ids": [
+     "p194-t3",
+     "p194-t2",
+     "p195-t1",
+     "p195-t5",
+     "p194-t4",
+     "p194-v1"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "The United States imported 1,500 metric tons of tungsten in ores and concentrates for consumption in 2023 [p194-v1]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p194-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p194-t3",
+   "p194-t2",
+   "p195-t1",
+   "p195-t5",
+   "p194-t4",
+   "p194-v1"
+  ],
+  "cited_pages": [
+   194
+  ],
+  "usage": {
+   "in": 7165,
+   "out": 166,
+   "llm_calls": 3,
+   "verifier_in": 1131,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 88.1,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-T4",
+  "group": "table",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "What were yearend silver stocks held at the New York Commodities Exchange (COMEX) in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p166-t3",
+    "page": 166
+   },
+   {
+    "rank": 2,
+    "id": "p068-t3",
+    "page": 68
+   },
+   {
+    "rank": 3,
+    "id": "p166-v1",
+    "page": 166
+   },
+   {
+    "rank": 4,
+    "id": "p069-t2",
+    "page": 69
+   },
+   {
+    "rank": 5,
+    "id": "p188-t2",
+    "page": 188
+   },
+   {
+    "rank": 6,
+    "id": "p167-t1",
+    "page": 167
+   }
+  ],
+  "status": "answered",
+  "answer": "Yearend silver stocks held at the New York Commodities Exchange (COMEX) in 2023 were 8,400 metric tons [p166-v1].",
+  "citations": [
+   "p166-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "silver COMEX stocks 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p166-t3",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p167-t1",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03031
+     },
+     {
+      "rank": 3,
+      "id": "p166-t1",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0303
+     },
+     {
+      "rank": 4,
+      "id": "p068-t3",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03016
+     },
+     {
+      "rank": 5,
+      "id": "p166-v1",
+      "page": 166,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03002
+     },
+     {
+      "rank": 6,
+      "id": "p069-t2",
+      "page": 69,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02973
+     }
+    ],
+    "returned_ids": [
+     "p166-t3",
+     "p167-t1",
+     "p166-t1",
+     "p068-t3",
+     "p166-v1",
+     "p069-t2"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Yearend silver stocks held at the New York Commodities Exchange (COMEX) in 2023 were 8,400 metric tons [p166-v1]."
+   },
+   {
+    "event": "view_page",
+    "turn": 2,
+    "page": 166,
+    "ids": [
+     "p166-t1",
+     "p166-t2",
+     "p166-t3",
+     "p166-t4",
+     "p166-t5",
+     "p166-v1",
+     "p166-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p166-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p166-t3",
+   "p167-t1",
+   "p166-t1",
+   "p068-t3",
+   "p166-v1",
+   "p069-t2",
+   "p166-t2",
+   "p166-t4",
+   "p166-t5",
+   "p166-v2"
+  ],
+  "cited_pages": [
+   166
+  ],
+  "usage": {
+   "in": 11677,
+   "out": 185,
+   "llm_calls": 4,
+   "verifier_in": 1013,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 7.6,
+  "question_retries": 1,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-T5",
+  "group": "table",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "According to Table 2, what was the capacity utilization of metals mining in 2023, and what was it in 2019?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p013-v2",
+    "page": 13
+   },
+   {
+    "rank": 2,
+    "id": "p010-t3",
+    "page": 10
+   },
+   {
+    "rank": 3,
+    "id": "p013-t2",
+    "page": 13
+   },
+   {
+    "rank": 4,
+    "id": "p013-v1",
+    "page": 13
+   },
+   {
+    "rank": 5,
+    "id": "p013-t1",
+    "page": 13
+   },
+   {
+    "rank": 6,
+    "id": "p059-t2",
+    "page": 59
+   }
+  ],
+  "status": "answered",
+  "answer": "According to Table 2, \"U.S. Mineral-Related Economic Trends,\" the capacity utilization for metals mining was 59% in 2023 and 68% in 2019 [p013-v2].",
+  "citations": [
+   "p013-v2"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Table 2 capacity utilization metals mining",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p013-v2",
+      "page": 13,
+      "kind": "visual",
+      "etype": "table",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p010-t3",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 3,
+      "id": "p013-t2",
+      "page": 13,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 4,
+      "id": "p013-t1",
+      "page": 13,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02814
+     },
+     {
+      "rank": 5,
+      "id": "p013-v1",
+      "page": 13,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02703
+     },
+     {
+      "rank": 6,
+      "id": "p105-v1a",
+      "page": 105,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01562
+     }
+    ],
+    "returned_ids": [
+     "p013-v2",
+     "p010-t3",
+     "p013-t2",
+     "p013-t1",
+     "p013-v1",
+     "p105-v1a"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "According to Table 2, \"U.S. Mineral-Related Economic Trends,\" the capacity utilization for metals mining was 59% in 2023 and 68% in 2019 [p013-v2]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p013-v2"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p013-v2",
+   "p010-t3",
+   "p013-t2",
+   "p013-t1",
+   "p013-v1",
+   "p105-v1a"
+  ],
+  "cited_pages": [
+   13
+  ],
+  "usage": {
+   "in": 8933,
+   "out": 212,
+   "llm_calls": 3,
+   "verifier_in": 1264,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 5.7,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-T6",
+  "group": "table",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Which country was the leading gold mine producer in 2023, and how much did it produce?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p039-t1",
+    "page": 39
+   },
+   {
+    "rank": 2,
+    "id": "p086-t1",
+    "page": 86
+   },
+   {
+    "rank": 3,
+    "id": "p086-t4",
+    "page": 86
+   },
+   {
+    "rank": 4,
+    "id": "p010-t2",
+    "page": 10
+   },
+   {
+    "rank": 5,
+    "id": "p087-t2",
+    "page": 87
+   },
+   {
+    "rank": 6,
+    "id": "p063-t1",
+    "page": 63
+   }
+  ],
+  "status": "answered",
+  "answer": "Based on the \"World Mine Production and Reserves\" table in the *Mineral Commodity Summaries 2024*, China was the leading gold mine producer in 2023, with an estimated production of 370 metric tons [p087-v1].",
+  "citations": [
+   "p087-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "gold mine production 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p086-t1",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p086-t4",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03132
+     },
+     {
+      "rank": 3,
+      "id": "p039-t1",
+      "page": 39,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p086-t2",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03054
+     },
+     {
+      "rank": 5,
+      "id": "p010-t3",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03037
+     },
+     {
+      "rank": 6,
+      "id": "p087-t2",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02983
+     }
+    ],
+    "returned_ids": [
+     "p086-t1",
+     "p086-t4",
+     "p039-t1",
+     "p086-t2",
+     "p010-t3",
+     "p087-t2"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 87,
+    "ids": [
+     "p087-t1",
+     "p087-t2",
+     "p087-t3",
+     "p087-t4",
+     "p087-t5",
+     "p087-v1"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Based on the \"World Mine Production and Reserves\" table, the leading gold mine producer in 2023 was China, with an estimated production of 370 metric tons [p087-v1]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p087-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p086-t1",
+   "p086-t4",
+   "p039-t1",
+   "p086-t2",
+   "p010-t3",
+   "p087-t2",
+   "p087-t1",
+   "p087-t3",
+   "p087-t4",
+   "p087-t5",
+   "p087-v1"
+  ],
+  "cited_pages": [
+   87
+  ],
+  "usage": {
+   "in": 11321,
+   "out": 228,
+   "llm_calls": 4,
+   "verifier_in": 883,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 8.8,
+  "question_retries": 1,
+  "page_hit1": false,
+  "page_hit3": false,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-I1",
+  "group": "image",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "In the diagram of the role of nonfuel mineral commodities in the U.S. economy (Figure 1), what were the imports, exports and net imports of processed mineral materials in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p008-v1",
+    "page": 8
+   },
+   {
+    "rank": 2,
+    "id": "p008-t1",
+    "page": 8
+   },
+   {
+    "rank": 3,
+    "id": "p005-t1",
+    "page": 5
+   },
+   {
+    "rank": 4,
+    "id": "p010-t1",
+    "page": 10
+   },
+   {
+    "rank": 5,
+    "id": "p010-t2",
+    "page": 10
+   },
+   {
+    "rank": 6,
+    "id": "p009-t7",
+    "page": 9
+   }
+  ],
+  "status": "answered",
+  "answer": "According to Figure 1, \"The Role of Nonfuel Mineral Commodities in the U.S. Economy (Estimated values in 2023),\" the values for processed mineral materials (such as metals, chemicals, and so forth) in 2023 were as follows [p008-v1]:\n\n*   **Imports:** $203 billion\n*   **Exports:** $101 billion\n*   **Net imports:** $102 billion",
+  "citations": [
+   "p008-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 1 role of nonfuel mineral commodities in the U.S. economy",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p008-v1",
+      "page": 8,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p005-t1",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 3,
+      "id": "p008-t1",
+      "page": 8,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 4,
+      "id": "p010-t2",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03009
+     },
+     {
+      "rank": 5,
+      "id": "p016-v2",
+      "page": 16,
+      "kind": "visual",
+      "etype": "pie chart",
+      "score": 0.02896
+     },
+     {
+      "rank": 6,
+      "id": "p005-t6",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02878
+     }
+    ],
+    "returned_ids": [
+     "p008-v1",
+     "p005-t1",
+     "p008-t1",
+     "p010-t2",
+     "p016-v2",
+     "p005-t6"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 4,
+    "ids": [
+     "p004-t1",
+     "p004-t2"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "According to Figure 1, \"The Role of Nonfuel Mineral Commodities in the U.S. Economy (Estimated values in 2023),\" the values for processed mineral materials (such as metals, chemicals, and so forth) in 2023 were as follows [p008-v1]:\n\n*   **Imports:** $203 billion\n*   **Exports:** $101 billion\n*   **"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p008-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p008-v1",
+   "p005-t1",
+   "p008-t1",
+   "p010-t2",
+   "p016-v2",
+   "p005-t6",
+   "p004-t1",
+   "p004-t2"
+  ],
+  "cited_pages": [
+   8
+  ],
+  "usage": {
+   "in": 11253,
+   "out": 277,
+   "llm_calls": 4,
+   "verifier_in": 1006,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 10.0,
+  "question_retries": 1,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-I2",
+  "group": "image",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "In Figure 14 (relation between byproduct elements and host metals), which byproduct element is placed next to the aluminum (Al) host, closest to the inner circle?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p033-v1",
+    "page": 33
+   },
+   {
+    "rank": 2,
+    "id": "p033-t1",
+    "page": 33
+   },
+   {
+    "rank": 3,
+    "id": "p028-v1",
+    "page": 28
+   },
+   {
+    "rank": 4,
+    "id": "p026-t2",
+    "page": 26
+   },
+   {
+    "rank": 5,
+    "id": "p028-t1",
+    "page": 28
+   },
+   {
+    "rank": 6,
+    "id": "p017-v1",
+    "page": 17
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "verifier_rejected",
+  "rejected_answer": "Based on Figure 14, \"Relation Between Byproduct Elements and Host Metals,\" the byproduct elements associated with the aluminum (Al) host metal are gallium (Ga), zirconium (Zr), and hafnium (Hf) [p033-v1]. The figure is a radial circular chart where the distance from the inner circle represents the percentage of primary production originating with the host metal [p033-v1]. As shown in the chart, gallium (Ga) is the byproduct element placed closest to the inner circle within the aluminum (Al) sector [p033-v1].",
+  "abstain_note": "Not enough verified evidence in the report.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 14 byproduct elements and host metals",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p033-v1",
+      "page": 33,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p033-t1",
+      "page": 33,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p026-t2",
+      "page": 26,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p005-t7",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0308
+     },
+     {
+      "rank": 5,
+      "id": "p017-v1",
+      "page": 17,
+      "kind": "visual",
+      "etype": "map",
+      "score": 0.02879
+     },
+     {
+      "rank": 6,
+      "id": "p213-t1",
+      "page": 213,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02844
+     }
+    ],
+    "returned_ids": [
+     "p033-v1",
+     "p033-t1",
+     "p026-t2",
+     "p005-t7",
+     "p017-v1",
+     "p213-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 29,
+    "ids": [
+     "p029-t1",
+     "p029-t2",
+     "p029-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 2,
+    "page": 33,
+    "ids": [
+     "p033-t1",
+     "p033-t2",
+     "p033-v1"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Based on Figure 14, \"Relation Between Byproduct Elements and Host Metals,\" the byproduct element placed next to the aluminum (Al) host that is closest to the inner circle is gallium (Ga) [p033-v1]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": false,
+    "citations": [
+     "p033-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 4,
+    "verdict": "unsupported",
+    "problems": [
+     "The provided text lists the byproduct elements for Al as 'Ga, Zr, Hf' but does not provide the specific radial ordering or distance information required to determine which one is 'closest to the inner circle'. The draft answer makes an inference about the relative positioning ('Gallium (Ga) is positioned closest to the inner circle') that is not supported by the provided text."
+    ]
+   },
+   {
+    "event": "verify_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 5,
+    "abstain": false,
+    "citations": [
+     "p033-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 5,
+    "verdict": "unsupported",
+    "problems": [
+     "The cited passage lists the byproduct elements for Al as 'Ga, Zr, Hf' but does not specify their relative order or distance from the inner circle. The draft answer claims 'gallium (Ga) is the byproduct element placed closest to the inner circle,' which is not supported by the provided text."
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 2,
+  "context_ids": [
+   "p033-v1",
+   "p033-t1",
+   "p026-t2",
+   "p005-t7",
+   "p017-v1",
+   "p213-t1",
+   "p029-t1",
+   "p029-t2",
+   "p029-v1",
+   "p033-t2"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 23136,
+   "out": 663,
+   "llm_calls": 6,
+   "verifier_in": 1828,
+   "verifier_out": 163,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 57.4,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": false
+ },
+ {
+  "query_id": "AT3-I3",
+  "group": "image",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "On the map in Figure 7 (value of crushed stone produced in 2023, by State), which State's value is shown as withheld?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p019-v1",
+    "page": 19
+   },
+   {
+    "rank": 2,
+    "id": "p019-v2",
+    "page": 19
+   },
+   {
+    "rank": 3,
+    "id": "p019-t1",
+    "page": 19
+   },
+   {
+    "rank": 4,
+    "id": "p020-v1",
+    "page": 20
+   },
+   {
+    "rank": 5,
+    "id": "p010-t5",
+    "page": 10
+   },
+   {
+    "rank": 6,
+    "id": "p016-v1",
+    "page": 16
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "verifier_rejected",
+  "rejected_answer": "On the map in Figure 7, the State whose value of crushed stone produced in 2023 is shown as withheld (indicated by the gray color) is Louisiana [p019-v1]. This is determined by observing the map on page 19, where Louisiana is the only state shaded in gray, which corresponds to the \"Withheld\" category in the legend [p019-v1].",
+  "abstain_note": "Not enough verified evidence in the report.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 7 value of crushed stone produced in 2023 by State",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p019-v1",
+      "page": 19,
+      "kind": "visual",
+      "etype": "map",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p019-v2",
+      "page": 19,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 3,
+      "id": "p019-t1",
+      "page": 19,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 4,
+      "id": "p010-t5",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 5,
+      "id": "p170-t2",
+      "page": 170,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02885
+     },
+     {
+      "rank": 6,
+      "id": "p020-v1",
+      "page": 20,
+      "kind": "visual",
+      "etype": "map",
+      "score": 0.02881
+     }
+    ],
+    "returned_ids": [
+     "p019-v1",
+     "p019-v2",
+     "p019-t1",
+     "p010-t5",
+     "p170-t2",
+     "p020-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 19,
+    "ids": [
+     "p019-t1",
+     "p019-v1",
+     "p019-v2"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Based on the map in Figure 7, the State whose value of crushed stone produced in 2023 is shown as withheld (indicated by the gray color) is Louisiana [p019-v1]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p019-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "unsupported",
+    "problems": [
+     "The cited passage describes the map legend (including the 'Withheld (gray)' category) but does not list or identify which specific states are colored gray on the map."
+    ]
+   },
+   {
+    "event": "verify_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": false,
+    "citations": [
+     "p019-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 4,
+    "verdict": "unsupported",
+    "problems": [
+     "The provided passage [p019-v1] describes the legend and the map's purpose but does not list or identify which specific state is colored gray (withheld). The draft answer makes a claim about Louisiana that is not present in the provided text."
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p019-v1",
+   "p019-v2",
+   "p019-t1",
+   "p010-t5",
+   "p170-t2",
+   "p020-v1"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 14804,
+   "out": 287,
+   "llm_calls": 5,
+   "verifier_in": 1058,
+   "verifier_out": 114,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 62.7,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": false
+ },
+ {
+  "query_id": "AT3-I4",
+  "group": "image",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "In the periodic-table figure of 20-year net import reliance trends (Figure 9), which of aluminum (Al), silicon (Si) and phosphorus (P) is shown with a blue net-import-reliance graph?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p028-v1",
+    "page": 28
+   },
+   {
+    "rank": 2,
+    "id": "p028-t1",
+    "page": 28
+   },
+   {
+    "rank": 3,
+    "id": "p011-v1a",
+    "page": 11
+   },
+   {
+    "rank": 4,
+    "id": "p011-v1c",
+    "page": 11
+   },
+   {
+    "rank": 5,
+    "id": "p138-v1",
+    "page": 138
+   },
+   {
+    "rank": 6,
+    "id": "p122-v1",
+    "page": 122
+   }
+  ],
+  "status": "answered",
+  "answer": "Based on Figure 9, \"20-Year Trend of U.S. Net Import Reliance for Critical Minerals\" on page 28, **aluminum (Al)** is shown with a blue net-import-reliance graph [p028-v1]. Silicon (Si) and phosphorus (P) are not shown with blue graphs; their boxes are unshaded [p028-v1].",
+  "citations": [
+   "p028-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 9 periodic-table net import reliance trends",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p028-v1",
+      "page": 28,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p028-t1",
+      "page": 28,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p122-v1",
+      "page": 122,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02996
+     },
+     {
+      "rank": 4,
+      "id": "p005-t1",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0275
+     },
+     {
+      "rank": 5,
+      "id": "p011-v1a",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02731
+     },
+     {
+      "rank": 6,
+      "id": "p005-t6",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02699
+     }
+    ],
+    "returned_ids": [
+     "p028-v1",
+     "p028-t1",
+     "p122-v1",
+     "p005-t1",
+     "p011-v1a",
+     "p005-t6"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 24,
+    "ids": [
+     "p024-t1",
+     "p024-t2",
+     "p024-t3",
+     "p024-t4",
+     "p024-t5",
+     "p024-t6",
+     "p024-t7",
+     "p024-t8"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 2,
+    "page": 28,
+    "ids": [
+     "p028-t1",
+     "p028-v1"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Based on Figure 9, \"20-Year Trend of U.S. Net Import Reliance for Critical Minerals,\" on page 28, **aluminum (Al)** is shown with a blue net-import-reliance graph [p028-v1]. Silicon (Si) and phosphorus (P) are not shown with blue graphs; their boxes are unshaded [p028-v1]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": false,
+    "citations": [
+     "p028-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 4,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 2,
+  "context_ids": [
+   "p028-v1",
+   "p028-t1",
+   "p122-v1",
+   "p005-t1",
+   "p011-v1a",
+   "p005-t6",
+   "p024-t1",
+   "p024-t2",
+   "p024-t3",
+   "p024-t4",
+   "p024-t5",
+   "p024-t6",
+   "p024-t7",
+   "p024-t8"
+  ],
+  "cited_pages": [
+   28
+  ],
+  "usage": {
+   "in": 19379,
+   "out": 344,
+   "llm_calls": 5,
+   "verifier_in": 888,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 66.3,
+  "question_retries": 1,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-I5",
+  "group": "image",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "On the world map of leading import sources (Figure 3), in which class (number of commodities) is Australia shown?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p012-v1",
+    "page": 12
+   },
+   {
+    "rank": 2,
+    "id": "p012-t1",
+    "page": 12
+   },
+   {
+    "rank": 3,
+    "id": "p011-v1a",
+    "page": 11
+   },
+   {
+    "rank": 4,
+    "id": "p010-t2",
+    "page": 10
+   },
+   {
+    "rank": 5,
+    "id": "p196-v2",
+    "page": 196
+   },
+   {
+    "rank": 6,
+    "id": "p005-t1",
+    "page": 5
+   }
+  ],
+  "status": "answered",
+  "answer": "On the world map of leading import sources (Figure 3), Australia is shown in the class of **4 to 6** commodities [p012-v1, p012-t1].",
+  "citations": [
+   "p012-v1",
+   "p012-t1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 3 world map of leading import sources",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p012-v1",
+      "page": 12,
+      "kind": "visual",
+      "etype": "map",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p011-v1a",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.03041
+     },
+     {
+      "rank": 3,
+      "id": "p012-t1",
+      "page": 12,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03037
+     },
+     {
+      "rank": 4,
+      "id": "p005-t1",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 5,
+      "id": "p016-v1",
+      "page": 16,
+      "kind": "visual",
+      "etype": "map",
+      "score": 0.01587
+     },
+     {
+      "rank": 6,
+      "id": "p011-v1c",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.01562
+     }
+    ],
+    "returned_ids": [
+     "p012-v1",
+     "p011-v1a",
+     "p012-t1",
+     "p005-t1",
+     "p016-v1",
+     "p011-v1c"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "On the world map of leading import sources (Figure 3), Australia is shown in the class of **4 to 6** commodities [p012-v1, p012-t1]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p012-v1",
+     "p012-t1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p012-v1",
+   "p011-v1a",
+   "p012-t1",
+   "p005-t1",
+   "p016-v1",
+   "p011-v1c"
+  ],
+  "cited_pages": [
+   12
+  ],
+  "usage": {
+   "in": 7608,
+   "out": 194,
+   "llm_calls": 3,
+   "verifier_in": 1321,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 60.6,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-C1",
+  "group": "chart",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "In Figure 11, which commodity had the largest percentage increase in U.S. consumption from 2022 to 2023, and roughly how large was it?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p030-v1",
+    "page": 30
+   },
+   {
+    "rank": 2,
+    "id": "p010-t1",
+    "page": 10
+   },
+   {
+    "rank": 3,
+    "id": "p030-t2",
+    "page": 30
+   },
+   {
+    "rank": 4,
+    "id": "p133-t2",
+    "page": 133
+   },
+   {
+    "rank": 5,
+    "id": "p009-t2",
+    "page": 9
+   },
+   {
+    "rank": 6,
+    "id": "p010-t2",
+    "page": 10
+   }
+  ],
+  "status": "answered",
+  "answer": "Based on Figure 11, \"Change in U.S. Consumption of Nonfuel Mineral Commodities From 2022 to 2023,\" the commodities with the largest percentage increase in U.S. consumption were platinum and indium, both of which experienced an increase of roughly 50% [p030-v1].",
+  "citations": [
+   "p030-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 11",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p030-v1",
+      "page": 30,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p030-t1",
+      "page": 30,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03062
+     },
+     {
+      "rank": 3,
+      "id": "p005-t6",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03048
+     },
+     {
+      "rank": 4,
+      "id": "p005-t7",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02879
+     },
+     {
+      "rank": 5,
+      "id": "p011-v1c",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02758
+     },
+     {
+      "rank": 6,
+      "id": "p011-v1b",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02553
+     }
+    ],
+    "returned_ids": [
+     "p030-v1",
+     "p030-t1",
+     "p005-t6",
+     "p005-t7",
+     "p011-v1c"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 30,
+    "ids": [
+     "p030-t1",
+     "p030-t2",
+     "p030-v1"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Based on Figure 11, the commodity with the largest percentage increase in U.S. consumption from 2022 to 2023 was indium, which had an increase of roughly 50% [p030-v1]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p030-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "unsupported",
+    "problems": [
+     "The draft answer identifies Indium as having the largest percentage increase, but the provided data shows that both Platinum and Indium are listed at ~50%. Therefore, the answer is incomplete as it fails to mention Platinum, which shares the largest increase."
+    ]
+   },
+   {
+    "event": "verify_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": false,
+    "citations": [
+     "p030-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 4,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p030-v1",
+   "p030-t1",
+   "p005-t6",
+   "p005-t7",
+   "p011-v1c",
+   "p030-t2"
+  ],
+  "cited_pages": [
+   30
+  ],
+  "usage": {
+   "in": 17463,
+   "out": 424,
+   "llm_calls": 5,
+   "verifier_in": 2678,
+   "verifier_out": 75,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 31.8,
+  "question_retries": 1,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-C2",
+  "group": "chart",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "In the bar chart of Figure 7, which States had a crushed stone production value of more than $1,000 million in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p019-v1",
+    "page": 19
+   },
+   {
+    "rank": 2,
+    "id": "p019-v2",
+    "page": 19
+   },
+   {
+    "rank": 3,
+    "id": "p010-t5",
+    "page": 10
+   },
+   {
+    "rank": 4,
+    "id": "p010-t4",
+    "page": 10
+   },
+   {
+    "rank": 5,
+    "id": "p019-t1",
+    "page": 19
+   },
+   {
+    "rank": 6,
+    "id": "p170-t1",
+    "page": 170
+   }
+  ],
+  "status": "answered",
+  "answer": "Based on the bar chart in Figure 7, the States that had a crushed stone production value of more than $1,000 million in 2023 are Texas, Florida, Georgia, Pennsylvania, North Carolina, Tennessee, and Virginia [p019-v2]. This is confirmed by the report text, which notes that these seven States produced more than $1 billion worth of crushed stone in 2023 [p010-t5].",
+  "citations": [
+   "p010-t5",
+   "p019-v2"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 7 crushed stone production value 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p019-v1",
+      "page": 19,
+      "kind": "visual",
+      "etype": "map",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p019-v2",
+      "page": 19,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 3,
+      "id": "p019-t1",
+      "page": 19,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 4,
+      "id": "p009-t1",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03055
+     },
+     {
+      "rank": 5,
+      "id": "p010-t5",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03037
+     },
+     {
+      "rank": 6,
+      "id": "p170-t2",
+      "page": 170,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02951
+     }
+    ],
+    "returned_ids": [
+     "p019-v1",
+     "p019-v2",
+     "p019-t1",
+     "p009-t1",
+     "p010-t5",
+     "p170-t2"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 19,
+    "ids": [
+     "p019-t1",
+     "p019-v1",
+     "p019-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p010-t5",
+     "p019-v2"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p019-v1",
+   "p019-v2",
+   "p019-t1",
+   "p009-t1",
+   "p010-t5",
+   "p170-t2"
+  ],
+  "cited_pages": [
+   10,
+   19
+  ],
+  "usage": {
+   "in": 7286,
+   "out": 279,
+   "llm_calls": 3,
+   "verifier_in": 1150,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 7.5,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-C3",
+  "group": "chart",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "In Figure 10, what were the 1-year price change (2022 to 2023) and the 5-year CAGR (2019 to 2023) for neodymium oxide?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p029-v1",
+    "page": 29
+   },
+   {
+    "rank": 2,
+    "id": "p025-t7",
+    "page": 25
+   },
+   {
+    "rank": 3,
+    "id": "p029-t2",
+    "page": 29
+   },
+   {
+    "rank": 4,
+    "id": "p025-t6",
+    "page": 25
+   },
+   {
+    "rank": 5,
+    "id": "p030-v1",
+    "page": 30
+   },
+   {
+    "rank": 6,
+    "id": "p149-t1",
+    "page": 149
+   }
+  ],
+  "status": "answered",
+  "answer": "Based on Figure 10, \"Estimated 1-Year Percent Change and 5-Year Compound Annual Growth Rate (CAGR) in Prices of Critical Minerals,\" the values for neodymium oxide (99.5% minimum) are as follows:\n\n*   **1-year price change (2022 to 2023):** -40% [p029-v1]\n*   **5-year CAGR (2019 to 2023):** 15% [p029-v1]",
+  "citations": [
+   "p029-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 10",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p029-v1",
+      "page": 29,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p005-t6",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03041
+     },
+     {
+      "rank": 3,
+      "id": "p005-t7",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     },
+     {
+      "rank": 4,
+      "id": "p031-v1",
+      "page": 31,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02921
+     },
+     {
+      "rank": 5,
+      "id": "p030-v1",
+      "page": 30,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02762
+     },
+     {
+      "rank": 6,
+      "id": "p213-t1",
+      "page": 213,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02699
+     }
+    ],
+    "returned_ids": [
+     "p029-v1",
+     "p005-t6",
+     "p005-t7",
+     "p031-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p029-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 1,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p029-v1",
+   "p005-t6",
+   "p005-t7",
+   "p031-v1"
+  ],
+  "cited_pages": [
+   29
+  ],
+  "usage": {
+   "in": 4720,
+   "out": 292,
+   "llm_calls": 2,
+   "verifier_in": 1403,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 4.6,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-C4",
+  "group": "chart",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "In Figure 13, which commodity has the largest share of its total old scrap value coming from old scrap imports, and approximately how large is that share?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p032-v1",
+    "page": 32
+   },
+   {
+    "rank": 2,
+    "id": "p025-t9",
+    "page": 25
+   },
+   {
+    "rank": 3,
+    "id": "p032-t1",
+    "page": 32
+   },
+   {
+    "rank": 4,
+    "id": "p025-t8",
+    "page": 25
+   },
+   {
+    "rank": 5,
+    "id": "p026-t1",
+    "page": 26
+   },
+   {
+    "rank": 6,
+    "id": "p008-t1",
+    "page": 8
+   }
+  ],
+  "status": "answered",
+  "answer": "Based on Figure 13, the commodity with the largest share of its total old scrap value coming from old scrap imports is titanium [p032-v1]. The orange bar representing old scrap imports for titanium spans from approximately 3% to 83% on the chart, indicating that this share is approximately 80% [p032-v1].",
+  "citations": [
+   "p032-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 13",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p032-v1",
+      "page": 32,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p012-t1",
+      "page": 12,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "p011-v1c",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.0264
+     },
+     {
+      "rank": 4,
+      "id": "p011-v1b",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02532
+     },
+     {
+      "rank": 5,
+      "id": "p213-v1",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.02473
+     },
+     {
+      "rank": 6,
+      "id": "p031-t1",
+      "page": 31,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     }
+    ],
+    "returned_ids": [
+     "p032-v1",
+     "p012-t1",
+     "p011-v1c",
+     "p011-v1b"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 32,
+    "ids": [
+     "p032-t1",
+     "p032-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p032-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p032-v1",
+   "p012-t1",
+   "p011-v1c",
+   "p011-v1b",
+   "p032-t1"
+  ],
+  "cited_pages": [
+   32
+  ],
+  "usage": {
+   "in": 8579,
+   "out": 222,
+   "llm_calls": 3,
+   "verifier_in": 1020,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 121.8,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-C5",
+  "group": "chart",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "In Figure 2, what was the 2023 U.S. net import reliance for bauxite, and what were its leading import sources?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p011-v1a",
+    "page": 11
+   },
+   {
+    "rank": 2,
+    "id": "p011-v1b",
+    "page": 11
+   },
+   {
+    "rank": 3,
+    "id": "p011-v1d",
+    "page": 11
+   },
+   {
+    "rank": 4,
+    "id": "p028-t1",
+    "page": 28
+   },
+   {
+    "rank": 5,
+    "id": "p028-v1",
+    "page": 28
+   },
+   {
+    "rank": 6,
+    "id": "p010-t1",
+    "page": 10
+   }
+  ],
+  "status": "answered",
+  "answer": "Based on Figure 2, \"2023 U.S. Net Import Reliance,\" the U.S. net import reliance for bauxite in 2023 was >75% [p011-v1a]. The leading import sources for bauxite (2019–22) were Jamaica, Turkey, Guyana, and Australia [p011-v1a].",
+  "citations": [
+   "p011-v1a"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 2 U.S. net import reliance",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p011-v1d",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p011-v1a",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 3,
+      "id": "p011-v1c",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 4,
+      "id": "p094-v1",
+      "page": 94,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02859
+     },
+     {
+      "rank": 5,
+      "id": "p182-v1",
+      "page": 182,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02694
+     },
+     {
+      "rank": 6,
+      "id": "p138-v1",
+      "page": 138,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02604
+     }
+    ],
+    "returned_ids": [
+     "p011-v1d",
+     "p011-v1a",
+     "p011-v1c",
+     "p094-v1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "bauxite 2023 U.S. net import reliance leading import sources",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p028-t1",
+      "page": 28,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p028-v1",
+      "page": 28,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p010-t1",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p005-t1",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03037
+     },
+     {
+      "rank": 5,
+      "id": "p011-v1a",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.0303
+     },
+     {
+      "rank": 6,
+      "id": "p010-t2",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02991
+     }
+    ],
+    "returned_ids": [
+     "p028-t1",
+     "p028-v1",
+     "p010-t1",
+     "p005-t1",
+     "p011-v1a",
+     "p010-t2"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 11,
+    "ids": [
+     "p011-t1",
+     "p011-t2",
+     "p011-t3",
+     "p011-v1a",
+     "p011-v1b",
+     "p011-v1c",
+     "p011-v1d"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p011-v1"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [
+     "p011-v1"
+    ],
+    "missing_inline": []
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p011-v1a"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 1,
+  "context_ids": [
+   "p011-v1d",
+   "p011-v1a",
+   "p011-v1c",
+   "p094-v1",
+   "p028-t1",
+   "p028-v1",
+   "p010-t1",
+   "p005-t1",
+   "p010-t2",
+   "p011-t1",
+   "p011-t2",
+   "p011-t3",
+   "p011-v1b"
+  ],
+  "cited_pages": [
+   11
+  ],
+  "usage": {
+   "in": 18681,
+   "out": 480,
+   "llm_calls": 4,
+   "verifier_in": 2759,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 10.5,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-M1",
+  "group": "multihop",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Compare silver's total old scrap value in Figure 13 with the estimated value of U.S. silver mine production in 2023. How many times larger is the old scrap value?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p032-v1",
+    "page": 32
+   },
+   {
+    "rank": 2,
+    "id": "p032-t1",
+    "page": 32
+   },
+   {
+    "rank": 3,
+    "id": "p166-t1",
+    "page": 166
+   },
+   {
+    "rank": 4,
+    "id": "p025-t9",
+    "page": 25
+   },
+   {
+    "rank": 5,
+    "id": "p025-t8",
+    "page": 25
+   },
+   {
+    "rank": 6,
+    "id": "p166-t3",
+    "page": 166
+   }
+  ],
+  "status": "answered",
+  "answer": "According to Figure 13, the total old scrap value for silver is $4,694 million [p032-v1]. The estimated value of U.S. silver mine production in 2023 was $760 million [p166-t1].\n\nThe old scrap value is approximately 6.2 times larger than the estimated value of U.S. silver mine production ($4,694 million / $760 million ≈ 6.18).",
+  "citations": [
+   "p032-v1",
+   "p166-t1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "\"Figure 13\" silver old scrap",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p032-v1",
+      "page": 32,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p032-t1",
+      "page": 32,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 3,
+      "id": "p025-t9",
+      "page": 25,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0292
+     },
+     {
+      "rank": 4,
+      "id": "p031-t1",
+      "page": 31,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02879
+     },
+     {
+      "rank": 5,
+      "id": "p030-t1",
+      "page": 30,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02837
+     },
+     {
+      "rank": 6,
+      "id": "p166-t3",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02735
+     }
+    ],
+    "returned_ids": [
+     "p032-v1",
+     "p032-t1",
+     "p025-t9",
+     "p031-t1",
+     "p030-t1",
+     "p166-t3"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "\"U.S. silver mine production\" 2023 value",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p166-t1",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p167-t1",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p010-t3",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03102
+     },
+     {
+      "rank": 4,
+      "id": "p025-t2",
+      "page": 25,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02924
+     },
+     {
+      "rank": 5,
+      "id": "p009-t1",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02739
+     },
+     {
+      "rank": 6,
+      "id": "p009-t7",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02661
+     }
+    ],
+    "returned_ids": [
+     "p166-t1",
+     "p167-t1",
+     "p010-t3",
+     "p025-t2",
+     "p009-t1",
+     "p009-t7"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Based on Figure 13, the total old scrap value for silver is $4,694 million [p032-v1]. The estimated value of U.S. silver mine production in 2023 was $760 million [p166-t1].\n\nThe old scrap value is approximately 6.2 times larger than the estimated value of U.S. silver mine production ($4,694 million "
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p032-v1",
+     "p166-t1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 0,
+  "context_ids": [
+   "p032-v1",
+   "p032-t1",
+   "p025-t9",
+   "p031-t1",
+   "p030-t1",
+   "p166-t3",
+   "p166-t1",
+   "p167-t1",
+   "p010-t3",
+   "p025-t2",
+   "p009-t1",
+   "p009-t7"
+  ],
+  "cited_pages": [
+   32,
+   166
+  ],
+  "usage": {
+   "in": 10165,
+   "out": 312,
+   "llm_calls": 3,
+   "verifier_in": 1332,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 6.2,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-M2",
+  "group": "multihop",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "What share of world gold mine production in 2023 came from U.S. mines?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p086-t1",
+    "page": 86
+   },
+   {
+    "rank": 2,
+    "id": "p167-t1",
+    "page": 167
+   },
+   {
+    "rank": 3,
+    "id": "p039-t1",
+    "page": 39
+   },
+   {
+    "rank": 4,
+    "id": "p086-t4",
+    "page": 86
+   },
+   {
+    "rank": 5,
+    "id": "p009-t7",
+    "page": 9
+   },
+   {
+    "rank": 6,
+    "id": "p087-t2",
+    "page": 87
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "verifier_rejected",
+  "rejected_answer": "Based on the \"World Mine Production and Reserves\" table on page 87 of the report, U.S. gold mine production in 2023 was 170 metric tons, and the world total mine production was 3,000 metric tons [p087-t2]. Consequently, U.S. mines accounted for approximately 5.7% of world gold mine production in 2023 (170/3,000 = 0.0567).",
+  "abstain_note": "Not enough verified evidence in the report.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "gold mine production 2023 U.S. world",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p087-t2",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 2,
+      "id": "p039-t1",
+      "page": 39,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03089
+     },
+     {
+      "rank": 3,
+      "id": "p086-t4",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03058
+     },
+     {
+      "rank": 4,
+      "id": "p086-t1",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03021
+     },
+     {
+      "rank": 5,
+      "id": "p010-t3",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03016
+     },
+     {
+      "rank": 6,
+      "id": "p086-t2",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02921
+     }
+    ],
+    "returned_ids": [
+     "p087-t2",
+     "p039-t1",
+     "p086-t4",
+     "p086-t1",
+     "p010-t3",
+     "p086-t2"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 87,
+    "ids": [
+     "p087-t1",
+     "p087-t2",
+     "p087-t3",
+     "p087-t4",
+     "p087-t5",
+     "p087-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": []
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": []
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p087-t2"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "unsupported",
+    "problems": [
+     "The draft answer claims U.S. gold mine production was 170 metric tons, but the provided passage [p087-t2] lists the U.S. production as 170 (implied metric tons, but the table formatting is garbled/misaligned in the provided text snippet). However, the draft answer claims world total mine production was 3,000 metric tons, while the passage [p087-t2] lists 'World total (rounded)' as 3,000, but the column alignment in the provided text is ambiguous and potentially misread (the table shows '3,000' under the 'Mine production' column for the U.S. and '3,000' for the World total, which is contradictory or misaligned). Specifically, the text provided shows 'United States 3,000' which is clearly incorrect based on the draft's premise of 170. The provided text is too garbled to verify the specific numbers 170 and 3,000 as accurate representations of the table's data."
+    ]
+   },
+   {
+    "event": "verify_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": false,
+    "citations": [
+     "p087-t2"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 4,
+    "verdict": "unsupported",
+    "problems": [
+     "The draft answer incorrectly identifies the U.S. gold mine production as 170 metric tons. The provided passage [p087-t2] lists the U.S. gold mine production as 170 (implied metric tons, though the text is fragmented) but the table structure is misread in the draft. Specifically, the passage lists 'United States 170' (implied) and '3,000' as the World total. However, the draft claims the U.S. production was 170 and the world total was 3,000. Looking closely at the provided text snippet: 'United States 170' is not explicitly clear in the jumbled text, but the draft's math (170/3000) uses numbers that do not align with the provided text's 'World total (rounded) 3,000'. The provided text actually lists 'World total (rounded) 3,000' and 'United States 170' (inferred from the draft's claim, but the text snippet provided is garbled: 'United States 3,000 Australia 1112,000...'). The provided text snippet is too garbled to verify the specific number '170' for the United States, as the text shows 'United States 3,000' which is clearly incorrect based on the context of the table headers."
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p087-t2",
+   "p039-t1",
+   "p086-t4",
+   "p086-t1",
+   "p010-t3",
+   "p086-t2",
+   "p087-t1",
+   "p087-t3",
+   "p087-t4",
+   "p087-t5",
+   "p087-v1"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 16851,
+   "out": 718,
+   "llm_calls": 5,
+   "verifier_in": 1363,
+   "verifier_out": 575,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 118.6,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": false
+ },
+ {
+  "query_id": "AT3-M3",
+  "group": "multihop",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Which country is listed first among the leading tungsten import sources in Figure 2, and what share of world tungsten reserves does that country hold?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p011-v1a",
+    "page": 11
+   },
+   {
+    "rank": 2,
+    "id": "p011-v1d",
+    "page": 11
+   },
+   {
+    "rank": 3,
+    "id": "p011-v1c",
+    "page": 11
+   },
+   {
+    "rank": 4,
+    "id": "p195-t2",
+    "page": 195
+   },
+   {
+    "rank": 5,
+    "id": "p195-v1",
+    "page": 195
+   },
+   {
+    "rank": 6,
+    "id": "p195-t1",
+    "page": 195
+   }
+  ],
+  "status": "answered",
+  "answer": "According to Figure 2, \"2023 U.S. Net Import Reliance,\" the leading import sources for tungsten are listed as China, Germany, Bolivia, and Vietnam [p011-v1c]. The country listed first is China.\n\nBased on the \"Mine production and Reserves of Tungsten\" table, China holds 2,300,000 tons of tungsten reserves out of a world total of 4,400,000 tons [p195-v1]. This accounts for approximately 52.3% of the world's tungsten reserves (2,300,000 / 4,400,000 = 0.5227).",
+  "citations": [
+   "p011-v1c",
+   "p195-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "\"Figure 2\" tungsten import sources",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p011-v1a",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p011-v1c",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 3,
+      "id": "p011-v1d",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 4,
+      "id": "p194-t3",
+      "page": 194,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 5,
+      "id": "p194-v1",
+      "page": 194,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03054
+     },
+     {
+      "rank": 6,
+      "id": "p195-t4",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     }
+    ],
+    "returned_ids": [
+     "p011-v1a",
+     "p011-v1c",
+     "p011-v1d",
+     "p194-t3"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "tungsten reserves by country",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p195-t2",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p195-v1",
+      "page": 195,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03151
+     },
+     {
+      "rank": 3,
+      "id": "p195-t3",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02859
+     },
+     {
+      "rank": 4,
+      "id": "p051-v1",
+      "page": 51,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02462
+     },
+     {
+      "rank": 5,
+      "id": "p115-v1",
+      "page": 115,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01587
+     },
+     {
+      "rank": 6,
+      "id": "p195-t5",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p195-t2",
+     "p195-v1",
+     "p195-t3",
+     "p051-v1",
+     "p115-v1",
+     "p195-t5"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Based on Figure 2, \"2023 U.S. Net Import Reliance,\" the leading import sources for tungsten (listed in descending order) are China, Germany, Bolivia, and Vietnam [p011-v1c]. The country listed first is **China**.\n\nAccording to the \"Mine production and Reserves of Tungsten\" table, China holds 2,300,0"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p011-v1c",
+     "p195-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 0,
+  "context_ids": [
+   "p011-v1a",
+   "p011-v1c",
+   "p011-v1d",
+   "p194-t3",
+   "p195-t2",
+   "p195-v1",
+   "p195-t3",
+   "p051-v1",
+   "p115-v1",
+   "p195-t5"
+  ],
+  "cited_pages": [
+   11,
+   195
+  ],
+  "usage": {
+   "in": 11145,
+   "out": 400,
+   "llm_calls": 3,
+   "verifier_in": 3362,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 30.7,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-M4",
+  "group": "multihop",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Using Table 2's 2023 gross domestic product and the value added by major industries that consume processed mineral materials shown in Figure 1, what share of GDP did that value added represent?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p013-v2",
+    "page": 13
+   },
+   {
+    "rank": 2,
+    "id": "p008-v1",
+    "page": 8
+   },
+   {
+    "rank": 3,
+    "id": "p009-t7",
+    "page": 9
+   },
+   {
+    "rank": 4,
+    "id": "p008-t2",
+    "page": 8
+   },
+   {
+    "rank": 5,
+    "id": "p013-t2",
+    "page": 13
+   },
+   {
+    "rank": 6,
+    "id": "p016-t1",
+    "page": 16
+   }
+  ],
+  "status": "answered",
+  "answer": "Based on the 2023 data, the U.S. gross domestic product (GDP) was $27,356 billion [p013-v2]. The value added to the GDP by major industries that consume processed mineral materials was $3,840 billion [p008-v1]. This value added represents approximately 14.0% of the 2023 GDP ($3,840 billion / $27,356 billion = 0.14037).",
+  "citations": [
+   "p008-v1",
+   "p013-v2"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "\"Table 2\" \"Figure 1\" \"gross domestic product\" \"value added by major industries\"",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p013-v2",
+      "page": 13,
+      "kind": "visual",
+      "etype": "table",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p008-v1",
+      "page": 8,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 1.0
+     },
+     {
+      "rank": 3,
+      "id": "p172-v1",
+      "page": 172,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02838
+     },
+     {
+      "rank": 4,
+      "id": "p213-v1",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.02711
+     },
+     {
+      "rank": 5,
+      "id": "p213-t1",
+      "page": 213,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02661
+     },
+     {
+      "rank": 6,
+      "id": "p122-v1",
+      "page": 122,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02581
+     }
+    ],
+    "returned_ids": [
+     "p013-v2",
+     "p008-v1",
+     "p172-v1",
+     "p213-v1",
+     "p213-t1"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Based on the data provided in the report, the 2023 gross domestic product (GDP) was $27,356 billion [p013-v2]. The value added to the GDP by major industries that consume processed mineral materials was $3,840 billion [p008-v1].\n\nThe share of GDP represented by this value added is approximately 14.0"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p008-v1",
+     "p013-v2"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p013-v2",
+   "p008-v1",
+   "p172-v1",
+   "p213-v1",
+   "p213-t1"
+  ],
+  "cited_pages": [
+   8,
+   13
+  ],
+  "usage": {
+   "in": 8457,
+   "out": 308,
+   "llm_calls": 3,
+   "verifier_in": 1957,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 50.3,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-X1",
+  "group": "text",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Which State was the leading gold producer in 2023 and what share did it account for, and which State followed with what share?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p086-t1",
+    "page": 86
+   },
+   {
+    "rank": 2,
+    "id": "p010-t5",
+    "page": 10
+   },
+   {
+    "rank": 3,
+    "id": "p166-t1",
+    "page": 166
+   },
+   {
+    "rank": 4,
+    "id": "p017-v1",
+    "page": 17
+   },
+   {
+    "rank": 5,
+    "id": "p020-v1",
+    "page": 20
+   },
+   {
+    "rank": 6,
+    "id": "p016-v3",
+    "page": 16
+   }
+  ],
+  "status": "answered",
+  "answer": "In 2023, Nevada was the leading gold-producing State, accounting for about 73% of total domestic production [p086-t1]. Alaska followed as the second-leading producer, accounting for about 13% of domestic gold production [p086-t1].",
+  "citations": [
+   "p086-t1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "gold production by state 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p086-t1",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p086-t4",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03055
+     },
+     {
+      "rank": 3,
+      "id": "p086-t2",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02986
+     },
+     {
+      "rank": 4,
+      "id": "p010-t5",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02983
+     },
+     {
+      "rank": 5,
+      "id": "p017-v1",
+      "page": 17,
+      "kind": "visual",
+      "etype": "map",
+      "score": 0.02863
+     },
+     {
+      "rank": 6,
+      "id": "p087-t1",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02826
+     }
+    ],
+    "returned_ids": [
+     "p086-t1",
+     "p086-t4",
+     "p086-t2",
+     "p010-t5",
+     "p017-v1",
+     "p087-t1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p086-t1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 1,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p086-t1",
+   "p086-t4",
+   "p086-t2",
+   "p010-t5",
+   "p017-v1",
+   "p087-t1"
+  ],
+  "cited_pages": [
+   86
+  ],
+  "usage": {
+   "in": 3746,
+   "out": 189,
+   "llm_calls": 2,
+   "verifier_in": 595,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 3.8,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-X2",
+  "group": "text",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "In 2023, what shares of domestic silver use went to physical investment (bars) and to photovoltaics?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p166-t2",
+    "page": 166
+   },
+   {
+    "rank": 2,
+    "id": "p166-t1",
+    "page": 166
+   },
+   {
+    "rank": 3,
+    "id": "p057-t2",
+    "page": 57
+   },
+   {
+    "rank": 4,
+    "id": "p167-t1",
+    "page": 167
+   },
+   {
+    "rank": 5,
+    "id": "p166-t5",
+    "page": 166
+   },
+   {
+    "rank": 6,
+    "id": "p167-t5",
+    "page": 167
+   }
+  ],
+  "status": "answered",
+  "answer": "In 2023, the estimated shares of domestic silver use were 34% for physical investment (bars) and 10% for photovoltaics (PV) [p166-t2].",
+  "citations": [
+   "p166-t2"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "silver domestic use 2023 physical investment photovoltaics",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p166-t2",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p166-t1",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p057-t2",
+      "page": 57,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03101
+     },
+     {
+      "rank": 4,
+      "id": "p167-t1",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03054
+     },
+     {
+      "rank": 5,
+      "id": "p166-t5",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02996
+     },
+     {
+      "rank": 6,
+      "id": "p110-t1",
+      "page": 110,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02705
+     }
+    ],
+    "returned_ids": [
+     "p166-t2",
+     "p166-t1",
+     "p057-t2",
+     "p167-t1",
+     "p166-t5",
+     "p110-t1"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "In 2023, the estimated shares of domestic silver use were 34% for physical investment (bars) and 10% for photovoltaics (PV) [p166-t2]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p166-t2"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p166-t2",
+   "p166-t1",
+   "p057-t2",
+   "p167-t1",
+   "p166-t5",
+   "p110-t1"
+  ],
+  "cited_pages": [
+   166
+  ],
+  "usage": {
+   "in": 5853,
+   "out": 195,
+   "llm_calls": 3,
+   "verifier_in": 540,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 36.6,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-X3",
+  "group": "text",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "Since when has tungsten not been mined commercially in the United States, and what share of U.S. tungsten consumption went to cemented carbide parts?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p194-t1",
+    "page": 194
+   },
+   {
+    "rank": 2,
+    "id": "p195-t3",
+    "page": 195
+   },
+   {
+    "rank": 3,
+    "id": "p195-t1",
+    "page": 195
+   },
+   {
+    "rank": 4,
+    "id": "p195-t4",
+    "page": 195
+   },
+   {
+    "rank": 5,
+    "id": "p195-t2",
+    "page": 195
+   },
+   {
+    "rank": 6,
+    "id": "p194-v2",
+    "page": 194
+   }
+  ],
+  "status": "answered",
+  "answer": "Tungsten has not been mined commercially in the United States since 2015 [p194-t1]. An estimated 60% of the tungsten consumed in the United States is used in cemented carbide parts for cutting and wear-resistant applications [p194-t1].",
+  "citations": [
+   "p194-t1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "tungsten U.S. mine production cemented carbide consumption",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p194-t1",
+      "page": 194,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p195-t3",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p195-t1",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03125
+     },
+     {
+      "rank": 4,
+      "id": "p195-t4",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03016
+     },
+     {
+      "rank": 5,
+      "id": "p195-t2",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     },
+     {
+      "rank": 6,
+      "id": "p194-t2",
+      "page": 194,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02862
+     }
+    ],
+    "returned_ids": [
+     "p194-t1",
+     "p195-t3",
+     "p195-t1",
+     "p195-t4",
+     "p195-t2",
+     "p194-t2"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Tungsten has not been mined commercially in the United States since 2015 [p194-t1]. An estimated 60% of the tungsten consumed in the United States is used in cemented carbide parts for cutting and wear-resistant applications [p194-t1]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p194-t1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p194-t1",
+   "p195-t3",
+   "p195-t1",
+   "p195-t4",
+   "p195-t2",
+   "p194-t2"
+  ],
+  "cited_pages": [
+   194
+  ],
+  "usage": {
+   "in": 5990,
+   "out": 179,
+   "llm_calls": 3,
+   "verifier_in": 568,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 106.2,
+  "question_retries": 0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-X4",
+  "group": "text",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "What happened at an underground silver-lead-zinc mine in Idaho in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p111-t2",
+    "page": 111
+   },
+   {
+    "rank": 2,
+    "id": "p207-t1",
+    "page": 207
+   },
+   {
+    "rank": 3,
+    "id": "p167-t1",
+    "page": 167
+   },
+   {
+    "rank": 4,
+    "id": "p111-t1",
+    "page": 111
+   },
+   {
+    "rank": 5,
+    "id": "p207-t3",
+    "page": 207
+   },
+   {
+    "rank": 6,
+    "id": "p017-v1",
+    "page": 17
+   }
+  ],
+  "status": "answered",
+  "answer": "In August 2023, a fire occurred at an underground silver-lead-zinc mine in Idaho [p111-t2, p167-t1, p207-t1]. No personnel were in the mine at the time of the fire [p111-t2, p167-t1, p207-t1]. As a result, production was suspended for the remainder of 2023 while work was conducted to bypass the damaged area [p111-t2, p167-t1, p207-t1].",
+  "citations": [
+   "p111-t2",
+   "p167-t1",
+   "p207-t1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Idaho silver-lead-zinc mine 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p111-t2",
+      "page": 111,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p207-t1",
+      "page": 207,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p167-t1",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 4,
+      "id": "p111-t1",
+      "page": 111,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03125
+     },
+     {
+      "rank": 5,
+      "id": "p110-t1",
+      "page": 110,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03054
+     },
+     {
+      "rank": 6,
+      "id": "p207-t3",
+      "page": 207,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02859
+     }
+    ],
+    "returned_ids": [
+     "p111-t2",
+     "p207-t1",
+     "p167-t1",
+     "p111-t1",
+     "p110-t1",
+     "p207-t3"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p111-t2",
+     "p167-t1",
+     "p207-t1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 1,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p111-t2",
+   "p207-t1",
+   "p167-t1",
+   "p111-t1",
+   "p110-t1",
+   "p207-t3"
+  ],
+  "cited_pages": [
+   111,
+   167,
+   207
+  ],
+  "usage": {
+   "in": 3245,
+   "out": 354,
+   "llm_calls": 2,
+   "verifier_in": 991,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 55.4,
+  "question_retries": 0,
+  "page_hit1": false,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT3-U1",
+  "group": "unanswerable",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "How many tons of gold did central banks purchase in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p087-t1",
+    "page": 87
+   },
+   {
+    "rank": 2,
+    "id": "p086-t1",
+    "page": 86
+   },
+   {
+    "rank": 3,
+    "id": "p086-t2",
+    "page": 86
+   },
+   {
+    "rank": 4,
+    "id": "p086-t3",
+    "page": 86
+   },
+   {
+    "rank": 5,
+    "id": "p086-t4",
+    "page": 86
+   },
+   {
+    "rank": 6,
+    "id": "p009-t7",
+    "page": 9
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "The USGS Mineral Commodity Summaries 2024 report does not provide the total tonnage of gold purchased by central banks in 2023. It notes that during the first 9 months of 2023, gold holdings in central banks increased by 14% [p087-t1].",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "gold central banks 2023 purchases",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p087-t1",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p086-t4",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "p086-t1",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p086-t3",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02878
+     },
+     {
+      "rank": 5,
+      "id": "p086-t2",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02565
+     },
+     {
+      "rank": 6,
+      "id": "p087-t4",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     }
+    ],
+    "returned_ids": [
+     "p087-t1",
+     "p086-t4",
+     "p086-t1",
+     "p086-t3",
+     "p086-t2",
+     "p087-t4"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": true,
+    "citations": [
+     "p087-t1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p087-t1",
+   "p086-t4",
+   "p086-t1",
+   "p086-t3",
+   "p086-t2",
+   "p087-t4"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 3623,
+   "out": 123,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.0,
+  "seconds": 3.0,
+  "question_retries": 0
+ },
+ {
+  "query_id": "AT3-U2",
+  "group": "unanswerable",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "What was the average 2023 price of tungsten concentrate in China?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p195-t1",
+    "page": 195
+   },
+   {
+    "rank": 2,
+    "id": "p194-t3",
+    "page": 194
+   },
+   {
+    "rank": 3,
+    "id": "p194-t2",
+    "page": 194
+   },
+   {
+    "rank": 4,
+    "id": "p195-t2",
+    "page": 195
+   },
+   {
+    "rank": 5,
+    "id": "p207-t2",
+    "page": 207
+   },
+   {
+    "rank": 6,
+    "id": "p029-t2",
+    "page": 29
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "The Mineral Commodity Summaries 2024 report does not contain the average 2023 price of tungsten concentrate in China. The report provides the \"average in-warehouse Rotterdam\" price for tungsten concentrate in its Salient Statistics table for the United States [p194-t2], but does not list a corresponding price for China.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "tungsten price China 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p195-t1",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p195-t2",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p194-t3",
+      "page": 194,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p194-t2",
+      "page": 194,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02924
+     },
+     {
+      "rank": 5,
+      "id": "p194-t4",
+      "page": 194,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02731
+     },
+     {
+      "rank": 6,
+      "id": "p029-t2",
+      "page": 29,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02727
+     }
+    ],
+    "returned_ids": [
+     "p195-t1",
+     "p195-t2",
+     "p194-t3",
+     "p194-t2",
+     "p194-t4",
+     "p029-t2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": true,
+    "citations": [
+     "p194-t2"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p195-t1",
+   "p195-t2",
+   "p194-t3",
+   "p194-t2",
+   "p194-t4",
+   "p029-t2"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 3616,
+   "out": 128,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.0,
+  "seconds": 35.3,
+  "question_retries": 0
+ },
+ {
+  "query_id": "AT3-U3",
+  "group": "unanswerable",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "How many people were employed at U.S. silver refineries in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p166-t1",
+    "page": 166
+   },
+   {
+    "rank": 2,
+    "id": "p167-t1",
+    "page": 167
+   },
+   {
+    "rank": 3,
+    "id": "p069-t2",
+    "page": 69
+   },
+   {
+    "rank": 4,
+    "id": "p068-t1",
+    "page": 68
+   },
+   {
+    "rank": 5,
+    "id": "p166-t2",
+    "page": 166
+   },
+   {
+    "rank": 6,
+    "id": "p167-t5",
+    "page": 167
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "The Mineral Commodity Summaries 2024 report does not contain information regarding the number of people employed at U.S. silver refineries. While the report notes that there were 24 U.S. refiners that reported production of commercial-grade silver in 2023 [p166-t1], it does not provide employment statistics for these facilities. The report does provide employment data for \"mine and mill\" operations [p166-t3].",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "silver employment",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p167-t3",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p166-t1",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p167-t1",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 4,
+      "id": "p166-t3",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03101
+     },
+     {
+      "rank": 5,
+      "id": "p166-t2",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03068
+     },
+     {
+      "rank": 6,
+      "id": "p167-t2",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03031
+     }
+    ],
+    "returned_ids": [
+     "p167-t3",
+     "p166-t1",
+     "p167-t1",
+     "p166-t3",
+     "p166-t2",
+     "p167-t2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": true,
+    "citations": [
+     "p166-t1",
+     "p166-t3"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p167-t3",
+   "p166-t1",
+   "p167-t1",
+   "p166-t3",
+   "p166-t2",
+   "p167-t2"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 3600,
+   "out": 159,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.0,
+  "seconds": 83.7,
+  "question_retries": 0
+ },
+ {
+  "query_id": "AT3-U4",
+  "group": "unanswerable",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "What share of U.S. gold production came from placer mines in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p086-t1",
+    "page": 86
+   },
+   {
+    "rank": 2,
+    "id": "p086-t4",
+    "page": 86
+   },
+   {
+    "rank": 3,
+    "id": "p009-t7",
+    "page": 9
+   },
+   {
+    "rank": 4,
+    "id": "p086-t2",
+    "page": 86
+   },
+   {
+    "rank": 5,
+    "id": "p167-t1",
+    "page": 167
+   },
+   {
+    "rank": 6,
+    "id": "p207-t1",
+    "page": 207
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "The Mineral Commodity Summaries 2024 report does not provide the specific share or percentage of U.S. gold production that came from placer mines in 2023. It notes that gold was produced at several large placer mines in Alaska and numerous smaller placer mines in Alaska and the Western States, but does not quantify their contribution to the total domestic production of 170 tons [p086-t1].",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "gold production placer mines 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p086-t1",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p086-t4",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 3,
+      "id": "p167-t1",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02854
+     },
+     {
+      "rank": 4,
+      "id": "p086-t2",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02814
+     },
+     {
+      "rank": 5,
+      "id": "p039-t1",
+      "page": 39,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02697
+     },
+     {
+      "rank": 6,
+      "id": "p087-t1",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02589
+     }
+    ],
+    "returned_ids": [
+     "p086-t1",
+     "p086-t4",
+     "p167-t1",
+     "p086-t2",
+     "p039-t1",
+     "p087-t1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": true,
+    "citations": [
+     "p086-t1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p086-t1",
+   "p086-t4",
+   "p167-t1",
+   "p086-t2",
+   "p039-t1",
+   "p087-t1"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 3440,
+   "out": 145,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.0,
+  "seconds": 3.2,
+  "question_retries": 0
+ },
+ {
+  "query_id": "AT3-U5",
+  "group": "unanswerable",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "How many tons of silver did Alaska's mines produce in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p166-t1",
+    "page": 166
+   },
+   {
+    "rank": 2,
+    "id": "p167-t1",
+    "page": 167
+   },
+   {
+    "rank": 3,
+    "id": "p086-t1",
+    "page": 86
+   },
+   {
+    "rank": 4,
+    "id": "p167-t2",
+    "page": 167
+   },
+   {
+    "rank": 5,
+    "id": "p017-v1",
+    "page": 17
+   },
+   {
+    "rank": 6,
+    "id": "p166-t5",
+    "page": 166
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "The USGS Mineral Commodity Summaries 2024 report does not provide the specific tonnage of silver produced by Alaska's mines in 2023. While the report identifies Alaska as the country's leading silver-producing state [p166-t1], it does not break down the total U.S. mine production of 1,000 tons by state [p166-t1].",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "silver production Alaska 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p166-t1",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p167-t1",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p017-v1",
+      "page": 17,
+      "kind": "visual",
+      "etype": "map",
+      "score": 0.03083
+     },
+     {
+      "rank": 4,
+      "id": "p086-t1",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     },
+     {
+      "rank": 5,
+      "id": "p166-t5",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02951
+     },
+     {
+      "rank": 6,
+      "id": "p166-t2",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02944
+     }
+    ],
+    "returned_ids": [
+     "p166-t1",
+     "p167-t1",
+     "p017-v1",
+     "p086-t1",
+     "p166-t5",
+     "p166-t2"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "\"Alaska\" silver production 2023 tons",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p166-t1",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p167-t1",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p086-t1",
+      "page": 86,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03078
+     },
+     {
+      "rank": 4,
+      "id": "p166-t5",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03058
+     },
+     {
+      "rank": 5,
+      "id": "p017-v1",
+      "page": 17,
+      "kind": "visual",
+      "etype": "map",
+      "score": 0.03041
+     },
+     {
+      "rank": 6,
+      "id": "p166-t3",
+      "page": 166,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0275
+     }
+    ],
+    "returned_ids": [
+     "p166-t1",
+     "p167-t1",
+     "p086-t1",
+     "p166-t5",
+     "p017-v1",
+     "p166-t3"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": true,
+    "citations": [
+     "p166-t1"
+    ]
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 0,
+  "context_ids": [
+   "p166-t1",
+   "p167-t1",
+   "p017-v1",
+   "p086-t1",
+   "p166-t5",
+   "p166-t2",
+   "p166-t3"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 8559,
+   "out": 170,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.0,
+  "seconds": 81.3,
+  "question_retries": 0
+ },
+ {
+  "query_id": "AT3-U6",
+  "group": "unanswerable",
+  "split": "test3",
+  "config": "L4_e5_lite31_figlabels",
+  "model": "gemini-3.1-flash-lite",
+  "question": "What are Burkina Faso's gold reserves?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p087-t2",
+    "page": 87
+   },
+   {
+    "rank": 2,
+    "id": "p087-v1",
+    "page": 87
+   },
+   {
+    "rank": 3,
+    "id": "p086-t4",
+    "page": 86
+   },
+   {
+    "rank": 4,
+    "id": "p087-t5",
+    "page": 87
+   },
+   {
+    "rank": 5,
+    "id": "p039-v1",
+    "page": 39
+   },
+   {
+    "rank": 6,
+    "id": "p214-t7",
+    "page": 214
+   }
+  ],
+  "status": "answered",
+  "answer": "According to the USGS \"Mineral Commodity Summaries 2024,\" gold reserves for Burkina Faso are not available (NA) [p087-v1].",
+  "citations": [
+   "p087-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Burkina Faso gold reserves",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p087-t2",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p087-v1",
+      "page": 87,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p039-v1",
+      "page": 39,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02735
+     },
+     {
+      "rank": 4,
+      "id": "p139-t2",
+      "page": 139,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     },
+     {
+      "rank": 5,
+      "id": "p215-t1",
+      "page": 215,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     },
+     {
+      "rank": 6,
+      "id": "p067-v1",
+      "page": 67,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01562
+     }
+    ],
+    "returned_ids": [
+     "p087-t2",
+     "p087-v1",
+     "p039-v1",
+     "p139-t2",
+     "p215-t1",
+     "p067-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p087-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 1,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p087-t2",
+   "p087-v1",
+   "p039-v1",
+   "p139-t2",
+   "p215-t1",
+   "p067-v1"
+  ],
+  "cited_pages": [
+   87
+  ],
+  "usage": {
+   "in": 4886,
+   "out": 123,
+   "llm_calls": 2,
+   "verifier_in": 847,
+   "verifier_out": 12,
+   "verifier_cost": 0.0
+  },
+  "cost_usd": 0.0,
+  "seconds": 41.4,
+  "question_retries": 0
+ }
+]
