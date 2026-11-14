@@ -10,7 +10,7 @@
 
 ## Pipeline
 1. `src/extract.py` — PyMuPDF lấy text từng trang (216/216); render PNG 150 dpi; `gpt-4.1-mini` (vision) trích **mọi** bảng/biểu đồ/bản đồ/sơ đồ/ảnh có thông tin thành JSON (bảng → markdown đủ hàng/cột; biểu đồ → trục, chú giải, giá trị; bản đồ → lớp chú giải và vùng). 264 phần tử, 0 trang lỗi parse, $0.50. Cache: `extracted/vision/pNNN.json` (đối chiếu được với trang gốc).
-2. `src/build_index.py` — 1,270 chunk: 987 text (≤1000 ký tự, overlap 150) + 283 visual (bảng dài tách theo hàng, lặp header). Mỗi chunk có trang, trang in, chương/hàng hoá, loại phần tử, tiêu đề, vị trí trên trang. Embedding `text-embedding-3-small` (1536 d) → Chroma (cosine) + BM25. Thống kê: [index_stats.json](index_stats.json).
+2. `src/build_index.py` — 1,270 chunk: 987 text (≤1000 ký tự, overlap 150) + 283 visual (bảng dài tách theo hàng, lặp header). Mỗi chunk có trang, trang in, chương/hàng hoá, loại phần tử, tiêu đề, vị trí trên trang. Embedding `text-embedding-3-small` (1536 d) → Chroma (cosine) + BM25. Thống kê: [index_stats.json](index_stats.json) (OpenAI, dùng cho dev/test lần 1); index e5 dùng cho test2: [index_stats_e5.json](index_stats_e5.json).
 3. `src/rag.py` — retriever dense / BM25 / hybrid RRF; tra theo tên "Figure N/Table N" có trong câu hỏi; agent với `search_report`, `view_page` (gửi ảnh trang gốc cho model đối chiếu), `submit_answer`; guard citation; verifier (`gpt-4.1`) kiểm từng khẳng định với đúng các đoạn được cite; câu từ chối chuẩn hoá.
 4. `src/run.py` — chạy cấu hình trên một split, lưu trace (mọi tool call, query, kết quả, ảnh đã xem, verifier, câu trả lời, citation, token, chi phí, thời gian, lỗi) + `review_sheet.md`.
 

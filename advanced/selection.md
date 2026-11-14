@@ -38,8 +38,8 @@ Chosen for test2: **V12_final**. test2 (30 new questions, frozen before this run
 
 test2 could not be run with V12_final: OpenAI credit exhausted (embedding 429 `insufficient_quota`), Gemini embedding
 free tier capped at 1,000 requests/day (index needs 1,270), `gemini-2.5-flash` closed to new users, and
-`gemini-3.5-flash` free tier allows only 20 requests/day (L1 run aborted after a few questions, kept as
-`results/dev/L1_e5_gemini35_aborted_quota/` if present; not used). Same V12 pipeline (hybrid RRF + title lookup + view_page +
+`gemini-3.5-flash` free tier allows only 20 requests/day (L1_e5_gemini35 dev run killed after hitting the
+quota; it produced no output and is not used). Same V12 pipeline (hybrid RRF + title lookup + view_page +
 claim verifier + standardised abstention), changing only the providers:
 
 | Config (dev, 22 q) | Embeddings | Agent + verifier | Dev pass | Unanswerable | LLM cost | Median s/q |
