@@ -59,3 +59,10 @@ inherit the page's Figure label so title lookup finds them; fixes the AT2-C1/AT2
 beats transcription; no items added by analogy; aimed at AT2-C2/AT2-I5). Candidate: L3_e5_lite_figlabels. Selection rule
 (fixed now): choose L3 for test3 only if its dev pass is >= L2's 22/22 minus at most one question; otherwise run L2 on test3.
 The dev run was stopped by the gemini-3.5-flash-lite daily quota; no selection made yet, test3 not run.
+
+### Round 4b — model switch forced by quota (rule written BEFORE running L4 on dev)
+
+gemini-3.5-flash-lite is out of free quota (500/day), so the L3 pipeline is run as L4_e5_lite31_figlabels with
+gemini-3.1-flash-lite (agent + verifier); everything else identical (FIG_LABELS=1, prompt v4). Rule, fixed now:
+run L4 once on dev (22 q) and label by hand; if dev pass >= 21/22, L4 is the config for test3 and test3 is run
+exactly once; otherwise no test3 run is made today and the status stays "not passed". test3 is never used to choose.

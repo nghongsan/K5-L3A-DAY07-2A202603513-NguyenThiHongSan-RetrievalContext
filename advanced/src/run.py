@@ -64,6 +64,11 @@ CONFIGS = {
     "L3_e5_lite_figlabels": Config("L3_e5_lite_figlabels", method="hybrid", title_lookup=True, prompt_v2=True, prompt_v3=True,
                                    prompt_v4=True, fig_labels=True, view_page=True, verify=True, verifier_model="gemini-3.5-flash-lite",
                                    model="gemini-3.5-flash-lite", max_turns=14, clean_abstain=True),
+    # gemini-3.5-flash-lite hit its 500 req/day quota during round 4 -> same L3 pipeline on gemini-3.1-flash-lite
+    "L4_e5_lite31_figlabels": Config("L4_e5_lite31_figlabels", method="hybrid", title_lookup=True, prompt_v2=True, prompt_v3=True,
+                                     prompt_v4=True, fig_labels=True, view_page=True, verify=True,
+                                     verifier_model="gemini-3.1-flash-lite", model="gemini-3.1-flash-lite", max_turns=14,
+                                     clean_abstain=True),
     "L0_e5_text_dense": Config("L0_e5_text_dense", method="dense", kinds=("text",), model="gemini-3.5-flash-lite"),
 }
 
