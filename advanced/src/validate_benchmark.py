@@ -18,7 +18,7 @@ def main():
     doc = fitz.open(ROOT / "advanced" / "raw" / "mcs2024.pdf")
     pages = [norm(p.get_text("text")) for p in doc]
     cnt = collections.Counter((q["split"], q["group"]) for q in b["questions"])
-    for s in ("dev", "test", "test2"):
+    for s in ("dev", "test", "test2", "test3"):
         print(s, {g: cnt[(s, g)] for g in ("table", "image", "chart", "multihop", "text", "unanswerable")},
               "answerable", sum(v for (sp, g), v in cnt.items() if sp == s and g != "unanswerable"),
               "total", sum(v for (sp, g), v in cnt.items() if sp == s))

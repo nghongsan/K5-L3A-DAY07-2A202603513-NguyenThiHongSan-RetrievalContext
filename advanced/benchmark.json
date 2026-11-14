@@ -1313,7 +1313,506 @@
    ],
    "absence_semantic_check": "top-3 hybrid passages read manually; none contains the requested quantity",
    "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT3-T1",
+   "split": "test3",
+   "group": "table",
+   "question": "What was the average gold price in 2022 and in 2023 (dollars per troy ounce)?",
+   "expected_answer": "$1,802 per troy ounce in 2022 and an estimated $1,900 in 2023 (Engelhard average).",
+   "gold": [
+    {
+     "page": 86,
+     "printed_page": 82,
+     "region": "Gold, Salient Statistics, row 'Price, dollars per troy ounce'",
+     "evidence": "Price, dollars per troy ounce5 1,395 1,774 1,801 1,802 1,900"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-T2",
+   "split": "test3",
+   "group": "table",
+   "question": "How much silver did Mexico's mines produce in 2023, and what was the world total silver mine production?",
+   "expected_answer": "Mexico about 6,400 metric tons (2023e); world total about 26,000 metric tons.",
+   "gold": [
+    {
+     "page": 167,
+     "printed_page": 163,
+     "region": "Silver, World Mine Production and Reserves, rows Mexico and World total (rounded), 2023e",
+     "evidence": "Mexico 6,195 6,400 37,000"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-T3",
+   "split": "test3",
+   "group": "table",
+   "question": "How much tungsten in ores and concentrates did the United States import for consumption in 2023?",
+   "expected_answer": "About 1,500 metric tons (tungsten content, 2023e).",
+   "gold": [
+    {
+     "page": 194,
+     "printed_page": 190,
+     "region": "Tungsten, Salient Statistics, Imports for consumption, row 'Ores and concentrates', 2023e",
+     "evidence": "Ores and concentrates 2,760 2,020 1,600 2,130 1,500"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-T4",
+   "split": "test3",
+   "group": "table",
+   "question": "What were yearend silver stocks held at the New York Commodities Exchange (COMEX) in 2023?",
+   "expected_answer": "8,400 metric tons (2023e), down from 9,300 in 2022.",
+   "gold": [
+    {
+     "page": 166,
+     "printed_page": 162,
+     "region": "Silver, Salient Statistics, Stocks yearend, row 'New York Commodities Exchange—COMEX', 2023e",
+     "evidence": "New York Commodities Exchange—COMEX 9,865 12,334 11,064 9,300 8,400"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-T5",
+   "split": "test3",
+   "group": "table",
+   "question": "According to Table 2, what was the capacity utilization of metals mining in 2023, and what was it in 2019?",
+   "expected_answer": "59% in 2023 (estimated) versus 68% in 2019.",
+   "gold": [
+    {
+     "page": 13,
+     "printed_page": 9,
+     "region": "Table 2 (U.S. Mineral-Related Economic Trends), Capacity utilization, row 'Metals' under Mining",
+     "evidence": "Metals 68 66 63 60 59"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-T6",
+   "split": "test3",
+   "group": "table",
+   "question": "Which country was the leading gold mine producer in 2023, and how much did it produce?",
+   "expected_answer": "China, about 370 metric tons (2023e).",
+   "gold": [
+    {
+     "page": 87,
+     "printed_page": 83,
+     "region": "Gold, World Mine Production and Reserves, row China, 2023e",
+     "evidence": "China 372 370 3,000"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-I1",
+   "split": "test3",
+   "group": "image",
+   "question": "In the diagram of the role of nonfuel mineral commodities in the U.S. economy (Figure 1), what were the imports, exports and net imports of processed mineral materials in 2023?",
+   "expected_answer": "Imports $203 billion, exports $101 billion, net imports $102 billion (examples: metals, chemicals, and so forth).",
+   "gold": [
+    {
+     "page": 8,
+     "printed_page": 4,
+     "region": "Figure 1, box 'Net Imports of Processed Mineral Materials'",
+     "evidence": "Imports: $203 billion Exports: $101 billion Net imports: $102 billion"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-I2",
+   "split": "test3",
+   "group": "image",
+   "question": "In Figure 14 (relation between byproduct elements and host metals), which byproduct element is placed next to the aluminum (Al) host, closest to the inner circle?",
+   "expected_answer": "Gallium (Ga) - near the 100% ring of the Al sector.",
+   "gold": [
+    {
+     "page": 33,
+     "printed_page": 29,
+     "region": "Figure 14, Al sector of the outer circle, element nearest the inner circle",
+     "evidence": "Ga placed in the Al sector at the ~100% ring (visual)"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-I3",
+   "split": "test3",
+   "group": "image",
+   "question": "On the map in Figure 7 (value of crushed stone produced in 2023, by State), which State's value is shown as withheld?",
+   "expected_answer": "Louisiana (shown in gray, 'Withheld').",
+   "gold": [
+    {
+     "page": 19,
+     "printed_page": 15,
+     "region": "Figure 7 map, gray State + legend 'Withheld'",
+     "evidence": "Louisiana shaded gray = Withheld (visual)"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-I4",
+   "split": "test3",
+   "group": "image",
+   "question": "In the periodic-table figure of 20-year net import reliance trends (Figure 9), which of aluminum (Al), silicon (Si) and phosphorus (P) is shown with a blue net-import-reliance graph?",
+   "expected_answer": "Only aluminum (Al); Si and P are white (not assessed).",
+   "gold": [
+    {
+     "page": 28,
+     "printed_page": 24,
+     "region": "Figure 9 periodic table, row 3: tiles Al (13), Si (14), P (15)",
+     "evidence": "Al tile blue with graph; Si and P white (visual)"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-I5",
+   "split": "test3",
+   "group": "image",
+   "question": "On the world map of leading import sources (Figure 3), in which class (number of commodities) is Australia shown?",
+   "expected_answer": "4 to 6 commodities.",
+   "gold": [
+    {
+     "page": 12,
+     "printed_page": 8,
+     "region": "Figure 3 world map, Australia shading vs legend 'Number of commodities'",
+     "evidence": "Australia shaded in the 4 to 6 class (visual)"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-C1",
+   "split": "test3",
+   "group": "chart",
+   "question": "In Figure 11, which commodity had the largest percentage increase in U.S. consumption from 2022 to 2023, and roughly how large was it?",
+   "expected_answer": "Indium, about +49% (just under 50). Accept 45-50%.",
+   "gold": [
+    {
+     "page": 30,
+     "printed_page": 26,
+     "region": "Figure 11 bar chart, rightmost bar Indium",
+     "evidence": "Indium bar ~ +49% (visual)"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-C2",
+   "split": "test3",
+   "group": "chart",
+   "question": "In the bar chart of Figure 7, which States had a crushed stone production value of more than $1,000 million in 2023?",
+   "expected_answer": "Seven States: Texas, Florida, Georgia, Pennsylvania, North Carolina, Tennessee and Virginia.",
+   "gold": [
+    {
+     "page": 19,
+     "printed_page": 15,
+     "region": "Figure 7 bar chart (lower left), red bars (>1,000 class)",
+     "evidence": "Texas ~3,000; Florida ~1,690; Georgia ~1,620; Pennsylvania ~1,570; North Carolina ~1,520; Tennessee ~1,130; Virginia ~1,120 (visual)"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-C3",
+   "split": "test3",
+   "group": "chart",
+   "question": "In Figure 10, what were the 1-year price change (2022 to 2023) and the 5-year CAGR (2019 to 2023) for neodymium oxide?",
+   "expected_answer": "1-year change -40%; 5-year CAGR 15%.",
+   "gold": [
+    {
+     "page": 29,
+     "printed_page": 25,
+     "region": "Figure 10, row 'Neodymium, oxide 99.5% minimum'",
+     "evidence": "-40 Neodymium, oxide 99.5% minimum 15"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-C4",
+   "split": "test3",
+   "group": "chart",
+   "question": "In Figure 13, which commodity has the largest share of its total old scrap value coming from old scrap imports, and approximately how large is that share?",
+   "expected_answer": "Titanium, about 80% (imports segment from ~3% to ~82%). Accept 75-82%.",
+   "gold": [
+    {
+     "page": 32,
+     "printed_page": 28,
+     "region": "Figure 13 stacked bar, *Titanium (306), orange segment",
+     "evidence": "Titanium imports ~80% of total old scrap value (visual)"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-C5",
+   "split": "test3",
+   "group": "chart",
+   "question": "In Figure 2, what was the 2023 U.S. net import reliance for bauxite, and what were its leading import sources?",
+   "expected_answer": "More than 75% (>75); Jamaica, Turkey, Guyana, Australia.",
+   "gold": [
+    {
+     "page": 11,
+     "printed_page": 7,
+     "region": "Figure 2, row BAUXITE",
+     "evidence": "BAUXITE >75 Jamaica, Turkey, Guyana, Australia"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-M1",
+   "split": "test3",
+   "group": "multihop",
+   "question": "Compare silver's total old scrap value in Figure 13 with the estimated value of U.S. silver mine production in 2023. How many times larger is the old scrap value?",
+   "expected_answer": "Old scrap $4,694 million vs mine production $760 million: about 6.2 times (4,694/760 = 6.18).",
+   "gold": [
+    {
+     "page": 32,
+     "printed_page": 28,
+     "region": "Figure 13 x-axis label 'Silver (4,694)'",
+     "evidence": "Silver (4,694)"
+    },
+    {
+     "page": 166,
+     "printed_page": 162,
+     "region": "Silver, Domestic Production and Use",
+     "evidence": "U.S. mines produced approximately 1,000 tons of silver with an estimated value of $760 million"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-M2",
+   "split": "test3",
+   "group": "multihop",
+   "question": "What share of world gold mine production in 2023 came from U.S. mines?",
+   "expected_answer": "About 5.7% (170 t of 3,000 t).",
+   "gold": [
+    {
+     "page": 86,
+     "printed_page": 82,
+     "region": "Gold, Domestic Production and Use / Salient Statistics, Mine 2023e",
+     "evidence": "domestic gold mine production was estimated to be 170 tons"
+    },
+    {
+     "page": 87,
+     "printed_page": 83,
+     "region": "Gold, World Mine Production and Reserves, World total (rounded) 2023e",
+     "evidence": "World total (rounded) 3,060 3,000 59,000"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-M3",
+   "split": "test3",
+   "group": "multihop",
+   "question": "Which country is listed first among the leading tungsten import sources in Figure 2, and what share of world tungsten reserves does that country hold?",
+   "expected_answer": "China; reserves 2,300,000 t of a world total of 4,400,000 t, about 52%.",
+   "gold": [
+    {
+     "page": 11,
+     "printed_page": 7,
+     "region": "Figure 2, row TUNGSTEN",
+     "evidence": "TUNGSTEN >50 China,3 Germany, Bolivia, Vietnam"
+    },
+    {
+     "page": 195,
+     "printed_page": 191,
+     "region": "Tungsten, World Mine Production and Reserves, rows China and World total",
+     "evidence": "China 66,000 63,000 2,300,000"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-M4",
+   "split": "test3",
+   "group": "multihop",
+   "question": "Using Table 2's 2023 gross domestic product and the value added by major industries that consume processed mineral materials shown in Figure 1, what share of GDP did that value added represent?",
+   "expected_answer": "$3,840 billion / $27,356 billion = about 14.0%.",
+   "gold": [
+    {
+     "page": 13,
+     "printed_page": 9,
+     "region": "Table 2, row 'Gross domestic product (billion dollars)', 2023e",
+     "evidence": "Gross domestic product (billion dollars) 21,521 21,323 23,594 25,744 27,356"
+    },
+    {
+     "page": 8,
+     "printed_page": 4,
+     "region": "Figure 1, box 'Value Added to Gross Domestic Product by Major Industries That Consume Processed Mineral Materials'",
+     "evidence": "Value: $3,840 billion"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-X1",
+   "split": "test3",
+   "group": "text",
+   "question": "Which State was the leading gold producer in 2023 and what share did it account for, and which State followed with what share?",
+   "expected_answer": "Nevada, about 73%; followed by Alaska, about 13%.",
+   "gold": [
+    {
+     "page": 86,
+     "printed_page": 82,
+     "region": "Gold, Domestic Production and Use",
+     "evidence": "Nevada was the leading gold-producing State, accounting for about 73% of total domestic production, followed by Alaska, which produced about 13% of domestic gold"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-X2",
+   "split": "test3",
+   "group": "text",
+   "question": "In 2023, what shares of domestic silver use went to physical investment (bars) and to photovoltaics?",
+   "expected_answer": "Physical investment (bars) 34%; photovoltaics 10%.",
+   "gold": [
+    {
+     "page": 166,
+     "printed_page": 162,
+     "region": "Silver, Domestic Production and Use",
+     "evidence": "physical investment (bars), 34%; electrical and electronics, 27%; coins and medals, 13%; photovoltaics (pv), 10%"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-X3",
+   "split": "test3",
+   "group": "text",
+   "question": "Since when has tungsten not been mined commercially in the United States, and what share of U.S. tungsten consumption went to cemented carbide parts?",
+   "expected_answer": "Not mined commercially since 2015; about 60% used in cemented carbide parts.",
+   "gold": [
+    {
+     "page": 194,
+     "printed_page": 190,
+     "region": "Tungsten, Domestic Production and Use",
+     "evidence": "Tungsten has not been mined commercially in the United States since 2015"
+    },
+    {
+     "page": 194,
+     "printed_page": 190,
+     "region": "Tungsten, Domestic Production and Use",
+     "evidence": "An estimated 60% of the tungsten consumed in the United States was used in cemented carbide parts"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-X4",
+   "split": "test3",
+   "group": "text",
+   "question": "What happened at an underground silver-lead-zinc mine in Idaho in 2023?",
+   "expected_answer": "A fire occurred in August (no personnel in the mine); production was suspended for the remainder of 2023 while work bypassed the damaged area.",
+   "gold": [
+    {
+     "page": 167,
+     "printed_page": 163,
+     "region": "Silver, Events, Trends, and Issues",
+     "evidence": "In August, a fire took place at an underground silver-lead-zinc mine in Idaho; no personnel were in the mine at the time of the fire. Production was suspended for the remainder of 2023"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-U1",
+   "split": "test3",
+   "group": "unanswerable",
+   "question": "How many tons of gold did central banks purchase in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: p.87 says central-bank gold holdings increased by 14% in the first 9 months of 2023 and gives consumption shares; no tonnage of central-bank purchases.",
+   "absence_check": [
+    "central bank.{0,80}\\d+ tons",
+    "tons.{0,60}central bank",
+    "central bank.{0,40}(purchas|bought|buy)"
+   ],
+   "absence_semantic_check": "gold/silver/tungsten chapters read in full by the author; none states the requested quantity",
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-U2",
+   "split": "test3",
+   "group": "unanswerable",
+   "question": "What was the average 2023 price of tungsten concentrate in China?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: the tungsten price is the in-warehouse ROTTERDAM concentrate price ($260/mtu WO3); no China price.",
+   "absence_check": [
+    "tungsten.{0,120}price.{0,80}china",
+    "china.{0,80}tungsten.{0,80}price"
+   ],
+   "absence_semantic_check": "gold/silver/tungsten chapters read in full by the author; none states the requested quantity",
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-U3",
+   "split": "test3",
+   "group": "unanswerable",
+   "question": "How many people were employed at U.S. silver refineries in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: silver employment row is 'mine and mill' (1,500), footnote: only mines where silver is the primary product; 24 refiners are counted but no refinery employment.",
+   "absence_check": [
+    "refiner.{0,80}employ",
+    "employ.{0,80}refiner"
+   ],
+   "absence_semantic_check": "gold/silver/tungsten chapters read in full by the author; none states the requested quantity",
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-U4",
+   "split": "test3",
+   "group": "unanswerable",
+   "question": "What share of U.S. gold production came from placer mines in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: p.86 mentions placer mines in Alaska and Nevada's 73% / Alaska's 13% shares, but no placer share.",
+   "absence_check": [
+    "placer.{0,80}\\d+%",
+    "\\d+%.{0,80}placer"
+   ],
+   "absence_semantic_check": "gold/silver/tungsten chapters read in full by the author; none states the requested quantity",
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-U5",
+   "split": "test3",
+   "group": "unanswerable",
+   "question": "How many tons of silver did Alaska's mines produce in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: p.166 says Alaska was the leading silver-producing State, followed by Nevada; no State tonnage.",
+   "absence_check": [
+    "alaska.{0,80}\\d[\\d,]* tons",
+    "\\d[\\d,]* tons.{0,60}alaska"
+   ],
+   "absence_semantic_check": "gold/silver/tungsten chapters read in full by the author; none states the requested quantity",
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
+  },
+  {
+   "id": "AT3-U6",
+   "split": "test3",
+   "group": "unanswerable",
+   "question": "What are Burkina Faso's gold reserves?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: p.87 lists Burkina Faso mine production (58, 60 t) but reserves are 'NA' (not available).",
+   "absence_check": [
+    "burkina faso 58 60 \\d"
+   ],
+   "absence_semantic_check": "gold/silver/tungsten chapters read in full by the author; none states the requested quantity",
+   "frozen_at": "2026-11-14, written after test2 was run and labelled, BEFORE any pipeline change for round 4 and before any test3 run"
   }
  ],
- "test2_note": "test2 = new 30-question test written after test-1 was used for error analysis (ADVANCED.md: 'Nếu đã dùng test để chỉnh, tạo test mới trước khi báo điểm'). Facts/regions differ from dev and test-1."
+ "test2_note": "test2 = new 30-question test written after test-1 was used for error analysis (ADVANCED.md: 'Nếu đã dùng test để chỉnh, tạo test mới trước khi báo điểm'). Facts/regions differ from dev and test-1.",
+ "test3_note": "test3 = new 30-question test written after test2 was run and labelled (ADVANCED.md: a used test cannot be reused after tuning). Written and frozen BEFORE any round-4 pipeline change; same group mix as test/test2; facts/regions differ from dev, test and test2."
 }

@@ -69,7 +69,7 @@ def gold_pages(q: dict) -> set[int]:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--split", choices=("dev", "test", "test2"), required=True)
+    ap.add_argument("--split", choices=("dev", "test", "test2", "test3"), required=True)
     ap.add_argument("--configs", nargs="+", required=True)
     ap.add_argument("--ids", nargs="*")
     ap.add_argument("--workers", type=int, default=2)
