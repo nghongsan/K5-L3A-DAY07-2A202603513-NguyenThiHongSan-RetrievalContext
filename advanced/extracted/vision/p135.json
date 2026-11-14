@@ -1,0 +1,20 @@
+{
+ "page": 135,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "middle right",
+   "content": "| Country         | Mine production 2022 | Mine production 2023e | Reserves3   |\n|-----------------|----------------------|----------------------|-------------|\n| United States   | e350                 | 360                  | 150,000     |\n| Belarus        | e2,300                | 2,300                | 2,600,000   |\n| Canada         | 2,390                 | 2,400                | 720,000     |\n| Estonia        | 1,130                 | 1,100                | 570,000     |\n| Finland        | 5,870                 | 5,800                | 6,000,000   |\n| Germany        | e2,600                | 2,600                | (4)         |\n| Latvia         | 2,440                 | 2,400                | 150,000     |\n| Lithuania      | 473                   | 470                  | 210,000     |\n| Poland         | e1,100                | 1,100                | (4)         |\n| Russia         | e1,400                | 1,400                | 1,000,000   |\n| Sweden         | 2,560                 | 2,500                | (4)         |\n| Ukraine        | 440                   | 440                  | (4)         |\n| Other countriese| 580                   | 600                  | 1,400,000   |\n| World total (rounded) | 23,600           | 23,000               | 13,000,000  |",
+   "notes": "eEstimated.\n3See Appendix C for resource and reserve definitions and information concerning data sources.\n4Included with “Other countries.”"
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 407
+ },
+ "seconds": 4.3
+}

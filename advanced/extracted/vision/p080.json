@@ -1,0 +1,20 @@
+{
+ "page": 80,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                         | 2019   | 2020   | 2021   | 2022   | 2023e  |\n|-------------------------|--------|--------|--------|--------|--------|\n| Production:             |        |        |        |        |        |\n| Crude                  | 104,000| 101,000| 81,700 | 76,400 | 68,000 |\n| Refined, sold or used  | 147,000| 146,000| 127,000| 121,000| 120,000|\n| Imports for consumption2| 208,000| 115,000| 144,000| 268,000| 160,000|\n| Exports                | 16,700 | 18,200 | 20,400 | 23,300 | 19,000 |\n| Consumption, apparent3 | 296,000| 198,000| 205,000| 321,000| 210,000|\n| Price, average import unit value, dollars per metric ton | 214    | 250    | 280    | 194    | 190    |\n| Employment, mine and mill, numbere | 160    | 130    | 120    | 90     | 78     |\n| Net import reliance4 as a percentage of apparent consumption | 65     | 49     | 60     | 76     | 67     |",
+   "notes": "Footnotes: 2, 3, 4, 5, e (estimates) referenced but not fully transcribed here."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 376
+ },
+ "seconds": 4.0
+}

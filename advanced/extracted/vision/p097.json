@@ -1,0 +1,20 @@
+{
+ "page": 97,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country       | Mine productione 2022 | Mine productione 2023 | Reserves3  |\n|---------------|-----------------------|-----------------------|------------|\n| United States | W                     | W                     | 250,000    |\n| Azerbaijan    | 170                   | 200                   | 170,000    |\n| Chile         | 19,200                | 19,000                | 610,000    |\n| Indonesia     | 429                   | 30                    | NA         |\n| Iran          | 700                   | 700                   | 40,000     |\n| Japan         | 9,200                 | 9,000                 | 4,900,000  |\n| Russia        | 3                     | 3                     | 120,000    |\n| Turkmenistan  | 770                   | 800                   | 70,000     |\n| World total (rounded) | 530,100          | 530,000               | 6,200,000  |",
+   "notes": "e Estimated. NA Not available. W Withheld to avoid disclosing company proprietary data.\n3 See Appendix C for resource and reserve definitions and information concerning data sources.\n4 Reported.\n5 Excludes U.S. production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 299
+ },
+ "seconds": 3.2
+}

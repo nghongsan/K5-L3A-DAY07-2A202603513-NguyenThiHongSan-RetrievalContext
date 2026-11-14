@@ -1,0 +1,20 @@
+{
+ "page": 125,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Scrap and flake and Sheet Mica Mine Production and Reserves",
+   "location": "middle right",
+   "content": "| Country               | Scrap and flake Mine productione 2022 | Scrap and flake Mine productione 2023 | Scrap and flake Reserves8 | Sheet Mine productione 2022 | Sheet Mine productione 2023 | Sheet Reserves8 |\n|-----------------------|--------------------------------------|--------------------------------------|--------------------------|----------------------------|----------------------------|-----------------|\n| United States         | 42,000                               | 38,000                               | Large                    | NA                         | NA                         | Very small      |\n| Canada                | 15,000                               | 15,000                               | Large                    | NA                         | NA                         | NA              |\n| China                 | 80,000                               | 85,000                               | 1,100,000                | NA                         | NA                         | 75,000          |\n| Finland               | 58,200                               | 60,000                               | Large                    | NA                         | NA                         | NA              |\n| France                | 15,000                               | 10,000                               | Large                    | NA                         | NA                         | NA              |\n| India                 | 14,000                               | 14,000                               | Large                    | 1,000                      | 1,000                      | 110,000         |\n| Korea, Republic of    | 10,200                               | 12,000                               | 11,000,000               | —                          | —                          | NA              |\n| Madagascar            | 35,000                               | 50,000                               | Large                    | —                          | —                          | NA              |\n| Turkey                | 6,070                                | 4,000                                | 620,000                  | —                          | —                          | NA              |\n| Other countries       | 42,500                               | 39,000                               | Large                    | 200                        | 200                        | Moderate        |\n| World total (rounded) | 318,000                              | 330,000                              | Large                    | NA                         | NA                         | NA              |",
+   "notes": "eEstimated. NA Not available. W Withheld to avoid disclosing company proprietary data. — Zero.\n8See Appendix C for resource and reserve definitions and information concerning data sources.\n9Reported."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 511
+ },
+ "seconds": 4.2
+}

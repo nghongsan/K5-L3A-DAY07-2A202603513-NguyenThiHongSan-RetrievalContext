@@ -1,0 +1,125 @@
+{
+ "_how": "Manual pass/fail per ADVANCED.md. Every answer read against the frozen gold; every cited chunk checked; values checked on the rendered page. Frozen labels are applied even where a gold error was found afterwards (AT-U4).",
+ "V6_mm_hybrid_title_view": {
+  "AT-T1": {
+   "pass": true,
+   "reason": "68,100 and 46,000 $/t, -32%; p114 table + text cited."
+  },
+  "AT-T2": {
+   "pass": true,
+   "reason": "Chile 9,300,000 t; p115 table cited."
+  },
+  "AT-T3": {
+   "pass": true,
+   "reason": "+$4.6 billion (65.3 -> 69.9) = 4,600 million; Table 1 cited."
+  },
+  "AT-T4": {
+   "pass": false,
+   "reason": "Calculation right (1,461 thousand fewer) but states 'light vehicle sales in 2013 were 16,961 thousand' - wrong year; part of the answer is false/unsupported."
+  },
+  "AT-T5": {
+   "pass": true,
+   "reason": "98% (600,000/610,000 kg); text p079-t1 also states 98%."
+  },
+  "AT-T6": {
+   "pass": true,
+   "reason": "$323/kg; p148 table cited."
+  },
+  "AT-I1": {
+   "pass": true,
+   "reason": "$890 billion; Figure 1 cited."
+  },
+  "AT-I2": {
+   "pass": true,
+   "reason": "All ten host metals; Figure 14 cited (page viewed)."
+  },
+  "AT-I3": {
+   "pass": true,
+   "reason": "Inferred Marginal Reserves; Figure C1 cited."
+  },
+  "AT-I4": {
+   "pass": true,
+   "reason": "Canada and China, 19 to 24; Figure 3 cited."
+  },
+  "AT-I5": {
+   "pass": true,
+   "reason": "West, $25 billion; Figure 5 + text p010 cited."
+  },
+  "AT-C1": {
+   "pass": true,
+   "reason": "67%; Norway, Canada, Finland, Japan; Figure 2 + cobalt chapter cited."
+  },
+  "AT-C2": {
+   "pass": true,
+   "reason": "Beryllium +112%; Figure 10 cited."
+  },
+  "AT-C3": {
+   "pass": true,
+   "reason": "Yttrium ~ -80%; Figure 11 cited."
+  },
+  "AT-C4": {
+   "pass": true,
+   "reason": "Iron and steel $34,493 million; Figure 13 cited."
+  },
+  "AT-C5": {
+   "pass": true,
+   "reason": "Texas ~3,000 million; Figure 7 cited."
+  },
+  "AT-M1": {
+   "pass": true,
+   "reason": "$46,000/t and -32%; p114 + Figure 10 cited."
+  },
+  "AT-M2": {
+   "pass": true,
+   "reason": "3,840/27,356 = 14.0%; Table 2 + Figure 1 cited."
+  },
+  "AT-M3": {
+   "pass": false,
+   "reason": "NIR 100% correctly cited (p078 salient table - valid alternative to Figure 2), but '$3 million' gallium metal import value appears only in the p078 text paragraph (p078-t1), which is not cited; the cited table gives quantities, not value."
+  },
+  "AT-M4": {
+   "pass": true,
+   "reason": "$69M vs $270M = 25.6%; Figure 13 + p066 cited."
+  },
+  "AT-X1": {
+   "pass": true,
+   "reason": "87%; p114 cited."
+  },
+  "AT-X2": {
+   "pass": true,
+   "reason": "50%, aircraft gas turbine engines; p066 cited."
+  },
+  "AT-X3": {
+   "pass": true,
+   "reason": "Since 1987; p078 cited."
+  },
+  "AT-X4": {
+   "pass": true,
+   "reason": "$190M, -7% from $208M; p148 cited."
+  },
+  "AT-U1": {
+   "pass": false,
+   "reason": "Answered '8,600 thousand metric tons of crude oil' from the sulfur table (p177) - misreading; should abstain."
+  },
+  "AT-U2": {
+   "pass": true,
+   "reason": "Abstained; noted only coal value ($31.7B) is given."
+  },
+  "AT-U3": {
+   "pass": false,
+   "reason": "Status answered: asserts 'no share of global cobalt mine production came from seabed nodules' - an inference presented as a reported fact; should abstain."
+  },
+  "AT-U4": {
+   "pass": false,
+   "reason": "Per frozen label (abstain) this fails. GOLD ERROR found after the run: p088 (graphite chapter) states 'The number of lithium-ion battery manufacturing facilities in the United States increased to 10 in 2023 from 3 in operation during 2019' - the question was actually answerable; my absence regex only searched 'gigafactor'. Counted as fail; not relabeled."
+  },
+  "AT-U5": {
+   "pass": true,
+   "reason": "Abstained."
+  },
+  "AT-U6": {
+   "pass": true,
+   "reason": "Abstained; mentions Vietnam production/reserves only as context."
+  }
+ }
+}

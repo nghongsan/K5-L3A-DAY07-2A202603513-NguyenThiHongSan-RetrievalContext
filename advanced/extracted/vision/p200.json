@@ -1,0 +1,20 @@
+{
+ "page": 200,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Tariff Information for Wollastonite",
+   "location": "lower half",
+   "content": "| Tariff | Item                                      | Number       | Normal Trade Relations 12–31–23 |\n|--------|-------------------------------------------|--------------|-----------------------------------------|\n|        | Mineral substances not elsewhere specified or included | 2530.90.8050 | Free.                                   |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 90
+ },
+ "seconds": 2.2
+}

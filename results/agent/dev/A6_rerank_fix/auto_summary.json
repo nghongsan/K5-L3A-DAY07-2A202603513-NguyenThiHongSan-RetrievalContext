@@ -1,0 +1,41 @@
+{
+ "config": "A6_rerank_fix",
+ "split": "dev",
+ "model": "openai/gpt-4o-mini",
+ "settings": {
+  "name": "A6_rerank_fix",
+  "method": "hybrid_rerank",
+  "top_k": 4,
+  "call_budget": 2000,
+  "max_searches": 3,
+  "neighbors_tool": false,
+  "max_turns": 7,
+  "prompt": "v2",
+  "guard_retries": 1,
+  "notes": "A2 + inline-citation prompt + 1 guard retry.",
+  "extra": {}
+ },
+ "n": 28,
+ "errors": 0,
+ "tool_use": "28/28",
+ "searches_distribution": {
+  "1": 18,
+  "2": 6,
+  "3": 4
+ },
+ "status": {
+  "answered": 25,
+  "abstain": 3
+ },
+ "context_evidence_rate": "25/25",
+ "answered_with_gold_citation": "25/25",
+ "false_abstain_auto": "0/25",
+ "abstain_on_unanswerable_auto": "3/3",
+ "avg_context_chars": 2164,
+ "tokens_in": 129229,
+ "tokens_out": 5208,
+ "cost_usd_total": 0.02251,
+ "price_known": true,
+ "median_seconds": 4.1850000000000005,
+ "total_seconds": 150.9
+}

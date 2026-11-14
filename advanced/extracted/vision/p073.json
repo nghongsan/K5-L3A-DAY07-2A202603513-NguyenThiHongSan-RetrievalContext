@@ -1,0 +1,20 @@
+{
+ "page": 73,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "top half",
+   "content": "| Country                  | Mine productione |       | Reserves4 |\n|--------------------------|------------------|-------|-----------|\n|                          | 2022             | 2023  |           |\n| United States1            | 827              | 830   | 250,000   |\n| Argentina                | 100              | 100   | NA        |\n| China                    | 270              | 270   | 170,000   |\n| Czechia                  | 46               | 50    | NA        |\n| Denmark (processed)5     | 440              | 440   | NA        |\n| France                   | 75               | 80    | NA        |\n| Germany                  | 50               | 50    | NA        |\n| Korea, Republic of       | 50               | 50    | NA        |\n| Mexico                   | 96               | 100   | NA        |\n| Mozambique               | 73               | 75    | NA        |\n| Peru                     | 95               | 100   | NA        |\n| Russia                   | 51               | 50    | NA        |\n| Spain                    | 50               | 55    | 57,000    |\n| Turkey                   | 210              | 210   | 44,000    |\n| Other countries          | 171              | 170   | NA        |\n| World total (rounded)    | 2,600            | 2,600 | Large     |",
+   "notes": "e Estimated. NA Not available.\n1 Processed ore sold or used by producers.\n4 See Appendix C for resource and reserve definitions and information concerning data sources.\n5 Includes sales of moler production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 400
+ },
+ "seconds": 4.1
+}

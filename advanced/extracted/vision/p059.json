@@ -1,0 +1,20 @@
+{
+ "page": 59,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Production and Capacity",
+   "location": "lower half",
+   "content": "| Country                     | Cement productione 2022 | Cement productione 2023 | Clinker capacitye 2022 | Clinker capacitye 2023 |\n|-----------------------------|-------------------------|-------------------------|-----------------------|-----------------------|\n| United States (includes Puerto Rico) | 93,000                  | 91,000                  | 100,000               | 100,000               |\n| Brazil                      | 64,000                  | 63,000                  | 60,000                | 60,000                |\n| China                       | 2,100,000               | 2,100,000               | 2,000,000             | 2,000,000             |\n| Egypt                       | 46,000                  | 50,000                  | 60,000                | 60,000                |\n| India                       | 380,000                 | 410,000                 | 290,000               | 300,000               |\n| Indonesia                   | 64,000                  | 62,000                  | 79,000                | 79,000                |\n| Iran                        | 59,000                  | 65,000                  | 81,000                | 81,000                |\n| Japan                       | 53,000                  | 50,000                  | 54,000                | 54,000                |\n| Korea, Republic of          | 51,000                  | 50,000                  | 62,000                | 62,000                |\n| Mexico                      | 50,000                  | 50,000                  | 42,000                | 42,000                |\n| Russia                      | 61,000                  | 57,000                  | 80,000                | 80,000                |\n| Saudi Arabia                | 52,000                  | 53,000                  | 75,000                | 75,000                |\n| Turkey                      | 74,000                  | 79,000                  | 92,000                | 92,000                |\n| Vietnam                     | 120,000                 | 110,000                 | 100,000               | 110,000               |\n| Other countries (rounded)   | 850,000                 | 850,000                 | 600,000               | 600,000               |\n| World total (rounded)       | 4,100,000               | 4,100,000               | 3,800,000             | 3,800,000             |",
+   "notes": "e Estimated."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 578
+ },
+ "seconds": 5.2
+}

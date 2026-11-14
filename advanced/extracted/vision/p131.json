@@ -1,0 +1,20 @@
+{
+ "page": 131,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country          | Mine production 2022 | Mine production 2023e | Reserves8   |\n|------------------|----------------------|----------------------|-------------|\n| United States    | —                    | —                    | 210,000     |\n| Brazil          | 75,600               | 75,000               | 16,000,000  |\n| Canada          | 6,700                | 7,000                | 1,600,000   |\n| Congo (Kinshasa)| 710                  | 540                  | NA          |\n| Russia          | 381                  | 440                  | NA          |\n| Rwanda          | 199                  | 190                  | NA          |\n| Other countries | 127                  | 150                  | NA          |\n| World total (rounded) | 83,700           | 83,000               | >17,000,000 |",
+   "notes": "eEstimated. NA Not available. — Zero.\n8See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 252
+ },
+ "seconds": 3.1
+}

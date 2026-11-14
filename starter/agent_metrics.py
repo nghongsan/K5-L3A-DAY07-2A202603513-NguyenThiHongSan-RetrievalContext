@@ -71,7 +71,7 @@ def main():
     parser.add_argument('--cases', type=Path, required=True)
     parser.add_argument('--traces', type=Path, required=True)
     parser.add_argument('--reviews', type=Path, required=True)
-    parser.add_argument('--split', choices=('dev', 'test'), required=True)
+    parser.add_argument('--split', choices=('dev', 'test', 'test2'), required=True)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     def load(path): return json.loads(path.read_text(encoding='utf-8'))

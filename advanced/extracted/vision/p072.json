@@ -1,0 +1,20 @@
+{
+ "page": 72,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|-------|-------|-------|-------|-------|\n| Production1             | 768   | 822   | 998   | 827   | 830   |\n| Imports for consumption | 10    | 14    | 14    | 14    | 13    |\n| Exports                 | 66    | 67    | 68    | 63    | 60    |\n| Consumption, apparent2  | 712   | 769   | 944   | 778   | 780   |\n| Price, average value, f.o.b. plant, dollars per metric ton | 338   | 326   | 410   | 416   | 410   |\n| Employment, mine and plant, numbere | 370   | 370   | 370   | 370   | 370   |\n| Net import reliance3 as a percentage of apparent consumption | E     | E     | E     | E     | E     |",
+   "notes": "1,2,3 Footnotes not transcribed here but present in original.\nE = Estimated."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 292
+ },
+ "seconds": 3.4
+}

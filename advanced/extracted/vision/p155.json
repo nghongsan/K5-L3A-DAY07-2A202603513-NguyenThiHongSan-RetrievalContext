@@ -1,0 +1,20 @@
+{
+ "page": 155,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Production and Reserves",
+   "location": "middle left to middle right",
+   "content": "| Country          | Mine productione |       | Reserves4                                                                 |\n|------------------|------------------|-------|---------------------------------------------------------------------------|\n|                  | 2022             | 2023  |                                                                           |\n| United States1    | 41,000           | 42,000| Large. Economic and subeconomic deposits of salt are substantial in       |\n| Australia        | 13,000           | 14,000| principal salt-producing countries.                                        |\n| Belarus          | 2,000            | 2,100 | The oceans contain a virtually                                         |\n| Brazil           | 6,600            | 6,600 | inexhaustible supply of salt.                                              |\n| Bulgaria         | 3,300            | 3,300 |                                                                           |\n| Canada           | 12,000           | 12,000|                                                                           |\n| Chile            | 9,000            | 9,200 |                                                                           |\n| China            | 54,000           | 53,000|                                                                           |\n| Egypt            | 2,300            | 2,300 |                                                                           |\n| France           | 5,500            | 5,600 |                                                                           |\n| Germany          | 15,000           | 15,000|                                                                           |\n| India            | 30,000           | 30,000|                                                                           |\n| Iran             | 2,700            | 2,700 |                                                                           |\n| Italy            | 1,900            | 2,000 |                                                                           |\n| Mexico           | 8,700            | 9,000 |                                                                           |\n| Netherlands      | 5,900            | 6,000 |                                                                           |\n| Pakistan         | 3,000            | 3,000 |                                                                           |\n| Poland           | 4,300            | 4,200 |                                                                           |\n| Russia           | 8,000            | 7,000 |                                                                           |\n| Saudi Arabia     | 2,400            | 2,500 |                                                                           |\n| Spain            | 3,900            | 4,000 |                                                                           |\n| Turkey           | 9,100            | 9,000 |                                                                           |\n| United Kingdom   | 2,400            | 2,300 |                                                                           |\n| Other countries  | 26,000           | 27,000|                                                                           |\n| World total (rounded) | 270,000      | 270,000|                                                                           |",
+   "notes": "eEstimated.\n1Excludes production from Puerto Rico.\n4See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 589
+ },
+ "seconds": 5.0
+}

@@ -1,0 +1,20 @@
+{
+ "page": 119,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Primary Production and Reserves",
+   "location": "lower half",
+   "content": "| Country       | Smelter productione 2022 | Smelter productione 2023 | Reserves6                                                                                  |\n|---------------|--------------------------|--------------------------|--------------------------------------------------------------------------------------------|\n| United States | W                        | W                        | Magnesium metal can be derived from seawater, natural brines, dolomite, serpentine, and other minerals. The reserves for this metal are sufficient to supply current and future requirements. |\n| Brazil        | 22                       | 22                       |                                                                                            |\n| China         | 7933                     | 830                      |                                                                                            |\n| Iran          | 5                        | 5                        |                                                                                            |\n| Israel        | 722                      | 22                       |                                                                                            |\n| Kazakhstan    | 27                       | 25                       |                                                                                            |\n| Russia        | 21                       | 20                       |                                                                                            |\n| Turkey        | 14                       | 15                       |                                                                                            |\n| Ukraine       | 2                        | —                        |                                                                                            |\n| World total (rounded)8 | 1,050              | 940                      |                                                                                            |",
+   "notes": "eEstimated. W Withheld to avoid disclosing company proprietary data. — Zero.\n6See Appendix C for resource and reserve definitions and information concerning data sources.\n7Reported.\n8Excludes U.S. production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 306
+ },
+ "seconds": 3.2
+}

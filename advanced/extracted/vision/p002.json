@@ -1,0 +1,20 @@
+{
+ "page": 2,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "photo",
+   "title": "Photograph of microchips on a semiconductor wafer",
+   "location": "full page",
+   "content": "Photograph of microchips, also known as integrated circuits (ICs), on a semiconductor wafer.",
+   "notes": "Photograph courtesy of Taiwan Semiconductor Manufacturing Co., Ltd. (TSMC)."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3810,
+  "out": 66
+ },
+ "seconds": 1.8
+}

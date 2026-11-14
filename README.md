@@ -1,5 +1,24 @@
 # Day 7 — Agentic RAG
 
+> **Bài làm — 2A202603513 Nguyễn Thị Hồng San.** Báo cáo: [report/individual/2A202603513_NguyenThiHongSan.md](report/individual/2A202603513_NguyenThiHongSan.md).
+> Thử thách nâng cao (chưa đạt, 25/30): [advanced/README.md](advanced/README.md).
+> Code: [src/](src/) · dữ liệu và benchmark: [data/chunks.json](data/chunks.json), [data/benchmark.json](data/benchmark.json) · kết quả và trace: [results/](results/).
+>
+> **Cách chạy** (Python 3.12, cùng môi trường với Day 6):
+> ```bash
+> pip install -r requirements.txt
+> cp .env.example .env                                  # điền LLM_PROVIDER, LLM_MODEL, API key (không commit)
+> python -m src.data_prep                               # (tuỳ chọn) dựng lại data/ từ repo Day 6 (DAY6_DIR)
+> python -m src.build_index --out index/chroma          # nếu không có Chroma Day 6: dựng lại index e5 giống hệt
+> export CHROMA_PATH=index/chroma                       #   (bỏ qua nếu dùng DAY6_DIR/chroma_db)
+> python -m unittest discover -s tests -v               # unit test (mock chỉ kiểm tra code)
+> python -m src.eval_retrieval --split dev              # so sánh retrieval/context trên dev
+> python -m src.run_agent --split dev --configs A0_dense A1_hybrid A2_rerank A4_dense_fix A5_hybrid_fix A6_rerank_fix A7_dense_userfilter
+> python -m src.run_agent --split test --configs A0_dense A4_dense_fix            # test chính thức (sau khi chốt A4)
+> python -m src.run_agent --split test2 --configs A0_dense A4_dense_fix A7_dense_userfilter   # test mới cho bản sửa sau test
+> python -m src.make_reviews --split test   # nhãn tay results/reviews/manual_labels_test.json -> starter/agent_metrics.py
+> ```
+
 **Bài cá nhân · Python 3.11+ · tiếp nối Day 6**
 
 Dùng embedding và vector store từ Day 6 để xây một agent biết tìm bằng chứng, trả lời có nguồn và nhận biết khi không đủ thông tin. Bạn tự chọn kiến trúc, số tool và cách tổ chức retrieval.

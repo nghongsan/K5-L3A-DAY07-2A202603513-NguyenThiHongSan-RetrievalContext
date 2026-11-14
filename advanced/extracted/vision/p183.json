@@ -1,0 +1,20 @@
+{
+ "page": 183,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Refinery Production and Reserves",
+   "location": "top half",
+   "content": "| Country          | Refinery production, 2022 | Refinery production, 2023 | Reserves |\n|------------------|---------------------------|---------------------------|----------|\n| United States    | W                         | W                         | 4,000    |\n| Bulgaria        | 3                         | 3                         | NA       |\n| Canada          | 24                        | 27                        | 800      |\n| China           | 380                       | 430                       | 3,100    |\n| Japan           | 68                        | 75                        | —        |\n| Russia          | 70                        | 75                        | 5,800    |\n| South Africa    | 4                         | 5                         | 800      |\n| Sweden          | 933                       | 25                        | 700      |\n| Uzbekistan      | 93                        | 3                         | NA       |\n| Other countries | NA                        | NA                        | 21,000   |\n| World total (rounded) | 1584                  | 1640                      | 36,000   |",
+   "notes": "eEstimated. NA Not available. W Withheld to avoid disclosing company proprietary data. — Zero.\n7Insofar as possible, data relate to refinery output only; countries that produced tellurium contained in blister copper, copper anodes, copper concentrates, copper ores, and (or) refinery residues but did not recover tellurium from these materials were excluded.\n8See Appendix C for resource and reserve definitions and information concerning data sources.\n9Reported.\n10In addition to the countries listed, Australia, Belgium, Chile, Germany, Indonesia, Kazakhstan, Mexico, and the Philippines may have produced refined tellurium, but available information was inadequate to make reliable estimates of output.\n11Excludes U.S. production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 414
+ },
+ "seconds": 3.9
+}

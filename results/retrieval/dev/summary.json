@@ -1,0 +1,202 @@
+[
+ {
+  "config": "R1_dense",
+  "split": "dev",
+  "method": "dense",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "hypothesis": "Baseline: Day 6 dense retrieval, top-3, 1500-char budget.",
+  "N": 25,
+  "hit1": 22,
+  "hit3": 23,
+  "mrr10": 0.92,
+  "context_hit": 23,
+  "avg_context_chars": 1180,
+  "median_ms": 17.9,
+  "misses_hit3": [
+   "q10",
+   "t03"
+  ],
+  "misses_context": [
+   "q10",
+   "t03"
+  ],
+  "model_load_s": 7.5,
+  "cost_usd": 0.0,
+  "llm_tokens": null
+ },
+ {
+  "config": "R2_bm25",
+  "split": "dev",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "hypothesis": "Lexical BM25 catches exact code tokens/keywords (e.g. 'elif', '**') that e5 blurs.",
+  "N": 25,
+  "hit1": 17,
+  "hit3": 24,
+  "mrr10": 0.8,
+  "context_hit": 24,
+  "avg_context_chars": 1183,
+  "median_ms": 0.2,
+  "misses_hit3": [
+   "q18"
+  ],
+  "misses_context": [
+   "q18"
+  ],
+  "model_load_s": 7.5,
+  "cost_usd": 0.0,
+  "llm_tokens": null
+ },
+ {
+  "config": "R2b_bm25_nostem",
+  "split": "dev",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "hypothesis": "Ablation: is the light stemmer helping BM25?",
+  "N": 25,
+  "hit1": 19,
+  "hit3": 25,
+  "mrr10": 0.853,
+  "context_hit": 24,
+  "avg_context_chars": 1142,
+  "median_ms": 0.2,
+  "misses_hit3": [],
+  "misses_context": [
+   "t03"
+  ],
+  "model_load_s": 7.5,
+  "cost_usd": 0.0,
+  "llm_tokens": null
+ },
+ {
+  "config": "R3_hybrid",
+  "split": "dev",
+  "method": "hybrid",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "hypothesis": "RRF of dense+BM25 combines paraphrase recall and exact-term precision.",
+  "N": 25,
+  "hit1": 19,
+  "hit3": 25,
+  "mrr10": 0.867,
+  "context_hit": 24,
+  "avg_context_chars": 1180,
+  "median_ms": 18.2,
+  "misses_hit3": [],
+  "misses_context": [
+   "q18"
+  ],
+  "model_load_s": 7.5,
+  "cost_usd": 0.0,
+  "llm_tokens": null
+ },
+ {
+  "config": "I1_hybrid_k5",
+  "split": "dev",
+  "method": "hybrid",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "hypothesis": "Improvement 1: evidence often ranks 4-5; larger top-k/budget raises context evidence rate.",
+  "N": 25,
+  "hit1": 19,
+  "hit3": 25,
+  "mrr10": 0.867,
+  "context_hit": 25,
+  "avg_context_chars": 2090,
+  "median_ms": 17.7,
+  "misses_hit3": [],
+  "misses_context": [],
+  "model_load_s": 7.5,
+  "cost_usd": 0.0,
+  "llm_tokens": null
+ },
+ {
+  "config": "I2_hybrid_k5_nb",
+  "split": "dev",
+  "method": "hybrid",
+  "top_k": 5,
+  "budget_chars": 3500,
+  "neighbours": true,
+  "hypothesis": "Improvement 2: adding same-section neighbours gives complete examples/conditions.",
+  "N": 25,
+  "hit1": 19,
+  "hit3": 25,
+  "mrr10": 0.867,
+  "context_hit": 25,
+  "avg_context_chars": 3352,
+  "median_ms": 17.4,
+  "misses_hit3": [],
+  "misses_context": [],
+  "model_load_s": 7.5,
+  "cost_usd": 0.0,
+  "llm_tokens": null
+ },
+ {
+  "config": "I3_rerank_k3",
+  "split": "dev",
+  "method": "hybrid_rerank",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "hypothesis": "Improvement 3: LLM rerank of hybrid top-15 puts the answering passage first (Hit@1) at small budget.",
+  "N": 25,
+  "hit1": 20,
+  "hit3": 24,
+  "mrr10": 0.883,
+  "context_hit": 24,
+  "avg_context_chars": 1187,
+  "median_ms": 1163.0,
+  "misses_hit3": [
+   "q08"
+  ],
+  "misses_context": [
+   "q08"
+  ],
+  "model_load_s": 7.04,
+  "cost_usd": 0.00696,
+  "llm_tokens": {
+   "in": 43384,
+   "out": 748,
+   "calls": 28
+  },
+  "rerank_parse_failures": 2,
+  "llm_model": "openai/gpt-4o-mini"
+ },
+ {
+  "config": "I4_rerank_k5",
+  "split": "dev",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "hypothesis": "Rerank + top-5 context.",
+  "N": 25,
+  "hit1": 20,
+  "hit3": 24,
+  "mrr10": 0.883,
+  "context_hit": 25,
+  "avg_context_chars": 2097,
+  "median_ms": 1144.4,
+  "misses_hit3": [
+   "q08"
+  ],
+  "misses_context": [],
+  "model_load_s": 7.04,
+  "cost_usd": 0.00695,
+  "llm_tokens": {
+   "in": 43384,
+   "out": 740,
+   "calls": 28
+  },
+  "rerank_parse_failures": 2,
+  "llm_model": "openai/gpt-4o-mini"
+ }
+]

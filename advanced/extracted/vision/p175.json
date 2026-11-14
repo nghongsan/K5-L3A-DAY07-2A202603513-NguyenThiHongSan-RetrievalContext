@@ -1,0 +1,20 @@
+{
+ "page": 175,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country       | Mine productione 2022 | Mine productione 2023 | Reserves7    |\n|---------------|-----------------------|-----------------------|--------------|\n| United States | —                     | —                     | NA           |\n| Argentina     | 700                   | 700                   | NA           |\n| China         | 80,000                | 80,000                | 12,000,000   |\n| Iran          | 200,000               | 200,000               | 7,100,000    |\n| Mexico        | 833,800                | 35,000                | NA           |\n| Spain         | 200,000               | 200,000               | NA           |\n| World total (rounded) | 514,000          | 520,000               | Large        |",
+   "notes": "eEstimated. NA Not available. — Zero.\n7See Appendix C for resource and reserve definitions and information concerning data sources.\n8As reported by the National Statistical and Geographic Information System (INEGI)."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 249
+ },
+ "seconds": 3.0
+}

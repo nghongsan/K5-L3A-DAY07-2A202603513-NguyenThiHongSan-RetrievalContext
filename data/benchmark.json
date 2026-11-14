@@ -1,0 +1,766 @@
+{
+ "description": "Day 7 benchmark on OpenStax Introduction to Python Programming ch.4-6 (PDF p.95-173).",
+ "frozen_at": "2026-11-14",
+ "split_rule": "dev = all 25 Day 6 questions (incl. former Day 6 test t01-t06, already seen) + u01-u03. test = n01-n06 + u04-u05, written for Day 7 before any Day 7 run; their evidence sentences and pages differ from every dev gold. test2 = m01-m06 + v01-v02, written after the test run to evaluate the post-test fix independently.",
+ "hit_rule": "A retrieved chunk is a hit iff same source_id, same page and the full evidence string is a substring of the chunk text after whitespace-collapse + lowercase (Day 6 rule). gold entries are alternatives.",
+ "filter_rule": "filter = {chapter: N} is user-supplied context (Day 6 convention); never derived from gold.",
+ "questions": [
+  {
+   "id": "q01",
+   "split": "dev",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day6-dev",
+   "question": "Which values does bool() convert to False?",
+   "expected_answer": "0 and the empty string (any non-zero number or non-empty string becomes True).",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 97,
+     "evidence": "True: any non-zero number, any non-empty string • False: 0, empty string"
+    }
+   ]
+  },
+  {
+   "id": "q02",
+   "split": "dev",
+   "answerable": true,
+   "type": "paraphrase",
+   "origin": "day6-dev",
+   "question": "What goes wrong if I write is_zero = num=0 when I meant to test whether num is zero?",
+   "expected_answer": "It assigns 0 to both is_zero and num regardless of num's original value; = is assignment, == is comparison.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 99,
+     "evidence": "is_zero = num=0 will always assign is_zero and num with 0, regardless of num's original value"
+    }
+   ]
+  },
+  {
+   "id": "q03",
+   "split": "dev",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day6-dev",
+   "question": "How many spaces per indentation level does the PEP 8 style guide recommend?",
+   "expected_answer": "Four spaces per indentation level.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 100,
+     "evidence": "The PEP 8 style guide recommends four spaces per indentation level."
+    }
+   ]
+  },
+  {
+   "id": "q04",
+   "split": "dev",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day6-dev",
+   "question": "When an if-else statement runs, can both the if body and the else body execute?",
+   "expected_answer": "No. One and only one of the branches is taken.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 102,
+     "evidence": "When an if-else statement is executed, one and only one of the branches is taken."
+    }
+   ]
+  },
+  {
+   "id": "q05",
+   "split": "dev",
+   "answerable": true,
+   "type": "exception",
+   "origin": "day6-dev",
+   "question": "Which operator is the main exception to left associativity, and how is 2 ** 3 ** 4 evaluated?",
+   "expected_answer": "Exponentiation is right associative, so 2 ** 3 ** 4 is evaluated as 2 ** (3**4).",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 109,
+     "evidence": "Exponentiation is the main exception (noted above) and is right associative: that is, evaluated from right to left. Ex: 2 ** 3 ** 4 is evaluated as 2 ** (3**4)."
+    }
+   ]
+  },
+  {
+   "id": "q06",
+   "split": "dev",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day6-dev",
+   "question": "How does Python evaluate a chained comparison such as 10 < x <= 20?",
+   "expected_answer": "As 10 < x and x <= 20, evaluated from left to right.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 109,
+     "evidence": "10 < x <= 20 is evaluated as 10 < x and x <= 20."
+    }
+   ]
+  },
+  {
+   "id": "q07",
+   "split": "dev",
+   "answerable": true,
+   "type": "paraphrase",
+   "origin": "day6-dev",
+   "question": "Why can two separate if statements give a student a double grade curve, and what fixes it?",
+   "expected_answer": "Separate if statements do not guarantee only one branch is taken, so both can execute; chaining with elif fixes it.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 111,
+     "evidence": "Two separate if statements do not guarantee that only one branch is taken and might result in both branches being taken."
+    }
+   ]
+  },
+  {
+   "id": "q08",
+   "split": "dev",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day6-dev",
+   "question": "What precedence do conditional expressions have compared with other Python operations?",
+   "expected_answer": "The lowest precedence of all Python operations.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 119,
+     "evidence": "Conditional expressions have the lowest precedence of all Python operations."
+    }
+   ]
+  },
+  {
+   "id": "q09",
+   "split": "dev",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day6-dev",
+   "question": "In a counting while loop, what happens when the step size is negative?",
+   "expected_answer": "The counter counts in descending order (positive step counts ascending).",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 127,
+     "evidence": "if the step size is a negative number, the counter counts in descending order."
+    }
+   ]
+  },
+  {
+   "id": "q10",
+   "split": "dev",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day6-dev",
+   "question": "Is the end value included in the sequence produced by range()?",
+   "expected_answer": "No. The sequence is inclusive of the start and exclusive of the end.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 130,
+     "evidence": "This integer sequence is inclusive of the start and exclusive of the end of the sequence."
+    }
+   ]
+  },
+  {
+   "id": "q11",
+   "split": "dev",
+   "answerable": true,
+   "type": "paraphrase",
+   "origin": "day6-dev",
+   "question": "When should I prefer a for loop over a while loop, including in nested loops?",
+   "expected_answer": "When counting with range() or iterating over a container object, including nested situations.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 135,
+     "evidence": "A for loop is a preferable option in cases where a loop is used for counting purposes using a range() function, or when iterating over a container object, including nested situations."
+    }
+   ]
+  },
+  {
+   "id": "q12",
+   "split": "dev",
+   "answerable": true,
+   "type": "metadata_filter",
+   "origin": "day6-dev",
+   "question": "What is a loop without a termination condition called, and what statement is essential to leave it?",
+   "expected_answer": "An infinite loop; a break statement is essential to exit it.",
+   "filter": {
+    "chapter": 5
+   },
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 138,
+     "evidence": "A loop without a termination condition is known as an infinite loop."
+    }
+   ]
+  },
+  {
+   "id": "q13",
+   "split": "dev",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day6-dev",
+   "question": "What does a continue statement do inside a loop?",
+   "expected_answer": "It skips the remainder of the current loop iteration without exiting the loop entirely.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 139,
+     "evidence": "A continue statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely."
+    },
+    {
+     "source_id": "openstax-intro-python",
+     "page": 143,
+     "evidence": "A continue statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely."
+    }
+   ]
+  },
+  {
+   "id": "q14",
+   "split": "dev",
+   "answerable": true,
+   "type": "paraphrase",
+   "origin": "day6-dev",
+   "question": "Why do functions make code reusable?",
+   "expected_answer": "The function body can be executed repeatedly with multiple function calls.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 149,
+     "evidence": "The body of a function can be executed repeatedly with multiple function calls, so a function promotes reusability."
+    }
+   ]
+  },
+  {
+   "id": "q15",
+   "split": "dev",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day6-dev",
+   "question": "Can a variable created inside a function be used after the function finishes?",
+   "expected_answer": "No. It has local scope, only exists within the function, and no longer exists after the function finishes executing.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 156,
+     "evidence": "A variable created within a function has local scope and only exists within the function. A local variable cannot be accessed outside of the function in which the variable was created. After a function finishes executing, the function's local variables no longer exist."
+    }
+   ]
+  },
+  {
+   "id": "q16",
+   "split": "dev",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day6-dev",
+   "question": "What must a function do before it can edit a global variable?",
+   "expected_answer": "Declare the variable with the global keyword.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 157,
+     "evidence": "To edit a global variable inside a function, the variable must be declared with the global keyword."
+    }
+   ]
+  },
+  {
+   "id": "q17",
+   "split": "dev",
+   "answerable": true,
+   "type": "metadata_filter",
+   "origin": "day6-dev",
+   "question": "What does PEP 8 recommend about spaces around the = sign?",
+   "expected_answer": "No spaces around = when indicating keyword arguments and default parameter values.",
+   "filter": {
+    "chapter": 6
+   },
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 171,
+     "evidence": "The PEP 8 style guide recommends no spaces around = when indicating keyword arguments and default parameter values."
+    }
+   ]
+  },
+  {
+   "id": "q18",
+   "split": "dev",
+   "answerable": true,
+   "type": "metadata_filter",
+   "origin": "day6-dev",
+   "question": "What is a branch?",
+   "expected_answer": "A group of statements that execute based on a condition.",
+   "filter": {
+    "chapter": 4
+   },
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 95,
+     "evidence": "A branch is a group of statements that execute based on a condition."
+    }
+   ]
+  },
+  {
+   "id": "q19",
+   "split": "dev",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day6-dev",
+   "question": "In a nested loop, what does the outer loop control?",
+   "expected_answer": "The number of the inner loop's full executions.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 132,
+     "evidence": "The outer loop controls the number of the inner loop's full execution."
+    }
+   ]
+  },
+  {
+   "id": "t01",
+   "split": "dev",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day6-test",
+   "question": "What value does a function return if it has no return statement?",
+   "expected_answer": "None, representing no value.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 165,
+     "evidence": "Functions introduced so far have not had a return statement, which is the same as returning None, representing no value."
+    }
+   ]
+  },
+  {
+   "id": "t02",
+   "split": "dev",
+   "answerable": true,
+   "type": "exception",
+   "origin": "day6-test",
+   "question": "Why shouldn't a list be used as a default parameter value?",
+   "expected_answer": "Default values are defined only once for the function, so mutable objects such as lists should not be used.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 170,
+     "evidence": "Default parameter values are only defined once to be used by the function, so mutable objects (such as lists) should not be used as default values."
+    }
+   ]
+  },
+  {
+   "id": "t03",
+   "split": "dev",
+   "answerable": true,
+   "type": "paraphrase",
+   "origin": "day6-test",
+   "question": "If a function changes a list argument, does the caller see the change? What about a string argument?",
+   "expected_answer": "Yes for a list (mutable: changes appear outside the function); no for a string (immutable: the function changes a local copy).",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 162,
+     "evidence": "A mutable object can be modified after creation. A function's changes to the object then appear outside the function. An immutable object cannot be modified after creation. So a function must make a local copy to modify, and the local copy's changes don't appear outside the function."
+    }
+   ]
+  },
+  {
+   "id": "t04",
+   "split": "dev",
+   "answerable": true,
+   "type": "metadata_filter",
+   "origin": "day6-test",
+   "question": "When does the else block run?",
+   "expected_answer": "(Loops chapter) A loop else runs after the loop completes without being interrupted by a break statement.",
+   "filter": {
+    "chapter": 5
+   },
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 143,
+     "evidence": "A loop else statement runs after the loop's execution is completed without being interrupted by a break statement."
+    },
+    {
+     "source_id": "openstax-intro-python",
+     "page": 141,
+     "evidence": "A loop else is used to identify if the loop is terminated normally or the execution is interrupted by a break statement."
+    }
+   ]
+  },
+  {
+   "id": "t05",
+   "split": "dev",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day6-test",
+   "question": "When a call mixes positional and keyword arguments, which must come first?",
+   "expected_answer": "Positional arguments, in the correct order, before any keyword arguments.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 169,
+     "evidence": "When mixing positional and keyword arguments, positional arguments must come first in the correct order, before any keyword arguments."
+    }
+   ]
+  },
+  {
+   "id": "t06",
+   "split": "dev",
+   "answerable": true,
+   "type": "metadata_filter",
+   "origin": "day6-test",
+   "question": "What does elif stand for and where must it be placed?",
+   "expected_answer": "Else if; it is part of a chain and must follow an if (or elif) statement.",
+   "filter": {
+    "chapter": 4
+   },
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 111,
+     "evidence": "An elif (short for else if) statement checks a condition when the prior decision statement's condition is false. An elif statement is part of a chain and must follow an if (or elif) statement."
+    }
+   ]
+  },
+  {
+   "id": "n01",
+   "split": "test",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day7-new",
+   "question": "What does Python's or operator return?",
+   "expected_answer": "It takes two condition operands and returns True if either condition is true (False only when both are false).",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 105,
+     "evidence": "The or operator takes two condition operands and returns True if either"
+    }
+   ]
+  },
+  {
+   "id": "n02",
+   "split": "test",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day7-new",
+   "question": "How many logical operators does Python have, and which are they?",
+   "expected_answer": "Three: and, or, and not.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 104,
+     "evidence": "Python has three logical operators: and, or, and not."
+    }
+   ]
+  },
+  {
+   "id": "n03",
+   "split": "test",
+   "answerable": true,
+   "type": "paraphrase",
+   "origin": "day7-new",
+   "question": "In the miles-per-gallon example, what does the function return when gallons is 0, and why that value?",
+   "expected_answer": "It returns -1 (after printing \"Gallons can't be 0\"), a value often used to indicate a problem, to avoid division by zero.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 166,
+     "evidence": "if so, returns -1, a value often used to"
+    }
+   ]
+  },
+  {
+   "id": "n04",
+   "split": "test",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day7-new",
+   "question": "What is the difference between a function argument and a function parameter?",
+   "expected_answer": "An argument is a value passed as input during a function call; a parameter is the variable representing that input in the function definition.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 160,
+     "evidence": "A function argument is a value passed as"
+    }
+   ]
+  },
+  {
+   "id": "n05",
+   "split": "test",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day7-new",
+   "question": "When a function that was called by another function finishes, where does control flow go?",
+   "expected_answer": "Control flow returns to the calling function.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 153,
+     "evidence": "another function finishes execution, control flow returns to the calling function."
+    }
+   ]
+  },
+  {
+   "id": "n06",
+   "split": "test",
+   "answerable": true,
+   "type": "paraphrase",
+   "origin": "day7-new",
+   "question": "Why not simply make every variable global to avoid scope errors?",
+   "expected_answer": "Making every variable global makes a program messy: if the whole program can modify a variable, a bug could be anywhere; limiting scope makes programs easier to debug/maintain.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 159,
+     "evidence": "every variable global can make a program messy"
+    }
+   ]
+  },
+  {
+   "id": "m01",
+   "split": "test2",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day7-new-test2",
+   "question": "What does the not operator return?",
+   "expected_answer": "It takes one condition operand and returns True when the operand is false and False when the operand is true.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 106,
+     "evidence": "The not operator takes one condition operand and returns True when the operand is false"
+    }
+   ]
+  },
+  {
+   "id": "m02",
+   "split": "test2",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day7-new-test2",
+   "question": "Can for loops and while loops be combined inside one nested loop?",
+   "expected_answer": "Yes. The for and while constructs can be mixed in a nested loop construct (e.g. an outer for loop over a list with an inner while loop).",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 136,
+     "evidence": "The two for and while loop constructs can also be mixed in a nested loop construct."
+    }
+   ]
+  },
+  {
+   "id": "m03",
+   "split": "test2",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day7-new-test2",
+   "question": "What happens when a function finishes executing?",
+   "expected_answer": "The function returns and provides a result to the calling code.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 164,
+     "evidence": "When a function finishes, the function returns and provides a result to the calling code."
+    }
+   ]
+  },
+  {
+   "id": "m04",
+   "split": "test2",
+   "answerable": true,
+   "type": "paraphrase",
+   "origin": "day7-new-test2",
+   "question": "For printing every multiple of 5 below 50, how does a for loop with range() compare with an equivalent while loop?",
+   "expected_answer": "The for loop with range(0, 50, 5) is more compact than the while loop implementation (which needs initialization and an explicit increment).",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 131,
+     "evidence": "Notice the compactness of the for construction compared to the while"
+    }
+   ]
+  },
+  {
+   "id": "m05",
+   "split": "test2",
+   "answerable": true,
+   "type": "condition",
+   "origin": "day7-new-test2",
+   "question": "In the loop-else example that searches a list for the number 10, what happens if 10 is not in the list?",
+   "expected_answer": "The loop terminates after evaluating all integers, so the else statement runs and prints \"10 is not in the list.\"",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 141,
+     "evidence": "hence the else statement will run and print \"10 is not in the list.\""
+    }
+   ]
+  },
+  {
+   "id": "m06",
+   "split": "test2",
+   "answerable": true,
+   "type": "direct",
+   "origin": "day7-new-test2",
+   "question": "How does the textbook define a function?",
+   "expected_answer": "A function is a named, reusable block of code that performs a task when called.",
+   "filter": null,
+   "gold": [
+    {
+     "source_id": "openstax-intro-python",
+     "page": 148,
+     "evidence": "A function is a named, reusable block of code that performs a task when called."
+    }
+   ]
+  },
+  {
+   "id": "u01",
+   "split": "dev",
+   "question": "How do I write a lambda (anonymous) function in Python?",
+   "absence_reason": "Corpus = chapters 4-6 only; 'lambda' never occurs. 'anonymous' only occurs as a string default value \"Anonymous\" (p.170).",
+   "absence_check": [
+    "lambda"
+   ],
+   "answerable": false,
+   "type": "unanswerable",
+   "origin": "day7-new",
+   "filter": null,
+   "expected_behavior": "search_and_abstain"
+  },
+  {
+   "id": "u02",
+   "split": "dev",
+   "question": "How does a try/except block handle a ZeroDivisionError?",
+   "absence_reason": "No 'try', 'except' or 'ZeroDivision' token in the corpus; calc_mpg avoids division by zero with an if, not exceptions.",
+   "absence_check": [
+    "try",
+    "except",
+    "ZeroDivision"
+   ],
+   "answerable": false,
+   "type": "unanswerable",
+   "origin": "day7-new",
+   "filter": null,
+   "expected_behavior": "search_and_abstain"
+  },
+  {
+   "id": "u03",
+   "split": "dev",
+   "question": "What is the base case of a recursive function?",
+   "absence_reason": "No 'recursion'/'recursive'/'base case' in chapters 4-6 (recursion is a later chapter, not indexed).",
+   "absence_check": [
+    "recursion",
+    "recursive",
+    "base case"
+   ],
+   "answerable": false,
+   "type": "unanswerable",
+   "origin": "day7-new",
+   "filter": null,
+   "expected_behavior": "search_and_abstain"
+  },
+  {
+   "id": "u04",
+   "split": "test",
+   "question": "What does the yield keyword do inside a generator function?",
+   "absence_reason": "No 'yield' or 'generator' token in the corpus.",
+   "absence_check": [
+    "yield",
+    "generator"
+   ],
+   "answerable": false,
+   "type": "unanswerable",
+   "origin": "day7-new",
+   "filter": null,
+   "expected_behavior": "search_and_abstain"
+  },
+  {
+   "id": "u05",
+   "split": "test",
+   "question": "How do *args and **kwargs let a function accept a variable number of arguments?",
+   "absence_reason": "No '*args', 'kwargs', 'variable number' or 'arbitrary' in the corpus; section 6.6 covers keyword/default arguments only.",
+   "absence_check": [
+    "*args",
+    "kwargs",
+    "variable number",
+    "arbitrary"
+   ],
+   "answerable": false,
+   "type": "unanswerable",
+   "origin": "day7-new",
+   "filter": null,
+   "expected_behavior": "search_and_abstain"
+  },
+  {
+   "id": "v01",
+   "split": "test2",
+   "question": "How do I write a dictionary comprehension in Python?",
+   "absence_reason": "No 'comprehension' or 'dictionary' token in chapters 4-6.",
+   "absence_check": [
+    "comprehension",
+    "dictionary"
+   ],
+   "answerable": false,
+   "type": "unanswerable",
+   "origin": "day7-new",
+   "filter": null,
+   "expected_behavior": "search_and_abstain"
+  },
+  {
+   "id": "v02",
+   "split": "test2",
+   "question": "How can the walrus operator := be used in a while loop condition?",
+   "absence_reason": "No ':=' or 'walrus' in the corpus.",
+   "absence_check": [
+    ":=",
+    "walrus"
+   ],
+   "answerable": false,
+   "type": "unanswerable",
+   "origin": "day7-new",
+   "filter": null,
+   "expected_behavior": "search_and_abstain"
+  }
+ ]
+}

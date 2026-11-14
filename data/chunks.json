@@ -1,0 +1,4210 @@
+[
+ {
+  "id": "openstax-intro-python:B:para800:p0095:c00",
+  "text": "Figure 4.1 credit: modification of work \"Fork In The Road\", by Ian Sane/Flickr, CC BY 2.0\nChapter Outline\n4.1 Boolean values\n4.2 If-else statements\n4.3 Boolean operations\n4.4 Operator precedence\n4.5 Chained decisions",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 95,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.0",
+   "section_title": "Chapter introduction",
+   "printed_page": -1,
+   "order": 0,
+   "content_hash": "d33ca7e92ad4"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0095:c01",
+  "text": "4.6 Nested decisions\n4.7 Conditional expressions\n4.8 Chapter summary\nIntroduction\nThe Python interpreter follows a single path of execution when executing a program. What if a programmer\nwants to define multiple possible paths? Ex: Instead of always taking the left path, a program uses the path\nwidth to decide which path to take. If the left path is wider, take the right path. Else, take the left path.\nA branch is a group of statements that execute based on a condition. The Expressions chapter introduced\nexpressions. This chapter explores how expressions can be used as conditions to make decisions in programs.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 95,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.0",
+   "section_title": "Chapter introduction",
+   "printed_page": -1,
+   "order": 1,
+   "content_hash": "1a37ebc3c0a0"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0095:c02",
+  "text": "4.1 Boolean values\nLearning objectives\nBy the end of this section you should be able to\n• Explain a Boolean value.\n• Use bool variables to store Boolean values.\n• Demonstrate converting integers, floats, and strings to Booleans.\n• Demonstrate converting Booleans to integers, floats, and strings.\n• Use comparison operators to compare integers, floats, and strings.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 95,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": -1,
+   "order": 2,
+   "content_hash": "a53021ce9fd7"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0096:c00",
+  "text": "bool data type\nPeople often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza?\nEx: True or false: I like pineapple on pizza. The response is a Boolean value, meaning the value is either true or\nfalse. The bool data type, standing for Boolean, represents a binary value of either true or false. true and\nfalse are keywords, and capitalization is required.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 96,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 86,
+   "order": 3,
+   "content_hash": "3d9541ebf70e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0096:c01",
+  "text": "CHECKPOINT\nExample: Crosswalk sign\nExample: Crosswalk sign; ch 4, video 1 (https://www.openstax.org/r/crosswalk-sign)\nCONCEPTS IN PRACTICE\nUsing Boolean variables\nConsider the following code:\nis_fruit = \"True\"",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 96,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 86,
+   "order": 4,
+   "content_hash": "fb532eebe87b"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0096:c02",
+  "text": "is_vegetable = 0\nis_dessert = False\n1 . What is the data type of is_fruit?\na. Boolean\nb. integer\nc. string\n2 . What is the data type of is_vegetable?\na. Boolean\nb. integer\nc. string\n3 . What is the data type of is_dessert?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 96,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 86,
+   "order": 5,
+   "content_hash": "4e70961b3cba"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0096:c03",
+  "text": "a. Boolean\nb. integer\nc. string\n4 . How many values can a Boolean variable represent?\na. 2\nb. 4\nc. 8\n5 . Which is a valid value for a Boolean variable?\na. true\nb. True\nc. 1\n6 . Suppose the following is added to the code above:\nis_dessert = 0",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 96,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 86,
+   "order": 6,
+   "content_hash": "13c670061bb1"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0097:c00",
+  "text": "print(type(is_dessert))\nWhat is the output?\na. <class 'bool'>\nb. <class 'int'>\nc. Error\nType conversion with bool()\nDeciding whether a value is true or false is helpful when writing programs/statements based on decisions.\nConverting data types to Booleans can seem unintuitive at first. Ex: Is \"ice cream\" True? But the\nconversion is actually simple.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 97,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 87,
+   "order": 7,
+   "content_hash": "8f40156b5c6f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0097:c01",
+  "text": "bool() converts a value to a Boolean value, True or False.\n• True: any non-zero number, any non-empty string\n• False: 0, empty string\nCHECKPOINT\nConverting integers, floats, and strings using bool()\nConverting integers, floats, and strings using bool(); ch 4, video 2 (https://www.openstax.org/r/converting-\nusing-bool)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 97,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 87,
+   "order": 8,
+   "content_hash": "5292bc68374c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0097:c02",
+  "text": "CONCEPTS IN PRACTICE\nConverting numeric types and strings to Booleans\n7 . bool(0.000)\na. True\nb. False\n8 . bool(-1)\na. True\nb. False\n9 . bool(\"\")\na. True\nb. False\n10 . bool(\"0\")\na. True\nb. False\n11 . Given input False, what is bool(input())?\na. True\nb. False",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 97,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 87,
+   "order": 9,
+   "content_hash": "63a2e6aab262"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0098:c00",
+  "text": "CONCEPTS IN PRACTICE\nConverting Booleans to numeric types and strings\nGiven is_on = True, what is the value of each expression?\n12 . float(is_on)\na. 0.0\nb. 1.0\n13 . str(is_on)\na. \"is_on\"\nb. \"True\"\n14 . int(is_on)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 98,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 88,
+   "order": 10,
+   "content_hash": "68f372782fdc"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0098:c01",
+  "text": "a. 0\nb. 1\nComparison operators\nProgrammers often have to answer questions like \"Is the current user the admin?\" A programmer may want to\ncompare a string variable, user, to the string, \"admin\". Comparison operators are used to compare values,\nand the result is either true or false. Ex: is_admin = (user == \"admin\"). user is compared with \"admin\"\nusing the == operator, which tests for equality. The Boolean variable, is_admin, is assigned with the Boolean\nresult.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 98,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 88,
+   "order": 11,
+   "content_hash": "782aa9496773"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0098:c02",
+  "text": "The 6 comparison operators:\n• equal to: ==\n• not equal to: !=\n• greater than: >\n• less than: <\n• greater than or equal to: >=\n• less than or equal to: <=\nCHECKPOINT\nExample: Rolling a d20 in a tabletop game\nExample: Rolling a d20 in a tabletop game; ch 4, video 3 (https://www.openstax.org/r/rolling-d20)\nCONCEPTS IN PRACTICE\nComparing values\nFor each new variable, what is the value of compare_result?\n15 . x = 14\ncompare_result = (x <= 13)\na. True",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 98,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 88,
+   "order": 12,
+   "content_hash": "d287be9eec8c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0099:c00",
+  "text": "b. False\n16 . w = 0\ncompare_result = (w != 0.4)\na. True\nb. False\n17 . v = 4\ncompare_result = (v < 4.0)\na. True\nb. False\n18 . y = 2\ncompare_result = (y > \"ab\")\na. True\nb. False\nc. Error\n19 . z = \"cilantro\"",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 99,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 89,
+   "order": 13,
+   "content_hash": "57619fdf2c9e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0099:c01",
+  "text": "compare_result = (z == \"coriander\")\na. True\nb. False\n20 . a = \"dog\"\ncompare_result = (a < \"cat\")\na. True\nb. False\n= VS ==\nA common mistake is using = for comparison instead of ==. Ex: is_zero = num=0 will always assign\nis_zero and num with 0, regardless of num's original value. The = operator performs assignment and will\nmodify the variable. The == operator performs comparison, does not modify the variable, and produces\nTrue or False.\nEXPLORING FURTHER\n• Unicode Basic Latin Chart (https://openstax.org/r/100unicodelatin)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 99,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 89,
+   "order": 14,
+   "content_hash": "294c5128c8cb"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0100:c00",
+  "text": "Friday Boolean\n\"It's Friday, I'm in love\" -from \"Friday I'm in Love,\" a song released by the Cure in 1992.\nWrite a program that reads in the day of the week. Assign the Boolean variable, in_love, with the result of\nwhether the day is Friday or not.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 100,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 90,
+   "order": 15,
+   "content_hash": "bd17f6da04a8"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0100:c01",
+  "text": "Even numbers\nWrite a program that reads in an integer and prints whether the integer is even or not. Remember, a\nnumber is even if the number is divisible by 2. To test this use number % 2 == 0. Ex: If the input is 6, the\noutput is \"6 is even: True\".",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 100,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.1",
+   "section_title": "Boolean values",
+   "printed_page": 90,
+   "order": 16,
+   "content_hash": "12cb313ff541"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0100:c02",
+  "text": "4.2 If-else statements\nLearning objectives\nBy the end of this section you should be able to\n• Identify which operations are performed when a program with if and if-else statements is run.\n• Identify the components of an if and if-else statement and the necessary formatting.\n• Create an if-else statement to perform an operation when a condition is true and another operation\notherwise.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 100,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 90,
+   "order": 17,
+   "content_hash": "012fd86d4dd2"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0100:c03",
+  "text": "if statement\nIf the weather is rainy, grab an umbrella! People make decisions based on conditions like if the weather is\nrainy, and programs perform operations based on conditions like a variable's value. Ex: A program adds two\nnumbers. If the result is negative, the program prints an error.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 100,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 90,
+   "order": 18,
+   "content_hash": "3f34d57b4a4d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0100:c04",
+  "text": "A condition is an expression that evaluates to true or false. An if statement is a decision-making structure\nthat contains a condition and a body of statements. If the condition is true, the body is executed. If the\ncondition is false, the body is not executed.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 100,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 90,
+   "order": 19,
+   "content_hash": "eb25cf27068b"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0100:c05",
+  "text": "The if statement's body must be grouped together and have one level of indentation. The PEP 8 style guide\nrecommends four spaces per indentation level. The Python interpreter will produce an error if the body is\nempty.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 100,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 90,
+   "order": 20,
+   "content_hash": "d085821ab4ac"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0101:c00",
+  "text": "CHECKPOINT\nExample: Quantity check\nExample: Quantity check; ch 4, video 4 (https://www.openstax.org/r/quantity-check)\nUSING BOOLEAN VARIABLES\nA Boolean variable already has a value of True or False and can be used directly in a condition rather than\nusing the equality operator. Ex: if is_raining == True: can be simplified to if is_raining:.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 101,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 91,
+   "order": 21,
+   "content_hash": "51e4f7b7e3cc"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0101:c01",
+  "text": "CONCEPTS IN PRACTICE\nUsing if statements\n1 . Given the following, which part is the condition?\nif age < 12:\nprint(\"Discount for children available\")\na. age\nb. age < 12\nc. print(\"Discount for children available\")",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 101,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 91,
+   "order": 22,
+   "content_hash": "bd69bb960d10"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0101:c02",
+  "text": "2 . Given the following, which lines execute if the condition is true?\n1 print(\"Have a great day.\")\n2 if is_raining:\n3 print(\"Don't forget an umbrella!\")\n4 print(\"See you soon.\")\na. 1, 2, 3\nb. 1, 2, 4\nc. 1, 2, 3, 4\n3 . Given the following (same as above), which lines execute if the condition is False?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 101,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 91,
+   "order": 23,
+   "content_hash": "6ae00aece92e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0101:c03",
+  "text": "1 print(\"Have a great day.\")\n2 if is_raining:\n3 print(\"Don't forget an umbrella!\")\n4 print(\"See you soon.\")\na. 1, 2, 3\nb. 1, 2, 4\nc. 1, 2, 3, 4\n4 . Given num = -10, what is the final value of num?\nif num < 0:\nnum = 25\nif num < 100:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 101,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 91,
+   "order": 24,
+   "content_hash": "8c5cbfd722dd"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0102:c00",
+  "text": "num = num + 50\na. -10\nb. 40\nc. 75\n5 . Given input 10, what is the final value of positive_num?\npositive_num = int(input(\"Enter a positive number:\"))\nif positive_num < 0:\nprint(\"Negative input set to 0\")",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 102,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 92,
+   "order": 25,
+   "content_hash": "27c84f44fe3a"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0102:c01",
+  "text": "positive_num = 0\na. 10\nb. 0\nc. Error\nif-else statement\nAn if statement defines actions to be performed when a condition is true. What if an action needs to be\nperformed only when the condition is false? Ex: If the restaurant is less than a mile away, we'll walk. Else, we'll\ndrive.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 102,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 92,
+   "order": 26,
+   "content_hash": "d4e8a4568191"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0102:c02",
+  "text": "An else statement is used with an if statement and contains a body of statements that is executed when the\nif statement's condition is false. When an if-else statement is executed, one and only one of the branches\nis taken. That is, the body of the if or the body of the else is executed. Note: The else statement is at the\nsame level of indentation as the if statement, and the body is indented.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 102,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 92,
+   "order": 27,
+   "content_hash": "acc1e21a8602"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0102:c03",
+  "text": "if-else statement template:\n1 # Statements before\n2\n3 if condition:\n4 # Body\n5 else:\n6 # Body\n7\n8 # Statements after\nCHECKPOINT\nExample: Trivia question\nExample: Trivia question; ch 4, video 5 (https://www.openstax.org/r/trivia-question)\nCONCEPTS IN PRACTICE\nExploring if-else statements\n6 . Given the following code, the else branch is taken for which range of x?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 102,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 92,
+   "order": 28,
+   "content_hash": "42b193f76804"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0103:c00",
+  "text": "if x >= 15:\n# Do something\nelse:\n# Do something else\na. x >= 15\nb. x <= 15\nc. x < 15\n7 . Given x = 40, what is the final value of y?\nif x > 30:\ny = x - 10\nelse:\ny = x + 10\na. 30\nb. 40\nc. 50\n8 . Given y = 50, which is not a possible final value of y?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 103,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 93,
+   "order": 29,
+   "content_hash": "7503957d807d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0103:c01",
+  "text": "if x < 50:\ny = y / 2\nelse:\ny = y * 2\ny = y + 5\na. 30\nb. 55\nc. 105\nImproved division\nThe following program divides two integers. Division by 0 produces an error. Modify the program to read in\na new denominator (with no prompt) if the denominator is 0.\nConverting temperature units\nThe following program reads in a temperature as a float and the unit as a string: \"f\" for Fahrenheit or \"c\"\nfor Celsius.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 103,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 93,
+   "order": 30,
+   "content_hash": "d6b17f52bf2c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0104:c00",
+  "text": "Calculate new_temp, the result of converting temp from Fahrenheit to Celsius or Celsius to Fahrenheit\nbased on unit. Calculate new_unit: \"c\" if unit is \"f\" and \"f\" if unit is \"c\".\nConversion formulas:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 104,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 94,
+   "order": 31,
+   "content_hash": "be59505854e4"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0104:c01",
+  "text": "• Degrees Celsius = (degrees Fahrenheit - 32) * 5/9\n• Degrees Fahrenheit = (degrees Celsius * 5/9) + 32",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 104,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.2",
+   "section_title": "If-else statements",
+   "printed_page": 94,
+   "order": 32,
+   "content_hash": "755412c5b25c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0104:c02",
+  "text": "4.3 Boolean operations\nLearning objectives\nBy the end of this section you should be able to\n• Explain the purpose of logical operators.\n• Describe the truth tables for and, or, and not.\n• Create expressions with logical operators.\n• Interpret if-else statements with conditions using logical operators.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 104,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 94,
+   "order": 33,
+   "content_hash": "f9dfff51decb"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0104:c03",
+  "text": "Logical operator: and\nDecisions are often based on multiple conditions. Ex: A program printing if a business is open may check that\nhour >= 9 and hour < 17. A logical operator takes condition operand(s) and produces True or False.\nPython has three logical operators: and, or, and not. The and operator takes two condition operands and\nreturns True if both conditions are true.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 104,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 94,
+   "order": 34,
+   "content_hash": "da938da0a092"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0104:c04",
+  "text": "p q p and q\nTrue True True\nTrue False False\nFalse True False\nFalse False False\nTable 4.1 Truth table: p and q.\nCHECKPOINT\nExample: Museum entry\nExample: Museum entry; ch 4, video 6 (https://www.openstax.org/r/museum-entry)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 104,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 94,
+   "order": 35,
+   "content_hash": "962d79449224"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0105:c00",
+  "text": "CONCEPTS IN PRACTICE\nUsing the and operator\n1 . Consider the example above. Jaden tries to enter when the capacity is 2500 and there are 2 hours\nbefore close. Can Jaden enter?\na. yes\nb. no\n2 . Consider the example above. Darcy tries to enter when the capacity is 3000. For what values of\nhrs_to_close will Darcy to be able to enter?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 105,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 95,
+   "order": 36,
+   "content_hash": "7709f5fa2b0f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0105:c01",
+  "text": "a. hrs_to close > 1.0\nb. no such value\n3 . Given is_admin = False and is_online = True, what is the value of is_admin and is_online?\na. True\nb. False\n4 . Given x = 8 and y = 21, what is the final value of z?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 105,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 95,
+   "order": 37,
+   "content_hash": "1d0a0dfc87eb"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0105:c02",
+  "text": "if (x < 10) and (y > 20):\nz = 5\nelse:\nz = 0\na. 0\nb. 5\nLogical operator: or\nSometimes a decision only requires one condition to be true. Ex: If a student is in the band or choir, they will\nperform in the spring concert. The or operator takes two condition operands and returns True if either\ncondition is true.\np q p or q\nTrue True True\nTrue False True\nFalse True True\nFalse False False\nTable 4.2 Truth table: p or q.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 105,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 95,
+   "order": 38,
+   "content_hash": "2eefd494bca0"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0106:c00",
+  "text": "CHECKPOINT\nExample: Streaming prompt\nExample: Streaming prompt; ch 4, video 7 (https://www.openstax.org/r/streaming-prompt)\nCONCEPTS IN PRACTICE\nUsing the or operator\n5 . Given days = 21 and is_damaged is False, is the refund processed?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 106,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 96,
+   "order": 39,
+   "content_hash": "b01893595c1c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0106:c01",
+  "text": "if (days < 30) or is_damaged:\n# Process refund\na. yes\nb. no\n6 . For what values of age is there no discount?\nif (age < 12) or (age > 65):\n# Apply student/senior discount\na. age >= 12\nb. age <= 65\nc. (age >= 12) and (age <= 65)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 106,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 96,
+   "order": 40,
+   "content_hash": "20308c19e6aa"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0106:c02",
+  "text": "7 . Given a = 9 and b = 10, does the test pass?\nif (a%2 == 0 and b%2 == 1) or (a%2 == 1 and b%2 == 0):\n# Test passed\nelse:\n# Test failed\na. yes\nb. no\nLogical operator: not\nIf the computer is not on, press the power button. The not operator takes one condition operand and returns\nTrue when the operand is false and returns False when the operand is true.\nnot is a useful operator that can make a condition more readable and can be used to toggle a Boolean's value.\nEx: is_on = not is_on.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 106,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 96,
+   "order": 41,
+   "content_hash": "88dc11008d0f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0107:c00",
+  "text": "p not p\nTrue False\nFalse True\nTable 4.3 Truth table:\nnot p.\nCHECKPOINT\nExample: Diving warning\nExample: Diving warning; ch 4, video 8 (https://www.openstax.org/r/diving-warning)\nCONCEPTS IN PRACTICE\nUsing the not operator\n8 . Given x = 13, what is the value of not(x < 10)?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 107,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 97,
+   "order": 42,
+   "content_hash": "f2aa39114a42"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0107:c01",
+  "text": "a. True\nb. False\n9 . Given x = 18, is x in the correct range?\nif not(x > 15 and x < 20):\n# x in correct range\na. yes\nb. no\n10 . Given is_turn = False and timer = 65, what is the final value of is_turn?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 107,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 97,
+   "order": 43,
+   "content_hash": "a015b12d1e3e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0107:c02",
+  "text": "if timer > 60:\nis_turn = not is_turn\na. True\nb. False\nSpeed limits\nWrite a program that reads in a car's speed as an integer and checks if the car's speed is within the freeway\nlimits. A car's speed must be at least 45 mph but no greater than 70 mph on the freeway.\nIf the speed is within the limits, print \"Good driving\". Else, print \"Follow the speed limits\".",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 107,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.3",
+   "section_title": "Boolean operations",
+   "printed_page": 97,
+   "order": 44,
+   "content_hash": "697abb0f0154"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0108:c00",
+  "text": "4.4 Operator precedence\nLearning objectives\nBy the end of this section you should be able to\n• Describe how precedence impacts order of operations.\n• Describe how associativity impacts order of operations.\n• Explain the purpose of using parentheses in expressions with multiple operators.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 108,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 98,
+   "order": 45,
+   "content_hash": "f145d3794642"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0108:c01",
+  "text": "Precedence\nWhen an expression has multiple operators, which operator is evaluated first? Precedence rules provide the\npriority level of operators. Operators with the highest precedence execute first. Ex: 1 + 2 * 3 is 7 because\nmultiplication takes precedence over addition. However, (1 + 2) * 3 is 9 because parentheses take\nprecedence over multiplication.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 108,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 98,
+   "order": 46,
+   "content_hash": "f25d35b7e9a9"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0108:c02",
+  "text": "Operator Meaning\n() Parentheses\n** Exponentiation (right associative)\n*, /, //, % Multiplication, division, floor division, modulo\n+, - Addition, subtraction\n<, <=, >, >=, ==, != Comparison operators\nnot Logical not operator\nand Logical and operator\nor Logical or operator\nTable 4.4 Operator precedence from highest to lowest.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 108,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 98,
+   "order": 47,
+   "content_hash": "11195611b3ce"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0108:c03",
+  "text": "CHECKPOINT\nOperator precedence\nOperator precedence; ch 4, video 9 (https://www.openstax.org/r/operator-precedence)\nCONCEPTS IN PRACTICE\nPrecedence rules\nWhich part of each expression is evaluated first?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 108,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 98,
+   "order": 48,
+   "content_hash": "1f6bf30b7879"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0109:c00",
+  "text": "1 . x ** 2 + 6 / 3\na. 6 / 3\nb. x ** 2\nc. 2 + 6\n2 . not 3 * 5 > 10\na. 3 * 5\nb. not 3\nc. 5 > 10\n3 . z == 5 and x / 8 < 100\na. 5 and x\nb. x / 8\nc. 8 < 100\nAssociativity\nWhat if operators beside each other have the same level of precedence? Associativity determines the order of\noperations when precedence is the same. Ex: 8 / 4 * 3 is evaluated as (8/4) * 3 rather than 8 / (4*3)\nbecause multiplication and division are left associative. Most operators are left associative and are evaluated\nfrom left to right. Exponentiation is the main exception (noted above) and is right associative: that is, evaluated\nfrom right to left. Ex: 2 ** 3 ** 4 is evaluated as 2 ** (3**4).",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 109,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 99,
+   "order": 49,
+   "content_hash": "62adc06849f4"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0109:c01",
+  "text": "When comparison operators are chained, the expression is converted into the equivalent combination of\ncomparisons and evaluated from left to right. Ex. 10 < x <= 20 is evaluated as 10 < x and x <= 20.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 109,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 99,
+   "order": 50,
+   "content_hash": "bcc5d04c3cb1"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0109:c02",
+  "text": "CHECKPOINT\nOperation precedence\nOperation precedence; ch 4, video 10 (https://www.openstax.org/r/operation-precedence)\nCONCEPTS IN PRACTICE\nAssociativity\nHow is each expression evaluated?\n4 . 10 + 3 * 2 / 4\na. 10 + (3 * (2 / 4))\nb. 10 + ((3 * 2) / 4)\nc. (10 + 3) * (2 / 4)\n5 . 2 * 2 ** 2 ** 3\na. 2 * ((2 ** 2) ** 3)\nb. 2 * (2 ** (2 ** 3))\nc. ((2*2) ** 2) ** 3\n6 . 100 < x > 150\na. 100 < x and x < 150",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 109,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 99,
+   "order": 51,
+   "content_hash": "6f1abd9710c0"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0110:c00",
+  "text": "b. 100 < x or x > 150\nc. 100 < x and x > 150\nEnforcing order and clarity with parentheses\nOperator precedence rules can be hard to remember. Parentheses not only assert a different order of\noperations but also reduce confusion.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 110,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 100,
+   "order": 52,
+   "content_hash": "291d7f9d5b55"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0110:c01",
+  "text": "CHECKPOINT\nUsing parentheses\nUsing parenthesis; ch 4, video 11 (https://www.openstax.org/r/using-parentheses)\nCONCEPTS IN PRACTICE\nUsing parentheses\n7 . Consider the example above. Why was the evaluation order different from what the programmer\nwanted?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 110,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 100,
+   "order": 53,
+   "content_hash": "ed20b708c7c1"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0110:c02",
+  "text": "a. Equality has precedence over and.\nb. All operators are evaluated right to left.\nc. Order is random when parentheses aren't used.\n8 . Given x = 8 and y = 9, what is the result of the following?\nx + 3 * y - 5\na. 30\nb. 44\nc. 94\n9 . Given x = 8 and y = 9, what is the result of the following?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 110,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 100,
+   "order": 54,
+   "content_hash": "a0bff474ad60"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0110:c03",
+  "text": "(x+3) * (y-5)\na. 30\nb. 44\nc. 94\nPEP 8 RECOMMENDATIONS: SPACING AROUND OPERATORS\nThe PEP 8 style guide recommends consistent spacing around operators to avoid extraneous and confusing\nwhitespace.\n• Avoid multiple spaces and an unequal amount of whitespace around operators with two operands.\nAvoid: x= y * 44\nBetter: x = y * 44\n• Avoid spaces immediately inside parentheses.\nAvoid: x = ( 4 * y )\nBetter: x = (4 * y)\n• Surround the following operators with one space: assignment, augment assignment, comparison,",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 110,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 100,
+   "order": 55,
+   "content_hash": "d216e6613c2f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0111:c00",
+  "text": "Boolean.\nAvoid: x= y<44\nBetter: x = y < 44\n• Consider adding whitespace around operators with lower priority.\nAvoid: x = 5 * z+20\nBetter: x = 5*z + 20",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 111,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.4",
+   "section_title": "Operator precedence",
+   "printed_page": 101,
+   "order": 56,
+   "content_hash": "25c9ab7aa137"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0111:c01",
+  "text": "4.5 Chained decisions\nLearning objectives\nBy the end of this section you should be able to\n• Identify the branches taken in an if-elif and if-elif-else statement.\n• Create a chained decision statement to evaluate multiple conditions.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 111,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 101,
+   "order": 57,
+   "content_hash": "86a7594e3a3d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0111:c02",
+  "text": "elif\nSometimes, a complicated decision is based on more than a single condition. Ex: A travel planning site reviews\nthe layovers on an itinerary. If a layover is greater than 24 hours, the site should suggest accommodations.\nElse if the layover is less than one hour, the site should alert for a possible missed connection.\nTwo separate if statements do not guarantee that only one branch is taken and might result in both branches\nbeing taken. Ex: The program below attempts to add a curve based on the input test score. If the input is 60,\nboth if statements are incorrectly executed, and the resulting score is 75.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 111,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 101,
+   "order": 58,
+   "content_hash": "7780f9f0f965"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0111:c03",
+  "text": "score = int(input())\nif score < 70:\nscore += 10\n# Wrong:\nif 70 <= score < 85:\nscore += 5\nChaining decision statements with elif allows the programmer to check for multiple conditions. An elif (short\nfor else if) statement checks a condition when the prior decision statement's condition is false. An elif\nstatement is part of a chain and must follow an if (or elif) statement.\nif-elif statement template:\n# Statements before\nif condition:\n# Body\nelif condition:\n# Body\n# Statements after",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 111,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 101,
+   "order": 59,
+   "content_hash": "eb12cdd9b0ad"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0112:c00",
+  "text": "CHECKPOINT\nExample: Livestream features\nExample: Livestream features; ch 4, video 12 (https://www.openstax.org/r/livestream)\nCONCEPTS IN PRACTICE\nUsing elif\n1 . Fill in the blank to execute Body 2 when condition_1 is false and condition_2 is true.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 112,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 102,
+   "order": 60,
+   "content_hash": "cbc2a40c3654"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0112:c01",
+  "text": "if condition_1:\n# Body 1\n__ condition_2:\n# Body 2\na. if\nb. elif\nc. else\n2 . Given x = 42 and y = 0, what is the final value of y?\nif x > 44:\ny += 2\nelif x < 50:\ny += 5\na. 2\nb. 5\nc. 7\n3 . Which conditions complete the code such that if x is less than 0, Body 1 executes, else if x equals 0,\nBody 2 executes.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 112,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 102,
+   "order": 61,
+   "content_hash": "ac76608f5658"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0112:c02",
+  "text": "if _________:\n# Body 1\nelif _________:\n# Body 2\na. x < 0\nx == 0\nb. x == 0\nx < 0\nc. x <= 0\n[no condition]\n4 . Which of the following is a valid chained decision statement?\na. if condition_1:\n# Body 1\nelif condition_2:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 112,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 102,
+   "order": 62,
+   "content_hash": "d1728f584d7f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0113:c00",
+  "text": "# Body 2\nb. if condition_1:\n# Body 1\nelif condition_2:\n# Body 2\nc. elif condition_1:\n# Body 1\nif condition_2:\n# Body 2\n5 . Given attendees = 350, what is the final value of rooms?\nrooms = 1\nif attendees >= 100:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 113,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 103,
+   "order": 63,
+   "content_hash": "539f8856176c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0113:c01",
+  "text": "rooms += 3\nif attendees <= 200:\nrooms += 7\nelif attendees <= 400:\nrooms += 14\na. 4\nb. 15\nc. 18\nif-elif-else statements\nElifs can be chained with an if-else statement to create a more complex decision statement. Ex: A program\nshows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or\ntwo) places. Else if the piece is a bishop, show diagonal moves. Else if . . . (finish for the rest of the pieces).",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 113,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 103,
+   "order": 64,
+   "content_hash": "452fe548f989"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0113:c02",
+  "text": "CHECKPOINT\nExample: Possible chess moves\nExample: Possible chess moves; ch 4, video 13 (https://www.openstax.org/r/chess-moves)\nCONCEPTS IN PRACTICE\nUsing elif within if-elif-else statements\n6 . Given hour = 12, what is printed?\nif hour < 8:\nprint(\"Too early\")\nelif hour < 12:\nprint(\"Good morning\")\nelif hour < 13:\nprint(\"Lunchtime\")",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 113,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 103,
+   "order": 65,
+   "content_hash": "faa35ee58aea"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0114:c00",
+  "text": "elif hour < 17:\nprint(\"Good afternoon\")\nelse:\nprint(\"Too late\")\na. Good morning\nb. Lunchtime\nc. Good afternoon\nd. Too late\n7 . Where can an elif statement be added?\n_1_\nif condition:\n# Body\n_2_\nelif condition:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 114,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 104,
+   "order": 66,
+   "content_hash": "9e8ba64d103c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0114:c01",
+  "text": "# Body\n_3_\nelse:\n# Body\n_4_\na. 1\nb. 2\nc. 3\nd. 4\n8 . Given x = -1 and y = -2, what is the final value of y?\nif x < 0 and y < 0:\ny = 10\nelif x < 0 and y > 0:\ny = 20\nelse:\ny = 30\na. 10\nb. 20\nc. 30\n9 . How could the following statements be rewritten as a chained statement?\nif price < 9.99:\norder = 50\nif 9.99 <= price < 19.99:\norder = 30\nif price >= 19.99:\norder = 10\na. if price < 9.99:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 114,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 104,
+   "order": 67,
+   "content_hash": "b70775029c4a"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0115:c00",
+  "text": "order = 50\nelse:\norder = 30\norder = 10\nb. if price < 9.99:\norder = 50\nelif price < 19.99:\norder = 30\nelif price == 19.99:\norder = 10\nc. if price < 9.99:\norder = 50\nelif price < 19.99:\norder = 30\nelse:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 115,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 105,
+   "order": 68,
+   "content_hash": "4df703af61f9"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0115:c01",
+  "text": "order = 10\nCrochet hook size conversion\nWrite a program that reads in a crochet hook's US size and computes the metric diameter in millimeters. (A\nsubset of sizes is used.) If the input does not match B-G, the diameter should be assigned with -1.0. Ex: If\nthe input is D, the output is \"3.25 mm\".",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 115,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 105,
+   "order": 69,
+   "content_hash": "ed1d95335b5d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0115:c02",
+  "text": "Size conversions for US size: mm\n• B : 2.25\n• C : 2.75\n• D : 3.25\n• E : 3.5\n• F : 3.75\n• G : 4.0\nColor wavelengths\nWrite a program that reads in an integer representing a visible light wavelength in nanometers. Print the\ncorresponding color using the following inclusive ranges:\n• Violet: 380-449\n• Blue: 450-484\n• Cyan: 485-499\n• Green: 500-564\n• Yellow: 565-589",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 115,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 105,
+   "order": 70,
+   "content_hash": "6bea48a42fbf"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0116:c00",
+  "text": "• Orange: 590-624\n• Red: 625-750\nAssume the input is within the visible light spectrum, 380-750 inclusive.\nGiven input:\n550\nThe output is:\nGreen",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 116,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.5",
+   "section_title": "Chained decisions",
+   "printed_page": 106,
+   "order": 71,
+   "content_hash": "4a6785bf6542"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0116:c01",
+  "text": "4.6 Nested decisions\nLearning objectives\nBy the end of this section you should be able to\n• Describe the execution paths of programs with nested if-else statements.\n• Implement a program with nested if-else statements.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 116,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 106,
+   "order": 72,
+   "content_hash": "754452226d89"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0116:c02",
+  "text": "Nested decision statements\nSuppose a programmer is writing a program that reads in a game ID and player count and prints whether the\nuser has the right number of players for the game.\nThe programmer may start with:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 116,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 106,
+   "order": 73,
+   "content_hash": "31b25ae441c1"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0116:c03",
+  "text": "if game == 1 and players < 2:\nprint(\"Not enough players\")\nif game == 1 and players > 4:\nprint(\"Too many players\")\nif game == 1 and (2 <= players <= 4):\nprint(\"Ready to start\")\nif game == 2 and players < 3:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 116,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 106,
+   "order": 74,
+   "content_hash": "ebf80dc7b57e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0116:c04",
+  "text": "print(\"Not enough players\")\nif game == 2 and players > 6:\nprint(\"Too many players\")\nif game == 2 and (3 <= players <= 6):\nprint(\"Ready to start\")\nThe programmer realizes the code is redundant. What if the programmer could decide the game ID first and\nthen make a decision about players? Nesting allows a decision statement to be inside another decision\nstatement, and is indicated by an indentation level.\nAn improved program:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 116,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 106,
+   "order": 75,
+   "content_hash": "235bab80d296"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0117:c00",
+  "text": "if game == 1:\nif players < 2:\nprint(\"Not enough players\")\nelif players > 4:\nprint(\"Too many players\")\nelse:\nprint(\"Ready to start\")\nif game == 2:\nif players < 3:\nprint(\"Not enough players\")\nelif players > 6:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 117,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 107,
+   "order": 76,
+   "content_hash": "95337f465e47"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0117:c01",
+  "text": "print(\"Too many players\")\nelse:\nprint(\"Ready to start\")\n# Test game IDs 3-end\nCHECKPOINT\nExample: Poisonous plant identification\nExample: Poisonous plant identification; ch 4, video 14 (https://www.openstax.org/r/plant-identification)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 117,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 107,
+   "order": 77,
+   "content_hash": "f7c65b2393e4"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0117:c02",
+  "text": "CONCEPTS IN PRACTICE\nUsing nested if-else statements\n1 . Consider the example above. Given leaf_count = 9 and leaf_shape = \"teardrop\", what is the\noutput?\na. Might be poison ivy\nb. Might be poison oak\nc. Might be poison sumac\n2 . Given num_dancers = 49, what is printed?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 117,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 107,
+   "order": 78,
+   "content_hash": "507f20cfb7ac"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0117:c03",
+  "text": "if num_dancers < 0:\nprint(\"Error: num_dancers is negative\")\nelse:\nif num_dancers % 2 == 1:\nprint(\"Error: num_dancers is odd\")\nprint(num_dancers, \"dancers\")\na. Error: num_dancers is odd\nb. 49 dancers\nc. Error: num_dancers is odd\n49 dancers\n3 . Given x = 256, y = 513, and max = 512, which of the following will execute?\nif x == y:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 117,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 107,
+   "order": 79,
+   "content_hash": "1b0057a502c4"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0118:c00",
+  "text": "# Body 1\nelif x < y:\n# Body 2\nif y >= max:\n# Body 3\nelse:\n# Body 4\nelse:\n# Body 5\na. Body 2\nb. Body 2, Body 3\nc. Body 2, Body 5\n4 . Given x =118, y = 300, and max = 512, which of the following will execute?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 118,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 108,
+   "order": 80,
+   "content_hash": "8284fa71f84a"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0118:c01",
+  "text": "if x == y:\n# Body 1\nelif x < y:\n# Body 2\nif y >= max:\n# Body 3\nelse:\n# Body 4\nelse:\n# Body 5\na. Body 2\nb. Body 3\nc. Error\nMeal orders\nWrite a program that reads in a string, \"lunch\" or \"dinner\", representing the menu choice, and an\ninteger, 1, 2, or 3, representing the user's meal choice. The program then prints the user's meal choice.\nLunch Meal Options\n• 1: Caesar salad\n• 2: Spicy chicken wrap\n• 3: Butternut squash soup\nDinner Meal Options\n• 1: Baked salmon\n• 2: Turkey burger\n• 3: Mushroom risotto",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 118,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 108,
+   "order": 81,
+   "content_hash": "b3ae3cb2c0a4"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0119:c00",
+  "text": "Ex: If the input is:\nlunch\n3\nThe output is:\nYour order: Butternut squash soup",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 119,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.6",
+   "section_title": "Nested decisions",
+   "printed_page": 109,
+   "order": 82,
+   "content_hash": "4b6bd323bd57"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0119:c01",
+  "text": "4.7 Conditional expressions\nLearning objectives\nBy the end of this section you should be able to\n• Identify the components of a conditional expression.\n• Create a conditional expression.\nConditional expressions\nA conditional expression (also known as a \"ternary operator\") is a simplified, single-line version of an\nif-else statement.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 119,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.7",
+   "section_title": "Conditional expressions",
+   "printed_page": 109,
+   "order": 83,
+   "content_hash": "7c85b82d8f3a"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0119:c02",
+  "text": "Conditional expression template:\nexpression_if_true if condition else expression_if_false\nA conditional expression is evaluated by first checking the condition. If condition is true,\nexpression_if_true is evaluated, and the result is the resulting value of the conditional expression. Else,\nexpression_if_false is evaluated, and the result is the resulting value of the conditional expression.\nA variable can be assigned with a conditional expression. Ex: Finding the max of two numbers can be\ncalculated with max_num = y if x < y else x\nNote: Conditional expressions have the lowest precedence of all Python operations.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 119,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.7",
+   "section_title": "Conditional expressions",
+   "printed_page": 109,
+   "order": 84,
+   "content_hash": "a6b8e208a9cc"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0119:c03",
+  "text": "CHECKPOINT\nExample: Version check\nExample: Version check; ch 4, video 15 (https://www.openstax.org/r/version-check)\nCONCEPTS IN PRACTICE\nUsing conditional expressions\n1 . What is the conditional expression version of the following if-else statement?\nif x%2 == 0:\nresponse = 'even'",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 119,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.7",
+   "section_title": "Conditional expressions",
+   "printed_page": 109,
+   "order": 85,
+   "content_hash": "a1c4bebf5a6a"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0120:c00",
+  "text": "else:\nresponse = 'odd'\na. response = if x%2 == 0 \"even\" else \"odd\"\nb. response = \"odd\" if x%2 == 0 else \"even\"\nc. response = \"even\" if x%2 == 0 else \"odd\"\n2 . Given x = 100 and offset = 10, what is the value of result?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 120,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.7",
+   "section_title": "Conditional expressions",
+   "printed_page": 110,
+   "order": 86,
+   "content_hash": "d9f797f46441"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0120:c01",
+  "text": "result = x + offset if x < 100 else x - offset\na. 90\nb. 100\nc. 110\n3 . Which part of the conditional expression is incorrect?\nmin_num = x if x < y else min_num = y\na. min_num = x\nb. x < y\nc. min_num = y\n4 . Which of the following is an improved version of the following if-else statement?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 120,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.7",
+   "section_title": "Conditional expressions",
+   "printed_page": 110,
+   "order": 87,
+   "content_hash": "046bc8a7be15"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0120:c02",
+  "text": "if x < 50:\nresult = True\nelse:\nresult = False\na. result = True if x < 50 else False\nb. result = x < 50\n5 . What are the possible values of total?\ntotal = fee + 10 if hours > 12 else 2\na. 10, 2\nb. fee + 10, 2\nc. fee + 10, fee + 2\nPing values\nWrite a program that reads in an integer, ping, and prints ping_report, a string indicating whether the\nping is low to average or too high. ping values under 150 have a ping_report of \"low to average\".\nping values of 150 and higher have a ping_report of \"too high\". Use a conditional expression to assign\nping_report.\nEx: If the input is 30, the output is \"Ping is low to average\".",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 120,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.7",
+   "section_title": "Conditional expressions",
+   "printed_page": 110,
+   "order": 88,
+   "content_hash": "58a8aa087453"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0121:c00",
+  "text": "4.8 Chapter summary\nHighlights from this chapter include:\n• Booleans represent a value of True or False.\n• Comparison operators compare values and produce True or False.\n• Logical operators take condition operand(s) and produce True or False.\n• Operators are evaluated in order according to precedence and associativity.\n• Conditions are expressions that evaluate to True or False.\n• Decision statements allow different paths of execution (branches) through code based on conditions.\n• Decision statements can be nested inside other decision statements.\n• Conditional expressions are single-line versions of if-else statements.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 121,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.8",
+   "section_title": "Chapter summary",
+   "printed_page": 111,
+   "order": 89,
+   "content_hash": "3500107b704f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0121:c01",
+  "text": "At this point, you should be able to write programs that evaluate conditions and execute code statements\naccordingly with the correct order of operations. The programming practice below ties together most topics\npresented in the chapter.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 121,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.8",
+   "section_title": "Chapter summary",
+   "printed_page": 111,
+   "order": 90,
+   "content_hash": "885453ccfb0d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0121:c02",
+  "text": "Function Description\nbool(x) Converts x to a Boolean value, either True or False.\nOperator Description\nx == y\n(Equality)\nCompares the values of x and y and returns True if the values are equal and False\notherwise. Ex: 10 == 10 is True.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 121,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.8",
+   "section_title": "Chapter summary",
+   "printed_page": 111,
+   "order": 91,
+   "content_hash": "8a42b8eb63fa"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0121:c03",
+  "text": "x != y\n(Inequality)\nCompares the values of x and y and returns True if the values are inequal and False\notherwise. Ex: 7 != 4 is True.\nx > y\n(Greater than)\nCompares the values of x and y and returns True if the x is greater than y and False\notherwise. Ex: 9 > 3 is True.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 121,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.8",
+   "section_title": "Chapter summary",
+   "printed_page": 111,
+   "order": 92,
+   "content_hash": "cacc3ac8f4ea"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0121:c04",
+  "text": "x < y\n(Less than)\nCompares the values of x and y and returns True if the x is less than y and False\notherwise. Ex: 9 < 8 is False.\nx >= y\n(Greater than\nor equal)\nCompares the values of x and y and returns True if the x is greater than or equal to y\nand False otherwise. Ex: 2 >= 2 is True.\nTable 4.5 Chapter 4 reference.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 121,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.8",
+   "section_title": "Chapter summary",
+   "printed_page": 111,
+   "order": 93,
+   "content_hash": "92e62f068656"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0122:c00",
+  "text": "Function Description\nx <= y\n(Less than or\nequal)\nCompares the values of x and y and returns True if the x is less than or equal to y and\nFalse otherwise. Ex: 8 <= 7 is False.\nx and y\n(Logical)\nEvaluates the Boolean values of x and y and returns True if both are true. Ex: True and\nFalse is False.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 122,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.8",
+   "section_title": "Chapter summary",
+   "printed_page": 112,
+   "order": 94,
+   "content_hash": "dc3e80ca5955"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0122:c01",
+  "text": "x or y\n(Logical)\nEvaluates the Boolean values of x and y and returns True if either is true. Ex: True or\nFalse is True.\nnot x\n(Logical)\nEvaluates the Boolean value of x and returns True if the value is false and False if the\nvalue is true. Ex: not True is False.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 122,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.8",
+   "section_title": "Chapter summary",
+   "printed_page": 112,
+   "order": 95,
+   "content_hash": "eb25a55473fd"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0122:c02",
+  "text": "Decision\nstatement Description\nif statement\n# Statements before\nif condition:\n# Body\n# Statements after\nelse statement\n# Statements before\nif condition:\n# Body\nelse:\n# Body\n# Statements after\nTable 4.5 Chapter 4 reference.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 122,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.8",
+   "section_title": "Chapter summary",
+   "printed_page": 112,
+   "order": 96,
+   "content_hash": "b938f7678433"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0123:c00",
+  "text": "Function Description\nelif statement\n# Statements before\nif condition:\n# Body\nelif condition:\n# Body\nelse:\n# Body\n# Statements after\nNested if\nstatement\n# Statements before\nif condition:\nif condition:\n# Body\nelse:\n# Body\nelse:\nif condition:\n# Body\nelse:\n# Body\n# Statements after\nConditional\nexpression\nexpression_if_true if condition else expression_if_false\nTable 4.5 Chapter 4 reference.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 123,
+  "metadata": {
+   "chapter": 4,
+   "chapter_title": "Decisions",
+   "section": "4.8",
+   "section_title": "Chapter summary",
+   "printed_page": 113,
+   "order": 97,
+   "content_hash": "1b6f134adca0"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0125:c00",
+  "text": "Figure 5.1 credit: modification of work \"Quantum Computing\", by Kevin Dooley/Flickr, CC BY 2.0\nChapter Outline\n5.1 While loop\n5.2 For loop\n5.3 Nested loops\n5.4 Break and continue\n5.5 Loop else\n5.6 Chapter summary",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 125,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.0",
+   "section_title": "Chapter introduction",
+   "printed_page": -1,
+   "order": 98,
+   "content_hash": "f90e2cb178e0"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0125:c01",
+  "text": "Introduction\nA loop is a code block that runs a set of statements while a given condition is true. A loop is often used for\nperforming a repeating task. Ex: The software on a phone repeatedly checks to see if the phone is idle. Once\nthe time set by a user is reached, the phone is locked. Loops can also be used for iterating over lists like\nstudent names in a roster, and printing the names one at a time.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 125,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.0",
+   "section_title": "Chapter introduction",
+   "printed_page": -1,
+   "order": 99,
+   "content_hash": "b69241bdf1f6"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0125:c02",
+  "text": "In this chapter, two types of loops, for loop and while loop, are introduced. This chapter also introduces\nbreak and continue statements for controlling a loop's execution.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 125,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.0",
+   "section_title": "Chapter introduction",
+   "printed_page": -1,
+   "order": 100,
+   "content_hash": "a8982ad7b4b0"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0125:c03",
+  "text": "5.1 While loop\nLearning objectives\nBy the end of this section you should be able to\n• Explain the loop construct in Python.\n• Use a while loop to implement repeating tasks.\nWhile loop\nA while loop is a code construct that runs a set of statements, known as the loop body, while a given\ncondition, known as the loop expression, is true. At each iteration, once the loop statement is executed, the",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 125,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": -1,
+   "order": 101,
+   "content_hash": "fc863347cd08"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0126:c00",
+  "text": "loop expression is evaluated again.\n• If true, the loop body will execute at least one more time (also called looping or iterating one more time).\n• If false, the loop's execution will terminate and the next statement after the loop body will execute.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 126,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": 116,
+   "order": 102,
+   "content_hash": "bf3f905c056f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0126:c01",
+  "text": "CHECKPOINT\nWhile loop\nWhile loop; ch 5, video 1 (https://www.openstax.org/r/while-loop)\nCONCEPTS IN PRACTICE\nWhile loop example\nFibonacci is a series of numbers in which each number is the sum of the two preceding numbers. The\nFibonacci sequence starts with two ones: 1, 1, 2, 3, . . . . Consider the following code that prints all Fibonacci\nnumbers less than 20, and answer the following questions.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 126,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": 116,
+   "order": 103,
+   "content_hash": "ff17e77c37f1"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0126:c02",
+  "text": "# Initializing the first two Fibonacci numbers\nf = 1\ng = 1\nprint (f, end = ' ')\n# Running the loop while the last Fibonacci number is less than 20\nwhile g < 20:\nprint(g, end = ' ')\n# Calculating the next Fibonacci number and updating the last two sequence numbers\ntemp = f\nf = g\ng = temp + g\n1 . How many times does the loop execute?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 126,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": 116,
+   "order": 104,
+   "content_hash": "95cc3e1afc47"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0126:c03",
+  "text": "a. 5\nb. 6\nc. 7\n2 . What is the variable g's value when the while loop condition evaluates to False?\na. 13\nb. 20\nc. 21\n3 . What are the printed values in the output?\na. 1 1 2 3 5 8 13\nb. 1 2 3 5 8 13\nc. 1 1 2 3 5 8 13 21\nCounting with a while loop\nA while loop can be used to count up or down. A counter variable can be used in the loop expression to",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 126,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": 116,
+   "order": 105,
+   "content_hash": "a82d7a30546c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0127:c00",
+  "text": "determine the number of iterations executed. Ex: A programmer may want to print all even numbers between\n1 and 20. The task can be done by using a counter initialized with 1. In each iteration, the counter's value is\nincreased by one, and a condition can check whether the counter's value is an even number or not. The\nchange in the counter's value in each iteration is called the step size. The step size can be any positive or\nnegative value. If the step size is a positive number, the counter counts in ascending order, and if the step size\nis a negative number, the counter counts in descending order.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 127,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": 117,
+   "order": 106,
+   "content_hash": "c51088b12b7f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0127:c01",
+  "text": "EXAMPLE 5.1\nA program printing all odd numbers between 1 and 10\n# Initialization\ncounter = 1\n# While loop condition\nwhile counter <= 10:\nif counter % 2 == 1:\nprint(counter)\n# Counting up and increasing counter's value by 1 in each iteration\ncounter += 1",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 127,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": 117,
+   "order": 107,
+   "content_hash": "fd433a1a2d6a"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0127:c02",
+  "text": "CHECKPOINT\nCounting with while loop\nCounting with while loop; ch 5, video 2 (https://www.openstax.org/r/counting-with-while-loop)\nCONCEPTS IN PRACTICE\nwhile loop counting examples\nGiven the code, answer the following questions.\nn = 4\nwhile n > 0:\nprint(n)\nn = n - 1\nprint(\"value of n after the loop is\", n)\n4 . How many times does the loop execute?\na. 3\nb. 4\nc. 5\n5 . Which line is printed as the last line of output?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 127,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": 117,
+   "order": 108,
+   "content_hash": "14da5701f6e4"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0128:c00",
+  "text": "a. value of n after the loop is -1.\nb. value of n after the loop is 0.\nc. value of n after the loop is 1.\n6 . What happens if the code is changed as follows?\nn = 4\nwhile n > 0:\nprint(n)\n# Modified line\nn = n + 1\nprint(\"value of n after the loop is\", n)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 128,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": 118,
+   "order": 109,
+   "content_hash": "001b48e87955"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0128:c01",
+  "text": "a. The code will not run.\nb. The code will run for one additional iteration.\nc. The code will never terminate.\nReading inputs in a while loop\nWrite a program that takes user inputs in a while loop until the user enters \"begin\". Test the code with\nthe given input values to check that the loop does not terminate until the input is \"begin\". Once the input\n\"begin\" is received, print \"The while loop condition has been met.\".",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 128,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": 118,
+   "order": 110,
+   "content_hash": "13ef71168e70"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0128:c02",
+  "text": "Enter different input words to see when the while loop condition is met.\nSum of odd numbers\nWrite a program that reads two integer values, n1 and n2. Use a while loop to calculate the sum of odd\nnumbers between n1 and n2 (inclusive of n1 and n2). Remember, a number is odd if number % 2 != 0.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 128,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.1",
+   "section_title": "While loop",
+   "printed_page": 118,
+   "order": 111,
+   "content_hash": "93a3fc2fcdb0"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0128:c03",
+  "text": "5.2 For loop\nLearning objectives\nBy the end of this section you should be able to\n• Explain the for loop construct.\n• Use a for loop to implement repeating tasks.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 128,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 118,
+   "order": 112,
+   "content_hash": "fe1dbc2cb047"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0129:c00",
+  "text": "For loop\nIn Python, a container can be a range of numbers, a string of characters, or a list of values. To access objects\nwithin a container, an iterative loop can be designed to retrieve objects one at a time. A for loop iterates over\nall elements in a container. Ex: Iterating over a class roster and printing students' names.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 129,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 119,
+   "order": 113,
+   "content_hash": "5a174d3b29ab"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0129:c01",
+  "text": "CHECKPOINT\nFor loop example for iterating over a container object\nFor loop example for iterating over a container object; ch 5, video 3 (https://www.openstax.org/r/for-loop-\niterating)\nCONCEPTS IN PRACTICE\nFor loop over a string container\nA string variable can be considered a container of multiple characters, and hence can be iterated on. Given\nthe following code, answer the questions.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 129,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 119,
+   "order": 114,
+   "content_hash": "efc16c646eb8"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0129:c02",
+  "text": "str_var = \"A string\"\ncount = 0\nfor c in str_var:\ncount += 1\nprint(count)\n1 . What is the program's output?\na. 7\nb. 8\nc. 9\n2 . What's the code's output if the line count += 1 is replaced with count *= 2?\na. 0\nb. 16\nc. 28\n3 . What is printed if the code is changed as follows?\nstr_var = \"A string\"\ncount = 0\nfor c in str_var:\ncount += 1\n# New line\nprint(c, end = '*')\nprint(count)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 129,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 119,
+   "order": 115,
+   "content_hash": "4ed7e5dde866"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0130:c00",
+  "text": "a. A string*\nb. A*s*t*r*i*n*g*\nc. A* *s*t*r*i*n*g*\nRange() function in for loop\nA for loop can be used for iteration and counting. The range() function is a common approach for\nimplementing counting in a for loop. A range() function generates a sequence of integers between the two\nnumbers given a step size. This integer sequence is inclusive of the start and exclusive of the end of the\nsequence. The range() function can take up to three input values. Examples are provided in the table below.\nRange function Description Example Output\nrange(end)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 130,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 120,
+   "order": 116,
+   "content_hash": "d293bc413eea"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0130:c01",
+  "text": "• Generates a sequence beginning at 0\nuntil end.\n• Step size: 1\nrange(4) 0, 1, 2, 3\nrange(start, end)\n• Generates a sequence beginning at\nstart until end.\n• Step size: 1\nrange(0, 3) 0, 1, 2\nrange(2, 6) 2, 3, 4, 5\nrange(-13,\n-9)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 130,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 120,
+   "order": 117,
+   "content_hash": "e2ed077ec198"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0130:c02",
+  "text": "-13, -12,\n-11, -10\nrange(start, end,\nstep)\n• Generates a sequence beginning at\nstart until end.\n• Step size: step\nrange(0, 4,\n1) 0, 1, 2, 3\nrange(1, 7,\n2) 1, 3, 5\nrange(3,\n-2, -1)\n3, 2, 1, 0,\n-1\nrange(10,\n0, -4) 10, 6, 2\nTable 5.1 Using the range() function.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 130,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 120,
+   "order": 118,
+   "content_hash": "ffbfd3075445"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0131:c00",
+  "text": "EXAMPLE 5.2\nTwo programs printing all integer multiples of 5 less than 50 (Notice the compactness of the for\nconstruction compared to the while)\n# For loop condition using\n# range() function to print\n# all multiples of 5 less than 50\nfor i in range(0, 50, 5):",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 131,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 121,
+   "order": 119,
+   "content_hash": "2d239a8e1949"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0131:c01",
+  "text": "print(i)\n# While loop implementation of printing\n# multiples of 5 less than 50\n# Initialization\ni = 0\n# Limiting the range to be less than 50\nwhile i < 50:\nprint(i)\ni+=5\nTable 5.2\nCONCEPTS IN PRACTICE\nFor loop using a range() function\n4 . What are the arguments to the range() function for the increasing sequence of every 3rd integer from\n10 to 22 (inclusive of both ends)?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 131,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 121,
+   "order": 120,
+   "content_hash": "cb6bae427da5"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0131:c02",
+  "text": "a. range(10, 23, 3)\nb. range(10, 22, 3)\nc. range(22, 10, -3)\n5 . What are the arguments to the range() function for the decreasing sequence of every integer from 5\nto 1 (inclusive of both ends)?\na. range(5, 1, 1)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 131,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 121,
+   "order": 121,
+   "content_hash": "d742e9c258fd"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0131:c03",
+  "text": "b. range(5, 1, -1)\nc. range(5, 0, -1)\n6 . What is the sequence generated from range(-1, -2, -1)?\na. 1\nb. -1, -2\nc. -2\n7 . What is the output of the range(1, 2, -1)?\na. 1\nb. 1, 2\nc. empty sequence\n8 . What is the output of range(5, 2)?\na. 0, 2, 4\nb. 2, 3, 4",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 131,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 121,
+   "order": 122,
+   "content_hash": "7c0a241412ee"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0132:c00",
+  "text": "c. empty sequence\nCounting spaces\nWrite a program using a for loop that takes in a string as input and counts the number of spaces in the\nprovided string. The program must print the number of spaces counted. Ex: If the input is \"Hi everyone\",\nthe program outputs 1.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 132,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 122,
+   "order": 123,
+   "content_hash": "dce10478465e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0132:c01",
+  "text": "Sequences\nWrite a program that reads two integer values, n1 and n2, with n1 < n2, and performs the following tasks:\n1. Prints all even numbers between the two provided numbers (inclusive of both), in ascending order.\n2. Prints all odd numbers between the two provided numbers (exclusive of both), in descending order.\nInput: 2 8\nPrints:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 132,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 122,
+   "order": 124,
+   "content_hash": "a8c246d6f3f3"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0132:c02",
+  "text": "2 4 6 8\n7 5 3\nNote: the program should return an error message if the second number is smaller than the first.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 132,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.2",
+   "section_title": "For loop",
+   "printed_page": 122,
+   "order": 125,
+   "content_hash": "304f55f036a2"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0132:c03",
+  "text": "5.3 Nested loops\nLearning objectives\nBy the end of this section you should be able to\n• Implement nested while loops.\n• Implement nested for loops.\nNested loops\nA nested loop has one or more loops within the body of another loop. The two loops are referred to as outer\nloop and inner loop. The outer loop controls the number of the inner loop's full execution. More than one\ninner loop can exist in a nested loop.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 132,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 122,
+   "order": 126,
+   "content_hash": "b8b0f9eab8b8"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0133:c00",
+  "text": "CHECKPOINT\nNested while loops\nNested while loops; ch 5, video 5 (https://www.openstax.org/r/nested-while-loops)\nEXAMPLE 5.3\nAvailable appointments\nConsider a doctor's office schedule. Each appointment is 30 minutes long. A program to print available\nappointments can use a nested for loop where the outer loop iterates over the hours, and the inner loop\niterates over the minutes. This example prints time in hours and minutes in the range between 8:00am and\n10:00am. In this example, the outer loop iterates over the time's hour portion between 8 and 9, and the\ninner loop iterates over the time's minute portion between 0 and 59.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 133,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 123,
+   "order": 127,
+   "content_hash": "79a9b869b363"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0133:c01",
+  "text": "hour = 8\nminute = 0\nwhile hour <= 9:\nwhile minute <= 59:\nprint(hour, \":\", minute)\nminute += 30\nhour += 1\nminute = 0\nThe above code's output is:\n8 : 0\n8 : 30\n9 : 0\n9 : 30\nCONCEPTS IN PRACTICE\nNested while loop question set\n1 . Given the following code, how many times does the print statement execute?\ni = 1\nwhile i <= 5:\nj = 1\nwhile i + j <= 5:\nprint(i, j)\nj += 1\ni += 1",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 133,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 123,
+   "order": 128,
+   "content_hash": "658c676c3763"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0134:c00",
+  "text": "a. 5\nb. 10\nc. 25\n2 . What is the output of the following code?\ni = 1\nwhile i <= 2:\nj = 1\nwhile j <= 3:\nprint('*', end = '')\nj += 1\nprint()\ni += 1\na. ******\nb. ***\n***\nc. **\n**\n**\n3 . Which program prints the following output?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 134,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 124,
+   "order": 129,
+   "content_hash": "59e71163d250"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0134:c01",
+  "text": "1 2 3 4\n2 4 6 8\n3 6 9 12\n4 8 12 16\na. i = 1\nwhile i <= 4:\nwhile j <= 4:\nprint(i * j, end = ' ')\nj += 1\nprint()\ni += 1\nb. i = 1\nwhile i <= 4:\nj = 1\nwhile j <= 4:\nprint(i * j, end = ' ')\nj += 1\nprint()\ni += 1\nc. i = 1\nwhile i <= 4:\nj = 1\nwhile j <= 4:\nprint(i * j, end = ' ')",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 134,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 124,
+   "order": 130,
+   "content_hash": "27f01b989f3d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0135:c00",
+  "text": "j += 1\ni += 1\nNested for loops\nA nested for loop can be implemented and used in the same way as a nested while loop. A for loop is a\npreferable option in cases where a loop is used for counting purposes using a range() function, or when\niterating over a container object, including nested situations. Ex: Iterating over multiple course rosters. The\nouter loop iterates over different courses, and the inner loop iterates over the names in each course roster.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 135,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 125,
+   "order": 131,
+   "content_hash": "632d3d030121"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0135:c01",
+  "text": "CHECKPOINT\nNested for loops\nNested for loops; ch 5, video 4 (https://www.openstax.org/r/nested-for-loops)\nCONCEPTS IN PRACTICE\nNested loop practices\n4 . Given the following code, how many times does the outer loop execute?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 135,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 125,
+   "order": 132,
+   "content_hash": "9f45f0c364e6"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0135:c02",
+  "text": "for i in range(3):\nfor j in range(4):\nprint(i, ' ', j)\na. 3\nb. 4\nc. 12\n5 . Given the following code, how many times does the inner loop execute?\nfor i in range(3):\nfor j in range(4):\nprint(i, ' ', j)\na. 4\nb. 12\nc. 20\n6 . Which program prints the following output?\n0 1 2 3\n0 2 4 6\n0 3 6 9\na. for i in range(4):\nfor j in range(4):\nprint(i * j, end = ' ')\nprint()",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 135,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 125,
+   "order": 133,
+   "content_hash": "0af283bcc68d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0136:c00",
+  "text": "b. for i in range(1, 4):\nfor j in range(4):\nprint(i * j)\nc. for i in range(1, 4):\nfor j in range(4):\nprint(i * j, end = ' ')\nprint()\nMIXED LOOPS\nThe two for and while loop constructs can also be mixed in a nested loop construct. Ex: Printing even\nnumbers less than a given number in a list. The outer loop can be implemented using a for loop iterating\nover the provided list, and the inner loop iterates over all even numbers less than a given number from the\nlist using a while loop.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 136,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 126,
+   "order": 134,
+   "content_hash": "6b3471e2cc58"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0136:c01",
+  "text": "numbers = [12, 5, 3]\ni = 0\nfor n in numbers:\nwhile i < n:\nprint (i, end = \" \")\ni += 2\ni = 0\nprint()\nPrinting a triangle of numbers\nWrite a program that prints the following output:\n1 2 3 4 5 6 7 8 9\n1 2 3 4 5 6 7 8\n1 2 3 4 5 6 7\n1 2 3 4 5 6\n1 2 3 4 5\n1 2 3 4\n1 2 3\n1 2\n1\nFinish!",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 136,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 126,
+   "order": 135,
+   "content_hash": "457e438bba96"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0137:c00",
+  "text": "Printing two triangles\nWrite a program that prints the following output using nested while and for loops:\n****\n***\n**\n*\n++++\n+++\n++\n+",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 137,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.3",
+   "section_title": "Nested loops",
+   "printed_page": 127,
+   "order": 136,
+   "content_hash": "17fe351d8977"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0137:c01",
+  "text": "5.4 Break and continue\nLearning objectives\nBy the end of this section you should be able to\n• Analyze a loop's execution with break and continue statements.\n• Use break and continue control statements in while and for loops.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 137,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 127,
+   "order": 137,
+   "content_hash": "67b6258f4e36"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0137:c02",
+  "text": "Break\nA break statement is used within a for or a while loop to allow the program execution to exit the loop once a\ngiven condition is triggered. A break statement can be used to improve runtime efficiency when further loop\nexecution is not required.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 137,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 127,
+   "order": 138,
+   "content_hash": "65bcd337e21c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0137:c03",
+  "text": "Ex: A loop that looks for the character \"a\" in a given string called user_string. The loop below is a regular\nfor loop for going through all the characters of user_string. If the character is found, the break statement\ntakes execution out of the for loop. Since the task has been accomplished, the rest of the for loop execution\nis bypassed.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 137,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 127,
+   "order": 139,
+   "content_hash": "bb4f0a908c72"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0137:c04",
+  "text": "user_string = \"This is a string.\"\nfor i in range(len(user_string)):\nif user_string[i] == 'a':\nprint(\"Found at index:\", i)\nbreak\nCHECKPOINT\nBreak statement in a while loop\nBreak statement in a while loop; ch 5, video 6 (https://www.openstax.org/r/while-break)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 137,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 127,
+   "order": 140,
+   "content_hash": "422444281bb1"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0138:c00",
+  "text": "INFINITE LOOP\nA break statement is an essential part of a loop that does not have a termination condition. A loop without\na termination condition is known as an infinite loop. Ex: An infinite loop that counts up starting from 1 and\nprints the counter's value while the counter's value is less than 10. A break condition is triggered when the\ncounter's value is equal to 10, and hence the program execution exits.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 138,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 128,
+   "order": 141,
+   "content_hash": "0a4945b5bfb9"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0138:c01",
+  "text": "counter = 1\nwhile True:\nif counter >= 10:\nbreak\nprint(counter)\ncounter += 1\nCONCEPTS IN PRACTICE\nUsing a break statement\n1 . What is the following code's output?\nstring_val = \"Hello World\"\nfor c in string_val:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 138,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 128,
+   "order": 142,
+   "content_hash": "66d89e4fe543"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0138:c02",
+  "text": "if c == \" \":\nbreak\nprint(c)\na. Hello\nb. Hello World\nc. H\ne\nl\nl\no\n2 . Given the following code, how many times does the print statement get executed?\ni = 1\nwhile True:\nif i%3 == 0 and i%5 == 0:\nprint(i)\nbreak\ni += 1\na. 0\nb. 1\nc. 15\n3 . What is the final value of i?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 138,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 128,
+   "order": 143,
+   "content_hash": "680fb260e93d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0139:c00",
+  "text": "i = 1\ncount = 0\nwhile True:\nif i%2 == 0 or i%3 == 0:\ncount += 1\nif count >= 5:\nprint(i)\nbreak\ni += 1\na. 5\nb. 8\nc. 30\nContinue\nA continue statement allows for skipping the execution of the remainder of the loop without exiting the loop\nentirely. A continue statement can be used in a for or a while loop. After the continue statement's\nexecution, the loop expression will be evaluated again and the loop will continue from the loop's expression. A\ncontinue statement facilitates the loop's control and readability.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 139,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 129,
+   "order": 144,
+   "content_hash": "8db016cd7df0"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0139:c01",
+  "text": "CHECKPOINT\nContinue statement in a while loop\nControl statement in a while loop; ch 5, video 7 (https://www.openstax.org/r/while-control)\nCONCEPTS IN PRACTICE\nUsing a continue statement\n4 . Given the following code, how many times does the print statement get executed?\ni = 10\nwhile i >= 0:\ni -= 1\nif i%3 != 0:\ncontinue\nprint(i)\na. 3\nb. 4\nc. 11\n5 . What is the following code's output?\nfor c in \"hi Ali\":\nif c == \" \":",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 139,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 129,
+   "order": 145,
+   "content_hash": "5bd53ada07d7"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0140:c00",
+  "text": "continue\nprint(c)\na. h\ni\nA\nl\ni\nb. h\ni\nA\nl\ni\nc. hi\nAli\nUsing break control statement in a loop\nWrite a program that reads a string value and prints \"Found\" if the string contains a space character. Else,\nprints \"Not found\".",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 140,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 130,
+   "order": 146,
+   "content_hash": "95d6da94ed2e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0140:c01",
+  "text": "Using a continue statement in a loop\nComplete the following code so that the program calculates the sum of all the numbers in list my_list that\nare greater than or equal to 5.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 140,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.4",
+   "section_title": "Break and continue",
+   "printed_page": 130,
+   "order": 147,
+   "content_hash": "ef07fe64fe8f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0140:c02",
+  "text": "5.5 Loop else\nLearning objectives\nBy the end of this section you should be able to\n• Use loop else statement to identify when the loop execution is interrupted using a break statement.\n• Implement a loop else statement with a for or a while loop.\nLoop else\nA loop else statement runs after the loop's execution is completed without being interrupted by a break",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 140,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.5",
+   "section_title": "Loop else",
+   "printed_page": 130,
+   "order": 148,
+   "content_hash": "71f0c3fbaa22"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0141:c00",
+  "text": "statement. A loop else is used to identify if the loop is terminated normally or the execution is interrupted by\na break statement.\nEx: A for loop that iterates over a list of numbers to find if the value 10 is in the list. In each iteration, if 10 is\nobserved, the statement \"Found 10!\" is printed and the execution can terminate using a break statement. If\n10 is not in the list, the loop terminates when all integers in the list are evaluated, and hence the else\nstatement will run and print \"10 is not in the list.\" Alternatively, a Boolean variable can be used to\ntrack whether number 10 is found after loop's execution terminates.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 141,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.5",
+   "section_title": "Loop else",
+   "printed_page": 131,
+   "order": 149,
+   "content_hash": "dcbce6b2eb01"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0141:c01",
+  "text": "EXAMPLE 5.4\nFinding the number 10 in a list\nIn the code examples below, the code on the left prints \"Found 10!\" if the variable i's value is 10. If the\nvalue 10 is not in the list, the code prints \"10 is not in the list.\". The code on the right uses the\nseen Boolean variable to track if the value 10 is in the list. After loop's execution, if seen's value is still false,\nthe code prints \"10 is not in the list.\".",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 141,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.5",
+   "section_title": "Loop else",
+   "printed_page": 131,
+   "order": 150,
+   "content_hash": "b88898cd4b79"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0141:c02",
+  "text": "numbers = [2, 5, 7, 11, 12]\nfor i in numbers:\nif i == 10:\nprint(\"Found 10!\")\nbreak\nelse:\nprint(\"10 is not in the list.\")\nnumbers = [2, 5, 7, 11, 12]\nseen = False\nfor i in numbers:\nif i == 10:\nprint(\"Found 10!\")",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 141,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.5",
+   "section_title": "Loop else",
+   "printed_page": 131,
+   "order": 151,
+   "content_hash": "c7bdf1539fc0"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0141:c03",
+  "text": "seen = True\nif seen == False:\nprint(\"10 is not in the list.\")\nTable 5.3\nCHECKPOINT\nLoop else template\nLoop else template; ch 5, video 8 (https://www.openstax.org/r/loop-else)\nCONCEPTS IN PRACTICE\nLoop else practices\n1 . What is the output?\nn = 16\nexp = 0\ni = n\nwhile i > 1:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 141,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.5",
+   "section_title": "Loop else",
+   "printed_page": 131,
+   "order": 152,
+   "content_hash": "51870d1b01d1"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0142:c00",
+  "text": "if n%2 == 0:\ni = i/2\nexp += 1\nelse:\nbreak\nelse:\nprint(n,\"is 2 to the\", exp)\na. 16 is 2 to the 3\nb. 16 is 2 to the 4\nc. no output\n2 . What is the output?\nn = 7\nexp = 0\ni = n\nwhile i > 1:\nif n%2 == 0:\ni = i//2\nexp += 1\nelse:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 142,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.5",
+   "section_title": "Loop else",
+   "printed_page": 132,
+   "order": 153,
+   "content_hash": "6557a7b30f84"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0142:c01",
+  "text": "break\nelse:\nprint(n,\"is 2 to the\", exp)\na. no output\nb. 7 is 2 to the 3\nc. 7 is 2 to the 2\n3 . What is the output?\nnumbers = [1, 2, 2, 6]\nfor i in numbers:\nif i >= 5:\nprint(\"Not all numbers are less than 5.\")\nbreak\nelse:\nprint(i)\ncontinue\nelse:\nprint(\"all numbers are less than 5.\")\na. 1\n2\n2\n6\nNot all numbers are less than 5.\nb. 1\n2",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 142,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.5",
+   "section_title": "Loop else",
+   "printed_page": 132,
+   "order": 154,
+   "content_hash": "0215278e62e5"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0143:c00",
+  "text": "2\nNot all numbers are less than 5.\nc. 1\n2\n2\n6\nall numbers are less than 5.\nSum of values less than 10\nWrite a program that, given a list, calculates the sum of all integer values less than 10. If a value greater\nthan or equal to 10 is in the list, no output should be printed. Test the code for different values in the list.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 143,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.5",
+   "section_title": "Loop else",
+   "printed_page": 133,
+   "order": 155,
+   "content_hash": "a6594bdd68d6"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0143:c01",
+  "text": "5.6 Chapter summary\nHighlights from this chapter include:\n• A while loop runs a set of statements, known as the loop body, while a given condition, known as the\nloop expression, is true.\n• A for loop can be used to iterate over elements of a container object.\n• A range() function generates a sequence of integers between the two numbers given a step size.\n• A nested loop has one or more loops within the body of another loop.\n• A break statement is used within a for or a while loop to allow the program execution to exit the loop\nonce a given condition is triggered.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 143,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.6",
+   "section_title": "Chapter summary",
+   "printed_page": 133,
+   "order": 156,
+   "content_hash": "6da0da6a0f06"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0143:c02",
+  "text": "• A continue statement allows for skipping the execution of the remainder of the loop without exiting the\nloop entirely.\n• A loop else statement runs after the loop's execution is completed without being interrupted by a break\nstatement.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 143,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.6",
+   "section_title": "Chapter summary",
+   "printed_page": 133,
+   "order": 157,
+   "content_hash": "278ff1126a87"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0143:c03",
+  "text": "At this point, you should be able to write programs with loop constructs. The programming practice below ties\ntogether most topics presented in the chapter.\nFunction Description\nrange(end) Generates a sequence beginning at 0 until end with step size of 1.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 143,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.6",
+   "section_title": "Chapter summary",
+   "printed_page": 133,
+   "order": 158,
+   "content_hash": "d20ec83ca33c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0143:c04",
+  "text": "range(start, end) Generates a sequence beginning at start until end with step size of 1.\nrange(start, end, s) Generates a sequence beginning at start until end with the step size of s.\nTable 5.4 Chapter 5 reference.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 143,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.6",
+   "section_title": "Chapter summary",
+   "printed_page": 133,
+   "order": 159,
+   "content_hash": "b9954b3636e3"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0144:c00",
+  "text": "Function Description\nLoop constructs Description\nwhile loop\n# initialization\nwhile expression:\n# loop body\n# statements after the loop\nfor loop\n# initialization\nfor loop_variable in container:\n# loop body\n# statements after the loop\nNested while loop\nwhile outer_loop_expression:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 144,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.6",
+   "section_title": "Chapter summary",
+   "printed_page": 134,
+   "order": 160,
+   "content_hash": "2be0f507c8a2"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0144:c01",
+  "text": "# outer loop body (1)\nwhile inner_loop_expression:\n# inner loop body\n# outer loop body (2)\n# statements after the loop\nbreak statement\n# initialization\nwhile loop_expression:\n# loop body\nif break_condition:\nbreak\n# remaining body of loop\n# statements after the loop\nTable 5.4 Chapter 5 reference.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 144,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.6",
+   "section_title": "Chapter summary",
+   "printed_page": 134,
+   "order": 161,
+   "content_hash": "c222e9199028"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0145:c00",
+  "text": "Function Description\ncontinue statement\n# initialization\nwhile loop_expression:\n# loop body\nif continue_condition:\ncontinue\n# remaining body of loop\n# statements after the loop\nLoop else statement\n# initialization\nfor loop_expression:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 145,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.6",
+   "section_title": "Chapter summary",
+   "printed_page": 135,
+   "order": 162,
+   "content_hash": "b500d9a5c5dc"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0145:c01",
+  "text": "# loop body\nif break_condition:\nbreak\n# remaining body of loop\nelse:\n# loop else statement\n# statements after the loop\nTable 5.4 Chapter 5 reference.\nPrime numbers\nWrite a program that takes in a positive integer number (N) and prints out the first N prime numbers on\nseparate lines.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 145,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.6",
+   "section_title": "Chapter summary",
+   "printed_page": 135,
+   "order": 163,
+   "content_hash": "613c1d0b5790"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0145:c02",
+  "text": "Note: A prime number is a number that is not divisible by any positive number larger than 1. To check\nwhether a number is prime, the condition of number % i != 0 can be checked for i greater than 1 and\nless than number.\nEx: if N = 6, the output is:\n2\n3\n5\n7\n11\n13",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 145,
+  "metadata": {
+   "chapter": 5,
+   "chapter_title": "Loops",
+   "section": "5.6",
+   "section_title": "Chapter summary",
+   "printed_page": 135,
+   "order": 164,
+   "content_hash": "017329721c3f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0147:c00",
+  "text": "Figure 6.1 credit: modification of work \"IMG_3037\", by Jay Roc/Flickr, Public Domain\nChapter Outline\n6.1 Defining functions\n6.2 Control flow\n6.3 Variable scope\n6.4 Parameters\n6.5 Return values\n6.6 Keyword arguments",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 147,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.0",
+   "section_title": "Chapter introduction",
+   "printed_page": -1,
+   "order": 165,
+   "content_hash": "3831c0285e1d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0147:c01",
+  "text": "6.7 Chapter summary\nIntroduction\nFunctions are the next step toward creating optimized code as a software developer. If the same block of code\nis reused repeatedly, a function allows the programmer to write the block of code once, name the block, and\nuse the code as many times as needed by calling the block by name. Functions can read in values and return\nvalues to perform tasks, including complex calculations.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 147,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.0",
+   "section_title": "Chapter introduction",
+   "printed_page": -1,
+   "order": 166,
+   "content_hash": "718b1a46b3ee"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0147:c02",
+  "text": "Like branching statements discussed in the Decisions chapter, functions allow different paths of execution\nthrough a program, and this chapter discusses control flow and the scope of variables in more detail.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 147,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.0",
+   "section_title": "Chapter introduction",
+   "printed_page": -1,
+   "order": 167,
+   "content_hash": "d9033d8c7845"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0147:c03",
+  "text": "6.1 Defining functions\nLearning objectives\nBy the end of this section you should be able to\n• Identify function calls in a program.\n• Define a parameterless function that outputs strings.\n• Describe benefits of using functions.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 147,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": -1,
+   "order": 168,
+   "content_hash": "760f1b1e3339"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0148:c00",
+  "text": "Calling a function\nThroughout the book, functions have been called to perform tasks. Ex: print() prints values, and sqrt()\ncalculates the square root. A function is a named, reusable block of code that performs a task when called.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 148,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 138,
+   "order": 169,
+   "content_hash": "d8c6b7221a73"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0148:c01",
+  "text": "CHECKPOINT\nExample: Simple math program\nExample: Simple math program; ch 6, video 1 (https://www.openstax.org/r/simple-math)\nCONCEPTS IN PRACTICE\nIdentifying function calls\n1 . Which line has a function call?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 148,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 138,
+   "order": 170,
+   "content_hash": "a36a9d642894"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0148:c02",
+  "text": "1 input_num = 14\n2 offset_num = input_num - 10\n3 print(offset_num)\na. line 1\nb. line 2\nc. line 3\n2 . How many times is print() called?\nprint(\"Please log in\")\nusername = input(\"Username:\")\npassword = input(\"Password:\")",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 148,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 138,
+   "order": 171,
+   "content_hash": "acd15dc1ace4"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0148:c03",
+  "text": "print(\"Login successful\")\nprint(\"Welcome,\", username)\na. 1\nb. 3\nc. 5\n3 . How many function calls are there?\n# Use float() to convert input for area calculation\nwidth = float(input(\"Enter width:\"))\nheight = float(input(\"Enter height:\"))",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 148,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 138,
+   "order": 172,
+   "content_hash": "794b13a6f57c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0148:c04",
+  "text": "print(\"Area is\", width*height)\na. 3\nb. 5\nc. 6\nDefining a function\nA function is defined using the def keyword. The first line contains def followed by the function name (in\nsnake case), parentheses (with any parameters-discussed later), and a colon. The indented body begins with\na documentation string describing the function's task and contains the function statements. A function must",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 148,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 138,
+   "order": 173,
+   "content_hash": "96b5566a4561"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0149:c00",
+  "text": "be defined before the function is called.\nCHECKPOINT\nExample: Welcome message function\nExample: Welcome message function; ch 6, video 2 (https://www.openstax.org/r/welcome-message)\nCONCEPTS IN PRACTICE\nDefining functions\n4 . What's wrong with the first line of the function definition?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 149,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 139,
+   "order": 174,
+   "content_hash": "69dcb9b959cf"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0149:c01",
+  "text": "def water_plant:\na. A docstring should go after the colon.\nb. Parentheses should go after water_plant.\nc. def should be define before water_plant.\n5 . What is the output?\ndef print_phone_num():\nprint(\"Phone: (\", 864, \")\", 555, \"-\", 0199)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 149,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 139,
+   "order": 175,
+   "content_hash": "82053fdcaacb"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0149:c02",
+  "text": "print(\"User info:\")\nprint_phone_num()\na. Phone: ( 864 ) 555 - 1000\nUser info:\nPhone: ( 864 ) 555 - 1000\nb. User info:\nc. User info:\nPhone: ( 864 ) 555 - 1000\n6 . Which statement calls a function named print_pc_specs()?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 149,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 139,
+   "order": 176,
+   "content_hash": "e821612b14a9"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0149:c03",
+  "text": "a. print_pc_specs\nb. print_pc_specs()\nc. print_pc_specs():\n7 . Which is an appropriate name for a function that calculates a user's taxes?\na. calc_tax\nb. calculate user tax\nc. c_t\nBenefits of functions\nA function promotes modularity by putting code statements related to a single task in a separate group. The\nbody of a function can be executed repeatedly with multiple function calls, so a function promotes reusability.\nModular, reusable code is easier to modify and is shareable among programmers to avoid reinventing the\nwheel.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 149,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 139,
+   "order": 177,
+   "content_hash": "f429c3d5547c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0150:c00",
+  "text": "CHECKPOINT\nImproving a program with a function\nImproving a program with a function; ch 6, video 3 (https://www.openstax.org/r/improving-with-functions)\nCONCEPTS IN PRACTICE\nImproving programs with functions\nConsider the code above.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 150,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 140,
+   "order": 178,
+   "content_hash": "bcad98a625f7"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0150:c01",
+  "text": "8 . If the points were changed from floats to integers, how many statements would need to be changed in\nthe original and revised programs respectively?\na. 3, 1\nb. 4, 4\nc. 12, 4\n9 . How many times can calc_distance() be called?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 150,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 140,
+   "order": 179,
+   "content_hash": "080e6925b419"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0150:c02",
+  "text": "a. 1\nb. 3\nc. many\nCinema concession stand\nWrite a function, concessions(), that prints the food and drink options at a cinema.\nGiven:\nconcessions()\nThe output is:\nFood/Drink Options:\nPopcorn: $8-10\nCandy: $3-5\nSoft drink: $5-7",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 150,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 140,
+   "order": 180,
+   "content_hash": "d0e65cf9349d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0151:c00",
+  "text": "Terms and conditions prompt\nWrite a function, terms(), that asks the user to accept the terms and conditions, reads in Y/N, and outputs\na response. In the main program, read in the number of users and call terms() for each user.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 151,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 141,
+   "order": 181,
+   "content_hash": "2dbe26c3b1f4"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0151:c01",
+  "text": "Given inputs 1 and \"Y\", the output is:\nDo you accept the terms and conditions?\nY\nThank you for accepting.\nGiven inputs 2, \"N\", and \"Y\", the output is:\nDo you accept the terms and conditions?\nN\nHave a good day.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 151,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 141,
+   "order": 182,
+   "content_hash": "829015d7e8aa"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0151:c02",
+  "text": "Do you accept the terms and conditions?\nY\nThank you for accepting.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 151,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.1",
+   "section_title": "Defining functions",
+   "printed_page": 141,
+   "order": 183,
+   "content_hash": "7daadb107d9d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0151:c03",
+  "text": "6.2 Control flow\nLearning objectives\nBy the end of this section you should be able to\n• Identify the control flow of a program.\n• Describe how control flow moves between statements and function calls.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 151,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 141,
+   "order": 184,
+   "content_hash": "cd9d32700c14"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0151:c04",
+  "text": "Control flow and functions\nControl flow is the sequence of program execution. A program's control flow begins at the main program but\nrarely follows a strict sequence. Ex: Control flow skips over lines when a conditional statement isn't executed.\nWhen execution reaches a function call, control flow moves to where the function is defined and executes the\nfunction statements. Then, control flow moves back to where the function was called and continues the\nsequence.\nCHECKPOINT\nCalling a brunch menu function\nCalling a brunch menu function; ch 6, video 4 (https://www.openstax.org/r/brunch-menu)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 151,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 141,
+   "order": 185,
+   "content_hash": "1b43e4e843f5"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0152:c00",
+  "text": "CONCEPTS IN PRACTICE\nFollowing the control flow\n1 . Which line is executed first?\n1 def park_greet():\n2 \"\"\"Output greeting.\"\"\"\n3 print(\"Welcome. Open sunrise to sunset.\")\n4\n5 car_count = 1\n6 park_greet()",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 152,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 142,
+   "order": 186,
+   "content_hash": "ee8c2cce4efa"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0152:c01",
+  "text": "7 if car_count > 50:\n8 # Direct to extra parking lot\na. 1\nb. 3\nc. 5\n2 . Control flow moves to line 9, and park_greet() is called. Which line does control flow move to next?\n1 def extra_lot():\n2 # Function definition\n3\n4 def park_greet():",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 152,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 142,
+   "order": 187,
+   "content_hash": "7569978d6b6e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0152:c02",
+  "text": "5 \"\"\"Output greeting.\"\"\"\n6 print(\"Welcome. Open sunrise to sunset.\")\n7\n8 car_count = 1\n9 park_greet()\n10 if car_count > 50:\n11 extra_lot()\na. 1\nb. 4\nc. 10\n3 . Control flow moves to line 12, and extra_lot() is called. Which line does control flow move to after\nline 3 is executed?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 152,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 142,
+   "order": 188,
+   "content_hash": "f8555dffc602"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0152:c03",
+  "text": "1 def extra_lot():\n2 \"\"\"Output extra parking lot info.\"\"\"\n3 print(\"Take the second right to park.\")\n4\n5 def park_greet():\n6 \"\"\"Output greeting.\"\"\"\n7 print(\"Welcome. Open sunrise to sunset.\")\n8\n9 car_count = 1\n10 park_greet()\n11 if car_count > 50:\n12 extra_lot()\na. 5",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 152,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 142,
+   "order": 189,
+   "content_hash": "fd74de6ed6b7"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0153:c00",
+  "text": "b. 8\nc. 12\n4 . What is the output?\ndef park_greet():\n\"\"\"Output greeting.\"\"\"\nprint(\"Welcome to the park\")\nprint(\"Open sunrise to sunset\")\npark_greet()\na. Welcome to the park\nb. Welcome to the park\nOpen sunrise to sunset\nc. Open sunrise to sunset\nWelcome to the park\nFunctions calling functions\nFunctions frequently call other functions to keep the modularity of each function performing one task. Ex: A\nfunction that calculates an order total may call a function that calculates sales tax. When a function called from\nanother function finishes execution, control flow returns to the calling function.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 153,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 143,
+   "order": 190,
+   "content_hash": "58594fd1cc7d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0153:c01",
+  "text": "CHECKPOINT\nExample: Book club email messages\nExample: Book club email messages; ch 6, video 5 (https://www.openstax.org/r/email-messages)\nCONCEPTS IN PRACTICE\nFunctions calling functions\nConsider the book club example above.\n5 . How many function calls occur during the execution of the program?\na. 2\nb. 3\nc. 6\n6 . When line 3 is reached and executed, which line does control flow return to?\na. 1\nb. 11\nc. 16",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 153,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 143,
+   "order": 191,
+   "content_hash": "e292aec3300f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0154:c00",
+  "text": "Updated terms and conditions prompt\nWrite an updated function, terms(), that asks the user to accept the terms and conditions, reads in Y/N,\nand outputs a response by calling accepted() or rejected(). accepted() prints \"Thank you for\naccepting the terms.\" and rejected() prints \"You have rejected the terms. Thank you.\".",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 154,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 144,
+   "order": 192,
+   "content_hash": "0a0384025a33"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0154:c01",
+  "text": "Given inputs 2, \"Y\" and \"N\", the output is:\nDo you accept the terms and conditions?\nY\nThank you for accepting the terms.\nGiven a function call to terms() and input \"N\", the output is:\nDo you accept the terms and conditions?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 154,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 144,
+   "order": 193,
+   "content_hash": "697ca3193b92"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0154:c02",
+  "text": "N\nYou have rejected the terms. Thank you.\nLaundromat information\nWrite a program that uses three functions to print information about a laundromat, Liam's Laundry:\n• laundromat_info(): Prints the name, Liam's Laundry, and hours of operation, 7a - 11p, and calls\nwashers_open() and dryers_open()",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 154,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 144,
+   "order": 194,
+   "content_hash": "5343914d8dab"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0154:c03",
+  "text": "• washers_open(): Reads an integer, assigns washer_count with the value, and prints washer_count\n• dryers_open(): Reads an integer, assigns dryer_count with the value, and prints dryer_count\nThe main program should just call laundromat_info().\nGiven inputs 50 and 40, the output is:\nLiam's Laundry\n7a - 11p\nOpen washers: 50\nOpen dryers: 40",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 154,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.2",
+   "section_title": "Control flow",
+   "printed_page": 144,
+   "order": 195,
+   "content_hash": "5fe04f900ba9"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0155:c00",
+  "text": "6.3 Variable scope\nLearning objectives\nBy the end of this section you should be able to\n• Identify the scope of a program's variables.\n• Discuss the impact of a variable's scope.\nGlobal scope\nA variable's scope is the part of a program where the variable can be accessed. A variable created outside of a\nfunction has global scope and can be accessed anywhere in the program. A Python program begins in global\nscope, and the global scope lasts for the entire program execution.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 155,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 145,
+   "order": 196,
+   "content_hash": "37390630e7a0"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0155:c01",
+  "text": "CHECKPOINT\nGlobal variables in a program with a function\nGlobal variables in a program with a function; ch 6, video 6 (https://www.openstax.org/r/global-variables)\nCONCEPTS IN PRACTICE\nGlobal variables\n1 . Which variables are global?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 155,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 145,
+   "order": 197,
+   "content_hash": "2c70f4714e12"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0155:c02",
+  "text": "num = float(input())\nnum_sq = num * num\nprint(num, \"squared is\", num_sq)\na. num only\nb. num_sq only\nc. num and num_sq\n2 . Which variables have global scope?\ndef print_square():\nnum_sq = num * num\nprint(num, \"squared is\", num_sq)\nnum = float(input())\nprint_square()\na. num only\nb. num_sq only\nc. num and num_sq\n3 . Which functions can access num?\ndef print_double():\nnum_d = num * 2",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 155,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 145,
+   "order": 198,
+   "content_hash": "52d7eda3b604"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0156:c00",
+  "text": "print(num, \"doubled is\", num_d)\ndef print_square():\nnum_sq = num * num\nprint(num, \"squared is\", num_sq)\nnum = float(input())\nprint_double()\nprint_square()\na. print_double()\nb. print_square()\nc. print_double() and print_square()",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 156,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 146,
+   "order": 199,
+   "content_hash": "e5640675072a"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0156:c01",
+  "text": "Local scope\nA variable created within a function has local scope and only exists within the function. A local variable cannot\nbe accessed outside of the function in which the variable was created. After a function finishes executing, the\nfunction's local variables no longer exist.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 156,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 146,
+   "order": 200,
+   "content_hash": "0533315e6d79"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0156:c02",
+  "text": "CHECKPOINT\nGlobal and local variables in a program with a function\nGlobal and local variables in a program with a function; ch 6, video 7 (https://www.openstax.org/r/global-\nand-local-variables)\nCONCEPTS IN PRACTICE\nLocal variables\n4 . Which variables are local?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 156,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 146,
+   "order": 201,
+   "content_hash": "acc53bb9fc02"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0156:c03",
+  "text": "def print_time():\nout_str = \"Time is \" + str(hour) + \":\" + str(min)\nprint(out_str)\nhour = int(input())\nmin = int(input())\nprint_time()\na. hour and min\nb. out_str\nc. hour, min, and out_str\n5 . Which variables are local?\ndef print_greeting():",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 156,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 146,
+   "order": 202,
+   "content_hash": "1f9258ea859c"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0157:c00",
+  "text": "print(out_str)\nhour = int(input())\nmin = int(input())\nif hour < 12:\nout_str = \"Good morning\"\nelse:\nout_str = \"Good day\"\nprint_greeting()\na. hour and min\nb. out_str\nc. none\n6 . Which functions directly access out_str?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 157,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 147,
+   "order": 203,
+   "content_hash": "0e37d5e26c53"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0157:c01",
+  "text": "def print_greeting():\nprint(\"Good day,\")\nprint_time()\ndef print_time():\nout_str = \"Time is \" + str(hour) + \":\" + str(min)\nprint(out_str)\nhour = int(input())\nmin = int(input())\nprint_greeting()\na. print_greeting()",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 157,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 147,
+   "order": 204,
+   "content_hash": "542a1016f1df"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0157:c02",
+  "text": "b. print_time()\nc. print_greeting() and print_time()\nUsing local and global variables together\nPython allows global and local variables to have the same name, which can lead to unexpected program\nbehavior. A function treats a variable edited within the function as a local variable unless told otherwise. To edit\na global variable inside a function, the variable must be declared with the global keyword.\nCHECKPOINT\nEditing global variables in a program with a function\nEditing global variables in a program with a function; ch 6, video 8 (https://www.openstax.org/r/editing-\nglobal-variables)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 157,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 147,
+   "order": 205,
+   "content_hash": "caa00d1774ed"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0158:c00",
+  "text": "CONCEPTS IN PRACTICE\nUsing both local and global variables\nConsider the following variations on the example program with the input 9.\n7 . What is the output?\ndef update_hour():\ntmp = hour\nif is_dst:\ntmp += 1\nelse:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 158,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 148,
+   "order": 206,
+   "content_hash": "535dc7159b88"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0158:c01",
+  "text": "tmp -= 1\nis_dst = True\nhour = int(input(\"Enter hour: \"))\nupdate_hour()\nprint(\"New hour:\", hour)\na. New hour: 9\nb. New hour: 10\nc. Error\n8 . What is the output?\ndef update_hour():\nnew_hour = hour\nif is_dst:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 158,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 148,
+   "order": 207,
+   "content_hash": "49ea43f7360b"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0158:c02",
+  "text": "new_hour += 1\nelse:\nnew_hour -= 1\nis_dst = True\nhour = int(input(\"Enter hour: \"))\nupdate_hour()\nprint(\"New hour:\", new_hour)\na. New hour: 9\nb. New hour: 10\nc. Error\n9 . What is the output?\ndef update_hour():\nglobal new_hour\nnew_hour = hour\nif is_dst:\nnew_hour += 1\nelse:\nnew_hour -= 1",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 158,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 148,
+   "order": 208,
+   "content_hash": "6d6d5cc6c550"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0159:c00",
+  "text": "is_dst = True\nhour = int(input(\"Enter hour: \"))\nupdate_hour()\nprint(\"New hour:\", new_hour)\na. New hour: 9\nb. New hour: 10\nc. Error\nBENEFITS OF LIMITING SCOPE\nA programmer might ask, \"Why not just make all variables global variables to avoid access errors?\" Making\nevery variable global can make a program messy. Ex: A programmer debugging a large program discovers\na variable has the wrong value. If the whole program can modify the variable, then the bug could be\nanywhere in the large program. Limiting a variable's scope to only what's necessary and restricting global\nvariable use make a program easier to debug, maintain, and update.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 159,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 149,
+   "order": 209,
+   "content_hash": "9bd29a3c3949"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0159:c01",
+  "text": "Battle royale game launch\nWrite a program that reads in a selected game mode and calls one of two functions to launch the game. If\nthe input is \"br\", call battle_royale(). Otherwise, call practice().\nbattle_royale():",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 159,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 149,
+   "order": 210,
+   "content_hash": "4068b3085250"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0159:c02",
+  "text": "• Reads in the number of players.\n• Computes the number of teammates still needed. A full team is 3 players.\n• Calls the function find_teammates() with the calculated number.\n• Prints \"Match starting . . .\".",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 159,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 149,
+   "order": 211,
+   "content_hash": "bb86a9ebf412"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0159:c03",
+  "text": "practice():\n• Reads in a string representing the desired map.\n• Prints \"Launching practice on [desired map]\".\nNote: find_teammates() is provided and does not need to be edited.\nGiven input:\nbr\n1\nThe output is:\nFinding 2 players...",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 159,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 149,
+   "order": 212,
+   "content_hash": "e5b373e62a5b"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0160:c00",
+  "text": "Match starting...\nGiven input:\np\nQueen's Canyon\nThe output is:\nLaunching practice on Queen's Canyon",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 160,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.3",
+   "section_title": "Variable scope",
+   "printed_page": 150,
+   "order": 213,
+   "content_hash": "d5402d4cb156"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0160:c01",
+  "text": "6.4 Parameters\nLearning objectives\nBy the end of this section you should be able to\n• Identify a function's arguments and parameters.\n• Describe how mutability affects how a function can modify arguments.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 160,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 150,
+   "order": 214,
+   "content_hash": "7a7fb533bdd9"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0160:c02",
+  "text": "Arguments and parameters\nWhat if a programmer wants to write a function that prints the contents of a list? Good practice is to pass\nvalues directly to a function rather than relying on global variables. A function argument is a value passed as\ninput during a function call. A function parameter is a variable representing the input in the function\ndefinition. Note: The terms \"argument\" and \"parameter\" are sometimes used interchangeably in conversation\nand documentation.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 160,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 150,
+   "order": 215,
+   "content_hash": "271f6d4362ac"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0160:c03",
+  "text": "CHECKPOINT\nGlobal and local variables in a program with a function\nMore global and local variables in a program with a function; ch 6, video 9 (https://www.openstax.org/r/\nmore-global-and-local-variables)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 160,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 150,
+   "order": 216,
+   "content_hash": "180e7d86fd66"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0160:c04",
+  "text": "CONCEPTS IN PRACTICE\nArguments and parameters\nConsider the following:\n1 def print_welcome(name):\n2 print(f\"Welcome {name}!\")\n3\n4 username = int(input(\"Enter new username: \"))\n5 print_welcome(username)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 160,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 150,
+   "order": 217,
+   "content_hash": "6d68c83dce64"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0161:c00",
+  "text": "1 . Which is an argument?\na. name\nb. username\nc. name and username\n2 . Which is a parameter?\na. name\nb. username\nc. name and username\n3 . What is the scope of name?\na. print_welcome() only\nb. whole program\n4 . What would happen if username was changed to name on lines 4 and 5?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 161,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 151,
+   "order": 218,
+   "content_hash": "9c0d6be34df8"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0161:c01",
+  "text": "a. same output\nb. error/wrong output\nMultiple arguments and parameters\nFunctions can have multiple parameters. Ex: A function uses two parameters, length and width, to compute\nthe square footage of a room. Function calls must use the correct order and number of arguments to avoid\nundesired behavior and errors (unless using optional or keyword arguments as discussed later).",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 161,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 151,
+   "order": 219,
+   "content_hash": "b178ece6b124"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0161:c02",
+  "text": "EXAMPLE 6.1\nUsing multiple arguments in a function call\ndef print_div(op_1, op_2):\n\"\"\" Prints division operation \"\"\"\nprint(f\"{op_1}/{op_2} = {op_1/op_2}\")\nnum_1 = 6\nnum_2 = 3\nprint_div(num_1, num_2) # Prints \"6/3 = 2.0\"",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 161,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 151,
+   "order": 220,
+   "content_hash": "440416ab5080"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0161:c03",
+  "text": "print_div(num_2, num_1) # Prints \"3/6 = 0.5\"\nprint_div(num_1) # Error: Missing argument: op_2\nCONCEPTS IN PRACTICE\nMultiple arguments and parameters\nConsider the following:\ndef calc_distance(x1, y1, x2, y2):\ndist = math.sqrt((x2-x1)**2 + (y2-y1)**2)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 161,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 151,
+   "order": 221,
+   "content_hash": "09989831a20b"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0162:c00",
+  "text": "print(dist)\np1_x =int(input(\"Enter point 1's x: \"))\np1_y =int(input(\"Enter point 1's y: \"))\np2_x =int(input(\"Enter point 2's x: \"))\np2_y =int(input(\"Enter point 2's y: \"))\ncalc_distance(p1_x, p1_y, p2_x, p2_y)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 162,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 152,
+   "order": 222,
+   "content_hash": "cd53f7cadada"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0162:c01",
+  "text": "5 . Which is an argument?\na. p1_x\nb. x1\n6 . Which is a parameter?\na. p1_y\nb. y1\n7 . What would be the value of x2 for the function call, calc_distance(2, 4, 3, 6)?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 162,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 152,
+   "order": 223,
+   "content_hash": "28c497b93d1e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0162:c02",
+  "text": "a. 2\nb. 4\nc. 3\nd. 6\ne. Error\nModifying arguments and mutability\nIn Python, a variable is a name that refers to an object stored in memory, aka an object reference, so Python\nuses a pass-by-object-reference system. If an argument is changed in a function, the changes are kept or lost\ndepending on the object's mutability. A mutable object can be modified after creation. A function's changes to\nthe object then appear outside the function. An immutable object cannot be modified after creation. So a\nfunction must make a local copy to modify, and the local copy's changes don't appear outside the function.\nProgrammers should be cautious of modifying function arguments as these side effects can make programs\ndifficult to debug and maintain.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 162,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 152,
+   "order": 224,
+   "content_hash": "2cf329b2f5ff"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0162:c03",
+  "text": "EXAMPLE 6.2\nConverting temperatures\nWhat are the values of weekend_temps and type after convert_temps() finishes?\ndef convert_temps(temps, unit):\nif unit == \"F\":\nfor i in range(len(temps)):\ntemps[i] = (temps[i]-32) * 5/9\nunit = \"C\"\nelse:\nfor i in range(len(temps)):\ntemps[i] = (temps[i]*9/5) + 32",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 162,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 152,
+   "order": 225,
+   "content_hash": "2a3c10311bbc"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0163:c00",
+  "text": "unit = \"F\"\n# Weekend temperatures in Fahrenheit.\nwknd_temps = [49.0, 51.0, 44.0]\ndeg_sign = u\"\\N{DEGREE SIGN}\" # Unicode\nmetric = \"F\"\n# Convert from Fahrenheit to Celsius.\nconvert_temps(wknd_temps, metric)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 163,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 153,
+   "order": 226,
+   "content_hash": "b97f91cea06e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0163:c01",
+  "text": "for temp in wknd_temps:\nprint(f\"{temp:.2f}{deg_sign}{metric}\", end=\" \")\nThe output is 9.44°F 10.56°F 6.67°F. type was changed to \"C\" in the function but didn't keep the\nchange outside of the function. Why is the list argument change kept and not the string argument change?\n(Hint: A list is mutable. A string is immutable.)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 163,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 153,
+   "order": 227,
+   "content_hash": "b64bf04b2ecb"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0163:c02",
+  "text": "CHECKPOINT\nExploring a faulty function\nExploring a faulty function; ch 6, video 10 (https://www.openstax.org/r/faulty-function)\nCONCEPTS IN PRACTICE\nMutability and function arguments\n8 . In convert_temps(), wknd_temps and temps refer to ________ in memory.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 163,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 153,
+   "order": 228,
+   "content_hash": "31ae9f07b7e1"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0163:c03",
+  "text": "a. the same object\nb. different objects\n9 . After unit is assigned with \"C\", metric and unit refer to ________ in memory.\na. the same object\nb. different objects\n10 . deg_sign is a string whose value cannot change once created. deg_sign is ________.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 163,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 153,
+   "order": 229,
+   "content_hash": "a0102415b007"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0163:c04",
+  "text": "a. immutable\nb. mutable\n11 . On line 16, unit ________.\na. refers to an object with the value \"C\"\nb. does not exist\nPrinting right triangle area\nWrite a function, print_area(), that takes in the base and height of a right triangle and prints the",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 163,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 153,
+   "order": 230,
+   "content_hash": "520b189602db"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0164:c00",
+  "text": "triangle's area. The area of a right triangle is , where b is the base and h is the height.\nGiven input:\n3\n4\nThe output is:\nTriangle area: 6.0\nCurving scores\nWrite a function, print_scores(), that takes in a list of test scores and a number representing how many\npoints to add. For each score, print the original score and the sum of the score and bonus. Make sure not to\nchange the list.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 164,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 154,
+   "order": 231,
+   "content_hash": "a3e9214843a8"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0164:c01",
+  "text": "Given function call:\nprint_scores([67, 68, 72, 71, 69], 10)\nThe output is:\n67 would be updated to 77\n68 would be updated to 78\n72 would be updated to 82\n71 would be updated to 81\n69 would be updated to 79",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 164,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.4",
+   "section_title": "Parameters",
+   "printed_page": 154,
+   "order": 232,
+   "content_hash": "adcf407b32c8"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0164:c02",
+  "text": "6.5 Return values\nLearning objectives\nBy the end of this section you should be able to\n• Identify a function's return value.\n• Employ return statements in functions to return values.\nReturning from a function\nWhen a function finishes, the function returns and provides a result to the calling code. A return statement",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 164,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 154,
+   "order": 233,
+   "content_hash": "9d045efb4a79"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0165:c00",
+  "text": "finishes the function execution and can specify a value to return to the function's caller. Functions introduced\nso far have not had a return statement, which is the same as returning None, representing no value.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 165,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 155,
+   "order": 234,
+   "content_hash": "694180ac88be"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0165:c01",
+  "text": "CHECKPOINT\nReturning a value from a function\nReturning a value from a function; ch 6, video 11 (https://www.openstax.org/r/returning-value-from-\nfunction)\nCONCEPTS IN PRACTICE\nUsing return statements\n1 . What is returned by calc_mpg(miles, gallons)?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 165,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 155,
+   "order": 235,
+   "content_hash": "0f6fc87c1973"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0165:c02",
+  "text": "def calc_mpg(miles, gallons):\nmpg = miles/gallons\nreturn mpg\na. mpg\nb. None\nc. Error\n2 . What is returned by calc_sqft()?\ndef calc_sqft(length, width):\nsqft = length * width\nreturn\na. sqft\nb. None\nc. Error\n3 . What is the difference between hw_1() and hw_2()?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 165,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 155,
+   "order": 236,
+   "content_hash": "382697f2ef1f"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0165:c03",
+  "text": "def hw_1():\nprint(\"Hello world!\")\nreturn\ndef hw_2():\nprint(\"Hello world!\")\na. hw_1() returns a string, hw_2() does not\nb. hw_1() returns None, hw_2() does not\nc. no difference\nUsing multiple return statements\nFunctions that have multiple execution paths may use multiple return statements. Ex: A function with an\nif-else statement may have two return statements for each branch. Return statements always end the",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 165,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 155,
+   "order": 237,
+   "content_hash": "49ae1af48afe"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0166:c00",
+  "text": "function and return control flow to the calling code.\nIn the table below, calc_mpg() takes in miles driven and gallons of gas used and calculates a car's miles per\ngallon. calc_mpg() checks if gallons is 0 (to avoid division by 0), and if so, returns -1, a value often used to\nindicate a problem.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 166,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 156,
+   "order": 238,
+   "content_hash": "0af384931a99"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0166:c01",
+  "text": "def calc_mpg(miles, gallons):\nif gallons > 0:\nmpg = miles/gallons\nreturn mpg\nelse:\nprint(\"Gallons can't be 0\")\nreturn -1\ncar_1_mpg = calc_mpg(448, 16)\nprint(\"Car 1's mpg is\", car_1_mpg)\ncar_2_mpg = calc_mpg(300, 0)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 166,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 156,
+   "order": 239,
+   "content_hash": "4abc48f2e1eb"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0166:c02",
+  "text": "print(\"Car 2's mpg is\", car_2_mpg)\nCar 1's mpg is 28.0\nGallons can't be 0\nCar 2's mpg is -1\nTable 6.1 Calculating miles-per-gallon and checking for division by zero.\nCONCEPTS IN PRACTICE\nMultiple return statements\n4 . What does yarn_weight(3) return?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 166,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 156,
+   "order": 240,
+   "content_hash": "a37ed8ca517a"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0166:c03",
+  "text": "def yarn_weight(num):\nif num == 0:\nreturn \"lace\"\nelif num == 1:\nreturn \"sock\"\nelif num == 2:\nreturn \"sport\"\nelif num == 3:\nreturn \"dk\"\nelif num == 4:\nreturn \"worsted\"\nelif num == 5:\nreturn \"bulky\"\nelse:\nreturn \"super bulky\"\na. \"lace\"\nb. \"dk\"\nc. \"super bulky\"\n5 . What is the output?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 166,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 156,
+   "order": 241,
+   "content_hash": "94811d17cc15"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0167:c00",
+  "text": "def inc_volume(level, max):\nif level < max:\nreturn level\nlevel += 1\nelse:\nreturn level\nvol1 = inc_volume(9, 10)\nprint(vol1)\nvol2 = inc_volume(10, 10)\nprint(vol2)\na. 9\n10\nb. 10\n10\nc. 10\n11\nUsing functions as values\nFunctions are objects that evaluate to values, so function calls can be used in expressions. A function call can\nbe combined with other function calls, variables, and literals as long as the return value is compatible with the\noperation.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 167,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 157,
+   "order": 242,
+   "content_hash": "3f4d5efd93d1"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0167:c01",
+  "text": "CHECKPOINT\nUsing function calls in expressions\nUsing function calls in expression; ch 6, video 12 (https://www.openstax.org/r/function-calls-in-expressions)\nCONCEPTS IN PRACTICE\nUsing function values\n6 . What is the updated value of bill?\ndef tax(total):\nreturn .06 * total\ndef auto_tip(total):\nreturn .2 * total\nbill = 100.0\nbill += tax(bill) + auto_tip(bill)\na. 26.0\nb. 126.0",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 167,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 157,
+   "order": 243,
+   "content_hash": "9f656e0e8ce6"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0168:c00",
+  "text": "7 . What is the value of val2?\ndef sq(num):\nreturn num * num\ndef offset(num):\nreturn num - 2\nval = 5\nval2 = sq(offset(val))\na. 9\nb. 23\nEstimated days alive\nWrite a function, days_alive(), that takes in an age in years and outputs the estimated days the user has\nbeen alive as an integer. Assume each year has 365.24 days. Use round(), which takes a number and\nreturns the nearest whole number.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 168,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 158,
+   "order": 244,
+   "content_hash": "39e9ef400e99"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0168:c01",
+  "text": "Then write a main program that reads in a user's age and outputs the result of days_alive().\nGiven input:\n21\nThe output is:\nYou have been alive about 7670 days.\nAveraging lists\nWrite a function, avg_list(), that takes in a list and returns the average of the list values.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 168,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.5",
+   "section_title": "Return values",
+   "printed_page": 158,
+   "order": 245,
+   "content_hash": "511691b88881"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0169:c00",
+  "text": "6.6 Keyword arguments\nLearning objectives\nBy the end of this section you should be able to\n• Describe the difference between positional and keyword arguments.\n• Create functions that use positional and keyword arguments and default parameter values.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 169,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 159,
+   "order": 246,
+   "content_hash": "9f7ee5bde480"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0169:c01",
+  "text": "Keyword arguments\nSo far, functions have been called using positional arguments, which are arguments that are assigned to\nparameters in order. Python also allows keyword arguments, which are arguments that use parameter names\nto assign values rather than order. When mixing positional and keyword arguments, positional arguments\nmust come first in the correct order, before any keyword arguments.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 169,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 159,
+   "order": 247,
+   "content_hash": "7d896bf75b4e"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0169:c02",
+  "text": "CHECKPOINT\nUsing keyword arguments\nUsing keyword arguments; ch 6, video 13 (https://www.openstax.org/r/keyword-arguments)\nCONCEPTS IN PRACTICE\nUsing keyword and positional arguments\nConsider the following function:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 169,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 159,
+   "order": 248,
+   "content_hash": "f8e6230b5dfe"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0169:c03",
+  "text": "def greeting(msg, name, count):\ni = 0\nfor i in range(0, count):\nprint(msg, name)\n1 . Which is the positional argument in greeting(count=1, name=\"Ash\", msg=\"Hiya\")?\na. count=1\nb. name=\"Ash\"\nc. msg=\"Hiya\"",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 169,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 159,
+   "order": 249,
+   "content_hash": "0197d6cde2e8"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0169:c04",
+  "text": "d. None\n2 . What is the output of greeting(count=2, name=\"Ash\", msg=\"Hiya\")?\na. Ash Hiya\nAsh Hiya\nb. Hiya Ash\nHiya Ash\n3 . Which is the positional argument in greeting(\"Welcome\", count=1, name=\"Anita\")?\na. \"Welcome\"\nb. count=1\nc. name=\"Anita\"\n4 . Which function call would produce an error?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 169,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 159,
+   "order": 250,
+   "content_hash": "52998c864ecd"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0170:c00",
+  "text": "a. greeting(\"Morning\", \"Morgan\", count=3)\nb. greeting(count=1,\"Hi\", \"Bea\")\nc. greeting(\"Cheers\", \"Colleagues\", 10)\nDefault parameter values\nFunctions can define default parameter values to use if a positional or keyword argument is not provided for\nthe parameter. Ex: def season(m, d, hemi=\"N\"): defines a default value of \"N\" for the hemi parameter.\nNote: Default parameter values are only defined once to be used by the function, so mutable objects (such as\nlists) should not be used as default values.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 170,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 160,
+   "order": 251,
+   "content_hash": "a2f72f27ecaa"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0170:c01",
+  "text": "The physics example below calculates weight as a force in newtons given mass in kilograms and acceleration\nin . Gravity on Earth is 9.8 , and gravity on Mars is 3.7 .\nCHECKPOINT\nUsing default parameter values\nUsing default parameter values; ch 6, video 14 (https://www.openstax.org/r/default-parameter-values)",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 170,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 160,
+   "order": 252,
+   "content_hash": "f49549238169"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0170:c02",
+  "text": "CONCEPTS IN PRACTICE\nUsing default parameter values\nConsider the following updated version of greeting():\ndef greeting(msg, name=\"Friend\", count=1):\ni = 0\nfor i in range(0, count):\nprint(msg, name)\n5 . Which parameters have default values?",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 170,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 160,
+   "order": 253,
+   "content_hash": "7b93a92defe9"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0170:c03",
+  "text": "a. msg\nb. name and count\nc. all\n6 . Which function call is correct?\na. greeting()\nb. greeting(name=\"Gina\")\nc. greeting(\"Greetings\")\n7 . What is the output of greeting(count=0, msg=\"Hello\")?\na. Hello Friend\nb. nothing\nc. Error",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 170,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 160,
+   "order": 254,
+   "content_hash": "d059c1f02efa"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0171:c00",
+  "text": "PEP 8 RECOMMENDATIONS: SPACING\nThe PEP 8 style guide recommends no spaces around = when indicating keyword arguments and default\nparameter values.\nStream donations\nWrite a function, donate(), that lets an online viewer send a donation to a streamer. donate() has three\nparameters:",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 171,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 161,
+   "order": 255,
+   "content_hash": "ed8bd5d2d4f4"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0171:c01",
+  "text": "• amount: amount to donate, default value: 5\n• name: donor's name, default value: \"Anonymous\"\n• msg: donor's message, default value: \"\"\nGiven:\ndonate(10, \"gg\")\nThe output is:\nAnonymous donated 10 credits: gg\nWrite function calls that use the default values along with positional and keyword arguments.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 171,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.6",
+   "section_title": "Keyword arguments",
+   "printed_page": 161,
+   "order": 256,
+   "content_hash": "7bdc53166cab"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0171:c02",
+  "text": "6.7 Chapter summary\nHighlights from this chapter include:\n• Functions are named blocks of code that perform tasks when called and make programs more organized\nand optimized.\n• Control flow is the sequence of program execution. Control flow moves between calling code and function\ncode when a function is called.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 171,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.7",
+   "section_title": "Chapter summary",
+   "printed_page": 161,
+   "order": 257,
+   "content_hash": "5fb7f0a85c3d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0171:c03",
+  "text": "• Variable scope refers to where a variable can be accessed. Global variables can be accessed anywhere in a\nprogram. Local variables are limited in scope, such as to a function.\n• Parameters are function inputs defined with the function. Arguments are values passed to the function as\ninput by the calling code. Parameters are assigned with the arguments' values.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 171,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.7",
+   "section_title": "Chapter summary",
+   "printed_page": 161,
+   "order": 258,
+   "content_hash": "f23b2c4ee33d"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0171:c04",
+  "text": "• Function calls can use positional arguments to map values to parameters in order.\n• Function calls can use keyword arguments to map values using parameter names in any order.\n• Functions can define default parameter values to allow for optional arguments in function calls.\n• Python uses a pass-by-object-reference system to assign parameters with the object values referenced by\nthe arguments.\n• Functions can use return statements to return values back to the calling code.\nAt this point, you should be able to write functions that have any number of parameters and return a value,",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 171,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.7",
+   "section_title": "Chapter summary",
+   "printed_page": 161,
+   "order": 259,
+   "content_hash": "ad14711e5872"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0172:c00",
+  "text": "and programs that call functions using keyword arguments and optional arguments.\nConstruct Description\nFunction definition def function_name(): \"\"\"Docstring\"\"\"\n# Function body\nParameter def function_name(parameter_1):",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 172,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.7",
+   "section_title": "Chapter summary",
+   "printed_page": 162,
+   "order": 260,
+   "content_hash": "cc3078d209fa"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0172:c01",
+  "text": "# Function body\nArgument\ndef function_name(parameter_1):\n# Function body\nfunction_name(argument_1)\nReturn statement def function_name(): # Function body\nreturn result # Returns the value of result to the caller\nVariables (scope)\ndef function_name(parameter_1):\n# Function body\nlocal_var = parameter_1 * 5\nreturn local_var\nglobal_var = function_name(arg_1)\nTable 6.2 Chapter 6 reference.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 172,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.7",
+   "section_title": "Chapter summary",
+   "printed_page": 162,
+   "order": 261,
+   "content_hash": "d9d11476a4a3"
+  }
+ },
+ {
+  "id": "openstax-intro-python:B:para800:p0173:c00",
+  "text": "Construct Description\nKeyword arguments\ndef function_name(parameter_1, parameter_2):\n# Function body\nfunction_name(parameter_2 = 5, parameter_1 = 2)\nDefault parameter value def function_name(parameter_1 = 100):\n# Function body\nTable 6.2 Chapter 6 reference.",
+  "source_id": "openstax-intro-python",
+  "source": "OpenStax, Introduction to Python Programming (CC BY-NC-SA 4.0), PDF",
+  "page": 173,
+  "metadata": {
+   "chapter": 6,
+   "chapter_title": "Functions",
+   "section": "6.7",
+   "section_title": "Chapter summary",
+   "printed_page": 163,
+   "order": 262,
+   "content_hash": "be48baeebb96"
+  }
+ }
+]

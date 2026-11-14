@@ -1,0 +1,20 @@
+{
+ "page": 39,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Mine production and Reserves of Antimony",
+   "location": "middle right",
+   "content": "| Country     | Mine production 2022 | Mine production 2023e | Reserves   |\n|-------------|----------------------|-----------------------|------------|\n| United States | —                    | —                     | 60,000     |\n| Australia   | 2,290                | 2,300                 | 140,000    |\n| Bolivia    | 3,000                | 3,000                 | 310,000    |\n| Burma      | e4,600               | 4,600                 | 140,000    |\n| Canada     | e2                   | 2                     | 78,000     |\n| China      | e40,000              | 40,000                | 640,000    |\n| Guatemala  | 24                   | 24                    | NA         |\n| Iran       | e500                 | 500                   | NA         |\n| Kazakhstan | e300                 | 300                   | NA         |\n| Kyrgyzstan | 40                   | 40                    | 260,000    |\n| Laos       | 220                  | 220                   | NA         |\n| Mexico     | e700                 | 700                   | 18,000     |\n| Pakistan   | e79                  | 80                    | 26,000     |\n| Russia     | 4,300                | 4,300                 | 350,000    |\n| Tajikistan | 21,000               | 21,000                | 50,000     |\n| Turkey     | e5,800               | 6,000                 | 99,000     |\n| Vietnam    | 250                  | 250                   | NA         |\n| World total (rounded) | 83,100        | 83,000                | >2,000,000 |",
+   "notes": "eEstimated. NA Not available. — Zero.\n7See Appendix C for resource and reserve definitions and information concerning data sources.\n8Company-reported probable reserves for the Stibnite Gold Project in Idaho.\n9For Australia, Joint Ore Reserves Committee-compliant or equivalent reserves were 20,000 tons.\n10In addition to the countries listed, antimony may have been produced in other countries, but available information was inadequate to make reliable estimates of output."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 522
+ },
+ "seconds": 5.9
+}

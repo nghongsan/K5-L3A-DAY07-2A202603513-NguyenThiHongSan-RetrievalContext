@@ -1,0 +1,27 @@
+{
+ "page": 198,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|------|------|------|------|-------|\n| Production1, 2          | 100  | 100  | 100  | 100  | 100   |\n| Imports for consumption  | 39   | 40   | 33   | 24   | 40    |\n| Exportse                | 8    | 8    | 10   | 8    | 9     |\n| Consumption:            |      |      |      |      |       |\n| &nbsp;&nbsp;Apparent, concentratee, 3 | 130  | 130  | 120  | 120  | 130   |\n| &nbsp;&nbsp;Reported, exfoliated | 76   | 74   | 68   | 67   | 74    |\n| Price, range of value, concentrate, ex-plant, dollars per metric ton | NA   | NA   | NA   | NA   | NA    |\n| Employment, numbere    | 70   | 70   | 70   | 70   | 70    |\n| Net import reliance4 as a percentage of apparent consumptione, 5 | 20   | 20   | 20   | 10   | 20    |",
+   "notes": "Footnotes: 1, 2, 3, 4, 5 and e (estimated) as printed."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower left",
+   "content": "| Item                                                      | Number      | Normal Trade Relations 12–31–23 |\n|-----------------------------------------------------------|-------------|---------------------------------|\n| Vermiculite, perlite, and chlorites, unexpanded           | 2530.10.0000| Free.                           |\n| Exfoliated vermiculite, expanded clays, foamed slag, and similar expanded materials | 6806.20.0000| Free.                           |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 474
+ },
+ "seconds": 4.6
+}

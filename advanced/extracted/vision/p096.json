@@ -1,0 +1,20 @@
+{
+ "page": 96,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "lower half",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|------|------|------|------|-------|\n| Production              | W    | W    | W    | W    | W     |\n| Imports for consumption | 4,300| 4,570| 4,120| 4,270| 3,600 |\n| Exports                 | 1,230| 1,130| 1,280| 1,140| 1,300 |\n| Consumption:            |      |      |      |      |       |\n| Apparent¹               | W    | W    | W    | W    | W     |\n| Reported                | 4,000| 3,750| 3,720| 3,330| 3,000 |\n| Price, crude iodine, average unit value of imports (cost, insurance, and freight), dollars per kilogram | 26.38| 31.57| 32.72| 45.81| 61    |\n| Employment, numbere     | 60   | 60   | 60   | 60   | 60    |\n| Net import reliance² as a percentage of apparent consumption | >50  | >50  | >50  | >50  | >50   |",
+   "notes": "¹ Apparent consumption = production + imports - exports.\n² Net import reliance = imports - exports as a percentage of apparent consumption.\ne Estimated."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 358
+ },
+ "seconds": 4.6
+}

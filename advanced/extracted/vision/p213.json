@@ -1,0 +1,27 @@
+{
+ "page": 213,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "diagram",
+   "title": "Figure C1.—Major Elements of Mineral-Resource Classification, Excluding Reserve Base and Inferred Reserve Base",
+   "location": "top half",
+   "content": "A rectangular diagram divided into sections:\n- Left column (vertical): Cumulative Production, ECONOMIC, MARGINALLY ECONOMIC, SUBECONOMIC, Other Occurrences\n- Top row: IDENTIFIED RESOURCES and UNDISCOVERED RESOURCES\n- Under IDENTIFIED RESOURCES: Demonstrated (Measured, Indicated), Inferred\n- Under UNDISCOVERED RESOURCES: Probability Range (Hypothetical (or) Speculative)\n- Middle section:\n  - ECONOMIC: Reserves (Demonstrated), Inferred Reserves\n  - MARGINALLY ECONOMIC: Marginal Reserves (Demonstrated), Inferred Marginal Reserves\n  - SUBECONOMIC: Demonstrated Subeconomic Resources, Inferred Subeconomic Resources\n  - UNDISCOVERED RESOURCES side has plus signs (+) in Hypothetical and Speculative columns\n- Bottom box: Includes nonconventional and low-grade materials",
+   "notes": ""
+  },
+  {
+   "type": "diagram",
+   "title": "Figure C2.—Reserve Base and Inferred Reserve Base Classification Categories",
+   "location": "lower half",
+   "content": "A rectangular diagram divided into sections:\n- Left column (vertical): Cumulative Production, ECONOMIC, MARGINALLY ECONOMIC, SUBECONOMIC, Other Occurrences\n- Top row: IDENTIFIED RESOURCES and UNDISCOVERED RESOURCES\n- Under IDENTIFIED RESOURCES: Demonstrated (Measured, Indicated), Inferred\n- Under UNDISCOVERED RESOURCES: Probability Range (Hypothetical (or) Speculative)\n- Middle section:\n  - ECONOMIC and MARGINALLY ECONOMIC combined: Reserve Base (Demonstrated), Inferred Reserve Base\n  - SUBECONOMIC: dashed line below Reserve Base\n  - UNDISCOVERED RESOURCES side has plus signs (+) in Hypothetical and Speculative columns\n- Bottom box: Includes nonconventional and low-grade materials",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 438
+ },
+ "seconds": 3.5
+}

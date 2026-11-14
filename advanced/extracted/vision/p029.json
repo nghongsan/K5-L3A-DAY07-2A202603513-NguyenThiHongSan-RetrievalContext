@@ -1,0 +1,19 @@
+{
+ "page": 29,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "chart",
+   "title": "Figure 10.—Estimated 1-Year Percent Change and 5-Year Compound Annual Growth Rate (CAGR) in Prices of Critical Minerals",
+   "location": "full page",
+   "content": "Chart kind: Horizontal bar chart with two sets of bars per mineral (1-year percent change and 5-year CAGR).\n\nAxes:\n- Left axis: 1-year percent change (2022 to 2023), range from -100 to 200 percent.\n- Right axis: 5-year CAGR (2019 to 2023), range from -100 to 100 percent.\n\nLegend/Explanation:\n- Left bars (yellow) represent 1-year percent change.\n- Right bars (black) represent 5-year CAGR.\n\nData (Critical mineral (price source), 1-year percent change, 5-year CAGR):\n- Aluminum, bauxite: -6, -2\n- Antimony, metal: -9, 17\n- Arsenic, metal: 20, 19\n- Barite: 3, -4\n- Beryllium: 112, 23\n- Bismuth: 5, 7\n- Cerium, oxide 99.5% minimum: 0, -16\n- Chromium, chromite ore: 6, 14\n- Cobalt (U.S. spot cathode): -45, 0\n- Dysprosium, oxide 99.5% minimum: -15, 8\n- Europium, oxide 99.99% minimum: -10, -6\n- Fluorspar, acid grade: 12, 9\n- Fluorspar, metallurgical grade: 61, 5\n- Gallium, high purity refined: -20, -6\n- Germanium, metal: 8, 3\n- Graphite, natural, flake: 0, -3\n- Indium (Rotterdam): -5, 8\n- Iridium: 0, 33\n- Lanthanum, oxide 99.5% minimum: 0, -16\n- Lithium, battery grade: -32, 40\n- Magnesium, metal (U.S. spot Western): -34, 19\n- Manganese: -16, -3\n- Neodymium, oxide 99.5% minimum: -40, 15\n- Nickel: -15, 12\n- Niobium, ferroniobium: 0, 2\n- Palladium: -30, -1\n- Platinum: 3, 4\n- Rhodium: -51, 18\n- Ruthenium: -19, 16\n- Scandium, ingot: 2, 3\n- Tantalum: -11, 4\n- Tellurium (U.S.): 14, 4\n- Terbium, oxide 99.99% minimum: -37, 27\n- Tin (New York dealer): -16, 11\n- Titanium, sponge: 8, 3\n- Tungsten, concentrate: -5, 7\n- Vanadium, vanadium pentoxide: 0, -7\n- Yttrium, oxide: -33, 28\n- Zinc (LME): -24, 1\n- Zirconium, sponge: -7, -5\n\nNotes:\n- LME London Metals Exchange.\n- Footnotes:\n  1. Critical minerals as published in the Federal Register on February 24, 2022 (87 FR 10381). Not all critical minerals are listed here. Cesium, erbium, gadolinium, hafnium, holmium, lutetium, praseodymium, rubidium, samarium, thulium, and ytterbium are not shown because there was not enough information available regarding prices.\n  2. Price source is only included for those commodities that have multiple price sources in their Salient Statistics table. For those commodities with a single price source, please refer to that commodity chapter's Salient Statistics tables.\n  3. Average annual unit value of imports."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 885
+ },
+ "seconds": 7.3
+}

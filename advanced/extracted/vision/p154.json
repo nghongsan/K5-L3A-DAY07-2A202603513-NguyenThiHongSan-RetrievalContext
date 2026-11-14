@@ -1,0 +1,20 @@
+{
+ "page": 154,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                                   | 2019   | 2020   | 2021   | 2022e  | 2023e  |\n|-----------------------------------|--------|--------|--------|--------|--------|\n| Production                        | 44,800 | 42,600 | 39,300 | e41,000| 42,000 |\n| Sold or used by producers         | 44,900 | 39,600 | 39,800 | e40,000| 41,000 |\n| Imports for consumption           | 18,700 | 15,800 | 17,700 | 17,800 | 16,000 |\n| Exports                          | 1,020  | 1,250  | 1,010  | 890    | 2,300  |\n| Consumption:                     |        |        |        |        |        |\n|  Apparent2                      | 62,500 | 54,200 | 56,400 | e57,000| 55,000 |\n|  Reported                      | 51,800 | 44,000 | 47,100 | e47,000| 48,000 |\n| Price, average unit value of bulk, pellets and packaged salt, free on board (f.o.b.) mine and plant, dollars per metric ton: |        |        |        |        |        |\n|  Vacuum and open pan salt       | 211.57 | 212.21 | 203.72 | e210   | 220    |\n|  Solar salt                    | 126.18 | 122.77 | 153.52 | e150   | 150    |\n|  Rock salt                    | 59.90  | 61.71  | 59.88  | e60    | 61     |\n|  Salt in brine                | 7.56   | 8.36   | 8.14   | e8.40  | 8.50   |\n| Employment, mine and plant, numbere | 4,100  | 4,000  | 4,000  | 4,100  | 4,100  |\n| Net import reliance3 as a percentage of apparent consumption | 28     | 27     | 30     | 30     | 25     |",
+   "notes": "1. e = estimated.\n2. Apparent consumption = production + imports - exports.\n3. Net import reliance = imports - exports as a percentage of apparent consumption."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 573
+ },
+ "seconds": 6.9
+}

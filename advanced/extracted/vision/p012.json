@@ -1,0 +1,20 @@
+{
+ "page": 12,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "map",
+   "title": "Figure 3.—Leading Import Sources (2019–22) of Nonfuel Mineral Commodities for Which the United States Was Greater Than 50% Net Import Reliant",
+   "location": "full page",
+   "content": "World map with countries colored by number of commodities for which the U.S. was >50% net import reliant during 2019-22.\n\nEXPLANATION (Number of commodities):\n- White: 0\n- Light yellow: 1 to 3\n- Yellow: 4 to 6\n- Orange: 7 to 12\n- Dark orange: 13 to 18\n- Red: 19 to 24\n\nCountries and their colors:\n- Canada: Red (19 to 24)\n- China: Red (19 to 24)\n- United States: Gray (not colored)\n- Brazil: Orange (7 to 12)\n- Mexico: Orange (7 to 12)\n- South Africa: Orange (7 to 12)\n- Russia: Orange (7 to 12)\n- Australia: Yellow (4 to 6)\n- India: Yellow (4 to 6)\n- Estonia, Belarus, Ukraine: Orange (7 to 12)\n- Finland, Norway, Netherlands, Ireland, Belgium, Germany, Poland, Kazakhstan: Yellow (4 to 6)\n- Turkey: Light blue (not in legend, presumably 0 or special)\n- Austria, France, Italy, Switzerland: boxed together in light blue box\n- Japan, Republic of Korea, Taiwan, Vietnam, Philippines, Malaysia, Indonesia: Yellow (4 to 6)\n- Peru, Bolivia, Chile: Yellow (4 to 6)\n- Guyana: Light yellow (1 to 3)\n- Jamaica: Light yellow (1 to 3)\n- Gabon, Congo (Kinshasa), Madagascar: Light yellow (1 to 3)\n\nAll other countries mostly white (0).\n\nSource: U.S. Geological Survey",
+   "notes": "Source: U.S. Geological Survey"
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 441
+ },
+ "seconds": 4.1
+}

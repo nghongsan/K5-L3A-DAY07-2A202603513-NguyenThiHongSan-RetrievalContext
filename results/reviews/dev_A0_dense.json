@@ -1,0 +1,224 @@
+[
+ {
+  "query_id": "q01",
+  "citation_support": [],
+  "note": "False abstention; the abstain text adds UNSUPPORTED general knowledge (None, [], {}) — worst kind of refusal.",
+  "answer_grade": 0
+ },
+ {
+  "query_id": "q02",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q03",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q04",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q05",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q06",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q07",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q08",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q09",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q10",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q11",
+  "citation_support": [
+   true,
+   true,
+   false
+  ],
+  "note": "p0128:c03 is only the 'For loop' learning objectives; does not support the preference claim.",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q12",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q13",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q14",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q15",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q16",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q17",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q18",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "q19",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t01",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t02",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t03",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t04",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "t05",
+  "citation_support": [],
+  "note": "Correct answer rejected by the citation guard (no inline [id]); prompt v1 failure mode.",
+  "answer_grade": 0
+ },
+ {
+  "query_id": "t06",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "u01",
+  "citation_support": [],
+  "note": "",
+  "abstention_correct": true
+ },
+ {
+  "query_id": "u02",
+  "citation_support": [],
+  "note": "Abstained correctly.",
+  "abstention_correct": true
+ },
+ {
+  "query_id": "u03",
+  "citation_support": [],
+  "note": "",
+  "abstention_correct": true
+ }
+]

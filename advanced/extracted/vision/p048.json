@@ -1,0 +1,27 @@
+{
+ "page": 48,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                              | 2019 | 2020 | 2021 | 2022 | 2023e |\n|------------------------------|------|------|------|------|-------|\n| Production, mine shipments    | 160  | 165  | 175  | 175  | 190   |\n| Imports for consumption¹      | 49   | 48   | 49   | 39   | 25    |\n| Exports²                     | 37   | 25   | 30   | 61   | 75    |\n| Shipments from Government stockpile³ | —    | 3    | 7    | 9    | NA    |\n| Consumption:                 |      |      |      |      |       |\n| &nbsp;&nbsp;&nbsp;Apparent⁴   | 167  | 196  | 196  | 187  | 150   |\n| &nbsp;&nbsp;&nbsp;Reported, ore | 160  | 170  | 170  | 170  | 170   |\n| Price, annual average unit value, beryllium-copper master alloy,⁵ | 620  | 620  | 680  | 660  | 1,400 |\n| &nbsp;&nbsp;&nbsp;dollars per kilogram of contained beryllium |      |      |      |      |       |\n| Stocks, ore, consumer, yearend | 35   | 30   | 35   | 10   | —     |\n| Net import reliance⁶ as a percentage of apparent consumption | 4    | 16   | 11   | 6    | E     |",
+   "notes": "¹See Import Sources (2019–22).\n²Exports are reported free alongside ship (f.a.s.) U.S. ports.\n³Shipments from Government stockpile are for the Defense Logistics Agency.\n⁴Apparent consumption is production plus imports minus exports plus or minus stock changes.\n⁵Price is for beryllium content in beryllium-copper master alloy.\n⁶Net import reliance is imports minus exports as a percentage of apparent consumption.\nE = Value estimated; NA = Not available."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                   | Number       | Normal Trade Relations 12–31–23 |\n|----------------------------------------|--------------|--------------------------------|\n| Beryllium ores and concentrates         | 2617.90.0030 | Free.                          |\n| Beryllium oxide and hydroxide           | 2825.90.1000 | 3.7% ad valorem.               |\n| Beryllium-copper master alloy           | 7405.00.6030 | Free.                          |\n| Beryllium-copper plates, sheets, and strip: |              |                                |\n| &nbsp;&nbsp;&nbsp;Thickness of 5 millimeters (mm) or more | 7409.90.1030 | 3% ad valorem.                 |\n| &nbsp;&nbsp;&nbsp;Thickness of less than 5 mm: |              |                                |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Width of 500 mm or more | 7409.90.5030 | 1.7% ad valorem.               |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Width of less than 500 mm | 7409.90.9030 | 3% ad valorem.                 |\n| Beryllium:                             |              |                                |\n| &nbsp;&nbsp;&nbsp;Unwrought, including powders | 8112.12.0000 | 8.5% ad valorem.               |\n| &nbsp;&nbsp;&nbsp;Waste and scrap       | 8112.13.0000 | Free.                          |\n| &nbsp;&nbsp;&nbsp;Other                  | 8112.19.0000 | 5.5% ad valorem.               |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 911
+ },
+ "seconds": 7.3
+}

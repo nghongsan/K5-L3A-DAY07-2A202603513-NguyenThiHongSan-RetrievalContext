@@ -1,0 +1,20 @@
+{
+ "page": 173,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "|                   | Mine production |       | Reserves7                                   |\n|-------------------|-----------------|-------|---------------------------------------------|\n|                   | 2022            | 2023e |                                             |\n| United States     | 2,380           | 2,300 | Adequate, except for certain special types and local shortages. |\n| Other countries   | NA              | NA    |                                             |\n| World total      | NA              | NA    |                                             |",
+   "notes": "eEstimated. NA Not available.\n7See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 152
+ },
+ "seconds": 2.3
+}

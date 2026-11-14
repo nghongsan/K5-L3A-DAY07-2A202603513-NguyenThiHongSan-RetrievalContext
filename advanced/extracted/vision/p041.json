@@ -1,0 +1,20 @@
+{
+ "page": 41,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Production and Reserves",
+   "location": "middle left",
+   "content": "| Country       | Production⁾,⁷ (arsenic trioxide, gross weight) |       | Reserves⁸ |\n|---------------|-----------------------------------------------|-------|---------------|\n|               | 2022                                          | 2023  |               |\n| United States | —                                         | —  | World reserves data were unavailable but were estimated to be more than 20 times world production.\n| Belgium       | 1,000                                         | 1,000 |               |\n| Bolivia       | 40                                            | —  |               |\n| China         | 24,000                                        | 24,000|               |\n| Japan         | 40                                            | 40    |               |\n| Morocco       | 7,500                                         | 8,000 |               |\n| Peru          | 27,000                                        | 27,000|               |\n| Russia        | 500                                           | 200   |               |\n| World total (rounded) | 60,100                                  | 60,000|               |",
+   "notes": "⁾Estimated. — Zero.\n⁷Includes calculated arsenic trioxide equivalent of output of elemental arsenic compounds other than arsenic trioxide; inclusion of such materials would not duplicate reported arsenic trioxide production. Chile and Mexico were thought to be significant producers of commercial-grade arsenic trioxide but have reported no production in recent years.\n⁸See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 354
+ },
+ "seconds": 3.6
+}

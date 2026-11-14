@@ -1,0 +1,41 @@
+{
+ "config": "V7_mm_hybrid_title_41",
+ "split": "dev",
+ "model": "gpt-4.1",
+ "settings": {
+  "name": "V7_mm_hybrid_title_41",
+  "method": "hybrid",
+  "kinds": [
+   "text",
+   "visual"
+  ],
+  "top_k": 6,
+  "call_budget": 9000,
+  "view_page": false,
+  "max_searches": 5,
+  "max_views": 3,
+  "max_turns": 12,
+  "model": "gpt-4.1",
+  "title_lookup": true,
+  "prompt_v2": true
+ },
+ "n": 19,
+ "errors": 0,
+ "page_hit1": "14/15",
+ "page_hit3": "15/15",
+ "all_gold_pages_top6": "14/15",
+ "context_all_gold_pages": "14/15",
+ "cited_all_gold_pages": "14/15",
+ "answered": 16,
+ "abstained": 3,
+ "abstain_on_unanswerable": "3/4",
+ "abstain_on_answerable": "0/15",
+ "searches_mean": 2.63,
+ "views_mean": 0,
+ "tokens_in": 224332,
+ "tokens_out": 3120,
+ "cost_usd_llm": 0.4736,
+ "embedding_query_tokens": 859,
+ "median_seconds": 3.8,
+ "wall_seconds": 28.0
+}

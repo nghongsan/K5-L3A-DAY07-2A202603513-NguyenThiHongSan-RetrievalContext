@@ -1,0 +1,20 @@
+{
+ "page": 179,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country                         | Mine productione 2022 | Mine productione 2023 | Reserves7 |\n|--------------------------------|-----------------------|-----------------------|-----------|\n| United States (crude)           | 8511                  | 450                   | 140,000   |\n| Afghanistan                    | 370                   | 370                   | Large     |\n| Brazil (crude and beneficiated)9 | 600                   | 600                   | 45,000    |\n| Canada (unspecified minerals)9 | 200                   | 200                   | NA        |\n| China (unspecified minerals)   | 1,100                 | 1,100                 | 72,000    |\n| Finland                       | 8242                  | 240                   | Large     |\n| France (crude)                 | 350                   | 400                   | Large     |\n| India9                        | 1,630                 | 1,600                 | 110,000   |\n| Italy (includes steatite)     | 180                   | 180                   | NA        |\n| Japan9                        | 136                   | 140                   | 100,000   |\n| Korea, Republic of9           | 8323                  | 320                   | 81,000    |\n| Pakistan                     | 8300                  | 300                   | NA        |\n| South Africa9                | 8439                  | 370                   | NA        |\n| Turkey                       | 843                   | 40                    | 15,000    |\n| Other countries (includes crude)9 | 707                   | 700                   | Large     |\n| World total (rounded)          | 7,130                 | 7,000                 | Large     |",
+   "notes": "e Estimated, NA Not available.\n7 See Appendix C for resource and reserve definitions and information concerning data sources.\n8 Reported.\n9 Includes pyrophyllite."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 442
+ },
+ "seconds": 21.9
+}

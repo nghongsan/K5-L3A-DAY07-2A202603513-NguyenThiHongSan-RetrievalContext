@@ -1,0 +1,27 @@
+{
+ "page": 13,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Table 1.—U.S. Mineral Industry Trends",
+   "location": "top half",
+   "content": "| Category                                      | 2019   | 2020   | 2021   | 2022   | 2023e  |\n|-----------------------------------------------|--------|--------|--------|--------|--------|\n| Total mine production (million dollars):      |        |        |        |        |        |\n| Metals                                        | 26,900 | 27,600 | 36,900 | 35,400 | 34,900 |\n| Industrial minerals                           | 56,500 | 54,000 | 58,200 | 65,300 | 69,900 |\n| Coal                                          | 25,500 | 16,800 | 21,000 | 32,300 | 31,700 |\n| Employment (thousands of workers):            |        |        |        |        |        |\n| Coal mining, all employees                    | 51     | 40     | 38     | 40     | 41     |\n| Nonfuel mineral mining, all employees         | 140    | 136    | 138    | 143    | 150    |\n| Chemicals and allied products, production workers | 559    | 537    | 541    | 570    | 570    |\n| Stone, clay, and glass products, production workers | 312    | 296    | 300    | 315    | 310    |\n| Primary metal industries, production workers  | 301    | 272    | 270    | 282    | 290    |\n| Average weekly earnings of workers (dollars):|        |        |        |        |        |\n| Coal mining, all employees                    | 1,617  | 1,517  | 1,618  | 1,762  | 1,800  |\n| Chemicals and allied products, production workers | 1,066  | 1,065  | 1,103  | 1,119  | 1,200  |\n| Stone, clay, and glass products, production workers | 968    | 981    | 1,017  | 1,086  | 1,100  |\n| Primary metal industries, production workers  | 1,027  | 1,006  | 1,073  | 1,172  | 1,200  |",
+   "notes": "eEstimated.\nSources: U.S. Geological Survey, U.S. Department of Energy, and U.S. Department of Labor."
+  },
+  {
+   "type": "table",
+   "title": "Table 2.—U.S. Mineral-Related Economic Trends",
+   "location": "lower half",
+   "content": "| Category                                      | 2019    | 2020    | 2021    | 2022    | 2023e   |\n|-----------------------------------------------|---------|---------|---------|---------|---------|\n| Gross domestic product (billion dollars)      | 21,521  | 21,323  | 23,594  | 25,744  | 27,356  |\n| Industrial production (2017=100):              |         |         |         |         |         |\n| Total index:                                  | 102     | 95      | 99      | 103     | 100     |\n| Manufacturing:                                |         |         |         |         |         |\n| Nonmetallic mineral products                   | 101     | 97      | 101     | 109     | 110     |\n| Primary metals:                               |         |         |         |         |         |\n| Iron and steel                                | 95      | 87      | 102     | 96      | 97      |\n| Aluminum                                      | 101     | 92      | 97      | 96      | 91      |\n| Nonferrous metals (except aluminum)           | 102     | 92      | 95      | 106     | 110     |\n| Chemicals                                     | 97      | 95      | 100     | 102     | 100     |\n| Mining:                                       | 121     | 103     | 106     | 113     | 120     |\n| Coal                                          | 92      | 69      | 75      | 77      | 78      |\n| Oil and gas extraction                        | 130     | 122     | 123     | 130     | 140     |\n| Metals                                        | 96      | 95      | 92      | 88      | 85      |\n| Nonmetallic minerals                          | 104     | 98      | 102     | 102     | 100     |\n| Capacity utilization (percent):                |         |         |         |         |         |\n| Total industry:                               | 79      | 73      | 78      | 80      | 79      |\n| Mining:                                       | 87      | 72      | 82      | 90      | 93      |\n| Metals                                        | 68      | 66      | 63      | 60      | 59      |\n| Nonmetallic minerals                          | 88      | 82      | 86      | 87      | 87      |\n| Housing starts (thousands)                     | 1,292   | 1,397   | 1,606   | 1,551   | 1,400   |\n| Light vehicle sales (thousands)                | 16,961  | 14,472  | 14,947  | 13,754  | 15,500  |\n| Highway construction, value, put in place (billion dollars) | 99      | 103     | 104     | 114     | 130     |",
+   "notes": "eEstimated.\nSources: U.S. Department of Commerce and Federal Reserve Board."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1299
+ },
+ "seconds": 9.6
+}

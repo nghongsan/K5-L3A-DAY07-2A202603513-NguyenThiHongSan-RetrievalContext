@@ -1,0 +1,886 @@
+[
+ {
+  "query_id": "m01",
+  "split": "test2",
+  "answerable": true,
+  "question": "What does the not operator return?",
+  "query": "What does the not operator return?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0104:c03",
+    "page": 104,
+    "section": "4.3",
+    "score": 6.2805,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0106:c02",
+    "page": 106,
+    "section": "4.3",
+    "score": 5.9263,
+    "hit": true
+   },
+   {
+    "rank": 3,
+    "id": "p0121:c02",
+    "page": 121,
+    "section": "4.8",
+    "score": 5.0551,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 4.7591,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0108:c02",
+    "page": 108,
+    "section": "4.4",
+    "score": 4.6304,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0105:c02",
+    "page": 105,
+    "section": "4.3",
+    "score": 4.5011,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0166:c03",
+    "page": 166,
+    "section": "6.5",
+    "score": 4.4734,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0165:c03",
+    "page": 165,
+    "section": "6.5",
+    "score": 4.4334,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0165:c01",
+    "page": 165,
+    "section": "6.5",
+    "score": 4.4054,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0165:c00",
+    "page": 165,
+    "section": "6.5",
+    "score": 4.1987,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0104:c03",
+   "p0106:c02",
+   "p0121:c02"
+  ],
+  "context_chars": 1258,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 106,
+    "evidence": "The not operator takes one condition operand and returns True when the operand is false"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.5,
+  "context_hit": true
+ },
+ {
+  "query_id": "m02",
+  "split": "test2",
+  "answerable": true,
+  "question": "Can for loops and while loops be combined inside one nested loop?",
+  "query": "Can for loops and while loops be combined inside one nested loop?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0132:c03",
+    "page": 132,
+    "section": "5.3",
+    "score": 22.0428,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0144:c00",
+    "page": 144,
+    "section": "5.6",
+    "score": 18.0623,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0143:c01",
+    "page": 143,
+    "section": "5.6",
+    "score": 17.6637,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0135:c00",
+    "page": 135,
+    "section": "5.3",
+    "score": 16.5405,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0133:c00",
+    "page": 133,
+    "section": "5.3",
+    "score": 15.931,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0135:c01",
+    "page": 135,
+    "section": "5.3",
+    "score": 15.1644,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0125:c00",
+    "page": 125,
+    "section": "5.0",
+    "score": 14.9975,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0128:c01",
+    "page": 128,
+    "section": "5.1",
+    "score": 14.4766,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0125:c03",
+    "page": 125,
+    "section": "5.1",
+    "score": 14.4052,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0126:c01",
+    "page": 126,
+    "section": "5.1",
+    "score": 14.317,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0132:c03",
+   "p0144:c00",
+   "p0143:c01"
+  ],
+  "context_chars": 1412,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 136,
+    "evidence": "The two for and while loop constructs can also be mixed in a nested loop construct."
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.0,
+  "context_hit": false
+ },
+ {
+  "query_id": "m03",
+  "split": "test2",
+  "answerable": true,
+  "question": "What happens when a function finishes executing?",
+  "query": "What happens when a function finishes executing?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0156:c01",
+    "page": 156,
+    "section": "6.3",
+    "score": 9.6454,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0165:c00",
+    "page": 165,
+    "section": "6.5",
+    "score": 6.7684,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 6.499,
+    "hit": true
+   },
+   {
+    "rank": 4,
+    "id": "p0151:c04",
+    "page": 151,
+    "section": "6.2",
+    "score": 5.4677,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0153:c00",
+    "page": 153,
+    "section": "6.2",
+    "score": 5.2641,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0161:c00",
+    "page": 161,
+    "section": "6.4",
+    "score": 5.2057,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0102:c02",
+    "page": 102,
+    "section": "4.2",
+    "score": 4.8385,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0149:c03",
+    "page": 149,
+    "section": "6.1",
+    "score": 4.8239,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0100:c04",
+    "page": 100,
+    "section": "4.2",
+    "score": 4.6805,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0128:c00",
+    "page": 128,
+    "section": "5.1",
+    "score": 4.5193,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0156:c01",
+   "p0165:c00",
+   "p0164:c02"
+  ],
+  "context_chars": 959,
+  "ms": 0.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 164,
+    "evidence": "When a function finishes, the function returns and provides a result to the calling code."
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.3333333333333333,
+  "context_hit": true
+ },
+ {
+  "query_id": "m04",
+  "split": "test2",
+  "answerable": true,
+  "question": "For printing every multiple of 5 below 50, how does a for loop with range() compare with an equivalent while loop?",
+  "query": "For printing every multiple of 5 below 50, how does a for loop with range() compare with an equivalent while loop?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0131:c01",
+    "page": 131,
+    "section": "5.2",
+    "score": 23.9476,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0131:c00",
+    "page": 131,
+    "section": "5.2",
+    "score": 18.9977,
+    "hit": true
+   },
+   {
+    "rank": 3,
+    "id": "p0136:c00",
+    "page": 136,
+    "section": "5.3",
+    "score": 14.5498,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0137:c04",
+    "page": 137,
+    "section": "5.4",
+    "score": 13.4581,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0135:c00",
+    "page": 135,
+    "section": "5.3",
+    "score": 13.2695,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0133:c00",
+    "page": 133,
+    "section": "5.3",
+    "score": 12.8966,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0127:c02",
+    "page": 127,
+    "section": "5.1",
+    "score": 12.7697,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0131:c02",
+    "page": 131,
+    "section": "5.2",
+    "score": 12.3362,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0143:c01",
+    "page": 143,
+    "section": "5.6",
+    "score": 11.8185,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0126:c03",
+    "page": 126,
+    "section": "5.1",
+    "score": 11.6804,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0131:c01",
+   "p0131:c00",
+   "p0136:c00"
+  ],
+  "context_chars": 1254,
+  "ms": 0.3,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 131,
+    "evidence": "Notice the compactness of the for construction compared to the while"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.5,
+  "context_hit": true
+ },
+ {
+  "query_id": "m05",
+  "split": "test2",
+  "answerable": true,
+  "question": "In the loop-else example that searches a list for the number 10, what happens if 10 is not in the list?",
+  "query": "In the loop-else example that searches a list for the number 10, what happens if 10 is not in the list?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0141:c00",
+    "page": 141,
+    "section": "5.5",
+    "score": 25.1285,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0141:c01",
+    "page": 141,
+    "section": "5.5",
+    "score": 24.7098,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0141:c02",
+    "page": 141,
+    "section": "5.5",
+    "score": 19.9562,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0143:c00",
+    "page": 143,
+    "section": "5.5",
+    "score": 18.6667,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0141:c03",
+    "page": 141,
+    "section": "5.5",
+    "score": 15.8469,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0136:c00",
+    "page": 136,
+    "section": "5.3",
+    "score": 15.0608,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0140:c01",
+    "page": 140,
+    "section": "5.4",
+    "score": 12.7328,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0127:c01",
+    "page": 127,
+    "section": "5.1",
+    "score": 12.0216,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0129:c00",
+    "page": 129,
+    "section": "5.2",
+    "score": 11.6364,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0168:c01",
+    "page": 168,
+    "section": "6.5",
+    "score": 10.3995,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0141:c00",
+   "p0141:c01",
+   "p0141:c02"
+  ],
+  "context_chars": 1396,
+  "ms": 0.3,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 141,
+    "evidence": "hence the else statement will run and print \"10 is not in the list.\""
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "m06",
+  "split": "test2",
+  "answerable": true,
+  "question": "How does the textbook define a function?",
+  "query": "How does the textbook define a function?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0147:c03",
+    "page": 147,
+    "section": "6.1",
+    "score": 7.4675,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 5.3776,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0149:c01",
+    "page": 149,
+    "section": "6.1",
+    "score": 4.7101,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0170:c00",
+    "page": 170,
+    "section": "6.6",
+    "score": 4.6573,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0095:c01",
+    "page": 95,
+    "section": "4.0",
+    "score": 3.0953,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0153:c00",
+    "page": 153,
+    "section": "6.2",
+    "score": 2.4637,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 2.4254,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0156:c01",
+    "page": 156,
+    "section": "6.3",
+    "score": 2.4152,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0160:c02",
+    "page": 160,
+    "section": "6.4",
+    "score": 2.384,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0148:c04",
+    "page": 148,
+    "section": "6.1",
+    "score": 2.3676,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0147:c03",
+   "p0171:c04",
+   "p0149:c01"
+  ],
+  "context_chars": 1209,
+  "ms": 0.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 148,
+    "evidence": "A function is a named, reusable block of code that performs a task when called."
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.0,
+  "context_hit": false
+ },
+ {
+  "query_id": "v01",
+  "split": "test2",
+  "answerable": false,
+  "question": "How do I write a dictionary comprehension in Python?",
+  "query": "How do I write a dictionary comprehension in Python?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 4.2515,
+    "hit": null
+   },
+   {
+    "rank": 2,
+    "id": "p0100:c05",
+    "page": 100,
+    "section": "4.2",
+    "score": 3.6724,
+    "hit": null
+   },
+   {
+    "rank": 3,
+    "id": "p0129:c00",
+    "page": 129,
+    "section": "5.2",
+    "score": 3.4604,
+    "hit": null
+   },
+   {
+    "rank": 4,
+    "id": "p0162:c02",
+    "page": 162,
+    "section": "6.4",
+    "score": 3.2957,
+    "hit": null
+   },
+   {
+    "rank": 5,
+    "id": "p0168:c01",
+    "page": 168,
+    "section": "6.5",
+    "score": 3.2879,
+    "hit": null
+   },
+   {
+    "rank": 6,
+    "id": "p0125:c03",
+    "page": 125,
+    "section": "5.1",
+    "score": 3.1346,
+    "hit": null
+   },
+   {
+    "rank": 7,
+    "id": "p0169:c01",
+    "page": 169,
+    "section": "6.6",
+    "score": 3.1346,
+    "hit": null
+   },
+   {
+    "rank": 8,
+    "id": "p0104:c03",
+    "page": 104,
+    "section": "4.3",
+    "score": 3.0392,
+    "hit": null
+   },
+   {
+    "rank": 9,
+    "id": "p0155:c00",
+    "page": 155,
+    "section": "6.3",
+    "score": 2.9788,
+    "hit": null
+   },
+   {
+    "rank": 10,
+    "id": "p0121:c01",
+    "page": 121,
+    "section": "4.8",
+    "score": 2.6853,
+    "hit": null
+   }
+  ],
+  "context_ids": [
+   "p0171:c04",
+   "p0100:c05",
+   "p0129:c00"
+  ],
+  "context_chars": 1281,
+  "ms": 0.1,
+  "top1_score": 4.2515
+ },
+ {
+  "query_id": "v02",
+  "split": "test2",
+  "answerable": false,
+  "question": "How can the walrus operator := be used in a while loop condition?",
+  "query": "How can the walrus operator := be used in a while loop condition?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0137:c02",
+    "page": 137,
+    "section": "5.4",
+    "score": 11.9635,
+    "hit": null
+   },
+   {
+    "rank": 2,
+    "id": "p0143:c01",
+    "page": 143,
+    "section": "5.6",
+    "score": 11.785,
+    "hit": null
+   },
+   {
+    "rank": 3,
+    "id": "p0126:c03",
+    "page": 126,
+    "section": "5.1",
+    "score": 10.563,
+    "hit": null
+   },
+   {
+    "rank": 4,
+    "id": "p0125:c01",
+    "page": 125,
+    "section": "5.0",
+    "score": 9.9775,
+    "hit": null
+   },
+   {
+    "rank": 5,
+    "id": "p0125:c03",
+    "page": 125,
+    "section": "5.1",
+    "score": 9.0974,
+    "hit": null
+   },
+   {
+    "rank": 6,
+    "id": "p0106:c02",
+    "page": 106,
+    "section": "4.3",
+    "score": 8.9278,
+    "hit": null
+   },
+   {
+    "rank": 7,
+    "id": "p0139:c00",
+    "page": 139,
+    "section": "5.4",
+    "score": 8.658,
+    "hit": null
+   },
+   {
+    "rank": 8,
+    "id": "p0135:c00",
+    "page": 135,
+    "section": "5.3",
+    "score": 8.542,
+    "hit": null
+   },
+   {
+    "rank": 9,
+    "id": "p0138:c00",
+    "page": 138,
+    "section": "5.4",
+    "score": 8.0312,
+    "hit": null
+   },
+   {
+    "rank": 10,
+    "id": "p0128:c01",
+    "page": 128,
+    "section": "5.1",
+    "score": 7.721,
+    "hit": null
+   }
+  ],
+  "context_ids": [
+   "p0137:c02",
+   "p0143:c01",
+   "p0126:c03"
+  ],
+  "context_chars": 1320,
+  "ms": 0.2,
+  "top1_score": 11.9635
+ }
+]

@@ -1,0 +1,34 @@
+{
+ "page": 38,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                     | 2019  | 2020  | 2021  | 2022  | 2023e |\n|------------------------------|-------|-------|-------|-------|-------|\n| Production:                  |       |       |       |       |       |\n| Mine (recoverable antimony) | —     | —     | —     | —     | —     |\n| Smelter:                    |       |       |       |       |       |\n| Primary                     | 377   | 254   | NA    | NA    | NA    |\n| Secondary                   | 4,140 | 3,520 | 4,050 | 4,100 | 4,000 |\n| Imports for consumption:    |       |       |       |       |       |\n| Ore and concentrates        | 121   | 105   | 31    | 29    | 8     |\n| Oxide                       | 17,200| 15,000| 19,100| 16,900| 14,000|\n| Unwrought, powder           | 6,670 | 5,520 | 7,480 | 8,300 | 8,300 |\n| Waste and scrap1            | 17    | 6     | 13    | 71    | 5     |\n| Exports:                    |       |       |       |       |       |\n| Ore and concentrates1       | 9     | 10    | 9     | 53    | 30    |\n| Oxide                       | 1,570 | 1,230 | 1,530 | 2,420 | 1,800 |\n| Unwrought, powder           | 370   | 393   | 921   | 1,820 | 2,100 |\n| Waste and scrap1            | 14    | 11    | 136   | 26    | 3     |\n| Consumption, apparent2      | 26,100| 22,400| 28,200| 25,100| 22,000|\n| Price, metal, average, dollars per pound3 | 3.90  | 2.67  | 5.31  | 6.18  | 5.60  |\n| Net import reliance4 as a percentage of apparent consumption | 84    | 84    | 86    | 84    | 82    |",
+   "notes": "1 Waste and scrap includes antimonial lead recovered from spent lead-acid batteries.\n2 Apparent consumption = production + imports - exports.\n3 Price is average American Metal Market dealer price.\n4 Net import reliance = (imports - exports) / apparent consumption.\nNA = Not available; e = estimated."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "middle right",
+   "content": "| Item                         | Number       | Normal Trade Relations 12-31-23 |\n|------------------------------|--------------|---------------------------------|\n| Ore and concentrates          | 2617.10.0000 | Free.                           |\n| Antimony oxide               | 2825.80.0000 | Free.                           |\n| Antimony and articles thereof:|              |                                 |\n| Unwrought antimony; powder   | 8110.10.0000 | Free.                           |\n| Waste and scrap              | 8110.20.0000 | Free.                           |\n| Other                       | 8110.90.0000 | Free.                           |",
+   "notes": ""
+  },
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "lower half",
+   "content": "| Material | FY 2023 Potential acquisitions | FY 2023 Potential disposals | FY 2024 Potential acquisitions | FY 2024 Potential disposals |\n|----------|-------------------------------|-----------------------------|-------------------------------|-----------------------------|\n| Antimony | 1,100                         | —                           | 1,100                         | —                           |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 887
+ },
+ "seconds": 7.4
+}

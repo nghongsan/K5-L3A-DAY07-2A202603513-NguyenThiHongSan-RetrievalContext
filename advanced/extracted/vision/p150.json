@@ -1,0 +1,27 @@
+{
+ "page": 150,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle left",
+   "content": "| Category                                   | 2019  | 2020  | 2021  | 2022  | 2023e |\n|--------------------------------------------|-------|-------|-------|-------|-------|\n| Production¹                               | 8,360 | 8,830 | 9,290 | 8,870 | 9,100 |\n| Imports for consumption                    |       |       |       |       |       |\n| Rhenium, unwrought and powders²           | 31,500| 15,900| 15,900| 11,900| 11,000|\n| Ammonium perrhenate³                      | 12,800| 9,320 | 6,020 | 8,920 | 5,000 |\n| Exports                                   | —     | —     | —     | 267   | 2,100 |\n| Consumption, apparent⁴                    | 52,600| 34,000| 31,200| 29,500| 23,000|\n| Price, average value, gross weight, dollars per kilogram:⁵ |       |       |       |       |       |\n| Metal pellets, 99.99% pure                | 1,300 | 1,030 | 977   | 1,120 | 1,070 |\n| Ammonium perrhenate                       | 1,280 | 1,090 | 866   | 911   | 920   |\n| Employment, number                        | Small | Small | Small | Small | Small |\n| Net import reliance⁶ as a percentage of apparent consumption | 84    | 74    | 70    | 70    | 60    |",
+   "notes": "¹ Production data are in kilograms, rhenium content.\n² Includes metal powder.\n³ Ammonium perrhenate is a chemical compound containing rhenium.\n⁴ Apparent consumption = production + imports - exports.\n⁵ Price data are average values per kilogram gross weight.\n⁶ Net import reliance = (imports - exports) / apparent consumption * 100."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                         | Number       | Normal Trade Relations 12–31–23 |\n|----------------------------------------------|--------------|--------------------------------|\n| Salts of peroxometallic acids, other, ammonium perrhenate | 2841.90.2000 | 3.1% ad valorem.                |\n| Rhenium, unwrought, waste and scrap          | 8112.41.1000 | Free.                          |\n| Rhenium, unwrought, powders                   | 8112.41.5000 | 3% ad valorem.                 |\n| Rhenium, other                               | 8112.49.0000 | 4% ad valorem.                 |\n| Rhenium (and other metals), wrought          | 8112.99.9100 | 4% ad valorem.                 |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 686
+ },
+ "seconds": 6.6
+}

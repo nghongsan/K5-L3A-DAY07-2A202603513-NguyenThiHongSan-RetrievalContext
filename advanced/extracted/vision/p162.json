@@ -1,0 +1,20 @@
+{
+ "page": 162,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|------|------|------|------|-------|\n| Production, refinery¹              | W    | W    | W    | W    | W     |\n| Imports for consumption:           |      |      |      |      |       |\n| Selenium                         | 465  | 366  | 346  | 351  | 290   |\n| Selenium dioxide                 | 5    | 18   | 71   | 10   | 5     |\n| Exports²                        | 361  | 147  | 227  | 192  | 110   |\n| Consumption, apparent³           | W    | W    | W    | W    | W     |\n| Price, average, dollars per kilogram: |      |      |      |      |       |\n| United States⁴                  | 20.17| 14.58| 18.18| 23.07| 23    |\n| Europe⁵                        | 20.44| 14.71| 18.47| 19.82| 19    |\n| Stocks, producer, yearend        | W    | W    | W    | W    | W     |\n| Net import reliance⁶ as a percentage of apparent consumption | >50  | >75  | >50  | >50  | >50   |",
+   "notes": "¹ Production data withheld to avoid disclosing company proprietary data.\n² Exports data.\n³ Apparent consumption data withheld.\n⁴ Price data for United States.\n⁵ Price data for Europe.\n⁶ Net import reliance percentage."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 404
+ },
+ "seconds": 4.4
+}

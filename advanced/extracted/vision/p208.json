@@ -1,0 +1,27 @@
+{
+ "page": 208,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019     | 2020     | 2021     | 2022     | 2023e    |\n|-----------------------------------|----------|----------|----------|----------|----------|\n| Production, zirconium ores and concentrates [zirconium oxide (ZrO2) content] | <100,000 | <100,000 | <100,000 | <100,000 | <100,000 |\n| Imports:                          |          |          |          |          |          |\n| Zirconium ores and concentrates (ZrO2 content)¹ | 22,600   | 15,600   | 18,500   | 35,400   | 16,000   |\n| Zirconium, unwrought, powder, and waste and scrap | 1,820    | 2,030    | 746      | 346      | 490      |\n| Zirconium, wrought               | 289      | 302      | 265      | 286      | 310      |\n| Hafnium, unwrought, powder, and waste and scrap | 32       | 16       | 23       | 43       | 68       |\n| Hafnium, wrought                | NA       | NA       | NA       | 2        | 5        |\n| Exports:                        |          |          |          |          |          |\n| Zirconium ores and concentrates (ZrO2 content)¹, ² | 40,500   | 12,200   | 10,000   | 11,200   | 14,000   |\n| Zirconium, unwrought, powder, and waste and scrap | 897      | 664      | 589      | 1,090    | 1,000    |\n| Zirconium, wrought             | 816      | 838      | 966      | 805      | 680      |\n| Consumption, apparent,³ zirconium ores and concentrates (ZrO2 content)¹ | <100,000 | <100,000 | <100,000 | <100,000 | <100,000 |\n| Price:                         |          |          |          |          |          |\n| Zircon, dollars per metric ton (gross weight): |          |          |          |          |          |\n| Premium grade, cost, insurance, and freight, China⁴ | 1,620    | 1,490    | 1,580    | 2,170    | 2,280    |\n| Imported⁵                     | 1,490    | 1,380    | 1,440    | 1,940    | 2,100    |\n| Zirconium, sponge, ex-works China,⁴ dollars per kilogram | 34       | 25       | 25       | 30       | 28       |\n| Hafnium, unwrought, dollars per kilogram | 832      | 778      | 781      | 1,590    | 6,200    |\n| Net import reliance⁶ as a percentage of apparent consumption: |          |          |          |          |          |\n| Zirconium ores and concentrates | E        | <25      | <25      | <50      | <25      |\n| Hafnium                       | NA       | NA       | NA       | NA       | NA       |",
+   "notes": "¹ Zirconium ores and concentrates include both domestic and imported materials.\n² Exports include reexports.\n³ Apparent consumption is calculated as production plus imports minus exports.\n⁴ Source: Industrial Minerals, London.\n⁵ Source: Platts Metals Week.\n⁶ Net import reliance is imports minus exports as a percentage of apparent consumption.\nE = Value is less than 0.5% of apparent consumption.\nNA = Not available."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                   | Number               | Normal Trade Relations 12-31-23 |\n|----------------------------------------|----------------------|---------------------------------|\n| Zirconium ores and concentrates         | 2615.10.0000         | Free.                           |\n| Ferroziconium                          | 7202.99.1000         | 4.2% ad valorem.                |\n| Zirconium, unwrought and powder        | 8109.21.0000, 8109.29.0000 | 4.2% ad valorem.                |\n| Zirconium waste and scrap              | 8109.31.0000, 8109.39.0000 | Free.                           |\n| Other zirconium articles               | 8109.91.0000, 8109.99.0000 | 3.7% ad valorem.                |\n| Hafnium, unwrought, powder, and waste and scrap | 8112.31.0000         | Free.                           |\n| Hafnium, other                        | 8112.39.0000         | 4% ad valorem.                  |",
+   "notes": "Depletion Allowance: 22% (domestic), 14% (foreign)."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1147
+ },
+ "seconds": 9.6
+}

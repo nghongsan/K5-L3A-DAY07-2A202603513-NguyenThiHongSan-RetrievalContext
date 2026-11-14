@@ -1,0 +1,20 @@
+{
+ "page": 17,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "map",
+   "title": "Figure 5.—Value of Metals and Metallic Minerals Produced in 2023, by Region",
+   "location": "full page",
+   "content": "Map of the United States divided into four regions: West (red), Midwest (orange), South (light orange), Northeast (cream). Alaska and Hawaii shown in insets, colored red (West). States are labeled with codes representing metals/minerals produced. Explanation legend for value in billion dollars: 0 to 0.3 (cream), >0.3 to 5 (light orange), >5 to 15 (orange), 25 (red).\n\nState codes and metals/minerals:\n- Au: Gold\n- B1: Copper ± molybdenum ± gold ± silver ± rhenium\n- B2: Copper ± silver\n- B3: Lead and zinc ± copper ± silver\n- B4: Silver ± zinc ± lead ± gold\n- B5: Nickel ± copper ± cobalt ± gold\n- B6: Cobalt, copper, gold\n- B7: Cobalt, copper, nickel\n- Be: Beryllium\n- Cu: Copper\n- Fe: Iron ore\n- IRZ: Ilmenite, rutile, and zircon\n- Mg: Magnesium\n- Mo: Molybdenum\n- P1: Silver ± base metals ± gold\n- P2: Gold and silver\n- P3: Gold and silver ± base metals\n- P4: Platinum ± palladium ± gold ± silver\n- REE: Rare-earth elements\n- Zn: Zinc\n\nExamples of state codes:\n- Washington: P2, P1, B1, B6\n- California: IRZ, P2, REE\n- Arizona: B1, Cu, B2, Cu, B1, Cu, Cu, Cu, B1\n- Alaska: B4, Au\n- Michigan: B5, Fe\n- Tennessee: Zn, Zn, Zn\n- Florida: IRZ, IRZ, REE\n\nRegions labeled in white text: West, Midwest, South, Northeast.",
+   "notes": "Source not explicitly stated on map. Codes explained below map."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 461
+ },
+ "seconds": 45.1
+}

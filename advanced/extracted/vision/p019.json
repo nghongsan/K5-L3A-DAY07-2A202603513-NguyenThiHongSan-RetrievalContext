@@ -1,0 +1,27 @@
+{
+ "page": 19,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "map",
+   "title": "Value of Crushed Stone Produced in 2023, by State",
+   "location": "top right",
+   "content": "Map of the United States with states colored by value of crushed stone production in million dollars. Color legend: Withheld (gray), <100 (cream), 100 to 500 (light orange), >500 to 1,000 (orange), >1,000 (red). Black dots indicate crushed stone operations scattered across states. Insets show Alaska and Hawaii with similar dot distribution and color coding.",
+   "notes": "EXPLANATION\nValue, in million dollars\n• Crushed stone operation"
+  },
+  {
+   "type": "chart",
+   "title": "Value of Crushed Stone Produced in 2023, by State (Bar Chart)",
+   "location": "bottom half",
+   "content": "Vertical bar chart with states on the x-axis and value in million dollars on the y-axis (0 to 3,000). Bars colored by value category matching map colors.\n\nStates and approximate values:\n- Texas: ~3,000\n- Florida: ~1,700\n- Georgia: ~1,650\n- Pennsylvania: ~1,600\n- North Carolina: ~1,550\n- Tennessee: ~1,150\n- Virginia: ~1,150\n- Ohio: ~950\n- Missouri: ~850\n- Kentucky: ~800\n- Illinois: ~750\n- South Carolina: ~700\n- Alabama: ~650\n- Indiana: ~600\n- New York: ~550\n- California: ~500\n- Michigan: ~450\n- Oklahoma: ~400\n- Iowa: ~350\n- Arkansas: ~350\n- Maryland: ~300\n- Oregon: ~300\n- New Jersey: ~250\n- Wisconsin: ~250\n- Kansas: ~200\n- Colorado: ~200\n- Virginia: ~200\n- Washington: ~150\n- Massachusetts: ~150\n- Connecticut: ~150\n- Hawaii: ~100\n- Arizona: ~100\n- Minnesota: ~100\n- Utah: ~100\n- Mississippi: ~100\n- Nevada: ~100\n- Nebraska: ~100\n- Wyoming: ~100\n- New Hampshire: ~50\n- South Dakota: ~50\n- Vermont: ~50\n- Maine: ~50\n- New Mexico: ~50\n- Idaho: ~50\n- Rhode Island: ~50\n- Montana: ~50\n- Alaska: ~0\n- North Dakota: ~0",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 519
+ },
+ "seconds": 4.4
+}

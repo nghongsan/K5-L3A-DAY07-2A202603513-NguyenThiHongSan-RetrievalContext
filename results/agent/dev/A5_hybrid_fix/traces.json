@@ -1,0 +1,3321 @@
+[
+ {
+  "query_id": "q01",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "Which values does bool() convert to False?",
+  "filter": null,
+  "status": "answered",
+  "answer": "The values that bool() converts to False include 0 and an empty string. Specifically, bool() returns False for the integer 0 and for an empty string (\"\") [p0097:c01].",
+  "citations": [
+   "p0097:c01"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "bool() convert to False",
+    "filter": {
+     "chapter": 4
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0097:c01",
+      "page": 97,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p0097:c02",
+      "page": 97,
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p0097:c00",
+      "page": 97,
+      "score": 0.0315
+     },
+     {
+      "rank": 4,
+      "id": "p0121:c02",
+      "page": 121,
+      "score": 0.0315
+     },
+     {
+      "rank": 5,
+      "id": "p0096:c00",
+      "page": 96,
+      "score": 0.03077
+     }
+    ],
+    "returned_ids": [
+     "p0097:c01",
+     "p0097:c02",
+     "p0097:c00",
+     "p0121:c02",
+     "p0096:c00"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0097:c01"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0097:c01",
+   "p0097:c02",
+   "p0097:c00",
+   "p0121:c02",
+   "p0096:c00"
+  ],
+  "context_chars": 1812,
+  "context": "[p0097:c01] (page 97, ch.4 §4.1 Boolean values)\nbool() converts a value to a Boolean value, True or False.\n• True: any non-zero number, any non-empty string\n• False: 0, empty string\nCHECKPOINT\nConverting integers, floats, and strings using bool()\nConverting integers, floats, and strings using bool(); ch 4, video 2 (https://www.openstax.org/r/converting-\nusing-bool)\n\n[p0097:c02] (page 97, ch.4 §4.1 Boolean values)\nCONCEPTS IN PRACTICE\nConverting numeric types and strings to Booleans\n7 . bool(0.000)\na. True\nb. False\n8 . bool(-1)\na. True\nb. False\n9 . bool(\"\")\na. True\nb. False\n10 . bool(\"0\")\na. True\nb. False\n11 . Given input False, what is bool(input())?\na. True\nb. False\n\n[p0097:c00] (page 97, ch.4 §4.1 Boolean values)\nprint(type(is_dessert))\nWhat is the output?\na. <class 'bool'>\nb. <class 'int'>\nc. Error\nType conversion with bool()\nDeciding whether a value is true or false is helpful when writing programs/statements based on decisions.\nConverting data types to Booleans can seem unintuitive at first. Ex: Is \"ice cream\" True? But the\nconversion is actually simple.\n\n[p0121:c02] (page 121, ch.4 §4.8 Chapter summary)\nFunction Description\nbool(x) Converts x to a Boolean value, either True or False.\nOperator Description\nx == y\n(Equality)\nCompares the values of x and y and returns True if the values are equal and False\notherwise. Ex: 10 == 10 is True.\n\n[p0096:c00] (page 96, ch.4 §4.1 Boolean values)\nbool data type\nPeople often ask binary questions such as yes/no or true/false questions. Ex: Do you like pineapple on pizza?\nEx: True or false: I like pineapple on pizza. The response is a Boolean value, meaning the value is either true or\nfalse. The bool data type, standing for Boolean, represents a binary value of either true or false. true and\nfalse are keywords, and capitalization is required.",
+  "usage": {
+   "in": 1388,
+   "out": 94,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000265,
+  "seconds": 2.6,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q02",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "What goes wrong if I write is_zero = num=0 when I meant to test whether num is zero?",
+  "filter": null,
+  "status": "answered",
+  "answer": "If you write `is_zero = num=0`, it will always assign both `is_zero` and `num` the value of `0`, regardless of what `num` was originally. This is because the `=` operator is used for assignment, not comparison. In contrast, the `==` operator is used for comparison and does not modify the variable, producing a Boolean result of `True` or `False` based on whether `num` is zero or not [p0099:c01]. \n\nThus, the intended test to check if `num` is zero would require using `is_zero = (num == 0)` instead.",
+  "citations": [
+   "p0099:c01"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "is_zero = num=0",
+    "filter": {
+     "chapter": 4
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0099:c01",
+      "page": 99,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0120:c00",
+      "page": 120,
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "p0102:c00",
+      "page": 102,
+      "score": 0.03041
+     },
+     {
+      "rank": 4,
+      "id": "p0101:c03",
+      "page": 101,
+      "score": 0.03037
+     },
+     {
+      "rank": 5,
+      "id": "p0099:c00",
+      "page": 99,
+      "score": 0.0303
+     }
+    ],
+    "returned_ids": [
+     "p0099:c01",
+     "p0120:c00",
+     "p0102:c00",
+     "p0101:c03",
+     "p0099:c00"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "If you write `is_zero = num=0`, it will always assign both `is_zero` and `num` the value of `0`, regardless of what `num` was originally. This is because the `=` operator is used for assignment, not comparison. In contrast, the `==` operator is used for comparison and does not modify the variable, producing a Boolean result of `True` or `False` based on whether `num` is zero or not [p0099:c01]. \n\nThus, the intended test to check if `num` is zero would require using `is_zero = (num == 0)` instead"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p0099:c01"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0099:c01",
+   "p0120:c00",
+   "p0102:c00",
+   "p0101:c03",
+   "p0099:c00"
+  ],
+  "context_chars": 1648,
+  "context": "[p0099:c01] (page 99, ch.4 §4.1 Boolean values)\ncompare_result = (z == \"coriander\")\na. True\nb. False\n20 . a = \"dog\"\ncompare_result = (a < \"cat\")\na. True\nb. False\n= VS ==\nA common mistake is using = for comparison instead of ==. Ex: is_zero = num=0 will always assign\nis_zero and num with 0, regardless of num's original value. The = operator performs assignment and will\nmodify the variable. The == operator performs comparison, does not modify the variable, and produces\nTrue or False.\nEXPLORING FURTHER\n• Unicode Basic Latin Chart (https://openstax.org/r/100unicodelatin)\n\n[p0120:c00] (page 120, ch.4 §4.7 Conditional expressions)\nelse:\nresponse = 'odd'\na. response = if x%2 == 0 \"even\" else \"odd\"\nb. response = \"odd\" if x%2 == 0 else \"even\"\nc. response = \"even\" if x%2 == 0 else \"odd\"\n2 . Given x = 100 and offset = 10, what is the value of result?\n\n[p0102:c00] (page 102, ch.4 §4.2 If-else statements)\nnum = num + 50\na. -10\nb. 40\nc. 75\n5 . Given input 10, what is the final value of positive_num?\npositive_num = int(input(\"Enter a positive number:\"))\nif positive_num < 0:\nprint(\"Negative input set to 0\")\n\n[p0101:c03] (page 101, ch.4 §4.2 If-else statements)\n1 print(\"Have a great day.\")\n2 if is_raining:\n3 print(\"Don't forget an umbrella!\")\n4 print(\"See you soon.\")\na. 1, 2, 3\nb. 1, 2, 4\nc. 1, 2, 3, 4\n4 . Given num = -10, what is the final value of num?\nif num < 0:\nnum = 25\nif num < 100:\n\n[p0099:c00] (page 99, ch.4 §4.1 Boolean values)\nb. False\n16 . w = 0\ncompare_result = (w != 0.4)\na. True\nb. False\n17 . v = 4\ncompare_result = (v < 4.0)\na. True\nb. False\n18 . y = 2\ncompare_result = (y > \"ab\")\na. True\nb. False\nc. Error\n19 . z = \"cilantro\"",
+  "usage": {
+   "in": 2689,
+   "out": 317,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.000594,
+  "seconds": 5.44,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q03",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "How many spaces per indentation level does the PEP 8 style guide recommend?",
+  "filter": null,
+  "status": "abstain",
+  "answer": "The passages do not cover the specific recommendation of how many spaces per indentation level the PEP 8 style guide recommends.",
+  "citations": [],
+  "reason": "model_abstained",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "PEP 8 indentation",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0171:c00",
+      "page": 171,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0148:c04",
+      "page": 148,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p0158:c01",
+      "page": 158,
+      "score": 0.03125
+     },
+     {
+      "rank": 4,
+      "id": "p0150:c01",
+      "page": 150,
+      "score": 0.02976
+     },
+     {
+      "rank": 5,
+      "id": "p0153:c00",
+      "page": 153,
+      "score": 0.02762
+     }
+    ],
+    "returned_ids": [
+     "p0171:c00",
+     "p0148:c04",
+     "p0158:c01",
+     "p0150:c01",
+     "p0153:c00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 1,
+    "query": "PEP 8 spaces indentation",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0171:c00",
+      "page": 171,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0148:c04",
+      "page": 148,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p0150:c01",
+      "page": 150,
+      "score": 0.03058
+     },
+     {
+      "rank": 4,
+      "id": "p0158:c01",
+      "page": 158,
+      "score": 0.02951
+     },
+     {
+      "rank": 5,
+      "id": "p0163:c04",
+      "page": 163,
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p0171:c00",
+     "p0148:c04",
+     "p0150:c01",
+     "p0158:c01",
+     "p0163:c04"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 2,
+    "query": "PEP 8 indentation spaces",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0171:c00",
+      "page": 171,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0148:c04",
+      "page": 148,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p0150:c01",
+      "page": 150,
+      "score": 0.03102
+     },
+     {
+      "rank": 4,
+      "id": "p0158:c01",
+      "page": 158,
+      "score": 0.02828
+     },
+     {
+      "rank": 5,
+      "id": "p0163:c04",
+      "page": 163,
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p0171:c00",
+     "p0148:c04",
+     "p0150:c01",
+     "p0158:c01",
+     "p0163:c04"
+    ]
+   },
+   {
+    "event": "search_limit",
+    "args": {
+     "query": "PEP 8 indentation",
+     "chapter": 4
+    }
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": true,
+    "citations": []
+   }
+  ],
+  "n_searches": 3,
+  "context_ids": [
+   "p0171:c00",
+   "p0148:c04",
+   "p0158:c01",
+   "p0150:c01",
+   "p0153:c00",
+   "p0163:c04"
+  ],
+  "context_chars": 2251,
+  "context": "[p0171:c00] (page 171, ch.6 §6.6 Keyword arguments)\nPEP 8 RECOMMENDATIONS: SPACING\nThe PEP 8 style guide recommends no spaces around = when indicating keyword arguments and default\nparameter values.\nStream donations\nWrite a function, donate(), that lets an online viewer send a donation to a streamer. donate() has three\nparameters:\n\n[p0148:c04] (page 148, ch.6 §6.1 Defining functions)\nprint(\"Area is\", width*height)\na. 3\nb. 5\nc. 6\nDefining a function\nA function is defined using the def keyword. The first line contains def followed by the function name (in\nsnake case), parentheses (with any parameters-discussed later), and a colon. The indented body begins with\na documentation string describing the function's task and contains the function statements. A function must\n\n[p0158:c01] (page 158, ch.6 §6.3 Variable scope)\ntmp -= 1\nis_dst = True\nhour = int(input(\"Enter hour: \"))\nupdate_hour()\nprint(\"New hour:\", hour)\na. New hour: 9\nb. New hour: 10\nc. Error\n8 . What is the output?\ndef update_hour():\nnew_hour = hour\nif is_dst:\n\n[p0150:c01] (page 150, ch.6 §6.1 Defining functions)\n8 . If the points were changed from floats to integers, how many statements would need to be changed in\nthe original and revised programs respectively?\na. 3, 1\nb. 4, 4\nc. 12, 4\n9 . How many times can calc_distance() be called?\n\n[p0153:c00] (page 153, ch.6 §6.2 Control flow)\nb. 8\nc. 12\n4 . What is the output?\ndef park_greet():\n\"\"\"Output greeting.\"\"\"\nprint(\"Welcome to the park\")\nprint(\"Open sunrise to sunset\")\npark_greet()\na. Welcome to the park\nb. Welcome to the park\nOpen sunrise to sunset\nc. Open sunrise to sunset\nWelcome to the park\nFunctions calling functions\nFunctions frequently call other functions to keep the modularity of each function performing one task. Ex: A\nfunction that calculates an order total may call a function that calculates sales tax. When a function called from\nanother function finishes execution, control flow returns to the calling function.\n\n[p0163:c04] (page 163, ch.6 §6.4 Parameters)\na. immutable\nb. mutable\n11 . On line 16, unit ________.\na. refers to an object with the value \"C\"\nb. does not exist\nPrinting right triangle area\nWrite a function, print_area(), that takes in the base and height of a right triangle and prints the",
+  "usage": {
+   "in": 6878,
+   "out": 140,
+   "llm_calls": 5
+  },
+  "cost_usd": 0.001116,
+  "seconds": 10.35,
+  "context_hit": false,
+  "cited_gold": false
+ },
+ {
+  "query_id": "q04",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "When an if-else statement runs, can both the if body and the else body execute?",
+  "filter": null,
+  "status": "answered",
+  "answer": "No, when an if-else statement runs, only one of the branches is executed. Specifically, either the body of the if statement or the body of the else statement is executed, but not both. This means that both the if body and the else body cannot execute simultaneously [p0102:c02].",
+  "citations": [
+   "p0102:c02"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "if-else statement execution",
+    "filter": {
+     "chapter": 4
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0102:c02",
+      "page": 102,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "p0102:c03",
+      "page": 102,
+      "score": 0.03101
+     },
+     {
+      "rank": 3,
+      "id": "p0100:c02",
+      "page": 100,
+      "score": 0.03083
+     },
+     {
+      "rank": 4,
+      "id": "p0102:c01",
+      "page": 102,
+      "score": 0.03062
+     },
+     {
+      "rank": 5,
+      "id": "p0113:c01",
+      "page": 113,
+      "score": 0.03054
+     }
+    ],
+    "returned_ids": [
+     "p0102:c02",
+     "p0102:c03",
+     "p0100:c02",
+     "p0102:c01",
+     "p0113:c01"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "No, when an if-else statement runs, only one of the branches is executed. Specifically, either the body of the if statement or the body of the else statement is executed, but not both. This means that both the if body and the else body cannot execute simultaneously [p0102:c02]. \n\nI will now submit the answer."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p0102:c02"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0102:c02",
+   "p0102:c03",
+   "p0100:c02",
+   "p0102:c01",
+   "p0113:c01"
+  ],
+  "context_chars": 2147,
+  "context": "[p0102:c02] (page 102, ch.4 §4.2 If-else statements)\nAn else statement is used with an if statement and contains a body of statements that is executed when the\nif statement's condition is false. When an if-else statement is executed, one and only one of the branches\nis taken. That is, the body of the if or the body of the else is executed. Note: The else statement is at the\nsame level of indentation as the if statement, and the body is indented.\n\n[p0102:c03] (page 102, ch.4 §4.2 If-else statements)\nif-else statement template:\n1 # Statements before\n2\n3 if condition:\n4 # Body\n5 else:\n6 # Body\n7\n8 # Statements after\nCHECKPOINT\nExample: Trivia question\nExample: Trivia question; ch 4, video 5 (https://www.openstax.org/r/trivia-question)\nCONCEPTS IN PRACTICE\nExploring if-else statements\n6 . Given the following code, the else branch is taken for which range of x?\n\n[p0100:c02] (page 100, ch.4 §4.2 If-else statements)\n4.2 If-else statements\nLearning objectives\nBy the end of this section you should be able to\n• Identify which operations are performed when a program with if and if-else statements is run.\n• Identify the components of an if and if-else statement and the necessary formatting.\n• Create an if-else statement to perform an operation when a condition is true and another operation\notherwise.\n\n[p0102:c01] (page 102, ch.4 §4.2 If-else statements)\npositive_num = 0\na. 10\nb. 0\nc. Error\nif-else statement\nAn if statement defines actions to be performed when a condition is true. What if an action needs to be\nperformed only when the condition is false? Ex: If the restaurant is less than a mile away, we'll walk. Else, we'll\ndrive.\n\n[p0113:c01] (page 113, ch.4 §4.5 Chained decisions)\nrooms += 3\nif attendees <= 200:\nrooms += 7\nelif attendees <= 400:\nrooms += 14\na. 4\nb. 15\nc. 18\nif-elif-else statements\nElifs can be chained with an if-else statement to create a more complex decision statement. Ex: A program\nshows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or\ntwo) places. Else if the piece is a bishop, show diagonal moves. Else if . . . (finish for the rest of the pieces).",
+  "usage": {
+   "in": 2617,
+   "out": 185,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.000504,
+  "seconds": 4.52,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q05",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "Which operator is the main exception to left associativity, and how is 2 ** 3 ** 4 evaluated?",
+  "filter": null,
+  "status": "answered",
+  "answer": "The main exception to left associativity is the exponentiation operator (**), which is right associative. This means that expressions involving this operator are evaluated from right to left. For example, the expression 2 ** 3 ** 4 is evaluated as 2 ** (3 ** 4) [p0109:c00].",
+  "citations": [
+   "p0109:c00"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "operator exception to left associativity",
+    "filter": {
+     "chapter": 4
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0109:c00",
+      "page": 109,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0108:c00",
+      "page": 108,
+      "score": 0.03128
+     },
+     {
+      "rank": 3,
+      "id": "p0108:c02",
+      "page": 108,
+      "score": 0.03105
+     },
+     {
+      "rank": 4,
+      "id": "p0109:c01",
+      "page": 109,
+      "score": 0.0308
+     },
+     {
+      "rank": 5,
+      "id": "p0110:c02",
+      "page": 110,
+      "score": 0.02967
+     }
+    ],
+    "returned_ids": [
+     "p0109:c00",
+     "p0108:c00",
+     "p0108:c02",
+     "p0109:c01",
+     "p0110:c02"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "2 ** 3 ** 4 evaluation",
+    "filter": {
+     "chapter": 4
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0109:c02",
+      "page": 109,
+      "score": 0.03089
+     },
+     {
+      "rank": 2,
+      "id": "p0116:c03",
+      "page": 116,
+      "score": 0.03058
+     },
+     {
+      "rank": 3,
+      "id": "p0118:c00",
+      "page": 118,
+      "score": 0.03031
+     },
+     {
+      "rank": 4,
+      "id": "p0101:c03",
+      "page": 101,
+      "score": 0.03008
+     },
+     {
+      "rank": 5,
+      "id": "p0117:c00",
+      "page": 117,
+      "score": 0.02899
+     }
+    ],
+    "returned_ids": [
+     "p0109:c02",
+     "p0116:c03",
+     "p0118:c00",
+     "p0101:c03",
+     "p0117:c00"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0109:c00"
+    ]
+   }
+  ],
+  "n_searches": 2,
+  "context_ids": [
+   "p0109:c00",
+   "p0108:c00",
+   "p0108:c02",
+   "p0109:c01",
+   "p0110:c02",
+   "p0109:c02",
+   "p0116:c03",
+   "p0118:c00",
+   "p0101:c03",
+   "p0117:c00"
+  ],
+  "context_chars": 3571,
+  "context": "[p0109:c00] (page 109, ch.4 §4.4 Operator precedence)\n1 . x ** 2 + 6 / 3\na. 6 / 3\nb. x ** 2\nc. 2 + 6\n2 . not 3 * 5 > 10\na. 3 * 5\nb. not 3\nc. 5 > 10\n3 . z == 5 and x / 8 < 100\na. 5 and x\nb. x / 8\nc. 8 < 100\nAssociativity\nWhat if operators beside each other have the same level of precedence? Associativity determines the order of\noperations when precedence is the same. Ex: 8 / 4 * 3 is evaluated as (8/4) * 3 rather than 8 / (4*3)\nbecause multiplication and division are left associative. Most operators are left associative and are evaluated\nfrom left to right. Exponentiation is the main exception (noted above) and is right associative: that is, evaluated\nfrom right to left. Ex: 2 ** 3 ** 4 is evaluated as 2 ** (3**4).\n\n[p0108:c00] (page 108, ch.4 §4.4 Operator precedence)\n4.4 Operator precedence\nLearning objectives\nBy the end of this section you should be able to\n• Describe how precedence impacts order of operations.\n• Describe how associativity impacts order of operations.\n• Explain the purpose of using parentheses in expressions with multiple operators.\n\n[p0108:c02] (page 108, ch.4 §4.4 Operator precedence)\nOperator Meaning\n() Parentheses\n** Exponentiation (right associative)\n*, /, //, % Multiplication, division, floor division, modulo\n+, - Addition, subtraction\n<, <=, >, >=, ==, != Comparison operators\nnot Logical not operator\nand Logical and operator\nor Logical or operator\nTable 4.4 Operator precedence from highest to lowest.\n\n[p0109:c01] (page 109, ch.4 §4.4 Operator precedence)\nWhen comparison operators are chained, the expression is converted into the equivalent combination of\ncomparisons and evaluated from left to right. Ex. 10 < x <= 20 is evaluated as 10 < x and x <= 20.\n\n[p0110:c02] (page 110, ch.4 §4.4 Operator precedence)\na. Equality has precedence over and.\nb. All operators are evaluated right to left.\nc. Order is random when parentheses aren't used.\n8 . Given x = 8 and y = 9, what is the result of the following?\nx + 3 * y - 5\na. 30\nb. 44\nc. 94\n9 . Given x = 8 and y = 9, what is the result of the following?\n\n[p0109:c02] (page 109, ch.4 §4.4 Operator precedence)\nCHECKPOINT\nOperation precedence\nOperation precedence; ch 4, video 10 (https://www.openstax.org/r/operation-precedence)\nCONCEPTS IN PRACTICE\nAssociativity\nHow is each expression evaluated?\n4 . 10 + 3 * 2 / 4\na. 10 + (3 * (2 / 4))\nb. 10 + ((3 * 2) / 4)\nc. (10 + 3) * (2 / 4)\n5 . 2 * 2 ** 2 ** 3\na. 2 * ((2 ** 2) ** 3)\nb. 2 * (2 ** (2 ** 3))\nc. ((2*2) ** 2) ** 3\n6 . 100 < x > 150\na. 100 < x and x < 150\n\n[p0116:c03] (page 116, ch.4 §4.6 Nested decisions)\nif game == 1 and players < 2:\nprint(\"Not enough players\")\nif game == 1 and players > 4:\nprint(\"Too many players\")\nif game == 1 and (2 <= players <= 4):\nprint(\"Ready to start\")\nif game == 2 and players < 3:\n\n[p0118:c00] (page 118, ch.4 §4.6 Nested decisions)\n# Body 1\nelif x < y:\n# Body 2\nif y >= max:\n# Body 3\nelse:\n# Body 4\nelse:\n# Body 5\na. Body 2\nb. Body 2, Body 3\nc. Body 2, Body 5\n4 . Given x =118, y = 300, and max = 512, which of the following will execute?\n\n[p0101:c03] (page 101, ch.4 §4.2 If-else statements)\n1 print(\"Have a great day.\")\n2 if is_raining:\n3 print(\"Don't forget an umbrella!\")\n4 print(\"See you soon.\")\na. 1, 2, 3\nb. 1, 2, 4\nc. 1, 2, 3, 4\n4 . Given num = -10, what is the final value of num?\nif num < 0:\nnum = 25\nif num < 100:\n\n[p0117:c00] (page 117, ch.4 §4.6 Nested decisions)\nif game == 1:\nif players < 2:\nprint(\"Not enough players\")\nelif players > 4:\nprint(\"Too many players\")\nelse:\nprint(\"Ready to start\")\nif game == 2:\nif players < 3:\nprint(\"Not enough players\")\nelif players > 6:",
+  "usage": {
+   "in": 2244,
+   "out": 160,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000433,
+  "seconds": 3.39,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q06",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "How does Python evaluate a chained comparison such as 10 < x <= 20?",
+  "filter": null,
+  "status": "answered",
+  "answer": "Python evaluates a chained comparison such as 10 < x <= 20 by converting it into two separate comparisons: 10 < x and x <= 20. This evaluation is done from left to right, meaning both conditions must be true for the entire expression to be true [p0109:c01].",
+  "citations": [
+   "p0109:c01"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "chained comparison",
+    "filter": {
+     "chapter": 4
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0109:c01",
+      "page": 109,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0111:c01",
+      "page": 111,
+      "score": 0.03151
+     },
+     {
+      "rank": 3,
+      "id": "p0112:c02",
+      "page": 112,
+      "score": 0.0308
+     },
+     {
+      "rank": 4,
+      "id": "p0099:c01",
+      "page": 99,
+      "score": 0.03078
+     },
+     {
+      "rank": 5,
+      "id": "p0111:c03",
+      "page": 111,
+      "score": 0.03055
+     }
+    ],
+    "returned_ids": [
+     "p0109:c01",
+     "p0111:c01",
+     "p0112:c02",
+     "p0099:c01",
+     "p0111:c03"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0109:c01"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0109:c01",
+   "p0111:c01",
+   "p0112:c02",
+   "p0099:c01",
+   "p0111:c03"
+  ],
+  "context_chars": 1927,
+  "context": "[p0109:c01] (page 109, ch.4 §4.4 Operator precedence)\nWhen comparison operators are chained, the expression is converted into the equivalent combination of\ncomparisons and evaluated from left to right. Ex. 10 < x <= 20 is evaluated as 10 < x and x <= 20.\n\n[p0111:c01] (page 111, ch.4 §4.5 Chained decisions)\n4.5 Chained decisions\nLearning objectives\nBy the end of this section you should be able to\n• Identify the branches taken in an if-elif and if-elif-else statement.\n• Create a chained decision statement to evaluate multiple conditions.\n\n[p0112:c02] (page 112, ch.4 §4.5 Chained decisions)\nif _________:\n# Body 1\nelif _________:\n# Body 2\na. x < 0\nx == 0\nb. x == 0\nx < 0\nc. x <= 0\n[no condition]\n4 . Which of the following is a valid chained decision statement?\na. if condition_1:\n# Body 1\nelif condition_2:\n\n[p0099:c01] (page 99, ch.4 §4.1 Boolean values)\ncompare_result = (z == \"coriander\")\na. True\nb. False\n20 . a = \"dog\"\ncompare_result = (a < \"cat\")\na. True\nb. False\n= VS ==\nA common mistake is using = for comparison instead of ==. Ex: is_zero = num=0 will always assign\nis_zero and num with 0, regardless of num's original value. The = operator performs assignment and will\nmodify the variable. The == operator performs comparison, does not modify the variable, and produces\nTrue or False.\nEXPLORING FURTHER\n• Unicode Basic Latin Chart (https://openstax.org/r/100unicodelatin)\n\n[p0111:c03] (page 111, ch.4 §4.5 Chained decisions)\nscore = int(input())\nif score < 70:\nscore += 10\n# Wrong:\nif 70 <= score < 85:\nscore += 5\nChaining decision statements with elif allows the programmer to check for multiple conditions. An elif (short\nfor else if) statement checks a condition when the prior decision statement's condition is false. An elif\nstatement is part of a chain and must follow an if (or elif) statement.\nif-elif statement template:\n# Statements before\nif condition:\n# Body\nelif condition:\n# Body\n# Statements after",
+  "usage": {
+   "in": 1432,
+   "out": 111,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000281,
+  "seconds": 6.82,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q07",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "Why can two separate if statements give a student a double grade curve, and what fixes it?",
+  "filter": null,
+  "status": "answered",
+  "answer": "Two separate if statements can give a student a double grade curve because both conditions can be true independently, leading to both branches being executed. For example, if a student's score is 60, the first if statement might add 10 points, and then the second if statement could add another 5 points, resulting in an incorrect total score of 75. To fix this issue, chaining decision statements with an elif allows the programmer to ensure that only one branch is taken based on the conditions. This way, if the first condition is met, the second condition will not be evaluated, preventing the double grading effect [p0111:c02][p0111:c03].",
+  "citations": [
+   "p0111:c02",
+   "p0111:c03"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "two separate if statements double grade curve",
+    "filter": {
+     "chapter": 4
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0111:c02",
+      "page": 111,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0111:c03",
+      "page": 111,
+      "score": 0.0308
+     },
+     {
+      "rank": 3,
+      "id": "p0113:c01",
+      "page": 113,
+      "score": 0.0308
+     },
+     {
+      "rank": 4,
+      "id": "p0100:c03",
+      "page": 100,
+      "score": 0.02895
+     },
+     {
+      "rank": 5,
+      "id": "p0100:c05",
+      "page": 100,
+      "score": 0.02813
+     }
+    ],
+    "returned_ids": [
+     "p0111:c02",
+     "p0111:c03",
+     "p0113:c01",
+     "p0100:c03",
+     "p0100:c05"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0111:c02",
+     "p0111:c03"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0111:c02",
+   "p0111:c03",
+   "p0113:c01",
+   "p0100:c03",
+   "p0100:c05"
+  ],
+  "context_chars": 2332,
+  "context": "[p0111:c02] (page 111, ch.4 §4.5 Chained decisions)\nelif\nSometimes, a complicated decision is based on more than a single condition. Ex: A travel planning site reviews\nthe layovers on an itinerary. If a layover is greater than 24 hours, the site should suggest accommodations.\nElse if the layover is less than one hour, the site should alert for a possible missed connection.\nTwo separate if statements do not guarantee that only one branch is taken and might result in both branches\nbeing taken. Ex: The program below attempts to add a curve based on the input test score. If the input is 60,\nboth if statements are incorrectly executed, and the resulting score is 75.\n\n[p0111:c03] (page 111, ch.4 §4.5 Chained decisions)\nscore = int(input())\nif score < 70:\nscore += 10\n# Wrong:\nif 70 <= score < 85:\nscore += 5\nChaining decision statements with elif allows the programmer to check for multiple conditions. An elif (short\nfor else if) statement checks a condition when the prior decision statement's condition is false. An elif\nstatement is part of a chain and must follow an if (or elif) statement.\nif-elif statement template:\n# Statements before\nif condition:\n# Body\nelif condition:\n# Body\n# Statements after\n\n[p0113:c01] (page 113, ch.4 §4.5 Chained decisions)\nrooms += 3\nif attendees <= 200:\nrooms += 7\nelif attendees <= 400:\nrooms += 14\na. 4\nb. 15\nc. 18\nif-elif-else statements\nElifs can be chained with an if-else statement to create a more complex decision statement. Ex: A program\nshows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or\ntwo) places. Else if the piece is a bishop, show diagonal moves. Else if . . . (finish for the rest of the pieces).\n\n[p0100:c03] (page 100, ch.4 §4.2 If-else statements)\nif statement\nIf the weather is rainy, grab an umbrella! People make decisions based on conditions like if the weather is\nrainy, and programs perform operations based on conditions like a variable's value. Ex: A program adds two\nnumbers. If the result is negative, the program prints an error.\n\n[p0100:c05] (page 100, ch.4 §4.2 If-else statements)\nThe if statement's body must be grouped together and have one level of indentation. The PEP 8 style guide\nrecommends four spaces per indentation level. The Python interpreter will produce an error if the body is\nempty.",
+  "usage": {
+   "in": 1488,
+   "out": 194,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.00034,
+  "seconds": 3.44,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q08",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "What precedence do conditional expressions have compared with other Python operations?",
+  "filter": null,
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng trong tài liệu để trả lời câu hỏi này.",
+  "citations": [],
+  "reason": "invalid_citations",
+  "rejected_answer": "Conditional expressions have the lowest precedence of all Python operations. This means that when an expression contains multiple operators, the conditional expression will be evaluated last, after all other operators have been processed [p0119:c00].",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "conditional expressions precedence",
+    "filter": {
+     "chapter": 4
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0119:c02",
+      "page": 119,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0119:c01",
+      "page": 119,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p0108:c01",
+      "page": 108,
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p0121:c00",
+      "page": 121,
+      "score": 0.03101
+     },
+     {
+      "rank": 5,
+      "id": "p0095:c01",
+      "page": 95,
+      "score": 0.03009
+     }
+    ],
+    "returned_ids": [
+     "p0119:c02",
+     "p0119:c01",
+     "p0108:c01",
+     "p0121:c00"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0119:c00"
+    ]
+   },
+   {
+    "event": "invalid_or_missing_citations",
+    "bad": [
+     "p0119:c00"
+    ],
+    "missing_inline": [],
+    "retry": true
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p0119:c00"
+    ]
+   },
+   {
+    "event": "invalid_or_missing_citations",
+    "bad": [
+     "p0119:c00"
+    ],
+    "missing_inline": [],
+    "retry": false
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0119:c02",
+   "p0119:c01",
+   "p0108:c01",
+   "p0121:c00"
+  ],
+  "context_chars": 2163,
+  "context": "[p0119:c02] (page 119, ch.4 §4.7 Conditional expressions)\nConditional expression template:\nexpression_if_true if condition else expression_if_false\nA conditional expression is evaluated by first checking the condition. If condition is true,\nexpression_if_true is evaluated, and the result is the resulting value of the conditional expression. Else,\nexpression_if_false is evaluated, and the result is the resulting value of the conditional expression.\nA variable can be assigned with a conditional expression. Ex: Finding the max of two numbers can be\ncalculated with max_num = y if x < y else x\nNote: Conditional expressions have the lowest precedence of all Python operations.\n\n[p0119:c01] (page 119, ch.4 §4.7 Conditional expressions)\n4.7 Conditional expressions\nLearning objectives\nBy the end of this section you should be able to\n• Identify the components of a conditional expression.\n• Create a conditional expression.\nConditional expressions\nA conditional expression (also known as a \"ternary operator\") is a simplified, single-line version of an\nif-else statement.\n\n[p0108:c01] (page 108, ch.4 §4.4 Operator precedence)\nPrecedence\nWhen an expression has multiple operators, which operator is evaluated first? Precedence rules provide the\npriority level of operators. Operators with the highest precedence execute first. Ex: 1 + 2 * 3 is 7 because\nmultiplication takes precedence over addition. However, (1 + 2) * 3 is 9 because parentheses take\nprecedence over multiplication.\n\n[p0121:c00] (page 121, ch.4 §4.8 Chapter summary)\n4.8 Chapter summary\nHighlights from this chapter include:\n• Booleans represent a value of True or False.\n• Comparison operators compare values and produce True or False.\n• Logical operators take condition operand(s) and produce True or False.\n• Operators are evaluated in order according to precedence and associativity.\n• Conditions are expressions that evaluate to True or False.\n• Decision statements allow different paths of execution (branches) through code based on conditions.\n• Decision statements can be nested inside other decision statements.\n• Conditional expressions are single-line versions of if-else statements.",
+  "usage": {
+   "in": 2388,
+   "out": 165,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.000457,
+  "seconds": 4.07,
+  "context_hit": true,
+  "cited_gold": false
+ },
+ {
+  "query_id": "q09",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "In a counting while loop, what happens when the step size is negative?",
+  "filter": null,
+  "status": "answered",
+  "answer": "In a counting while loop, if the step size is negative, the counter will count in descending order. This means that the loop will decrease the counter's value with each iteration until the loop condition is no longer satisfied. Conversely, if the step size is positive, the counter counts in ascending order [p0127:c00]. Thus, a negative step size allows the loop to iterate downwards, which can be useful for counting down to a specific value.",
+  "citations": [
+   "p0127:c00"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "counting while loop negative step size",
+    "filter": {
+     "chapter": 5
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0127:c00",
+      "page": 127,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0127:c02",
+      "page": 127,
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "p0130:c01",
+      "page": 130,
+      "score": 0.03105
+     },
+     {
+      "rank": 4,
+      "id": "p0143:c01",
+      "page": 143,
+      "score": 0.03021
+     },
+     {
+      "rank": 5,
+      "id": "p0130:c02",
+      "page": 130,
+      "score": 0.03016
+     }
+    ],
+    "returned_ids": [
+     "p0127:c00",
+     "p0127:c02",
+     "p0130:c01",
+     "p0143:c01",
+     "p0130:c02"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "In a counting while loop, if the step size is negative, the counter will count in descending order. This means that the loop will decrease the counter's value with each iteration until the loop condition is no longer satisfied. Conversely, if the step size is positive, the counter counts in ascending order [p0127:c00]. \n\nThus, a negative step size allows the loop to iterate downwards, which can be useful for counting down to a specific value."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p0127:c00"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0127:c00",
+   "p0127:c02",
+   "p0130:c01",
+   "p0143:c01",
+   "p0130:c02"
+  ],
+  "context_chars": 2310,
+  "context": "[p0127:c00] (page 127, ch.5 §5.1 While loop)\ndetermine the number of iterations executed. Ex: A programmer may want to print all even numbers between\n1 and 20. The task can be done by using a counter initialized with 1. In each iteration, the counter's value is\nincreased by one, and a condition can check whether the counter's value is an even number or not. The\nchange in the counter's value in each iteration is called the step size. The step size can be any positive or\nnegative value. If the step size is a positive number, the counter counts in ascending order, and if the step size\nis a negative number, the counter counts in descending order.\n\n[p0127:c02] (page 127, ch.5 §5.1 While loop)\nCHECKPOINT\nCounting with while loop\nCounting with while loop; ch 5, video 2 (https://www.openstax.org/r/counting-with-while-loop)\nCONCEPTS IN PRACTICE\nwhile loop counting examples\nGiven the code, answer the following questions.\nn = 4\nwhile n > 0:\nprint(n)\nn = n - 1\nprint(\"value of n after the loop is\", n)\n4 . How many times does the loop execute?\na. 3\nb. 4\nc. 5\n5 . Which line is printed as the last line of output?\n\n[p0130:c01] (page 130, ch.5 §5.2 For loop)\n• Generates a sequence beginning at 0\nuntil end.\n• Step size: 1\nrange(4) 0, 1, 2, 3\nrange(start, end)\n• Generates a sequence beginning at\nstart until end.\n• Step size: 1\nrange(0, 3) 0, 1, 2\nrange(2, 6) 2, 3, 4, 5\nrange(-13,\n-9)\n\n[p0143:c01] (page 143, ch.5 §5.6 Chapter summary)\n5.6 Chapter summary\nHighlights from this chapter include:\n• A while loop runs a set of statements, known as the loop body, while a given condition, known as the\nloop expression, is true.\n• A for loop can be used to iterate over elements of a container object.\n• A range() function generates a sequence of integers between the two numbers given a step size.\n• A nested loop has one or more loops within the body of another loop.\n• A break statement is used within a for or a while loop to allow the program execution to exit the loop\nonce a given condition is triggered.\n\n[p0130:c02] (page 130, ch.5 §5.2 For loop)\n-13, -12,\n-11, -10\nrange(start, end,\nstep)\n• Generates a sequence beginning at\nstart until end.\n• Step size: step\nrange(0, 4,\n1) 0, 1, 2, 3\nrange(1, 7,\n2) 1, 3, 5\nrange(3,\n-2, -1)\n3, 2, 1, 0,\n-1\nrange(10,\n0, -4) 10, 6, 2\nTable 5.1 Using the range() function.",
+  "usage": {
+   "in": 2896,
+   "out": 239,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.000578,
+  "seconds": 5.15,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q10",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "Is the end value included in the sequence produced by range()?",
+  "filter": null,
+  "status": "answered",
+  "answer": "The end value in the sequence produced by the range() function is exclusive. This means that the sequence includes the start value but does not include the end value. For example, range(0, 3) produces the sequence 0, 1, 2, but not 3 [p0130:c00].",
+  "citations": [
+   "p0130:c00"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "range() end value",
+    "filter": {
+     "chapter": 5
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0130:c01",
+      "page": 130,
+      "score": 0.03202
+     },
+     {
+      "rank": 2,
+      "id": "p0143:c04",
+      "page": 143,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p0130:c00",
+      "page": 130,
+      "score": 0.03178
+     },
+     {
+      "rank": 4,
+      "id": "p0130:c02",
+      "page": 130,
+      "score": 0.03175
+     },
+     {
+      "rank": 5,
+      "id": "p0131:c02",
+      "page": 131,
+      "score": 0.03126
+     }
+    ],
+    "returned_ids": [
+     "p0130:c01",
+     "p0143:c04",
+     "p0130:c00",
+     "p0130:c02",
+     "p0131:c02"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0130:c00"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0130:c01",
+   "p0143:c04",
+   "p0130:c00",
+   "p0130:c02",
+   "p0131:c02"
+  ],
+  "context_chars": 1691,
+  "context": "[p0130:c01] (page 130, ch.5 §5.2 For loop)\n• Generates a sequence beginning at 0\nuntil end.\n• Step size: 1\nrange(4) 0, 1, 2, 3\nrange(start, end)\n• Generates a sequence beginning at\nstart until end.\n• Step size: 1\nrange(0, 3) 0, 1, 2\nrange(2, 6) 2, 3, 4, 5\nrange(-13,\n-9)\n\n[p0143:c04] (page 143, ch.5 §5.6 Chapter summary)\nrange(start, end) Generates a sequence beginning at start until end with step size of 1.\nrange(start, end, s) Generates a sequence beginning at start until end with the step size of s.\nTable 5.4 Chapter 5 reference.\n\n[p0130:c00] (page 130, ch.5 §5.2 For loop)\na. A string*\nb. A*s*t*r*i*n*g*\nc. A* *s*t*r*i*n*g*\nRange() function in for loop\nA for loop can be used for iteration and counting. The range() function is a common approach for\nimplementing counting in a for loop. A range() function generates a sequence of integers between the two\nnumbers given a step size. This integer sequence is inclusive of the start and exclusive of the end of the\nsequence. The range() function can take up to three input values. Examples are provided in the table below.\nRange function Description Example Output\nrange(end)\n\n[p0130:c02] (page 130, ch.5 §5.2 For loop)\n-13, -12,\n-11, -10\nrange(start, end,\nstep)\n• Generates a sequence beginning at\nstart until end.\n• Step size: step\nrange(0, 4,\n1) 0, 1, 2, 3\nrange(1, 7,\n2) 1, 3, 5\nrange(3,\n-2, -1)\n3, 2, 1, 0,\n-1\nrange(10,\n0, -4) 10, 6, 2\nTable 5.1 Using the range() function.\n\n[p0131:c02] (page 131, ch.5 §5.2 For loop)\na. range(10, 23, 3)\nb. range(10, 22, 3)\nc. range(22, 10, -3)\n5 . What are the arguments to the range() function for the decreasing sequence of every integer from 5\nto 1 (inclusive of both ends)?\na. range(5, 1, 1)",
+  "usage": {
+   "in": 1468,
+   "out": 116,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.00029,
+  "seconds": 2.58,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q11",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "When should I prefer a for loop over a while loop, including in nested loops?",
+  "filter": null,
+  "status": "answered",
+  "answer": "You should prefer a **for loop** over a **while loop** when you need to iterate over elements of a container object or when counting using a range of numbers. For example, a for loop is particularly useful in nested situations, such as iterating over multiple course rosters, where the outer loop iterates over different courses and the inner loop iterates over the names in each course roster [p0135:c00]. \n\nIn contrast, a **while loop** is more suitable when the number of iterations is not known beforehand and depends on a condition that needs to be checked at each iteration [p0125:c03]. \n\nThus, for counting or iterating over known collections, use a for loop; for conditions that determine the loop's continuation, use a while loop.",
+  "citations": [
+   "p0135:c00",
+   "p0125:c03"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "for loop vs while loop",
+    "filter": {
+     "chapter": 5
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0125:c03",
+      "page": 125,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p0144:c00",
+      "page": 144,
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p0143:c01",
+      "page": 143,
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p0125:c02",
+      "page": 125,
+      "score": 0.03101
+     },
+     {
+      "rank": 5,
+      "id": "p0144:c01",
+      "page": 144,
+      "score": 0.02939
+     }
+    ],
+    "returned_ids": [
+     "p0125:c03",
+     "p0144:c00",
+     "p0143:c01",
+     "p0125:c02",
+     "p0144:c01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 1,
+    "query": "when to use for loop",
+    "filter": {
+     "chapter": 5
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0128:c03",
+      "page": 128,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p0140:c02",
+      "page": 140,
+      "score": 0.03151
+     },
+     {
+      "rank": 3,
+      "id": "p0125:c03",
+      "page": 125,
+      "score": 0.03016
+     },
+     {
+      "rank": 4,
+      "id": "p0135:c00",
+      "page": 135,
+      "score": 0.02973
+     },
+     {
+      "rank": 5,
+      "id": "p0143:c01",
+      "page": 143,
+      "score": 0.02951
+     }
+    ],
+    "returned_ids": [
+     "p0128:c03",
+     "p0140:c02",
+     "p0125:c03",
+     "p0135:c00",
+     "p0143:c01"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "You should prefer a **for loop** over a **while loop** when you need to iterate over elements of a container object or when counting using a range of numbers. For example, a for loop is particularly useful in nested situations, such as iterating over multiple course rosters, where the outer loop iterates over different courses and the inner loop iterates over the names in each course roster [p0135:c00]. \n\nIn contrast, a **while loop** is more suitable when the number of iterations is not known b"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p0135:c00",
+     "p0125:c03"
+    ]
+   }
+  ],
+  "n_searches": 2,
+  "context_ids": [
+   "p0125:c03",
+   "p0144:c00",
+   "p0143:c01",
+   "p0125:c02",
+   "p0144:c01",
+   "p0128:c03",
+   "p0140:c02",
+   "p0135:c00"
+  ],
+  "context_chars": 3089,
+  "context": "[p0125:c03] (page 125, ch.5 §5.1 While loop)\n5.1 While loop\nLearning objectives\nBy the end of this section you should be able to\n• Explain the loop construct in Python.\n• Use a while loop to implement repeating tasks.\nWhile loop\nA while loop is a code construct that runs a set of statements, known as the loop body, while a given\ncondition, known as the loop expression, is true. At each iteration, once the loop statement is executed, the\n\n[p0144:c00] (page 144, ch.5 §5.6 Chapter summary)\nFunction Description\nLoop constructs Description\nwhile loop\n# initialization\nwhile expression:\n# loop body\n# statements after the loop\nfor loop\n# initialization\nfor loop_variable in container:\n# loop body\n# statements after the loop\nNested while loop\nwhile outer_loop_expression:\n\n[p0143:c01] (page 143, ch.5 §5.6 Chapter summary)\n5.6 Chapter summary\nHighlights from this chapter include:\n• A while loop runs a set of statements, known as the loop body, while a given condition, known as the\nloop expression, is true.\n• A for loop can be used to iterate over elements of a container object.\n• A range() function generates a sequence of integers between the two numbers given a step size.\n• A nested loop has one or more loops within the body of another loop.\n• A break statement is used within a for or a while loop to allow the program execution to exit the loop\nonce a given condition is triggered.\n\n[p0125:c02] (page 125, ch.5 §5.0 Chapter introduction)\nIn this chapter, two types of loops, for loop and while loop, are introduced. This chapter also introduces\nbreak and continue statements for controlling a loop's execution.\n\n[p0144:c01] (page 144, ch.5 §5.6 Chapter summary)\n# outer loop body (1)\nwhile inner_loop_expression:\n# inner loop body\n# outer loop body (2)\n# statements after the loop\nbreak statement\n# initialization\nwhile loop_expression:\n# loop body\nif break_condition:\nbreak\n# remaining body of loop\n# statements after the loop\nTable 5.4 Chapter 5 reference.\n\n[p0128:c03] (page 128, ch.5 §5.2 For loop)\n5.2 For loop\nLearning objectives\nBy the end of this section you should be able to\n• Explain the for loop construct.\n• Use a for loop to implement repeating tasks.\n\n[p0140:c02] (page 140, ch.5 §5.5 Loop else)\n5.5 Loop else\nLearning objectives\nBy the end of this section you should be able to\n• Use loop else statement to identify when the loop execution is interrupted using a break statement.\n• Implement a loop else statement with a for or a while loop.\nLoop else\nA loop else statement runs after the loop's execution is completed without being interrupted by a break\n\n[p0135:c00] (page 135, ch.5 §5.3 Nested loops)\nj += 1\ni += 1\nNested for loops\nA nested for loop can be implemented and used in the same way as a nested while loop. A for loop is a\npreferable option in cases where a loop is used for counting purposes using a range() function, or when\niterating over a container object, including nested situations. Ex: Iterating over multiple course rosters. The\nouter loop iterates over different courses, and the inner loop iterates over the names in each course roster.",
+  "usage": {
+   "in": 4574,
+   "out": 409,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.000932,
+  "seconds": 7.27,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q12",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "What is a loop without a termination condition called, and what statement is essential to leave it?",
+  "filter": {
+   "chapter": 5
+  },
+  "status": "answered",
+  "answer": "A loop without a termination condition is called an infinite loop. A break statement is essential to leave it [p0138:c00].",
+  "citations": [
+   "p0138:c00"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "loop without a termination condition",
+    "filter": {
+     "chapter": 5
+    },
+    "filter_source": "user",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0138:c00",
+      "page": 138,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0143:c02",
+      "page": 143,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p0140:c02",
+      "page": 140,
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p0139:c00",
+      "page": 139,
+      "score": 0.03055
+     },
+     {
+      "rank": 5,
+      "id": "p0128:c01",
+      "page": 128,
+      "score": 0.03033
+     }
+    ],
+    "returned_ids": [
+     "p0138:c00",
+     "p0143:c02",
+     "p0140:c02",
+     "p0139:c00",
+     "p0128:c01"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0138:c00"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0138:c00",
+   "p0143:c02",
+   "p0140:c02",
+   "p0139:c00",
+   "p0128:c01"
+  ],
+  "context_chars": 2198,
+  "context": "[p0138:c00] (page 138, ch.5 §5.4 Break and continue)\nINFINITE LOOP\nA break statement is an essential part of a loop that does not have a termination condition. A loop without\na termination condition is known as an infinite loop. Ex: An infinite loop that counts up starting from 1 and\nprints the counter's value while the counter's value is less than 10. A break condition is triggered when the\ncounter's value is equal to 10, and hence the program execution exits.\n\n[p0143:c02] (page 143, ch.5 §5.6 Chapter summary)\n• A continue statement allows for skipping the execution of the remainder of the loop without exiting the\nloop entirely.\n• A loop else statement runs after the loop's execution is completed without being interrupted by a break\nstatement.\n\n[p0140:c02] (page 140, ch.5 §5.5 Loop else)\n5.5 Loop else\nLearning objectives\nBy the end of this section you should be able to\n• Use loop else statement to identify when the loop execution is interrupted using a break statement.\n• Implement a loop else statement with a for or a while loop.\nLoop else\nA loop else statement runs after the loop's execution is completed without being interrupted by a break\n\n[p0139:c00] (page 139, ch.5 §5.4 Break and continue)\ni = 1\ncount = 0\nwhile True:\nif i%2 == 0 or i%3 == 0:\ncount += 1\nif count >= 5:\nprint(i)\nbreak\ni += 1\na. 5\nb. 8\nc. 30\nContinue\nA continue statement allows for skipping the execution of the remainder of the loop without exiting the loop\nentirely. A continue statement can be used in a for or a while loop. After the continue statement's\nexecution, the loop expression will be evaluated again and the loop will continue from the loop's expression. A\ncontinue statement facilitates the loop's control and readability.\n\n[p0128:c01] (page 128, ch.5 §5.1 While loop)\na. The code will not run.\nb. The code will run for one additional iteration.\nc. The code will never terminate.\nReading inputs in a while loop\nWrite a program that takes user inputs in a while loop until the user enters \"begin\". Test the code with\nthe given input values to check that the loop does not terminate until the input is \"begin\". Once the input\n\"begin\" is received, print \"The while loop condition has been met.\".",
+  "usage": {
+   "in": 1467,
+   "out": 79,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000267,
+  "seconds": 2.3,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q13",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "What does a continue statement do inside a loop?",
+  "filter": null,
+  "status": "answered",
+  "answer": "A continue statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely. After the continue statement's execution, the loop expression will be evaluated again, and the loop will continue from the loop's expression. This facilitates the loop's control and readability [p0139:c00][p0143:c02].",
+  "citations": [
+   "p0139:c00",
+   "p0143:c02"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "continue statement loop",
+    "filter": {
+     "chapter": 5
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0139:c00",
+      "page": 139,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "p0145:c00",
+      "page": 145,
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p0143:c02",
+      "page": 143,
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p0137:c01",
+      "page": 137,
+      "score": 0.03105
+     },
+     {
+      "rank": 5,
+      "id": "p0139:c01",
+      "page": 139,
+      "score": 0.03078
+     }
+    ],
+    "returned_ids": [
+     "p0139:c00",
+     "p0145:c00",
+     "p0143:c02",
+     "p0137:c01",
+     "p0139:c01"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0139:c00",
+     "p0143:c02"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0139:c00",
+   "p0145:c00",
+   "p0143:c02",
+   "p0137:c01",
+   "p0139:c01"
+  ],
+  "context_chars": 1892,
+  "context": "[p0139:c00] (page 139, ch.5 §5.4 Break and continue)\ni = 1\ncount = 0\nwhile True:\nif i%2 == 0 or i%3 == 0:\ncount += 1\nif count >= 5:\nprint(i)\nbreak\ni += 1\na. 5\nb. 8\nc. 30\nContinue\nA continue statement allows for skipping the execution of the remainder of the loop without exiting the loop\nentirely. A continue statement can be used in a for or a while loop. After the continue statement's\nexecution, the loop expression will be evaluated again and the loop will continue from the loop's expression. A\ncontinue statement facilitates the loop's control and readability.\n\n[p0145:c00] (page 145, ch.5 §5.6 Chapter summary)\nFunction Description\ncontinue statement\n# initialization\nwhile loop_expression:\n# loop body\nif continue_condition:\ncontinue\n# remaining body of loop\n# statements after the loop\nLoop else statement\n# initialization\nfor loop_expression:\n\n[p0143:c02] (page 143, ch.5 §5.6 Chapter summary)\n• A continue statement allows for skipping the execution of the remainder of the loop without exiting the\nloop entirely.\n• A loop else statement runs after the loop's execution is completed without being interrupted by a break\nstatement.\n\n[p0137:c01] (page 137, ch.5 §5.4 Break and continue)\n5.4 Break and continue\nLearning objectives\nBy the end of this section you should be able to\n• Analyze a loop's execution with break and continue statements.\n• Use break and continue control statements in while and for loops.\n\n[p0139:c01] (page 139, ch.5 §5.4 Break and continue)\nCHECKPOINT\nContinue statement in a while loop\nControl statement in a while loop; ch 5, video 7 (https://www.openstax.org/r/while-control)\nCONCEPTS IN PRACTICE\nUsing a continue statement\n4 . Given the following code, how many times does the print statement get executed?\ni = 10\nwhile i >= 0:\ni -= 1\nif i%3 != 0:\ncontinue\nprint(i)\na. 3\nb. 4\nc. 11\n5 . What is the following code's output?\nfor c in \"hi Ali\":\nif c == \" \":",
+  "usage": {
+   "in": 1389,
+   "out": 123,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000282,
+  "seconds": 3.16,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q14",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "Why do functions make code reusable?",
+  "filter": null,
+  "status": "answered",
+  "answer": "Functions make code reusable because they are named, reusable blocks of code that perform specific tasks when called. This allows programmers to write a block of code once and use it multiple times throughout a program by calling it by name. Additionally, functions promote modularity by grouping related code statements together, making it easier to modify and share among programmers, thus avoiding the need to reinvent the wheel [p0148:c00][p0149:c03][p0147:c01].",
+  "citations": [
+   "p0148:c00",
+   "p0149:c03",
+   "p0147:c01"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "functions reusable code",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0148:c00",
+      "page": 148,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "p0149:c03",
+      "page": 149,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p0147:c01",
+      "page": 147,
+      "score": 0.03202
+     },
+     {
+      "rank": 4,
+      "id": "p0171:c02",
+      "page": 171,
+      "score": 0.02939
+     },
+     {
+      "rank": 5,
+      "id": "p0171:c04",
+      "page": 171,
+      "score": 0.0292
+     }
+    ],
+    "returned_ids": [
+     "p0148:c00",
+     "p0149:c03",
+     "p0147:c01",
+     "p0171:c02",
+     "p0171:c04"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0148:c00",
+     "p0149:c03",
+     "p0147:c01"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0148:c00",
+   "p0149:c03",
+   "p0147:c01",
+   "p0171:c02",
+   "p0171:c04"
+  ],
+  "context_chars": 2340,
+  "context": "[p0148:c00] (page 148, ch.6 §6.1 Defining functions)\nCalling a function\nThroughout the book, functions have been called to perform tasks. Ex: print() prints values, and sqrt()\ncalculates the square root. A function is a named, reusable block of code that performs a task when called.\n\n[p0149:c03] (page 149, ch.6 §6.1 Defining functions)\na. print_pc_specs\nb. print_pc_specs()\nc. print_pc_specs():\n7 . Which is an appropriate name for a function that calculates a user's taxes?\na. calc_tax\nb. calculate user tax\nc. c_t\nBenefits of functions\nA function promotes modularity by putting code statements related to a single task in a separate group. The\nbody of a function can be executed repeatedly with multiple function calls, so a function promotes reusability.\nModular, reusable code is easier to modify and is shareable among programmers to avoid reinventing the\nwheel.\n\n[p0147:c01] (page 147, ch.6 §6.0 Chapter introduction)\n6.7 Chapter summary\nIntroduction\nFunctions are the next step toward creating optimized code as a software developer. If the same block of code\nis reused repeatedly, a function allows the programmer to write the block of code once, name the block, and\nuse the code as many times as needed by calling the block by name. Functions can read in values and return\nvalues to perform tasks, including complex calculations.\n\n[p0171:c02] (page 171, ch.6 §6.7 Chapter summary)\n6.7 Chapter summary\nHighlights from this chapter include:\n• Functions are named blocks of code that perform tasks when called and make programs more organized\nand optimized.\n• Control flow is the sequence of program execution. Control flow moves between calling code and function\ncode when a function is called.\n\n[p0171:c04] (page 171, ch.6 §6.7 Chapter summary)\n• Function calls can use positional arguments to map values to parameters in order.\n• Function calls can use keyword arguments to map values using parameter names in any order.\n• Functions can define default parameter values to allow for optional arguments in function calls.\n• Python uses a pass-by-object-reference system to assign parameters with the object values referenced by\nthe arguments.\n• Functions can use return statements to return values back to the calling code.\nAt this point, you should be able to write functions that have any number of parameters and return a value,",
+  "usage": {
+   "in": 1389,
+   "out": 156,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000302,
+  "seconds": 3.45,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q15",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "Can a variable created inside a function be used after the function finishes?",
+  "filter": null,
+  "status": "answered",
+  "answer": "A variable created within a function has local scope and only exists within that function. Therefore, after a function finishes executing, the function's local variables no longer exist and cannot be accessed outside of the function in which they were created [p0156:c01].",
+  "citations": [
+   "p0156:c01"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "variable scope function",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0155:c00",
+      "page": 155,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p0171:c03",
+      "page": 171,
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p0156:c01",
+      "page": 156,
+      "score": 0.032
+     },
+     {
+      "rank": 4,
+      "id": "p0147:c00",
+      "page": 147,
+      "score": 0.03125
+     },
+     {
+      "rank": 5,
+      "id": "p0159:c00",
+      "page": 159,
+      "score": 0.03054
+     }
+    ],
+    "returned_ids": [
+     "p0155:c00",
+     "p0171:c03",
+     "p0156:c01",
+     "p0147:c00",
+     "p0159:c00"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0156:c01"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0155:c00",
+   "p0171:c03",
+   "p0156:c01",
+   "p0147:c00",
+   "p0159:c00"
+  ],
+  "context_chars": 2232,
+  "context": "[p0155:c00] (page 155, ch.6 §6.3 Variable scope)\n6.3 Variable scope\nLearning objectives\nBy the end of this section you should be able to\n• Identify the scope of a program's variables.\n• Discuss the impact of a variable's scope.\nGlobal scope\nA variable's scope is the part of a program where the variable can be accessed. A variable created outside of a\nfunction has global scope and can be accessed anywhere in the program. A Python program begins in global\nscope, and the global scope lasts for the entire program execution.\n\n[p0171:c03] (page 171, ch.6 §6.7 Chapter summary)\n• Variable scope refers to where a variable can be accessed. Global variables can be accessed anywhere in a\nprogram. Local variables are limited in scope, such as to a function.\n• Parameters are function inputs defined with the function. Arguments are values passed to the function as\ninput by the calling code. Parameters are assigned with the arguments' values.\n\n[p0156:c01] (page 156, ch.6 §6.3 Variable scope)\nLocal scope\nA variable created within a function has local scope and only exists within the function. A local variable cannot\nbe accessed outside of the function in which the variable was created. After a function finishes executing, the\nfunction's local variables no longer exist.\n\n[p0147:c00] (page 147, ch.6 §6.0 Chapter introduction)\nFigure 6.1 credit: modification of work \"IMG_3037\", by Jay Roc/Flickr, Public Domain\nChapter Outline\n6.1 Defining functions\n6.2 Control flow\n6.3 Variable scope\n6.4 Parameters\n6.5 Return values\n6.6 Keyword arguments\n\n[p0159:c00] (page 159, ch.6 §6.3 Variable scope)\nis_dst = True\nhour = int(input(\"Enter hour: \"))\nupdate_hour()\nprint(\"New hour:\", new_hour)\na. New hour: 9\nb. New hour: 10\nc. Error\nBENEFITS OF LIMITING SCOPE\nA programmer might ask, \"Why not just make all variables global variables to avoid access errors?\" Making\nevery variable global can make a program messy. Ex: A programmer debugging a large program discovers\na variable has the wrong value. If the whole program can modify the variable, then the bug could be\nanywhere in the large program. Limiting a variable's scope to only what's necessary and restricting global\nvariable use make a program easier to debug, maintain, and update.",
+  "usage": {
+   "in": 1422,
+   "out": 102,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000275,
+  "seconds": 2.64,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q16",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "What must a function do before it can edit a global variable?",
+  "filter": null,
+  "status": "answered",
+  "answer": "Before a function can edit a global variable, the variable must be declared with the global keyword. This is necessary because a function treats any variable edited within it as a local variable unless specified otherwise [p0157:c02].",
+  "citations": [
+   "p0157:c02"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "function edit global variable",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0157:c02",
+      "page": 157,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0155:c00",
+      "page": 155,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p0159:c00",
+      "page": 159,
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p0155:c01",
+      "page": 155,
+      "score": 0.03101
+     },
+     {
+      "rank": 5,
+      "id": "p0171:c03",
+      "page": 171,
+      "score": 0.0308
+     }
+    ],
+    "returned_ids": [
+     "p0157:c02",
+     "p0155:c00",
+     "p0159:c00",
+     "p0155:c01"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0157:c02"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0157:c02",
+   "p0155:c00",
+   "p0159:c00",
+   "p0155:c01"
+  ],
+  "context_chars": 2142,
+  "context": "[p0157:c02] (page 157, ch.6 §6.3 Variable scope)\nb. print_time()\nc. print_greeting() and print_time()\nUsing local and global variables together\nPython allows global and local variables to have the same name, which can lead to unexpected program\nbehavior. A function treats a variable edited within the function as a local variable unless told otherwise. To edit\na global variable inside a function, the variable must be declared with the global keyword.\nCHECKPOINT\nEditing global variables in a program with a function\nEditing global variables in a program with a function; ch 6, video 8 (https://www.openstax.org/r/editing-\nglobal-variables)\n\n[p0155:c00] (page 155, ch.6 §6.3 Variable scope)\n6.3 Variable scope\nLearning objectives\nBy the end of this section you should be able to\n• Identify the scope of a program's variables.\n• Discuss the impact of a variable's scope.\nGlobal scope\nA variable's scope is the part of a program where the variable can be accessed. A variable created outside of a\nfunction has global scope and can be accessed anywhere in the program. A Python program begins in global\nscope, and the global scope lasts for the entire program execution.\n\n[p0159:c00] (page 159, ch.6 §6.3 Variable scope)\nis_dst = True\nhour = int(input(\"Enter hour: \"))\nupdate_hour()\nprint(\"New hour:\", new_hour)\na. New hour: 9\nb. New hour: 10\nc. Error\nBENEFITS OF LIMITING SCOPE\nA programmer might ask, \"Why not just make all variables global variables to avoid access errors?\" Making\nevery variable global can make a program messy. Ex: A programmer debugging a large program discovers\na variable has the wrong value. If the whole program can modify the variable, then the bug could be\nanywhere in the large program. Limiting a variable's scope to only what's necessary and restricting global\nvariable use make a program easier to debug, maintain, and update.\n\n[p0155:c01] (page 155, ch.6 §6.3 Variable scope)\nCHECKPOINT\nGlobal variables in a program with a function\nGlobal variables in a program with a function; ch 6, video 6 (https://www.openstax.org/r/global-variables)\nCONCEPTS IN PRACTICE\nGlobal variables\n1 . Which variables are global?",
+  "usage": {
+   "in": 1398,
+   "out": 96,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000267,
+  "seconds": 2.58,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q17",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "What does PEP 8 recommend about spaces around the = sign?",
+  "filter": {
+   "chapter": 6
+  },
+  "status": "answered",
+  "answer": "PEP 8 recommends no spaces around the = sign when indicating keyword arguments and default parameter values [p0171:c00].",
+  "citations": [
+   "p0171:c00"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "PEP 8 spaces around = sign",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "user",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0171:c00",
+      "page": 171,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0163:c00",
+      "page": 163,
+      "score": 0.03151
+     },
+     {
+      "rank": 3,
+      "id": "p0152:c03",
+      "page": 152,
+      "score": 0.03055
+     },
+     {
+      "rank": 4,
+      "id": "p0152:c02",
+      "page": 152,
+      "score": 0.02927
+     },
+     {
+      "rank": 5,
+      "id": "p0169:c03",
+      "page": 169,
+      "score": 0.02899
+     }
+    ],
+    "returned_ids": [
+     "p0171:c00",
+     "p0163:c00",
+     "p0152:c03",
+     "p0152:c02",
+     "p0169:c03"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 1,
+    "query": "PEP 8",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "user",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0171:c00",
+      "page": 171,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0152:c02",
+      "page": 152,
+      "score": 0.03083
+     },
+     {
+      "rank": 3,
+      "id": "p0158:c01",
+      "page": 158,
+      "score": 0.0308
+     },
+     {
+      "rank": 4,
+      "id": "p0153:c00",
+      "page": 153,
+      "score": 0.02858
+     },
+     {
+      "rank": 5,
+      "id": "p0150:c01",
+      "page": 150,
+      "score": 0.01613
+     }
+    ],
+    "returned_ids": [
+     "p0171:c00",
+     "p0152:c02",
+     "p0158:c01",
+     "p0153:c00",
+     "p0150:c01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 2,
+    "query": "PEP 8",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "user",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0171:c00",
+      "page": 171,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0152:c02",
+      "page": 152,
+      "score": 0.03083
+     },
+     {
+      "rank": 3,
+      "id": "p0158:c01",
+      "page": 158,
+      "score": 0.0308
+     },
+     {
+      "rank": 4,
+      "id": "p0153:c00",
+      "page": 153,
+      "score": 0.02858
+     },
+     {
+      "rank": 5,
+      "id": "p0150:c01",
+      "page": 150,
+      "score": 0.01613
+     }
+    ],
+    "returned_ids": [
+     "p0171:c00",
+     "p0152:c02",
+     "p0158:c01",
+     "p0153:c00",
+     "p0150:c01"
+    ]
+   },
+   {
+    "event": "search_limit",
+    "args": {
+     "query": "PEP 8",
+     "chapter": 5
+    }
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": false,
+    "citations": [
+     "p0171:c00"
+    ]
+   }
+  ],
+  "n_searches": 3,
+  "context_ids": [
+   "p0171:c00",
+   "p0163:c00",
+   "p0152:c03",
+   "p0152:c02",
+   "p0169:c03",
+   "p0158:c01",
+   "p0153:c00",
+   "p0150:c01"
+  ],
+  "context_chars": 2668,
+  "context": "[p0171:c00] (page 171, ch.6 §6.6 Keyword arguments)\nPEP 8 RECOMMENDATIONS: SPACING\nThe PEP 8 style guide recommends no spaces around = when indicating keyword arguments and default\nparameter values.\nStream donations\nWrite a function, donate(), that lets an online viewer send a donation to a streamer. donate() has three\nparameters:\n\n[p0163:c00] (page 163, ch.6 §6.4 Parameters)\nunit = \"F\"\n# Weekend temperatures in Fahrenheit.\nwknd_temps = [49.0, 51.0, 44.0]\ndeg_sign = u\"\\N{DEGREE SIGN}\" # Unicode\nmetric = \"F\"\n# Convert from Fahrenheit to Celsius.\nconvert_temps(wknd_temps, metric)\n\n[p0152:c03] (page 152, ch.6 §6.2 Control flow)\n1 def extra_lot():\n2 \"\"\"Output extra parking lot info.\"\"\"\n3 print(\"Take the second right to park.\")\n4\n5 def park_greet():\n6 \"\"\"Output greeting.\"\"\"\n7 print(\"Welcome. Open sunrise to sunset.\")\n8\n9 car_count = 1\n10 park_greet()\n11 if car_count > 50:\n12 extra_lot()\na. 5\n\n[p0152:c02] (page 152, ch.6 §6.2 Control flow)\n5 \"\"\"Output greeting.\"\"\"\n6 print(\"Welcome. Open sunrise to sunset.\")\n7\n8 car_count = 1\n9 park_greet()\n10 if car_count > 50:\n11 extra_lot()\na. 1\nb. 4\nc. 10\n3 . Control flow moves to line 12, and extra_lot() is called. Which line does control flow move to after\nline 3 is executed?\n\n[p0169:c03] (page 169, ch.6 §6.6 Keyword arguments)\ndef greeting(msg, name, count):\ni = 0\nfor i in range(0, count):\nprint(msg, name)\n1 . Which is the positional argument in greeting(count=1, name=\"Ash\", msg=\"Hiya\")?\na. count=1\nb. name=\"Ash\"\nc. msg=\"Hiya\"\n\n[p0158:c01] (page 158, ch.6 §6.3 Variable scope)\ntmp -= 1\nis_dst = True\nhour = int(input(\"Enter hour: \"))\nupdate_hour()\nprint(\"New hour:\", hour)\na. New hour: 9\nb. New hour: 10\nc. Error\n8 . What is the output?\ndef update_hour():\nnew_hour = hour\nif is_dst:\n\n[p0153:c00] (page 153, ch.6 §6.2 Control flow)\nb. 8\nc. 12\n4 . What is the output?\ndef park_greet():\n\"\"\"Output greeting.\"\"\"\nprint(\"Welcome to the park\")\nprint(\"Open sunrise to sunset\")\npark_greet()\na. Welcome to the park\nb. Welcome to the park\nOpen sunrise to sunset\nc. Open sunrise to sunset\nWelcome to the park\nFunctions calling functions\nFunctions frequently call other functions to keep the modularity of each function performing one task. Ex: A\nfunction that calculates an order total may call a function that calculates sales tax. When a function called from\nanother function finishes execution, control flow returns to the calling function.\n\n[p0150:c01] (page 150, ch.6 §6.1 Defining functions)\n8 . If the points were changed from floats to integers, how many statements would need to be changed in\nthe original and revised programs respectively?\na. 3, 1\nb. 4, 4\nc. 12, 4\n9 . How many times can calc_distance() be called?",
+  "usage": {
+   "in": 7050,
+   "out": 147,
+   "llm_calls": 5
+  },
+  "cost_usd": 0.001146,
+  "seconds": 7.17,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q18",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "What is a branch?",
+  "filter": {
+   "chapter": 4
+  },
+  "status": "answered",
+  "answer": "A branch is a group of statements that execute based on a condition. In programming, branches allow for multiple possible paths of execution depending on the evaluation of conditions. For example, in an if-else statement, one and only one of the branches (the body of the if or the body of the else) is executed based on whether the condition is true or false [p0095:c01][p0102:c02].",
+  "citations": [
+   "p0095:c01",
+   "p0102:c02"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "branch",
+    "filter": {
+     "chapter": 4
+    },
+    "filter_source": "user",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0111:c01",
+      "page": 111,
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "p0111:c02",
+      "page": 111,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p0095:c01",
+      "page": 95,
+      "score": 0.03154
+     },
+     {
+      "rank": 4,
+      "id": "p0102:c03",
+      "page": 102,
+      "score": 0.03125
+     },
+     {
+      "rank": 5,
+      "id": "p0102:c02",
+      "page": 102,
+      "score": 0.02996
+     }
+    ],
+    "returned_ids": [
+     "p0111:c01",
+     "p0111:c02",
+     "p0095:c01",
+     "p0102:c03",
+     "p0102:c02"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0095:c01",
+     "p0102:c02"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0111:c01",
+   "p0111:c02",
+   "p0095:c01",
+   "p0102:c03",
+   "p0102:c02"
+  ],
+  "context_chars": 2499,
+  "context": "[p0111:c01] (page 111, ch.4 §4.5 Chained decisions)\n4.5 Chained decisions\nLearning objectives\nBy the end of this section you should be able to\n• Identify the branches taken in an if-elif and if-elif-else statement.\n• Create a chained decision statement to evaluate multiple conditions.\n\n[p0111:c02] (page 111, ch.4 §4.5 Chained decisions)\nelif\nSometimes, a complicated decision is based on more than a single condition. Ex: A travel planning site reviews\nthe layovers on an itinerary. If a layover is greater than 24 hours, the site should suggest accommodations.\nElse if the layover is less than one hour, the site should alert for a possible missed connection.\nTwo separate if statements do not guarantee that only one branch is taken and might result in both branches\nbeing taken. Ex: The program below attempts to add a curve based on the input test score. If the input is 60,\nboth if statements are incorrectly executed, and the resulting score is 75.\n\n[p0095:c01] (page 95, ch.4 §4.0 Chapter introduction)\n4.6 Nested decisions\n4.7 Conditional expressions\n4.8 Chapter summary\nIntroduction\nThe Python interpreter follows a single path of execution when executing a program. What if a programmer\nwants to define multiple possible paths? Ex: Instead of always taking the left path, a program uses the path\nwidth to decide which path to take. If the left path is wider, take the right path. Else, take the left path.\nA branch is a group of statements that execute based on a condition. The Expressions chapter introduced\nexpressions. This chapter explores how expressions can be used as conditions to make decisions in programs.\n\n[p0102:c03] (page 102, ch.4 §4.2 If-else statements)\nif-else statement template:\n1 # Statements before\n2\n3 if condition:\n4 # Body\n5 else:\n6 # Body\n7\n8 # Statements after\nCHECKPOINT\nExample: Trivia question\nExample: Trivia question; ch 4, video 5 (https://www.openstax.org/r/trivia-question)\nCONCEPTS IN PRACTICE\nExploring if-else statements\n6 . Given the following code, the else branch is taken for which range of x?\n\n[p0102:c02] (page 102, ch.4 §4.2 If-else statements)\nAn else statement is used with an if statement and contains a body of statements that is executed when the\nif statement's condition is false. When an if-else statement is executed, one and only one of the branches\nis taken. That is, the body of the if or the body of the else is executed. Note: The else statement is at the\nsame level of indentation as the if statement, and the body is indented.",
+  "usage": {
+   "in": 1494,
+   "out": 140,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000308,
+  "seconds": 3.61,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "q19",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "In a nested loop, what does the outer loop control?",
+  "filter": null,
+  "status": "answered",
+  "answer": "In a nested loop, the outer loop controls the number of times the inner loop is fully executed. This means that for each iteration of the outer loop, the inner loop will run completely before the outer loop proceeds to its next iteration [p0132:c03].",
+  "citations": [
+   "p0132:c03"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "nested loop outer loop control",
+    "filter": {
+     "chapter": 5
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0132:c03",
+      "page": 132,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0135:c00",
+      "page": 135,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p0135:c01",
+      "page": 135,
+      "score": 0.032
+     },
+     {
+      "rank": 4,
+      "id": "p0133:c00",
+      "page": 133,
+      "score": 0.03125
+     },
+     {
+      "rank": 5,
+      "id": "p0136:c00",
+      "page": 136,
+      "score": 0.03054
+     }
+    ],
+    "returned_ids": [
+     "p0132:c03",
+     "p0135:c00",
+     "p0135:c01",
+     "p0133:c00",
+     "p0136:c00"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0132:c03"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0132:c03",
+   "p0135:c00",
+   "p0135:c01",
+   "p0133:c00",
+   "p0136:c00"
+  ],
+  "context_chars": 2451,
+  "context": "[p0132:c03] (page 132, ch.5 §5.3 Nested loops)\n5.3 Nested loops\nLearning objectives\nBy the end of this section you should be able to\n• Implement nested while loops.\n• Implement nested for loops.\nNested loops\nA nested loop has one or more loops within the body of another loop. The two loops are referred to as outer\nloop and inner loop. The outer loop controls the number of the inner loop's full execution. More than one\ninner loop can exist in a nested loop.\n\n[p0135:c00] (page 135, ch.5 §5.3 Nested loops)\nj += 1\ni += 1\nNested for loops\nA nested for loop can be implemented and used in the same way as a nested while loop. A for loop is a\npreferable option in cases where a loop is used for counting purposes using a range() function, or when\niterating over a container object, including nested situations. Ex: Iterating over multiple course rosters. The\nouter loop iterates over different courses, and the inner loop iterates over the names in each course roster.\n\n[p0135:c01] (page 135, ch.5 §5.3 Nested loops)\nCHECKPOINT\nNested for loops\nNested for loops; ch 5, video 4 (https://www.openstax.org/r/nested-for-loops)\nCONCEPTS IN PRACTICE\nNested loop practices\n4 . Given the following code, how many times does the outer loop execute?\n\n[p0133:c00] (page 133, ch.5 §5.3 Nested loops)\nCHECKPOINT\nNested while loops\nNested while loops; ch 5, video 5 (https://www.openstax.org/r/nested-while-loops)\nEXAMPLE 5.3\nAvailable appointments\nConsider a doctor's office schedule. Each appointment is 30 minutes long. A program to print available\nappointments can use a nested for loop where the outer loop iterates over the hours, and the inner loop\niterates over the minutes. This example prints time in hours and minutes in the range between 8:00am and\n10:00am. In this example, the outer loop iterates over the time's hour portion between 8 and 9, and the\ninner loop iterates over the time's minute portion between 0 and 59.\n\n[p0136:c00] (page 136, ch.5 §5.3 Nested loops)\nb. for i in range(1, 4):\nfor j in range(4):\nprint(i * j)\nc. for i in range(1, 4):\nfor j in range(4):\nprint(i * j, end = ' ')\nprint()\nMIXED LOOPS\nThe two for and while loop constructs can also be mixed in a nested loop construct. Ex: Printing even\nnumbers less than a given number in a list. The outer loop can be implemented using a for loop iterating\nover the provided list, and the inner loop iterates over all even numbers less than a given number from the\nlist using a while loop.",
+  "usage": {
+   "in": 1532,
+   "out": 105,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000293,
+  "seconds": 4.27,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "t01",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "What value does a function return if it has no return statement?",
+  "filter": null,
+  "status": "answered",
+  "answer": "If a function has no return statement, it returns None, which represents no value [p0165:c00].",
+  "citations": [
+   "p0165:c00"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "function return value no return statement",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0165:c00",
+      "page": 165,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0164:c02",
+      "page": 164,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p0165:c03",
+      "page": 165,
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p0172:c01",
+      "page": 172,
+      "score": 0.03126
+     },
+     {
+      "rank": 5,
+      "id": "p0165:c01",
+      "page": 165,
+      "score": 0.03125
+     }
+    ],
+    "returned_ids": [
+     "p0165:c00",
+     "p0164:c02",
+     "p0165:c03",
+     "p0172:c01",
+     "p0165:c01"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0165:c00"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0165:c00",
+   "p0164:c02",
+   "p0165:c03",
+   "p0172:c01",
+   "p0165:c01"
+  ],
+  "context_chars": 1825,
+  "context": "[p0165:c00] (page 165, ch.6 §6.5 Return values)\nfinishes the function execution and can specify a value to return to the function's caller. Functions introduced\nso far have not had a return statement, which is the same as returning None, representing no value.\n\n[p0164:c02] (page 164, ch.6 §6.5 Return values)\n6.5 Return values\nLearning objectives\nBy the end of this section you should be able to\n• Identify a function's return value.\n• Employ return statements in functions to return values.\nReturning from a function\nWhen a function finishes, the function returns and provides a result to the calling code. A return statement\n\n[p0165:c03] (page 165, ch.6 §6.5 Return values)\ndef hw_1():\nprint(\"Hello world!\")\nreturn\ndef hw_2():\nprint(\"Hello world!\")\na. hw_1() returns a string, hw_2() does not\nb. hw_1() returns None, hw_2() does not\nc. no difference\nUsing multiple return statements\nFunctions that have multiple execution paths may use multiple return statements. Ex: A function with an\nif-else statement may have two return statements for each branch. Return statements always end the\n\n[p0172:c01] (page 172, ch.6 §6.7 Chapter summary)\n# Function body\nArgument\ndef function_name(parameter_1):\n# Function body\nfunction_name(argument_1)\nReturn statement def function_name(): # Function body\nreturn result # Returns the value of result to the caller\nVariables (scope)\ndef function_name(parameter_1):\n# Function body\nlocal_var = parameter_1 * 5\nreturn local_var\nglobal_var = function_name(arg_1)\nTable 6.2 Chapter 6 reference.\n\n[p0165:c01] (page 165, ch.6 §6.5 Return values)\nCHECKPOINT\nReturning a value from a function\nReturning a value from a function; ch 6, video 11 (https://www.openstax.org/r/returning-value-from-\nfunction)\nCONCEPTS IN PRACTICE\nUsing return statements\n1 . What is returned by calc_mpg(miles, gallons)?",
+  "usage": {
+   "in": 1354,
+   "out": 76,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000249,
+  "seconds": 2.67,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "t02",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "Why shouldn't a list be used as a default parameter value?",
+  "filter": null,
+  "status": "answered",
+  "answer": "A list should not be used as a default parameter value because default parameter values are only defined once when the function is defined. This means that if a mutable object like a list is used as a default value, any modifications to that list will persist across function calls, leading to unexpected behavior. This can cause the function to behave incorrectly if the list is modified in one call and then used in subsequent calls without resetting it. Therefore, it is recommended to use immutable objects as default parameter values instead [p0170:c00].",
+  "citations": [
+   "p0170:c00"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "default parameter value list",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0170:c00",
+      "page": 170,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0170:c02",
+      "page": 170,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p0171:c01",
+      "page": 171,
+      "score": 0.03125
+     },
+     {
+      "rank": 4,
+      "id": "p0173:c00",
+      "page": 173,
+      "score": 0.0308
+     },
+     {
+      "rank": 5,
+      "id": "p0160:c02",
+      "page": 160,
+      "score": 0.03054
+     }
+    ],
+    "returned_ids": [
+     "p0170:c00",
+     "p0170:c02",
+     "p0171:c01",
+     "p0173:c00",
+     "p0160:c02"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0170:c00"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0170:c00",
+   "p0170:c02",
+   "p0171:c01",
+   "p0173:c00",
+   "p0160:c02"
+  ],
+  "context_chars": 2033,
+  "context": "[p0170:c00] (page 170, ch.6 §6.6 Keyword arguments)\na. greeting(\"Morning\", \"Morgan\", count=3)\nb. greeting(count=1,\"Hi\", \"Bea\")\nc. greeting(\"Cheers\", \"Colleagues\", 10)\nDefault parameter values\nFunctions can define default parameter values to use if a positional or keyword argument is not provided for\nthe parameter. Ex: def season(m, d, hemi=\"N\"): defines a default value of \"N\" for the hemi parameter.\nNote: Default parameter values are only defined once to be used by the function, so mutable objects (such as\nlists) should not be used as default values.\n\n[p0170:c02] (page 170, ch.6 §6.6 Keyword arguments)\nCONCEPTS IN PRACTICE\nUsing default parameter values\nConsider the following updated version of greeting():\ndef greeting(msg, name=\"Friend\", count=1):\ni = 0\nfor i in range(0, count):\nprint(msg, name)\n5 . Which parameters have default values?\n\n[p0171:c01] (page 171, ch.6 §6.6 Keyword arguments)\n• amount: amount to donate, default value: 5\n• name: donor's name, default value: \"Anonymous\"\n• msg: donor's message, default value: \"\"\nGiven:\ndonate(10, \"gg\")\nThe output is:\nAnonymous donated 10 credits: gg\nWrite function calls that use the default values along with positional and keyword arguments.\n\n[p0173:c00] (page 173, ch.6 §6.7 Chapter summary)\nConstruct Description\nKeyword arguments\ndef function_name(parameter_1, parameter_2):\n# Function body\nfunction_name(parameter_2 = 5, parameter_1 = 2)\nDefault parameter value def function_name(parameter_1 = 100):\n# Function body\nTable 6.2 Chapter 6 reference.\n\n[p0160:c02] (page 160, ch.6 §6.4 Parameters)\nArguments and parameters\nWhat if a programmer wants to write a function that prints the contents of a list? Good practice is to pass\nvalues directly to a function rather than relying on global variables. A function argument is a value passed as\ninput during a function call. A function parameter is a variable representing the input in the function\ndefinition. Note: The terms \"argument\" and \"parameter\" are sometimes used interchangeably in conversation\nand documentation.",
+  "usage": {
+   "in": 1392,
+   "out": 156,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000302,
+  "seconds": 3.69,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "t03",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "If a function changes a list argument, does the caller see the change? What about a string argument?",
+  "filter": null,
+  "status": "answered",
+  "answer": "If a function changes a list argument, the caller sees the change because lists are mutable objects in Python. This means that modifications made to the list within the function will reflect outside the function as well. In contrast, if a function changes a string argument, the caller does not see the change because strings are immutable. Therefore, any modification to a string within the function does not affect the original string outside the function. This distinction is due to Python's pass-by-object-reference system, where mutable objects can be modified after creation, while immutable objects cannot [p0162:c02][p0163:c01].",
+  "citations": [
+   "p0162:c02",
+   "p0163:c01"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "function changes list argument",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0163:c01",
+      "page": 163,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0160:c02",
+      "page": 160,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p0162:c02",
+      "page": 162,
+      "score": 0.032
+     },
+     {
+      "rank": 4,
+      "id": "p0169:c01",
+      "page": 169,
+      "score": 0.03012
+     },
+     {
+      "rank": 5,
+      "id": "p0161:c00",
+      "page": 161,
+      "score": 0.02971
+     }
+    ],
+    "returned_ids": [
+     "p0163:c01",
+     "p0160:c02",
+     "p0162:c02",
+     "p0169:c01",
+     "p0161:c00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "function changes string argument",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0162:c02",
+      "page": 162,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p0163:c01",
+      "page": 163,
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p0160:c02",
+      "page": 160,
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p0172:c00",
+      "page": 172,
+      "score": 0.03125
+     },
+     {
+      "rank": 5,
+      "id": "p0161:c00",
+      "page": 161,
+      "score": 0.0308
+     }
+    ],
+    "returned_ids": [
+     "p0162:c02",
+     "p0163:c01",
+     "p0160:c02",
+     "p0172:c00",
+     "p0161:c00"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0162:c02",
+     "p0163:c01"
+    ]
+   }
+  ],
+  "n_searches": 2,
+  "context_ids": [
+   "p0163:c01",
+   "p0160:c02",
+   "p0162:c02",
+   "p0169:c01",
+   "p0161:c00",
+   "p0172:c00"
+  ],
+  "context_chars": 2720,
+  "context": "[p0163:c01] (page 163, ch.6 §6.4 Parameters)\nfor temp in wknd_temps:\nprint(f\"{temp:.2f}{deg_sign}{metric}\", end=\" \")\nThe output is 9.44°F 10.56°F 6.67°F. type was changed to \"C\" in the function but didn't keep the\nchange outside of the function. Why is the list argument change kept and not the string argument change?\n(Hint: A list is mutable. A string is immutable.)\n\n[p0160:c02] (page 160, ch.6 §6.4 Parameters)\nArguments and parameters\nWhat if a programmer wants to write a function that prints the contents of a list? Good practice is to pass\nvalues directly to a function rather than relying on global variables. A function argument is a value passed as\ninput during a function call. A function parameter is a variable representing the input in the function\ndefinition. Note: The terms \"argument\" and \"parameter\" are sometimes used interchangeably in conversation\nand documentation.\n\n[p0162:c02] (page 162, ch.6 §6.4 Parameters)\na. 2\nb. 4\nc. 3\nd. 6\ne. Error\nModifying arguments and mutability\nIn Python, a variable is a name that refers to an object stored in memory, aka an object reference, so Python\nuses a pass-by-object-reference system. If an argument is changed in a function, the changes are kept or lost\ndepending on the object's mutability. A mutable object can be modified after creation. A function's changes to\nthe object then appear outside the function. An immutable object cannot be modified after creation. So a\nfunction must make a local copy to modify, and the local copy's changes don't appear outside the function.\nProgrammers should be cautious of modifying function arguments as these side effects can make programs\ndifficult to debug and maintain.\n\n[p0169:c01] (page 169, ch.6 §6.6 Keyword arguments)\nKeyword arguments\nSo far, functions have been called using positional arguments, which are arguments that are assigned to\nparameters in order. Python also allows keyword arguments, which are arguments that use parameter names\nto assign values rather than order. When mixing positional and keyword arguments, positional arguments\nmust come first in the correct order, before any keyword arguments.\n\n[p0161:c00] (page 161, ch.6 §6.4 Parameters)\n1 . Which is an argument?\na. name\nb. username\nc. name and username\n2 . Which is a parameter?\na. name\nb. username\nc. name and username\n3 . What is the scope of name?\na. print_welcome() only\nb. whole program\n4 . What would happen if username was changed to name on lines 4 and 5?\n\n[p0172:c00] (page 172, ch.6 §6.7 Chapter summary)\nand programs that call functions using keyword arguments and optional arguments.\nConstruct Description\nFunction definition def function_name(): \"\"\"Docstring\"\"\"\n# Function body\nParameter def function_name(parameter_1):",
+  "usage": {
+   "in": 2166,
+   "out": 217,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000455,
+  "seconds": 4.21,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "t04",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "When does the else block run?",
+  "filter": {
+   "chapter": 5
+  },
+  "status": "answered",
+  "answer": "The else block runs after the loop's execution is completed without being interrupted by a break statement. If the loop is terminated normally (i.e., it completes all iterations without hitting a break), the else block will execute. Conversely, if the loop is interrupted by a break, the else block will not run [p0140:c02][p0141:c00][p0143:c02].",
+  "citations": [
+   "p0140:c02",
+   "p0141:c00",
+   "p0143:c02"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "else block",
+    "filter": {
+     "chapter": 5
+    },
+    "filter_source": "user",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0140:c02",
+      "page": 140,
+      "score": 0.032
+     },
+     {
+      "rank": 2,
+      "id": "p0141:c03",
+      "page": 141,
+      "score": 0.03102
+     },
+     {
+      "rank": 3,
+      "id": "p0142:c01",
+      "page": 142,
+      "score": 0.03101
+     },
+     {
+      "rank": 4,
+      "id": "p0141:c00",
+      "page": 141,
+      "score": 0.03089
+     },
+     {
+      "rank": 5,
+      "id": "p0143:c02",
+      "page": 143,
+      "score": 0.03083
+     }
+    ],
+    "returned_ids": [
+     "p0140:c02",
+     "p0141:c03",
+     "p0142:c01",
+     "p0141:c00",
+     "p0143:c02"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0140:c02",
+     "p0141:c00",
+     "p0143:c02"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0140:c02",
+   "p0141:c03",
+   "p0142:c01",
+   "p0141:c00",
+   "p0143:c02"
+  ],
+  "context_chars": 2073,
+  "context": "[p0140:c02] (page 140, ch.5 §5.5 Loop else)\n5.5 Loop else\nLearning objectives\nBy the end of this section you should be able to\n• Use loop else statement to identify when the loop execution is interrupted using a break statement.\n• Implement a loop else statement with a for or a while loop.\nLoop else\nA loop else statement runs after the loop's execution is completed without being interrupted by a break\n\n[p0141:c03] (page 141, ch.5 §5.5 Loop else)\nseen = True\nif seen == False:\nprint(\"10 is not in the list.\")\nTable 5.3\nCHECKPOINT\nLoop else template\nLoop else template; ch 5, video 8 (https://www.openstax.org/r/loop-else)\nCONCEPTS IN PRACTICE\nLoop else practices\n1 . What is the output?\nn = 16\nexp = 0\ni = n\nwhile i > 1:\n\n[p0142:c01] (page 142, ch.5 §5.5 Loop else)\nbreak\nelse:\nprint(n,\"is 2 to the\", exp)\na. no output\nb. 7 is 2 to the 3\nc. 7 is 2 to the 2\n3 . What is the output?\nnumbers = [1, 2, 2, 6]\nfor i in numbers:\nif i >= 5:\nprint(\"Not all numbers are less than 5.\")\nbreak\nelse:\nprint(i)\ncontinue\nelse:\nprint(\"all numbers are less than 5.\")\na. 1\n2\n2\n6\nNot all numbers are less than 5.\nb. 1\n2\n\n[p0141:c00] (page 141, ch.5 §5.5 Loop else)\nstatement. A loop else is used to identify if the loop is terminated normally or the execution is interrupted by\na break statement.\nEx: A for loop that iterates over a list of numbers to find if the value 10 is in the list. In each iteration, if 10 is\nobserved, the statement \"Found 10!\" is printed and the execution can terminate using a break statement. If\n10 is not in the list, the loop terminates when all integers in the list are evaluated, and hence the else\nstatement will run and print \"10 is not in the list.\" Alternatively, a Boolean variable can be used to\ntrack whether number 10 is found after loop's execution terminates.\n\n[p0143:c02] (page 143, ch.5 §5.6 Chapter summary)\n• A continue statement allows for skipping the execution of the remainder of the loop without exiting the\nloop entirely.\n• A loop else statement runs after the loop's execution is completed without being interrupted by a break\nstatement.",
+  "usage": {
+   "in": 1487,
+   "out": 141,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000308,
+  "seconds": 3.6,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "t05",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "When a call mixes positional and keyword arguments, which must come first?",
+  "filter": null,
+  "status": "answered",
+  "answer": "When mixing positional and keyword arguments in a function call, positional arguments must come first, before any keyword arguments [p0169:c01].",
+  "citations": [
+   "p0169:c01"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "positional and keyword arguments",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0169:c01",
+      "page": 169,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0169:c00",
+      "page": 169,
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p0169:c02",
+      "page": 169,
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p0170:c00",
+      "page": 170,
+      "score": 0.03031
+     },
+     {
+      "rank": 5,
+      "id": "p0172:c00",
+      "page": 172,
+      "score": 0.0303
+     }
+    ],
+    "returned_ids": [
+     "p0169:c01",
+     "p0169:c00",
+     "p0169:c02",
+     "p0170:c00",
+     "p0172:c00"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0169:c01"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0169:c01",
+   "p0169:c00",
+   "p0169:c02",
+   "p0170:c00",
+   "p0172:c00"
+  ],
+  "context_chars": 1846,
+  "context": "[p0169:c01] (page 169, ch.6 §6.6 Keyword arguments)\nKeyword arguments\nSo far, functions have been called using positional arguments, which are arguments that are assigned to\nparameters in order. Python also allows keyword arguments, which are arguments that use parameter names\nto assign values rather than order. When mixing positional and keyword arguments, positional arguments\nmust come first in the correct order, before any keyword arguments.\n\n[p0169:c00] (page 169, ch.6 §6.6 Keyword arguments)\n6.6 Keyword arguments\nLearning objectives\nBy the end of this section you should be able to\n• Describe the difference between positional and keyword arguments.\n• Create functions that use positional and keyword arguments and default parameter values.\n\n[p0169:c02] (page 169, ch.6 §6.6 Keyword arguments)\nCHECKPOINT\nUsing keyword arguments\nUsing keyword arguments; ch 6, video 13 (https://www.openstax.org/r/keyword-arguments)\nCONCEPTS IN PRACTICE\nUsing keyword and positional arguments\nConsider the following function:\n\n[p0170:c00] (page 170, ch.6 §6.6 Keyword arguments)\na. greeting(\"Morning\", \"Morgan\", count=3)\nb. greeting(count=1,\"Hi\", \"Bea\")\nc. greeting(\"Cheers\", \"Colleagues\", 10)\nDefault parameter values\nFunctions can define default parameter values to use if a positional or keyword argument is not provided for\nthe parameter. Ex: def season(m, d, hemi=\"N\"): defines a default value of \"N\" for the hemi parameter.\nNote: Default parameter values are only defined once to be used by the function, so mutable objects (such as\nlists) should not be used as default values.\n\n[p0172:c00] (page 172, ch.6 §6.7 Chapter summary)\nand programs that call functions using keyword arguments and optional arguments.\nConstruct Description\nFunction definition def function_name(): \"\"\"Docstring\"\"\"\n# Function body\nParameter def function_name(parameter_1):",
+  "usage": {
+   "in": 1312,
+   "out": 80,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.000245,
+  "seconds": 2.66,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "t06",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "What does elif stand for and where must it be placed?",
+  "filter": {
+   "chapter": 4
+  },
+  "status": "answered",
+  "answer": "The term \"elif\" stands for \"else if\" and is used to check a condition when the prior decision statement's condition is false. An elif statement must follow an if (or another elif) statement in a chain of decision statements. The structure is as follows: it must be placed after an if statement and before an else statement, if present [p0111:c03].",
+  "citations": [
+   "p0111:c03"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "elif",
+    "filter": {
+     "chapter": 4
+    },
+    "filter_source": "user",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0111:c03",
+      "page": 111,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0114:c00",
+      "page": 114,
+      "score": 0.03151
+     },
+     {
+      "rank": 3,
+      "id": "p0113:c02",
+      "page": 113,
+      "score": 0.0315
+     },
+     {
+      "rank": 4,
+      "id": "p0113:c01",
+      "page": 113,
+      "score": 0.03062
+     },
+     {
+      "rank": 5,
+      "id": "p0115:c00",
+      "page": 115,
+      "score": 0.03031
+     }
+    ],
+    "returned_ids": [
+     "p0111:c03",
+     "p0114:c00",
+     "p0113:c02",
+     "p0113:c01",
+     "p0115:c00"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p0111:c03"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "context_ids": [
+   "p0111:c03",
+   "p0114:c00",
+   "p0113:c02",
+   "p0113:c01",
+   "p0115:c00"
+  ],
+  "context_chars": 1945,
+  "context": "[p0111:c03] (page 111, ch.4 §4.5 Chained decisions)\nscore = int(input())\nif score < 70:\nscore += 10\n# Wrong:\nif 70 <= score < 85:\nscore += 5\nChaining decision statements with elif allows the programmer to check for multiple conditions. An elif (short\nfor else if) statement checks a condition when the prior decision statement's condition is false. An elif\nstatement is part of a chain and must follow an if (or elif) statement.\nif-elif statement template:\n# Statements before\nif condition:\n# Body\nelif condition:\n# Body\n# Statements after\n\n[p0114:c00] (page 114, ch.4 §4.5 Chained decisions)\nelif hour < 17:\nprint(\"Good afternoon\")\nelse:\nprint(\"Too late\")\na. Good morning\nb. Lunchtime\nc. Good afternoon\nd. Too late\n7 . Where can an elif statement be added?\n_1_\nif condition:\n# Body\n_2_\nelif condition:\n\n[p0113:c02] (page 113, ch.4 §4.5 Chained decisions)\nCHECKPOINT\nExample: Possible chess moves\nExample: Possible chess moves; ch 4, video 13 (https://www.openstax.org/r/chess-moves)\nCONCEPTS IN PRACTICE\nUsing elif within if-elif-else statements\n6 . Given hour = 12, what is printed?\nif hour < 8:\nprint(\"Too early\")\nelif hour < 12:\nprint(\"Good morning\")\nelif hour < 13:\nprint(\"Lunchtime\")\n\n[p0113:c01] (page 113, ch.4 §4.5 Chained decisions)\nrooms += 3\nif attendees <= 200:\nrooms += 7\nelif attendees <= 400:\nrooms += 14\na. 4\nb. 15\nc. 18\nif-elif-else statements\nElifs can be chained with an if-else statement to create a more complex decision statement. Ex: A program\nshows possible chess moves depending on the piece type. If the piece is a pawn, show moving forward one (or\ntwo) places. Else if the piece is a bishop, show diagonal moves. Else if . . . (finish for the rest of the pieces).\n\n[p0115:c00] (page 115, ch.4 §4.5 Chained decisions)\norder = 50\nelse:\norder = 30\norder = 10\nb. if price < 9.99:\norder = 50\nelif price < 19.99:\norder = 30\nelif price == 19.99:\norder = 10\nc. if price < 9.99:\norder = 50\nelif price < 19.99:\norder = 30\nelse:",
+  "usage": {
+   "in": 1501,
+   "out": 125,
+   "llm_calls": 2
+  },
+  "cost_usd": 0.0003,
+  "seconds": 2.89,
+  "context_hit": true,
+  "cited_gold": true
+ },
+ {
+  "query_id": "u01",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "How do I write a lambda (anonymous) function in Python?",
+  "filter": null,
+  "status": "abstain",
+  "answer": "The passages do not cover how to write a lambda (anonymous) function in Python.",
+  "citations": [],
+  "reason": "model_abstained",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "lambda function",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0153:c00",
+      "page": 153,
+      "score": 0.03154
+     },
+     {
+      "rank": 2,
+      "id": "p0172:c01",
+      "page": 172,
+      "score": 0.02938
+     },
+     {
+      "rank": 3,
+      "id": "p0149:c03",
+      "page": 149,
+      "score": 0.02859
+     },
+     {
+      "rank": 4,
+      "id": "p0163:c02",
+      "page": 163,
+      "score": 0.02838
+     },
+     {
+      "rank": 5,
+      "id": "p0172:c00",
+      "page": 172,
+      "score": 0.02837
+     }
+    ],
+    "returned_ids": [
+     "p0153:c00",
+     "p0172:c01",
+     "p0149:c03",
+     "p0163:c02",
+     "p0172:c00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 1,
+    "query": "lambda",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0160:c00",
+      "page": 160,
+      "score": 0.01639
+     },
+     {
+      "rank": 2,
+      "id": "p0154:c02",
+      "page": 154,
+      "score": 0.01613
+     },
+     {
+      "rank": 3,
+      "id": "p0169:c04",
+      "page": 169,
+      "score": 0.01587
+     },
+     {
+      "rank": 4,
+      "id": "p0147:c00",
+      "page": 147,
+      "score": 0.01562
+     },
+     {
+      "rank": 5,
+      "id": "p0153:c00",
+      "page": 153,
+      "score": 0.01538
+     }
+    ],
+    "returned_ids": [
+     "p0160:c00",
+     "p0154:c02",
+     "p0169:c04",
+     "p0147:c00",
+     "p0153:c00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 2,
+    "query": "anonymous function",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0171:c01",
+      "page": 171,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0147:c03",
+      "page": 147,
+      "score": 0.03102
+     },
+     {
+      "rank": 3,
+      "id": "p0153:c00",
+      "page": 153,
+      "score": 0.02983
+     },
+     {
+      "rank": 4,
+      "id": "p0172:c00",
+      "page": 172,
+      "score": 0.02976
+     },
+     {
+      "rank": 5,
+      "id": "p0149:c00",
+      "page": 149,
+      "score": 0.02941
+     }
+    ],
+    "returned_ids": [
+     "p0171:c01",
+     "p0147:c03",
+     "p0153:c00",
+     "p0172:c00",
+     "p0149:c00"
+    ]
+   },
+   {
+    "event": "search_limit",
+    "args": {
+     "query": "lambda expression",
+     "chapter": 6
+    }
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": true,
+    "citations": []
+   }
+  ],
+  "n_searches": 3,
+  "context_ids": [
+   "p0153:c00",
+   "p0172:c01",
+   "p0149:c03",
+   "p0163:c02",
+   "p0172:c00",
+   "p0160:c00",
+   "p0154:c02",
+   "p0169:c04",
+   "p0147:c00",
+   "p0171:c01",
+   "p0147:c03",
+   "p0149:c00"
+  ],
+  "context_chars": 4327,
+  "context": "[p0153:c00] (page 153, ch.6 §6.2 Control flow)\nb. 8\nc. 12\n4 . What is the output?\ndef park_greet():\n\"\"\"Output greeting.\"\"\"\nprint(\"Welcome to the park\")\nprint(\"Open sunrise to sunset\")\npark_greet()\na. Welcome to the park\nb. Welcome to the park\nOpen sunrise to sunset\nc. Open sunrise to sunset\nWelcome to the park\nFunctions calling functions\nFunctions frequently call other functions to keep the modularity of each function performing one task. Ex: A\nfunction that calculates an order total may call a function that calculates sales tax. When a function called from\nanother function finishes execution, control flow returns to the calling function.\n\n[p0172:c01] (page 172, ch.6 §6.7 Chapter summary)\n# Function body\nArgument\ndef function_name(parameter_1):\n# Function body\nfunction_name(argument_1)\nReturn statement def function_name(): # Function body\nreturn result # Returns the value of result to the caller\nVariables (scope)\ndef function_name(parameter_1):\n# Function body\nlocal_var = parameter_1 * 5\nreturn local_var\nglobal_var = function_name(arg_1)\nTable 6.2 Chapter 6 reference.\n\n[p0149:c03] (page 149, ch.6 §6.1 Defining functions)\na. print_pc_specs\nb. print_pc_specs()\nc. print_pc_specs():\n7 . Which is an appropriate name for a function that calculates a user's taxes?\na. calc_tax\nb. calculate user tax\nc. c_t\nBenefits of functions\nA function promotes modularity by putting code statements related to a single task in a separate group. The\nbody of a function can be executed repeatedly with multiple function calls, so a function promotes reusability.\nModular, reusable code is easier to modify and is shareable among programmers to avoid reinventing the\nwheel.\n\n[p0163:c02] (page 163, ch.6 §6.4 Parameters)\nCHECKPOINT\nExploring a faulty function\nExploring a faulty function; ch 6, video 10 (https://www.openstax.org/r/faulty-function)\nCONCEPTS IN PRACTICE\nMutability and function arguments\n8 . In convert_temps(), wknd_temps and temps refer to ________ in memory.\n\n[p0172:c00] (page 172, ch.6 §6.7 Chapter summary)\nand programs that call functions using keyword arguments and optional arguments.\nConstruct Description\nFunction definition def function_name(): \"\"\"Docstring\"\"\"\n# Function body\nParameter def function_name(parameter_1):\n\n[p0160:c00] (page 160, ch.6 §6.3 Variable scope)\nMatch starting...\nGiven input:\np\nQueen's Canyon\nThe output is:\nLaunching practice on Queen's Canyon\n\n[p0154:c02] (page 154, ch.6 §6.2 Control flow)\nN\nYou have rejected the terms. Thank you.\nLaundromat information\nWrite a program that uses three functions to print information about a laundromat, Liam's Laundry:\n• laundromat_info(): Prints the name, Liam's Laundry, and hours of operation, 7a - 11p, and calls\nwashers_open() and dryers_open()\n\n[p0169:c04] (page 169, ch.6 §6.6 Keyword arguments)\nd. None\n2 . What is the output of greeting(count=2, name=\"Ash\", msg=\"Hiya\")?\na. Ash Hiya\nAsh Hiya\nb. Hiya Ash\nHiya Ash\n3 . Which is the positional argument in greeting(\"Welcome\", count=1, name=\"Anita\")?\na. \"Welcome\"\nb. count=1\nc. name=\"Anita\"\n4 . Which function call would produce an error?\n\n[p0147:c00] (page 147, ch.6 §6.0 Chapter introduction)\nFigure 6.1 credit: modification of work \"IMG_3037\", by Jay Roc/Flickr, Public Domain\nChapter Outline\n6.1 Defining functions\n6.2 Control flow\n6.3 Variable scope\n6.4 Parameters\n6.5 Return values\n6.6 Keyword arguments\n\n[p0171:c01] (page 171, ch.6 §6.6 Keyword arguments)\n• amount: amount to donate, default value: 5\n• name: donor's name, default value: \"Anonymous\"\n• msg: donor's message, default value: \"\"\nGiven:\ndonate(10, \"gg\")\nThe output is:\nAnonymous donated 10 credits: gg\nWrite function calls that use the default values along with positional and keyword arguments.\n\n[p0147:c03] (page 147, ch.6 §6.1 Defining functions)\n6.1 Defining functions\nLearning objectives\nBy the end of this section you should be able to\n• Identify function calls in a program.\n• Define a parameterless function that outputs strings.\n• Describe benefits of using functions.\n\n[p0149:c00] (page 149, ch.6 §6.1 Defining functions)\nbe defined before the function is called.\nCHECKPOINT\nExample: Welcome message function\nExample: Welcome message function; ch 6, video 2 (https://www.openstax.org/r/welcome-message)\nCONCEPTS IN PRACTICE\nDefining functions\n4 . What's wrong with the first line of the function definition?",
+  "usage": {
+   "in": 7084,
+   "out": 118,
+   "llm_calls": 5
+  },
+  "cost_usd": 0.001133,
+  "seconds": 5.27
+ },
+ {
+  "query_id": "u02",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "How does a try/except block handle a ZeroDivisionError?",
+  "filter": null,
+  "status": "abstain",
+  "answer": "The passages do not cover how a try/except block handles a ZeroDivisionError specifically.",
+  "citations": [],
+  "reason": "model_abstained",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "try except ZeroDivisionError",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0161:c03",
+      "page": 161,
+      "score": 0.01639
+     },
+     {
+      "rank": 2,
+      "id": "p0159:c00",
+      "page": 159,
+      "score": 0.01613
+     },
+     {
+      "rank": 3,
+      "id": "p0161:c02",
+      "page": 161,
+      "score": 0.01587
+     },
+     {
+      "rank": 4,
+      "id": "p0170:c03",
+      "page": 170,
+      "score": 0.01562
+     },
+     {
+      "rank": 5,
+      "id": "p0166:c03",
+      "page": 166,
+      "score": 0.01538
+     }
+    ],
+    "returned_ids": [
+     "p0161:c03",
+     "p0159:c00",
+     "p0161:c02",
+     "p0170:c03",
+     "p0166:c03"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 1,
+    "query": "ZeroDivisionError",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0161:c03",
+      "page": 161,
+      "score": 0.01639
+     },
+     {
+      "rank": 2,
+      "id": "p0170:c03",
+      "page": 170,
+      "score": 0.01613
+     },
+     {
+      "rank": 3,
+      "id": "p0159:c00",
+      "page": 159,
+      "score": 0.01587
+     },
+     {
+      "rank": 4,
+      "id": "p0166:c02",
+      "page": 166,
+      "score": 0.01562
+     },
+     {
+      "rank": 5,
+      "id": "p0164:c01",
+      "page": 164,
+      "score": 0.01538
+     }
+    ],
+    "returned_ids": [
+     "p0161:c03",
+     "p0170:c03",
+     "p0159:c00",
+     "p0166:c02",
+     "p0164:c01"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 2,
+    "query": "try except",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0160:c00",
+      "page": 160,
+      "score": 0.01639
+     },
+     {
+      "rank": 2,
+      "id": "p0152:c03",
+      "page": 152,
+      "score": 0.01613
+     },
+     {
+      "rank": 3,
+      "id": "p0157:c00",
+      "page": 157,
+      "score": 0.01587
+     },
+     {
+      "rank": 4,
+      "id": "p0159:c03",
+      "page": 159,
+      "score": 0.01562
+     },
+     {
+      "rank": 5,
+      "id": "p0157:c01",
+      "page": 157,
+      "score": 0.01538
+     }
+    ],
+    "returned_ids": [
+     "p0160:c00",
+     "p0152:c03",
+     "p0157:c00",
+     "p0159:c03",
+     "p0157:c01"
+    ]
+   },
+   {
+    "event": "search_limit",
+    "args": {
+     "query": "ZeroDivisionError try except",
+     "chapter": 6
+    }
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": true,
+    "citations": []
+   }
+  ],
+  "n_searches": 3,
+  "context_ids": [
+   "p0161:c03",
+   "p0159:c00",
+   "p0161:c02",
+   "p0170:c03",
+   "p0166:c03",
+   "p0166:c02",
+   "p0164:c01",
+   "p0160:c00",
+   "p0152:c03",
+   "p0157:c00",
+   "p0159:c03",
+   "p0157:c01"
+  ],
+  "context_chars": 3687,
+  "context": "[p0161:c03] (page 161, ch.6 §6.4 Parameters)\nprint_div(num_2, num_1) # Prints \"3/6 = 0.5\"\nprint_div(num_1) # Error: Missing argument: op_2\nCONCEPTS IN PRACTICE\nMultiple arguments and parameters\nConsider the following:\ndef calc_distance(x1, y1, x2, y2):\ndist = math.sqrt((x2-x1)**2 + (y2-y1)**2)\n\n[p0159:c00] (page 159, ch.6 §6.3 Variable scope)\nis_dst = True\nhour = int(input(\"Enter hour: \"))\nupdate_hour()\nprint(\"New hour:\", new_hour)\na. New hour: 9\nb. New hour: 10\nc. Error\nBENEFITS OF LIMITING SCOPE\nA programmer might ask, \"Why not just make all variables global variables to avoid access errors?\" Making\nevery variable global can make a program messy. Ex: A programmer debugging a large program discovers\na variable has the wrong value. If the whole program can modify the variable, then the bug could be\nanywhere in the large program. Limiting a variable's scope to only what's necessary and restricting global\nvariable use make a program easier to debug, maintain, and update.\n\n[p0161:c02] (page 161, ch.6 §6.4 Parameters)\nEXAMPLE 6.1\nUsing multiple arguments in a function call\ndef print_div(op_1, op_2):\n\"\"\" Prints division operation \"\"\"\nprint(f\"{op_1}/{op_2} = {op_1/op_2}\")\nnum_1 = 6\nnum_2 = 3\nprint_div(num_1, num_2) # Prints \"6/3 = 2.0\"\n\n[p0170:c03] (page 170, ch.6 §6.6 Keyword arguments)\na. msg\nb. name and count\nc. all\n6 . Which function call is correct?\na. greeting()\nb. greeting(name=\"Gina\")\nc. greeting(\"Greetings\")\n7 . What is the output of greeting(count=0, msg=\"Hello\")?\na. Hello Friend\nb. nothing\nc. Error\n\n[p0166:c03] (page 166, ch.6 §6.5 Return values)\ndef yarn_weight(num):\nif num == 0:\nreturn \"lace\"\nelif num == 1:\nreturn \"sock\"\nelif num == 2:\nreturn \"sport\"\nelif num == 3:\nreturn \"dk\"\nelif num == 4:\nreturn \"worsted\"\nelif num == 5:\nreturn \"bulky\"\nelse:\nreturn \"super bulky\"\na. \"lace\"\nb. \"dk\"\nc. \"super bulky\"\n5 . What is the output?\n\n[p0166:c02] (page 166, ch.6 §6.5 Return values)\nprint(\"Car 2's mpg is\", car_2_mpg)\nCar 1's mpg is 28.0\nGallons can't be 0\nCar 2's mpg is -1\nTable 6.1 Calculating miles-per-gallon and checking for division by zero.\nCONCEPTS IN PRACTICE\nMultiple return statements\n4 . What does yarn_weight(3) return?\n\n[p0164:c01] (page 164, ch.6 §6.4 Parameters)\nGiven function call:\nprint_scores([67, 68, 72, 71, 69], 10)\nThe output is:\n67 would be updated to 77\n68 would be updated to 78\n72 would be updated to 82\n71 would be updated to 81\n69 would be updated to 79\n\n[p0160:c00] (page 160, ch.6 §6.3 Variable scope)\nMatch starting...\nGiven input:\np\nQueen's Canyon\nThe output is:\nLaunching practice on Queen's Canyon\n\n[p0152:c03] (page 152, ch.6 §6.2 Control flow)\n1 def extra_lot():\n2 \"\"\"Output extra parking lot info.\"\"\"\n3 print(\"Take the second right to park.\")\n4\n5 def park_greet():\n6 \"\"\"Output greeting.\"\"\"\n7 print(\"Welcome. Open sunrise to sunset.\")\n8\n9 car_count = 1\n10 park_greet()\n11 if car_count > 50:\n12 extra_lot()\na. 5\n\n[p0157:c00] (page 157, ch.6 §6.3 Variable scope)\nprint(out_str)\nhour = int(input())\nmin = int(input())\nif hour < 12:\nout_str = \"Good morning\"\nelse:\nout_str = \"Good day\"\nprint_greeting()\na. hour and min\nb. out_str\nc. none\n6 . Which functions directly access out_str?\n\n[p0159:c03] (page 159, ch.6 §6.3 Variable scope)\npractice():\n• Reads in a string representing the desired map.\n• Prints \"Launching practice on [desired map]\".\nNote: find_teammates() is provided and does not need to be edited.\nGiven input:\nbr\n1\nThe output is:\nFinding 2 players...\n\n[p0157:c01] (page 157, ch.6 §6.3 Variable scope)\ndef print_greeting():\nprint(\"Good day,\")\nprint_time()\ndef print_time():\nout_str = \"Time is \" + str(hour) + \":\" + str(min)\nprint(out_str)\nhour = int(input())\nmin = int(input())\nprint_greeting()\na. print_greeting()",
+  "usage": {
+   "in": 7301,
+   "out": 127,
+   "llm_calls": 5
+  },
+  "cost_usd": 0.001171,
+  "seconds": 6.05
+ },
+ {
+  "query_id": "u03",
+  "split": "dev",
+  "config": "A5_hybrid_fix",
+  "model": "openai/gpt-4o-mini",
+  "question": "What is the base case of a recursive function?",
+  "filter": null,
+  "status": "abstain",
+  "answer": "The passages do not cover the concept of a base case in a recursive function.",
+  "citations": [],
+  "reason": "model_abstained",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 0,
+    "query": "base case recursive function",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0163:c04",
+      "page": 163,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p0149:c03",
+      "page": 149,
+      "score": 0.02991
+     },
+     {
+      "rank": 3,
+      "id": "p0148:c04",
+      "page": 148,
+      "score": 0.02973
+     },
+     {
+      "rank": 4,
+      "id": "p0153:c00",
+      "page": 153,
+      "score": 0.02951
+     },
+     {
+      "rank": 5,
+      "id": "p0167:c00",
+      "page": 167,
+      "score": 0.02765
+     }
+    ],
+    "returned_ids": [
+     "p0163:c04",
+     "p0149:c03",
+     "p0148:c04",
+     "p0153:c00",
+     "p0167:c00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 1,
+    "query": "recursive function base case",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0163:c04",
+      "page": 163,
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p0148:c04",
+      "page": 148,
+      "score": 0.03028
+     },
+     {
+      "rank": 3,
+      "id": "p0149:c03",
+      "page": 149,
+      "score": 0.03016
+     },
+     {
+      "rank": 4,
+      "id": "p0164:c00",
+      "page": 164,
+      "score": 0.02939
+     },
+     {
+      "rank": 5,
+      "id": "p0153:c00",
+      "page": 153,
+      "score": 0.02896
+     }
+    ],
+    "returned_ids": [
+     "p0163:c04",
+     "p0148:c04",
+     "p0149:c03",
+     "p0164:c00",
+     "p0153:c00"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_textbook",
+    "turn": 2,
+    "query": "base case",
+    "filter": {
+     "chapter": 6
+    },
+    "filter_source": "model",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p0163:c04",
+      "page": 163,
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p0164:c00",
+      "page": 164,
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p0148:c04",
+      "page": 148,
+      "score": 0.03002
+     },
+     {
+      "rank": 4,
+      "id": "p0147:c00",
+      "page": 147,
+      "score": 0.01587
+     },
+     {
+      "rank": 5,
+      "id": "p0151:c02",
+      "page": 151,
+      "score": 0.01562
+     }
+    ],
+    "returned_ids": [
+     "p0163:c04",
+     "p0164:c00",
+     "p0148:c04",
+     "p0147:c00",
+     "p0151:c02"
+    ]
+   },
+   {
+    "event": "search_limit",
+    "args": {
+     "query": "recursive function",
+     "chapter": 6
+    }
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": true,
+    "citations": []
+   }
+  ],
+  "n_searches": 3,
+  "context_ids": [
+   "p0163:c04",
+   "p0149:c03",
+   "p0148:c04",
+   "p0153:c00",
+   "p0167:c00",
+   "p0164:c00",
+   "p0147:c00",
+   "p0151:c02"
+  ],
+  "context_chars": 3294,
+  "context": "[p0163:c04] (page 163, ch.6 §6.4 Parameters)\na. immutable\nb. mutable\n11 . On line 16, unit ________.\na. refers to an object with the value \"C\"\nb. does not exist\nPrinting right triangle area\nWrite a function, print_area(), that takes in the base and height of a right triangle and prints the\n\n[p0149:c03] (page 149, ch.6 §6.1 Defining functions)\na. print_pc_specs\nb. print_pc_specs()\nc. print_pc_specs():\n7 . Which is an appropriate name for a function that calculates a user's taxes?\na. calc_tax\nb. calculate user tax\nc. c_t\nBenefits of functions\nA function promotes modularity by putting code statements related to a single task in a separate group. The\nbody of a function can be executed repeatedly with multiple function calls, so a function promotes reusability.\nModular, reusable code is easier to modify and is shareable among programmers to avoid reinventing the\nwheel.\n\n[p0148:c04] (page 148, ch.6 §6.1 Defining functions)\nprint(\"Area is\", width*height)\na. 3\nb. 5\nc. 6\nDefining a function\nA function is defined using the def keyword. The first line contains def followed by the function name (in\nsnake case), parentheses (with any parameters-discussed later), and a colon. The indented body begins with\na documentation string describing the function's task and contains the function statements. A function must\n\n[p0153:c00] (page 153, ch.6 §6.2 Control flow)\nb. 8\nc. 12\n4 . What is the output?\ndef park_greet():\n\"\"\"Output greeting.\"\"\"\nprint(\"Welcome to the park\")\nprint(\"Open sunrise to sunset\")\npark_greet()\na. Welcome to the park\nb. Welcome to the park\nOpen sunrise to sunset\nc. Open sunrise to sunset\nWelcome to the park\nFunctions calling functions\nFunctions frequently call other functions to keep the modularity of each function performing one task. Ex: A\nfunction that calculates an order total may call a function that calculates sales tax. When a function called from\nanother function finishes execution, control flow returns to the calling function.\n\n[p0167:c00] (page 167, ch.6 §6.5 Return values)\ndef inc_volume(level, max):\nif level < max:\nreturn level\nlevel += 1\nelse:\nreturn level\nvol1 = inc_volume(9, 10)\nprint(vol1)\nvol2 = inc_volume(10, 10)\nprint(vol2)\na. 9\n10\nb. 10\n10\nc. 10\n11\nUsing functions as values\nFunctions are objects that evaluate to values, so function calls can be used in expressions. A function call can\nbe combined with other function calls, variables, and literals as long as the return value is compatible with the\noperation.\n\n[p0164:c00] (page 164, ch.6 §6.4 Parameters)\ntriangle's area. The area of a right triangle is , where b is the base and h is the height.\nGiven input:\n3\n4\nThe output is:\nTriangle area: 6.0\nCurving scores\nWrite a function, print_scores(), that takes in a list of test scores and a number representing how many\npoints to add. For each score, print the original score and the sum of the score and bonus. Make sure not to\nchange the list.\n\n[p0147:c00] (page 147, ch.6 §6.0 Chapter introduction)\nFigure 6.1 credit: modification of work \"IMG_3037\", by Jay Roc/Flickr, Public Domain\nChapter Outline\n6.1 Defining functions\n6.2 Control flow\n6.3 Variable scope\n6.4 Parameters\n6.5 Return values\n6.6 Keyword arguments\n\n[p0151:c02] (page 151, ch.6 §6.1 Defining functions)\nDo you accept the terms and conditions?\nY\nThank you for accepting.",
+  "usage": {
+   "in": 7706,
+   "out": 122,
+   "llm_calls": 5
+  },
+  "cost_usd": 0.001229,
+  "seconds": 5.63
+ }
+]

@@ -1,0 +1,28 @@
+{
+ "_how": "Same procedure as dev/test. test2 gold was not edited after the run.",
+ "A0_dense": {
+  "grades": {"m04": 0},
+  "unsupported_citations": {},
+  "context_grades": {"m01": 2, "m02": 2, "m03": 2, "m04": 0, "m05": 2, "m06": 2},
+  "notes": {
+   "m03": "Correct; p0165:c00 ('finishes the function execution and can specify a value to return to the function's caller') is valid alternative evidence to the p.164 gold; auto Context Evidence counts a miss.",
+   "m04": "False abstention: model-chosen filter chapter=5 + short queries 'for loop range'/'while loop' never retrieved p.131 (Example 5.2)."}
+ },
+ "A4_dense_fix": {
+  "grades": {"m04": 0},
+  "unsupported_citations": {"m04": ["p0125:c03"]},
+  "context_grades": {"m01": 2, "m02": 2, "m03": 2, "m04": 0, "m05": 2, "m06": 2},
+  "notes": {
+   "m03": "Correct, alternative evidence p0165:c00/p0151:c04.",
+   "m04": "Conclusion ('for is more concise') matches the expected answer but NO cited chunk states it: p0130:c00 only describes range(), p0125:c03 only defines while. Answer from general knowledge -> 0 per rubric ('thiếu evidence'). Same queries/filter as A0; A4 answered where A0 abstained.",
+   "m06": "Extra claim 'read in values and return values' not in p0148:c00 (minor); core definition verbatim."}
+ },
+ "A7_dense_userfilter": {
+  "grades": {},
+  "unsupported_citations": {},
+  "context_grades": {"m01": 2, "m02": 2, "m03": 2, "m04": 2, "m05": 2, "m06": 2},
+  "notes": {
+   "m03": "Correct; last sentence (control flow returns to the calling function) is supported by p0153:c00 in context but not cited (minor).",
+   "m04": "Correct: without a chapter filter the more specific query retrieved p0131:c00/c01 (gold)."}
+ }
+}

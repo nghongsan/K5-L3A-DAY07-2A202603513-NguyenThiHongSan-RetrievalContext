@@ -1,0 +1,27 @@
+{
+ "page": 192,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                              | 2019 | 2020 | 2021 | 2022 | 2023e |\n|------------------------------|------|------|------|------|-------|\n| Production2                  | 100  | 100  | 100  | 200  | 200   |\n| Imports for consumption      | 1,160| 807  | 969  | 950  | 670   |\n| Exports, all formse          | 8    | 18   | 30   | 110  | 70    |\n| Consumption, apparent2, 3    | 1,300| 900  | 1,000| 1,000| 800   |\n| Price, dollars per metric ton:|      |      |      |      |       |\n| Rutile, bulk, minimum 95% TiO2, free on board (f.o.b.) Australia4 | 1,110| 1,170| 1,300| 1,470| 1,490 |\n| Ilmenite and leucoxene, bulk, f.o.b. Australia5 | 478  | 459  | 595  | 530  | 330   |\n| Ilmenite, average unit value of imports6 | 186  | 215  | 240  | 285  | 390   |\n| Slag, 80%–95% TiO2, average unit value of imports6 | 792  | 757  | 774  | 867  | 1,000 |\n| Employment, mine and mill, number | 310  | 315  | 290  | 305  | 410   |\n| Net import reliance7 as a percentage of apparent consumption | 92   | 89   | 90   | 81   | 75    |",
+   "notes": "2 Apparent consumption is production plus imports minus exports.\n3 Includes consumption of synthetic rutile.\n4 Source: Argus Media Ltd.\n5 Source: Australian Bureau of Statistics.\n6 Source: U.S. Census Bureau.\n7 Net import reliance = (imports – exports) / apparent consumption × 100."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "middle right",
+   "content": "| Item                   | Number       | Normal Trade Relations 12–31–23 |\n|------------------------|--------------|--------------------------------|\n| Synthetic rutile       | 2614.00.3000 | Free.                          |\n| Ilmenite and ilmenite sand | 2614.00.6020 | Free.                          |\n| Rutile concentrate     | 2614.00.6040 | Free.                          |\n| Titanium slag          | 2620.99.5000 | Free.                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 632
+ },
+ "seconds": 6.2
+}

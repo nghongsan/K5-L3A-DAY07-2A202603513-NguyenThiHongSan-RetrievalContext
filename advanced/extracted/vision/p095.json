@@ -1,0 +1,20 @@
+{
+ "page": 95,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Refinery Production and Reserves",
+   "location": "lower half",
+   "content": "| Country               | Refinery production¹, 6 | Reserves⁷                         |\n|-----------------------|-----------------------------|--------------------------------------|\n|                       | 2022                        | 2023                                 |\n| United States         | —                        | —                                 |\n| Belgium               | 19                          | 18                                   |\n| Canada                | 39                          | 37                                   |\n| China                 | 670                         | 650                                  |\n| France                | 19                          | 12                                   |\n| Japan                 | 66                          | 64                                   |\n| Korea, Republic of    | 180                         | 200                                  |\n| Russia                | 5                           | 5                                    |\n| Uzbekistan            | 1                           | 1                                    |\n| World total (rounded) | 999                         | 990                                  |\n\nQuantitative estimates of reserves were not available.",
+   "notes": "¹Estimated. NA Not available. — Zero.\n⁷See Appendix C for resource and reserve definitions and information concerning data sources.\n⁶Refinery production data for indium were limited or unavailable for most countries. Estimates were derived from trade data, production capacity, and (or) changes in related lead and zinc smelter production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 307
+ },
+ "seconds": 3.1
+}

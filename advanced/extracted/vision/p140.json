@@ -1,0 +1,27 @@
+{
+ "page": 140,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                  | 2019   | 2020    | 2021    | 2022    | 2023e   |\n|---------------------------|--------|---------|---------|---------|---------|\n| Mine production:1          |        |         |         |         |         |\n| Palladium                 | 14,300 | 14,600  | 13,700  | 10,100  | 9,800   |\n| Platinum                  | 4,150  | 4,200   | 4,020   | 3,000   | 2,900   |\n| Imports for consumption:2 |        |         |         |         |         |\n| Palladium                 | 84,300 | 76,400  | 72,600  | 65,200  | 64,000  |\n| Platinum                  | 42,300 | 64,900  | 67,900  | 64,200  | 70,000  |\n| PGM waste and scrap       | 35,200 | 185,000 | 160,000 | 41,500  | 32,000  |\n| Iridium                   | 875    | 1,620   | 2,310   | 1,610   | 1,900   |\n| Osmium                    | (3)    | 1       | 1       | 1       | (3)     |\n| Rhodium                   | 15,000 | 20,700  | 16,500  | 13,200  | 11,000  |\n| Ruthenium                 | 11,200 | 13,900  | 18,000  | 13,300  | 11,000  |\n| Exports:4                 |        |         |         |         |         |\n| Palladium                 | 55,500 | 48,600  | 43,900  | 42,200  | 34,000  |\n| Platinum                  | 17,400 | 28,900  | 29,400  | 23,100  | 12,000  |\n| PGM waste and scrap       | 20,800 | 33,200  | 37,800  | 35,200  | 13,000  |\n| Rhodium                   | 1,210  | 1,480   | 1,350   | 677     | 180     |\n| Other PGMs                | 1,330  | 1,440   | 2,180   | 906     | 620     |\n| Consumption, apparent:5, 6|        |         |         |         |         |\n| Palladium                 | 85,100 | 82,300  | 82,400  | 74,100  | 82,000  |\n| Platinum                  | 37,000 | 47,300  | 51,500  | 53,100  | 70,000  |\n| Price, dollars per troy ounce:7 |        |         |         |         |         |\n| Palladium                 | 1,544.31 | 2,205.27 | 2,419.18 | 2,133.81 | 1,500   |\n| Platinum                  | 866.94 | 886.02  | 1,094.31 | 966.54  | 1,000   |\n| Iridium                   | 1,485.80 | 1,633.51 | 5,158.40 | 4,581.93 | 4,600   |\n| Rhodium                   | 3,918.78 | 11,205.06 | 20,254.10 | 15,585.00 | 7,700   |\n| Ruthenium                 | 262.59 | 271.83  | 576.12  | 577.02  | 470     |\n| Employment, mine, number  | 1,379  | 1,475   | 1,598   | 1,555   | 1,500   |\n| Net import reliance6, 8 as a percentage of apparent consumption: |        |         |         |         |         |\n| Palladium                 | 34     | 34      | 35      | 31      | 37      |\n| Platinum                  | 67     | 76      | 75      | 77      | 83      |",
+   "notes": "Footnotes: 1, 2, 3, 4, 5, 6, 7, 8 (not fully transcribed here)."
+  },
+  {
+   "type": "text",
+   "title": "Additional Informative Text",
+   "location": "lower half",
+   "content": "Domestic Production and Use: One company in Montana produced PGMs with an estimated value of about $510 million. Small quantities of primary PGMs also were recovered as byproducts of copper-nickel mining in Michigan; however, this material was sold to foreign companies for refining. The leading domestic use for PGMs was in catalytic converters to decrease harmful emissions from automobiles. PGMs are also used in catalysts for bulk-chemical production and petroleum refining; dental and medical devices; electronic applications, such as in computer hard disks, hybridized integrated circuits, and multilayer ceramic capacitors; glass manufacturing; investment; jewelry; and laboratory equipment.\n\nRecycling: About 120,000 kilograms of palladium and platinum were recovered globally from new and old scrap in 2023, including about 42,000 kilograms of palladium and 9,000 kilograms of platinum recovered from automobile catalytic converters in the United States.\n\nImport Sources (2019–22): Palladium: Russia, 32%; South Africa, 31%; Italy, 8%; Canada, 7%; and other, 22%. Platinum: South Africa, 33%; Switzerland, 15%; Germany, 14%; Belgium, 9%; and other, 29%.\n\nTariff: All unwrought and semimanufactured forms of PGMs are imported duty free. See footnotes for specific Harmonized Tariff Schedule of the United States codes.\n\nDepletion Allowance: 22% (domestic), 14% (foreign).",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1394
+ },
+ "seconds": 9.8
+}

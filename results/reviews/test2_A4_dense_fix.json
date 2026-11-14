@@ -1,0 +1,66 @@
+[
+ {
+  "query_id": "m01",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m02",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m03",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "note": "Correct, alternative evidence p0165:c00/p0151:c04.",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m04",
+  "citation_support": [
+   true,
+   false
+  ],
+  "note": "Conclusion ('for is more concise') matches the expected answer but NO cited chunk states it: p0130:c00 only describes range(), p0125:c03 only defines while. Answer from general knowledge -> 0 per rubric ('thiếu evidence'). Same queries/filter as A0; A4 answered where A0 abstained.",
+  "answer_grade": 0
+ },
+ {
+  "query_id": "m05",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m06",
+  "citation_support": [
+   true
+  ],
+  "note": "Extra claim 'read in values and return values' not in p0148:c00 (minor); core definition verbatim.",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "v01",
+  "citation_support": [],
+  "note": "",
+  "abstention_correct": true
+ },
+ {
+  "query_id": "v02",
+  "citation_support": [],
+  "note": "",
+  "abstention_correct": true
+ }
+]

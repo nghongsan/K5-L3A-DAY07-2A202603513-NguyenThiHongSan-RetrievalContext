@@ -1,0 +1,114 @@
+[
+ {
+  "config": "R1_dense",
+  "split": "test2",
+  "method": "dense",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "hypothesis": "Baseline: Day 6 dense retrieval, top-3, 1500-char budget.",
+  "N": 6,
+  "hit1": 3,
+  "hit3": 5,
+  "mrr10": 0.611,
+  "context_hit": 5,
+  "avg_context_chars": 1252,
+  "median_ms": 17.8,
+  "misses_hit3": [
+   "m03"
+  ],
+  "misses_context": [
+   "m03"
+  ],
+  "model_load_s": 8.75,
+  "cost_usd": 0.0,
+  "llm_tokens": null,
+  "rerank_parse_failures": null
+ },
+ {
+  "config": "R2_bm25",
+  "split": "test2",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "hypothesis": "Lexical BM25 catches exact code tokens/keywords (e.g. 'elif', '**') that e5 blurs.",
+  "N": 6,
+  "hit1": 1,
+  "hit3": 4,
+  "mrr10": 0.389,
+  "context_hit": 4,
+  "avg_context_chars": 1261,
+  "median_ms": 0.2,
+  "misses_hit3": [
+   "m02",
+   "m06"
+  ],
+  "misses_context": [
+   "m02",
+   "m06"
+  ],
+  "model_load_s": 8.75,
+  "cost_usd": 0.0,
+  "llm_tokens": null,
+  "rerank_parse_failures": null
+ },
+ {
+  "config": "R3_hybrid",
+  "split": "test2",
+  "method": "hybrid",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "hypothesis": "RRF of dense+BM25 combines paraphrase recall and exact-term precision.",
+  "N": 6,
+  "hit1": 2,
+  "hit3": 3,
+  "mrr10": 0.515,
+  "context_hit": 3,
+  "avg_context_chars": 1287,
+  "median_ms": 15.5,
+  "misses_hit3": [
+   "m02",
+   "m03",
+   "m06"
+  ],
+  "misses_context": [
+   "m02",
+   "m03",
+   "m06"
+  ],
+  "model_load_s": 8.75,
+  "cost_usd": 0.0,
+  "llm_tokens": null,
+  "rerank_parse_failures": null
+ },
+ {
+  "config": "I1_hybrid_k5",
+  "split": "test2",
+  "method": "hybrid",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "hypothesis": "Improvement 1: evidence often ranks 4-5; larger top-k/budget raises context evidence rate.",
+  "N": 6,
+  "hit1": 2,
+  "hit3": 3,
+  "mrr10": 0.515,
+  "context_hit": 5,
+  "avg_context_chars": 2170,
+  "median_ms": 16.9,
+  "misses_hit3": [
+   "m02",
+   "m03",
+   "m06"
+  ],
+  "misses_context": [
+   "m02"
+  ],
+  "model_load_s": 8.75,
+  "cost_usd": 0.0,
+  "llm_tokens": null,
+  "rerank_parse_failures": null
+ }
+]

@@ -1,0 +1,5192 @@
+[
+ {
+  "query_id": "AD-T1",
+  "group": "table",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "According to Table 1 (U.S. Mineral Industry Trends), how many coal-mining employees (all employees) were there in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p013-v1",
+    "page": 13
+   },
+   {
+    "rank": 2,
+    "id": "p013-t1",
+    "page": 13
+   },
+   {
+    "rank": 3,
+    "id": "p013-t2",
+    "page": 13
+   },
+   {
+    "rank": 4,
+    "id": "p013-v2",
+    "page": 13
+   },
+   {
+    "rank": 5,
+    "id": "p010-t3",
+    "page": 10
+   },
+   {
+    "rank": 6,
+    "id": "p009-t7",
+    "page": 9
+   }
+  ],
+  "status": "answered",
+  "answer": "According to Table 1 (U.S. Mineral Industry Trends), there were 41 thousand coal-mining employees (all employees) in 2023. [p013-v1]",
+  "citations": [
+   "p013-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Table 1",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p013-v1",
+      "page": 13,
+      "kind": "visual",
+      "etype": "table",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p180-v1",
+      "page": 180,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02822
+     },
+     {
+      "rank": 3,
+      "id": "p112-v1",
+      "page": 112,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02821
+     },
+     {
+      "rank": 4,
+      "id": "p082-v1",
+      "page": 82,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02649
+     },
+     {
+      "rank": 5,
+      "id": "p128-v1",
+      "page": 128,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02397
+     },
+     {
+      "rank": 6,
+      "id": "p206-v1",
+      "page": 206,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02368
+     }
+    ],
+    "returned_ids": [
+     "p013-v1",
+     "p180-v1",
+     "p112-v1",
+     "p082-v1",
+     "p128-v1",
+     "p206-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 13,
+    "ids": [
+     "p013-t1",
+     "p013-t2",
+     "p013-v1",
+     "p013-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p013-v1"
+    ]
+   },
+   {
+    "event": "citations_appended",
+    "ids": [
+     "p013-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p013-v1",
+   "p180-v1",
+   "p112-v1",
+   "p082-v1",
+   "p128-v1",
+   "p206-v1",
+   "p013-t1",
+   "p013-t2",
+   "p013-v2"
+  ],
+  "cited_pages": [
+   13
+  ],
+  "usage": {
+   "in": 8754,
+   "out": 88,
+   "llm_calls": 3,
+   "verifier_in": 880,
+   "verifier_out": 13,
+   "verifier_cost": 0.001864
+  },
+  "cost_usd": 0.020076,
+  "seconds": 5.0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-T2",
+  "group": "table",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "What were the estimated world total rare-earth mine production in 2023 and the world rare-earth reserves?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p149-t2",
+    "page": 149
+   },
+   {
+    "rank": 2,
+    "id": "p203-t2",
+    "page": 203
+   },
+   {
+    "rank": 3,
+    "id": "p148-t1",
+    "page": 148
+   },
+   {
+    "rank": 4,
+    "id": "p149-t1",
+    "page": 149
+   },
+   {
+    "rank": 5,
+    "id": "p149-t3",
+    "page": 149
+   },
+   {
+    "rank": 6,
+    "id": "p203-t3",
+    "page": 203
+   }
+  ],
+  "status": "answered",
+  "answer": "The estimated world total rare-earth mine production in 2023 was 350,000 metric tons of rare-earth-oxide (REO) equivalent. The world rare-earth reserves were estimated at 110,000,000 metric tons of REO equivalent [p149-t3].",
+  "citations": [
+   "p149-t3"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "rare-earth world mine production 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p149-t2",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p203-t2",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03154
+     },
+     {
+      "rank": 3,
+      "id": "p148-t1",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 4,
+      "id": "p149-t1",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03102
+     },
+     {
+      "rank": 5,
+      "id": "p203-t3",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02947
+     },
+     {
+      "rank": 6,
+      "id": "p149-t3",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0289
+     }
+    ],
+    "returned_ids": [
+     "p149-t2",
+     "p203-t2",
+     "p148-t1",
+     "p149-t1",
+     "p203-t3",
+     "p149-t3"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 149,
+    "ids": [
+     "p149-t1",
+     "p149-t2",
+     "p149-t3",
+     "p149-t4",
+     "p149-t5",
+     "p149-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p149-t3"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p149-t2",
+   "p203-t2",
+   "p148-t1",
+   "p149-t1",
+   "p203-t3",
+   "p149-t3",
+   "p149-t4",
+   "p149-t5",
+   "p149-v1"
+  ],
+  "cited_pages": [
+   149
+  ],
+  "usage": {
+   "in": 5525,
+   "out": 119,
+   "llm_calls": 3,
+   "verifier_in": 616,
+   "verifier_out": 13,
+   "verifier_cost": 0.001336
+  },
+  "cost_usd": 0.013338,
+  "seconds": 5.7,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-T3",
+  "group": "table",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "How many metric tons of cobalt (cobalt content) did the United States import for consumption in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p066-t1",
+    "page": 66
+   },
+   {
+    "rank": 2,
+    "id": "p066-t3",
+    "page": 66
+   },
+   {
+    "rank": 3,
+    "id": "p066-t2",
+    "page": 66
+   },
+   {
+    "rank": 4,
+    "id": "p067-t1",
+    "page": 67
+   },
+   {
+    "rank": 5,
+    "id": "p067-t3",
+    "page": 67
+   },
+   {
+    "rank": 6,
+    "id": "p067-t5",
+    "page": 67
+   }
+  ],
+  "status": "answered",
+  "answer": "In 2023, the United States imported 9,600 metric tons of cobalt (cobalt content) for consumption [p066-t2].",
+  "citations": [
+   "p066-t2"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "cobalt imports for consumption 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p066-t3",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p067-t5",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p066-t2",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03151
+     },
+     {
+      "rank": 4,
+      "id": "p067-t1",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 5,
+      "id": "p066-t1",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03055
+     },
+     {
+      "rank": 6,
+      "id": "p066-t4",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03008
+     }
+    ],
+    "returned_ids": [
+     "p066-t3",
+     "p067-t5",
+     "p066-t2",
+     "p067-t1",
+     "p066-t1",
+     "p066-t4"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 62,
+    "ids": [
+     "p062-t1",
+     "p062-t2",
+     "p062-t3",
+     "p062-t4",
+     "p062-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 2,
+    "page": 66,
+    "ids": [
+     "p066-t1",
+     "p066-t2",
+     "p066-t3",
+     "p066-t4",
+     "p066-v1",
+     "p066-v2",
+     "p066-v3"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p066-t2"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 2,
+  "context_ids": [
+   "p066-t3",
+   "p067-t5",
+   "p066-t2",
+   "p067-t1",
+   "p066-t1",
+   "p066-t4",
+   "p062-t1",
+   "p062-t2",
+   "p062-t3",
+   "p062-t4",
+   "p062-v1",
+   "p066-v1",
+   "p066-v2",
+   "p066-v3"
+  ],
+  "cited_pages": [
+   66
+  ],
+  "usage": {
+   "in": 9743,
+   "out": 107,
+   "llm_calls": 4,
+   "verifier_in": 623,
+   "verifier_out": 13,
+   "verifier_cost": 0.00135
+  },
+  "cost_usd": 0.021692,
+  "seconds": 7.9,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-I1",
+  "group": "image",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "In the diagram of the role of nonfuel mineral commodities in the U.S. economy, what were the net exports of old scrap in 2023, and which examples are given?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p008-t1",
+    "page": 8
+   },
+   {
+    "rank": 2,
+    "id": "p008-v1",
+    "page": 8
+   },
+   {
+    "rank": 3,
+    "id": "p025-t9",
+    "page": 25
+   },
+   {
+    "rank": 4,
+    "id": "p009-t7",
+    "page": 9
+   },
+   {
+    "rank": 5,
+    "id": "p025-t8",
+    "page": 25
+   },
+   {
+    "rank": 6,
+    "id": "p031-t2",
+    "page": 31
+   }
+  ],
+  "status": "answered",
+  "answer": "In the diagram of the role of nonfuel mineral commodities in the U.S. economy (Figure 1), the net exports of old scrap in 2023 were $17 billion. The examples given for old scrap are gold and steel (\"Gold, Steel, and so forth\"). Exports of old scrap were $25 billion and imports were $8 billion, resulting in net exports of $17 billion [p008-v1].",
+  "citations": [
+   "p008-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "diagram role of nonfuel mineral commodities in the U.S. economy",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p008-v1",
+      "page": 8,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p005-t1",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p008-t1",
+      "page": 8,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p016-v2",
+      "page": 16,
+      "kind": "visual",
+      "etype": "pie chart",
+      "score": 0.03055
+     },
+     {
+      "rank": 5,
+      "id": "p010-t2",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03055
+     },
+     {
+      "rank": 6,
+      "id": "p009-t7",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02986
+     }
+    ],
+    "returned_ids": [
+     "p008-v1",
+     "p005-t1",
+     "p008-t1",
+     "p016-v2",
+     "p010-t2",
+     "p009-t7"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 8,
+    "ids": [
+     "p008-t1",
+     "p008-t2",
+     "p008-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p008-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p008-v1",
+   "p005-t1",
+   "p008-t1",
+   "p016-v2",
+   "p010-t2",
+   "p009-t7",
+   "p008-t2"
+  ],
+  "cited_pages": [
+   8
+  ],
+  "usage": {
+   "in": 6054,
+   "out": 156,
+   "llm_calls": 3,
+   "verifier_in": 946,
+   "verifier_out": 13,
+   "verifier_cost": 0.001996
+  },
+  "cost_usd": 0.015352,
+  "seconds": 5.2,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-I2",
+  "group": "image",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "In the mineral-resource classification diagram (Figure C1), into which two categories is 'Demonstrated' (identified resources) subdivided?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p213-v1",
+    "page": 213
+   },
+   {
+    "rank": 2,
+    "id": "p213-t1",
+    "page": 213
+   },
+   {
+    "rank": 3,
+    "id": "p213-v2",
+    "page": 213
+   },
+   {
+    "rank": 4,
+    "id": "p211-t8",
+    "page": 211
+   },
+   {
+    "rank": 5,
+    "id": "p214-t5",
+    "page": 214
+   },
+   {
+    "rank": 6,
+    "id": "p212-t5",
+    "page": 212
+   }
+  ],
+  "status": "answered",
+  "answer": "In the mineral-resource classification diagram (Figure C1), 'Demonstrated' (identified resources) is subdivided into two categories: 'Measured' and 'Indicated' [p213-v1].",
+  "citations": [
+   "p213-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure C1",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p213-v1",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p213-t1",
+      "page": 213,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 3,
+      "id": "p211-t6",
+      "page": 211,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03128
+     },
+     {
+      "rank": 4,
+      "id": "p212-t8",
+      "page": 212,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02971
+     },
+     {
+      "rank": 5,
+      "id": "p213-v2",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.02951
+     },
+     {
+      "rank": 6,
+      "id": "p005-t7",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02878
+     }
+    ],
+    "returned_ids": [
+     "p213-v1",
+     "p213-t1",
+     "p211-t6",
+     "p212-t8",
+     "p213-v2",
+     "p005-t7"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 213,
+    "ids": [
+     "p213-t1",
+     "p213-v1",
+     "p213-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p213-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p213-v1",
+   "p213-t1",
+   "p211-t6",
+   "p212-t8",
+   "p213-v2",
+   "p005-t7"
+  ],
+  "cited_pages": [
+   213
+  ],
+  "usage": {
+   "in": 4931,
+   "out": 99,
+   "llm_calls": 3,
+   "verifier_in": 573,
+   "verifier_out": 13,
+   "verifier_cost": 0.00125
+  },
+  "cost_usd": 0.011904,
+  "seconds": 4.7,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-I3",
+  "group": "image",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "On the world map of leading import sources (Figure 3), in which class (number of commodities) is Brazil shown?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p012-v1",
+    "page": 12
+   },
+   {
+    "rank": 2,
+    "id": "p010-t2",
+    "page": 10
+   },
+   {
+    "rank": 3,
+    "id": "p012-t1",
+    "page": 12
+   },
+   {
+    "rank": 4,
+    "id": "p011-v1a",
+    "page": 11
+   },
+   {
+    "rank": 5,
+    "id": "p011-t2",
+    "page": 11
+   },
+   {
+    "rank": 6,
+    "id": "p172-v2",
+    "page": 172
+   }
+  ],
+  "status": "answered",
+  "answer": "On the world map of leading import sources (Figure 3), Brazil is shown in the class of 7 to 12 commodities for which the United States was greater than 50% net import reliant during 2019–22. [p012-v1]",
+  "citations": [
+   "p012-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 3",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p012-v1",
+      "page": 12,
+      "kind": "visual",
+      "etype": "map",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p213-t1",
+      "page": 213,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p005-t1",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0311
+     },
+     {
+      "rank": 4,
+      "id": "p213-v2",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.03048
+     },
+     {
+      "rank": 5,
+      "id": "p031-t2",
+      "page": 31,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03016
+     },
+     {
+      "rank": 6,
+      "id": "p019-t1",
+      "page": 19,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03012
+     }
+    ],
+    "returned_ids": [
+     "p012-v1",
+     "p213-t1",
+     "p005-t1",
+     "p213-v2",
+     "p031-t2",
+     "p019-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 12,
+    "ids": [
+     "p012-t1",
+     "p012-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p012-v1"
+    ]
+   },
+   {
+    "event": "citations_appended",
+    "ids": [
+     "p012-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p012-v1",
+   "p213-t1",
+   "p005-t1",
+   "p213-v2",
+   "p031-t2",
+   "p019-t1",
+   "p012-t1"
+  ],
+  "cited_pages": [
+   12
+  ],
+  "usage": {
+   "in": 5065,
+   "out": 104,
+   "llm_calls": 3,
+   "verifier_in": 778,
+   "verifier_out": 13,
+   "verifier_cost": 0.00166
+  },
+  "cost_usd": 0.012622,
+  "seconds": 4.9,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-C1",
+  "group": "chart",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "What was the 2023 U.S. net import reliance for natural graphite, and what were its leading import sources (2019-22)?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p088-t4",
+    "page": 88
+   },
+   {
+    "rank": 2,
+    "id": "p011-v1a",
+    "page": 11
+   },
+   {
+    "rank": 3,
+    "id": "p088-t3",
+    "page": 88
+   },
+   {
+    "rank": 4,
+    "id": "p028-t1",
+    "page": 28
+   },
+   {
+    "rank": 5,
+    "id": "p088-t1",
+    "page": 88
+   },
+   {
+    "rank": 6,
+    "id": "p028-v1",
+    "page": 28
+   }
+  ],
+  "status": "answered",
+  "answer": "The 2023 U.S. net import reliance for natural graphite was 100% of apparent consumption. The leading import sources for natural graphite from 2019 to 2022 were China, Mexico, Canada, and Madagascar [p011-v1a].",
+  "citations": [
+   "p011-v1a"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "2023 U.S. net import reliance for natural graphite",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p088-t4",
+      "page": 88,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "p088-t1",
+      "page": 88,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03151
+     },
+     {
+      "rank": 3,
+      "id": "p028-t1",
+      "page": 28,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03048
+     },
+     {
+      "rank": 4,
+      "id": "p011-v1a",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.03012
+     },
+     {
+      "rank": 5,
+      "id": "p089-t1",
+      "page": 89,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02941
+     },
+     {
+      "rank": 6,
+      "id": "p028-v1",
+      "page": 28,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.02912
+     }
+    ],
+    "returned_ids": [
+     "p088-t4",
+     "p088-t1",
+     "p028-t1",
+     "p011-v1a",
+     "p089-t1",
+     "p028-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 11,
+    "ids": [
+     "p011-t1",
+     "p011-t2",
+     "p011-t3",
+     "p011-v1a",
+     "p011-v1b",
+     "p011-v1c",
+     "p011-v1d"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p011-v1a"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p088-t4",
+   "p088-t1",
+   "p028-t1",
+   "p011-v1a",
+   "p089-t1",
+   "p028-v1",
+   "p011-t1",
+   "p011-t2",
+   "p011-t3",
+   "p011-v1b",
+   "p011-v1c",
+   "p011-v1d"
+  ],
+  "cited_pages": [
+   11
+  ],
+  "usage": {
+   "in": 6738,
+   "out": 119,
+   "llm_calls": 3,
+   "verifier_in": 2545,
+   "verifier_out": 13,
+   "verifier_cost": 0.005194
+  },
+  "cost_usd": 0.019622,
+  "seconds": 5.3,
+  "page_hit1": false,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-C2",
+  "group": "chart",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "In Figure 10, what was the 5-year compound annual growth rate (2019-2023) in the price of battery-grade lithium?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p029-v1",
+    "page": 29
+   },
+   {
+    "rank": 2,
+    "id": "p114-t4",
+    "page": 114
+   },
+   {
+    "rank": 3,
+    "id": "p114-v1",
+    "page": 114
+   },
+   {
+    "rank": 4,
+    "id": "p114-t2",
+    "page": 114
+   },
+   {
+    "rank": 5,
+    "id": "p114-t3",
+    "page": 114
+   },
+   {
+    "rank": 6,
+    "id": "p088-t2",
+    "page": 88
+   }
+  ],
+  "status": "answered",
+  "answer": "According to Figure 10, the 5-year compound annual growth rate (CAGR) in the price of battery-grade lithium from 2019 to 2023 was 40%. [p029-v1]",
+  "citations": [
+   "p029-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 10",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p029-v1",
+      "page": 29,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p213-t1",
+      "page": 213,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "p005-t6",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03041
+     },
+     {
+      "rank": 4,
+      "id": "p213-v2",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.03009
+     },
+     {
+      "rank": 5,
+      "id": "p005-t1",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02973
+     },
+     {
+      "rank": 6,
+      "id": "p005-t7",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02963
+     }
+    ],
+    "returned_ids": [
+     "p029-v1",
+     "p213-t1",
+     "p005-t6",
+     "p213-v2",
+     "p005-t1",
+     "p005-t7"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 29,
+    "ids": [
+     "p029-t1",
+     "p029-t2",
+     "p029-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p029-v1"
+    ]
+   },
+   {
+    "event": "citations_appended",
+    "ids": [
+     "p029-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p029-v1",
+   "p213-t1",
+   "p005-t6",
+   "p213-v2",
+   "p005-t1",
+   "p005-t7",
+   "p029-t1",
+   "p029-t2"
+  ],
+  "cited_pages": [
+   29
+  ],
+  "usage": {
+   "in": 6271,
+   "out": 95,
+   "llm_calls": 3,
+   "verifier_in": 1219,
+   "verifier_out": 13,
+   "verifier_cost": 0.002542
+  },
+  "cost_usd": 0.015844,
+  "seconds": 5.1,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-C3",
+  "group": "chart",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "In the pie chart of Figure 4, which category had the largest value of nonfuel mineral production in 2023, and what was it?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p016-v1",
+    "page": 16
+   },
+   {
+    "rank": 2,
+    "id": "p016-v2",
+    "page": 16
+   },
+   {
+    "rank": 3,
+    "id": "p009-t2",
+    "page": 9
+   },
+   {
+    "rank": 4,
+    "id": "p009-t1",
+    "page": 9
+   },
+   {
+    "rank": 5,
+    "id": "p010-t4",
+    "page": 10
+   },
+   {
+    "rank": 6,
+    "id": "p016-t1",
+    "page": 16
+   }
+  ],
+  "status": "answered",
+  "answer": "In the pie chart of Figure 4, the category with the largest value of nonfuel mineral production in 2023 was 'Natural aggregates' with a value of $35.2 billion [p016-v2].",
+  "citations": [
+   "p016-v2"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 4",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p016-v1",
+      "page": 16,
+      "kind": "visual",
+      "etype": "map",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p213-t1",
+      "page": 213,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "p213-v2",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.03041
+     },
+     {
+      "rank": 4,
+      "id": "p005-t7",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02985
+     },
+     {
+      "rank": 5,
+      "id": "p213-v1",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.02885
+     },
+     {
+      "rank": 6,
+      "id": "p005-t6",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02885
+     }
+    ],
+    "returned_ids": [
+     "p016-v1",
+     "p213-t1",
+     "p213-v2",
+     "p005-t7",
+     "p213-v1",
+     "p005-t6"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "pie chart Figure 4",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p016-v1",
+      "page": 16,
+      "kind": "visual",
+      "etype": "map",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p016-v2",
+      "page": 16,
+      "kind": "visual",
+      "etype": "pie chart",
+      "score": 0.03279
+     },
+     {
+      "rank": 3,
+      "id": "p033-v1",
+      "page": 33,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.03151
+     },
+     {
+      "rank": 4,
+      "id": "p032-v1",
+      "page": 32,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.03102
+     },
+     {
+      "rank": 5,
+      "id": "p011-v1d",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02748
+     },
+     {
+      "rank": 6,
+      "id": "p031-v1",
+      "page": 31,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02724
+     }
+    ],
+    "returned_ids": [
+     "p016-v1",
+     "p016-v2",
+     "p033-v1",
+     "p032-v1",
+     "p011-v1d",
+     "p031-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 2,
+    "page": 16,
+    "ids": [
+     "p016-t1",
+     "p016-v1",
+     "p016-v2",
+     "p016-v3"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p016-v2"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 1,
+  "context_ids": [
+   "p016-v1",
+   "p213-t1",
+   "p213-v2",
+   "p005-t7",
+   "p213-v1",
+   "p005-t6",
+   "p016-v2",
+   "p033-v1",
+   "p032-v1",
+   "p011-v1d",
+   "p031-v1",
+   "p016-t1",
+   "p016-v3"
+  ],
+  "cited_pages": [
+   16
+  ],
+  "usage": {
+   "in": 12056,
+   "out": 120,
+   "llm_calls": 4,
+   "verifier_in": 421,
+   "verifier_out": 13,
+   "verifier_cost": 0.000946
+  },
+  "cost_usd": 0.026018,
+  "seconds": 6.9,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-M1",
+  "group": "multihop",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "Using Table 1's 2023 value of metals mine production and the U.S. total nonfuel mineral production value shown in Figure 4, what share of the total did metals represent?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p013-v1",
+    "page": 13
+   },
+   {
+    "rank": 2,
+    "id": "p016-v1",
+    "page": 16
+   },
+   {
+    "rank": 3,
+    "id": "p016-t1",
+    "page": 16
+   },
+   {
+    "rank": 4,
+    "id": "p009-t1",
+    "page": 9
+   },
+   {
+    "rank": 5,
+    "id": "p009-t7",
+    "page": 9
+   },
+   {
+    "rank": 6,
+    "id": "p016-v2",
+    "page": 16
+   }
+  ],
+  "status": "answered",
+  "answer": "The value of metals mine production in 2023 was $34.9 billion [p013-v1]. The U.S. total nonfuel mineral production value in 2023 was $105 billion [p016-t1, p016-v2]. The share of the total represented by metals is calculated as follows:\n\nShare = (Metals value / Total nonfuel mineral value) × 100\nShare = ($34.9 billion / $105 billion) × 100 = 33.2%\n\nTherefore, metals represented 33.2% of the total U.S. nonfuel mineral production value in 2023 [p013-v1, p016-t1, p016-v2].",
+  "citations": [
+   "p013-v1",
+   "p016-t1",
+   "p016-v2"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Table 1 metals mine production 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p013-v1",
+      "page": 13,
+      "kind": "visual",
+      "etype": "table",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p010-t3",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 3,
+      "id": "p013-t1",
+      "page": 13,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03105
+     },
+     {
+      "rank": 4,
+      "id": "p167-v1",
+      "page": 167,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02895
+     },
+     {
+      "rank": 5,
+      "id": "p111-v1",
+      "page": 111,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02822
+     },
+     {
+      "rank": 6,
+      "id": "p141-v2",
+      "page": 141,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02514
+     }
+    ],
+    "returned_ids": [
+     "p013-v1",
+     "p010-t3",
+     "p013-t1",
+     "p167-v1",
+     "p111-v1",
+     "p141-v2"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 4 total nonfuel mineral production value",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p016-v1",
+      "page": 16,
+      "kind": "visual",
+      "etype": "map",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p016-t1",
+      "page": 16,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p009-t1",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 4,
+      "id": "p016-v2",
+      "page": 16,
+      "kind": "visual",
+      "etype": "pie chart",
+      "score": 0.03012
+     },
+     {
+      "rank": 5,
+      "id": "p005-t1",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02955
+     },
+     {
+      "rank": 6,
+      "id": "p015-v1c",
+      "page": 15,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02946
+     }
+    ],
+    "returned_ids": [
+     "p016-v1",
+     "p016-t1",
+     "p009-t1",
+     "p016-v2",
+     "p005-t1",
+     "p015-v1c"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 16,
+    "ids": [
+     "p016-t1",
+     "p016-v1",
+     "p016-v2",
+     "p016-v3"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p013-v1",
+     "p016-t1",
+     "p016-v2"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 1,
+  "context_ids": [
+   "p013-v1",
+   "p010-t3",
+   "p013-t1",
+   "p167-v1",
+   "p111-v1",
+   "p141-v2",
+   "p016-v1",
+   "p016-t1",
+   "p009-t1",
+   "p016-v2",
+   "p005-t1",
+   "p015-v1c",
+   "p016-v3"
+  ],
+  "cited_pages": [
+   13,
+   16
+  ],
+  "usage": {
+   "in": 10281,
+   "out": 258,
+   "llm_calls": 3,
+   "verifier_in": 1246,
+   "verifier_out": 13,
+   "verifier_cost": 0.002596
+  },
+  "cost_usd": 0.025222,
+  "seconds": 7.1,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-M2",
+  "group": "multihop",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "Which country is listed first among the leading lithium import sources in Figure 2, and how large are that country's lithium reserves?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p011-v1a",
+    "page": 11
+   },
+   {
+    "rank": 2,
+    "id": "p011-v1c",
+    "page": 11
+   },
+   {
+    "rank": 3,
+    "id": "p011-v1d",
+    "page": 11
+   },
+   {
+    "rank": 4,
+    "id": "p115-t2",
+    "page": 115
+   },
+   {
+    "rank": 5,
+    "id": "p114-t3",
+    "page": 114
+   },
+   {
+    "rank": 6,
+    "id": "p115-t3",
+    "page": 115
+   }
+  ],
+  "status": "answered",
+  "answer": "The country listed first among the leading lithium import sources in Figure 2 is Argentina. According to the table \"World Mine Production and Reserves\" for lithium, Argentina's lithium reserves are 3,600,000 metric tons [p011-v1c][p115-v1].",
+  "citations": [
+   "p011-v1c",
+   "p115-v1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 2 lithium import sources",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p011-v1a",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p011-v1c",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 3,
+      "id": "p011-v1d",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 4,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 5,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03058
+     },
+     {
+      "rank": 6,
+      "id": "p114-v1",
+      "page": 114,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03002
+     }
+    ],
+    "returned_ids": [
+     "p011-v1a",
+     "p011-v1c",
+     "p011-v1d",
+     "p114-t3"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "lithium reserves by country",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p115-t3",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 2,
+      "id": "p115-t6",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "p115-v1",
+      "page": 115,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03077
+     },
+     {
+      "rank": 4,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03068
+     },
+     {
+      "rank": 5,
+      "id": "p115-t2",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     },
+     {
+      "rank": 6,
+      "id": "p114-t6",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02942
+     }
+    ],
+    "returned_ids": [
+     "p115-t3",
+     "p115-t6",
+     "p115-v1",
+     "p115-t1",
+     "p115-t2",
+     "p114-t6"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 11,
+    "ids": [
+     "p011-t1",
+     "p011-t2",
+     "p011-t3",
+     "p011-v1a",
+     "p011-v1b",
+     "p011-v1c",
+     "p011-v1d"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 2,
+    "page": 115,
+    "ids": [
+     "p115-t1",
+     "p115-t2",
+     "p115-t3",
+     "p115-t4",
+     "p115-t5",
+     "p115-t6",
+     "p115-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p011-v1c",
+     "p115-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 2,
+  "context_ids": [
+   "p011-v1a",
+   "p011-v1c",
+   "p011-v1d",
+   "p114-t3",
+   "p115-t3",
+   "p115-t6",
+   "p115-v1",
+   "p115-t1",
+   "p115-t2",
+   "p114-t6",
+   "p011-t1",
+   "p011-t2",
+   "p011-t3",
+   "p011-v1b",
+   "p115-t4",
+   "p115-t5"
+  ],
+  "cited_pages": [
+   11,
+   115
+  ],
+  "usage": {
+   "in": 14696,
+   "out": 173,
+   "llm_calls": 4,
+   "verifier_in": 2952,
+   "verifier_out": 13,
+   "verifier_cost": 0.006008
+  },
+  "cost_usd": 0.036784,
+  "seconds": 8.6,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-M3",
+  "group": "multihop",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "Divide the total old scrap value of aluminum shown in Figure 13 by the value of old scrap domestically recycled in 2023 shown in Figure 1. What is the result?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p032-v1",
+    "page": 32
+   },
+   {
+    "rank": 2,
+    "id": "p032-t1",
+    "page": 32
+   },
+   {
+    "rank": 3,
+    "id": "p025-t9",
+    "page": 25
+   },
+   {
+    "rank": 4,
+    "id": "p026-t1",
+    "page": 26
+   },
+   {
+    "rank": 5,
+    "id": "p036-t3",
+    "page": 36
+   },
+   {
+    "rank": 6,
+    "id": "p036-t2",
+    "page": 36
+   }
+  ],
+  "status": "answered",
+  "answer": "From Figure 13, the total old scrap value for aluminum is $9,500 million, and approximately 45% of this value is from domestically recycled old scrap, which equals $4,275 million. From Figure 1, the value of old scrap domestically recycled in 2023 for all commodities is $45 billion ($45,000 million). The result of dividing the total old scrap value of aluminum by the value of old scrap domestically recycled in 2023 is $9,500 million ÷ $45,000 million = 0.211 (rounded to three decimal places). [p032-v1, p025-t9]",
+  "citations": [
+   "p032-v1",
+   "p025-t9"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 13",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p032-v1",
+      "page": 32,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p213-t1",
+      "page": 213,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p012-t1",
+      "page": 12,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p005-t7",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0311
+     },
+     {
+      "rank": 5,
+      "id": "p213-v2",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.03028
+     },
+     {
+      "rank": 6,
+      "id": "p031-t2",
+      "page": 31,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02947
+     }
+    ],
+    "returned_ids": [
+     "p032-v1",
+     "p213-t1",
+     "p012-t1",
+     "p005-t7",
+     "p213-v2",
+     "p031-t2"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 1",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p213-t1",
+      "page": 213,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 2,
+      "id": "p019-t1",
+      "page": 19,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "p005-t1",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0311
+     },
+     {
+      "rank": 4,
+      "id": "p213-v2",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.02991
+     },
+     {
+      "rank": 5,
+      "id": "p031-t2",
+      "page": 31,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02986
+     },
+     {
+      "rank": 6,
+      "id": "p213-v1",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.02983
+     }
+    ],
+    "returned_ids": [
+     "p213-t1",
+     "p019-t1",
+     "p005-t1",
+     "p213-v2",
+     "p031-t2",
+     "p213-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 32,
+    "ids": [
+     "p032-t1",
+     "p032-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 4,
+    "ids": [
+     "p004-t1",
+     "p004-t2"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "Figure 1 value of old scrap domestically recycled aluminum",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p025-t9",
+      "page": 25,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "p032-t1",
+      "page": 32,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p032-v1",
+      "page": 32,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.03226
+     },
+     {
+      "rank": 4,
+      "id": "p026-t1",
+      "page": 26,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02964
+     },
+     {
+      "rank": 5,
+      "id": "p036-t3",
+      "page": 36,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02896
+     },
+     {
+      "rank": 6,
+      "id": "p036-t2",
+      "page": 36,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02788
+     }
+    ],
+    "returned_ids": [
+     "p025-t9",
+     "p032-t1",
+     "p032-v1",
+     "p026-t1",
+     "p036-t3",
+     "p036-t2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p032-v1",
+     "p025-t9"
+    ]
+   },
+   {
+    "event": "citations_appended",
+    "ids": [
+     "p032-v1",
+     "p025-t9"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 3,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 3,
+  "n_views": 2,
+  "context_ids": [
+   "p032-v1",
+   "p213-t1",
+   "p012-t1",
+   "p005-t7",
+   "p213-v2",
+   "p031-t2",
+   "p019-t1",
+   "p005-t1",
+   "p213-v1",
+   "p032-t1",
+   "p004-t1",
+   "p004-t2",
+   "p025-t9",
+   "p026-t1",
+   "p036-t3",
+   "p036-t2"
+  ],
+  "cited_pages": [
+   25,
+   32
+  ],
+  "usage": {
+   "in": 15532,
+   "out": 430,
+   "llm_calls": 4,
+   "verifier_in": 1109,
+   "verifier_out": 13,
+   "verifier_cost": 0.002322
+  },
+  "cost_usd": 0.036826,
+  "seconds": 10.9,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": false,
+  "context_all_gold_pages": false,
+  "cited_all_gold_pages": false
+ },
+ {
+  "query_id": "AD-X1",
+  "group": "text",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "How many companies recycled lithium batteries or planned to do so in 2023, by region?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p114-t3",
+    "page": 114
+   },
+   {
+    "rank": 2,
+    "id": "p115-t1",
+    "page": 115
+   },
+   {
+    "rank": 3,
+    "id": "p009-t3",
+    "page": 9
+   },
+   {
+    "rank": 4,
+    "id": "p114-t1",
+    "page": 114
+   },
+   {
+    "rank": 5,
+    "id": "p114-t2",
+    "page": 114
+   },
+   {
+    "rank": 6,
+    "id": "p115-t2",
+    "page": 115
+   }
+  ],
+  "status": "answered",
+  "answer": "In 2023, about 40 companies in Canada and the United States and 50 companies in Europe recycled lithium batteries or planned to do so. This information is found in the lithium section under \"Recycling\" on page 114 of the report. The report does not provide numbers for other regions such as Asia or the rest of the world.\n\n- Canada and United States: about 40 companies\n- Europe: about 50 companies\n\nNo data is provided for other regions in the report. [p114-t3]",
+  "citations": [
+   "p114-t3"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "lithium battery recycling companies by region 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p023-t4",
+      "page": 23,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p115-t2",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03055
+     },
+     {
+      "rank": 5,
+      "id": "p023-t5",
+      "page": 23,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     },
+     {
+      "rank": 6,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     }
+    ],
+    "returned_ids": [
+     "p114-t3",
+     "p023-t4",
+     "p115-t1",
+     "p115-t2",
+     "p023-t5",
+     "p114-t2"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 110,
+    "ids": [
+     "p110-t1",
+     "p110-t2",
+     "p110-t3",
+     "p110-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 2,
+    "page": 114,
+    "ids": [
+     "p114-t1",
+     "p114-t2",
+     "p114-t3",
+     "p114-t4",
+     "p114-t5",
+     "p114-t6",
+     "p114-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 3,
+    "page": 23,
+    "ids": [
+     "p023-t1",
+     "p023-t2",
+     "p023-t3",
+     "p023-t4",
+     "p023-t5",
+     "p023-t6",
+     "p023-t7",
+     "p023-t8"
+    ]
+   },
+   {
+    "event": "view_error",
+    "page": 19
+   },
+   {
+    "event": "submit_answer",
+    "turn": 5,
+    "abstain": false,
+    "citations": [
+     "p114-t3"
+    ]
+   },
+   {
+    "event": "citations_appended",
+    "ids": [
+     "p114-t3"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 5,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 3,
+  "context_ids": [
+   "p114-t3",
+   "p023-t4",
+   "p115-t1",
+   "p115-t2",
+   "p023-t5",
+   "p114-t2",
+   "p110-t1",
+   "p110-t2",
+   "p110-t3",
+   "p110-v1",
+   "p114-t1",
+   "p114-t4",
+   "p114-t5",
+   "p114-t6",
+   "p114-v1",
+   "p023-t1",
+   "p023-t2",
+   "p023-t3",
+   "p023-t6",
+   "p023-t7",
+   "p023-t8"
+  ],
+  "cited_pages": [
+   114
+  ],
+  "usage": {
+   "in": 18342,
+   "out": 210,
+   "llm_calls": 6,
+   "verifier_in": 637,
+   "verifier_out": 13,
+   "verifier_cost": 0.001378
+  },
+  "cost_usd": 0.039742,
+  "seconds": 17.6,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-X2",
+  "group": "text",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "Which rare-earth mineral was mined as a primary product in the United States in 2023, and where?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p148-t1",
+    "page": 148
+   },
+   {
+    "rank": 2,
+    "id": "p148-t2",
+    "page": 148
+   },
+   {
+    "rank": 3,
+    "id": "p149-t1",
+    "page": 149
+   },
+   {
+    "rank": 4,
+    "id": "p149-t2",
+    "page": 149
+   },
+   {
+    "rank": 5,
+    "id": "p025-t2",
+    "page": 25
+   },
+   {
+    "rank": 6,
+    "id": "p203-t2",
+    "page": 203
+   }
+  ],
+  "status": "answered",
+  "answer": "In 2023, bastnaesite (or bastnäsite), a rare-earth fluorocarbonate mineral, was mined as a primary product in the United States at a mine in Mountain Pass, California [p148-t1].",
+  "citations": [
+   "p148-t1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "rare-earth mineral mined as a primary product United States 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p148-t1",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p148-t2",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03128
+     },
+     {
+      "rank": 3,
+      "id": "p149-t1",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03037
+     },
+     {
+      "rank": 4,
+      "id": "p149-t2",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     },
+     {
+      "rank": 5,
+      "id": "p148-t4",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02881
+     },
+     {
+      "rank": 6,
+      "id": "p203-t2",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02861
+     }
+    ],
+    "returned_ids": [
+     "p148-t1",
+     "p148-t2",
+     "p149-t1",
+     "p149-t2",
+     "p148-t4",
+     "p203-t2"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 148,
+    "ids": [
+     "p148-t1",
+     "p148-t2",
+     "p148-t3",
+     "p148-t4",
+     "p148-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p148-t1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p148-t1",
+   "p148-t2",
+   "p149-t1",
+   "p149-t2",
+   "p148-t4",
+   "p203-t2",
+   "p148-t3",
+   "p148-v1"
+  ],
+  "cited_pages": [
+   148
+  ],
+  "usage": {
+   "in": 5467,
+   "out": 115,
+   "llm_calls": 3,
+   "verifier_in": 545,
+   "verifier_out": 13,
+   "verifier_cost": 0.001194
+  },
+  "cost_usd": 0.013048,
+  "seconds": 5.0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-X3",
+  "group": "text",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "What happened to the cobalt-copper-gold mine in Idaho in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p066-t1",
+    "page": 66
+   },
+   {
+    "rank": 2,
+    "id": "p067-t1",
+    "page": 67
+   },
+   {
+    "rank": 3,
+    "id": "p022-t7",
+    "page": 22
+   },
+   {
+    "rank": 4,
+    "id": "p067-t3",
+    "page": 67
+   },
+   {
+    "rank": 5,
+    "id": "p009-t3",
+    "page": 9
+   },
+   {
+    "rank": 6,
+    "id": "p069-t1",
+    "page": 69
+   }
+  ],
+  "status": "answered",
+  "answer": "In 2023, ore extraction commenced at a cobalt-copper-gold mine in Idaho, but commissioning was suspended in March due to low cobalt prices. This mine was one of only two in the world where cobalt was the principal product [p066-t1].",
+  "citations": [
+   "p066-t1"
+  ],
+  "reason": "verified",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "cobalt-copper-gold mine Idaho 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p066-t1",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p067-t1",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     },
+     {
+      "rank": 3,
+      "id": "p022-t7",
+      "page": 22,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03008
+     },
+     {
+      "rank": 4,
+      "id": "p067-t3",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02921
+     },
+     {
+      "rank": 5,
+      "id": "p009-t3",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02858
+     },
+     {
+      "rank": 6,
+      "id": "p167-t1",
+      "page": 167,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02724
+     }
+    ],
+    "returned_ids": [
+     "p066-t1",
+     "p067-t1",
+     "p022-t7",
+     "p067-t3",
+     "p009-t3",
+     "p167-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 66,
+    "ids": [
+     "p066-t1",
+     "p066-t2",
+     "p066-t3",
+     "p066-t4",
+     "p066-v1",
+     "p066-v2",
+     "p066-v3"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p066-t1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 2,
+    "verdict": "supported",
+    "problems": []
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p066-t1",
+   "p067-t1",
+   "p022-t7",
+   "p067-t3",
+   "p009-t3",
+   "p167-t1",
+   "p066-t2",
+   "p066-t3",
+   "p066-t4",
+   "p066-v1",
+   "p066-v2",
+   "p066-v3"
+  ],
+  "cited_pages": [
+   66
+  ],
+  "usage": {
+   "in": 5164,
+   "out": 119,
+   "llm_calls": 3,
+   "verifier_in": 535,
+   "verifier_out": 13,
+   "verifier_cost": 0.001174
+  },
+  "cost_usd": 0.012454,
+  "seconds": 5.4,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AD-U1",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "How much uranium did U.S. mines produce in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p167-t1",
+    "page": 167
+   },
+   {
+    "rank": 2,
+    "id": "p009-t7",
+    "page": 9
+   },
+   {
+    "rank": 3,
+    "id": "p110-t1",
+    "page": 110
+   },
+   {
+    "rank": 4,
+    "id": "p127-t1",
+    "page": 127
+   },
+   {
+    "rank": 5,
+    "id": "p069-t1",
+    "page": 69
+   },
+   {
+    "rank": 6,
+    "id": "p010-t3",
+    "page": 10
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "The report does not contain the amount of uranium produced by U.S. mines in 2023. The relevant value is not available in the passages retrieved.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "uranium production 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p151-t2",
+      "page": 151,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0275
+     },
+     {
+      "rank": 2,
+      "id": "p025-t2",
+      "page": 25,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0241
+     },
+     {
+      "rank": 3,
+      "id": "p097-v1",
+      "page": 97,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01639
+     },
+     {
+      "rank": 4,
+      "id": "p161-t3",
+      "page": 161,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 5,
+      "id": "p153-t3",
+      "page": 153,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 6,
+      "id": "p076-t1",
+      "page": 76,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     }
+    ],
+    "returned_ids": [
+     "p151-t2",
+     "p025-t2",
+     "p097-v1",
+     "p161-t3",
+     "p153-t3",
+     "p076-t1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "uranium mine production United States 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p025-t2",
+      "page": 25,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03002
+     },
+     {
+      "rank": 2,
+      "id": "p069-t1",
+      "page": 69,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02821
+     },
+     {
+      "rank": 3,
+      "id": "p097-v1",
+      "page": 97,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01639
+     },
+     {
+      "rank": 4,
+      "id": "p161-t3",
+      "page": 161,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 5,
+      "id": "p076-t1",
+      "page": 76,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 6,
+      "id": "p087-t2",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p025-t2",
+     "p069-t1",
+     "p097-v1",
+     "p161-t3",
+     "p076-t1",
+     "p087-t2"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "uranium production table",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p097-v1",
+      "page": 97,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01639
+     },
+     {
+      "rank": 2,
+      "id": "p161-t3",
+      "page": 161,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 3,
+      "id": "p091-v1",
+      "page": 91,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01613
+     },
+     {
+      "rank": 4,
+      "id": "p076-t1",
+      "page": 76,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 5,
+      "id": "p055-v1",
+      "page": 55,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01587
+     },
+     {
+      "rank": 6,
+      "id": "p195-t4",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p097-v1",
+     "p161-t3",
+     "p091-v1",
+     "p076-t1",
+     "p055-v1",
+     "p195-t4"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 3,
+    "query": "uranium",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p203-t4",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     },
+     {
+      "rank": 2,
+      "id": "p203-t3",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02904
+     },
+     {
+      "rank": 3,
+      "id": "p195-t4",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02792
+     },
+     {
+      "rank": 4,
+      "id": "p187-t3",
+      "page": 187,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 5,
+      "id": "p161-t3",
+      "page": 161,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 6,
+      "id": "p187-t4",
+      "page": 187,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     }
+    ],
+    "returned_ids": [
+     "p203-t4",
+     "p203-t3",
+     "p195-t4",
+     "p187-t3",
+     "p161-t3",
+     "p187-t4"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 4,
+    "query": "uranium production United States W",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p194-v1",
+      "page": 194,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02462
+     },
+     {
+      "rank": 2,
+      "id": "p194-t2",
+      "page": 194,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0244
+     },
+     {
+      "rank": 3,
+      "id": "p097-v1",
+      "page": 97,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01639
+     },
+     {
+      "rank": 4,
+      "id": "p161-t3",
+      "page": 161,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 5,
+      "id": "p055-v1",
+      "page": 55,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01613
+     },
+     {
+      "rank": 6,
+      "id": "p195-t4",
+      "page": 195,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     }
+    ],
+    "returned_ids": [
+     "p194-v1",
+     "p194-t2",
+     "p097-v1",
+     "p161-t3",
+     "p055-v1",
+     "p195-t4"
+    ]
+   },
+   {
+    "event": "search_limit"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 6,
+    "abstain": false,
+    "citations": [
+     "p097-v1"
+    ]
+   },
+   {
+    "event": "citations_appended",
+    "ids": [
+     "p097-v1"
+    ]
+   },
+   {
+    "event": "verify",
+    "turn": 6,
+    "verdict": "unsupported",
+    "problems": [
+     "The cited passage is from the Iodine section, not Uranium. The table and data refer to iodine mine production, not uranium. The answer incorrectly applies information about iodine to a question about uranium."
+    ]
+   },
+   {
+    "event": "verify_retry"
+   },
+   {
+    "event": "search_limit"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 8,
+    "abstain": true,
+    "citations": []
+   }
+  ],
+  "n_searches": 5,
+  "n_views": 0,
+  "context_ids": [
+   "p151-t2",
+   "p025-t2",
+   "p097-v1",
+   "p161-t3",
+   "p153-t3",
+   "p076-t1",
+   "p069-t1",
+   "p087-t2",
+   "p091-v1",
+   "p055-v1",
+   "p195-t4",
+   "p203-t4",
+   "p203-t3",
+   "p187-t3",
+   "p187-t4",
+   "p194-v1",
+   "p194-t2"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 53386,
+   "out": 258,
+   "llm_calls": 9,
+   "verifier_in": 611,
+   "verifier_out": 55,
+   "verifier_cost": 0.001662
+  },
+  "cost_usd": 0.110498,
+  "seconds": 14.9
+ },
+ {
+  "query_id": "AD-U2",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "How much natural gas did the United States produce in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p093-t1",
+    "page": 93
+   },
+   {
+    "rank": 2,
+    "id": "p093-t2",
+    "page": 93
+   },
+   {
+    "rank": 3,
+    "id": "p133-t1",
+    "page": 133
+   },
+   {
+    "rank": 4,
+    "id": "p132-t3",
+    "page": 132
+   },
+   {
+    "rank": 5,
+    "id": "p132-t1",
+    "page": 132
+   },
+   {
+    "rank": 6,
+    "id": "p093-t3",
+    "page": 93
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "The USGS Mineral Commodity Summaries 2024 does not provide the total natural gas production for the United States in 2023. The report contains information about natural gas prices and its use as a feedstock for other commodities, but it does not state the total production volume of natural gas in cubic meters, cubic feet, or any other unit for 2023. Related data, such as the number of drill rigs and natural gas prices, are included, but not the total production quantity itself [p081-t1][p132-t3].",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "natural gas production United States 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p093-t1",
+      "page": 93,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 2,
+      "id": "p093-t2",
+      "page": 93,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03154
+     },
+     {
+      "rank": 3,
+      "id": "p081-t1",
+      "page": 81,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0311
+     },
+     {
+      "rank": 4,
+      "id": "p133-t1",
+      "page": 133,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02991
+     },
+     {
+      "rank": 5,
+      "id": "p132-t1",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     },
+     {
+      "rank": 6,
+      "id": "p093-v1",
+      "page": 93,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02807
+     }
+    ],
+    "returned_ids": [
+     "p093-t1",
+     "p093-t2",
+     "p081-t1",
+     "p133-t1",
+     "p132-t1",
+     "p093-v1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "natural gas production United States Table 1",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p013-v1",
+      "page": 13,
+      "kind": "visual",
+      "etype": "table",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p093-v1",
+      "page": 93,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03028
+     },
+     {
+      "rank": 3,
+      "id": "p132-t1",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02957
+     },
+     {
+      "rank": 4,
+      "id": "p093-t2",
+      "page": 93,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02921
+     },
+     {
+      "rank": 5,
+      "id": "p092-v1",
+      "page": 92,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02912
+     },
+     {
+      "rank": 6,
+      "id": "p133-t1",
+      "page": 133,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02879
+     }
+    ],
+    "returned_ids": [
+     "p013-v1",
+     "p093-v1",
+     "p132-t1",
+     "p093-t2",
+     "p092-v1",
+     "p133-t1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "natural gas production United States",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p093-t2",
+      "page": 93,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0311
+     },
+     {
+      "rank": 2,
+      "id": "p081-t1",
+      "page": 81,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03083
+     },
+     {
+      "rank": 3,
+      "id": "p133-t1",
+      "page": 133,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03078
+     },
+     {
+      "rank": 4,
+      "id": "p093-t1",
+      "page": 93,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03078
+     },
+     {
+      "rank": 5,
+      "id": "p132-t1",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03016
+     },
+     {
+      "rank": 6,
+      "id": "p093-v1",
+      "page": 93,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02847
+     }
+    ],
+    "returned_ids": [
+     "p093-t2",
+     "p081-t1",
+     "p133-t1",
+     "p093-t1",
+     "p132-t1",
+     "p093-v1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 3,
+    "query": "natural gas production statistics",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p093-t1",
+      "page": 93,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03008
+     },
+     {
+      "rank": 2,
+      "id": "p132-t3",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02957
+     },
+     {
+      "rank": 3,
+      "id": "p093-t2",
+      "page": 93,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02946
+     },
+     {
+      "rank": 4,
+      "id": "p092-t1",
+      "page": 92,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02942
+     },
+     {
+      "rank": 5,
+      "id": "p092-v1",
+      "page": 92,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.0289
+     },
+     {
+      "rank": 6,
+      "id": "p133-t1",
+      "page": 133,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02838
+     }
+    ],
+    "returned_ids": [
+     "p093-t1",
+     "p132-t3",
+     "p093-t2",
+     "p092-t1",
+     "p092-v1",
+     "p133-t1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 4,
+    "query": "natural gas",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p132-t3",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p133-t1",
+      "page": 133,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "p081-t1",
+      "page": 81,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03102
+     },
+     {
+      "rank": 4,
+      "id": "p092-t1",
+      "page": 92,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03101
+     },
+     {
+      "rank": 5,
+      "id": "p132-t4",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03002
+     },
+     {
+      "rank": 6,
+      "id": "p092-t2",
+      "page": 92,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02879
+     }
+    ],
+    "returned_ids": [
+     "p132-t3",
+     "p133-t1",
+     "p081-t1",
+     "p092-t1",
+     "p132-t4",
+     "p092-t2"
+    ]
+   },
+   {
+    "event": "search_limit"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 6,
+    "abstain": true,
+    "citations": [
+     "p081-t1",
+     "p132-t3"
+    ]
+   }
+  ],
+  "n_searches": 5,
+  "n_views": 0,
+  "context_ids": [
+   "p093-t1",
+   "p093-t2",
+   "p081-t1",
+   "p133-t1",
+   "p132-t1",
+   "p093-v1",
+   "p013-v1",
+   "p092-v1",
+   "p132-t3",
+   "p092-t1",
+   "p132-t4",
+   "p092-t2"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 34172,
+   "out": 257,
+   "llm_calls": 7
+  },
+  "cost_usd": 0.0704,
+  "seconds": 11.2
+ },
+ {
+  "query_id": "AD-U3",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "What is the projected global lithium demand in 2030?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p114-t4",
+    "page": 114
+   },
+   {
+    "rank": 2,
+    "id": "p115-t1",
+    "page": 115
+   },
+   {
+    "rank": 3,
+    "id": "p114-t1",
+    "page": 114
+   },
+   {
+    "rank": 4,
+    "id": "p139-t1",
+    "page": 139
+   },
+   {
+    "rank": 5,
+    "id": "p162-t5",
+    "page": 162
+   },
+   {
+    "rank": 6,
+    "id": "p067-t1",
+    "page": 67
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "The USGS Mineral Commodity Summaries 2024 does not provide a projected global lithium demand for 2030. The report includes data on global lithium consumption for 2022 and 2023 (142,000 tons and 180,000 tons, respectively), but does not include any forecast or projection for 2030 or any future year [p114-t4].",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "projected global lithium demand 2030",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p114-t1",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02963
+     },
+     {
+      "rank": 4,
+      "id": "p139-t1",
+      "page": 139,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02762
+     },
+     {
+      "rank": 5,
+      "id": "p009-t3",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0265
+     },
+     {
+      "rank": 6,
+      "id": "p162-t5",
+      "page": 162,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02643
+     }
+    ],
+    "returned_ids": [
+     "p114-t4",
+     "p115-t1",
+     "p114-t1",
+     "p139-t1",
+     "p009-t3",
+     "p162-t5"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "lithium demand 2030",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p114-t1",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02985
+     },
+     {
+      "rank": 4,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02957
+     },
+     {
+      "rank": 5,
+      "id": "p115-t2",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0292
+     },
+     {
+      "rank": 6,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02914
+     }
+    ],
+    "returned_ids": [
+     "p115-t1",
+     "p114-t4",
+     "p114-t1",
+     "p114-t3",
+     "p115-t2",
+     "p114-t2"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "lithium demand projection",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p114-t1",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03054
+     },
+     {
+      "rank": 4,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02971
+     },
+     {
+      "rank": 5,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02967
+     },
+     {
+      "rank": 6,
+      "id": "p115-t2",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02901
+     }
+    ],
+    "returned_ids": [
+     "p114-t4",
+     "p115-t1",
+     "p114-t1",
+     "p114-t2",
+     "p114-t3",
+     "p115-t2"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 3,
+    "query": "lithium 2030",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03202
+     },
+     {
+      "rank": 2,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03151
+     },
+     {
+      "rank": 3,
+      "id": "p114-t1",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p115-t2",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03008
+     },
+     {
+      "rank": 5,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02996
+     },
+     {
+      "rank": 6,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02991
+     }
+    ],
+    "returned_ids": [
+     "p115-t1",
+     "p114-t4",
+     "p114-t1",
+     "p115-t2",
+     "p114-t2",
+     "p114-t3"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 4,
+    "query": "lithium outlook",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 2,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 3,
+      "id": "p114-t1",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03128
+     },
+     {
+      "rank": 4,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02996
+     },
+     {
+      "rank": 5,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     },
+     {
+      "rank": 6,
+      "id": "p115-t2",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02964
+     }
+    ],
+    "returned_ids": [
+     "p114-t4",
+     "p115-t1",
+     "p114-t1",
+     "p114-t2",
+     "p114-t3",
+     "p115-t2"
+    ]
+   },
+   {
+    "event": "search_limit"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 6,
+    "abstain": true,
+    "citations": [
+     "p114-t4"
+    ]
+   }
+  ],
+  "n_searches": 5,
+  "n_views": 0,
+  "context_ids": [
+   "p114-t4",
+   "p115-t1",
+   "p114-t1",
+   "p139-t1",
+   "p009-t3",
+   "p162-t5",
+   "p114-t3",
+   "p115-t2",
+   "p114-t2"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 31633,
+   "out": 216,
+   "llm_calls": 7
+  },
+  "cost_usd": 0.064994,
+  "seconds": 10.3
+ },
+ {
+  "query_id": "AD-U4",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "What was the average 2023 price of NdFeB permanent magnets per kilogram?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p078-t5",
+    "page": 78
+   },
+   {
+    "rank": 2,
+    "id": "p148-t3",
+    "page": 148
+   },
+   {
+    "rank": 3,
+    "id": "p151-t1",
+    "page": 151
+   },
+   {
+    "rank": 4,
+    "id": "p094-t3",
+    "page": 94
+   },
+   {
+    "rank": 5,
+    "id": "p148-t2",
+    "page": 148
+   },
+   {
+    "rank": 6,
+    "id": "p104-t5",
+    "page": 104
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "The USGS Mineral Commodity Summaries 2024 does not provide the average 2023 price of NdFeB (neodymium-iron-boron) permanent magnets per kilogram. The report discusses NdFeB magnets in the context of demand and supply trends, but does not list a specific price for these magnets in 2023 or any other year.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "NdFeB permanent magnets price 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p078-t5",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02927
+     },
+     {
+      "rank": 2,
+      "id": "p148-t2",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02867
+     },
+     {
+      "rank": 3,
+      "id": "p118-t5",
+      "page": 118,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02844
+     },
+     {
+      "rank": 4,
+      "id": "p148-t3",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02798
+     },
+     {
+      "rank": 5,
+      "id": "p197-t1",
+      "page": 197,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02711
+     },
+     {
+      "rank": 6,
+      "id": "p022-t7",
+      "page": 22,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02703
+     }
+    ],
+    "returned_ids": [
+     "p078-t5",
+     "p148-t2",
+     "p118-t5",
+     "p148-t3",
+     "p197-t1",
+     "p022-t7"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "NdFeB magnet price",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p078-t5",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02938
+     },
+     {
+      "rank": 2,
+      "id": "p118-t5",
+      "page": 118,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02867
+     },
+     {
+      "rank": 3,
+      "id": "p119-t3",
+      "page": 119,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02782
+     },
+     {
+      "rank": 4,
+      "id": "p104-t5",
+      "page": 104,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02727
+     },
+     {
+      "rank": 5,
+      "id": "p197-t1",
+      "page": 197,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02699
+     },
+     {
+      "rank": 6,
+      "id": "p129-t1",
+      "page": 129,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02358
+     }
+    ],
+    "returned_ids": [
+     "p078-t5",
+     "p118-t5",
+     "p119-t3",
+     "p104-t5",
+     "p197-t1",
+     "p129-t1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "permanent magnet price",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p078-t5",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 2,
+      "id": "p022-t7",
+      "page": 22,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03068
+     },
+     {
+      "rank": 3,
+      "id": "p118-t5",
+      "page": 118,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02921
+     },
+     {
+      "rank": 4,
+      "id": "p149-t1",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02853
+     },
+     {
+      "rank": 5,
+      "id": "p029-t2",
+      "page": 29,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02549
+     },
+     {
+      "rank": 6,
+      "id": "p132-t4",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02367
+     }
+    ],
+    "returned_ids": [
+     "p078-t5",
+     "p022-t7",
+     "p118-t5",
+     "p149-t1",
+     "p029-t2",
+     "p132-t4"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 3,
+    "query": "rare earth magnet price",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p148-t1",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "p149-t1",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p148-t3",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03101
+     },
+     {
+      "rank": 4,
+      "id": "p202-t5",
+      "page": 202,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     },
+     {
+      "rank": 5,
+      "id": "p148-t4",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03031
+     },
+     {
+      "rank": 6,
+      "id": "p022-t7",
+      "page": 22,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03009
+     }
+    ],
+    "returned_ids": [
+     "p148-t1",
+     "p149-t1",
+     "p148-t3",
+     "p202-t5",
+     "p148-t4",
+     "p022-t7"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 4,
+    "query": "NdFeB price per kilogram",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p094-t3",
+      "page": 94,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02872
+     },
+     {
+      "rank": 2,
+      "id": "p151-t1",
+      "page": 151,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02724
+     },
+     {
+      "rank": 3,
+      "id": "p150-t3",
+      "page": 150,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02288
+     },
+     {
+      "rank": 4,
+      "id": "p130-v1",
+      "page": 130,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01639
+     },
+     {
+      "rank": 5,
+      "id": "p078-t5",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 6,
+      "id": "p130-t2",
+      "page": 130,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     }
+    ],
+    "returned_ids": [
+     "p094-t3",
+     "p151-t1",
+     "p150-t3",
+     "p130-v1",
+     "p078-t5",
+     "p130-t2"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "The USGS Mineral Commodity Summaries 2024 does not provide the average 2023 price of NdFeB (neodymium-iron-boron) permanent magnets per kilogram. The report discusses NdFeB magnets in the context of demand and supply trends, but does not list a specific price for these magnets in 2023 or any other y"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 6,
+    "abstain": true,
+    "citations": [
+     "p078-t5",
+     "p148-t1",
+     "p149-t1"
+    ]
+   }
+  ],
+  "n_searches": 5,
+  "n_views": 0,
+  "context_ids": [
+   "p078-t5",
+   "p148-t2",
+   "p118-t5",
+   "p148-t3",
+   "p197-t1",
+   "p022-t7",
+   "p119-t3",
+   "p104-t5",
+   "p129-t1",
+   "p149-t1",
+   "p029-t2",
+   "p132-t4",
+   "p148-t1",
+   "p202-t5",
+   "p148-t4",
+   "p094-t3",
+   "p151-t1",
+   "p150-t3",
+   "p130-v1",
+   "p130-t2"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 31119,
+   "out": 290,
+   "llm_calls": 7
+  },
+  "cost_usd": 0.064558,
+  "seconds": 15.2
+ },
+ {
+  "query_id": "AD-U5",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "What was the average 2023 price of lithium hydroxide in the United States?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p114-t5",
+    "page": 114
+   },
+   {
+    "rank": 2,
+    "id": "p114-t4",
+    "page": 114
+   },
+   {
+    "rank": 3,
+    "id": "p114-t3",
+    "page": 114
+   },
+   {
+    "rank": 4,
+    "id": "p114-t1",
+    "page": 114
+   },
+   {
+    "rank": 5,
+    "id": "p114-t2",
+    "page": 114
+   },
+   {
+    "rank": 6,
+    "id": "p114-v1",
+    "page": 114
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "The USGS Mineral Commodity Summaries 2024 does not provide the average 2023 price of lithium hydroxide in the United States. It only provides spot lithium hydroxide prices in China, which decreased from approximately $81,500 per ton in January to about $22,500 per ton in November 2023. The report does provide the annual average U.S. price for lithium carbonate ($46,000 per ton in 2023), but not for lithium hydroxide in the United States.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "lithium hydroxide price 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p114-t5",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03202
+     },
+     {
+      "rank": 3,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 4,
+      "id": "p114-t1",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03105
+     },
+     {
+      "rank": 5,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0308
+     },
+     {
+      "rank": 6,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03054
+     }
+    ],
+    "returned_ids": [
+     "p114-t5",
+     "p114-t4",
+     "p114-t3",
+     "p114-t1",
+     "p115-t1",
+     "p114-t2"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "lithium hydroxide price United States 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p114-t5",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 2,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 3,
+      "id": "p114-t1",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03154
+     },
+     {
+      "rank": 4,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 5,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03055
+     },
+     {
+      "rank": 6,
+      "id": "p114-v1",
+      "page": 114,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03054
+     }
+    ],
+    "returned_ids": [
+     "p114-t5",
+     "p114-t4",
+     "p114-t1",
+     "p114-t3",
+     "p114-t2",
+     "p114-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 2,
+    "page": 114,
+    "ids": [
+     "p114-t1",
+     "p114-t2",
+     "p114-t3",
+     "p114-t4",
+     "p114-t5",
+     "p114-t6",
+     "p114-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": true,
+    "citations": [
+     "p114-t5"
+    ]
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 1,
+  "context_ids": [
+   "p114-t5",
+   "p114-t4",
+   "p114-t3",
+   "p114-t1",
+   "p115-t1",
+   "p114-t2",
+   "p114-v1",
+   "p114-t6"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 10849,
+   "out": 188,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.023202,
+  "seconds": 6.6
+ },
+ {
+  "query_id": "AD-U6",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "How many people were employed in U.S. lithium battery recycling in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p114-t3",
+    "page": 114
+   },
+   {
+    "rank": 2,
+    "id": "p115-t1",
+    "page": 115
+   },
+   {
+    "rank": 3,
+    "id": "p114-t2",
+    "page": 114
+   },
+   {
+    "rank": 4,
+    "id": "p114-t4",
+    "page": 114
+   },
+   {
+    "rank": 5,
+    "id": "p023-t4",
+    "page": 23
+   },
+   {
+    "rank": 6,
+    "id": "p009-t4",
+    "page": 9
+   }
+  ],
+  "status": "error",
+  "answer": null,
+  "citations": [],
+  "events": [
+   {
+    "event": "error",
+    "error": "Provider HTTP 429; check model name, key and quota."
+   }
+  ],
+  "n_searches": 0,
+  "n_views": 0,
+  "context_ids": [],
+  "cited_pages": [],
+  "usage": {},
+  "cost_usd": 0,
+  "seconds": 0
+ },
+ {
+  "query_id": "AD-U7",
+  "group": "unanswerable",
+  "split": "dev",
+  "config": "V12_final",
+  "model": "gpt-4.1",
+  "question": "What are the world reserves of gallium?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p079-t3",
+    "page": 79
+   },
+   {
+    "rank": 2,
+    "id": "p079-t2",
+    "page": 79
+   },
+   {
+    "rank": 3,
+    "id": "p078-t1",
+    "page": 78
+   },
+   {
+    "rank": 4,
+    "id": "p079-t4",
+    "page": 79
+   },
+   {
+    "rank": 5,
+    "id": "p079-v1",
+    "page": 79
+   },
+   {
+    "rank": 6,
+    "id": "p078-t4",
+    "page": 78
+   }
+  ],
+  "status": "abstain",
+  "answer": "Không đủ bằng chứng: báo cáo MCS 2024 không chứa thông tin được hỏi (the report does not contain the requested information).",
+  "citations": [],
+  "reason": "model_abstained",
+  "abstain_note": "Quantitative estimates of world reserves of gallium were not available in the report.",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "world reserves of gallium",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p079-t3",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p079-t2",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "p078-t1",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03058
+     },
+     {
+      "rank": 4,
+      "id": "p079-t4",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03016
+     },
+     {
+      "rank": 5,
+      "id": "p079-v1",
+      "page": 79,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03002
+     },
+     {
+      "rank": 6,
+      "id": "p079-t6",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02967
+     }
+    ],
+    "returned_ids": [
+     "p079-t3",
+     "p079-t2",
+     "p078-t1",
+     "p079-t4",
+     "p079-v1",
+     "p079-t6"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "gallium reserves",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p079-t3",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p078-t1",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "p079-t2",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p078-t4",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03058
+     },
+     {
+      "rank": 5,
+      "id": "p078-t5",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03021
+     },
+     {
+      "rank": 6,
+      "id": "p079-t6",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03008
+     }
+    ],
+    "returned_ids": [
+     "p079-t3",
+     "p078-t1",
+     "p079-t2",
+     "p078-t4",
+     "p078-t5",
+     "p079-t6"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "gallium world reserves quantitative estimate",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p079-t3",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p079-t2",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03101
+     },
+     {
+      "rank": 3,
+      "id": "p079-t4",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02924
+     },
+     {
+      "rank": 4,
+      "id": "p185-t4",
+      "page": 185,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02914
+     },
+     {
+      "rank": 5,
+      "id": "p051-v1",
+      "page": 51,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02808
+     },
+     {
+      "rank": 6,
+      "id": "p095-v1",
+      "page": 95,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02759
+     }
+    ],
+    "returned_ids": [
+     "p079-t3",
+     "p079-t2",
+     "p079-t4",
+     "p185-t4",
+     "p051-v1",
+     "p095-v1"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "Quantitative estimates of world reserves of gallium were not available in the report [p079-t3]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": true,
+    "citations": [
+     "p079-t3"
+    ]
+   }
+  ],
+  "n_searches": 3,
+  "n_views": 0,
+  "context_ids": [
+   "p079-t3",
+   "p079-t2",
+   "p078-t1",
+   "p079-t4",
+   "p079-v1",
+   "p079-t6",
+   "p078-t4",
+   "p078-t5",
+   "p185-t4",
+   "p051-v1",
+   "p095-v1"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 15732,
+   "out": 120,
+   "llm_calls": 5
+  },
+  "cost_usd": 0.032424,
+  "seconds": 7.1
+ }
+]

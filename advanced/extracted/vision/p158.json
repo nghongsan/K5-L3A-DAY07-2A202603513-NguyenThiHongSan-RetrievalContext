@@ -1,0 +1,20 @@
+{
+ "page": 158,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019   | 2020   | 2021   | 2022   | 2023e  |\n|-------------------------|--------|--------|--------|--------|--------|\n| Sold or used            | 108,000| 75,800 | 91,200 | 114,000| 130,000|\n| Imports for consumption | 389    | 417    | 350    | 338    | 290    |\n| Exports                 | 5,590  | 4,070  | 5,400  | 6,350  | 7,500  |\n| Consumption, apparent2  | 103,000| 72,100 | 86,200 | 108,000| 120,000|\n| Price, average value, dollars per metric ton | 46.00  | 29.50  | 40.80  | 45.30  | 54.00  |\n| Employment, quarry and mill, numbere | 7,500  | 4,500  | 5,300  | 6,000  | 6,100  |\n| Net import reliance3 as a percentage of apparent consumption | E      | E      | E      | E      | E      |",
+   "notes": "2 Apparent consumption = Sold or used + Imports - Exports.\n3 Net import reliance: E = net exporter."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 336
+ },
+ "seconds": 3.5
+}

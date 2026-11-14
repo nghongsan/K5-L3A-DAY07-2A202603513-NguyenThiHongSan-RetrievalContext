@@ -1,0 +1,27 @@
+{
+ "page": 156,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|-------|-------|-------|-------|-------|\n| Sold or used by producers          | 930   | 925   | 943   | 953   | 920   |\n| Imports for consumption            | 5     | 5     | 5     | 4     | 4     |\n| Exports                           | (2)   | (2)   | (2)   | (2)   | (2)   |\n| Consumption, apparent3             | 935   | 929   | 948   | 956   | 920   |\n| Price, average unit value, dollars per metric ton | 9.63  | 9.96  | 10.35 | 11.25 | 12.20 |\n| Employment, mine and mill, number4 | 39,600| 37,900| 37,800| 36,900| 37,000|\n| Net import reliance5 as a percentage of apparent consumption | 1     | 1     | (2)   | (2)   | (2)   |",
+   "notes": "(2) = Data withheld to avoid disclosing company proprietary data.\n3 Apparent consumption = Sold or used by producers + Imports - Exports.\n4 Employment data are estimates.\n5 Net import reliance = (Imports - Exports) / Apparent consumption."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower right",
+   "content": "| Item               | Number       | Normal Trade Relations 12-31-23 |\n|--------------------|--------------|---------------------------------|\n| Sand, other        | 2505.90.0000 | Free.                           |\n| Pebbles and gravel | 2517.10.0015 | Free.                           |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 438
+ },
+ "seconds": 4.1
+}

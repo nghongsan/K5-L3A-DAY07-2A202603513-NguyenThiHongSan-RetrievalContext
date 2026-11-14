@@ -1,0 +1,20 @@
+{
+ "page": 70,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                                   | 2019  | 2020  | 2021  | 2022  | 2023e |\n|--------------------------------------------|-------|-------|-------|-------|-------|\n| Bort, grit, and dust and powder; natural and synthetic: |       |       |       |       |       |\n| Production:                                |       |       |       |       |       |\n| Manufactured diamonde                      | 114   | 130   | 132   | 150   | 150   |\n| Secondary                                  | 35.6  | 35.0  | 1.20  | 14.4  | 14    |\n| Imports for consumption                     | 306   | 190   | 261   | 303   | 280   |\n| Exports                                    | 114   | 90.7  | 99.1  | 94.0  | 72.0  |\n| Consumption, apparent2                      | 342   | 264   | 295   | 373   | 370   |\n| Price, unit value of imports, dollars per carat | 0.14  | 0.19  | 0.18  | 0.19  | 0.16  |\n| Net import reliance3 as a percentage of apparent consumption | 56    | 38    | 55    | 56    | 56    |\n| Stones, natural and synthetic:             |       |       |       |       |       |\n| Production:                                |       |       |       |       |       |\n| Manufactured diamonde                      | —     | —     | —     | —     | —     |\n| Secondary                                  | 0.10  | 0.10  | 0.08  | 0.08  | 0.08  |\n| Imports for consumption                     | 1.07  | 0.51  | 0.33  | 0.79  | 0.40  |\n| Exports                                    | (4)   | 0.02  | —     | (4)   | (4)   |\n| Consumption, apparent2                      | 1.17  | 0.61  | 0.41  | 0.86  | 0.48  |\n| Price, unit value of imports, dollars per carat | 5.82  | 8.41  | 13.0  | 8.40  | 14    |\n| Net import reliance3 as a percentage of apparent consumption | 91    | 84    | 81    | 91    | 84    |",
+   "notes": "eEstimated. 2Apparent consumption is production plus imports minus exports. 3Net import reliance is imports minus exports as a percentage of apparent consumption. (4) Less than 0.005 million carats."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 660
+ },
+ "seconds": 5.9
+}

@@ -1,0 +1,20 @@
+{
+ "page": 50,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle of page",
+   "content": "|                              | 2019  | 2020  | 2021  | 2022  | 2023e |\n|------------------------------|-------|-------|-------|-------|-------|\n| Production:                  |       |       |       |       |       |\n|   Refinery                | —    | —    | —    | —    | —    |\n|   Secondary (scrap)e      | 80    | 80    | 80    | 80    | 80    |\n| Imports for consumption, metal, alloys, and scrap: |       |       |       |       |       |\n|   Containing more than 99.99% bismuth, by weight | NA    | NA    | NA    | 754   | 540   |\n|   Other                   | NA    | NA    | NA    | 2,340 | 1,300 |\n|   Total1                 | 2,340 | 1,650 | 1,980 | 3,090 | 1,800 |\n| Exports, metal, alloys, and scrap: |       |       |       |       |       |\n|   Containing more than 99.99% bismuth, by weight | NA    | NA    | NA    | 144   | 180   |\n|   Other                   | NA    | NA    | NA    | 359   | 340   |\n|   Total2                 | 636   | 699   | 1,010 | 502   | 520   |\n| Consumption:                 |       |       |       |       |       |\n|   Apparent3              | 1,690 | 1,210 | 1,030 | 2,610 | 1,400 |\n|   Reported               | 548   | 513   | 597   | 724   | NA    |\n| Price, average,4 dollars per pound | 3.18  | 2.72  | 3.74  | 3.90  | 4.10  |\n| Stocks, yearend, consumer, bismuth metal | 443   | 271   | 297   | 356   | 340   |\n| Net import reliance5 as a percentage of apparent consumption | 95    | 93    | 92    | 97    | 94    |",
+   "notes": "Footnotes: 1 Includes imports containing more than 99.99% bismuth and other imports. 2 Includes exports containing more than 99.99% bismuth and other exports. 3 Apparent consumption = production + imports - exports + adjustments for Government and industry stock changes. 4 Price is average U.S. producer price. 5 Net import reliance = imports - exports + adjustments for Government and industry stock changes, expressed as a percentage of apparent consumption."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 704
+ },
+ "seconds": 6.6
+}

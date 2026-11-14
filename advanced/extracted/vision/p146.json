@@ -1,0 +1,27 @@
+{
+ "page": 146,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle of page",
+   "content": "|                                   | 2019    | 2020    | 2021    | 2022    | 2023e   |\n|-----------------------------------|---------|---------|---------|---------|---------|\n| Ground high-purity quartz:         |         |         |         |         |         |\n| Productione, 2                    | 100,000 | 100,000 | 100,000 | 200,000 | 200,000 |\n| Imports3                         | NA      | NA      | NA      | NA      | NA      |\n| Exports3                         | NA      | NA      | NA      | NA      | NA      |\n| Price, range of value, dollars per metric tone, 4, 5 | 500–14,000 | 500–15,000 | 500–16,000 | 500–17,000 | 500–20,000 |\n| Net import reliance6 as a percentage of apparent consumption | NA      | NA      | NA      | NA      | NA      |\n| Industrial cultured quartz crystal: |         |         |         |         |         |\n| Production                      | W       | W       | W       | W       | W       |\n| Imports, piezoelectric          | 55      | 114     | 69      | 76      | 77      |\n| Exports, piezoelectric          | 41      | 37      | 39      | 77      | 120     |\n| Price, as-grown cultured quartz, dollars per kilograme, 4 | 200     | 200     | 200     | 200     | 200     |\n| Price, lumbered quartz, dollars per kilograme, 4, 7 | 500     | 400     | 300     | 300     | 300     |\n| Net import reliance6 as a percentage of apparent consumption | NA      | NA      | NA      | NA      | NA      |",
+   "notes": "e = estimated; W = withheld to avoid disclosing company proprietary data; NA = not available\nFootnotes:\n1. Lascas: a type of quartz crystal.\n2. Production data for ground high-purity quartz.\n3. Imports and exports data.\n4. Price data.\n5. Range of value in dollars per metric ton.\n6. Net import reliance as a percentage of apparent consumption.\n7. Price for lumbered quartz."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "bottom of page",
+   "content": "| Item                                               | Number       | Normal Trade Relations 12-31-23 |\n|----------------------------------------------------|--------------|---------------------------------|\n| Sand containing 95% or more silica and not more than 0.6% iron oxide (including HPQ) | 2505.10.1000 | Free.                           |\n| Quartz (including lascas and HPQ)                   | 2506.10.0050 | Free.                           |\n| Piezoelectric quartz, unmounted                      | 7104.10.0000 | 3% ad valorem.                  |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 699
+ },
+ "seconds": 5.7
+}

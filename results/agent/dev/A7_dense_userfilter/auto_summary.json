@@ -1,0 +1,46 @@
+{
+ "config": "A7_dense_userfilter",
+ "split": "dev",
+ "model": "openai/gpt-4o-mini",
+ "settings": {
+  "name": "A7_dense_userfilter",
+  "method": "dense",
+  "top_k": 3,
+  "call_budget": 1500,
+  "max_searches": 2,
+  "neighbors_tool": false,
+  "max_turns": 7,
+  "model_filter": false,
+  "prompt": "v2",
+  "guard_retries": 1,
+  "notes": "A4 without the model-chosen chapter filter (filter only from the user).",
+  "extra": {}
+ },
+ "n": 28,
+ "errors": 0,
+ "tool_use": "28/28",
+ "searches_distribution": {
+  "1": 22,
+  "2": 6
+ },
+ "status": {
+  "answered": 25,
+  "abstain": 3
+ },
+ "context_evidence_rate": "25/25",
+ "answered_with_gold_citation": "25/25",
+ "false_abstain_auto": "0/25",
+ "abstain_on_unanswerable_auto": "3/3",
+ "guard_rejections": 1,
+ "abstain_without_search": 0,
+ "search_limit_hits": 3,
+ "max_turns_hits": 0,
+ "rerank_parse_failures": 0,
+ "avg_context_chars": 1339,
+ "tokens_in": 46361,
+ "tokens_out": 3774,
+ "cost_usd_total": 0.00922,
+ "price_known": true,
+ "median_seconds": 2.85,
+ "total_seconds": 97.6
+}

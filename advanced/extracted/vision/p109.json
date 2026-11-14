@@ -1,0 +1,20 @@
+{
+ "page": 109,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "middle right",
+   "content": "| Country                         | Mine production⁾ | Reserves⁷    |\n|--------------------------------|----------------------|-------------------|\n|                                | 2022       | 2023       |                   |\n| United States (kyanite)         | 85,900ⁿ | 85,000     | Large             |\n| China (andalusite, crude ore)   | 100,000    | 100,000    | 5,000,000         |\n| France (andalusite)             | 65,000     | 65,000     | NA                |\n| India (kyanite and sillimanite) | 12,000     | 10,000     | 7,200,000         |\n| Peru (andalusite)              | 43,000     | 40,000     | NA                |\n| South Africa (andalusite)      | 170,000    | 170,000    | NA                |\n| World total (rounded)          | NA⁸    | NA⁸    | NA                |",
+   "notes": "⁾Estimated. E Net exporter, NA Not available, W Withheld to avoid disclosing company proprietary data.\nⁿSource: Virginia Department of Energy.\n⁷See Appendix C for resource and reserve definitions and information concerning data sources.\n⁸In addition to the countries and (or) localities listed, Brazil and Iran may have produced kyanite and related minerals and China may have produced kyanite in addition to andalusite, but information was not available to make reliable estimates of output."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 376
+ },
+ "seconds": 3.6
+}

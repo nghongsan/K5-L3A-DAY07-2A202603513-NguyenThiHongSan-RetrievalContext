@@ -1,0 +1,65 @@
+[
+ {
+  "query_id": "n01",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "n02",
+  "citation_support": [
+   true,
+   true,
+   true
+  ],
+  "note": "Core answer supported by p0104:c03; extra claim 'not negates' is not stated in cited chunks (minor); p0121:c00/p0108:c02 support the operator list.",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "n03",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "n04",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "n05",
+  "citation_support": [
+   true
+  ],
+  "note": "Correct. Cited p0151:c04 states 'control flow moves back to where the function was called' — valid ALTERNATIVE evidence missing from my gold (gold only lists p.153). Auto Context Evidence counts it as a miss; manual context grade 2.",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "n06",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "u04",
+  "citation_support": [],
+  "note": "Correct abstention.",
+  "abstention_correct": true
+ },
+ {
+  "query_id": "u05",
+  "citation_support": [],
+  "note": "Correct abstention.",
+  "abstention_correct": true
+ }
+]

@@ -1,0 +1,20 @@
+{
+ "page": 110,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019  | 2020  | 2021  | 2022  | 2023e |\n|-----------------------------------|-------|-------|-------|-------|-------|\n| Production:                       |       |       |       |       |       |\n| Mine, lead in concentrates        | 274   | 306   | 294   | 273   | 270   |\n| Mine, recoverable lead            | 266   | 297   | 286   | 264   | 260   |\n| Primary refinery                  | —    | —    | —    | —    | —    |\n| Secondary refinery, old scrap    | 1,150 | 1,090 | 1,050 | 1,010 | 1,000 |\n| Imports for consumption:          |       |       |       |       |       |\n| Lead in concentrates              | (1)   | (1)   | 1     | (1)   | (1)   |\n| Refined metal, unwrought          | 501   | 382   | 614   | 651   | 570   |\n| Exports:                         |       |       |       |       |       |\n| Lead in concentrates              | 259   | 265   | 262   | 255   | 270   |\n| Refined metal, unwrought (gross weight) | 25    | 17    | 22    | 26    | 25    |\n| Consumption, apparent2           | 1,630 | 1,450 | 1,640 | 1,630 | 1,600 |\n| Price, average, North American, cents per pound3 | 99.9  | 91.3  | 113.0 | 116.5 | 115   |\n| Employment, mine and mill (average), number4 | 1,600 | 1,790 | 1,830 | 1,870 | 1,800 |\n| Net import reliance5 as a percentage of apparent consumption, refined metal | 29    | 25    | 36    | 38    | 35    |",
+   "notes": "Footnotes: (1), 2, 3, 4, 5 (not transcribed in detail)"
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 543
+ },
+ "seconds": 4.6
+}

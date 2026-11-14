@@ -1,0 +1,27 @@
+{
+ "page": 178,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|------|------|------|------|-------|\n| Production, mine                  | 578  | 491  | 577  | 511  | 450   |\n| Sold by producers                | 515  | 461  | 556  | 548  | 460   |\n| Imports for consumption          | 280  | 189  | 278  | 346  | 230   |\n| Exports                         | 229  | 186  | 232  | 196  | 200   |\n| Consumption, apparent2           | 566  | 464  | 602  | 698  | 490   |\n| Price, average, milled, dollars per metric ton3 | 240  | 265  | 321  | 303  | 300   |\n| Employment, mine and mill, number:4 |      |      |      |      |       |\n| Talc                            | 208  | 187  | 334  | 316  | 350   |\n| Pyrophyllite                   | 30   | 31   | 32   | 35   | 38    |\n| Net import reliance5 as a percentage of apparent consumption | 9    | 1    | 8    | 21   | 6     |",
+   "notes": "Footnotes 2, 3, 4, 5 referenced but not transcribed."
+  },
+  {
+   "type": "table",
+   "title": "Tariff: Item, Number, Normal Trade Relations 12–31–23",
+   "location": "lower left",
+   "content": "| Item                                   | Number       | Normal Trade Relations 12–31–23 |\n|----------------------------------------|--------------|--------------------------------|\n| Natural steatite and talc:              |              |                                |\n| Not crushed, not powdered               | 2526.10.0000 | Free.                          |\n| Crushed or powdered                     | 2526.20.0000 | Free.                          |\n| Talc, steatite, and soapstone; cut or sawed | 6815.99.2000 | Free.                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 517
+ },
+ "seconds": 4.5
+}

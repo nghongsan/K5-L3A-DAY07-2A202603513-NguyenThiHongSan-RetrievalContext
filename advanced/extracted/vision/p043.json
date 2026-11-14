@@ -1,0 +1,20 @@
+{
+ "page": 43,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "middle right",
+   "content": "| Country       | Mine productione 2022 | Mine productione 2023 | Reserves8    |\n|---------------|-----------------------|-----------------------|--------------|\n| United States | —                     | —                     | Small        |\n| Brazil        | 197,100               | 190,000               | 11,000,000   |\n| China         | 130,000               | 200,000               | 18,000,000   |\n| Kazakhstan    | 250,1009              | 260,000               | Large        |\n| Russia        | 750,000               | 630,000               | 110,000,000  |\n| World total (rounded) | 1,330,000         | 1,300,000             | Large        |",
+   "notes": "e Estimated. — Zero.\n8 See Appendix C for resource and reserve definitions and information concerning data sources.\n9 Reported.\n10 Asbestos production in Brazil was permitted for export purposes only. The value shown is reported country exports of asbestos because production data were unavailable."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 257
+ },
+ "seconds": 2.8
+}

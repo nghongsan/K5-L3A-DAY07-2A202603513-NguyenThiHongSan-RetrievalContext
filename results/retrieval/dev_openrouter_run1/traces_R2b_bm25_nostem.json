@@ -1,0 +1,3091 @@
+[
+ {
+  "query_id": "q01",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which values does bool() convert to False?",
+  "query": "Which values does bool() convert to False?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0097:c02",
+    "page": 97,
+    "section": "4.1",
+    "score": 11.2108,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0121:c02",
+    "page": 121,
+    "section": "4.8",
+    "score": 10.1274,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0097:c01",
+    "page": 97,
+    "section": "4.1",
+    "score": 9.0608,
+    "hit": true
+   },
+   {
+    "rank": 4,
+    "id": "p0096:c00",
+    "page": 96,
+    "section": "4.1",
+    "score": 8.7311,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0097:c00",
+    "page": 97,
+    "section": "4.1",
+    "score": 7.1536,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0095:c02",
+    "page": 95,
+    "section": "4.1",
+    "score": 6.8623,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0122:c00",
+    "page": 122,
+    "section": "4.8",
+    "score": 6.2753,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0121:c03",
+    "page": 121,
+    "section": "4.8",
+    "score": 5.9939,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0122:c01",
+    "page": 122,
+    "section": "4.8",
+    "score": 5.8141,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0121:c04",
+    "page": 121,
+    "section": "4.8",
+    "score": 5.6429,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0097:c02",
+   "p0121:c02",
+   "p0097:c01"
+  ],
+  "context_chars": 962,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 97,
+    "evidence": "True: any non-zero number, any non-empty string • False: 0, empty string"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.3333333333333333,
+  "context_hit": true
+ },
+ {
+  "query_id": "q02",
+  "split": "dev",
+  "answerable": true,
+  "question": "What goes wrong if I write is_zero = num=0 when I meant to test whether num is zero?",
+  "query": "What goes wrong if I write is_zero = num=0 when I meant to test whether num is zero?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0099:c01",
+    "page": 99,
+    "section": "4.1",
+    "score": 21.6748,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0155:c02",
+    "page": 155,
+    "section": "6.3",
+    "score": 19.2563,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0101:c03",
+    "page": 101,
+    "section": "4.2",
+    "score": 19.0926,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0156:c00",
+    "page": 156,
+    "section": "6.3",
+    "score": 17.9407,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0102:c00",
+    "page": 102,
+    "section": "4.2",
+    "score": 17.6251,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0168:c00",
+    "page": 168,
+    "section": "6.5",
+    "score": 17.3427,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0166:c03",
+    "page": 166,
+    "section": "6.5",
+    "score": 16.7079,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0100:c01",
+    "page": 100,
+    "section": "4.1",
+    "score": 13.5861,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0106:c02",
+    "page": 106,
+    "section": "4.3",
+    "score": 11.0878,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0145:c02",
+    "page": 145,
+    "section": "5.6",
+    "score": 8.4197,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0099:c01",
+   "p0155:c02",
+   "p0101:c03"
+  ],
+  "context_chars": 1291,
+  "ms": 0.3,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 99,
+    "evidence": "is_zero = num=0 will always assign is_zero and num with 0, regardless of num's original value"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q03",
+  "split": "dev",
+  "answerable": true,
+  "question": "How many spaces per indentation level does the PEP 8 style guide recommend?",
+  "query": "How many spaces per indentation level does the PEP 8 style guide recommend?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0100:c05",
+    "page": 100,
+    "section": "4.2",
+    "score": 40.2,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0171:c00",
+    "page": 171,
+    "section": "6.6",
+    "score": 23.7409,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0110:c03",
+    "page": 110,
+    "section": "4.4",
+    "score": 17.9953,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0116:c04",
+    "page": 116,
+    "section": "4.6",
+    "score": 9.5386,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0102:c02",
+    "page": 102,
+    "section": "4.2",
+    "score": 8.3806,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0132:c00",
+    "page": 132,
+    "section": "5.2",
+    "score": 7.2964,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0150:c01",
+    "page": 150,
+    "section": "6.1",
+    "score": 6.6391,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0167:c00",
+    "page": 167,
+    "section": "6.5",
+    "score": 6.5937,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0109:c00",
+    "page": 109,
+    "section": "4.4",
+    "score": 5.1754,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0096:c03",
+    "page": 96,
+    "section": "4.1",
+    "score": 5.0348,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0100:c05",
+   "p0171:c00",
+   "p0110:c03"
+  ],
+  "context_chars": 1170,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 100,
+    "evidence": "The PEP 8 style guide recommends four spaces per indentation level."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q04",
+  "split": "dev",
+  "answerable": true,
+  "question": "When an if-else statement runs, can both the if body and the else body execute?",
+  "query": "When an if-else statement runs, can both the if body and the else body execute?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0102:c02",
+    "page": 102,
+    "section": "4.2",
+    "score": 22.1649,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0123:c00",
+    "page": 123,
+    "section": "4.8",
+    "score": 20.7235,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0122:c02",
+    "page": 122,
+    "section": "4.8",
+    "score": 19.5169,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0118:c00",
+    "page": 118,
+    "section": "4.6",
+    "score": 18.5136,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0102:c03",
+    "page": 102,
+    "section": "4.2",
+    "score": 16.6279,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0145:c00",
+    "page": 145,
+    "section": "5.6",
+    "score": 16.5598,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0126:c00",
+    "page": 126,
+    "section": "5.1",
+    "score": 15.8788,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0100:c04",
+    "page": 100,
+    "section": "4.2",
+    "score": 15.1358,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0111:c03",
+    "page": 111,
+    "section": "4.5",
+    "score": 15.1031,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0145:c01",
+    "page": 145,
+    "section": "5.6",
+    "score": 15.0279,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0102:c02",
+   "p0123:c00",
+   "p0122:c02"
+  ],
+  "context_chars": 1164,
+  "ms": 0.3,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 102,
+    "evidence": "When an if-else statement is executed, one and only one of the branches is taken."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q05",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which operator is the main exception to left associativity, and how is 2 ** 3 ** 4 evaluated?",
+  "query": "Which operator is the main exception to left associativity, and how is 2 ** 3 ** 4 evaluated?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0109:c00",
+    "page": 109,
+    "section": "4.4",
+    "score": 35.9386,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0109:c02",
+    "page": 109,
+    "section": "4.4",
+    "score": 25.2312,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0134:c00",
+    "page": 134,
+    "section": "5.3",
+    "score": 18.893,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0137:c00",
+    "page": 137,
+    "section": "5.3",
+    "score": 14.506,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0161:c03",
+    "page": 161,
+    "section": "6.4",
+    "score": 13.6578,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0108:c02",
+    "page": 108,
+    "section": "4.4",
+    "score": 12.8307,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0108:c03",
+    "page": 108,
+    "section": "4.4",
+    "score": 10.1352,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0109:c01",
+    "page": 109,
+    "section": "4.4",
+    "score": 9.9441,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0108:c01",
+    "page": 108,
+    "section": "4.4",
+    "score": 9.3138,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0108:c00",
+    "page": 108,
+    "section": "4.4",
+    "score": 8.3624,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0109:c00",
+   "p0109:c02",
+   "p0134:c00"
+  ],
+  "context_chars": 1453,
+  "ms": 0.3,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 109,
+    "evidence": "Exponentiation is the main exception (noted above) and is right associative: that is, evaluated from right to left. Ex: 2 ** 3 ** 4 is evaluated as 2 ** (3**4)."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q06",
+  "split": "dev",
+  "answerable": true,
+  "question": "How does Python evaluate a chained comparison such as 10 < x <= 20?",
+  "query": "How does Python evaluate a chained comparison such as 10 < x <= 20?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0109:c01",
+    "page": 109,
+    "section": "4.4",
+    "score": 28.3317,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0114:c01",
+    "page": 114,
+    "section": "4.5",
+    "score": 16.0599,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0112:c02",
+    "page": 112,
+    "section": "4.5",
+    "score": 13.5466,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0107:c01",
+    "page": 107,
+    "section": "4.3",
+    "score": 11.4732,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0111:c00",
+    "page": 111,
+    "section": "4.4",
+    "score": 11.4188,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0111:c01",
+    "page": 111,
+    "section": "4.5",
+    "score": 10.9034,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0103:c00",
+    "page": 103,
+    "section": "4.2",
+    "score": 10.5693,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0098:c02",
+    "page": 98,
+    "section": "4.1",
+    "score": 10.105,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0112:c01",
+    "page": 112,
+    "section": "4.5",
+    "score": 8.3879,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0167:c00",
+    "page": 167,
+    "section": "6.5",
+    "score": 8.2476,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0109:c01",
+   "p0114:c01",
+   "p0112:c02"
+  ],
+  "context_chars": 962,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 109,
+    "evidence": "10 < x <= 20 is evaluated as 10 < x and x <= 20."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q07",
+  "split": "dev",
+  "answerable": true,
+  "question": "Why can two separate if statements give a student a double grade curve, and what fixes it?",
+  "query": "Why can two separate if statements give a student a double grade curve, and what fixes it?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0111:c02",
+    "page": 111,
+    "section": "4.5",
+    "score": 12.7731,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0145:c01",
+    "page": 145,
+    "section": "5.6",
+    "score": 7.5282,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0125:c01",
+    "page": 125,
+    "section": "5.0",
+    "score": 6.7723,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0105:c02",
+    "page": 105,
+    "section": "4.3",
+    "score": 6.6108,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0165:c03",
+    "page": 165,
+    "section": "6.5",
+    "score": 6.1959,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0125:c02",
+    "page": 125,
+    "section": "5.0",
+    "score": 5.8419,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0106:c01",
+    "page": 106,
+    "section": "4.3",
+    "score": 5.6372,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0149:c03",
+    "page": 149,
+    "section": "6.1",
+    "score": 5.4867,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0122:c02",
+    "page": 122,
+    "section": "4.8",
+    "score": 5.23,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0123:c00",
+    "page": 123,
+    "section": "4.8",
+    "score": 5.0165,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0111:c02",
+   "p0145:c01",
+   "p0125:c01"
+  ],
+  "context_chars": 1467,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 111,
+    "evidence": "Two separate if statements do not guarantee that only one branch is taken and might result in both branches being taken."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q08",
+  "split": "dev",
+  "answerable": true,
+  "question": "What precedence do conditional expressions have compared with other Python operations?",
+  "query": "What precedence do conditional expressions have compared with other Python operations?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0119:c02",
+    "page": 119,
+    "section": "4.7",
+    "score": 19.3776,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0108:c00",
+    "page": 108,
+    "section": "4.4",
+    "score": 14.7593,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0121:c00",
+    "page": 121,
+    "section": "4.8",
+    "score": 12.5445,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0119:c01",
+    "page": 119,
+    "section": "4.7",
+    "score": 11.8664,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0095:c01",
+    "page": 95,
+    "section": "4.0",
+    "score": 10.5904,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0109:c00",
+    "page": 109,
+    "section": "4.4",
+    "score": 8.2402,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0104:c02",
+    "page": 104,
+    "section": "4.3",
+    "score": 7.8894,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0119:c03",
+    "page": 119,
+    "section": "4.7",
+    "score": 7.871,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0095:c00",
+    "page": 95,
+    "section": "4.0",
+    "score": 7.3004,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0110:c00",
+    "page": 110,
+    "section": "4.4",
+    "score": 7.2151,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0119:c02",
+   "p0108:c00"
+  ],
+  "context_chars": 1022,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 119,
+    "evidence": "Conditional expressions have the lowest precedence of all Python operations."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q09",
+  "split": "dev",
+  "answerable": true,
+  "question": "In a counting while loop, what happens when the step size is negative?",
+  "query": "In a counting while loop, what happens when the step size is negative?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0127:c00",
+    "page": 127,
+    "section": "5.1",
+    "score": 15.8131,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0127:c02",
+    "page": 127,
+    "section": "5.1",
+    "score": 12.3051,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0143:c01",
+    "page": 143,
+    "section": "5.6",
+    "score": 11.8189,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0130:c00",
+    "page": 130,
+    "section": "5.2",
+    "score": 11.4481,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0143:c04",
+    "page": 143,
+    "section": "5.6",
+    "score": 10.6993,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0143:c03",
+    "page": 143,
+    "section": "5.6",
+    "score": 10.0565,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0128:c00",
+    "page": 128,
+    "section": "5.1",
+    "score": 9.9572,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0130:c01",
+    "page": 130,
+    "section": "5.2",
+    "score": 9.5179,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0126:c03",
+    "page": 126,
+    "section": "5.1",
+    "score": 8.8968,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0135:c00",
+    "page": 135,
+    "section": "5.3",
+    "score": 8.3542,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0127:c00",
+   "p0127:c02"
+  ],
+  "context_chars": 1114,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 127,
+    "evidence": "if the step size is a negative number, the counter counts in descending order."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q10",
+  "split": "dev",
+  "answerable": true,
+  "question": "Is the end value included in the sequence produced by range()?",
+  "query": "Is the end value included in the sequence produced by range()?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0143:c04",
+    "page": 143,
+    "section": "5.6",
+    "score": 12.5628,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0130:c01",
+    "page": 130,
+    "section": "5.2",
+    "score": 12.272,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0130:c00",
+    "page": 130,
+    "section": "5.2",
+    "score": 10.7819,
+    "hit": true
+   },
+   {
+    "rank": 4,
+    "id": "p0130:c02",
+    "page": 130,
+    "section": "5.2",
+    "score": 9.763,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0143:c03",
+    "page": 143,
+    "section": "5.6",
+    "score": 9.7407,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0131:c02",
+    "page": 131,
+    "section": "5.2",
+    "score": 8.327,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0131:c03",
+    "page": 131,
+    "section": "5.2",
+    "score": 8.32,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0131:c01",
+    "page": 131,
+    "section": "5.2",
+    "score": 6.8717,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0135:c02",
+    "page": 135,
+    "section": "5.3",
+    "score": 6.458,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0136:c00",
+    "page": 136,
+    "section": "5.3",
+    "score": 5.7441,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0143:c04",
+   "p0130:c01",
+   "p0130:c00"
+  ],
+  "context_chars": 1131,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 130,
+    "evidence": "This integer sequence is inclusive of the start and exclusive of the end of the sequence."
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.3333333333333333,
+  "context_hit": true
+ },
+ {
+  "query_id": "q11",
+  "split": "dev",
+  "answerable": true,
+  "question": "When should I prefer a for loop over a while loop, including in nested loops?",
+  "query": "When should I prefer a for loop over a while loop, including in nested loops?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0135:c00",
+    "page": 135,
+    "section": "5.3",
+    "score": 25.5329,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0133:c00",
+    "page": 133,
+    "section": "5.3",
+    "score": 20.7863,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0132:c03",
+    "page": 132,
+    "section": "5.3",
+    "score": 20.3372,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0136:c00",
+    "page": 136,
+    "section": "5.3",
+    "score": 17.1838,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0143:c01",
+    "page": 143,
+    "section": "5.6",
+    "score": 17.1022,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0135:c01",
+    "page": 135,
+    "section": "5.3",
+    "score": 15.8327,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0125:c00",
+    "page": 125,
+    "section": "5.0",
+    "score": 14.9615,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0144:c00",
+    "page": 144,
+    "section": "5.6",
+    "score": 14.5121,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0125:c02",
+    "page": 125,
+    "section": "5.0",
+    "score": 13.543,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0125:c01",
+    "page": 125,
+    "section": "5.0",
+    "score": 12.6255,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0135:c00",
+   "p0133:c00"
+  ],
+  "context_chars": 1185,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 135,
+    "evidence": "A for loop is a preferable option in cases where a loop is used for counting purposes using a range() function, or when iterating over a container object, including nested situations."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q12",
+  "split": "dev",
+  "answerable": true,
+  "question": "What is a loop without a termination condition called, and what statement is essential to leave it?",
+  "query": "What is a loop without a termination condition called, and what statement is essential to leave it?",
+  "filter": {
+   "chapter": 5
+  },
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0138:c00",
+    "page": 138,
+    "section": "5.4",
+    "score": 24.395,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0143:c02",
+    "page": 143,
+    "section": "5.6",
+    "score": 13.4066,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0140:c02",
+    "page": 140,
+    "section": "5.5",
+    "score": 11.09,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0139:c00",
+    "page": 139,
+    "section": "5.4",
+    "score": 9.1774,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0137:c03",
+    "page": 137,
+    "section": "5.4",
+    "score": 8.6477,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0137:c02",
+    "page": 137,
+    "section": "5.4",
+    "score": 8.5991,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0126:c00",
+    "page": 126,
+    "section": "5.1",
+    "score": 8.4076,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0125:c03",
+    "page": 125,
+    "section": "5.1",
+    "score": 7.4655,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0143:c01",
+    "page": 143,
+    "section": "5.6",
+    "score": 7.4432,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0145:c00",
+    "page": 145,
+    "section": "5.6",
+    "score": 6.4005,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0138:c00",
+   "p0143:c02",
+   "p0140:c02"
+  ],
+  "context_chars": 1160,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 138,
+    "evidence": "A loop without a termination condition is known as an infinite loop."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q13",
+  "split": "dev",
+  "answerable": true,
+  "question": "What does a continue statement do inside a loop?",
+  "query": "What does a continue statement do inside a loop?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0139:c00",
+    "page": 139,
+    "section": "5.4",
+    "score": 11.9099,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0145:c00",
+    "page": 145,
+    "section": "5.6",
+    "score": 11.8175,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0143:c02",
+    "page": 143,
+    "section": "5.6",
+    "score": 10.6581,
+    "hit": true
+   },
+   {
+    "rank": 4,
+    "id": "p0139:c01",
+    "page": 139,
+    "section": "5.4",
+    "score": 9.5193,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0140:c01",
+    "page": 140,
+    "section": "5.4",
+    "score": 8.9463,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0137:c01",
+    "page": 137,
+    "section": "5.4",
+    "score": 8.3211,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0125:c02",
+    "page": 125,
+    "section": "5.0",
+    "score": 7.7131,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0140:c00",
+    "page": 140,
+    "section": "5.4",
+    "score": 7.662,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0140:c02",
+    "page": 140,
+    "section": "5.5",
+    "score": 6.8849,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0125:c00",
+    "page": 125,
+    "section": "5.0",
+    "score": 6.6995,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0139:c00",
+   "p0145:c00",
+   "p0143:c02"
+  ],
+  "context_chars": 1141,
+  "ms": 0.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 139,
+    "evidence": "A continue statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely."
+   },
+   {
+    "source_id": "openstax-intro-python",
+    "page": 143,
+    "evidence": "A continue statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q14",
+  "split": "dev",
+  "answerable": true,
+  "question": "Why do functions make code reusable?",
+  "query": "Why do functions make code reusable?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0148:c00",
+    "page": 148,
+    "section": "6.1",
+    "score": 11.0833,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0171:c02",
+    "page": 171,
+    "section": "6.7",
+    "score": 10.0083,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0149:c03",
+    "page": 149,
+    "section": "6.1",
+    "score": 8.8529,
+    "hit": true
+   },
+   {
+    "rank": 4,
+    "id": "p0147:c01",
+    "page": 147,
+    "section": "6.0",
+    "score": 6.8612,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0150:c00",
+    "page": 150,
+    "section": "6.1",
+    "score": 5.8792,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 5.0525,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 4.9575,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0116:c04",
+    "page": 116,
+    "section": "4.6",
+    "score": 4.9079,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0159:c00",
+    "page": 159,
+    "section": "6.3",
+    "score": 4.6693,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0147:c03",
+    "page": 147,
+    "section": "6.1",
+    "score": 3.9309,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0148:c00",
+   "p0171:c02",
+   "p0149:c03"
+  ],
+  "context_chars": 1232,
+  "ms": 0.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 149,
+    "evidence": "The body of a function can be executed repeatedly with multiple function calls, so a function promotes reusability."
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.3333333333333333,
+  "context_hit": true
+ },
+ {
+  "query_id": "q15",
+  "split": "dev",
+  "answerable": true,
+  "question": "Can a variable created inside a function be used after the function finishes?",
+  "query": "Can a variable created inside a function be used after the function finishes?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0156:c01",
+    "page": 156,
+    "section": "6.3",
+    "score": 23.6982,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0157:c02",
+    "page": 157,
+    "section": "6.3",
+    "score": 11.7088,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0155:c00",
+    "page": 155,
+    "section": "6.3",
+    "score": 11.4112,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0160:c02",
+    "page": 160,
+    "section": "6.4",
+    "score": 10.2463,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 9.4665,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0165:c00",
+    "page": 165,
+    "section": "6.5",
+    "score": 9.2858,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0171:c03",
+    "page": 171,
+    "section": "6.7",
+    "score": 8.9914,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0162:c02",
+    "page": 162,
+    "section": "6.4",
+    "score": 8.7681,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0153:c00",
+    "page": 153,
+    "section": "6.2",
+    "score": 7.8357,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0163:c03",
+    "page": 163,
+    "section": "6.4",
+    "score": 7.7622,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0156:c01",
+   "p0157:c02"
+  ],
+  "context_chars": 974,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 156,
+    "evidence": "A variable created within a function has local scope and only exists within the function. A local variable cannot be accessed outside of the function in which the variable was created. After a function finishes executing, the function's local variables no longer exist."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q16",
+  "split": "dev",
+  "answerable": true,
+  "question": "What must a function do before it can edit a global variable?",
+  "query": "What must a function do before it can edit a global variable?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0157:c02",
+    "page": 157,
+    "section": "6.3",
+    "score": 18.7775,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0155:c00",
+    "page": 155,
+    "section": "6.3",
+    "score": 11.6259,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0171:c03",
+    "page": 171,
+    "section": "6.7",
+    "score": 10.0272,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0159:c00",
+    "page": 159,
+    "section": "6.3",
+    "score": 8.5071,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0155:c01",
+    "page": 155,
+    "section": "6.3",
+    "score": 8.3396,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0160:c02",
+    "page": 160,
+    "section": "6.4",
+    "score": 8.169,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0160:c03",
+    "page": 160,
+    "section": "6.4",
+    "score": 7.5631,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0156:c02",
+    "page": 156,
+    "section": "6.3",
+    "score": 7.3664,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0156:c01",
+    "page": 156,
+    "section": "6.3",
+    "score": 7.1795,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0169:c01",
+    "page": 169,
+    "section": "6.6",
+    "score": 6.7627,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0157:c02",
+   "p0155:c00"
+  ],
+  "context_chars": 1169,
+  "ms": 0.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 157,
+    "evidence": "To edit a global variable inside a function, the variable must be declared with the global keyword."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q17",
+  "split": "dev",
+  "answerable": true,
+  "question": "What does PEP 8 recommend about spaces around the = sign?",
+  "query": "What does PEP 8 recommend about spaces around the = sign?",
+  "filter": {
+   "chapter": 6
+  },
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0171:c00",
+    "page": 171,
+    "section": "6.6",
+    "score": 20.0898,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0163:c00",
+    "page": 163,
+    "section": "6.4",
+    "score": 7.5994,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0168:c01",
+    "page": 168,
+    "section": "6.5",
+    "score": 4.9454,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0154:c02",
+    "page": 154,
+    "section": "6.2",
+    "score": 4.774,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0158:c01",
+    "page": 158,
+    "section": "6.3",
+    "score": 3.968,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0152:c03",
+    "page": 152,
+    "section": "6.2",
+    "score": 3.0242,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0152:c02",
+    "page": 152,
+    "section": "6.2",
+    "score": 2.9929,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0150:c01",
+    "page": 150,
+    "section": "6.1",
+    "score": 2.4105,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0163:c02",
+    "page": 163,
+    "section": "6.4",
+    "score": 2.1904,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0150:c02",
+    "page": 150,
+    "section": "6.1",
+    "score": 2.1656,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0171:c00",
+   "p0163:c00",
+   "p0168:c01"
+  ],
+  "context_chars": 905,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 171,
+    "evidence": "The PEP 8 style guide recommends no spaces around = when indicating keyword arguments and default parameter values."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "q18",
+  "split": "dev",
+  "answerable": true,
+  "question": "What is a branch?",
+  "query": "What is a branch?",
+  "filter": {
+   "chapter": 4
+  },
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0102:c03",
+    "page": 102,
+    "section": "4.2",
+    "score": 3.4277,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0095:c01",
+    "page": 95,
+    "section": "4.0",
+    "score": 3.2558,
+    "hit": true
+   },
+   {
+    "rank": 3,
+    "id": "p0111:c02",
+    "page": 111,
+    "section": "4.5",
+    "score": 3.1002,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0102:c03",
+   "p0095:c01"
+  ],
+  "context_chars": 1090,
+  "ms": 0.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 95,
+    "evidence": "A branch is a group of statements that execute based on a condition."
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.5,
+  "context_hit": true
+ },
+ {
+  "query_id": "q19",
+  "split": "dev",
+  "answerable": true,
+  "question": "In a nested loop, what does the outer loop control?",
+  "query": "In a nested loop, what does the outer loop control?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0132:c03",
+    "page": 132,
+    "section": "5.3",
+    "score": 17.4566,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0135:c00",
+    "page": 135,
+    "section": "5.3",
+    "score": 14.7224,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0135:c01",
+    "page": 135,
+    "section": "5.3",
+    "score": 14.3857,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0133:c00",
+    "page": 133,
+    "section": "5.3",
+    "score": 13.475,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0144:c01",
+    "page": 144,
+    "section": "5.6",
+    "score": 12.7374,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0136:c00",
+    "page": 136,
+    "section": "5.3",
+    "score": 11.5104,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0144:c00",
+    "page": 144,
+    "section": "5.6",
+    "score": 10.7614,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0125:c00",
+    "page": 125,
+    "section": "5.0",
+    "score": 9.243,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0143:c01",
+    "page": 143,
+    "section": "5.6",
+    "score": 9.1019,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0139:c00",
+    "page": 139,
+    "section": "5.4",
+    "score": 8.6607,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0132:c03",
+   "p0135:c00",
+   "p0135:c01"
+  ],
+  "context_chars": 1238,
+  "ms": 0.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 132,
+    "evidence": "The outer loop controls the number of the inner loop's full execution."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "t01",
+  "split": "dev",
+  "answerable": true,
+  "question": "What value does a function return if it has no return statement?",
+  "query": "What value does a function return if it has no return statement?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0165:c00",
+    "page": 165,
+    "section": "6.5",
+    "score": 19.5074,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 17.0788,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0165:c03",
+    "page": 165,
+    "section": "6.5",
+    "score": 15.8176,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0172:c01",
+    "page": 172,
+    "section": "6.7",
+    "score": 14.382,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0168:c00",
+    "page": 168,
+    "section": "6.5",
+    "score": 12.9674,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0167:c00",
+    "page": 167,
+    "section": "6.5",
+    "score": 11.9234,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0166:c03",
+    "page": 166,
+    "section": "6.5",
+    "score": 11.4959,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 11.0713,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0165:c01",
+    "page": 165,
+    "section": "6.5",
+    "score": 10.7496,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0167:c01",
+    "page": 167,
+    "section": "6.5",
+    "score": 10.02,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0165:c00",
+   "p0164:c02",
+   "p0165:c03"
+  ],
+  "context_chars": 1088,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 165,
+    "evidence": "Functions introduced so far have not had a return statement, which is the same as returning None, representing no value."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "t02",
+  "split": "dev",
+  "answerable": true,
+  "question": "Why shouldn't a list be used as a default parameter value?",
+  "query": "Why shouldn't a list be used as a default parameter value?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0170:c00",
+    "page": 170,
+    "section": "6.6",
+    "score": 16.0152,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0160:c02",
+    "page": 160,
+    "section": "6.4",
+    "score": 11.3818,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0170:c01",
+    "page": 170,
+    "section": "6.6",
+    "score": 10.7496,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0141:c00",
+    "page": 141,
+    "section": "5.5",
+    "score": 9.6693,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0173:c00",
+    "page": 173,
+    "section": "6.7",
+    "score": 9.1153,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0171:c01",
+    "page": 171,
+    "section": "6.6",
+    "score": 9.0617,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0170:c02",
+    "page": 170,
+    "section": "6.6",
+    "score": 8.7136,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0141:c01",
+    "page": 141,
+    "section": "5.5",
+    "score": 8.4129,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0169:c00",
+    "page": 169,
+    "section": "6.6",
+    "score": 8.2048,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0163:c01",
+    "page": 163,
+    "section": "6.4",
+    "score": 7.8213,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0170:c00",
+   "p0160:c02",
+   "p0170:c01"
+  ],
+  "context_chars": 1439,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 170,
+    "evidence": "Default parameter values are only defined once to be used by the function, so mutable objects (such as lists) should not be used as default values."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "t03",
+  "split": "dev",
+  "answerable": true,
+  "question": "If a function changes a list argument, does the caller see the change? What about a string argument?",
+  "query": "If a function changes a list argument, does the caller see the change? What about a string argument?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0163:c01",
+    "page": 163,
+    "section": "6.4",
+    "score": 26.2488,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0160:c02",
+    "page": 160,
+    "section": "6.4",
+    "score": 15.5251,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0162:c02",
+    "page": 162,
+    "section": "6.4",
+    "score": 13.8582,
+    "hit": true
+   },
+   {
+    "rank": 4,
+    "id": "p0172:c01",
+    "page": 172,
+    "section": "6.7",
+    "score": 13.2376,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0168:c01",
+    "page": 168,
+    "section": "6.5",
+    "score": 11.2273,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0162:c01",
+    "page": 162,
+    "section": "6.4",
+    "score": 10.2158,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0164:c00",
+    "page": 164,
+    "section": "6.4",
+    "score": 9.6503,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0161:c00",
+    "page": 161,
+    "section": "6.4",
+    "score": 8.1881,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0165:c00",
+    "page": 165,
+    "section": "6.5",
+    "score": 8.0888,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0163:c03",
+    "page": 163,
+    "section": "6.4",
+    "score": 7.5812,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0163:c01",
+   "p0160:c02"
+  ],
+  "context_chars": 888,
+  "ms": 0.3,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 162,
+    "evidence": "A mutable object can be modified after creation. A function's changes to the object then appear outside the function. An immutable object cannot be modified after creation. So a function must make a local copy to modify, and the local copy's changes don't appear outside the function."
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.3333333333333333,
+  "context_hit": false
+ },
+ {
+  "query_id": "t04",
+  "split": "dev",
+  "answerable": true,
+  "question": "When does the else block run?",
+  "query": "When does the else block run?",
+  "filter": {
+   "chapter": 5
+  },
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0128:c01",
+    "page": 128,
+    "section": "5.1",
+    "score": 5.829,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0141:c00",
+    "page": 141,
+    "section": "5.5",
+    "score": 5.2445,
+    "hit": true
+   },
+   {
+    "rank": 3,
+    "id": "p0125:c01",
+    "page": 125,
+    "section": "5.0",
+    "score": 4.1509,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0140:c02",
+    "page": 140,
+    "section": "5.5",
+    "score": 3.0014,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0141:c03",
+    "page": 141,
+    "section": "5.5",
+    "score": 2.6763,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0142:c00",
+    "page": 142,
+    "section": "5.5",
+    "score": 2.3895,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0142:c01",
+    "page": 142,
+    "section": "5.5",
+    "score": 2.3766,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0145:c01",
+    "page": 145,
+    "section": "5.6",
+    "score": 2.3063,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0145:c00",
+    "page": 145,
+    "section": "5.6",
+    "score": 1.9502,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0143:c02",
+    "page": 143,
+    "section": "5.6",
+    "score": 1.9,
+    "hit": true
+   }
+  ],
+  "context_ids": [
+   "p0128:c01",
+   "p0141:c00"
+  ],
+  "context_chars": 1150,
+  "ms": 0.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 143,
+    "evidence": "A loop else statement runs after the loop's execution is completed without being interrupted by a break statement."
+   },
+   {
+    "source_id": "openstax-intro-python",
+    "page": 141,
+    "evidence": "A loop else is used to identify if the loop is terminated normally or the execution is interrupted by a break statement."
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.5,
+  "context_hit": true
+ },
+ {
+  "query_id": "t05",
+  "split": "dev",
+  "answerable": true,
+  "question": "When a call mixes positional and keyword arguments, which must come first?",
+  "query": "When a call mixes positional and keyword arguments, which must come first?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0169:c01",
+    "page": 169,
+    "section": "6.6",
+    "score": 28.0637,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0169:c00",
+    "page": 169,
+    "section": "6.6",
+    "score": 16.2002,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0169:c02",
+    "page": 169,
+    "section": "6.6",
+    "score": 14.4925,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0172:c00",
+    "page": 172,
+    "section": "6.7",
+    "score": 11.917,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0161:c01",
+    "page": 161,
+    "section": "6.4",
+    "score": 10.47,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 9.4188,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0171:c01",
+    "page": 171,
+    "section": "6.6",
+    "score": 9.3591,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0148:c04",
+    "page": 148,
+    "section": "6.1",
+    "score": 8.9755,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0147:c00",
+    "page": 147,
+    "section": "6.0",
+    "score": 6.3245,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0173:c00",
+    "page": 173,
+    "section": "6.7",
+    "score": 6.2497,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0169:c01",
+   "p0169:c00",
+   "p0169:c02"
+  ],
+  "context_chars": 1019,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 169,
+    "evidence": "When mixing positional and keyword arguments, positional arguments must come first in the correct order, before any keyword arguments."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "t06",
+  "split": "dev",
+  "answerable": true,
+  "question": "What does elif stand for and where must it be placed?",
+  "query": "What does elif stand for and where must it be placed?",
+  "filter": {
+   "chapter": 4
+  },
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0111:c03",
+    "page": 111,
+    "section": "4.5",
+    "score": 7.6673,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0114:c00",
+    "page": 114,
+    "section": "4.5",
+    "score": 4.8326,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0113:c02",
+    "page": 113,
+    "section": "4.5",
+    "score": 4.526,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0111:c01",
+    "page": 111,
+    "section": "4.5",
+    "score": 4.4042,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0115:c00",
+    "page": 115,
+    "section": "4.5",
+    "score": 4.396,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0113:c00",
+    "page": 113,
+    "section": "4.5",
+    "score": 4.1242,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0117:c00",
+    "page": 117,
+    "section": "4.6",
+    "score": 4.0281,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0112:c02",
+    "page": 112,
+    "section": "4.5",
+    "score": 3.9971,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0100:c05",
+    "page": 100,
+    "section": "4.2",
+    "score": 3.8964,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0123:c00",
+    "page": 123,
+    "section": "4.8",
+    "score": 3.738,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0111:c03",
+   "p0114:c00",
+   "p0113:c02"
+  ],
+  "context_chars": 1189,
+  "ms": 0.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 111,
+    "evidence": "An elif (short for else if) statement checks a condition when the prior decision statement's condition is false. An elif statement is part of a chain and must follow an if (or elif) statement."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "u01",
+  "split": "dev",
+  "answerable": false,
+  "question": "How do I write a lambda (anonymous) function in Python?",
+  "query": "How do I write a lambda (anonymous) function in Python?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0171:c01",
+    "page": 171,
+    "section": "6.6",
+    "score": 11.1663,
+    "hit": null
+   },
+   {
+    "rank": 2,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 6.1822,
+    "hit": null
+   },
+   {
+    "rank": 3,
+    "id": "p0162:c02",
+    "page": 162,
+    "section": "6.4",
+    "score": 5.5339,
+    "hit": null
+   },
+   {
+    "rank": 4,
+    "id": "p0168:c01",
+    "page": 168,
+    "section": "6.5",
+    "score": 4.7822,
+    "hit": null
+   },
+   {
+    "rank": 5,
+    "id": "p0157:c02",
+    "page": 157,
+    "section": "6.3",
+    "score": 4.6549,
+    "hit": null
+   },
+   {
+    "rank": 6,
+    "id": "p0160:c02",
+    "page": 160,
+    "section": "6.4",
+    "score": 4.6471,
+    "hit": null
+   },
+   {
+    "rank": 7,
+    "id": "p0155:c00",
+    "page": 155,
+    "section": "6.3",
+    "score": 4.2205,
+    "hit": null
+   },
+   {
+    "rank": 8,
+    "id": "p0151:c00",
+    "page": 151,
+    "section": "6.1",
+    "score": 4.1379,
+    "hit": null
+   },
+   {
+    "rank": 9,
+    "id": "p0163:c04",
+    "page": 163,
+    "section": "6.4",
+    "score": 4.0859,
+    "hit": null
+   },
+   {
+    "rank": 10,
+    "id": "p0143:c03",
+    "page": 143,
+    "section": "5.6",
+    "score": 4.0352,
+    "hit": null
+   }
+  ],
+  "context_ids": [
+   "p0171:c01",
+   "p0171:c04"
+  ],
+  "context_chars": 990,
+  "ms": 0.1,
+  "top1_score": 11.1663
+ },
+ {
+  "query_id": "u02",
+  "split": "dev",
+  "answerable": false,
+  "question": "How does a try/except block handle a ZeroDivisionError?",
+  "query": "How does a try/except block handle a ZeroDivisionError?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0147:c01",
+    "page": 147,
+    "section": "6.0",
+    "score": 7.7509,
+    "hit": null
+   },
+   {
+    "rank": 2,
+    "id": "p0148:c00",
+    "page": 148,
+    "section": "6.1",
+    "score": 5.3278,
+    "hit": null
+   },
+   {
+    "rank": 3,
+    "id": "p0125:c01",
+    "page": 125,
+    "section": "5.0",
+    "score": 4.1509,
+    "hit": null
+   },
+   {
+    "rank": 4,
+    "id": "p0108:c03",
+    "page": 108,
+    "section": "4.4",
+    "score": 2.9208,
+    "hit": null
+   },
+   {
+    "rank": 5,
+    "id": "p0150:c00",
+    "page": 150,
+    "section": "6.1",
+    "score": 2.8915,
+    "hit": null
+   },
+   {
+    "rank": 6,
+    "id": "p0155:c01",
+    "page": 155,
+    "section": "6.3",
+    "score": 2.8915,
+    "hit": null
+   },
+   {
+    "rank": 7,
+    "id": "p0169:c02",
+    "page": 169,
+    "section": "6.6",
+    "score": 2.8915,
+    "hit": null
+   },
+   {
+    "rank": 8,
+    "id": "p0160:c03",
+    "page": 160,
+    "section": "6.4",
+    "score": 2.877,
+    "hit": null
+   },
+   {
+    "rank": 9,
+    "id": "p0096:c01",
+    "page": 96,
+    "section": "4.1",
+    "score": 2.8627,
+    "hit": null
+   },
+   {
+    "rank": 10,
+    "id": "p0110:c01",
+    "page": 110,
+    "section": "4.4",
+    "score": 2.8627,
+    "hit": null
+   }
+  ],
+  "context_ids": [
+   "p0147:c01",
+   "p0148:c00",
+   "p0125:c01"
+  ],
+  "context_chars": 1217,
+  "ms": 0.1,
+  "top1_score": 7.7509
+ },
+ {
+  "query_id": "u03",
+  "split": "dev",
+  "answerable": false,
+  "question": "What is the base case of a recursive function?",
+  "query": "What is the base case of a recursive function?",
+  "filter": null,
+  "config": "R2b_bm25_nostem",
+  "method": "bm25_nostem",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0148:c04",
+    "page": 148,
+    "section": "6.1",
+    "score": 7.5412,
+    "hit": null
+   },
+   {
+    "rank": 2,
+    "id": "p0163:c04",
+    "page": 163,
+    "section": "6.4",
+    "score": 7.1675,
+    "hit": null
+   },
+   {
+    "rank": 3,
+    "id": "p0164:c00",
+    "page": 164,
+    "section": "6.4",
+    "score": 5.906,
+    "hit": null
+   },
+   {
+    "rank": 4,
+    "id": "p0156:c01",
+    "page": 156,
+    "section": "6.3",
+    "score": 2.6286,
+    "hit": null
+   },
+   {
+    "rank": 5,
+    "id": "p0160:c02",
+    "page": 160,
+    "section": "6.4",
+    "score": 2.5947,
+    "hit": null
+   },
+   {
+    "rank": 6,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 2.5191,
+    "hit": null
+   },
+   {
+    "rank": 7,
+    "id": "p0171:c03",
+    "page": 171,
+    "section": "6.7",
+    "score": 2.5064,
+    "hit": null
+   },
+   {
+    "rank": 8,
+    "id": "p0163:c02",
+    "page": 163,
+    "section": "6.4",
+    "score": 2.4693,
+    "hit": null
+   },
+   {
+    "rank": 9,
+    "id": "p0149:c00",
+    "page": 149,
+    "section": "6.1",
+    "score": 2.4097,
+    "hit": null
+   },
+   {
+    "rank": 10,
+    "id": "p0149:c03",
+    "page": 149,
+    "section": "6.1",
+    "score": 2.3966,
+    "hit": null
+   }
+  ],
+  "context_ids": [
+   "p0148:c04",
+   "p0163:c04",
+   "p0164:c00"
+  ],
+  "context_chars": 1167,
+  "ms": 0.1,
+  "top1_score": 7.5412
+ }
+]

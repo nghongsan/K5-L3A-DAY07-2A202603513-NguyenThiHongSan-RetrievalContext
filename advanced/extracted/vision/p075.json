@@ -1,0 +1,20 @@
+{
+ "page": 75,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country                      | Mine productione 2022 | Mine productione 2023 | Reserves5 |\n|------------------------------|-----------------------|-----------------------|-----------|\n| United States1               | 540                   | 590                   | NA        |\n| Brazil (beneficiated, marketable) | 760                   | 760                   | 150,000   |\n| China                       | 2,500                 | 2,500                 | 730,000   |\n| Czechia                     | 450                   | 450                   | 54,000    |\n| India                       | 5,000                 | 5,000                 | 320,000   |\n| Iran                        | 2,000                 | 2,000                 | 95,000    |\n| Italy                       | 2,200                 | 2,200                 | NA        |\n| Korea, Republic of          | 851                   | 900                   | 180,000   |\n| Mexico                      | 495                   | 460                   | NA        |\n| Pakistan                    | 448                   | 400                   | NA        |\n| Saudi Arabia                | 550                   | 550                   | NA        |\n| Spain (includes pegmatites) | 800                   | 800                   | NA        |\n| Thailand                   | 1,300                 | 1,300                 | 45,000    |\n| Turkey                      | 6,100                 | 6,200                 | 720,000   |\n| Other countries             | 2,600                 | 2,600                 | NA        |\n| World total (rounded)       | 26,600                | 27,000                | Large     |",
+   "notes": "eEstimated. NA Not available.\n1Rounded to two significant digits to avoid disclosing company proprietary data.\n4Feldspar only.\n5See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 445
+ },
+ "seconds": 4.3
+}

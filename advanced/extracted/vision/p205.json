@@ -1,0 +1,20 @@
+{
+ "page": 205,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Mine production and reserves of natural zeolites",
+   "location": "middle left",
+   "content": "| Country               | 2022     | 2023     |\n|-----------------------|----------|----------|\n| United States         | 77,400   | 84,000   |\n| Chile                 | 297      | 400      |\n| China                 | 200,000  | 200,000  |\n| Cuba                  | 77,500   | 78,000   |\n| Georgia               | 4,810    | 5,000    |\n| Hungary               | 32,000   | 31,000   |\n| Indonesia             | 100,000  | 100,000  |\n| Jordan                | 1,000    | 1,000    |\n| Korea, Republic of    | 16,000   | 130,000  |\n| Philippines           | 6,900    | 7,100    |\n| New Zealand           | 100,000  | 100,000  |\n| Russia                | 35,000   | 35,000   |\n| Slovakia              | 221,000  | 220,000  |\n| Turkey                | 74,500   | 70,000   |\n| World total (rounded) | 900,000  | 1,100,000|\n",
+   "notes": "Mine production is estimated (e). Reserves data from two leading U.S. companies reporting combined reserves of 80 million tons in 2022; total U.S. reserves likely substantially larger. World data unavailable but reserves estimated to be large."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 365
+ },
+ "seconds": 4.0
+}

@@ -1,0 +1,20 @@
+{
+ "page": 123,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country          | Mine productione |       | Reserves2                                   |\n|------------------|------------------|-------|---------------------------------------------|\n|                  | 2022             | 2023  |                                             |\n| United States    | NA               | NA    | Quantitative estimates of reserves were not available. |\n| China           | 1,000            | 1,000 | China, Kyrgyzstan, and Peru have the largest reserves. |\n| Kyrgyzstan      | 6                | 6     |                                             |\n| Morocco         | 2                | 2     |                                             |\n| Norway          | 20               | 20    |                                             |\n| Peru (exports)  | 30               | 30    |                                             |\n| Tajikistan      | 100              | 100   |                                             |\n| World total (rounded)3 | 1,160       | 1,200 |                                             |",
+   "notes": "eEstimated. NA Not available. — Zero.\n2See Appendix C for resource and reserve definitions and information concerning data sources.\n3Excludes U.S. production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 264
+ },
+ "seconds": 2.7
+}

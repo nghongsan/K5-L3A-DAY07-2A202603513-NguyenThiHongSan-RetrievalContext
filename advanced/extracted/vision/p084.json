@@ -1,0 +1,41 @@
+{
+ "page": 84,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019  | 2020  | 2021  | 2022  | 2023e |\n|-----------------------------------|-------|-------|-------|-------|-------|\n| Production, refinery:              |       |       |       |       |       |\n| Primary                           |   —   |   —   |   —   |   —   |   —   |\n| Secondary                        |  NA   |  NA   |  NA   |  NA   |  NA   |\n| Imports for consumption:e, 1      |       |       |       |       |       |\n| Germanium metal                  | 14000 | 14000 | 13000 | 16000 | 24000 |\n| Germanium dioxide               | 21000 | 11000 | 17000 | 15000 | 14000 |\n| Germanium tetrachloride         |  NA   |  NA   |  NA   |  NA   |  NA   |\n| Exports:e, 1                     |       |       |       |       |       |\n| Germanium metal                  |  3900 |  4000 |  5500 |  6600 |  6300 |\n| Germanium dioxide               |   600 |   800 |   400 |   100 |   100 |\n| Germanium tetrachloride         |  NA   |  NA   |  NA   |  NA   |  NA   |\n| Shipments from Government stockpile2 |   —   |   —   |   —   |   —   |  NA   |\n| Consumption, estimated3           | 30000 | 30000 | 30000 |  NA   |  NA   |\n| Price, annual average, dollars per kilogram:4 |       |       |       |       |       |\n| Germanium metal                  | 1236  | 1046  | 1187  | 1294  | 1400  |\n| Germanium dioxide               |  913  |  724  |  770  |  828  |  880  |\n| Net import reliance5 as a percentage of estimated consumption | >50   | >50   | >50   | >50   | >50   |",
+   "notes": "e = estimated, NA = not available\nFootnotes: 1, 2, 3, 4, 5 (not fully transcribed here)"
+  },
+  {
+   "type": "table",
+   "title": "Import Sources (2019–22)",
+   "location": "middle",
+   "content": "| Material           | Source Countries and Percentages                                   |\n|--------------------|-------------------------------------------------------------------|\n| Germanium metal    | China, 54%; Belgium, 30%; Germany, 8%; Russia, 6%; other, 2%       |\n| Germanium dioxide  | Belgium, 47%; Canada, 46%; other, 7%                               |\n| Combined total     | Belgium, 39%; China, 26%; Canada, 25%; other, 10%                  |",
+   "notes": "Footnotes: 1, 6 (not fully transcribed here)"
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "middle",
+   "content": "| Item                                   | Number       | Normal Trade Relations 12–31–23       |\n|----------------------------------------|--------------|-------------------------------------|\n| Germanium oxides and zirconium dioxide | 2825.60.0000 | 3.7% ad valorem.                    |\n| Unspecified chlorides, including germanium tetrachloride | 2827.39.9000 | 3.7% ad valorem.                    |\n| Metal, unwrought                       | 8112.92.6000 | 2.6% ad valorem.                    |\n| Metal, powder                         | 8112.92.6500 | 4.4% ad valorem.                    |\n| Metal, wrought                        | 8112.99.1000 | 4.4% ad valorem.                    |",
+   "notes": ""
+  },
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "lower half",
+   "content": "| Material               | FY 2023 Potential acquisitions | FY 2023 Potential disposals | FY 2024 Potential acquisitions | FY 2024 Potential disposals |\n|------------------------|-------------------------------|-----------------------------|-------------------------------|-----------------------------|\n| Germanium (gross weight) | —                             | 5,000                       | —                             | 5,000                       |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1006
+ },
+ "seconds": 7.4
+}

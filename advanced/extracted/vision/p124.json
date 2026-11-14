@@ -1,0 +1,27 @@
+{
+ "page": 124,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                                   | 2019   | 2020   | 2021   | 2022   | 2023e  |\n|--------------------------------------------|--------|--------|--------|--------|--------|\n| Scrap and flake:                            |        |        |        |        |        |\n| Production:e, 1                            |        |        |        |        |        |\n| Sold or used                              | 40,100 | 34,600 | 40,600 | 42,000 | 38,000 |\n| Ground                                   | 61,300 | 59,900 | 66,800 | 66,300 | 65,000 |\n| Imports2                                 | 27,300 | 20,400 | 24,100 | 22,600 | 19,000 |\n| Exports3                                 | 5,500  | 3,980  | 4,850  | 4,450  | 4,000  |\n| Consumption, apparente, 4                 | 61,900 | 50,000 | 59,600 | 60,200 | 53,000 |\n| Price, average, dollars per metric ton:e |        |        |        |        |        |\n| Scrap and flake                          | 105    | 120    | 100    | 100    | 100    |\n| Ground:                                  |        |        |        |        |        |\n| Dry                                      | 316    | 303    | 299    | 300    | 300    |\n| Wet                                      | 394    | 337    | 336    | 350    | 350    |\n| Net import reliance5 as a percentage of apparent consumption | 35     | 31     | 32     | 30     | 28     |\n| Sheet:                                   |        |        |        |        |        |\n| Sold or used                             | W      | W      | NA     | NA     | NA     |\n| Imports6                                 | 3,150  | 2,840  | 3,980  | 5,410  | 4,100  |\n| Exports7                                 | 779    | 528    | 633    | 803    | 1,100  |\n| Consumption, apparente, 4                 | 2,370  | 2,310  | 3,350  | 4,610  | 3,000  |\n| Price, average value, muscovite and phlogopite mica, dollars per kilogram:e |        |        |        |        |        |\n| Block                                    | W      | W      | W      | W      | W      |\n| Splittings                              | 1.66   | 1.57   | 1.88   | 1.60   | 1.60   |\n| Net import reliance5 as a percentage of apparent consumption | 100    | 100    | 100    | 100    | 100    |",
+   "notes": "Footnotes: e = estimated; W = withheld to avoid disclosing company proprietary data; NA = not available.\n1,2,3,4,5,6,7 = specific footnotes not fully transcribed here."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                         | Number       | Normal Trade Relations 12-31-23 |\n|----------------------------------------------|--------------|---------------------------------|\n| Split block mica                             | 2525.10.0010 | Free.                           |\n| Mica splittings                             | 2525.10.0020 | Free.                           |\n| Unworked, other                             | 2525.10.0050 | Free.                           |\n| Mica powder                                 | 2525.20.0000 | Free.                           |\n| Mica waste                                 | 2525.30.0000 | Free.                           |\n| Plates, sheets, and strips of agglomerated or reconstituted mica | 6814.10.0000 | 2.7% ad valorem.                |\n| Worked mica and articles of mica, other    | 6814.90.0000 | 2.6% ad valorem.                |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 959
+ },
+ "seconds": 7.0
+}

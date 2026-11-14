@@ -1,0 +1,32 @@
+{
+ "page": 180,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|------|------|------|------|-------|\n| Production:             |      |      |      |      |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Mine           | —    | —    | —    | —    | —     |\n| &nbsp;&nbsp;&nbsp;&nbsp;Secondary      | NA   | NA   | NA   | NA   | NA    |\n| Imports for consumption¹ | 1,350| 1,200| 1,330| 1,720| 1,100 |\n| Exports¹                | 427  | 434  | 655  | 662  | 680   |\n| Shipments from Government stockpile² | —    | −16  | −10  | —    | NA    |\n| Consumption, apparent³  | 919  | 753  | 663  | 1,060| 370   |\n| Price, tantalite, annual average, dollars per kilogram of Ta2O5 content⁵ | 161  | 158  | 158  | 214  | 190   |\n| Net import reliance⁶ as a percentage of apparent consumption | 100  | 100  | 100  | 100  | 100   |",
+   "notes": "¹, ², ³, ⁵, ⁶ footnotes referenced but not transcribed here."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "middle right",
+   "content": "| Item                                | Number       | Normal Trade Relations 12–31–23 |\n|------------------------------------|--------------|---------------------------------|\n| Synthetic tantalum-niobium concentrates | 2615.90.3000 | Free.                           |\n| Niobium ores and concentrates       | 2615.90.6030 | Free.                           |\n| Tantalum ores and concentrates      | 2615.90.6060 | Free.                           |\n| Tantalum oxide                     | 2825.90.9000 | 3.7% ad valorem.                |\n| Potassium fluorotantalate          | 2826.90.9000 | 3.1% ad valorem.                |\n| Tantalum, unwrought:               |              |                                 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Powders           | 8103.20.0030 | 2.5% ad valorem.                |\n| &nbsp;&nbsp;&nbsp;&nbsp;Alloys and metal    | 8103.20.0090 | 2.5% ad valorem.                |\n| Tantalum, waste and scrap          | 8103.30.0000 | Free.                           |\n| Tantalum, wrought:                 |              |                                 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Crucibles          | 8103.91.0000 | 4.4% ad valorem.                |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other               | 8103.99.0000 | 4.4% ad valorem.                |"
+  },
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "lower left",
+   "content": "| Material       | FY 2023 Potential acquisitions | FY 2023 Potential disposals | FY 2024 Potential acquisitions | FY 2024 Potential disposals |\n|----------------|-------------------------------|-----------------------------|-------------------------------|-----------------------------|\n| Tantalum metal | —                             | 0.09                        | 24.00                         | 0.09                        |"
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 819
+ },
+ "seconds": 6.3
+}

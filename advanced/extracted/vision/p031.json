@@ -1,0 +1,347 @@
+{
+ "page": 31,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "chart",
+   "title": "Figure 12.—Change in U.S. Consumption of Nonfuel Mineral Commodities From 2019 to 2023",
+   "location": "full page",
+   "content": {
+    "chart_kind": "bar chart",
+    "axes": {
+     "x": "Nonfuel mineral commodity (listed horizontally, rotated)",
+     "y": "Percent change (-100 to 100)"
+    },
+    "legend": {
+     "Critical minerals": "blue bars",
+     "Other minerals": "orange bars"
+    },
+    "bars": [
+     {
+      "commodity": "Thallium",
+      "percent_change": "~ -80",
+      "color": "orange"
+     },
+     {
+      "commodity": "Asbestos",
+      "percent_change": "~ -65",
+      "color": "orange"
+     },
+     {
+      "commodity": "Strontium",
+      "percent_change": "~ -60",
+      "color": "blue"
+     },
+     {
+      "commodity": "Tantalum",
+      "percent_change": "~ -55",
+      "color": "blue"
+     },
+     {
+      "commodity": "Rhenium (stones)",
+      "percent_change": "~ -55",
+      "color": "orange"
+     },
+     {
+      "commodity": "Bauxite",
+      "percent_change": "~ -50",
+      "color": "orange"
+     },
+     {
+      "commodity": "Yttrium",
+      "percent_change": "~ -50",
+      "color": "blue"
+     },
+     {
+      "commodity": "Cobalt",
+      "percent_change": "~ -45",
+      "color": "blue"
+     },
+     {
+      "commodity": "Pumice and pumicite",
+      "percent_change": "~ -40",
+      "color": "orange"
+     },
+     {
+      "commodity": "Titanium metal",
+      "percent_change": "~ -35",
+      "color": "blue"
+     },
+     {
+      "commodity": "Abrasives (alumina and industrial)",
+      "percent_change": "~ -35",
+      "color": "orange"
+     },
+     {
+      "commodity": "Garnet (industrial)",
+      "percent_change": "~ -30",
+      "color": "orange"
+     },
+     {
+      "commodity": "Chromium",
+      "percent_change": "~ -30",
+      "color": "blue"
+     },
+     {
+      "commodity": "Iodine",
+      "percent_change": "~ -25",
+      "color": "blue"
+     },
+     {
+      "commodity": "Rare earths",
+      "percent_change": "~ -25",
+      "color": "blue"
+     },
+     {
+      "commodity": "Bismuth",
+      "percent_change": "~ -20",
+      "color": "blue"
+     },
+     {
+      "commodity": "Antimony",
+      "percent_change": "~ -20",
+      "color": "blue"
+     },
+     {
+      "commodity": "Soda ash",
+      "percent_change": "~ -20",
+      "color": "orange"
+     },
+     {
+      "commodity": "Arsenic",
+      "percent_change": "~ -15",
+      "color": "blue"
+     },
+     {
+      "commodity": "Clay",
+      "percent_change": "~ -15",
+      "color": "orange"
+     },
+     {
+      "commodity": "Talc and pyrophyllite",
+      "percent_change": "~ -15",
+      "color": "orange"
+     },
+     {
+      "commodity": "Mica",
+      "percent_change": "~ -15",
+      "color": "orange"
+     },
+     {
+      "commodity": "Nickel",
+      "percent_change": "~ -10",
+      "color": "blue"
+     },
+     {
+      "commodity": "Salt",
+      "percent_change": "~ -10",
+      "color": "orange"
+     },
+     {
+      "commodity": "Gypsum",
+      "percent_change": "~ -10",
+      "color": "orange"
+     },
+     {
+      "commodity": "Beryllium",
+      "percent_change": "~ -10",
+      "color": "blue"
+     },
+     {
+      "commodity": "Niobium (columbium)",
+      "percent_change": "~ -10",
+      "color": "blue"
+     },
+     {
+      "commodity": "Manganese",
+      "percent_change": "~ -5",
+      "color": "blue"
+     },
+     {
+      "commodity": "Iron and steel",
+      "percent_change": "~ -5",
+      "color": "orange"
+     },
+     {
+      "commodity": "Phosphate rock",
+      "percent_change": "~ -5",
+      "color": "orange"
+     },
+     {
+      "commodity": "Palladium",
+      "percent_change": "~ -5",
+      "color": "blue"
+     },
+     {
+      "commodity": "Potash",
+      "percent_change": "~ -5",
+      "color": "orange"
+     },
+     {
+      "commodity": "Magnesium metal",
+      "percent_change": "~ -5",
+      "color": "blue"
+     },
+     {
+      "commodity": "Abrasives (silicon carbide)",
+      "percent_change": "~ -5",
+      "color": "orange"
+     },
+     {
+      "commodity": "Sand and gravel (construction)",
+      "percent_change": "~ 0",
+      "color": "orange"
+     },
+     {
+      "commodity": "Nitrogen (fixed)—ammonia",
+      "percent_change": "~ 0",
+      "color": "orange"
+     },
+     {
+      "commodity": "Copper",
+      "percent_change": "~ 0",
+      "color": "blue"
+     },
+     {
+      "commodity": "Celsian",
+      "percent_change": "~ 0",
+      "color": "orange"
+     },
+     {
+      "commodity": "Iron and steel (plate)",
+      "percent_change": "~ 0",
+      "color": "orange"
+     },
+     {
+      "commodity": "Vanadium",
+      "percent_change": "~ 0",
+      "color": "blue"
+     },
+     {
+      "commodity": "Magnesium compounds",
+      "percent_change": "~ 0",
+      "color": "orange"
+     },
+     {
+      "commodity": "Sulfur",
+      "percent_change": "~ 0",
+      "color": "orange"
+     },
+     {
+      "commodity": "Magnesium oxide",
+      "percent_change": "~ 0",
+      "color": "orange"
+     },
+     {
+      "commodity": "Iron and steel scrap",
+      "percent_change": "~ 5",
+      "color": "orange"
+     },
+     {
+      "commodity": "Stone (crushed)",
+      "percent_change": "~ 5",
+      "color": "orange"
+     },
+     {
+      "commodity": "Titanium dioxide",
+      "percent_change": "~ 5",
+      "color": "orange"
+     },
+     {
+      "commodity": "Diamond (bort, grit, dust, and powder)",
+      "percent_change": "~ 10",
+      "color": "orange"
+     },
+     {
+      "commodity": "Perlite",
+      "percent_change": "~ 10",
+      "color": "orange"
+     },
+     {
+      "commodity": "Silver",
+      "percent_change": "~ 10",
+      "color": "blue"
+     },
+     {
+      "commodity": "Abrasives (metallic)",
+      "percent_change": "~ 15",
+      "color": "orange"
+     },
+     {
+      "commodity": "Zeolites",
+      "percent_change": "~ 15",
+      "color": "orange"
+     },
+     {
+      "commodity": "Sand and gravel (natural)",
+      "percent_change": "~ 15",
+      "color": "orange"
+     },
+     {
+      "commodity": "Diatomite",
+      "percent_change": "~ 15",
+      "color": "orange"
+     },
+     {
+      "commodity": "Cement",
+      "percent_change": "~ 20",
+      "color": "orange"
+     },
+     {
+      "commodity": "Helium",
+      "percent_change": "~ 30",
+      "color": "blue"
+     },
+     {
+      "commodity": "Stone (dimension)",
+      "percent_change": "~ 30",
+      "color": "orange"
+     },
+     {
+      "commodity": "Titanium mineral concentrates",
+      "percent_change": "~ 40",
+      "color": "orange"
+     },
+     {
+      "commodity": "Gallium",
+      "percent_change": "~ 65",
+      "color": "blue"
+     },
+     {
+      "commodity": "Graphite",
+      "percent_change": "~ 75",
+      "color": "blue"
+     },
+     {
+      "commodity": "Molybdenum",
+      "percent_change": "~ 90",
+      "color": "blue"
+     },
+     {
+      "commodity": "Gold",
+      "percent_change": "~ 100",
+      "color": "blue"
+     },
+     {
+      "commodity": "Platinum",
+      "percent_change": "~ 100",
+      "color": "blue"
+     },
+     {
+      "commodity": "Indium",
+      "percent_change": "~ 100",
+      "color": "blue"
+     }
+    ]
+   },
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1210
+ },
+ "seconds": 9.4
+}

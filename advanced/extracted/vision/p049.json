@@ -1,0 +1,27 @@
+{
+ "page": 49,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "top half",
+   "content": "| Material       | FY 2023 Potential acquisitions | FY 2023 Potential disposals | FY 2024 Potential acquisitions | FY 2024 Potential disposals |\n|----------------|-------------------------------|----------------------------|-------------------------------|----------------------------|\n| Metal (all types) | —                         | 7                          | —                         | 7                          |",
+   "notes": "7See Appendix B for definitions."
+  },
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Mine production8, 9 | 2022 | 2023e |\n|---------------------|------|-------|\n| United States       | 175  | 190   |\n| Brazil              | e40  | 40    |\n| China               | e70  | 74    |\n| Madagascar          | e1   | 1     |\n| Mozambique          | 25   | 24    |\n| Rwanda              | e1   | 1     |\n| Uganda              | e1   | 1     |\n| World total (rounded) | 313  | 330   |",
+   "notes": "8In addition to the countries listed, Kazakhstan and Portugal may have produced beryl ore, but available information was inadequate to make reliable estimates of output. Other nations that produced gemstone beryl ore may also have produced some industrial beryl ore.\n9Based on 4% beryllium content of bertrandite and beryl sources.\n10See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 354
+ },
+ "seconds": 3.8
+}

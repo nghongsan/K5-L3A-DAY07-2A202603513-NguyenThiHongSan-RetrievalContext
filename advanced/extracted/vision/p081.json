@@ -1,0 +1,20 @@
+{
+ "page": 81,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country       | Mine production 2022 | Mine production 2023e | Reserves          |\n|---------------|----------------------|-----------------------|-------------------|\n| United States | 76,400               | 68,000                | 5,000,000         |\n| Australia     | 388,000              | 390,000               | Moderate to large |\n| China         | 310,000              | 310,000               | 37,000,000        |\n| Czechia       | e500                 | 500                   | NA                |\n| India         | 15,000               | 15,000                | 8,600,000         |\n| Pakistan      | 1,870                | 1,900                 | NA                |\n| South Africa  | 179,000              | 180,000               | 320,000           |\n| World total (rounded) | 971,000        | 970,000               | Moderate to large |",
+   "notes": "eEstimated. NA Not available.\n7See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 267
+ },
+ "seconds": 2.7
+}

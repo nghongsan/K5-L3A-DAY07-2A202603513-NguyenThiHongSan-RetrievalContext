@@ -1,0 +1,27 @@
+{
+ "page": 106,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Item                                   | 2019   | 2020    | 2021    | 2022    | 2023e   |\n|----------------------------------------|--------|---------|---------|---------|---------|\n| Mine production, crude                  | W      | W       | W       | W       | W       |\n| Sold or used, finished natural and synthetic IOPs | 19,200 | 18,300  | 26,900  | 38,200  | 34,000  |\n| Imports for consumption                 | 159,000| 174,000 | 192,000 | 225,000 | 110,000 |\n| Exports, pigment grade                  | 17,500 | 15,800  | 12,500  | 13,800  | 13,000  |\n| Consumption, apparent1                  | 161,000| 177,000 | 206,000 | 249,000 | 130,000 |\n| Price, average unit value, dollars per kilogram2 | 0.69   | 0.72    | 1.03    | 2.02    | 2.00    |\n| Employment, mine and mill, number       | 55     | 47      | 55      | 46      | 42      |\n| Net import reliance3 as a percentage of apparent consumption | 88     | 90      | 87      | 85      | 75      |",
+   "notes": "1 Apparent consumption = production + imports - exports.\n2 Price is average unit value.\n3 Net import reliance = (imports - exports) / apparent consumption × 100.\nW = withheld to avoid disclosing company proprietary data.\ne = estimated."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                   | Number       | Normal Trade Relations 12–31–23 |\n|----------------------------------------|--------------|--------------------------------|\n| Natural:                               |              |                                |\n| Micaceous iron oxides                  | 2530.90.2000 | 2.9% ad valorem.               |\n| Earth colors                          | 2530.90.8015 | Free.                         |\n| Iron oxides and hydroxides containing 70% or more by weight Fe2O3: |              |                                |\n| Synthetic:                            |              |                                |\n| Black                                | 2821.10.0010 | 3.7% ad valorem.               |\n| Red                                  | 2821.10.0020 | 3.7% ad valorem.               |\n| Yellow                               | 2821.10.0030 | 3.7% ad valorem.               |\n| Other                                | 2821.10.0040 | 3.7% ad valorem.               |\n| Earth colors                         | 2821.20.0000 | 5.5% ad valorem.               |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 670
+ },
+ "seconds": 5.5
+}

@@ -1,0 +1,20 @@
+{
+ "page": 45,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Mine production and Reserves of Barite",
+   "location": "lower half",
+   "content": "| Country         | Mine productione 2022 | Mine productione 2023 | Reserves7 |\n|-----------------|-----------------------|-----------------------|-----------|\n| United States   | W                     | W                     | NA        |\n| China           | 1,900                 | 1,900                 | 92,000    |\n| India           | 2,700                 | 2,700                 | 51,000    |\n| Iran            | 300                   | 300                   | 38,000    |\n| Kazakhstan      | 650                   | 600                   | 85,000    |\n| Laos            | 303                   | 600                   | NA        |\n| Mexico          | 8316                  | 260                   | NA        |\n| Morocco         | 1,200                 | 1,200                 | NA        |\n| Russia          | 250                   | 250                   | 12,000    |\n| Turkey          | 250                   | 250                   | NA        |\n| Other countries | 394                   | 430                   | NA        |\n| World total (rounded) | 98260             | 98500                 | NA        |",
+   "notes": "eEstimated. NA Not available. W Withheld to avoid disclosing company proprietary data. 7See Appendix C for resource and reserve definitions and information concerning data sources. 8Reported. 9Excludes U.S. production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 336
+ },
+ "seconds": 3.2
+}

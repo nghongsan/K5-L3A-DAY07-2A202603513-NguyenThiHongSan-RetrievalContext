@@ -1,0 +1,20 @@
+{
+ "page": 67,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Mine production and Reserves of Cobalt",
+   "location": "middle right",
+   "content": "| Country           | Mine productione 2022 | Mine productione 2023 | Reserves9    |\n|-------------------|-----------------------|-----------------------|--------------|\n| United States     | 500                   | 500                   | 69,000       |\n| Australia         | 5,790                 | 4,600                 | 1,700,000¹   |\n| Canada            | 3,060                 | 2,100                 | 230,000      |\n| Congo (Kinshasa)  | 144,000               | 170,000               | 6,000,000    |\n| Cuba              | 3,700                 | 3,200                 | 500,000      |\n| Indonesia         | 9,600                 | 17,000                | 500,000      |\n| Madagascar        | 3,500                 | 4,000                 | 100,000      |\n| New Caledonia11   | 2,000                 | 3,000                 | NA           |\n| Papua New Guinea  | 2,990                 | 2,900                 | 49,000       |\n| Philippines       | 3,900                 | 3,800                 | 260,000      |\n| Russia            | 9,200                 | 8,800                 | 250,000      |\n| Turkey            | 2,100                 | 2,800                 | 91,000       |\n| Other countries   | 6,600                 | 6,600                 | 780,000      |\n| World total (rounded) | 197,000            | 230,000               | 11,000,000   |",
+   "notes": "eEstimated. NA Not available. — Zero.\n¹Estimated from consumption of purchased scrap.\n9See Appendix C for resource and reserve definitions and information concerning data sources.\n¹⁰For Australia, Joint Ore Reserves Committee-compliant or equivalent reserves were 610,000 tons.\n¹¹Overseas territory of France."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 474
+ },
+ "seconds": 4.7
+}

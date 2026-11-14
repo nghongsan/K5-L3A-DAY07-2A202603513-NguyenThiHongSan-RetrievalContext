@@ -1,0 +1,27 @@
+{
+ "page": 56,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|--------------------------------------------|------|------|------|------|-------|\n| Production:                                |      |      |      |      |       |\n| Primary, refined¹                          | 131  | 211  | 241  | 212  | 220   |\n| Secondary                                  | W    | W    | W    | W    | W     |\n| Imports for consumption:                   |      |      |      |      |       |\n| Unwrought cadmium and powders              | 385  | 282  | 155  | 99   | 80    |\n| Wrought cadmium and other articles         | 21   | 3    | 2    | 1    | 1     |\n| Cadmium waste and scrap                     | 86   | 90   | 85   | 40   | 1     |\n| Cadmium oxide                              | 33   | 28   | 14   | 33   | 30    |\n| Cadmium pigments and preparations based on cadmium compounds | 108  | 69   | 101  | 146  | 130   |\n| Exports:                                   |      |      |      |      |       |\n| Unwrought cadmium and powders              | 32   | 4    | 51   | 68   | 150   |\n| Wrought cadmium and other articles         | 84   | 482  | 217  | 60   | 14    |\n| Cadmium waste and scrap                     | 6    | (2)  | —    | 2    | 15    |\n| Cadmium pigments and preparations based on cadmium compounds | 795  | 2,120| 550  | 747  | 1,100 |\n| Consumption of metal, apparent³            | W    | W    | W    | W    | W     |\n| Price, metal, annual average,⁴ dollars per kilogram | 2.67 | 2.29 | 2.56 | 3.42 | 4.10  |\n| Net import reliance⁵ as a percentage of apparent consumption | <75  | <75  | <50  | <25  | E     |",
+   "notes": "¹ Primary refined cadmium is recovered as a byproduct of zinc leaching.\n² Data withheld to avoid disclosing company proprietary data.\n³ Apparent consumption is production plus imports minus exports.\n⁴ Price is annual average dollars per kilogram.\n⁵ Net import reliance is imports minus exports as a percentage of apparent consumption."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                         | Number        | Normal Trade Relations 12–31–23 |\n|----------------------------------------------|---------------|---------------------------------|\n| Cadmium oxide                                | 2825.90.7500  | Free.                           |\n| Cadmium sulfide                             | 2830.90.2000  | 3.1% ad valorem.                |\n| Pigments and preparations based on cadmium compounds | 3206.49.6010  | 3.1% ad valorem.                |\n| Cadmium waste and scrap                      | 8112.61.0000  | Free.                           |\n| Unwrought cadmium and powders                | 8112.69.1000  | Free.                           |\n| Wrought cadmium and other articles           | 8112.69.9000  | 4.4% ad valorem.                |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 823
+ },
+ "seconds": 6.6
+}

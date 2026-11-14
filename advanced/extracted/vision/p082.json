@@ -1,0 +1,27 @@
+{
+ "page": 82,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                         | 2019  | 2020  | 2021  | 2022  | 2023e |\n|-------------------------|-------|-------|-------|-------|-------|\n| Production:2            |       |       |       |       |       |\n| Natural3                | 9.22  | 9.82  | 9.48  | 9.95  | 9.9   |\n| Laboratory-created (synthetic) | 94.3  | 55.0  | 79.3  | 87.1  | 89    |\n| Imports for consumption | 24,400| 16,300| 24,600| 28,000| 25,000|\n| Exports, excluding reexports | 1,020 | 1,330 | 992   | 1,890 | 3,800 |\n| Consumption, apparent4  | 23,500| 15,000| 23,700| 26,200| 21,000|\n| Price                   | Variable, depending on size, type, and quality | | | | |\n| Employment, mine, numbere | 1,120 | 1,100 | 1,100 | 1,100 | 1,100 |\n| Net import reliance5 as a percentage of apparent consumption | 99    | 99    | 99    | 99    | 99    |",
+   "notes": "Footnotes: 2, 3, 4, 5, e (estimates) as printed."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                         | Number       | Normal Trade Relations 12-31-23 |\n|----------------------------------------------|--------------|---------------------------------|\n| Coral and similar materials, unworked        | 0508.00.0000 | Free.                           |\n| Imitation gemstones                           | 3926.90.4000 | 2.8% ad valorem.                |\n| Imitation pearls and imitation pearl beads, not strung | 7018.10.1000 | 4% ad valorem.                  |\n| Imitation gemstones                           | 7018.10.2000 | Free.                           |\n| Pearls, natural, graded and temporarily strung | 7101.10.3000 | Free.                           |\n| Pearls, natural, other                        | 7101.10.6000 | Free.                           |\n| Pearls, cultured                               | 7101.21.0000 | Free.                           |\n| Diamonds, unworked or sawn                    | 7102.31.0000 | Free.                           |\n| Diamonds, cut, 0.5 carat or less              | 7102.39.0010 | Free.                           |\n| Diamonds, cut, more than 0.5 carat            | 7102.39.0050 | Free.                           |\n| Other nondiamond gemstones, unworked          | 7103.10.2000 | Free.                           |\n| Other nondiamond gemstones, uncut             | 7103.10.4000 | 10.5% ad valorem.               |\n| Rubies, cut                                    | 7103.91.0010 | Free.                           |\n| Sapphires, cut                                 | 7103.91.0020 | Free.                           |\n| Emeralds, cut                                  | 7103.91.0030 | Free.                           |\n| Other nondiamond gemstones, cut                | 7103.99.1000 | Free.                           |\n| Other nondiamond gemstones, worked             | 7103.99.5000 | 10.5% ad valorem.               |\n| Synthetic diamonds, unworked or roughly shaped | 7104.21.0000 | 3% ad valorem.                  |\n| Synthetic gemstones, unworked or roughly shaped | 7104.29.0000 | 3% ad valorem.                  |\n| Synthetic diamonds, cut but not set             | 7104.91.1000 | Free.                           |\n| Synthetic diamonds, other                        | 7104.91.5000 | 6.4% ad valorem.                |\n| Synthetic gemstones, worked or cut but not set | 7104.99.1000 | Free.                           |\n| Synthetic gemstones, other                       | 7104.99.5000 | 6.4% ad valorem.                |",
+   "notes": "Tariff rates and item numbers as of 12-31-23."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1025
+ },
+ "seconds": 7.9
+}

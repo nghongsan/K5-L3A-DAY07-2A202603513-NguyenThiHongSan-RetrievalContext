@@ -1,0 +1,8 @@
+# Same versions as the Day 6 environment that built the Chroma index (Python 3.12.3, macOS arm64, CPU).
+# The LLM client uses only the standard library; certifi is used for TLS if present.
+chromadb==1.5.9
+sentence-transformers==6.3.0
+torch==2.15.0
+transformers==5.22.2
+numpy==2.5.4
+certifi

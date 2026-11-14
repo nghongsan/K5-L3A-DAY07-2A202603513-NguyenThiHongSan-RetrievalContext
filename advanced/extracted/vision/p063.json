@@ -1,0 +1,20 @@
+{
+ "page": 63,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Government Stockpile and World Mine Production and Reserves for Chromium",
+   "location": "top half",
+   "content": "| Material          | FY 2023 Potential acquisitions | FY 2023 Potential disposals | FY 2024 Potential acquisitions | FY 2024 Potential disposals |\n|-------------------|-------------------------------|----------------------------|-------------------------------|----------------------------|\n| Ferrochromium:    |                               |                            |                               |                            |\n| High carbon       | —                             | 13 21.8                    | —                             | 13 21.8                    |\n| Low carbon        | —                             | —                          | —                             | —                          |\n| Chromium metal    | —                             | 0.454                      | —                             | 0.454                      |\n\n| Mine production14 | 2022                          | 2023e                      | Reserves15 (shipping grade)16 |                            |\n|-------------------|-------------------------------|----------------------------|-------------------------------|----------------------------|\n| United States     | —                             | —                          | 630                           |                            |\n| Finland           | 2,000                         | 2,000                      | 8,300                         |                            |\n| Indiae            | 4,000                         | 4,200                      | 79,000                        |                            |\n| Kazakhstane       | 6,000                         | 6,000                      | 230,000                       |                            |\n| South Africa      | 19,100                        | 18,000                     | 200,000                       |                            |\n| Turkey            | 5,410                         | 6,000                      | 27,000                        |                            |\n| Other countries   | 5,380                         | 5,200                      | NA                            |                            |\n| World total       | 41,900                        | 41,000                     | 560,000                       |                            |",
+   "notes": "e Estimated. NA Not available. — Zero.\n14 Units are thousand metric tons, gross weight, of marketable chromite ore.\n15 See Appendix C for resource and reserve definitions and information concerning data sources.\n16 Units are thousand metric tons of shipping-grade chromite ore, which is deposit quantity and grade normalized to 45% Cr2O3, except for the United States, where grade is normalized to 7% Cr2O3, and Finland, where grade is normalized to 26% Cr2O3."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 524
+ },
+ "seconds": 4.9
+}

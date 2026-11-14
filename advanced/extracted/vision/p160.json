@@ -1,0 +1,27 @@
+{
+ "page": 160,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "| Item                                      | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------------------------|------|------|------|------|-------|\n| Price, yearend:                            |      |      |      |      |       |\n| Compounds, dollars per gram:               |      |      |      |      |       |\n| Acetate, 99.9% purity, 5-gram lot size2   | 45   | 45   | 43   | 46   | 70    |\n| Chloride, 99.9% purity, 5-gram lot size2  | 129  | 133  | 137  | 140  | 166   |\n| Fluoride, 99.9% purity (99.99% purity in 2022), 1- to 5-gram lot size3 | 209  | 214  | 216  | 250  | 1,080 |\n| Iodide, 99.999% purity, 5-gram lot size2  | 157  | 161  | 161  | 170  | 200   |\n| Oxide, 99.99% purity, 5-kilogram lot size4| 3.9  | 3.8  | 2.2  | 2.1  | NA    |\n| Metal:                                    |      |      |      |      |       |\n| Scandium, dollars per gram:2               |      |      |      |      |       |\n| Distilled dendritic, 2-gram lot size       | 233  | 233  | 238  | 260  | 269   |\n| Ingot, 5-gram lot size                      | 134  | 134  | 137  | 150  | 153   |\n| Scandium-aluminum alloy, dollars per kilogram:4 |      |      |      |      |       |\n| 1-kilogram lot size                         | 300  | 340  | 350  | 350  | NA    |\n| 1,000-kilogram lot size                     | NA   | NA   | NA   | 98   |       |\n| Net import reliance5 as a percentage of apparent consumption | 100  | 100  | 100  | 100  | 100   |",
+   "notes": "Footnotes: 1, 2, 3, 4, 5 (not fully transcribed here)."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower left",
+   "content": "| Item                                         | Number       | Normal Trade Relations 12–31–23 |\n|----------------------------------------------|--------------|--------------------------------|\n| Rare-earth metals:                            |              |                                |\n| Unspecified, not alloys                       | 2805.30.0050 | 5% ad valorem.                  |\n| Unspecified, alloyed                          | 2805.30.0090 | 5% ad valorem.                  |\n| Compounds of rare-earth metals:               |              |                                |\n| Mixtures of oxides of yttrium or scandium as the predominant metal | 2846.90.2015 | Free.                          |\n| Mixtures of chlorides of yttrium or scandium as the predominant metal | 2846.90.2082 | Free.                          |\n| Mixtures of other rare-earth carbonates, including scandium | 2846.90.8075 | 3.7% ad valorem.                |\n| Mixtures of other rare-earth compounds, including scandium | 2846.90.8090 | 3.7% ad valorem.                |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 845
+ },
+ "seconds": 6.1
+}

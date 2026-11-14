@@ -1,0 +1,20 @@
+{
+ "page": 58,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019   | 2020   | 2021   | 2022e  | 2023e  |\n|-----------------------------------|--------|--------|--------|--------|--------|\n| Production:                       |        |        |        |        |        |\n| Portland and masonry cement2      | 87,600 | 89,300 | 91,000 | e93,000| 91,000 |\n| Clinker                          | 78,858 | 78,951 | 79,616 | e80,000| 77,000 |\n| Shipments to final customers, includes exports | 102,823| 104,580| 108,969| e110,000| 110,000|\n| Imports for consumption:          |        |        |        |        |        |\n| Hydraulic cement                 | 14,836 | 15,531 | 19,937 | 24,984 | 26,000 |\n| Clinker                          | 997    | 1,204  | 1,563  | 1,021  | 1,000  |\n| Exports, hydraulic cement and clinker | 1,024  | 884    | 940    | 902    | 900    |\n| Consumption, apparent3            | 102,000| 105,000| 111,000| e120,000| 120,000|\n| Price, average mill unit value, dollars per metric ton | 124    | 125    | 127    | e140   | 150    |\n| Stocks, cement, yearend           | 7,990  | 7,180  | 6,280  | e8,000 | 7,500  |\n| Employment, mine and mill, numbere | 12,500 | 12,200 | 12,300 | 12,800 | 13,000 |\n| Net import reliance4 as a percentage of apparent consumption | 15     | 15     | 19     | 22     | 22     |",
+   "notes": "Footnotes: 1, 2, 3, 4, e (estimated) as printed."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 503
+ },
+ "seconds": 4.9
+}

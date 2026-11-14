@@ -1,0 +1,20 @@
+{
+ "page": 167,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "top half",
+   "content": "| Country          | Mine production 2022 | Mine production 2023e | Reserves    |\n|------------------|----------------------|----------------------|-------------|\n| United States    | 1,010                | 1,000                | 23,000      |\n| Argentina       | 913                  | 910                  | 6,500       |\n| Australia       | 1,167                | 1,200                | 94,000¹⁰    |\n| Bolivia         | 1,214                | 1,200                | 22,000      |\n| Chile           | 1,274                | 1,400                | 26,000      |\n| China           | 3,480                | 3,400                | 72,000      |\n| India           | 694                  | 690                  | 8,000       |\n| Kazakhstan      | 1,053                | 990                  | NA          |\n| Mexico          | 6,195                | 6,400                | 37,000      |\n| Peru            | 3,079                | 3,100                | 110,000     |\n| Poland          | 1,316                | 1,300                | *63,000     |\n| Russia          | 1,280                | 1,200                | 92,000      |\n| Other countries | 2,940                | 3,000                | 57,000      |\n| World total (rounded) | 25,600           | 26,000               | *610,000    |",
+   "notes": "eEstimated. NA Not available.\n¹⁰For Australia, Joint Ore Reserves Committee-compliant or equivalent reserves were 27,000 tons.\n*Correction posted on March 5, 2024."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 423
+ },
+ "seconds": 3.9
+}

@@ -1,0 +1,20 @@
+{
+ "page": 62,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|------|------|------|------|-------|\n| Production:                       |      |      |      |      |       |\n|   Mine                           |  —   |  —   |  —   |  —   |   —   |\n|   Secondary¹                    |  137 |  119 |  114 |   91 |  100  |\n| Imports for consumption²         |  530 |  448 |  571 |  609 |  440  |\n| Exports²                        |  149 |  138 |  114 |  133 |  150  |\n| Shipments from Government stockpile³ |  4   |  5   |  7   |  5   |  NA   |\n| Consumption (includes recycling):|      |      |      |      |       |\n|   Reported                      |  482 |  386 |  364 |  275 |  260  |\n|   Apparent⁴                    |  522 |  433 |  579 |  573 |  380  |\n| Price:⁵                         |      |      |      |      |       |\n|   Chromite ore (gross weight), dollars per metric ton | 174  | 154  | 201  | 274  |  290  |\n|   Ferrochromium (chromium content), dollars per pound⁶ | 1.00 | 0.90 | 1.56 | 3.21 |  3.50 |\n|   Chromium metal (gross weight), dollars per pound | 4.13 | 3.22 | 4.35 | 7.12 |  5.50 |\n| Stocks, consumer, yearend        |  5   |  6   |  6   |  5   |   5   |\n| Net import reliance⁷ as a percentage of apparent consumption | 74   | 73   | 80   | 84   |  74   |",
+   "notes": "¹ Secondary production is from recycled materials.\n² Includes chromium content of chromium materials.\n³ Government stockpile shipments are from the Defense National Stockpile Center.\n⁴ Apparent consumption is production plus imports minus exports plus stock changes.\n⁵ Prices are average annual prices.\n⁶ Ferrochromium prices are for charge chrome.\n⁷ Net import reliance is imports minus exports as a percentage of apparent consumption."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 597
+ },
+ "seconds": 5.4
+}

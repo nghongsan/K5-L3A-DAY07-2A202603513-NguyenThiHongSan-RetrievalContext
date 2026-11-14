@@ -1,0 +1,20 @@
+{
+ "page": 51,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Refinery Production and Reserves",
+   "location": "middle right",
+   "content": "| Country           | Refinery production⁾ |       | Reserves⁷                         |\n|-------------------|---------------------------|-------|--------------------------------------|\n|                   | 2022                      | 2023  |                                      |\n| United States     | —                      | —  | Quantitative estimates of reserves were not available. |\n| Bolivia          | —                      | 40    |                                      |\n| Bulgaria         | 50                        | 50    |                                      |\n| China            | 15,500                    | 16,000|                                      |\n| Japan            | 490                       | 500   |                                      |\n| Kazakhstan       | 190                       | 160   |                                      |\n| Korea, Republic of| 810                       | 850   |                                      |\n| Laos             | 8⁺,940                | 2,000 |                                      |\n| World total (rounded) | 19,000                | 20,000|                                      |",
+   "notes": "⁾Estimated. NA Not available. — Zero.\n⁺Reported.\n⁷See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 286
+ },
+ "seconds": 3.2
+}

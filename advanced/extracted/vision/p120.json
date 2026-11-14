@@ -1,0 +1,27 @@
+{
+ "page": 120,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                                      | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------------------|-------|-------|-------|-------|-------|\n| Production, mine                              | —     | —     | —     | —     | —     |\n| Imports for consumption:                      |       |       |       |       |       |\n| Manganese ores and concentrates               | 434   | 367   | 497   | 566   | 500   |\n| Ferromanganese                                | 332   | 223   | 329   | 330   | 300   |\n| Silicomanganese                               | 351   | 269   | 313   | 420   | 250   |\n| Exports:                                      |       |       |       |       |       |\n| Manganese ores and concentrates               | 1     | 1     | 1     | 1     | 1     |\n| Ferromanganese                                | 5     | 5     | 9     | 3     | 2     |\n| Silicomanganese                               | 2     | 2     | 5     | 3     | 3     |\n| Shipments from Government stockpile:          |       |       |       |       |       |\n| Manganese ore                                | —     | —     | 2     | —     | NA    |\n| Ferromanganese and manganese metal, electrolytic | 10    | 54    | 21    | 14    | NA    |\n| Consumption, reported:                        |       |       |       |       |       |\n| Manganese ore                                | 442   | 378   | 399   | 357   | 350   |\n| Ferromanganese                                | 336   | 325   | 335   | 339   | 340   |\n| Silicomanganese                               | 4134  | 229   | 237   | 234   | 230   |\n| Consumption, apparent, manganese content     | 748   | 621   | 717   | 804   | 690   |\n| Price, average, manganese content, cost, insurance, and freight, China, dollars per metric ton unit | 5.63  | 4.59  | 5.27  | 5.97  | 5.00  |\n| Stocks, producer and consumer, yearend:      |       |       |       |       |       |\n| Manganese ore                                | 175   | 143   | 220   | 312   | 250   |\n| Ferromanganese                                | 44    | 35    | 40    | 50    | 29    |\n| Silicomanganese                               | 39    | 31    | 34    | 26    | 25    |\n| Net import reliance as a percentage of apparent consumption, manganese content | 100   | 100   | 100   | 100   | 100   |",
+   "notes": "1. Data in thousand metric tons, gross weight, unless otherwise specified.\n2. Shipments from Government stockpile data.\n3. Manganese ore includes all forms.\n5. Apparent consumption is calculated from reported consumption plus imports minus exports.\n6. Price data from China.\n7. Net import reliance as percentage of apparent consumption."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                         | Number       | Normal Trade Relations 12-31-23 |\n|----------------------------------------------|--------------|---------------------------------|\n| Ores and concentrates:                        |              |                                 |\n| Containing less than 47% manganese           | 2602.00.0040 | Free.                           |\n| Containing 47% or more of manganese           | 2602.00.0060 | Free.                           |\n| Manganese dioxide                            | 2820.10.0000 | 4.7% ad valorem.                |\n| High-carbon ferromanganese                   | 7202.11.5000 | 1.5% ad valorem.                |\n| Ferrosilicon manganese (silicomanganese)    | 7202.30.0000 | 3.9% ad valorem.                |\n| Metal, unwrought:                            |              |                                 |\n| Flake containing at least 99.5% manganese    | 8111.00.4700 | 14% ad valorem.                 |\n| Other                                        | 8111.00.4900 | 14% ad valorem.                 |",
+   "notes": "Depletion Allowance: 22% (domestic), 14% (foreign)."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1068
+ },
+ "seconds": 7.5
+}

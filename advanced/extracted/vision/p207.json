@@ -1,0 +1,20 @@
+{
+ "page": 207,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country         | Mine production10 |       | Reserves11 |\n|-----------------|-------------------|-------|------------|\n|                 | 2022              | 2023e |            |\n| United States   | 761               | 750   | 6,600      |\n| Australia       | 1,240             | 1,100 | 12 64,000  |\n| Bolivia        | 518               | 490   | NA         |\n| China          | 4,040             | 4,000 | 44,000     |\n| India          | 840               | 860   | 7,400      |\n| Kazakhstan     | 312               | 330   | 6,700      |\n| Mexico         | 744               | 690   | 14,000     |\n| Peru           | 1,370             | 1,400 | 21,000     |\n| Russia         | e300              | 310   | 25,000     |\n| South Africa   | 238               | 230   | 6,200      |\n| Sweden         | 234               | 220   | 4,100      |\n| Other countries| 1,940             | 1,800 | 25,000     |\n| World total (rounded) | 12,500       | 12,000| 220,000    |",
+   "notes": "e Estimated. E Net exporter. NA Not available. — Zero.\n10 Zinc content of concentrates and direct shipping ores.\n11 See Appendix C for resource and reserve definitions and information concerning data sources.\n12 For Australia, Joint Ore Reserves Committee-compliant or equivalent reserves were 21 million tons."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 398
+ },
+ "seconds": 4.9
+}

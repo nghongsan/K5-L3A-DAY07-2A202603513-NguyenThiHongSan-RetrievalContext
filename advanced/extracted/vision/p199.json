@@ -1,0 +1,20 @@
+{
+ "page": 199,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "top half",
+   "content": "| Country       | Mine productione 2022 | Mine productione 2023e | Reserves6 |\n|---------------|-----------------------|------------------------|-----------|\n| United States | 100                   | 100                    | 25,000    |\n| Brazil        | 70                    | 70                     | 6,600     |\n| Bulgaria      | 10                    | 10                     | NA        |\n| China         | 39                    | 39                     | 2,900     |\n| India         | 4                     | 4                      | 1,600     |\n| Mexico        | (7)                   | (7)                    | NA        |\n| Russia        | 29                    | 29                     | NA        |\n| South Africa  | 183                   | 160                    | 14,000    |\n| Turkey        | 3                     | 10                     | 11,000    |\n| Uganda        | 30                    | 30                     | NA        |\n| Uzbekistan    | 3                     | 3                      | NA        |\n| Zimbabwe      | 45                    | 45                     | NA        |\n| World total (rounded) | 516             | 500                    | NA        |",
+   "notes": "eEstimated. NA Not available.\n1Concentrate sold or used by producers.\n2Data are rounded to the nearest hundred thousand tons to avoid disclosing company proprietary data.\n6See Appendix C for resource and reserve definitions and information concerning data sources.\n7Less than 1/2 unit.\n8Reported."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 363
+ },
+ "seconds": 3.3
+}

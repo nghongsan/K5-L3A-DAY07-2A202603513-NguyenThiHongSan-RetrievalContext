@@ -1,0 +1,27 @@
+{
+ "page": 86,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                                | 2019  | 2020  | 2021  | 2022  | 2023e |\n|-----------------------------------------|-------|-------|-------|-------|-------|\n| Production:                             |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Mine             | 201   | 193   | 187   | 173   | 170   |\n| &nbsp;&nbsp;&nbsp;&nbsp;Refinery:        |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primary         | 205   | 181   | 181   | 181   | 160   |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secondary (new and old scrap) | 116   | 92    | 92    | 93    | 90    |\n| Imports for consumption2                | 199   | 545   | 192   | 138   | 200   |\n| Exports2                               | 360   | 297   | 386   | 420   | 250   |\n| Consumption, reported3                  | 151   | 187   | 265   | 257   | 250   |\n| Stocks, Treasury, yearend4              | 8,130 | 8,130 | 8,130 | 8,130 | 8,130 |\n| Price, dollars per troy ounce5          | 1,395 | 1,774 | 1,801 | 1,802 | 1,900 |\n| Employment, mine and mill, number6      | 11,800| 12,200| 12,500| 12,300| 12,000|\n| Net import reliance7 as a percentage of reported consumption | E     | (8)   | E     | E     | E     |",
+   "notes": "Footnotes: 1 Data in metric tons, gold content, unless otherwise specified. 2 Imports and exports data. 3 Consumption reported. 4 Stocks held by Treasury. 5 Price per troy ounce. 6 Employment numbers. 7 Net import reliance percentage. (8) denotes a specific footnote or caveat."
+  },
+  {
+   "type": "table",
+   "title": "Tariff: Item, Number, Normal Trade Relations 12–31–23",
+   "location": "lower half",
+   "content": "| Item                                | Number        | Normal Trade Relations 12–31–23       |\n|------------------------------------|---------------|-------------------------------------|\n| Precious metal ore and concentrates:|               |                                     |\n| &nbsp;&nbsp;&nbsp;&nbsp;Gold content of silver ores | 2616.10.0080 | 0.8 ¢/kg on lead content.            |\n| &nbsp;&nbsp;&nbsp;&nbsp;Gold content of other ores  | 2616.90.0040 | 1.7 ¢/kg on lead content.            |\n| Gold bullion                      | 7108.12.1013  | Free.                               |\n| Gold dore                         | 7108.12.1020  | Free.                               |\n| Gold scrap                       | 7112.91.0100  | Free.                               |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 746
+ },
+ "seconds": 5.7
+}

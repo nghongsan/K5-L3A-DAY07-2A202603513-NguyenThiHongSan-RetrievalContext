@@ -1,0 +1,20 @@
+{
+ "page": 137,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves of Perlite",
+   "location": "lower half",
+   "content": "| Country          | Production 2022 | Production 2023e | Reserves4 |\n|------------------|-----------------|------------------|-----------|\n| United States    | 5458            | 5450             | 50,000    |\n| Argentinae       | 18              | 20               | NA        |\n| Armeniae         | 170             | 180              | NA        |\n| Chinae           | 1,500           | 1,500            | 32,000    |\n| Georgia          | 20              | 20               | NA        |\n| Greecee          | 1,100           | 1,100            | 180,000   |\n| Hungarye         | 77              | 80               | NA        |\n| Irane            | 77              | 80               | 15,000    |\n| Mexicoe          | 24              | 20               | NA        |\n| New Zealande     | 18              | 20               | NA        |\n| Philippines      | 25              | 20               | NA        |\n| Slovakiae        | 35              | 40               | 30,000    |\n| Turkeye          | 1,400           | 1,400            | NA        |\n| Other countriese | 14              | 10               | NA        |\n| World total (rounded) | 4,940       | 4,900            | NA        |",
+   "notes": "eEstimated. NA Not available.\n4See Appendix C for resource and reserve definitions and information concerning data sources.\n5Processed ore sold and used by producers."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 386
+ },
+ "seconds": 3.8
+}

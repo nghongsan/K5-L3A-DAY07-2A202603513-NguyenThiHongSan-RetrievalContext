@@ -1,0 +1,20 @@
+{
+ "page": 182,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023© |\n|-----------------------------------|-------|-------|-------|-------|---------|\n| Production, refineryⁱ          | W     | W     | W     | W     | W       |\n| Imports for consumption            | 59    | 12    | 42    | 37    | 10      |\n| Exports                           | 1     | (2)   | 2     | 1     | 3       |\n| Consumption, apparent⁳         | W     | W     | W     | W     | W       |\n| Price, average, dollars per kilogram: |       |       |       |       |         |\n|   United States⁴           | 68.11 | 59.37 | 69.72 | 70.34 | 80      |\n|   Europe⁵                 | 60.45 | 56.05 | 67.26 | 68.10 | 78      |\n| Stocks, producer, yearend          | W     | W     | W     | W     | W       |\n| Net import reliance⁶ as a percentage of apparent consumption | >95   | >75   | >95   | >75   | >25     |",
+   "notes": "ⁱ Production, refinery data withheld to avoid disclosing company proprietary data.\n⁳ Apparent consumption = production + imports - exports + adjustments for Government and industry stock changes.\n⁴ Price data for United States are average prices at U.S. warehouses.\n⁵ Price data for Europe are average prices at European warehouses.\n⁶ Net import reliance = imports - exports as a percentage of apparent consumption.\n© Estimated."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 428
+ },
+ "seconds": 4.9
+}

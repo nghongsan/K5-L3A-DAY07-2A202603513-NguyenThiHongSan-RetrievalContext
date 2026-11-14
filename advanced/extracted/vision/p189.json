@@ -1,0 +1,20 @@
+{
+ "page": 189,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country           | Mine production 2022 | Mine production 2023e | Reserves6   |\n|-------------------|----------------------|-----------------------|-------------|\n| United States     | —                    | —                     | —           |\n| Australia         | 9,000                | 9,100                 | 7 620,000   |\n| Bolivia           | 17,600               | 18,000                | 400,000     |\n| Brazil            | e17,000              | 18,000                | 420,000     |\n| Burma             | e47,000              | 54,000                | 700,000     |\n| China             | e71,000              | 68,000                | 1,100,000   |\n| Congo (Kinshasa)  | e18,600              | 19,000                | 120,000     |\n| Indonesia         | e70,000              | 52,000                | NA          |\n| Laos              | 2,510                | 2,300                 | NA          |\n| Malaysia          | e5,000               | 6,100                 | NA          |\n| Nigeria           | e7,000               | 8,100                 | NA          |\n| Peru              | 28,200               | 23,000                | 130,000     |\n| Russia            | e3,700               | 2,700                 | 460,000     |\n| Rwanda            | e3,300               | 3,800                 | NA          |\n| Vietnam           | e5,900               | 5,300                 | 11,000      |\n| Other countries   | 1,160                | 1,300                 | 310,000     |\n| World total (rounded) | 307,000           | 290,000               | 4,300,000   |",
+   "notes": "eEstimated. NA Not available. — Zero.\n6See Appendix C for resource and reserve definitions and information concerning data sources.\n7For Australia, Joint Ore Reserves Committee-compliant or equivalent reserves were 320,000 tons."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 495
+ },
+ "seconds": 5.1
+}

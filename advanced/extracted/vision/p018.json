@@ -1,0 +1,20 @@
+{
+ "page": 18,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "map",
+   "title": "Figure 6.—Value of Other Industrial Minerals Produced in 2023, by Region",
+   "location": "full page",
+   "content": "Map of the United States divided into four regions: West, Midwest, Northeast, South. Each state is labeled with abbreviations of industrial minerals produced there. Color-coded by value in billion dollars: 1.7 (lightest), 8.4, 9.5, 15.1 (darkest). West states mostly in orange shades, Midwest in lighter orange, Northeast in lightest shade, South in darkest red.\n\nLegend for minerals abbreviations:\nB - Borates\nBar - Barite\nBC - Ball clay\nBent - Bentonite\nBr - Bromine\nBx - Bauxite\nCaF2 - Fluorspar\nClay - Common clay\nDia - Diatomite\nDS - Dimension stone\nFC - Fire clay\nFel - Feldspar\nFul - Fuller's earth\nGar - Garnet\nGyp - Gypsum\nHe - Helium\nI - Iodine\nIOP - Iron oxide pigments\nIS - Industrial sand\nK - Potash\nKao - Kaolin\nKya - Kyanite\nLi - Lithium\nMgCp - Magnesium compounds\nMica - Mica\nNaC - Soda ash\nP - Phosphate rock\nPeat - Peat\nPer - Perlite\nPum - Pumice\nPyrp - Pyrophyllite\nSalt - Salt\nTalc - Talc\nWol - Wollastonite\nZeo - Zeolites\n\nExplanation of value colors:\n1.7 billion dollars (lightest)\n8.4 billion dollars\n9.5 billion dollars\n15.1 billion dollars (darkest)",
+   "notes": "Abbreviations and mineral names listed below map. Value in billion dollars color scale shown."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 394
+ },
+ "seconds": 3.4
+}

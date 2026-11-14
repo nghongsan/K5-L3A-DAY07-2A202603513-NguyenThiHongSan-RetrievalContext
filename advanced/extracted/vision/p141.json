@@ -1,0 +1,27 @@
+{
+ "page": 141,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "top half",
+   "content": "| Material  | Potential acquisitions | Potential disposals | Potential acquisitions | Potential disposals |\n|-----------|------------------------|---------------------|------------------------|---------------------|\n|           |          FY 2023        |                     |          FY 2024        |                     |\n| Iridium   |           —            |          15         |           —            |          15         |\n| Platinum  |           —            |         261         |           —            |         261         |",
+   "notes": "Footnote 9: See Appendix B for definitions."
+  },
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country       | Palladium Mine Production 2022 | Palladium Mine Production 2023e | Platinum Mine Production 2022 | Platinum Mine Production 2023e | PGM reserves10 |\n|---------------|--------------------------------|---------------------------------|-------------------------------|--------------------------------|----------------|\n| United States | 10,100                         | 9,800                           | 3,000                         | 2,900                          | 820,000        |\n| Canada        | 16,100                         | 16,000                          | 5,400                         | 5,500                          | 310,000        |\n| Russiae       | 87,000                         | 92,000                          | 20,000                        | 23,000                         | 5,500,000      |\n| South Africa  | 73,100                         | 71,000                          | 124,000                       | 120,000                        | 63,000,000     |\n| Zimbabwe      | 14,300                         | 15,000                          | 17,000                        | 19,000                         | 1,200,000      |\n| Other countries| 2,700                         | 2,700                           | 4,580                         | 4,600                          | NA             |\n| World total (rounded) | 203,000                 | 210,000                         | 174,000                       | 180,000                        | 71,000,000     |",
+   "notes": "Footnotes:\ne Estimated.\nNA Not available.\n10 See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 502
+ },
+ "seconds": 4.5
+}

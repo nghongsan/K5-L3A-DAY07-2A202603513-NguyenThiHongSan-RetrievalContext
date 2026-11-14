@@ -1,0 +1,27 @@
+{
+ "page": 116,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|------|------|------|------|-------|\n| Production              | 376  | 363  | 432  | 412  | 420   |\n| Shipments (gross weight)| 563  | 547  | 634  | 606  | 620   |\n| Imports for consumption | 564  | 480  | 655  | 598  | 570   |\n| Exports                 | 88   | 66   | 86   | 104  | 100   |\n| Consumption, apparent3  | 852  | 777  | 1,001| 906  | 880   |\n| Employment, plant, numbere | 270  | 260  | 270  | 280  | 270   |\n| Net import reliance4 as a percentage of apparent consumption | 56   | 53   | 57   | 55   | 52    |",
+   "notes": "e = estimated. 3 Apparent consumption = production + imports - exports. 4 Net import reliance = imports - exports as a percentage of apparent consumption."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower right",
+   "content": "| Item                          | Number       | Normal Trade Relations 12-31-23 |\n|-------------------------------|--------------|--------------------------------|\n| Crude magnesite               | 2519.10.0000 | Free.                          |\n| Dead-burned and fused magnesia| 2519.90.1000 | Free.                          |\n| Caustic-calcined magnesia    | 2519.90.2000 | Free.                          |\n| Kieserite                    | 2530.20.1000 | Free.                          |\n| Epsom salts                  | 2530.20.2000 | Free.                          |\n| Magnesium hydroxide and peroxide | 2816.10.0000 | 3.1% ad valorem.               |\n| Magnesium chloride           | 2827.31.0000 | 1.5% ad valorem.               |\n| Magnesium sulfate (synthetic)| 2833.21.0000 | 3.7% ad valorem.               |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 537
+ },
+ "seconds": 4.6
+}

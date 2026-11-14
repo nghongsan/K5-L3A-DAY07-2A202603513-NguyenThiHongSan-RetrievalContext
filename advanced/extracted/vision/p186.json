@@ -1,0 +1,27 @@
+{
+ "page": 186,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                                   | 2019      | 2020      | 2021      | 2022      | 2023e     |\n|--------------------------------------------|-----------|-----------|-----------|-----------|-----------|\n| Production, mine (monazite)¹                | 21,700,000| 2,960,000 | W         | W         | W         |\n| Imports for consumption:                     |           |           |           |           |           |\n| Ore and concentrates (monazite)              | —         | 3,000     | 16,000    | —         | —         |\n| Compounds (oxide, nitrate, and so forth)    | 3,970     | 1,920     | 5,790     | 1,930     | 13,000    |\n| Exports:                                     |           |           |           |           |           |\n| Ore and concentrates (monazite)              | 1,680,000 | 958,000   | —         | 22,000    | —         |\n| Compounds (oxide, nitrate, and so forth)³   | 154,000   | 60,300    | 45,600    | 25,900    | 67,000    |\n| Consumption, apparent:⁴                       |           |           |           |           |           |\n| Ore and concentrates (monazite)              | —         | 3,000     | W         | W         | W         |\n| Compounds (oxide, nitrate, and so forth)    | NA        | NA        | NA        | NA        | NA        |\n| Price, average unit value of imports, compounds, dollars per kilogram:⁵ |           |           |           |           |           |\n| India                                        | 72        | NA        | NA        | NA        | 74        |\n| France                                       | 29        | 29        | 29        | 26        | 29        |\n| Net import reliance⁶ as a percentage of apparent consumption | NA        | NA        | NA        | NA        | NA        |",
+   "notes": "¹ ² ³ ⁴ ⁵ ⁶ Footnotes referenced but not transcribed."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                   | Number       | Normal Trade Relations 12-31-23 |\n|----------------------------------------|--------------|---------------------------------|\n| Thorium ore and concentrates (monazite)| 2612.20.0000 | Free.                           |\n| Thorium compounds                      | 2844.30.1000 | 5.5% ad valorem.                |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 613
+ },
+ "seconds": 6.5
+}

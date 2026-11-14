@@ -1,0 +1,884 @@
+[
+ {
+  "query_id": "n01",
+  "split": "test",
+  "answerable": true,
+  "question": "What does Python's or operator return?",
+  "query": "What does Python's or operator return?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0104:c03",
+    "page": 104,
+    "section": "4.3",
+    "score": 10.8679,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0106:c02",
+    "page": 106,
+    "section": "4.3",
+    "score": 7.1613,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 6.5851,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0165:c00",
+    "page": 165,
+    "section": "6.5",
+    "score": 6.2179,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0166:c02",
+    "page": 166,
+    "section": "6.5",
+    "score": 5.9618,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 5.8383,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0155:c00",
+    "page": 155,
+    "section": "6.3",
+    "score": 5.5646,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0100:c05",
+    "page": 100,
+    "section": "4.2",
+    "score": 5.5432,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0162:c02",
+    "page": 162,
+    "section": "6.4",
+    "score": 5.3763,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0121:c02",
+    "page": 121,
+    "section": "4.8",
+    "score": 5.0551,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0104:c03",
+   "p0106:c02",
+   "p0164:c02"
+  ],
+  "context_chars": 1338,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 105,
+    "evidence": "The or operator takes two condition operands and returns True if either"
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.0,
+  "context_hit": false
+ },
+ {
+  "query_id": "n02",
+  "split": "test",
+  "answerable": true,
+  "question": "How many logical operators does Python have, and which are they?",
+  "query": "How many logical operators does Python have, and which are they?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0104:c03",
+    "page": 104,
+    "section": "4.3",
+    "score": 12.79,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0104:c02",
+    "page": 104,
+    "section": "4.3",
+    "score": 10.4723,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0108:c02",
+    "page": 108,
+    "section": "4.4",
+    "score": 10.4252,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0105:c02",
+    "page": 105,
+    "section": "4.3",
+    "score": 9.5187,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0100:c05",
+    "page": 100,
+    "section": "4.2",
+    "score": 6.6116,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0121:c00",
+    "page": 121,
+    "section": "4.8",
+    "score": 6.1507,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0106:c02",
+    "page": 106,
+    "section": "4.3",
+    "score": 5.9541,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0098:c01",
+    "page": 98,
+    "section": "4.1",
+    "score": 5.9344,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0169:c01",
+    "page": 169,
+    "section": "6.6",
+    "score": 5.6433,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0122:c01",
+    "page": 122,
+    "section": "4.8",
+    "score": 5.2216,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0104:c03",
+   "p0104:c02",
+   "p0108:c02"
+  ],
+  "context_chars": 1168,
+  "ms": 0.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 104,
+    "evidence": "Python has three logical operators: and, or, and not."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "n03",
+  "split": "test",
+  "answerable": true,
+  "question": "In the miles-per-gallon example, what does the function return when gallons is 0, and why that value?",
+  "query": "In the miles-per-gallon example, what does the function return when gallons is 0, and why that value?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0166:c00",
+    "page": 166,
+    "section": "6.5",
+    "score": 34.5128,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0166:c02",
+    "page": 166,
+    "section": "6.5",
+    "score": 28.6698,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0166:c01",
+    "page": 166,
+    "section": "6.5",
+    "score": 28.6387,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0165:c01",
+    "page": 165,
+    "section": "6.5",
+    "score": 25.7268,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0165:c02",
+    "page": 165,
+    "section": "6.5",
+    "score": 20.9049,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 10.1702,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0167:c01",
+    "page": 167,
+    "section": "6.5",
+    "score": 9.4127,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0165:c00",
+    "page": 165,
+    "section": "6.5",
+    "score": 9.113,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 8.9894,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0153:c01",
+    "page": 153,
+    "section": "6.2",
+    "score": 8.7846,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0166:c00",
+   "p0166:c02",
+   "p0166:c01"
+  ],
+  "context_chars": 908,
+  "ms": 0.3,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 166,
+    "evidence": "if so, returns -1, a value often used to"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "n04",
+  "split": "test",
+  "answerable": true,
+  "question": "What is the difference between a function argument and a function parameter?",
+  "query": "What is the difference between a function argument and a function parameter?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0169:c00",
+    "page": 169,
+    "section": "6.6",
+    "score": 20.0311,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0160:c02",
+    "page": 160,
+    "section": "6.4",
+    "score": 12.7884,
+    "hit": true
+   },
+   {
+    "rank": 3,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 12.7865,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0160:c01",
+    "page": 160,
+    "section": "6.4",
+    "score": 12.77,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0171:c03",
+    "page": 171,
+    "section": "6.7",
+    "score": 12.1835,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0161:c01",
+    "page": 161,
+    "section": "6.4",
+    "score": 12.045,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0172:c00",
+    "page": 172,
+    "section": "6.7",
+    "score": 11.8409,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0169:c01",
+    "page": 169,
+    "section": "6.6",
+    "score": 10.8862,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0162:c01",
+    "page": 162,
+    "section": "6.4",
+    "score": 9.5734,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0170:c00",
+    "page": 170,
+    "section": "6.6",
+    "score": 9.4406,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0169:c00",
+   "p0160:c02",
+   "p0171:c04"
+  ],
+  "context_chars": 1458,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 160,
+    "evidence": "A function argument is a value passed as"
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.5,
+  "context_hit": true
+ },
+ {
+  "query_id": "n05",
+  "split": "test",
+  "answerable": true,
+  "question": "When a function that was called by another function finishes, where does control flow go?",
+  "query": "When a function that was called by another function finishes, where does control flow go?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0153:c00",
+    "page": 153,
+    "section": "6.2",
+    "score": 18.5567,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0151:c04",
+    "page": 151,
+    "section": "6.2",
+    "score": 17.8589,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0151:c03",
+    "page": 151,
+    "section": "6.2",
+    "score": 16.9014,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0171:c02",
+    "page": 171,
+    "section": "6.7",
+    "score": 16.5603,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0152:c01",
+    "page": 152,
+    "section": "6.2",
+    "score": 13.2038,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 10.9871,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0147:c02",
+    "page": 147,
+    "section": "6.0",
+    "score": 10.7932,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0153:c01",
+    "page": 153,
+    "section": "6.2",
+    "score": 10.6372,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0166:c00",
+    "page": 166,
+    "section": "6.5",
+    "score": 10.5546,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0152:c02",
+    "page": 152,
+    "section": "6.2",
+    "score": 10.1618,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0153:c00",
+   "p0151:c04"
+  ],
+  "context_chars": 1291,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 153,
+    "evidence": "another function finishes execution, control flow returns to the calling function."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "n06",
+  "split": "test",
+  "answerable": true,
+  "question": "Why not simply make every variable global to avoid scope errors?",
+  "query": "Why not simply make every variable global to avoid scope errors?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0159:c00",
+    "page": 159,
+    "section": "6.3",
+    "score": 25.4994,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0155:c00",
+    "page": 155,
+    "section": "6.3",
+    "score": 17.289,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0171:c03",
+    "page": 171,
+    "section": "6.7",
+    "score": 12.6968,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0157:c02",
+    "page": 157,
+    "section": "6.3",
+    "score": 10.0077,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0156:c01",
+    "page": 156,
+    "section": "6.3",
+    "score": 9.7268,
+    "hit": false
+   },
+   {
+    "rank": 6,
+    "id": "p0100:c03",
+    "page": 100,
+    "section": "4.2",
+    "score": 9.336,
+    "hit": false
+   },
+   {
+    "rank": 7,
+    "id": "p0161:c01",
+    "page": 161,
+    "section": "6.4",
+    "score": 7.4371,
+    "hit": false
+   },
+   {
+    "rank": 8,
+    "id": "p0162:c02",
+    "page": 162,
+    "section": "6.4",
+    "score": 7.0856,
+    "hit": false
+   },
+   {
+    "rank": 9,
+    "id": "p0147:c00",
+    "page": 147,
+    "section": "6.0",
+    "score": 6.7264,
+    "hit": false
+   },
+   {
+    "rank": 10,
+    "id": "p0155:c01",
+    "page": 155,
+    "section": "6.3",
+    "score": 6.3059,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0159:c00",
+   "p0155:c00"
+  ],
+  "context_chars": 1214,
+  "ms": 0.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 159,
+    "evidence": "every variable global can make a program messy"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true
+ },
+ {
+  "query_id": "u04",
+  "split": "test",
+  "answerable": false,
+  "question": "What does the yield keyword do inside a generator function?",
+  "query": "What does the yield keyword do inside a generator function?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0157:c02",
+    "page": 157,
+    "section": "6.3",
+    "score": 7.4194,
+    "hit": null
+   },
+   {
+    "rank": 2,
+    "id": "p0169:c00",
+    "page": 169,
+    "section": "6.6",
+    "score": 6.9915,
+    "hit": null
+   },
+   {
+    "rank": 3,
+    "id": "p0169:c02",
+    "page": 169,
+    "section": "6.6",
+    "score": 6.9246,
+    "hit": null
+   },
+   {
+    "rank": 4,
+    "id": "p0169:c01",
+    "page": 169,
+    "section": "6.6",
+    "score": 6.4773,
+    "hit": null
+   },
+   {
+    "rank": 5,
+    "id": "p0172:c00",
+    "page": 172,
+    "section": "6.7",
+    "score": 6.0644,
+    "hit": null
+   },
+   {
+    "rank": 6,
+    "id": "p0148:c04",
+    "page": 148,
+    "section": "6.1",
+    "score": 5.1538,
+    "hit": null
+   },
+   {
+    "rank": 7,
+    "id": "p0173:c00",
+    "page": 173,
+    "section": "6.7",
+    "score": 5.1487,
+    "hit": null
+   },
+   {
+    "rank": 8,
+    "id": "p0161:c01",
+    "page": 161,
+    "section": "6.4",
+    "score": 4.8618,
+    "hit": null
+   },
+   {
+    "rank": 9,
+    "id": "p0147:c00",
+    "page": 147,
+    "section": "6.0",
+    "score": 4.6923,
+    "hit": null
+   },
+   {
+    "rank": 10,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 4.5893,
+    "hit": null
+   }
+  ],
+  "context_ids": [
+   "p0157:c02",
+   "p0169:c00",
+   "p0169:c02"
+  ],
+  "context_chars": 1213,
+  "ms": 0.1,
+  "top1_score": 7.4194
+ },
+ {
+  "query_id": "u05",
+  "split": "test",
+  "answerable": false,
+  "question": "How do *args and **kwargs let a function accept a variable number of arguments?",
+  "query": "How do *args and **kwargs let a function accept a variable number of arguments?",
+  "filter": null,
+  "config": "R2_bm25",
+  "method": "bm25",
+  "top_k": 3,
+  "budget_chars": 1500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0134:c00",
+    "page": 134,
+    "section": "5.3",
+    "score": 11.5439,
+    "hit": null
+   },
+   {
+    "rank": 2,
+    "id": "p0137:c00",
+    "page": 137,
+    "section": "5.3",
+    "score": 11.0786,
+    "hit": null
+   },
+   {
+    "rank": 3,
+    "id": "p0109:c02",
+    "page": 109,
+    "section": "4.4",
+    "score": 11.0415,
+    "hit": null
+   },
+   {
+    "rank": 4,
+    "id": "p0171:c03",
+    "page": 171,
+    "section": "6.7",
+    "score": 9.8027,
+    "hit": null
+   },
+   {
+    "rank": 5,
+    "id": "p0171:c00",
+    "page": 171,
+    "section": "6.6",
+    "score": 9.5327,
+    "hit": null
+   },
+   {
+    "rank": 6,
+    "id": "p0109:c00",
+    "page": 109,
+    "section": "4.4",
+    "score": 9.2788,
+    "hit": null
+   },
+   {
+    "rank": 7,
+    "id": "p0154:c01",
+    "page": 154,
+    "section": "6.2",
+    "score": 8.8199,
+    "hit": null
+   },
+   {
+    "rank": 8,
+    "id": "p0154:c00",
+    "page": 154,
+    "section": "6.2",
+    "score": 8.7318,
+    "hit": null
+   },
+   {
+    "rank": 9,
+    "id": "p0130:c00",
+    "page": 130,
+    "section": "5.2",
+    "score": 8.6518,
+    "hit": null
+   },
+   {
+    "rank": 10,
+    "id": "p0151:c00",
+    "page": 151,
+    "section": "6.1",
+    "score": 8.6463,
+    "hit": null
+   }
+  ],
+  "context_ids": [
+   "p0134:c00",
+   "p0137:c00",
+   "p0109:c02"
+  ],
+  "context_chars": 910,
+  "ms": 0.2,
+  "top1_score": 11.5439
+ }
+]

@@ -1,0 +1,27 @@
+{
+ "page": 126,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019   | 2020   | 2021   | 2022   | 2023e  |\n|-----------------------------------|--------|--------|--------|--------|--------|\n| Production, mine                  | 43,600 | 51,100 | 41,100 | 34,600 | 34,000 |\n| Imports for consumption           | 34,200 | 24,700 | 30,200 | 28,800 | 31,000 |\n| Exports                          | 67,200 | 62,600 | 59,900 | 51,100 | 51,000 |\n| Consumption:                     |        |        |        |        |        |\n|   Reported1                   | 16,400 | 16,000 | 16,100 | 15,900 | 16,000 |\n|   Apparent2                  | 10,400 | 13,100 | 11,200 | 12,400 | 14,000 |\n| Price, average value, dollars per kilogram3 | 26.50  | 19.90  | 35.30  | 41.35  | 55.60  |\n| Stocks, consumer materials       | 1,980  | 2,010  | 2,040  | 2,050  | 1,900  |\n| Employment, mine and plant, number | 950    | 950    | 940    | 940    | 950    |\n| Net import reliance4 as a percentage of apparent consumption | E      | E      | E      | E      | E      |",
+   "notes": "Footnotes 1, 2, 3, 4 referenced but not transcribed."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                   | Number       | Normal Trade Relations 12-31-23                          |\n|----------------------------------------|--------------|----------------------------------------------------------|\n| Molybdenum ore and concentrates, roasted | 2613.10.0000 | 12.8¢/kg on molybdenum content + 1.8% ad valorem.      |\n| Molybdenum ore and concentrates, other  | 2613.90.0000 | 17.8¢/kg on molybdenum content.                       |\n| Molybdenum chemicals:                   |              |                                                          |\n|   Molybdenum oxides and hydroxides | 2825.70.0000 | 3.2% ad valorem.                                          |\n|   Molybdates of ammonium           | 2841.70.1000 | 4.3% ad valorem.                                          |\n|   Molybdates, all others           | 2841.70.5000 | 3.7% ad valorem.                                          |\n| Molybdenum pigments, molybdenum orange  | 3206.20.0020 | 3.7% ad valorem.                                          |\n| Ferroalloys, ferromolybdenum            | 7202.70.0000 | 4.5% ad valorem.                                          |\n| Molybdenum metals:                      |              |                                                          |\n|   Powders                           | 8102.10.0000 | 9.1¢/kg on molybdenum content + 1.2% ad valorem.      |\n|   Unwrought                         | 8102.94.0000 | 13.9¢/kg on molybdenum content + 1.9% ad valorem.     |\n|   Wrought bars and rods             | 8102.95.3000 | 6.6% ad valorem.                                          |\n|   Wrought plates, sheets, strips, and so forth | 8102.95.6000 | 6.6% ad valorem.                                          |\n|   Wire                              | 8102.96.0000 | 4.4% ad valorem.                                          |\n|   Waste and scrap                   | 8102.97.0000 | Free.                                                    |\n|   Other                             | 8102.99.0000 | 3.7% ad valorem.                                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1017
+ },
+ "seconds": 9.4
+}

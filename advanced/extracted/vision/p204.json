@@ -1,0 +1,20 @@
+{
+ "page": 204,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019   | 2020   | 2021   | 2022   | 2023e  |\n|-------------------------|--------|--------|--------|--------|--------|\n| Production, mine        | 87,800 | 86,700 | 87,000 | 77,400 | 84,000 |\n| Sales, mill             | 77,100 | 75,300 | 73,900 | 79,800 | 85,000 |\n| Imports for consumptione| <1,000 | <1,000 | <1,000 | <1,000 | <1,000 |\n| Exportse                | <1,000 | <1,000 | <1,000 | <1,000 | <1,000 |\n| Consumption, apparent1  | 77,100 | 75,300 | 73,900 | 79,800 | 85,000 |\n| Price, range of value, dollars per metric tone, 2 | 50–300 | 50–300 | 50–300 | 50–300 | 50–300 |\n| Employment, mine and mill, numbere, 3 | 120    | 120    | 120    | 120    | 110    |\n| Net import reliance4 as a percentage of apparent consumption | E      | E      | E      | E      | E      |",
+   "notes": "Footnotes: 1 Apparent consumption = production + imports - exports. 2 Price range is for natural zeolites sold in the United States. 3 Employment data are estimated. 4 Net import reliance is calculated as imports - exports + adjustments for Government and industry stock changes, expressed as a percentage of apparent consumption. E = estimated."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 416
+ },
+ "seconds": 4.4
+}

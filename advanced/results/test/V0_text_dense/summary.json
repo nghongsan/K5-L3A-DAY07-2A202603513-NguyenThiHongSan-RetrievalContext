@@ -1,0 +1,40 @@
+{
+ "config": "V0_text_dense",
+ "split": "test",
+ "model": "gpt-4.1-mini",
+ "settings": {
+  "name": "V0_text_dense",
+  "method": "dense",
+  "kinds": [
+   "text"
+  ],
+  "top_k": 6,
+  "call_budget": 9000,
+  "view_page": false,
+  "max_searches": 5,
+  "max_views": 3,
+  "max_turns": 12,
+  "model": "gpt-4.1-mini",
+  "title_lookup": false,
+  "prompt_v2": false
+ },
+ "n": 30,
+ "errors": 0,
+ "page_hit1": "15/24",
+ "page_hit3": "20/24",
+ "all_gold_pages_top6": "19/24",
+ "context_all_gold_pages": "20/24",
+ "cited_all_gold_pages": "19/24",
+ "answered": 25,
+ "abstained": 5,
+ "abstain_on_unanswerable": "5/6",
+ "abstain_on_answerable": "0/24",
+ "searches_mean": 2.1,
+ "views_mean": 0,
+ "tokens_in": 339194,
+ "tokens_out": 7219,
+ "cost_usd_llm": 0.1472,
+ "embedding_query_tokens": 1491,
+ "median_seconds": 3.6500000000000004,
+ "wall_seconds": 43.7
+}

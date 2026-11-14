@@ -1,0 +1,23 @@
+{
+ "chunks": 1270,
+ "text_chunks": 987,
+ "visual_chunks": 283,
+ "visual_by_type": {
+  "bar chart": 1,
+  "chart": 11,
+  "diagram": 4,
+  "map": 6,
+  "photo": 2,
+  "pie chart": 1,
+  "table": 256,
+  "text": 2
+ },
+ "pages_with_text_chunks": 216,
+ "pages_with_visual_chunks": 191,
+ "vision_missing_or_unparsed_pages": [],
+ "embedding_model": "text-embedding-3-small",
+ "dimensions": 1536,
+ "embedding_tokens": 326778,
+ "embedding_cost_usd": 0.0065,
+ "seconds": 21.6
+}

@@ -1,0 +1,27 @@
+{
+ "page": 76,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "| Category                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|--------------------------------------------|------|------|------|------|-------|\n| Production:                                |      |      |      |      |       |\n| Finished, metallurgical grade              | NA   | NA   | NA   | NA   | NA    |\n| Fluorosilicic acid from phosphate rock    | 29   | 22   | 40   | e40  | 40    |\n| Imports for consumption:                    |      |      |      |      |       |\n| Acid grade                                | 346  | 427  | 391  | 438  | 350   |\n| Metallurgical grade                        | 59   | 65   | 59   | 88   | 40    |\n| Total fluorspar imports                    | 405  | 492  | 451  | 526  | 390   |\n| Hydrofluoric acid                          | 124  | 103  | 103  | 99   | 100   |\n| Aluminum fluoride                         | 38   | 21   | 28   | 21   | 25    |\n| Cryolite                                  | 21   | 26   | 42   | 28   | 34    |\n| Exports, fluorspar, all grades1           | 8    | 9    | 15   | 24   | 22    |\n| Consumption, apparent2                     | 398  | 483  | 436  | 502  | 370   |\n| Price, average unit value of imports, cost, insurance, and freight, dollars per metric ton: |      |      |      |      |       |\n| Acid grade                                | 304  | 309  | 322  | 383  | 430   |\n| Metallurgical grade                       | 292  | 149  | 151  | 223  | 360   |\n| Employment, mine, numbere                  | 14   | 16   | 17   | 15   | 15    |\n| Net import reliance2 as a percentage of apparent consumption | 100  | 100  | 100  | 100  | 100   |",
+   "notes": "1 Exports include fluorspar content of cryolite and aluminum fluoride.\n2 Apparent consumption is production plus imports minus exports.\n3 Import sources (2019–22): Mexico, 64%; Vietnam, 15%; China, 6%; South Africa, 6%; and other, 9%."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                                         | Number       | Normal Trade Relations 12–31–23 |\n|----------------------------------------------|--------------|--------------------------------|\n| Metallurgical grade (97% or less CaF2)       | 2529.21.0000 | Free.                          |\n| Acid grade (more than 97% CaF2)               | 2529.22.0000 | Free.                          |\n| Natural cryolite                              | 2530.90.1000 | Free.                          |\n| Hydrogen fluoride (hydrofluoric acid)        | 2811.11.0000 | Free.                          |\n| Aluminum fluoride                            | 2826.12.0000 | Free.                          |\n| Sodium hexafluoroaluminate (synthetic cryolite) | 2826.30.0000 | Free.                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 796
+ },
+ "seconds": 6.4
+}

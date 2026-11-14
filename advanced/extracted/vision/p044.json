@@ -1,0 +1,27 @@
+{
+ "page": 44,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|------|------|------|------|-------|\n| Production:             |      |      |      |      |       |\n| Sold or used, mine      | 414  | W    | W    | W    | W     |\n| Ground and crushed¹     | 2,350| 1,410| 1,670| 2,200| 2,500 |\n| Imports:²               |      |      |      |      |       |\n| For consumption         | 2,500| 1,480| 1,660| 2,330| 2,500 |\n| General                 | 2,330| 869  | 1,440| 1,890| 2,400 |\n| Exports³                | 38   | 48   | 62   | 86   | 84    |\n| Consumption, apparent (crude and ground)⁴ | 2,880| W    | W    | W    | W     |\n| Price, average unit value, ground, ex-works, dollars per metric ton | 179  | 183  | 167  | 145  | 150   |\n| Employment, mine and mill, numbere | 480  | 360  | 330  | 380  | 390   |\n| Net import reliance⁵ as a percentage of apparent consumption | 86   | >75  | >75  | >75  | >75   |",
+   "notes": "¹ Ground and crushed barite.\n² Imports for consumption.\n³ Exports of barite.\n⁴ Apparent consumption is crude and ground barite.\n⁵ Net import reliance as a percentage of apparent consumption.\nW Withheld to avoid disclosing company proprietary data.\ne Estimated."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                          | Number       | Normal Trade Relations 12–31–23 |\n|-------------------------------|--------------|--------------------------------|\n| Ground barite                 | 2511.10.1000 | Free.                          |\n| Crude barite                 | 2511.10.5000 | $1.25 per metric ton.          |\n| Barium compounds:            |              |                                |\n| Barium oxide, hydroxide, and peroxide | 2816.40.2000 | 2% ad valorem.                 |\n| Barium chloride              | 2827.39.4500 | 4.2% ad valorem.               |\n| Barium sulfate, precipitated | 2833.27.0000 | 0.6% ad valorem.               |\n| Barium carbonate, precipitated | 2836.60.0000 | 2.3% ad valorem.               |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 664
+ },
+ "seconds": 6.1
+}

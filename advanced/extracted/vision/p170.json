@@ -1,0 +1,27 @@
+{
+ "page": 170,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                              | 2019  | 2020  | 2021  | 2022  | 2023e |\n|------------------------------|-------|-------|-------|-------|-------|\n| Sold or used by producers     | 1,470 | 1,460 | 1,510 | 1,550 | 1,500 |\n| Recycled material             | 32    | 31    | 33    | 33    | 33    |\n| Imports for consumption       | 24    | 20    | 19    | 16    | 13    |\n| Exports                       | (2)   | (2)   | (2)   | (2)   | (2)   |\n| Consumption, apparent3        | 1,530 | 1,510 | 1,560 | 1,600 | 1,600 |\n| Price, average unit value, $/t| 12.36 | 12.69 | 13.19 | 14.23 | 15.60 |\n| Employment, quarry and mill,  | 69,000| 68,000| 68,900| 70,400| 70,000|\n| number4                      |       |       |       |       |       |\n| Net import reliance5 as % of  | 2     | 1     | 1     | 1     | 1     |\n| apparent consumption          |       |       |       |       |       |",
+   "notes": "(2) Exports data not disclosed to avoid disclosing company proprietary data.\n3 Apparent consumption = production + imports - exports + adjustments for Government and industry stock changes.\n4 Employment data are estimated.\n5 Net import reliance = imports - exports as a percentage of apparent consumption."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower right",
+   "content": "| Item                                   | Number       | Normal Trade Relations 12-31-23 |\n|----------------------------------------|--------------|--------------------------------|\n| Chalk:                                 |              |                                |\n| Crude                                  | 2509.00.1000 | Free.                          |\n| Other                                  | 2509.00.2000 | Free.                          |\n| Limestone, except pebbles and gravel   | 2517.10.0020 | Free.                          |\n| Crushed or broken stone                 | 2517.10.0055 | Free.                          |\n| Marble granules, chippings and powder  | 2517.41.0000 | Free.                          |\n| Stone granules, chippings and powders  | 2517.49.0000 | Free.                          |\n| Limestone flux; limestone and other calcareous stone | 2521.00.0000 | Free.                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 635
+ },
+ "seconds": 5.0
+}

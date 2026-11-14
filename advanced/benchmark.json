@@ -1,0 +1,1319 @@
+{
+ "document": "U.S. Geological Survey, 2024, Mineral Commodity Summaries 2024: U.S. Geological Survey, 212 p. (PDF: 216 physical pages)",
+ "url": "https://pubs.usgs.gov/periodicals/mcs2024/mcs2024.pdf",
+ "doi": "https://doi.org/10.3133/mcs2024",
+ "sha256": "a4da4050fc9a63a98538960a531d93c6b758c689f01d66a09a49796f58a5a562",
+ "license": "U.S. Government work (USGS) - public domain in the United States.",
+ "frozen_at": "2026-11-14, before any advanced pipeline/index run",
+ "page_rule": "page = physical PDF page (1-based). printed_page = page number printed on the sheet (= physical - 4 for the body).",
+ "grading": "Pass/fail per ADVANCED.md. Answerable: correct and complete (values, units, conditions, calculation) AND citations identify the page/figure/table holding the evidence AND cited evidence supports the whole answer. Unanswerable: explicit refusal / not enough evidence, no unsupported claim. Errors count as fail.",
+ "questions": [
+  {
+   "id": "AD-T1",
+   "split": "dev",
+   "group": "table",
+   "question": "According to Table 1 (U.S. Mineral Industry Trends), how many coal-mining employees (all employees) were there in 2023?",
+   "expected_answer": "41 thousand workers (estimated, 2023).",
+   "gold": [
+    {
+     "page": 13,
+     "printed_page": 9,
+     "region": "Table 1, row 'Coal mining, all employees' under 'Employment (thousands of workers)', column 2023e",
+     "evidence": "Coal mining, all employees 51 40 38 40 41"
+    }
+   ]
+  },
+  {
+   "id": "AD-T2",
+   "split": "dev",
+   "group": "table",
+   "question": "What were the estimated world total rare-earth mine production in 2023 and the world rare-earth reserves?",
+   "expected_answer": "World mine production about 350,000 metric tons (REO equivalent) in 2023; reserves about 110,000,000 metric tons (110 million t).",
+   "gold": [
+    {
+     "page": 149,
+     "printed_page": 145,
+     "region": "Rare Earths, World Mine Production and Reserves table, row 'World total (rounded)'",
+     "evidence": "World total (rounded) 300,000 350,000 110,000,000"
+    }
+   ]
+  },
+  {
+   "id": "AD-T3",
+   "split": "dev",
+   "group": "table",
+   "question": "How many metric tons of cobalt (cobalt content) did the United States import for consumption in 2023?",
+   "expected_answer": "9,600 metric tons (estimated 2023).",
+   "gold": [
+    {
+     "page": 66,
+     "printed_page": 62,
+     "region": "Cobalt, Salient Statistics, row 'Imports for consumption', column 2023e",
+     "evidence": "Imports for consumption 13,900 9,740 9,790 10,500 9,600"
+    }
+   ]
+  },
+  {
+   "id": "AD-I1",
+   "split": "dev",
+   "group": "image",
+   "question": "In the diagram of the role of nonfuel mineral commodities in the U.S. economy, what were the net exports of old scrap in 2023, and which examples are given?",
+   "expected_answer": "Net exports of old scrap were $17 billion (exports $25 billion, imports $8 billion); examples: gold, steel, and so forth.",
+   "gold": [
+    {
+     "page": 8,
+     "printed_page": 4,
+     "region": "Figure 1, lower-left box 'Net Exports of Old Scrap'",
+     "evidence": "Exports $25 billion, Imports $8 billion, Net exports $17 billion; Gold, Steel, and so forth"
+    }
+   ]
+  },
+  {
+   "id": "AD-I2",
+   "split": "dev",
+   "group": "image",
+   "question": "In the mineral-resource classification diagram (Figure C1), into which two categories is 'Demonstrated' (identified resources) subdivided?",
+   "expected_answer": "Measured and Indicated.",
+   "gold": [
+    {
+     "page": 213,
+     "printed_page": 209,
+     "region": "Figure C1 header, under IDENTIFIED RESOURCES > Demonstrated",
+     "evidence": "Demonstrated: Measured | Indicated"
+    }
+   ]
+  },
+  {
+   "id": "AD-I3",
+   "split": "dev",
+   "group": "image",
+   "question": "On the world map of leading import sources (Figure 3), in which class (number of commodities) is Brazil shown?",
+   "expected_answer": "7 to 12 commodities (orange class).",
+   "gold": [
+    {
+     "page": 12,
+     "printed_page": 8,
+     "region": "Figure 3 world map, Brazil shaded orange; legend 'Number of commodities'",
+     "evidence": "Brazil colored with the '7 to 12' legend color"
+    }
+   ]
+  },
+  {
+   "id": "AD-C1",
+   "split": "dev",
+   "group": "chart",
+   "question": "What was the 2023 U.S. net import reliance for natural graphite, and what were its leading import sources (2019-22)?",
+   "expected_answer": "100%; China (includes Hong Kong), Mexico, Canada, Madagascar.",
+   "gold": [
+    {
+     "page": 11,
+     "printed_page": 7,
+     "region": "Figure 2 bar chart, row 'GRAPHITE (NATURAL)'",
+     "evidence": "GRAPHITE (NATURAL) 100 China,3 Mexico, Canada, Madagascar"
+    }
+   ]
+  },
+  {
+   "id": "AD-C2",
+   "split": "dev",
+   "group": "chart",
+   "question": "In Figure 10, what was the 5-year compound annual growth rate (2019-2023) in the price of battery-grade lithium?",
+   "expected_answer": "40% (5-year CAGR 2019 to 2023).",
+   "gold": [
+    {
+     "page": 29,
+     "printed_page": 25,
+     "region": "Figure 10, row 'Lithium, battery grade', right-hand 5-year CAGR column",
+     "evidence": "-32 Lithium, battery grade 40"
+    }
+   ]
+  },
+  {
+   "id": "AD-C3",
+   "split": "dev",
+   "group": "chart",
+   "question": "In the pie chart of Figure 4, which category had the largest value of nonfuel mineral production in 2023, and what was it?",
+   "expected_answer": "Natural aggregates, $35.2 billion (vs metals $34.9 billion and other industrial minerals $34.7 billion; U.S. total $105 billion).",
+   "gold": [
+    {
+     "page": 16,
+     "printed_page": 12,
+     "region": "Figure 4, pie chart (upper left)",
+     "evidence": "Natural aggregates $35.2 billion; Metals $34.9 billion; Other industrial minerals $34.7 billion"
+    }
+   ]
+  },
+  {
+   "id": "AD-M1",
+   "split": "dev",
+   "group": "multihop",
+   "question": "Using Table 1's 2023 value of metals mine production and the U.S. total nonfuel mineral production value shown in Figure 4, what share of the total did metals represent?",
+   "expected_answer": "Metals $34,900 million out of $105 billion, about 33% (34.9/105 = 33.2%).",
+   "calc": "34,900 / 105,000 = 0.332",
+   "gold": [
+    {
+     "page": 13,
+     "printed_page": 9,
+     "region": "Table 1, Total mine production, row Metals, 2023e",
+     "evidence": "Metals 26,900 27,600 36,900 35,400 34,900"
+    },
+    {
+     "page": 16,
+     "printed_page": 12,
+     "region": "Figure 4, 'U.S. total: $105 billion'",
+     "evidence": "U.S. total: $105 billion"
+    }
+   ],
+   "required": "both"
+  },
+  {
+   "id": "AD-M2",
+   "split": "dev",
+   "group": "multihop",
+   "question": "Which country is listed first among the leading lithium import sources in Figure 2, and how large are that country's lithium reserves?",
+   "expected_answer": "Argentina; reserves 3,600,000 metric tons (lithium content).",
+   "gold": [
+    {
+     "page": 11,
+     "printed_page": 7,
+     "region": "Figure 2, row 'LITHIUM'",
+     "evidence": "LITHIUM >25 Argentina, Chile, China, Russia"
+    },
+    {
+     "page": 115,
+     "printed_page": 111,
+     "region": "Lithium, World Mine Production and Reserves, row Argentina, Reserves",
+     "evidence": "Argentina 6,590 9,600 3,600,000"
+    }
+   ],
+   "required": "both"
+  },
+  {
+   "id": "AD-M3",
+   "split": "dev",
+   "group": "multihop",
+   "question": "Divide the total old scrap value of aluminum shown in Figure 13 by the value of old scrap domestically recycled in 2023 shown in Figure 1. What is the result?",
+   "expected_answer": "Aluminum total old scrap value $9,500 million vs $45 billion domestically recycled old scrap: about 21% (9.5/45 = 21.1%).",
+   "calc": "9,500 / 45,000 = 0.211",
+   "gold": [
+    {
+     "page": 8,
+     "printed_page": 4,
+     "region": "Figure 1, box 'Domestically Recycled Metals and Mineral Products'",
+     "evidence": "Value of old scrap: $45 billion"
+    },
+    {
+     "page": 32,
+     "printed_page": 28,
+     "region": "Figure 13, x-axis label '*Aluminum (9,500)'",
+     "evidence": "*Aluminum (9,500) - total old scrap value, million dollars"
+    }
+   ],
+   "required": "both",
+   "question_v1": "What fraction of the value of old scrap domestically recycled in 2023 (Figure 1) corresponds to the total old scrap value of aluminum shown in Figure 13?",
+   "change_note": "Dev question reworded after V0-V2 dev runs: the v1 wording was ambiguous (V1 computed aluminum's domestically recycled part). Dev only; test untouched."
+  },
+  {
+   "id": "AD-X1",
+   "split": "dev",
+   "group": "text",
+   "question": "How many companies recycled lithium batteries or planned to do so in 2023, by region?",
+   "expected_answer": "About 40 companies in Canada and the United States and 50 companies in Europe.",
+   "gold": [
+    {
+     "page": 114,
+     "printed_page": 110,
+     "region": "Lithium, Recycling paragraph",
+     "evidence": "In 2023, about 40 companies in Canada and the United States and 50 companies in Europe recycled lithium batteries or planned to do so."
+    }
+   ]
+  },
+  {
+   "id": "AD-X2",
+   "split": "dev",
+   "group": "text",
+   "question": "Which rare-earth mineral was mined as a primary product in the United States in 2023, and where?",
+   "expected_answer": "Bastnaesite (a rare-earth fluorocarbonate mineral), at a mine in Mountain Pass, CA.",
+   "gold": [
+    {
+     "page": 148,
+     "printed_page": 144,
+     "region": "Rare Earths, Domestic Production and Use",
+     "evidence": "Bastnaesite (or bastnäsite), a rare- earth fluorocarbonate mineral, was mined as a primary product at a mine in Mountain Pass, CA."
+    }
+   ]
+  },
+  {
+   "id": "AD-X3",
+   "split": "dev",
+   "group": "text",
+   "question": "What happened to the cobalt-copper-gold mine in Idaho in 2023?",
+   "expected_answer": "Ore extraction commenced, but commissioning was suspended in March owing to low cobalt prices.",
+   "gold": [
+    {
+     "page": 66,
+     "printed_page": 62,
+     "region": "Cobalt, Domestic Production and Use",
+     "evidence": "Ore extraction commenced at a cobalt-copper- gold mine in Idaho, but commissioning was suspended in March owing to low cobalt prices."
+    }
+   ]
+  },
+  {
+   "id": "AD-U1",
+   "split": "dev",
+   "group": "unanswerable",
+   "question": "How much uranium did U.S. mines produce in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "MCS covers nonfuel minerals; uranium appears only in passing (critical-minerals list changes, fluorspar processing, Fig. 14 legend), with no production data. A broader regex 'uranium.{0,80}produc' matches only p.76 (fluorspar used in uranium processing) and p.160-161 (scandium recovered from uranium operations/waste) - no U.S. uranium production figure.",
+   "absence_check": [
+    "uranium (mine )?production (was|of|totaled|in the United States)\\b",
+    "U\\.S\\. uranium",
+    "pounds of U3O8|U3O8"
+   ]
+  },
+  {
+   "id": "AD-U2",
+   "split": "dev",
+   "group": "unanswerable",
+   "question": "How much natural gas did the United States produce in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Natural gas is mentioned only as a helium source / drilling market; no natural-gas production figure.",
+   "absence_check": [
+    "natural gas (production|output) (was|of|totaled)",
+    "cubic feet of natural gas",
+    "natural gas produced"
+   ]
+  },
+  {
+   "id": "AD-U3",
+   "split": "dev",
+   "group": "unanswerable",
+   "question": "What is the projected global lithium demand in 2030?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Only '2030' near lithium is a North Carolina mine restart window (p.23); no demand projection.",
+   "absence_check": [
+    "lithium demand.{0,80}2030",
+    "2030.{0,80}lithium demand",
+    "projected.{0,40}lithium"
+   ]
+  },
+  {
+   "id": "AD-U4",
+   "split": "dev",
+   "group": "unanswerable",
+   "question": "What was the average 2023 price of NdFeB permanent magnets per kilogram?",
+   "expected_behavior": "abstain",
+   "absence_reason": "The report gives rare-earth OXIDE prices (e.g., neodymium oxide) but no magnet price.",
+   "absence_check": [
+    "magnet.{0,40}(price|\\$|dollars per)"
+   ]
+  },
+  {
+   "id": "AD-U5",
+   "split": "dev",
+   "group": "unanswerable",
+   "question": "What was the average 2023 price of lithium hydroxide in the United States?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: p.114 gives SPOT lithium hydroxide prices in China (c.i.f. China, ~$81,500 -> ~$22,500/t) and the U.S. lithium CARBONATE price; no U.S. lithium hydroxide price.",
+   "absence_check": [
+    "(U\\.S\\.|United States).{0,60}lithium hydroxide.{0,40}price",
+    "lithium hydroxide price.{0,60}(U\\.S\\.|United States)"
+   ],
+   "added": "after test-1, to tune abstention on near-miss data"
+  },
+  {
+   "id": "AD-U6",
+   "split": "dev",
+   "group": "unanswerable",
+   "question": "How many people were employed in U.S. lithium battery recycling in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: p.114 gives the NUMBER OF COMPANIES (about 40 in Canada and the U.S.), not employment; lithium 'Employment, mine and mill' (70) is mining, not recycling.",
+   "absence_check": [
+    "recycl.{0,100}(employ|workers|jobs)",
+    "(employ|workers|jobs).{0,100}battery recycl"
+   ],
+   "added": "after test-1"
+  },
+  {
+   "id": "AD-U7",
+   "split": "dev",
+   "group": "unanswerable",
+   "question": "What are the world reserves of gallium?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: p.79 states 'Quantitative estimates of reserves were not available'; production and capacity figures exist but no reserves.",
+   "absence_check": [
+    "gallium reserves (were|of|total)",
+    "reserves of gallium (were|are|total)"
+   ],
+   "added": "after test-1"
+  },
+  {
+   "id": "AT-T1",
+   "split": "test",
+   "group": "table",
+   "question": "What was the annual average U.S. price of battery-grade lithium carbonate in 2022 and in 2023?",
+   "expected_answer": "$68,100 per metric ton in 2022 and $46,000 per metric ton in 2023 (nominal; a decrease of about 32%).",
+   "gold": [
+    {
+     "page": 114,
+     "printed_page": 110,
+     "region": "Lithium, Salient Statistics, row 'Price, annual average-nominal, battery-grade lithium carbonate, dollars per metric ton'",
+     "evidence": "12,100 8,600 12,600 68,100 46,000"
+    }
+   ]
+  },
+  {
+   "id": "AT-T2",
+   "split": "test",
+   "group": "table",
+   "question": "Which country has the largest lithium reserves according to the lithium world reserves table, and how large are they?",
+   "expected_answer": "Chile, 9,300,000 metric tons (lithium content).",
+   "gold": [
+    {
+     "page": 115,
+     "printed_page": 111,
+     "region": "Lithium, World Mine Production and Reserves, Reserves column",
+     "evidence": "Chile 38,000 44,000 9,300,000 (Australia 6,200,000; Argentina 3,600,000; China 3,000,000)"
+    }
+   ]
+  },
+  {
+   "id": "AT-T3",
+   "split": "test",
+   "group": "table",
+   "question": "According to Table 1, by how much did the value of U.S. industrial minerals mine production change from 2022 to 2023?",
+   "expected_answer": "It increased by $4,600 million, from $65,300 million (2022) to $69,900 million (2023, estimated).",
+   "calc": "69,900 - 65,300 = 4,600 (million dollars)",
+   "gold": [
+    {
+     "page": 13,
+     "printed_page": 9,
+     "region": "Table 1, Total mine production (million dollars), row Industrial minerals",
+     "evidence": "Industrial minerals 56,500 54,000 58,200 65,300 69,900"
+    }
+   ]
+  },
+  {
+   "id": "AT-T4",
+   "split": "test",
+   "group": "table",
+   "question": "According to Table 2, how did U.S. light vehicle sales in 2023 compare with 2019?",
+   "expected_answer": "15,500 thousand in 2023 vs 16,961 thousand in 2019: 1,461 thousand fewer (about 8.6% lower).",
+   "calc": "16,961 - 15,500 = 1,461 (thousand)",
+   "gold": [
+    {
+     "page": 13,
+     "printed_page": 9,
+     "region": "Table 2, row 'Light vehicle sales (thousands)'",
+     "evidence": "Light vehicle sales (thousands) 16,961 14,472 14,947 13,754 15,500"
+    }
+   ]
+  },
+  {
+   "id": "AT-T5",
+   "split": "test",
+   "group": "table",
+   "question": "What share of world primary gallium production in 2023 came from China?",
+   "expected_answer": "About 98%: China 600,000 kg out of a world total of 610,000 kg (600/610 = 98.4%).",
+   "calc": "600,000 / 610,000 = 0.984",
+   "gold": [
+    {
+     "page": 79,
+     "printed_page": 75,
+     "region": "Gallium, World Production and Reserves table, Primary production 2023e: China and World total",
+     "evidence": "China 600,000 600,000 1,000,000 ... World total (rounded) 610,000 610,000"
+    }
+   ]
+  },
+  {
+   "id": "AT-T6",
+   "split": "test",
+   "group": "table",
+   "question": "What was the average 2023 price of dysprosium oxide (99.5% minimum)?",
+   "expected_answer": "$323 per kilogram (down from $382 in 2022).",
+   "gold": [
+    {
+     "page": 148,
+     "printed_page": 144,
+     "region": "Rare Earths, Salient Statistics, row 'Dysprosium oxide, 99.5% minimum' under 'Price, average, dollars per kilogram'",
+     "evidence": "Dysprosium oxide, 99.5% minimum 239 261 410 382 323"
+    }
+   ]
+  },
+  {
+   "id": "AT-I1",
+   "split": "test",
+   "group": "image",
+   "question": "In the diagram of the role of nonfuel mineral commodities in the U.S. economy, what was the value of shipments of domestically processed mineral materials?",
+   "expected_answer": "$890 billion (2023 estimate).",
+   "gold": [
+    {
+     "page": 8,
+     "printed_page": 4,
+     "region": "Figure 1, center box 'Domestically Processed Mineral Materials'",
+     "evidence": "Value of shipments: $890 billion"
+    }
+   ]
+  },
+  {
+   "id": "AT-I2",
+   "split": "test",
+   "group": "image",
+   "question": "Which host metals form the inner circle of the diagram relating byproduct elements to host metals?",
+   "expected_answer": "Ten host metals: gold (Au), aluminum (Al), titanium (Ti), iron (Fe), nickel (Ni), copper (Cu), zinc (Zn), lead (Pb), tin (Sn) and platinum (Pt).",
+   "gold": [
+    {
+     "page": 33,
+     "printed_page": 29,
+     "region": "Figure 14 (raster image), inner blue circle",
+     "evidence": "Inner circle labels: Au, Al, Ti, Fe, Ni, Cu, Zn, Pb, Sn, Pt; caption: 'The principal host metals form the inner circle.'"
+    }
+   ]
+  },
+  {
+   "id": "AT-I3",
+   "split": "test",
+   "group": "image",
+   "question": "In the mineral-resource classification diagram (Figure C1), what is the category for identified resources that are inferred and marginally economic?",
+   "expected_answer": "Inferred Marginal Reserves.",
+   "gold": [
+    {
+     "page": 213,
+     "printed_page": 209,
+     "region": "Figure C1, cell at row MARGINALLY ECONOMIC x column Inferred",
+     "evidence": "Inferred Marginal Reserves"
+    }
+   ]
+  },
+  {
+   "id": "AT-I4",
+   "split": "test",
+   "group": "image",
+   "question": "On the world map of leading import sources for commodities with greater than 50% U.S. net import reliance (Figure 3), which countries are in the highest class, and what is that class?",
+   "expected_answer": "Canada and China, in the '19 to 24' commodities class (darkest red).",
+   "gold": [
+    {
+     "page": 12,
+     "printed_page": 8,
+     "region": "Figure 3 world map; legend 'Number of commodities' 19 to 24",
+     "evidence": "Canada and China shaded dark red = 19 to 24"
+    }
+   ]
+  },
+  {
+   "id": "AT-I5",
+   "split": "test",
+   "group": "image",
+   "question": "On the regional map of metals and metallic minerals produced in 2023 (Figure 5), which region is in the highest value class and what is that value?",
+   "expected_answer": "The West, in the highest class: 25 (billion dollars).",
+   "gold": [
+    {
+     "page": 17,
+     "printed_page": 13,
+     "region": "Figure 5 map; legend 'Value, in billion dollars' top class 25",
+     "evidence": "West region shaded red = 25 (billion dollars); Midwest >5 to 15; South >0.3 to 5; Northeast 0 to 0.3"
+    }
+   ]
+  },
+  {
+   "id": "AT-C1",
+   "split": "test",
+   "group": "chart",
+   "question": "What was the 2023 U.S. net import reliance for cobalt, and what were its leading import sources for 2019-22?",
+   "expected_answer": "67% of apparent consumption; Norway, Canada, Finland, Japan.",
+   "gold": [
+    {
+     "page": 11,
+     "printed_page": 7,
+     "region": "Figure 2 bar chart, row 'COBALT'",
+     "evidence": "COBALT 67 Norway, Canada, Finland, Japan"
+    }
+   ]
+  },
+  {
+   "id": "AT-C2",
+   "split": "test",
+   "group": "chart",
+   "question": "Which critical mineral had the largest 1-year price increase from 2022 to 2023 in Figure 10, and how large was it?",
+   "expected_answer": "Beryllium, +112% (average annual unit value of imports).",
+   "gold": [
+    {
+     "page": 29,
+     "printed_page": 25,
+     "region": "Figure 10, left bars '1-year percent change (2022 to 2023)', row Beryllium",
+     "evidence": "112 Beryllium3 23"
+    }
+   ]
+  },
+  {
+   "id": "AT-C3",
+   "split": "test",
+   "group": "chart",
+   "question": "In Figure 11, which commodity had the largest percentage decrease in U.S. consumption from 2022 to 2023, and roughly how large was it?",
+   "expected_answer": "Yttrium (a critical mineral), about -80% (the bar reaches the -80 gridline). Accept values from -75% to -85%.",
+   "gold": [
+    {
+     "page": 30,
+     "printed_page": 26,
+     "region": "Figure 11 bar chart, leftmost bar 'Yttrium'",
+     "evidence": "Yttrium bar at about -80 percent change; next Tantalum about -65"
+    }
+   ]
+  },
+  {
+   "id": "AT-C4",
+   "split": "test",
+   "group": "chart",
+   "question": "In Figure 13, which commodity has the largest total old scrap value, and how much is it?",
+   "expected_answer": "Iron and steel, $34,493 million.",
+   "gold": [
+    {
+     "page": 32,
+     "printed_page": 28,
+     "region": "Figure 13 x-axis labels (total old scrap value, million dollars)",
+     "evidence": "Iron and steel (34,493); next largest Aluminum (9,500), Gold (9,247)"
+    }
+   ]
+  },
+  {
+   "id": "AT-C5",
+   "split": "test",
+   "group": "chart",
+   "question": "In Figure 7, which state produced the highest value of crushed stone in 2023, and approximately how much?",
+   "expected_answer": "Texas, about $3,000 million (about $3 billion; its bar reaches the 3,000 mark). Accept 2,900-3,000 million.",
+   "gold": [
+    {
+     "page": 19,
+     "printed_page": 15,
+     "region": "Figure 7 bar chart (lower left), first bar 'Texas'",
+     "evidence": "Texas bar at about 3,000 (value, in million dollars); Florida about 1,700"
+    }
+   ]
+  },
+  {
+   "id": "AT-M1",
+   "split": "test",
+   "group": "multihop",
+   "question": "What was the 2023 annual average U.S. battery-grade lithium carbonate price, and what 1-year price change for battery-grade lithium does Figure 10 report?",
+   "expected_answer": "$46,000 per metric ton in 2023; Figure 10 shows a -32% 1-year change (2022 to 2023).",
+   "gold": [
+    {
+     "page": 114,
+     "printed_page": 110,
+     "region": "Lithium, Salient Statistics price row (or Events text: '$46,000 per ton in 2023, a decrease of 32%')",
+     "evidence": "68,100 46,000"
+    },
+    {
+     "page": 29,
+     "printed_page": 25,
+     "region": "Figure 10, row 'Lithium, battery grade', 1-year percent change",
+     "evidence": "-32 Lithium, battery grade 40"
+    }
+   ],
+   "required": "both"
+  },
+  {
+   "id": "AT-M2",
+   "split": "test",
+   "group": "multihop",
+   "question": "Using the 2023 GDP in Table 2 and the value added by major industries that consume processed mineral materials in Figure 1, what share of GDP did that value added represent?",
+   "expected_answer": "$3,840 billion / $27,356 billion = about 14.0%.",
+   "calc": "3,840 / 27,356 = 0.1404",
+   "gold": [
+    {
+     "page": 13,
+     "printed_page": 9,
+     "region": "Table 2, row 'Gross domestic product (billion dollars)', 2023e",
+     "evidence": "Gross domestic product (billion dollars) 21,521 21,323 23,594 25,744 27,356"
+    },
+    {
+     "page": 8,
+     "printed_page": 4,
+     "region": "Figure 1, box 'Value Added to Gross Domestic Product by Major Industries That Consume Processed Mineral Materials'",
+     "evidence": "Value: $3,840 billion"
+    }
+   ],
+   "required": "both"
+  },
+  {
+   "id": "AT-M3",
+   "split": "test",
+   "group": "multihop",
+   "question": "What was the 2023 U.S. net import reliance for gallium, and what was the value of U.S. gallium metal imports in 2023?",
+   "expected_answer": "Net import reliance 100%; gallium metal imports were valued at about $3 million (a 40% decrease from 2022).",
+   "gold": [
+    {
+     "page": 11,
+     "printed_page": 7,
+     "region": "Figure 2, row 'GALLIUM'",
+     "evidence": "GALLIUM 100 Japan, China, Germany, Canada"
+    },
+    {
+     "page": 78,
+     "printed_page": 74,
+     "region": "Gallium, Domestic Production and Use",
+     "evidence": "In 2023, imports of gallium metal were valued at about $3 million"
+    }
+   ],
+   "required": "both"
+  },
+  {
+   "id": "AT-M4",
+   "split": "test",
+   "group": "multihop",
+   "question": "Compare the total old scrap value of cobalt shown in Figure 13 with the total estimated value of cobalt consumed in the United States in 2023.",
+   "expected_answer": "Cobalt old scrap value $69 million vs $270 million of cobalt consumed: old scrap equals about 26% of the consumption value (69/270 = 25.6%).",
+   "calc": "69 / 270 = 0.256",
+   "gold": [
+    {
+     "page": 32,
+     "printed_page": 28,
+     "region": "Figure 13, x-axis label '*Cobalt (69)'",
+     "evidence": "*Cobalt (69)"
+    },
+    {
+     "page": 66,
+     "printed_page": 62,
+     "region": "Cobalt, Domestic Production and Use",
+     "evidence": "The total estimated value of cobalt consumed in 2023 was $270 million."
+    }
+   ],
+   "required": "both"
+  },
+  {
+   "id": "AT-X1",
+   "split": "test",
+   "group": "text",
+   "question": "What share of global lithium end use was accounted for by batteries?",
+   "expected_answer": "87% (estimated global end uses).",
+   "gold": [
+    {
+     "page": 114,
+     "printed_page": 110,
+     "region": "Lithium, Domestic Production and Use, second paragraph",
+     "evidence": "global end uses were estimated as follows: batteries, 87%"
+    }
+   ]
+  },
+  {
+   "id": "AT-X2",
+   "split": "test",
+   "group": "text",
+   "question": "What share of cobalt consumed in the United States was used in superalloys, and mainly for what?",
+   "expected_answer": "An estimated 50%, mainly in aircraft gas turbine engines.",
+   "gold": [
+    {
+     "page": 66,
+     "printed_page": 62,
+     "region": "Cobalt, Domestic Production and Use",
+     "evidence": "An estimated 50% of cobalt consumed in the United States was used in superalloys, mainly aircraft gas turbine engines"
+    }
+   ]
+  },
+  {
+   "id": "AT-X3",
+   "split": "test",
+   "group": "text",
+   "question": "Since what year has no domestic primary gallium been recovered in the United States?",
+   "expected_answer": "Since 1987.",
+   "gold": [
+    {
+     "page": 78,
+     "printed_page": 74,
+     "region": "Gallium, Domestic Production and Use, first sentence",
+     "evidence": "No domestic primary (low-purity, unrefined) gallium has been recovered since 1987."
+    }
+   ]
+  },
+  {
+   "id": "AT-X4",
+   "split": "test",
+   "group": "text",
+   "question": "What was the estimated value of rare-earth compounds and metals imported by the United States in 2023, and how did it change from 2022?",
+   "expected_answer": "$190 million, a 7% decrease from $208 million in 2022.",
+   "gold": [
+    {
+     "page": 148,
+     "printed_page": 144,
+     "region": "Rare Earths, Domestic Production and Use",
+     "evidence": "The estimated value of rare-earth compounds and metals imported by the United States in 2023 was $190 million, a 7% decrease from $208 million in 2022."
+    }
+   ]
+  },
+  {
+   "id": "AT-U1",
+   "split": "test",
+   "group": "unanswerable",
+   "question": "How much crude oil did the United States produce in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Fuels are outside MCS scope; 'petroleum' appears only as an end-use/market context.",
+   "absence_check": [
+    "crude oil (production|output)",
+    "barrels (of oil|per day)",
+    "oil production (was|of|totaled)"
+   ]
+  },
+  {
+   "id": "AT-U2",
+   "split": "test",
+   "group": "unanswerable",
+   "question": "How many short tons of coal did the United States produce in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Table 1 gives coal mine production VALUE (million dollars) and employment only; no tonnage. 'short tons' appears once, for soda ash capacity (p.168).",
+   "absence_check": [
+    "coal.{0,60}short tons",
+    "short tons.{0,60}coal",
+    "coal.{0,40}million (metric )?tons"
+   ]
+  },
+  {
+   "id": "AT-U3",
+   "split": "test",
+   "group": "unanswerable",
+   "question": "What share of global cobalt mine production in 2023 came from seabed polymetallic nodules?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Nodules appear only as identified RESOURCES (>120 million tons, p.67), not production.",
+   "absence_check": [
+    "nodules.{0,80}(produc|mined)",
+    "(produc|mined).{0,80}nodules"
+   ]
+  },
+  {
+   "id": "AT-U4",
+   "split": "test",
+   "group": "unanswerable",
+   "question": "How many lithium-ion battery gigafactories were operating in the United States in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "No count of battery factories; 'gigafactory' never appears.",
+   "absence_check": [
+    "gigafactor",
+    "battery (factories|plants) (were|in operation)"
+   ]
+  },
+  {
+   "id": "AT-U5",
+   "split": "test",
+   "group": "unanswerable",
+   "question": "What is the forecast U.S. copper consumption for 2026?",
+   "expected_behavior": "abstain",
+   "absence_reason": "'2026' appears only for aluminum contracts/smelter, cadmium/solar capacity and peat; no copper forecast.",
+   "absence_check": [
+    "copper.{0,120}2026",
+    "2026.{0,120}copper"
+   ]
+  },
+  {
+   "id": "AT-U6",
+   "split": "test",
+   "group": "unanswerable",
+   "question": "How many metric tons of rare earths did Vietnam export in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Vietnam appears in the rare-earth production/reserves table and as an import source for other commodities, but no Vietnamese export tonnage is given.",
+   "absence_check": [
+    "Vietnam.{0,60}export",
+    "export.{0,60}Vietnam"
+   ]
+  },
+  {
+   "id": "AT2-T1",
+   "split": "test2",
+   "group": "table",
+   "question": "What was the recoverable copper content of U.S. mine production in 2022 and in 2023?",
+   "expected_answer": "1,230 thousand metric tons in 2022 and an estimated 1,100 thousand metric tons in 2023 (about 1.1 million tons, an 11% decrease).",
+   "gold": [
+    {
+     "page": 68,
+     "printed_page": 64,
+     "region": "Copper, Salient Statistics, row 'Production: Mine, recoverable'",
+     "evidence": "Mine, recoverable 1,260 1,200 1,230 1,230 1,100"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-T2",
+   "split": "test2",
+   "group": "table",
+   "question": "How much helium was withdrawn from storage in the United States in 2023?",
+   "expected_answer": "19 million cubic meters (helium content; up from 12 in 2022).",
+   "gold": [
+    {
+     "page": 92,
+     "printed_page": 88,
+     "region": "Helium, Salient Statistics, row 'Withdrawn from storage', 2023e",
+     "evidence": "Withdrawn from storage3 22 10 7 12 19"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-T3",
+   "split": "test2",
+   "group": "table",
+   "question": "What was the average North American zinc price in 2022 and in 2023, and by how much did it fall?",
+   "expected_answer": "190.2 cents per pound in 2022 and 152 cents per pound in 2023: a fall of 38.2 cents per pound (about 20%).",
+   "gold": [
+    {
+     "page": 206,
+     "printed_page": 202,
+     "region": "Zinc, Salient Statistics, row 'Price, average, cents per pound: North American'",
+     "evidence": "North American5 124.1 110.8 145.8 190.2 152"
+    }
+   ],
+   "calc": "190.2 - 152 = 38.2",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-T4",
+   "split": "test2",
+   "group": "table",
+   "question": "What was the Philippines' nickel mine production in 2023?",
+   "expected_answer": "400,000 metric tons (nickel content; estimated 345,000 t in 2022).",
+   "gold": [
+    {
+     "page": 129,
+     "printed_page": 125,
+     "region": "Nickel, World Mine Production and Reserves, row Philippines, 2023e",
+     "evidence": "Philippines e345,000 400,000 4,800,000"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-T5",
+   "split": "test2",
+   "group": "table",
+   "question": "According to Table 5, which country was the leading producer of niobium and what percentage of world production did it account for?",
+   "expected_answer": "Brazil, 90% (75,000 tons of a world total of 83,000 tons).",
+   "gold": [
+    {
+     "page": 27,
+     "printed_page": 23,
+     "region": "Table 5 (Salient Critical Minerals Statistics in 2023), row Niobium",
+     "evidence": "Niobium — NA 8,400 100 Brazil Brazil 75,000 90 83,000"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-T6",
+   "split": "test2",
+   "group": "table",
+   "question": "According to Table 3, what was Arizona's 2023 nonfuel mineral production value, its rank among States, and its percentage of the U.S. total?",
+   "expected_answer": "$9,500 million, rank 2, 9.07% of the U.S. total.",
+   "gold": [
+    {
+     "page": 14,
+     "printed_page": 10,
+     "region": "Table 3, row Arizona",
+     "evidence": "Arizona 9,500 2 9.07"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-I1",
+   "split": "test2",
+   "group": "image",
+   "question": "In the diagram of the role of nonfuel mineral commodities in the U.S. economy, what were the net exports of mineral raw materials in 2023, and which examples are given?",
+   "expected_answer": "Net exports $4.7 billion (exports $10.6 billion, imports $5.9 billion); examples: gold, soda ash, zinc concentrates, and so forth.",
+   "gold": [
+    {
+     "page": 8,
+     "printed_page": 4,
+     "region": "Figure 1, upper-left box 'Net Exports of Mineral Raw Materials'",
+     "evidence": "Exports $10.6 billion; Imports $5.9 billion; Net exports $4.7 billion; Gold, Soda Ash, Zinc concentrates, and so forth"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-I2",
+   "split": "test2",
+   "group": "image",
+   "question": "On the regional map of other industrial minerals produced in 2023 (Figure 6), what value classes are shown for the South and for the Northeast?",
+   "expected_answer": "South: 15.1 (billion dollars, highest class); Northeast: 1.7 (lowest). (West 9.5, Midwest 8.4.)",
+   "gold": [
+    {
+     "page": 18,
+     "printed_page": 14,
+     "region": "Figure 6 map and legend 'Value, in billion dollars' (1.7, 8.4, 9.5, 15.1)",
+     "evidence": "South dark red = 15.1; Northeast lightest = 1.7"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-I3",
+   "split": "test2",
+   "group": "image",
+   "question": "In Figure C2, what is the category that covers demonstrated (measured and indicated) identified resources across the economic and marginally economic rows?",
+   "expected_answer": "Reserve Base (its inferred counterpart is the Inferred Reserve Base).",
+   "gold": [
+    {
+     "page": 213,
+     "printed_page": 209,
+     "region": "Figure C2, large box under Demonstrated spanning ECONOMIC and MARGINALLY ECONOMIC",
+     "evidence": "Reserve Base | Inferred Reserve Base"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-I4",
+   "split": "test2",
+   "group": "image",
+   "question": "On the map of metals and metallic minerals produced in 2023 (Figure 5), what does the symbol 'B3' stand for, and in which region does it appear?",
+   "expected_answer": "B3 = lead and zinc ± copper ± silver; it appears in the Midwest (clustered in southeastern Missouri).",
+   "gold": [
+    {
+     "page": 17,
+     "printed_page": 13,
+     "region": "Figure 5 map symbols and legend (lower part)",
+     "evidence": "B3 Lead and zinc ± copper ± silver; B3 symbols in Missouri (Midwest region)"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-I5",
+   "split": "test2",
+   "group": "image",
+   "question": "In the periodic-table figure of 20-year net import reliance trends (Figure 9), which of iron (Fe), cobalt (Co) and copper (Cu) is shown with a blue net-import-reliance graph?",
+   "expected_answer": "Only cobalt (Co); iron and copper are not shown with blue graphs (not assessed critical minerals).",
+   "gold": [
+    {
+     "page": 28,
+     "printed_page": 24,
+     "region": "Figure 9 periodic table, row 4: tiles Fe (26), Co (27), Cu (29)",
+     "evidence": "Co tile blue with time-series graph; Fe and Cu tiles plain white"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-C1",
+   "split": "test2",
+   "group": "chart",
+   "question": "In Figure 8, which State had the highest value of construction sand and gravel production in 2023, and approximately how much?",
+   "expected_answer": "California, about $1,400 million (bar slightly above the 1,200 gridline at ~1,400). Accept 1,350-1,450 million.",
+   "gold": [
+    {
+     "page": 20,
+     "printed_page": 16,
+     "region": "Figure 8 bar chart (lower left), first bar California",
+     "evidence": "California bar ~1,400 (value, in million dollars); Texas ~1,220; Arizona ~700"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-C2",
+   "split": "test2",
+   "group": "chart",
+   "question": "In Figure 12, which commodity had the largest percentage increase in U.S. consumption from 2019 to 2023, and roughly how large was it?",
+   "expected_answer": "Indium (critical mineral), about +100% (bar reaches the top of the axis). Accept 95-100%.",
+   "gold": [
+    {
+     "page": 31,
+     "printed_page": 27,
+     "region": "Figure 12 bar chart, rightmost bar Indium",
+     "evidence": "Indium bar at ~100; next Platinum ~89, Graphite (natural) ~72"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-C3",
+   "split": "test2",
+   "group": "chart",
+   "question": "In the bar chart of Figure 4, which three States had the highest value of nonfuel mineral production in 2023?",
+   "expected_answer": "Texas, Arizona and Nevada (about $9.7, 9.5 and 8.9 billion).",
+   "gold": [
+    {
+     "page": 16,
+     "printed_page": 12,
+     "region": "Figure 4 bar chart (lower part), first three bars",
+     "evidence": "Texas ~9.7, Arizona ~9.5, Nevada ~8.9 (value, in billion dollars)"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-C4",
+   "split": "test2",
+   "group": "chart",
+   "question": "In Figure 2, which commodities are shown with a 2023 net import reliance of '>95' percent?",
+   "expected_answer": "Abrasives (fused aluminum oxide), nepheline syenite, rare earths (compounds and metals), and titanium (sponge metal).",
+   "gold": [
+    {
+     "page": 11,
+     "printed_page": 7,
+     "region": "Figure 2, rows with value '>95'",
+     "evidence": "ABRASIVES, fused aluminum oxide >95; NEPHELINE SYENITE >95; RARE EARTHS, compounds and metals >95; TITANIUM, sponge metal >95"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-C5",
+   "split": "test2",
+   "group": "chart",
+   "question": "In Figure 10, which critical mineral had the largest 1-year price decrease from 2022 to 2023, and how large was it?",
+   "expected_answer": "Rhodium, -51%.",
+   "gold": [
+    {
+     "page": 29,
+     "printed_page": 25,
+     "region": "Figure 10, row Rhodium, 1-year percent change",
+     "evidence": "-51 Rhodium 18"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-M1",
+   "split": "test2",
+   "group": "multihop",
+   "question": "What was the 2023 U.S. net import reliance for platinum and its leading import sources, and which country was the leading platinum producer and with what share of world production?",
+   "expected_answer": "Net import reliance 83%; sources South Africa, Switzerland, Germany, Belgium (Figure 2). Leading producer South Africa with 67% of world production (Table 5).",
+   "gold": [
+    {
+     "page": 11,
+     "printed_page": 7,
+     "region": "Figure 2, row PLATINUM",
+     "evidence": "PLATINUM 83 South Africa, Switzerland, Germany, Belgium"
+    },
+    {
+     "page": 27,
+     "printed_page": 23,
+     "region": "Table 5, row Platinum",
+     "evidence": "Platinum 3 9 70 83 South Africa South Africa 120 67 180"
+    }
+   ],
+   "required": "both",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-M2",
+   "split": "test2",
+   "group": "multihop",
+   "question": "Compare copper's total old scrap value in Figure 13 with the estimated value of U.S. copper mine production in 2023.",
+   "expected_answer": "Copper old scrap value $6,480 million vs mine production value $9.9 billion: old scrap is about 65% of the mine production value (6.48/9.9 = 65.5%).",
+   "gold": [
+    {
+     "page": 32,
+     "printed_page": 28,
+     "region": "Figure 13 x-axis label 'Copper (6,480)'",
+     "evidence": "Copper (6,480)"
+    },
+    {
+     "page": 68,
+     "printed_page": 64,
+     "region": "Copper, Domestic Production and Use",
+     "evidence": "valued at an estimated $9.9 billion"
+    }
+   ],
+   "required": "both",
+   "calc": "6,480 / 9,900 = 0.655",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-M3",
+   "split": "test2",
+   "group": "multihop",
+   "question": "What was the 2023 U.S. net import reliance for refined zinc, and which country supplied the largest share of refined zinc imports in 2019-22, with what share?",
+   "expected_answer": "77% net import reliance; Canada supplied 62% of refined zinc (metal) imports.",
+   "gold": [
+    {
+     "page": 11,
+     "printed_page": 7,
+     "region": "Figure 2, row 'ZINC, refined'",
+     "evidence": "ZINC, refined 77 Canada, Mexico, Peru, Republic of Korea"
+    },
+    {
+     "page": 206,
+     "printed_page": 202,
+     "region": "Zinc, Import Sources (2019-22), Refined metal",
+     "evidence": "Refined metal: Canada, 62%"
+    }
+   ],
+   "required": "both",
+   "note": "p206 salient table also gives refined zinc NIR 77 (alternative evidence for the first part)",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-M4",
+   "split": "test2",
+   "group": "multihop",
+   "question": "Which country was the leading nickel producer in 2023 according to Table 5, and how large are that country's nickel reserves?",
+   "expected_answer": "Indonesia (1,800,000 t, 50% of world production); reserves 55,000,000 metric tons.",
+   "gold": [
+    {
+     "page": 27,
+     "printed_page": 23,
+     "region": "Table 5, row Nickel",
+     "evidence": "Nickel 17,000 W 8190,000 57 Canada Indonesia 1,800,000 50 3,600,000"
+    },
+    {
+     "page": 129,
+     "printed_page": 125,
+     "region": "Nickel, World Mine Production and Reserves, row Indonesia",
+     "evidence": "Indonesia 1,580,000 1,800,000 55,000,000"
+    }
+   ],
+   "required": "both",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-X1",
+   "split": "test2",
+   "group": "text",
+   "question": "According to the Copper Development Association, what share of copper and copper alloy products was used in building construction?",
+   "expected_answer": "45%.",
+   "gold": [
+    {
+     "page": 68,
+     "printed_page": 64,
+     "region": "Copper, Domestic Production and Use",
+     "evidence": "building construction, 45%"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-X2",
+   "split": "test2",
+   "group": "text",
+   "question": "How many U.S. plants extracted helium from natural gas to produce crude helium in 2023, and in which States?",
+   "expected_answer": "Five plants: three in Texas and two in Kansas.",
+   "gold": [
+    {
+     "page": 92,
+     "printed_page": 88,
+     "region": "Helium, Domestic Production and Use",
+     "evidence": "Five plants (three in Texas and two in Kansas) extracted helium from natural gas and produced crude helium"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-X3",
+   "split": "test2",
+   "group": "text",
+   "question": "Which State was the leading copper producer in 2023, and what share of domestic output did it account for?",
+   "expected_answer": "Arizona, approximately 70%.",
+   "gold": [
+    {
+     "page": 68,
+     "printed_page": 64,
+     "region": "Copper, Domestic Production and Use",
+     "evidence": "Arizona was the leading copper-producing State and accounted for approximately 70% of domestic output"
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-X4",
+   "split": "test2",
+   "group": "text",
+   "question": "In 2023, in how many States, at how many mining operations and by how many companies was zinc mined in the United States?",
+   "expected_answer": "Five States, seven mining operations, five companies.",
+   "gold": [
+    {
+     "page": 206,
+     "printed_page": 202,
+     "region": "Zinc, Domestic Production and Use",
+     "evidence": "Zinc was mined in five States at seven mining operations by five companies."
+    }
+   ],
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-U1",
+   "split": "test2",
+   "group": "unanswerable",
+   "question": "How many people were employed at U.S. helium plants in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Helium chapter (p.92-93) gives plant counts, sales, prices but no employment row/figure.",
+   "absence_check": [
+    "helium.{0,300}employ",
+    "employ.{0,100}helium",
+    "helium plants?.{0,80}(workers|employees)"
+   ],
+   "absence_semantic_check": "top-3 hybrid passages read manually; none contains the requested quantity",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-U2",
+   "split": "test2",
+   "group": "unanswerable",
+   "question": "What was China's refined zinc production in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: zinc world table (p.207) gives MINE production (China 4,000 thousand t) and reserves; no refined zinc production by country.",
+   "absence_check": [
+    "refined zinc.{0,80}China",
+    "China.{0,80}refined zinc"
+   ],
+   "absence_semantic_check": "top-3 hybrid passages read manually; none contains the requested quantity",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-U3",
+   "split": "test2",
+   "group": "unanswerable",
+   "question": "What was the average 2023 price of copper scrap?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: copper prices given are for cathode/COMEX/LME refined copper; scrap tonnages and import sources exist but no scrap price.",
+   "absence_check": [
+    "(copper scrap|scrap copper).{0,80}(price|cents|\\$)",
+    "price.{0,60}copper scrap"
+   ],
+   "absence_semantic_check": "top-3 hybrid passages read manually; none contains the requested quantity",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-U4",
+   "split": "test2",
+   "group": "unanswerable",
+   "question": "What was the U.S. lithium-ion battery recycling rate in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: lithium chapter gives the number of recycling companies, no recycling rate.",
+   "absence_check": [
+    "lithium.{0,120}recycling rate",
+    "recycling rate.{0,80}lithium"
+   ],
+   "absence_semantic_check": "top-3 hybrid passages read manually; none contains the requested quantity",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-U5",
+   "split": "test2",
+   "group": "unanswerable",
+   "question": "What was the annual average platinum price in 2024?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: p.141 gives the 2023 platinum price change (+3% vs 2022); no 2024 price.",
+   "absence_check": [
+    "platinum.{0,120}2024 price",
+    "price.{0,60}platinum.{0,60}2024"
+   ],
+   "absence_semantic_check": "top-3 hybrid passages read manually; none contains the requested quantity",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  },
+  {
+   "id": "AT2-U6",
+   "split": "test2",
+   "group": "unanswerable",
+   "question": "How many nickel mines operated in Indonesia in 2023?",
+   "expected_behavior": "abstain",
+   "absence_reason": "Trap: nickel chapter gives Indonesia production/reserves and stainless/sulfate context; no count of mines.",
+   "absence_check": [
+    "Indonesia.{0,80}\\d+ (nickel )?mines",
+    "\\d+ (nickel )?mines.{0,80}Indonesia"
+   ],
+   "absence_semantic_check": "top-3 hybrid passages read manually; none contains the requested quantity",
+   "frozen_at": "2026-11-14, written after test-1 and before any test2 run"
+  }
+ ],
+ "test2_note": "test2 = new 30-question test written after test-1 was used for error analysis (ADVANCED.md: 'Nếu đã dùng test để chỉnh, tạo test mới trước khi báo điểm'). Facts/regions differ from dev and test-1."
+}

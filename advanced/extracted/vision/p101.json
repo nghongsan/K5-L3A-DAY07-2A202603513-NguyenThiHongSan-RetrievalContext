@@ -1,0 +1,20 @@
+{
+ "page": 101,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Iron and Steel Scrap Tariff Items and Normal Trade Relations",
+   "location": "top half",
+   "content": "| Item                                                                 | Number       | Normal Trade Relations 12-31-23 |\n|----------------------------------------------------------------------|--------------|---------------------------------|\n| Ferrous waste and scrap:                                             |              |                                 |\n| Stainless steel                                                      | 7204.21.0000 | Free.                           |\n| Turnings, shavings, chips, milling waste, sawdust, filings, trimmings, and stampings: |              |                                 |\n| No. 1 bundles                                                       | 7204.41.0020 | Free.                           |\n| No. 2 bundles                                                       | 7204.41.0040 | Free.                           |\n| Borings, shovelings, and turnings                                  | 7204.41.0060 | Free.                           |\n| Other                                                              | 7204.41.0080 | Free.                           |\n| Other:                                                             |              |                                 |\n| No. 1 heavy melting                                                | 7204.49.0020 | Free.                           |\n| No. 2 heavy melting                                                | 7204.49.0040 | Free.                           |\n| Cut plate and structural                                           | 7204.49.0060 | Free.                           |\n| Shredded                                                          | 7204.49.0070 | Free.                           |\n| Remelting scrap ingots                                            | 7204.50.0000 | Free.                           |\n| Powders, of pig iron, spiegeleisen, iron, or steel:               |              |                                 |\n| Alloy steel                                                      | 7205.21.0000 | Free.                           |\n| Other                                                            | 7205.29.0000 | Free.                           |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 394
+ },
+ "seconds": 4.1
+}

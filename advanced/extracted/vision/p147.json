@@ -1,0 +1,20 @@
+{
+ "page": 147,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "top half",
+   "content": "| Material           | FY 2023 Potential acquisitions | FY 2023 Potential disposals | FY 2024 Potential acquisitions | FY 2024 Potential disposals |\n|--------------------|-------------------------------|----------------------------|-------------------------------|----------------------------|\n| Quartz crystal, kilograms | —                         | 7,148                      | —                         | 7,148                      |",
+   "notes": "Footnotes 9 and 10 referenced for Government Stockpile and World Mine Production and Reserves."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 128
+ },
+ "seconds": 2.5
+}

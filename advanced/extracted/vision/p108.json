@@ -1,0 +1,20 @@
+{
+ "page": 108,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019    | 2020    | 2021    | 2022    | 2023e   |\n|-------------------------|---------|---------|---------|---------|---------|\n| Production:             |         |         |         |         |         |\n| Kyanite, mine           | 191,300¹| 67,100¹ | 105,000¹| 85,900¹ | 85,000  |\n| Synthetic mullite       | W       | W       | W       | W       | W       |\n| Imports for consumption (andalusite) | 6,960   | 714     | 1,390   | 7,630   | 6,500   |\n| Exports (kyanite)       | 40,100  | 37,400  | 48,000  | 51,800  | 52,000  |\n| Consumption, apparent²  | W       | W       | W       | W       | W       |\n| Price, average unit value of exports (free alongside ship),³,⁴ | 358     | 369     | 369     | 382     | 420     |\n| dollars per metric ton  |         |         |         |         |         |\n| Employment, number:e,⁵  |         |         |         |         |         |\n| Kyanite, mine, office, and plant | 150     | 140     | 140     | 140     | 140     |\n| Synthetic mullite, office and plant | 200     | 200     | 200     | 200     | 200     |\n| Net import reliance⁶ as a percentage of apparent consumption | E       | E       | E       | E       | E       |",
+   "notes": "¹, ², ³, ⁴, ⁵, ⁶ Footnotes referenced but not transcribed."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 450
+ },
+ "seconds": 4.2
+}

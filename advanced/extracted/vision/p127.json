@@ -1,0 +1,20 @@
+{
+ "page": 127,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "middle of page",
+   "content": "| Country               | Mine production 2022 | Mine production 2023e | Reserves (thousand metric tons) |\n|-----------------------|---------------------:|---------------------:|-------------------------------:|\n| United States         | 34,600               | 34,000               | 3,500                          |\n| Argentina             | —                    | —                    | 100                            |\n| Armenia               | e7,800               | 7,800                | 150                            |\n| Australia             | 277                  | 500                  | 6906                           |\n| Canada                | 952                  | 1,000                | 72                             |\n| Chile                 | 45,600               | 46,000               | 1,400                          |\n| China                 | e106,000             | 110,000              | 5,800                          |\n| Iran                  | e3,700               | 3,700                | 43                             |\n| Korea, North          | e700                 | 700                  | NA                             |\n| Korea, Republic of    | 367                  | 400                  | 8                              |\n| Mexico                | 15,500               | 15,000               | 130                            |\n| Mongolia              | e3,000               | 3,100                | NA                             |\n| Peru                  | 31,600               | 37,000               | 1,500                          |\n| Russia                | e1,700               | 1,700                | 1,100                          |\n| Turkey                | —                    | —                    | 52                             |\n| Uzbekistan            | e1,700               | 1,700                | 21                             |\n| World total (rounded) | 253,000              | 260,000              | 15,000                         |",
+   "notes": "eEstimated. E Net exporter. NA Not available. — Zero.\n5See Appendix C for resource and reserve definitions and information concerning data sources.\n6For Australia, Joint Ore Reserves Committee-compliant or equivalent reserves were 250,000 tons."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 476
+ },
+ "seconds": 4.2
+}

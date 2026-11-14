@@ -1,0 +1,20 @@
+{
+ "page": 99,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Production",
+   "location": "lower half",
+   "content": "| Country               | Pig iron 2022 | Pig iron 2023e | Raw steel 2022 | Raw steel 2023e |\n|-----------------------|---------------|----------------|----------------|-----------------|\n| United States         | 19.8          | 21             | 80.5           | 80              |\n| Brazil                | 27            | 26             | 34             | 34              |\n| Canada                | 6             | 6              | 12             | 12              |\n| China                 | 866           | 890            | 1,020          | 1,000           |\n| Germany               | 24            | 22             | 37             | 33              |\n| India                 | 80            | 87             | 125            | 140             |\n| Iran                  | 3             | 2              | 30             | 30              |\n| Italy                 | 3             | 3              | 22             | 20              |\n| Japan                 | 64            | 63             | 89             | 87              |\n| Korea, Republic of    | 42            | 44             | 66             | 68              |\n| Mexico                | 2             | 2              | 18             | 20              |\n| Russia                | 52            | 54             | 72             | 75              |\n| Taiwan                | 13            | 14             | 21             | 21              |\n| Turkey                | 9             | 11             | 35             | 42              |\n| Ukraine               | 6             | 7              | 6              | 7               |\n| Vietnam               | 12            | 13             | 20             | 21              |\n| Other countries       | 67            | 63             | 195            | 180             |\n| World total (rounded) | 1,300         | 1,300          | 1,880          | 1,900           |",
+   "notes": "eEstimated. — Zero.\n9Source: World Steel Association, 2023, Short range outlook October 2023: Brussels, Belgium, World Steel Association press release, October 7, 7 p."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 515
+ },
+ "seconds": 5.6
+}

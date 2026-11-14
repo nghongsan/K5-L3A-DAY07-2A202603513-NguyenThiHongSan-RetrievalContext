@@ -1,0 +1,27 @@
+{
+ "page": 122,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|------|------|------|------|-------|\n| Production:             |      |      |      |      |       |\n| Mine (byproduct)        | NA   | NA   | NA   | NA   | NA    |\n| Secondary               | NA   | NA   | NA   | NA   | NA    |\n| Imports for consumption, metal (gross weight) | 9    | 3    | 1    | 2    | 4     |\n| Exports, metal (gross weight) | —    | —    | —    | —    | —     |\n| Price, average unit value of imports, dollars per kilogram | 23   | 26   | 29   | 33   | 6     |\n| Net import reliance1 as a percentage of apparent consumption | NA   | NA   | NA   | NA   | NA    |",
+   "notes": "1 Net import reliance as a percentage of apparent consumption."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower right",
+   "content": "| Item      | Number       | Normal Trade Relations 12-31-23 |\n|-----------|--------------|---------------------------------|\n| Mercury   | 2805.40.0000 | 1.7% ad valorem.                |\n| Amalgams  | 2843.90.0000 | 3.7% ad valorem.                |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 358
+ },
+ "seconds": 3.4
+}

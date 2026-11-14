@@ -1,0 +1,20 @@
+{
+ "page": 151,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country               | Mine production⁾,⁷ | Reserves⁸ |\n|-----------------------|-----------------------------|----------------|\n|                       | 2022        | 2023          |                |\n| United States         | 8,870       | 9,100         | 400,000        |\n| Armenia               | 260         | 280           | 95,000         |\n| Chile⁹           | 29,000      | 30,000        | 1,300,000      |\n| China                 | 2,500       | 2,500         | 19,200         |\n| Kazakhstan            | 500         | 500           | 190,000        |\n| Korea, Republic of    | 2,800       | 2,800         | NA             |\n| Poland                | 6,310       | 6,300         | NA             |\n| Russia                | NA          | NA            | 310,000        |\n| Uzbekistan            | 4,900       | 4,900         | NA             |\n| World total (rounded) | 55,100      | 56,000        | Large          |",
+   "notes": "⁾Estimated. NA Not available. — Zero.\n⁷Estimated amount of rhenium recovered in association with copper and molybdenum production. Secondary rhenium production not included.\n⁸See Appendix C for resource and reserve definitions and information concerning data sources.\n⁹Estimated rhenium recovered from roaster residues from Belgium, Chile, Mexico, and Peru."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 378
+ },
+ "seconds": 3.4
+}

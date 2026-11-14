@@ -1,0 +1,27 @@
+{
+ "page": 102,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "lower half",
+   "content": "| Statistic                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|---------------------------------------------|-------|-------|-------|-------|--------|\n| Production (sales)e, 1, 2                    | 16.3  | 15    | 16    | 16    | 16     |\n| Imports for consumptione, 3                   | 1.4   | 1.7   | 2.1   | 1.7   | 2.1    |\n| Exports                                     | (4)   | (4)   | (4)   | (4)   | (4)    |\n| Consumption, apparente, 5                    | 16    | 15    | 16    | 16    | 16     |\n| Price, average unit value, free on board plant, dollars per metric ton6 | 28.50 | 31.00 | 40.50 | 53    | 58     |\n| Employment, numbere                          | 1,500 | 1,500 | 1,500 | 1,500 | 1,500  |\n| Net import reliance7 as a percentage of apparent consumption | 9     | 11    | 13    | 10    | 13     |",
+   "notes": "Footnotes: e, 1, 2, 3, 4, 5, 6, 7 (not fully transcribed here)"
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower right",
+   "content": "| Item                                         | Number       | Normal Trade Relations 12-31-23 |\n|----------------------------------------------|--------------|--------------------------------|\n| Granulated slag                              | 2618.00.0000 | Free.                          |\n| Slag, dross, scalings, and other waste from manufacture of iron and steel: |              |                                |\n| - Ferrous scale                             | 2619.00.3000 | Free.                          |\n| - Other                                     | 2619.00.9000 | Free.                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 482
+ },
+ "seconds": 4.3
+}

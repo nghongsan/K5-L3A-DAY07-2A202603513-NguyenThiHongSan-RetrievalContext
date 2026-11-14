@@ -1,0 +1,12 @@
+{
+ "page": 4,
+ "model": "gpt-4.1-mini",
+ "elements": [],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 5
+ },
+ "seconds": 1.2
+}

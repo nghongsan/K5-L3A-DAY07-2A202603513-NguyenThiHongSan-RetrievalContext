@@ -1,0 +1,20 @@
+{
+ "page": 28,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "diagram",
+   "title": "Figure 9.—20-Year Trend of U.S. Net Import Reliance for Critical Minerals",
+   "location": "top half",
+   "content": "Periodic table layout showing elements with blue shading indicating those assessed for net import reliance (NIR) from 2003 to 2023. Each element box includes atomic number, element symbol, element name, and a small bar graph representing NIR (% of apparent consumption) over the 20-year period. Some elements have 'NA' or 'W' markers indicating data not available or withheld. The explanation box clarifies the meaning of symbols and the time series period (2003-23). Elements shaded in blue include Li, Be, Mg, Sc, Ti, V, Cr, Mn, Co, Ni, Zn, Ga, Ge, As, Rb, Y, Zr, Nb, Cs, Ba, La-Lu (lanthanides), Ta, W, Pd, Pt, In, Sn, Sb, Te, Bi, F, C, Al, and others. The bar graphs vary in height within each element box, showing trends over time.",
+   "notes": "For elements of the periodic table associated with mineral commodities identified as critical in 2023 (87 FR 10381), the figure displays the U.S. net import reliance (NIR) as a percent of apparent consumption from 2003 through 2023. Barite is listed under barium (Ba). Bauxite is listed under aluminum (Al). Fluorspar is listed under fluorine (F). Graphite (natural) is listed under carbon (C). Rare earths are listed under lanthanides (La–Lu). Net import reliance data are not available for hafnium, iridium, and rhodium for 2003 through 2023 and for germanium prior to 2004; data were withheld for tellurium prior to 2010 and titanium for 2008 and 2009. For some years, the NIR for antimony, barite, bauxite, germanium, lithium, magnesium, rare earths, tellurium, titanium, tungsten, yttrium, and zirconium are rounded to avoid disclosing company proprietary data."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 457
+ },
+ "seconds": 4.6
+}

@@ -1,0 +1,20 @@
+{
+ "page": 1,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "photo",
+   "title": "Cover page of Mineral Commodity Summaries 2024",
+   "location": "full page",
+   "content": "Background image showing a close-up of a semiconductor wafer or microchip with colorful reflections and a blurred hand on the right side. Overlaid text includes: 'U.S. Department of the Interior U.S. Geological Survey', 'MINERAL COMMODITY SUMMARIES 2024', and a list of mineral commodities arranged in four columns.",
+   "notes": "No tables, charts, maps, or diagrams present on this page."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 385
+ },
+ "seconds": 7.2
+}

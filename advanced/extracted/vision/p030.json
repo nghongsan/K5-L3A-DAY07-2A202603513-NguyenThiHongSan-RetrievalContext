@@ -1,0 +1,20 @@
+{
+ "page": 30,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "chart",
+   "title": "Figure 11.—Change in U.S. Consumption of Nonfuel Mineral Commodities From 2022 to 2023",
+   "location": "full page",
+   "content": "Chart kind: Vertical bar chart\nY-axis: Percent change, range from -100 to 100\nX-axis: Nonfuel mineral commodity (listed below, rotated vertical)\nLegend: \n- Blue bars: Critical minerals\n- Orange bars: Other minerals\n\nBars (commodity: percent change, color):\n- Yttrium: ~-80%, Critical minerals\n- Tantalum: ~-65%, Critical minerals\n- Strontium: ~-60%, Other minerals\n- Asbestos: ~-55%, Other minerals\n- Pigments: ~-50%, Other minerals\n- Iron oxide (oxide): ~-45%, Other minerals\n- Abrasives (aluminum oxide): ~-45%, Other minerals\n- Bismuth: ~-40%, Critical minerals\n- Diamond (stones): ~-35%, Other minerals\n- Garnet (industrial): ~-30%, Other minerals\n- Talc and pyrophyllite: ~-25%, Other minerals\n- Alumina: ~-25%, Other minerals\n- Fluorspar: ~-20%, Other minerals\n- Abrasives (silicon carbide): ~-20%, Other minerals\n- Peat: ~-20%, Other minerals\n- Rhenium: ~-20%, Critical minerals\n- Titanium mineral concentrates: ~-15%, Other minerals\n- Gemstones: ~-15%, Other minerals\n- Beryllium: ~-15%, Critical minerals\n- Feldspar: ~-15%, Other minerals\n- Bauxite: ~-15%, Other minerals\n- Phosphate rock: ~-15%, Other minerals\n- Aluminum: ~-15%, Other minerals\n- Manganese: ~-15%, Critical minerals\n- Rare earths: ~-10%, Critical minerals\n- Antimony: ~-10%, Critical minerals\n- Potash: ~-10%, Other minerals\n- Mica: ~-10%, Other minerals\n- Iodine: ~-10%, Critical minerals\n- Cobalt: ~-10%, Critical minerals\n- Nickel: ~-10%, Critical minerals\n- Graphite (natural): ~-5%, Critical minerals\n- Sand and gravel (construction): ~-5%, Other minerals\n- Iron and steel (construction): ~-5%, Other minerals\n- Gallium: ~-5%, Critical minerals\n- Magnesium compounds: ~-5%, Other minerals\n- Salt: ~0%, Other minerals\n- Gold: ~0%, Critical minerals\n- Silver: ~0%, Other minerals\n- Sulfur: ~0%, Other minerals\n- Lead: ~0%, Other minerals\n- Zinc: ~0%, Other minerals\n- Plumbic and pumice: ~0%, Other minerals\n- Niobium (columbium): ~0%, Critical minerals\n- Cement: ~0%, Other minerals\n- Copper: ~0%, Critical minerals\n- Iron and steel scrap: ~0%, Other minerals\n- Stone (crushed): ~0%, Other minerals\n- Lime: ~0%, Other minerals\n- Nitrogen (fixed)—ammonia: ~5%, Other minerals\n- Diatomite: ~5%, Other minerals\n- Diamond (bort, grit, dust, and powder): ~5%, Other minerals\n- Gypsum: ~5%, Other minerals\n- Clays: ~5%, Other minerals\n- Potash: ~5%, Other minerals\n- Iron and steel scrap: ~5%, Other minerals\n- Silver: ~10%, Other minerals\n- Zeolites (natural): ~10%, Other minerals\n- Phosphate rock: ~10%, Other minerals\n- Abrasives (natural): ~10%, Other minerals\n- Vermiculite: ~10%, Other minerals\n- Magnesite: ~10%, Other minerals\n- Helium: ~10%, Other minerals\n- Sand and gravel (industrial): ~10%, Other minerals\n- Stone (dimension): ~10%, Other minerals\n- Molybdenum metal: ~15%, Critical minerals\n- Vanadium: ~30%, Critical minerals\n- Platinum: ~50%, Critical minerals\n- Indium: ~50%, Critical minerals",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 917
+ },
+ "seconds": 7.0
+}

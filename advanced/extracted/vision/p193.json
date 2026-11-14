@@ -1,0 +1,20 @@
+{
+ "page": 193,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves of Titanium Mineral Concentrates",
+   "location": "top half",
+   "content": "| Mineral   | Country       | Mine production 2022 | Mine production 2023e | Reserves  |\n|-----------|---------------|----------------------|----------------------|-----------|\n| Ilmenite: | United States2, 9 | 200                  | 200                  | 2,000     |\n|           | Australia     | 400                  | 400                  | 180,00010 |\n|           | Brazil        | 28                   | 54                   | 43,000    |\n|           | Canada11      | 520                  | 500                  | 52,000    |\n|           | China         | 3,140                | 3,100                | 210,000   |\n|           | India         | 210                  | 210                  | 85,000    |\n|           | Kenya         | 190                  | 140                  | 130       |\n|           | Madagascar11  | 320                  | 320                  | 27,000    |\n|           | Mozambique    | 1,400                | 1,600                | 22,000    |\n|           | Norway        | 410                  | 430                  | 37,000    |\n|           | Senegal       | 410                  | 340                  | NA        |\n|           | South Africa11| 1,100                | 1,000                | 28,000    |\n|           | Ukraine       | 190                  | 60                   | 5,900     |\n|           | Vietnam       | 170                  | 140                  | 1,600     |\n|           | Other countries| 110                  | 110                  | 1,200     |\n|           | World total (ilmenite, rounded)9 | 8,800 | 8,600 | 690,000 |\n| Rutile:   | United States | (9)                  | (9)                  | (9)       |\n|           | Australia     | 200                  | 200                  | 35,00010  |\n|           | India         | 13                   | 13                   | 7,400     |\n|           | Kenya         | 73                   | 58                   | 70        |\n|           | Madagascar    | —                    | —                    | 520       |\n|           | Mozambique    | 8                    | 9                    | 720       |\n|           | Senegal       | 9                    | 8                    | NA        |\n|           | Sierra Leone  | 130                  | 110                  | 2,900     |\n|           | South Africa  | 100                  | 100                  | 6,100     |\n|           | Ukraine       | 95                   | 50                   | 2,500     |\n|           | Other countries| 10                   | 10                   | 20        |\n|           | World total (rutile, rounded)9 | 640 | 560 | 55,000 |\n|           | World total (ilmenite and rutile, rounded) | 9,400 | 9,200 | 750,000 |",
+   "notes": "eEstimated. NA Not available. — Zero.\n2Rounded to the nearest 100,000 tons to avoid disclosing company proprietary data.\n9United States rutile production and reserves data are included with ilmenite.\n10For Australia, Joint Ore Reserves Committee-compliant or equivalent reserves were estimated to be 43 million tons for ilmenite and 11 million tons for rutile, respectively, TiO2 content.\n11Mine production of titaniferous magnetite is primarily used to produce titaniferous slag."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 825
+ },
+ "seconds": 8.2
+}

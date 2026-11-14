@@ -1,0 +1,20 @@
+{
+ "page": 71,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Natural Industrial Diamond Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country           | Mine production | Reserves6 |\n|-------------------|-----------------|-----------|\n|                   | 2022 | 2023e    |           |\n| United States     | —    | —        | NA        |\n| Angola            | 1    | 1        | 150       |\n| Botswana          | 7    | 7        | 280       |\n| Congo (Kinshasa)  | 8    | 8        | 150       |\n| Russia            | 18   | 18       | 860       |\n| South Africa      | 6    | 6        | 95        |\n| Zimbabwe          | 4    | 4        | NA        |\n| Other countries   | 1    | 1        | 120       |\n| World total (rounded) | 45   | 45       | 1,700     |",
+   "notes": "eEstimated. NA Not available. — Zero.\n6See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 256
+ },
+ "seconds": 3.1
+}

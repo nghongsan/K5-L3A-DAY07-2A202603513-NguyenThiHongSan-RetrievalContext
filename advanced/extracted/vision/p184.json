@@ -1,0 +1,27 @@
+{
+ "page": 184,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019   | 2020   | 2021   | 2022   | 2023e  |\n|-----------------------------------|--------|--------|--------|--------|--------|\n| Production, refinery               | —      | —      | —      | —      | —      |\n| Imports for consumption:           |        |        |        |        |        |\n| Unwrought metal and metal powders | —      | 57     | —      | —      | 13     |\n| Waste and scrap                   | 27     | —      | —      | 13     | —      |\n| Other articles                   | 38     | —      | 7      | —      | 1,300  |\n| Exports:                         |        |        |        |        |        |\n| Unwrought metal and powders      | 290    | 300    | 190    | —      | —      |\n| Waste and scrap                  | 133    | 359    | —      | —      | —      |\n| Other articles                  | 179,100| 580    | 378    | 2,150  | 4,000  |\n| Consumption, estimated2          | 65     | 57     | 7      | 13     | 13     |\n| Price, metal, dollars per kilograme, 3 | 7,600  | 8,200  | 8,400  | 9,400  | 8,800  |\n| Net import reliance4 as a percentage of estimated consumption | NA     | NA     | NA     | NA     | NA     |",
+   "notes": "eEstimated. 2Estimated consumption is calculated as production plus imports minus exports plus adjustments for Government and industry stock changes. 3Price is average U.S. market price. 4Net import reliance is imports minus exports as a percentage of estimated consumption."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item               | Number      | Normal Trade Relations 12-31-22 |\n|--------------------|-------------|---------------------------------|\n| Unwrought and powders | 8112.51.0000 | 4% ad valorem.                  |\n| Waste and scrap      | 8112.52.0000 | Free.                          |\n| Other               | 8112.59.0000 | 4% ad valorem.                  |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 558
+ },
+ "seconds": 6.5
+}

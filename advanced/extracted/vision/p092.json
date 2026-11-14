@@ -1,0 +1,34 @@
+{
+ "page": 92,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle left",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|------|------|------|------|-------|\n| Helium extracted from natural gas2| 64   | 72   | 69   | 65   | 60    |\n| Withdrawn from storage3            | 22   | 10   | 7    | 12   | 19    |\n| Grade-A and gaseous helium sales  | 86   | 82   | 76   | 77   | 79    |\n| Imports for consumption            | 7    | 7    | 9    | 9    | 12    |\n| Exports                          | 58   | 35   | 33   | 32   | 32    |\n| Consumption, apparent4             | 550  | 53   | 52   | 54   | 59    |\n| Net import reliance6 as a percentage of apparent consumption | E    | E    | E    | E    | E     |",
+   "notes": "Footnotes: 1 Helium gas content unless otherwise specified. 2 Extracted from natural gas. 3 Withdrawn from storage. 4 Apparent consumption. 5 Footnote marker misplaced in original. 6 Net import reliance. E = Estimated."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower left",
+   "content": "| Item   | Number       | Normal Trade Relations 12-31-23 |\n|--------|--------------|---------------------------------|\n| Helium | 2804.29.0010 | 3.7% ad valorem.                 |",
+   "notes": ""
+  },
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "lower half",
+   "content": "| Material | Authorized for disposal | Disposal plan FY 2024 |\n|----------|------------------------|-----------------------|\n| Helium   | 51.5                   | 51.5                  |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 456
+ },
+ "seconds": 4.5
+}

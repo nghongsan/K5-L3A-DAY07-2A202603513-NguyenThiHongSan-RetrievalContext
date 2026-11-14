@@ -1,0 +1,20 @@
+{
+ "page": 153,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Rubidium Tariff Items and Normal Trade Relations",
+   "location": "top half",
+   "content": "| Tariff               | Item           | Number       | Normal Trade Relations 12-31-23 |\n|----------------------|----------------|--------------|---------------------------------|\n| Alkali metals, other  |                | 2805.19.9000 | 5.5% ad valorem.                |\n| Chlorides, other      |                | 2827.39.9000 | 3.7% ad valorem.                |\n| Bromides, other       |                | 2827.59.5100 | 3.6% ad valorem.                |\n| Iodides, other        |                | 2827.60.5100 | 4.2% ad valorem.                |\n| Sulfates, other       |                | 2833.29.5100 | 3.7% ad valorem.                |\n| Nitrates, other       |                | 2834.29.5100 | 3.5% ad valorem.                |\n| Carbonates, other     |                | 2836.99.5000 | 3.7% ad valorem.                |",
+   "notes": "Footnote: See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 296
+ },
+ "seconds": 3.4
+}

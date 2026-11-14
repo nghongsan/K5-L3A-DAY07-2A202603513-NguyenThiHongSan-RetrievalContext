@@ -1,0 +1,20 @@
+{
+ "page": 35,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Production Capacity of Fused Aluminum Oxide and Silicon Carbide",
+   "location": "lower half",
+   "content": "| Country                  | Fused aluminum oxide 2022 | Fused aluminum oxide 2023 | Silicon carbide 2022 | Silicon carbide 2023 |\n|--------------------------|----------------------------|----------------------------|----------------------|----------------------|\n| United States            | —                          | —                          | 40,000               | 40,000               |\n| United States and Canada | 60,000                     | 60,000                     | —                    | —                    |\n| Australia                | 50,000                     | 50,000                     | —                    | —                    |\n| Austria                  | 90,000                     | 90,000                     | —                    | —                    |\n| Brazil                   | 50,000                     | 50,000                     | 40,000               | 40,000               |\n| China                    | 800,000                    | 800,000                    | 450,000              | 450,000              |\n| France                   | 40,000                     | 40,000                     | 20,000               | 20,000               |\n| Germany                  | 80,000                     | 80,000                     | 35,000               | 35,000               |\n| India                    | 40,000                     | 40,000                     | 5,000                | 5,000                |\n| Japan                    | 15,000                     | 15,000                     | 60,000               | 60,000               |\n| Mexico                   | —                          | —                          | 45,000               | 45,000               |\n| Norway                   | —                          | —                          | 80,000               | 80,000               |\n| Venezuela                | —                          | —                          | 30,000               | 30,000               |\n| Other countries          | 80,000                     | 80,000                     | 200,000              | 200,000              |\n| World total (rounded)    | 1,310,000                  | 1,300,000                  | 1,000,000            | 1,000,000            |",
+   "notes": "e Estimated. — Zero.\n1 Production data for fused aluminum oxide are combined data from the United States and Canada to avoid disclosing company proprietary data.\n2 Rounded to the nearest 5,000 tons to avoid disclosing company proprietary data.\n8 See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 560
+ },
+ "seconds": 4.9
+}

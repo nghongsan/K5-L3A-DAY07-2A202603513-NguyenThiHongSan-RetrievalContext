@@ -1,0 +1,63 @@
+[
+ {
+  "query_id": "m01",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m02",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m03",
+  "citation_support": [
+   true
+  ],
+  "note": "Correct; last sentence (control flow returns to the calling function) is supported by p0153:c00 in context but not cited (minor).",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m04",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "Correct: without a chapter filter the more specific query retrieved p0131:c00/c01 (gold).",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m05",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m06",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "v01",
+  "citation_support": [],
+  "note": "",
+  "abstention_correct": true
+ },
+ {
+  "query_id": "v02",
+  "citation_support": [],
+  "note": "",
+  "abstention_correct": true
+ }
+]

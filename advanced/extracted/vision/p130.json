@@ -1,0 +1,34 @@
+{
+ "page": 130,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                         | 2019  | 2020  | 2021  | 2022  | 2023e |\n|-------------------------|-------|-------|-------|-------|-------|\n| Production, mine        | —     | —     | —     | —     | —     |\n| Imports for consumption1 | 10,100| 7,170 | 8,230 | 9,110 | 9,400 |\n| Exports1                | 655   | 787   | 992   | 687   | 980   |\n| Shipments from Government stockpile2 | −84   | −88   | −1    | —     | NA    |\n| Consumption:e           |       |       |       |       |       |\n| Apparent3               | 9,330 | 6,300 | 7,240 | 8,420 | 8,400 |\n| Reported4               | 6,680 | 6,040 | 6,160 | 3,540 | 3,000 |\n| Price, average unit value, ferroniobium, dollars per kilogram5 | 23    | 21    | 21    | 25    | 25    |\n| Net import reliance3 as a percentage of apparent consumption | 100   | 100   | 100   | 100   | 100   |",
+   "notes": "Footnotes: 1, 2, 3, 4, 5, e, NA as printed in the source."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "middle right",
+   "content": "| Item                                   | Number       | Normal Trade Relations 12–31–23 |\n|----------------------------------------|--------------|---------------------------------|\n| Synthetic tantalum-niobium concentrates | 2615.90.3000 | Free.                           |\n| Niobium ores and concentrates           | 2615.90.6030 | Free.                           |\n| Niobium oxide                           | 2825.90.1500 | 3.7% ad valorem.                |\n| Ferroniobium:                          |              |                                 |\n|  Less than 0.02% phosphorus or sulfur, or less than 0.4% silicon | 7202.93.4000 | 5% ad valorem.                  |\n|  Other                                 | 7202.93.8000 | 5% ad valorem.                  |\n| Niobium:                              |              |                                 |\n|  Waste and scrap6                      | 8112.92.0700 | Free.                           |\n|  Powders and unwrought metal           | 8112.92.4000 | 4.9% ad valorem.                |\n|  Other6                               | 8112.99.9100 | 4% ad valorem.                  |",
+   "notes": "Footnotes 6 as printed in the source."
+  },
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "lower half",
+   "content": "| Material      | FY 2023 Potential acquisitions | FY 2023 Potential disposals | FY 2024 Potential acquisitions | FY 2024 Potential disposals |\n|---------------|-------------------------------|----------------------------|-------------------------------|----------------------------|\n| Ferroniobium  | —                             | —                          | 136                           | —                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 752
+ },
+ "seconds": 5.9
+}

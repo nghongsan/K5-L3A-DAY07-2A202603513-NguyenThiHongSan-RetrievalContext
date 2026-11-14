@@ -1,0 +1,20 @@
+{
+ "page": 114,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|-------|-------|-------|-------|--------|\n| Production              | W     | W     | W     | W     | W      |\n| Imports for consumption | 2,620 | 2,460 | 2,640 | 3,270 | 3,400  |\n| Exports                 | 1,660 | 1,200 | 1,870 | 2,440 | 2,300  |\n| Consumption, apparent¹  | W     | W     | W     | W     | W      |\n| Price, annual average-nominal, battery-grade lithium carbonate, dollars per metric ton² | 12,100 | 8,600 | 12,600 | 68,100 | 46,000 |\n| Employment, mine and mill, number | 70 | 70 | 70 | 70 | 70 |\n| Net import reliance³ as a percentage of apparent consumption | >25 | >50 | >25 | >25 | >25 |",
+   "notes": "¹ Apparent consumption = Production + Imports - Exports\n² Price is for battery-grade lithium carbonate\n³ Net import reliance = (Imports - Exports) / Apparent Consumption"
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 310
+ },
+ "seconds": 4.0
+}

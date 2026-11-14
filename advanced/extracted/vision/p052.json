@@ -1,0 +1,27 @@
+{
+ "page": 52,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|-------|-------|-------|-------|-------|\n| Production                       | W     | W     | W     | W     | W     |\n| Imports for consumption:          |       |       |       |       |       |\n| Refined borax                    | 161   | 174   | 232   | 168   | 170   |\n| Boric acid                      | 41    | 39    | 54    | 48    | 42    |\n| Colemanite (calcium borates)    | 42    | 18    | 3     | 1     | 1     |\n| Ulexite (sodium borates)        | 38    | 41    | 49    | 38    | 17    |\n| Exports:                         |       |       |       |       |       |\n| Boric acid                      | 251   | 257   | 280   | 240   | 250   |\n| Refined borax                   | 598   | 594   | 607   | 651   | 640   |\n| Consumption, apparent1           | W     | W     | W     | W     | W     |\n| Price, average unit value of imports, cost, insurance, and freight, dollars per metric ton | 373   | 380   | 394   | 485   | 620   |\n| Employment, number              | 1,370 | 1,330 | 1,330 | 1,400 | 1,400 |\n| Net import reliance2 as a percentage of apparent consumption | E     | E     | E     | E     | E     |",
+   "notes": "1 Apparent consumption = Production + Imports - Exports.\n2 Net import reliance = (Imports - Exports) / Apparent consumption.\nW = Withheld to avoid disclosing company proprietary data.\nE = Value estimated.\nSource: U.S. Geological Survey."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower left",
+   "content": "| Item                         | Number       | Normal Trade Relations 12-31-23 |\n|------------------------------|--------------|---------------------------------|\n| Natural borates:              |              |                                 |\n| Sodium (ulexite)              | 2528.00.0005 | Free.                           |\n| Calcium (colemanite)          | 2528.00.0010 | Free.                           |\n| Boric acids                  | 2810.00.0000 | 1.5% ad valorem.                |\n| Borates, refined borax:       |              |                                 |\n| Anhydrous                    | 2840.11.0000 | 0.3% ad valorem.                |\n| Non-anhydrous                | 2840.19.0000 | 0.1% ad valorem.                |",
+   "notes": "Tariff rates as of December 31, 2023."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 696
+ },
+ "seconds": 5.6
+}

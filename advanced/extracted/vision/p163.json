@@ -1,0 +1,20 @@
+{
+ "page": 163,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Refinery Production and Reserves",
+   "location": "top half",
+   "content": "| Country         | Refinery production⁾, ⁷ 2022 | Refinery production⁾, ⁷ 2023 | Reserves⁸ |\n|-----------------|-----------------|-----------------|----------|\n| United States   | W               | W               | 11,000   |\n| Belgium         | 200             | 200             | —     |\n| Canada          | 110             | 120             | 6,000    |\n| China           | 1,290           | 1,500           | 5,000    |\n| Finland         | ⁹130        | 100             | 300      |\n| Germany         | 300             | 300             | —     |\n| India           | 14              | 14              | 500      |\n| Japan           | 710             | 780             | —     |\n| Peru            | ⁹57         | 57              | 19,000   |\n| Poland          | ⁹82         | 95              | 3,000    |\n| Russia          | 340             | 360             | 26,000   |\n| Sweden          | 10              | 8               | 500      |\n| Turkey          | 50              | 50              | NA       |\n| Other countries⁺ | 14              | 15              | 24,000   |\n| World total (rounded) | ⁻¹13,310 | ⁻¹13,600 | 95,000   |",
+   "notes": "e Estimated. NA Not available. W Withheld to avoid disclosing company proprietary data. — Zero.\n7 Insofar as possible, data relate to refinery output only; countries that produced selenium contained in blister copper, copper anodes, copper concentrates, copper ores, and (or) refinery residues but did not recover selenium from these materials were excluded.\n8 See Appendix C for resource and reserve definitions and information concerning data sources.\n9 Reported.\n10 Includes Serbia, South Africa, and Uzbekistan. In addition to the countries listed, Australia, Chile, Iran, Kazakhstan, the Republic of Korea, Mexico, the Philippines, and Zimbabwe may have produced refined selenium, but available information was inadequate to make reliable estimates of output.\n11 Excludes U.S. production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 547
+ },
+ "seconds": 5.5
+}

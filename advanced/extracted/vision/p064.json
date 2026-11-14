@@ -1,0 +1,20 @@
+{
+ "page": 64,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                                   | 2019  | 2020  | 2021  | 2022  | 2023e |\n|--------------------------------------------|-------|-------|-------|-------|-------|\n| Production (sold or used):                  |       |       |       |       |       |\n| Ball clay                                  | e967  | 985   | e1,080| e1,030| 1,000 |\n| Bentonite                                  | 4,520 | 4,250 | 4,580 | 4,580 | 4,700 |\n| Common clay                                | 13,400| 12,900| 12,700| 12,700| 13,000|\n| Fire clay                                  | 603   | 635   | 675   | 622   | 660   |\n| Fuller’s earthe, 1                         | 1,990 | 1,980 | 2,130 | 2,160 | 2,300 |\n| Kaoline                                    | 5,120 | 4,640 | 4,360 | 4,340 | 4,400 |\n| Total1, 2                                  | 26,500| 25,400| 25,600| 25,500| 26,000|\n| Imports for consumption:                    |       |       |       |       |       |\n| Artificially activated clays and earths   | 31    | 31    | 41    | 58    | 94    |\n| Kaolin                                     | 293   | 224   | 149   | 200   | 150   |\n| Other                                      | 66    | 28    | 47    | 49    | 38    |\n| Total2                                     | 389   | 284   | 237   | 306   | 280   |\n| Exports:                                    |       |       |       |       |       |\n| Artificially activated clays and earths   | 138   | 127   | 139   | 135   | 110   |\n| Ball clay                                  | 85    | 68    | 139   | 165   | 130   |\n| Bentonite                                  | 906   | 728   | 861   | 830   | 800   |\n| Clays, not elsewhere classified           | 204   | 185   | 186   | 208   | 210   |\n| Fire clay3                                 | 194   | 190   | 210   | 158   | 140   |\n| Fuller’s earth                             | 73    | 77    | 83    | 87    | 73    |\n| Kaolin                                     | 2,280 | 1,990 | 2,330 | 2,030 | 1,800 |\n| Total2                                     | 3,880 | 3,360 | 3,950 | 3,620 | 3,300 |\n| Consumption, apparent4                      | 23,000| 22,300| 21,900| 22,200| 23,000|\n| Price, average unit value, ex-works, dollars per metric ton: |       |       |       |       |       |\n| Ball clay                                  | 45    | 46    | 46    | 47    | 47    |\n| Bentonite                                  | 98    | 97    | 100   | 101   | 99    |\n| Common clay                                | 18    | 17    | 17    | 18    | 17    |\n| Fire clay                                  | 14    | 12    | 12    | 12    | 12    |\n| Fuller’s earth1                            | 88    | 89    | 88    | 97    | 95    |\n| Kaolin                                     | 161   | 159   | 152   | 157   | 160   |\n| Employment (excludes office workers), number:e |       |       |       |       |       |\n| Mine (may not include contract workers)   | 1,110 | 1,060 | 1,060 | 1,060 | 1,100 |\n| Mill                                       | 4,310 | 4,260 | 4,240 | 4,240 | 4,300 |\n| Net import reliance5 as a percentage of apparent consumption | E     | E     | E     | E     | E     |",
+   "notes": "e = estimated; 1 Fuller’s earth includes attapulgite; 2 Totals may not add due to independent rounding; 3 Fire clay includes refractory clay; 4 Apparent consumption = production + imports - exports; 5 Net import reliance = imports - exports as a percentage of apparent consumption; E = data withheld to avoid disclosing company proprietary data."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1096
+ },
+ "seconds": 8.0
+}

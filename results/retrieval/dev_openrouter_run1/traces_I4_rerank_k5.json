@@ -1,0 +1,3035 @@
+[
+ {
+  "query_id": "q01",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which values does bool() convert to False?",
+  "query": "Which values does bool() convert to False?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0097:c01",
+    "page": 97,
+    "section": "4.1",
+    "score": 0.03252,
+    "components": {
+     "dense": 1,
+     "bm25": 2
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0097:c02",
+    "page": 97,
+    "section": "4.1",
+    "score": 0.03252,
+    "components": {
+     "dense": 2,
+     "bm25": 1
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0121:c02",
+    "page": 121,
+    "section": "4.8",
+    "score": 0.0315,
+    "components": {
+     "dense": 4,
+     "bm25": 3
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0097:c00",
+    "page": 97,
+    "section": "4.1",
+    "score": 0.03126,
+    "components": {
+     "dense": 3,
+     "bm25": 5
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0096:c00",
+    "page": 96,
+    "section": "4.1",
+    "score": 0.03054,
+    "components": {
+     "dense": 5,
+     "bm25": 6
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0097:c01",
+   "p0097:c02",
+   "p0121:c02",
+   "p0097:c00",
+   "p0096:c00"
+  ],
+  "context_chars": 1812,
+  "ms": 1072.5,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 97,
+    "evidence": "True: any non-zero number, any non-empty string • False: 0, empty string"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q02",
+  "split": "dev",
+  "answerable": true,
+  "question": "What goes wrong if I write is_zero = num=0 when I meant to test whether num is zero?",
+  "query": "What goes wrong if I write is_zero = num=0 when I meant to test whether num is zero?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0099:c01",
+    "page": 99,
+    "section": "4.1",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0111:c00",
+    "page": 111,
+    "section": "4.4",
+    "score": 0.01515,
+    "components": {
+     "dense": 6
+    },
+    "hybrid_rank": 11,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0100:c01",
+    "page": 100,
+    "section": "4.1",
+    "score": 0.02721,
+    "components": {
+     "dense": 20,
+     "bm25": 8
+    },
+    "hybrid_rank": 6,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0102:c01",
+    "page": 102,
+    "section": "4.2",
+    "score": 0.01538,
+    "components": {
+     "dense": 5
+    },
+    "hybrid_rank": 10,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0142:c00",
+    "page": 142,
+    "section": "5.5",
+    "score": 0.02939,
+    "components": {
+     "dense": 3,
+     "bm25": 14
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0099:c01",
+   "p0111:c00",
+   "p0100:c01",
+   "p0102:c01",
+   "p0142:c00"
+  ],
+  "context_chars": 1684,
+  "ms": 1098.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 99,
+    "evidence": "is_zero = num=0 will always assign is_zero and num with 0, regardless of num's original value"
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    11,
+    6,
+    10,
+    4
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q03",
+  "split": "dev",
+  "answerable": true,
+  "question": "How many spaces per indentation level does the PEP 8 style guide recommend?",
+  "query": "How many spaces per indentation level does the PEP 8 style guide recommend?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0100:c05",
+    "page": 100,
+    "section": "4.2",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0171:c00",
+    "page": 171,
+    "section": "6.6",
+    "score": 0.03226,
+    "components": {
+     "dense": 2,
+     "bm25": 2
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0110:c03",
+    "page": 110,
+    "section": "4.4",
+    "score": 0.03175,
+    "components": {
+     "dense": 3,
+     "bm25": 3
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0150:c01",
+    "page": 150,
+    "section": "6.1",
+    "score": 0.03008,
+    "components": {
+     "dense": 6,
+     "bm25": 7
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0116:c04",
+    "page": 116,
+    "section": "4.6",
+    "score": 0.02988,
+    "components": {
+     "dense": 9,
+     "bm25": 5
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0100:c05",
+   "p0171:c00",
+   "p0110:c03",
+   "p0150:c01",
+   "p0116:c04"
+  ],
+  "context_chars": 1930,
+  "ms": 915.5,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 100,
+    "evidence": "The PEP 8 style guide recommends four spaces per indentation level."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q04",
+  "split": "dev",
+  "answerable": true,
+  "question": "When an if-else statement runs, can both the if body and the else body execute?",
+  "query": "When an if-else statement runs, can both the if body and the else body execute?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0102:c02",
+    "page": 102,
+    "section": "4.2",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0100:c04",
+    "page": 100,
+    "section": "4.2",
+    "score": 0.03037,
+    "components": {
+     "dense": 3,
+     "bm25": 9
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0100:c02",
+    "page": 100,
+    "section": "4.2",
+    "score": 0.02831,
+    "components": {
+     "dense": 16,
+     "bm25": 6
+    },
+    "hybrid_rank": 9,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0122:c02",
+    "page": 122,
+    "section": "4.8",
+    "score": 0.01587,
+    "components": {
+     "bm25": 3
+    },
+    "hybrid_rank": 14,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0113:c01",
+    "page": 113,
+    "section": "4.5",
+    "score": 0.02743,
+    "components": {
+     "dense": 7,
+     "bm25": 20
+    },
+    "hybrid_rank": 11,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0102:c02",
+   "p0100:c04",
+   "p0100:c02",
+   "p0122:c02",
+   "p0113:c01"
+  ],
+  "context_chars": 1982,
+  "ms": 986.0,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 102,
+    "evidence": "When an if-else statement is executed, one and only one of the branches is taken."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    4,
+    9,
+    14,
+    11
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q05",
+  "split": "dev",
+  "answerable": true,
+  "question": "Which operator is the main exception to left associativity, and how is 2 ** 3 ** 4 evaluated?",
+  "query": "Which operator is the main exception to left associativity, and how is 2 ** 3 ** 4 evaluated?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0108:c02",
+    "page": 108,
+    "section": "4.4",
+    "score": 0.03031,
+    "components": {
+     "dense": 5,
+     "bm25": 7
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0110:c02",
+    "page": 110,
+    "section": "4.4",
+    "score": 0.02942,
+    "components": {
+     "dense": 7,
+     "bm25": 9
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0109:c02",
+    "page": 109,
+    "section": "4.4",
+    "score": 0.03226,
+    "components": {
+     "dense": 2,
+     "bm25": 2
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0109:c00",
+    "page": 109,
+    "section": "4.4",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 5,
+    "id": "p0108:c00",
+    "page": 108,
+    "section": "4.4",
+    "score": 0.02778,
+    "components": {
+     "dense": 12,
+     "bm25": 12
+    },
+    "hybrid_rank": 9,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0108:c02",
+   "p0110:c02",
+   "p0109:c02",
+   "p0109:c00",
+   "p0108:c00"
+  ],
+  "context_chars": 2252,
+  "ms": 1227.8,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 109,
+    "evidence": "Exponentiation is the main exception (noted above) and is right associative: that is, evaluated from right to left. Ex: 2 ** 3 ** 4 is evaluated as 2 ** (3**4)."
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.25,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    3,
+    5,
+    2,
+    1,
+    9
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q06",
+  "split": "dev",
+  "answerable": true,
+  "question": "How does Python evaluate a chained comparison such as 10 < x <= 20?",
+  "query": "How does Python evaluate a chained comparison such as 10 < x <= 20?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0109:c01",
+    "page": 109,
+    "section": "4.4",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0111:c01",
+    "page": 111,
+    "section": "4.5",
+    "score": 0.01515,
+    "components": {
+     "bm25": 6
+    },
+    "hybrid_rank": 12,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0111:c03",
+    "page": 111,
+    "section": "4.5",
+    "score": 0.02822,
+    "components": {
+     "dense": 14,
+     "bm25": 8
+    },
+    "hybrid_rank": 8,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0098:c02",
+    "page": 98,
+    "section": "4.1",
+    "score": 0.03012,
+    "components": {
+     "dense": 4,
+     "bm25": 9
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0111:c00",
+    "page": 111,
+    "section": "4.4",
+    "score": 0.03077,
+    "components": {
+     "dense": 5,
+     "bm25": 5
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0109:c01",
+   "p0111:c01",
+   "p0111:c03",
+   "p0098:c02",
+   "p0111:c00"
+  ],
+  "context_chars": 1787,
+  "ms": 1021.5,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 109,
+    "evidence": "10 < x <= 20 is evaluated as 10 < x and x <= 20."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    12,
+    8,
+    4,
+    3
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q07",
+  "split": "dev",
+  "answerable": true,
+  "question": "Why can two separate if statements give a student a double grade curve, and what fixes it?",
+  "query": "Why can two separate if statements give a student a double grade curve, and what fixes it?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0111:c02",
+    "page": 111,
+    "section": "4.5",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0111:c03",
+    "page": 111,
+    "section": "4.5",
+    "score": 0.02742,
+    "components": {
+     "dense": 11,
+     "bm25": 15
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0113:c01",
+    "page": 113,
+    "section": "4.5",
+    "score": 0.03054,
+    "components": {
+     "dense": 5,
+     "bm25": 6
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0106:c01",
+    "page": 106,
+    "section": "4.3",
+    "score": 0.0284,
+    "components": {
+     "dense": 13,
+     "bm25": 8
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0100:c03",
+    "page": 100,
+    "section": "4.2",
+    "score": 0.03054,
+    "components": {
+     "dense": 6,
+     "bm25": 5
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0111:c02",
+   "p0111:c03",
+   "p0113:c01",
+   "p0106:c01",
+   "p0100:c03"
+  ],
+  "context_chars": 2340,
+  "ms": 916.4,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 111,
+    "evidence": "Two separate if statements do not guarantee that only one branch is taken and might result in both branches being taken."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    5,
+    3,
+    4,
+    2
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q08",
+  "split": "dev",
+  "answerable": true,
+  "question": "What precedence do conditional expressions have compared with other Python operations?",
+  "query": "What precedence do conditional expressions have compared with other Python operations?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0108:c01",
+    "page": 108,
+    "section": "4.4",
+    "score": 0.02963,
+    "components": {
+     "dense": 7,
+     "bm25": 8
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0108:c00",
+    "page": 108,
+    "section": "4.4",
+    "score": 0.01613,
+    "components": {
+     "bm25": 2
+    },
+    "hybrid_rank": 11,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0119:c01",
+    "page": 119,
+    "section": "4.7",
+    "score": 0.03126,
+    "components": {
+     "dense": 5,
+     "bm25": 3
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0119:c02",
+    "page": 119,
+    "section": "4.7",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 5,
+    "id": "p0121:c00",
+    "page": 121,
+    "section": "4.8",
+    "score": 0.0315,
+    "components": {
+     "dense": 3,
+     "bm25": 4
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0108:c01",
+   "p0108:c00",
+   "p0119:c01",
+   "p0119:c02"
+  ],
+  "context_chars": 1828,
+  "ms": 1164.9,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 119,
+    "evidence": "Conditional expressions have the lowest precedence of all Python operations."
+   }
+  ],
+  "hit1": false,
+  "hit3": false,
+  "rr": 0.25,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    5,
+    11,
+    4,
+    1,
+    2
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q09",
+  "split": "dev",
+  "answerable": true,
+  "question": "In a counting while loop, what happens when the step size is negative?",
+  "query": "In a counting while loop, what happens when the step size is negative?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0127:c00",
+    "page": 127,
+    "section": "5.1",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0130:c02",
+    "page": 130,
+    "section": "5.2",
+    "score": 0.02996,
+    "components": {
+     "dense": 3,
+     "bm25": 11
+    },
+    "hybrid_rank": 7,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0126:c03",
+    "page": 126,
+    "section": "5.1",
+    "score": 0.02921,
+    "components": {
+     "dense": 7,
+     "bm25": 10
+    },
+    "hybrid_rank": 10,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0127:c02",
+    "page": 127,
+    "section": "5.1",
+    "score": 0.03037,
+    "components": {
+     "dense": 9,
+     "bm25": 3
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0130:c00",
+    "page": 130,
+    "section": "5.2",
+    "score": 0.02947,
+    "components": {
+     "dense": 11,
+     "bm25": 5
+    },
+    "hybrid_rank": 9,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0127:c00",
+   "p0130:c02",
+   "p0126:c03",
+   "p0127:c02",
+   "p0130:c00"
+  ],
+  "context_chars": 2407,
+  "ms": 1034.1,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 127,
+    "evidence": "if the step size is a negative number, the counter counts in descending order."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    7,
+    10,
+    5,
+    9
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q10",
+  "split": "dev",
+  "answerable": true,
+  "question": "Is the end value included in the sequence produced by range()?",
+  "query": "Is the end value included in the sequence produced by range()?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0130:c00",
+    "page": 130,
+    "section": "5.2",
+    "score": 0.0315,
+    "components": {
+     "dense": 4,
+     "bm25": 3
+    },
+    "hybrid_rank": 3,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0143:c04",
+    "page": 143,
+    "section": "5.6",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0130:c01",
+    "page": 130,
+    "section": "5.2",
+    "score": 0.03226,
+    "components": {
+     "dense": 2,
+     "bm25": 2
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0130:c02",
+    "page": 130,
+    "section": "5.2",
+    "score": 0.03077,
+    "components": {
+     "dense": 5,
+     "bm25": 5
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0143:c03",
+    "page": 143,
+    "section": "5.6",
+    "score": 0.03102,
+    "components": {
+     "dense": 3,
+     "bm25": 6
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0130:c00",
+   "p0143:c04",
+   "p0130:c01",
+   "p0130:c02",
+   "p0143:c03"
+  ],
+  "context_chars": 1741,
+  "ms": 1943.9,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 130,
+    "evidence": "This integer sequence is inclusive of the start and exclusive of the end of the sequence."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    3,
+    1,
+    2,
+    5,
+    4
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q11",
+  "split": "dev",
+  "answerable": true,
+  "question": "When should I prefer a for loop over a while loop, including in nested loops?",
+  "query": "When should I prefer a for loop over a while loop, including in nested loops?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0135:c00",
+    "page": 135,
+    "section": "5.3",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0136:c00",
+    "page": 136,
+    "section": "5.3",
+    "score": 0.03151,
+    "components": {
+     "dense": 2,
+     "bm25": 5
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0143:c01",
+    "page": 143,
+    "section": "5.6",
+    "score": 0.03054,
+    "components": {
+     "dense": 5,
+     "bm25": 6
+    },
+    "hybrid_rank": 6,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0132:c03",
+    "page": 132,
+    "section": "5.3",
+    "score": 0.0315,
+    "components": {
+     "dense": 4,
+     "bm25": 3
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0144:c00",
+    "page": 144,
+    "section": "5.6",
+    "score": 0.03055,
+    "components": {
+     "dense": 7,
+     "bm25": 4
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0135:c00",
+   "p0136:c00",
+   "p0143:c01",
+   "p0132:c03",
+   "p0144:c00"
+  ],
+  "context_chars": 2452,
+  "ms": 1025.0,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 135,
+    "evidence": "A for loop is a preferable option in cases where a loop is used for counting purposes using a range() function, or when iterating over a container object, including nested situations."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    3,
+    6,
+    4,
+    5
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q12",
+  "split": "dev",
+  "answerable": true,
+  "question": "What is a loop without a termination condition called, and what statement is essential to leave it?",
+  "query": "What is a loop without a termination condition called, and what statement is essential to leave it?",
+  "filter": {
+   "chapter": 5
+  },
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0138:c00",
+    "page": 138,
+    "section": "5.4",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0137:c02",
+    "page": 137,
+    "section": "5.4",
+    "score": 0.02872,
+    "components": {
+     "dense": 15,
+     "bm25": 5
+    },
+    "hybrid_rank": 12,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0139:c00",
+    "page": 139,
+    "section": "5.4",
+    "score": 0.03078,
+    "components": {
+     "dense": 6,
+     "bm25": 4
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0143:c01",
+    "page": 143,
+    "section": "5.6",
+    "score": 0.02986,
+    "components": {
+     "dense": 8,
+     "bm25": 6
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0145:c00",
+    "page": 145,
+    "section": "5.6",
+    "score": 0.02991,
+    "components": {
+     "dense": 4,
+     "bm25": 10
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0138:c00",
+   "p0137:c02",
+   "p0139:c00",
+   "p0143:c01",
+   "p0145:c00"
+  ],
+  "context_chars": 2245,
+  "ms": 1260.8,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 138,
+    "evidence": "A loop without a termination condition is known as an infinite loop."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    12,
+    3,
+    5,
+    4
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q13",
+  "split": "dev",
+  "answerable": true,
+  "question": "What does a continue statement do inside a loop?",
+  "query": "What does a continue statement do inside a loop?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0143:c02",
+    "page": 143,
+    "section": "5.6",
+    "score": 0.03202,
+    "components": {
+     "dense": 1,
+     "bm25": 4
+    },
+    "hybrid_rank": 2,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0139:c00",
+    "page": 139,
+    "section": "5.4",
+    "score": 0.032,
+    "components": {
+     "dense": 2,
+     "bm25": 3
+    },
+    "hybrid_rank": 3,
+    "hit": true
+   },
+   {
+    "rank": 3,
+    "id": "p0137:c01",
+    "page": 137,
+    "section": "5.4",
+    "score": 0.03105,
+    "components": {
+     "dense": 7,
+     "bm25": 2
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0145:c00",
+    "page": 145,
+    "section": "5.6",
+    "score": 0.03227,
+    "components": {
+     "dense": 3,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0125:c02",
+    "page": 125,
+    "section": "5.0",
+    "score": 0.03101,
+    "components": {
+     "dense": 4,
+     "bm25": 5
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0143:c02",
+   "p0139:c00",
+   "p0137:c01",
+   "p0145:c00",
+   "p0125:c02"
+  ],
+  "context_chars": 1649,
+  "ms": 1115.0,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 139,
+    "evidence": "A continue statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely."
+   },
+   {
+    "source_id": "openstax-intro-python",
+    "page": 143,
+    "evidence": "A continue statement allows for skipping the execution of the remainder of the loop without exiting the loop entirely."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    2,
+    3,
+    4,
+    1,
+    5
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q14",
+  "split": "dev",
+  "answerable": true,
+  "question": "Why do functions make code reusable?",
+  "query": "Why do functions make code reusable?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0149:c03",
+    "page": 149,
+    "section": "6.1",
+    "score": 0.032,
+    "components": {
+     "dense": 2,
+     "bm25": 3
+    },
+    "hybrid_rank": 2,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0147:c01",
+    "page": 147,
+    "section": "6.0",
+    "score": 0.03178,
+    "components": {
+     "dense": 1,
+     "bm25": 5
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0148:c00",
+    "page": 148,
+    "section": "6.1",
+    "score": 0.03227,
+    "components": {
+     "dense": 3,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0171:c02",
+    "page": 171,
+    "section": "6.7",
+    "score": 0.03151,
+    "components": {
+     "dense": 5,
+     "bm25": 2
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0153:c00",
+    "page": 153,
+    "section": "6.2",
+    "score": 0.01449,
+    "components": {
+     "dense": 9
+    },
+    "hybrid_rank": 15,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0149:c03",
+   "p0147:c01",
+   "p0148:c00",
+   "p0171:c02",
+   "p0153:c00"
+  ],
+  "context_chars": 2351,
+  "ms": 1140.5,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 149,
+    "evidence": "The body of a function can be executed repeatedly with multiple function calls, so a function promotes reusability."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    2,
+    3,
+    1,
+    4,
+    15
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q15",
+  "split": "dev",
+  "answerable": true,
+  "question": "Can a variable created inside a function be used after the function finishes?",
+  "query": "Can a variable created inside a function be used after the function finishes?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0156:c01",
+    "page": 156,
+    "section": "6.3",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0157:c02",
+    "page": 157,
+    "section": "6.3",
+    "score": 0.03128,
+    "components": {
+     "dense": 6,
+     "bm25": 2
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0155:c00",
+    "page": 155,
+    "section": "6.3",
+    "score": 0.02939,
+    "components": {
+     "dense": 14,
+     "bm25": 3
+    },
+    "hybrid_rank": 7,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0162:c02",
+    "page": 162,
+    "section": "6.4",
+    "score": 0.03033,
+    "components": {
+     "dense": 4,
+     "bm25": 8
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 0.02986,
+    "components": {
+     "dense": 8,
+     "bm25": 6
+    },
+    "hybrid_rank": 6,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0156:c01",
+   "p0157:c02",
+   "p0155:c00",
+   "p0162:c02"
+  ],
+  "context_chars": 2290,
+  "ms": 1293.3,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 156,
+    "evidence": "A variable created within a function has local scope and only exists within the function. A local variable cannot be accessed outside of the function in which the variable was created. After a function finishes executing, the function's local variables no longer exist."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    3,
+    7,
+    4,
+    6
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q16",
+  "split": "dev",
+  "answerable": true,
+  "question": "What must a function do before it can edit a global variable?",
+  "query": "What must a function do before it can edit a global variable?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0157:c02",
+    "page": 157,
+    "section": "6.3",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0155:c00",
+    "page": 155,
+    "section": "6.3",
+    "score": 0.032,
+    "components": {
+     "dense": 3,
+     "bm25": 2
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0171:c03",
+    "page": 171,
+    "section": "6.7",
+    "score": 0.03126,
+    "components": {
+     "dense": 5,
+     "bm25": 3
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0155:c01",
+    "page": 155,
+    "section": "6.3",
+    "score": 0.03054,
+    "components": {
+     "dense": 6,
+     "bm25": 5
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0158:c00",
+    "page": 158,
+    "section": "6.3",
+    "score": 0.01449,
+    "components": {
+     "dense": 9
+    },
+    "hybrid_rank": 15,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0157:c02",
+   "p0155:c00",
+   "p0171:c03",
+   "p0155:c01",
+   "p0158:c00"
+  ],
+  "context_chars": 2132,
+  "ms": 1013.9,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 157,
+    "evidence": "To edit a global variable inside a function, the variable must be declared with the global keyword."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    2,
+    4,
+    5,
+    15
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q17",
+  "split": "dev",
+  "answerable": true,
+  "question": "What does PEP 8 recommend about spaces around the = sign?",
+  "query": "What does PEP 8 recommend about spaces around the = sign?",
+  "filter": {
+   "chapter": 6
+  },
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0171:c00",
+    "page": 171,
+    "section": "6.6",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0170:c00",
+    "page": 170,
+    "section": "6.6",
+    "score": 0.01613,
+    "components": {
+     "dense": 2
+    },
+    "hybrid_rank": 7,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0169:c04",
+    "page": 169,
+    "section": "6.6",
+    "score": 0.02819,
+    "components": {
+     "dense": 9,
+     "bm25": 13
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0170:c03",
+    "page": 170,
+    "section": "6.6",
+    "score": 0.01538,
+    "components": {
+     "dense": 5
+    },
+    "hybrid_rank": 13,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0162:c02",
+    "page": 162,
+    "section": "6.4",
+    "score": 0.01562,
+    "components": {
+     "dense": 4
+    },
+    "hybrid_rank": 11,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0171:c00",
+   "p0170:c00",
+   "p0169:c04",
+   "p0170:c03",
+   "p0162:c02"
+  ],
+  "context_chars": 2302,
+  "ms": 1227.5,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 171,
+    "evidence": "The PEP 8 style guide recommends no spaces around = when indicating keyword arguments and default parameter values."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    7,
+    4,
+    13,
+    11
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q18",
+  "split": "dev",
+  "answerable": true,
+  "question": "What is a branch?",
+  "query": "What is a branch?",
+  "filter": {
+   "chapter": 4
+  },
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0095:c01",
+    "page": 95,
+    "section": "4.0",
+    "score": 0.03154,
+    "components": {
+     "dense": 1,
+     "bm25": 6
+    },
+    "hybrid_rank": 3,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0121:c00",
+    "page": 121,
+    "section": "4.8",
+    "score": 0.02872,
+    "components": {
+     "dense": 15,
+     "bm25": 5
+    },
+    "hybrid_rank": 6,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0102:c02",
+    "page": 102,
+    "section": "4.2",
+    "score": 0.0308,
+    "components": {
+     "dense": 7,
+     "bm25": 3
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0100:c04",
+    "page": 100,
+    "section": "4.2",
+    "score": 0.01471,
+    "components": {
+     "dense": 8
+    },
+    "hybrid_rank": 9,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0100:c03",
+    "page": 100,
+    "section": "4.2",
+    "score": 0.01449,
+    "components": {
+     "dense": 9
+    },
+    "hybrid_rank": 10,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0095:c01",
+   "p0121:c00",
+   "p0102:c02",
+   "p0100:c04",
+   "p0100:c03"
+  ],
+  "context_chars": 2464,
+  "ms": 920.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 95,
+    "evidence": "A branch is a group of statements that execute based on a condition."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    3,
+    6,
+    5,
+    9,
+    10
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "q19",
+  "split": "dev",
+  "answerable": true,
+  "question": "In a nested loop, what does the outer loop control?",
+  "query": "In a nested loop, what does the outer loop control?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0132:c03",
+    "page": 132,
+    "section": "5.3",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0143:c01",
+    "page": 143,
+    "section": "5.6",
+    "score": 0.02857,
+    "components": {
+     "dense": 10,
+     "bm25": 10
+    },
+    "hybrid_rank": 9,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0135:c00",
+    "page": 135,
+    "section": "5.3",
+    "score": 0.032,
+    "components": {
+     "dense": 2,
+     "bm25": 3
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0133:c00",
+    "page": 133,
+    "section": "5.3",
+    "score": 0.03078,
+    "components": {
+     "dense": 6,
+     "bm25": 4
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0136:c00",
+    "page": 136,
+    "section": "5.3",
+    "score": 0.03102,
+    "components": {
+     "dense": 3,
+     "bm25": 6
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0132:c03",
+   "p0143:c01",
+   "p0135:c00",
+   "p0133:c00"
+  ],
+  "context_chars": 2268,
+  "ms": 1343.2,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 132,
+    "evidence": "The outer loop controls the number of the inner loop's full execution."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    9,
+    2,
+    5,
+    4
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "t01",
+  "split": "dev",
+  "answerable": true,
+  "question": "What value does a function return if it has no return statement?",
+  "query": "What value does a function return if it has no return statement?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0165:c00",
+    "page": 165,
+    "section": "6.5",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0165:c03",
+    "page": 165,
+    "section": "6.5",
+    "score": 0.032,
+    "components": {
+     "dense": 3,
+     "bm25": 2
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0164:c02",
+    "page": 164,
+    "section": "6.5",
+    "score": 0.032,
+    "components": {
+     "dense": 2,
+     "bm25": 3
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0166:c00",
+    "page": 166,
+    "section": "6.5",
+    "score": 0.02694,
+    "components": {
+     "dense": 19,
+     "bm25": 10
+    },
+    "hybrid_rank": 11,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 0.02985,
+    "components": {
+     "dense": 7,
+     "bm25": 7
+    },
+    "hybrid_rank": 6,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0165:c00",
+   "p0165:c03",
+   "p0164:c02",
+   "p0166:c00",
+   "p0171:c04"
+  ],
+  "context_chars": 2071,
+  "ms": 1026.5,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 165,
+    "evidence": "Functions introduced so far have not had a return statement, which is the same as returning None, representing no value."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    3,
+    2,
+    11,
+    6
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "t02",
+  "split": "dev",
+  "answerable": true,
+  "question": "Why shouldn't a list be used as a default parameter value?",
+  "query": "Why shouldn't a list be used as a default parameter value?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0170:c00",
+    "page": 170,
+    "section": "6.6",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0163:c01",
+    "page": 163,
+    "section": "6.4",
+    "score": 0.02904,
+    "components": {
+     "dense": 6,
+     "bm25": 12
+    },
+    "hybrid_rank": 7,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 0.02921,
+    "components": {
+     "dense": 10,
+     "bm25": 7
+    },
+    "hybrid_rank": 6,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0170:c02",
+    "page": 170,
+    "section": "6.6",
+    "score": 0.03151,
+    "components": {
+     "dense": 2,
+     "bm25": 5
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0171:c01",
+    "page": 171,
+    "section": "6.6",
+    "score": 0.02964,
+    "components": {
+     "dense": 9,
+     "bm25": 6
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0170:c00",
+   "p0163:c01",
+   "p0171:c04",
+   "p0170:c02",
+   "p0171:c01"
+  ],
+  "context_chars": 2211,
+  "ms": 1225.9,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 170,
+    "evidence": "Default parameter values are only defined once to be used by the function, so mutable objects (such as lists) should not be used as default values."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    7,
+    6,
+    3,
+    4
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "t03",
+  "split": "dev",
+  "answerable": true,
+  "question": "If a function changes a list argument, does the caller see the change? What about a string argument?",
+  "query": "If a function changes a list argument, does the caller see the change? What about a string argument?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0163:c01",
+    "page": 163,
+    "section": "6.4",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0162:c02",
+    "page": 162,
+    "section": "6.4",
+    "score": 0.03175,
+    "components": {
+     "dense": 4,
+     "bm25": 2
+    },
+    "hybrid_rank": 2,
+    "hit": true
+   },
+   {
+    "rank": 3,
+    "id": "p0160:c01",
+    "page": 160,
+    "section": "6.4",
+    "score": 0.03009,
+    "components": {
+     "dense": 5,
+     "bm25": 8
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0164:c01",
+    "page": 164,
+    "section": "6.4",
+    "score": 0.01515,
+    "components": {
+     "dense": 6
+    },
+    "hybrid_rank": 12,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 0.02655,
+    "components": {
+     "dense": 19,
+     "bm25": 12
+    },
+    "hybrid_rank": 9,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0163:c01",
+   "p0162:c02",
+   "p0160:c01",
+   "p0164:c01",
+   "p0171:c04"
+  ],
+  "context_chars": 2296,
+  "ms": 1024.7,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 162,
+    "evidence": "A mutable object can be modified after creation. A function's changes to the object then appear outside the function. An immutable object cannot be modified after creation. So a function must make a local copy to modify, and the local copy's changes don't appear outside the function."
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.5,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    2,
+    4,
+    12,
+    9
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "t04",
+  "split": "dev",
+  "answerable": true,
+  "question": "When does the else block run?",
+  "query": "When does the else block run?",
+  "filter": {
+   "chapter": 5
+  },
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0140:c02",
+    "page": 140,
+    "section": "5.5",
+    "score": 0.03226,
+    "components": {
+     "dense": 2,
+     "bm25": 2
+    },
+    "hybrid_rank": 1,
+    "hit": false
+   },
+   {
+    "rank": 2,
+    "id": "p0143:c02",
+    "page": 143,
+    "section": "5.6",
+    "score": 0.03175,
+    "components": {
+     "dense": 3,
+     "bm25": 3
+    },
+    "hybrid_rank": 3,
+    "hit": true
+   },
+   {
+    "rank": 3,
+    "id": "p0141:c00",
+    "page": 141,
+    "section": "5.5",
+    "score": 0.03178,
+    "components": {
+     "dense": 1,
+     "bm25": 5
+    },
+    "hybrid_rank": 2,
+    "hit": true
+   },
+   {
+    "rank": 4,
+    "id": "p0142:c01",
+    "page": 142,
+    "section": "5.5",
+    "score": 0.02967,
+    "components": {
+     "dense": 5,
+     "bm25": 10
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0142:c00",
+    "page": 142,
+    "section": "5.5",
+    "score": 0.02942,
+    "components": {
+     "dense": 7,
+     "bm25": 9
+    },
+    "hybrid_rank": 6,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0140:c02",
+   "p0143:c02",
+   "p0141:c00",
+   "p0142:c01",
+   "p0142:c00"
+  ],
+  "context_chars": 2022,
+  "ms": 1022.9,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 143,
+    "evidence": "A loop else statement runs after the loop's execution is completed without being interrupted by a break statement."
+   },
+   {
+    "source_id": "openstax-intro-python",
+    "page": 141,
+    "evidence": "A loop else is used to identify if the loop is terminated normally or the execution is interrupted by a break statement."
+   }
+  ],
+  "hit1": false,
+  "hit3": true,
+  "rr": 0.5,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    3,
+    2,
+    5,
+    6
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "t05",
+  "split": "dev",
+  "answerable": true,
+  "question": "When a call mixes positional and keyword arguments, which must come first?",
+  "query": "When a call mixes positional and keyword arguments, which must come first?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0169:c01",
+    "page": 169,
+    "section": "6.6",
+    "score": 0.03279,
+    "components": {
+     "dense": 1,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 0.03078,
+    "components": {
+     "dense": 6,
+     "bm25": 4
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0169:c00",
+    "page": 169,
+    "section": "6.6",
+    "score": 0.03226,
+    "components": {
+     "dense": 2,
+     "bm25": 2
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0169:c02",
+    "page": 169,
+    "section": "6.6",
+    "score": 0.03175,
+    "components": {
+     "dense": 3,
+     "bm25": 3
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0170:c00",
+    "page": 170,
+    "section": "6.6",
+    "score": 0.02967,
+    "components": {
+     "dense": 5,
+     "bm25": 10
+    },
+    "hybrid_rank": 7,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0169:c01",
+   "p0171:c04",
+   "p0169:c00",
+   "p0169:c02",
+   "p0170:c00"
+  ],
+  "context_chars": 2214,
+  "ms": 1330.6,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 169,
+    "evidence": "When mixing positional and keyword arguments, positional arguments must come first in the correct order, before any keyword arguments."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    4,
+    2,
+    3,
+    7
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "t06",
+  "split": "dev",
+  "answerable": true,
+  "question": "What does elif stand for and where must it be placed?",
+  "query": "What does elif stand for and where must it be placed?",
+  "filter": {
+   "chapter": 4
+  },
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0111:c03",
+    "page": 111,
+    "section": "4.5",
+    "score": 0.03252,
+    "components": {
+     "dense": 1,
+     "bm25": 2
+    },
+    "hybrid_rank": 1,
+    "hit": true
+   },
+   {
+    "rank": 2,
+    "id": "p0113:c01",
+    "page": 113,
+    "section": "4.5",
+    "score": 0.03252,
+    "components": {
+     "dense": 2,
+     "bm25": 1
+    },
+    "hybrid_rank": 2,
+    "hit": false
+   },
+   {
+    "rank": 3,
+    "id": "p0114:c00",
+    "page": 114,
+    "section": "4.5",
+    "score": 0.0315,
+    "components": {
+     "dense": 4,
+     "bm25": 3
+    },
+    "hybrid_rank": 3,
+    "hit": false
+   },
+   {
+    "rank": 4,
+    "id": "p0113:c02",
+    "page": 113,
+    "section": "4.5",
+    "score": 0.03101,
+    "components": {
+     "dense": 5,
+     "bm25": 4
+    },
+    "hybrid_rank": 4,
+    "hit": false
+   },
+   {
+    "rank": 5,
+    "id": "p0115:c00",
+    "page": 115,
+    "section": "4.5",
+    "score": 0.03008,
+    "components": {
+     "dense": 7,
+     "bm25": 6
+    },
+    "hybrid_rank": 5,
+    "hit": false
+   }
+  ],
+  "context_ids": [
+   "p0111:c03",
+   "p0113:c01",
+   "p0114:c00",
+   "p0113:c02",
+   "p0115:c00"
+  ],
+  "context_chars": 1945,
+  "ms": 1269.5,
+  "gold": [
+   {
+    "source_id": "openstax-intro-python",
+    "page": 111,
+    "evidence": "An elif (short for else if) statement checks a condition when the prior decision statement's condition is false. An elif statement is part of a chain and must follow an if (or elif) statement."
+   }
+  ],
+  "hit1": true,
+  "hit3": true,
+  "rr": 1.0,
+  "context_hit": true,
+  "rerank": {
+   "llm_order": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "u01",
+  "split": "dev",
+  "answerable": false,
+  "question": "How do I write a lambda (anonymous) function in Python?",
+  "query": "How do I write a lambda (anonymous) function in Python?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0172:c01",
+    "page": 172,
+    "section": "6.7",
+    "score": 0.01587,
+    "components": {
+     "dense": 3
+    },
+    "hybrid_rank": 9,
+    "hit": null
+   },
+   {
+    "rank": 2,
+    "id": "p0148:c04",
+    "page": 148,
+    "section": "6.1",
+    "score": 0.01449,
+    "components": {
+     "dense": 9
+    },
+    "hybrid_rank": 15,
+    "hit": null
+   },
+   {
+    "rank": 3,
+    "id": "p0160:c02",
+    "page": 160,
+    "section": "6.4",
+    "score": 0.01515,
+    "components": {
+     "bm25": 6
+    },
+    "hybrid_rank": 11,
+    "hit": null
+   },
+   {
+    "rank": 4,
+    "id": "p0171:c04",
+    "page": 171,
+    "section": "6.7",
+    "score": 0.03002,
+    "components": {
+     "dense": 12,
+     "bm25": 2
+    },
+    "hybrid_rank": 3,
+    "hit": null
+   },
+   {
+    "rank": 5,
+    "id": "p0169:c01",
+    "page": 169,
+    "section": "6.6",
+    "score": 0.01493,
+    "components": {
+     "bm25": 7
+    },
+    "hybrid_rank": 12,
+    "hit": null
+   }
+  ],
+  "context_ids": [
+   "p0172:c01",
+   "p0148:c04",
+   "p0160:c02",
+   "p0171:c04",
+   "p0169:c01"
+  ],
+  "context_chars": 2485,
+  "ms": 1079.2,
+  "top1_score": 0.01587,
+  "rerank": {
+   "llm_order": [
+    9,
+    15,
+    11,
+    3,
+    12
+   ],
+   "parse_ok": true
+  }
+ },
+ {
+  "query_id": "u02",
+  "split": "dev",
+  "answerable": false,
+  "question": "How does a try/except block handle a ZeroDivisionError?",
+  "query": "How does a try/except block handle a ZeroDivisionError?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0147:c01",
+    "page": 147,
+    "section": "6.0",
+    "score": 0.02973,
+    "components": {
+     "dense": 15,
+     "bm25": 1
+    },
+    "hybrid_rank": 1,
+    "hit": null
+   },
+   {
+    "rank": 2,
+    "id": "p0128:c01",
+    "page": 128,
+    "section": "5.1",
+    "score": 0.01639,
+    "components": {
+     "dense": 1
+    },
+    "hybrid_rank": 2,
+    "hit": null
+   },
+   {
+    "rank": 3,
+    "id": "p0148:c00",
+    "page": 148,
+    "section": "6.1",
+    "score": 0.01613,
+    "components": {
+     "bm25": 2
+    },
+    "hybrid_rank": 3,
+    "hit": null
+   },
+   {
+    "rank": 4,
+    "id": "p0159:c00",
+    "page": 159,
+    "section": "6.3",
+    "score": 0.01613,
+    "components": {
+     "dense": 2
+    },
+    "hybrid_rank": 4,
+    "hit": null
+   },
+   {
+    "rank": 5,
+    "id": "p0117:c03",
+    "page": 117,
+    "section": "4.6",
+    "score": 0.01587,
+    "components": {
+     "dense": 3
+    },
+    "hybrid_rank": 5,
+    "hit": null
+   }
+  ],
+  "context_ids": [
+   "p0147:c01",
+   "p0128:c01",
+   "p0148:c00",
+   "p0159:c00",
+   "p0117:c03"
+  ],
+  "context_chars": 2295,
+  "ms": 862.4,
+  "top1_score": 0.02973,
+  "rerank": {
+   "llm_order": [],
+   "parse_ok": false
+  }
+ },
+ {
+  "query_id": "u03",
+  "split": "dev",
+  "answerable": false,
+  "question": "What is the base case of a recursive function?",
+  "query": "What is the base case of a recursive function?",
+  "filter": null,
+  "config": "I4_rerank_k5",
+  "method": "hybrid_rerank",
+  "top_k": 5,
+  "budget_chars": 2500,
+  "neighbours": false,
+  "results": [
+   {
+    "rank": 1,
+    "id": "p0163:c04",
+    "page": 163,
+    "section": "6.4",
+    "score": 0.03128,
+    "components": {
+     "dense": 6,
+     "bm25": 2
+    },
+    "hybrid_rank": 1,
+    "hit": null
+   },
+   {
+    "rank": 2,
+    "id": "p0149:c03",
+    "page": 149,
+    "section": "6.1",
+    "score": 0.02967,
+    "components": {
+     "dense": 5,
+     "bm25": 10
+    },
+    "hybrid_rank": 2,
+    "hit": null
+   },
+   {
+    "rank": 3,
+    "id": "p0148:c04",
+    "page": 148,
+    "section": "6.1",
+    "score": 0.02889,
+    "components": {
+     "dense": 20,
+     "bm25": 1
+    },
+    "hybrid_rank": 3,
+    "hit": null
+   },
+   {
+    "rank": 4,
+    "id": "p0165:c00",
+    "page": 165,
+    "section": "6.5",
+    "score": 0.02742,
+    "components": {
+     "dense": 11,
+     "bm25": 15
+    },
+    "hybrid_rank": 4,
+    "hit": null
+   },
+   {
+    "rank": 5,
+    "id": "p0095:c00",
+    "page": 95,
+    "section": "4.0",
+    "score": 0.01639,
+    "components": {
+     "dense": 1
+    },
+    "hybrid_rank": 5,
+    "hit": null
+   }
+  ],
+  "context_ids": [
+   "p0163:c04",
+   "p0149:c03",
+   "p0148:c04",
+   "p0165:c00",
+   "p0095:c00"
+  ],
+  "context_chars": 1852,
+  "ms": 840.0,
+  "top1_score": 0.03128,
+  "rerank": {
+   "llm_order": [],
+   "parse_ok": false
+  }
+ }
+]

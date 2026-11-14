@@ -1,0 +1,20 @@
+{
+ "page": 148,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                                   | 2019  | 2020  | 2021   | 2022   | 2023e  |\n|--------------------------------------------|-------|-------|--------|--------|--------|\n| Production:e                               |       |       |        |        |        |\n| Mineral concentrates                       | 28,000| 39,000| e42,000| e42,000| 43,000 |\n| Compounds and metals                       | —     | —     | 120    | 95     | 250    |\n| Imports:e, 2                              |       |       |        |        |        |\n| Compounds                                 | 12,200| 6,510 | 7,690  | 10,700 | 8,800  |\n| Metals:                                   |       |       |        |        |        |\n| Ferrocerium, alloys                       | 330   | 270   | 330    | 396    | 300    |\n| Rare-earth metals, scandium, and yttrium | 627   | 363   | 580    | 487    | 580    |\n| Exports:e, 2                              |       |       |        |        |        |\n| Ores and compounds                        | 28,300| 40,000| 46,000 | 46,000 | 40,000 |\n| Metals:                                   |       |       |        |        |        |\n| Ferrocerium, alloys                       | 1,290 | 625   | 825    | 1,500  | 950    |\n| Rare-earth metals, scandium, and yttrium | 83    | 25    | 20     | 24     | 64     |\n| Consumption, apparent, compounds and metals3 | 11,800| 6,490 | e7,900 | e10,200| 8,800  |\n| Price, average, dollars per kilogram:4   |       |       |        |        |        |\n| Cerium oxide, 99.5% minimum               | 2     | 2     | 2      | 1      | 1      |\n| Dysprosium oxide, 99.5% minimum           | 239   | 261   | 410    | 382    | 323    |\n| Europium oxide, 99.99% minimum             | 35    | 31    | 31     | 30     | 27     |\n| Lanthanum oxide, 99.5% minimum             | 2     | 2     | 2      | 1      | 1      |\n| Mischmetal, 65% cerium, 35% lanthanum     | 6     | 5     | 6      | 7      | 5      |\n| Neodymium oxide, 99.5% minimum             | 45    | 49    | 98     | 134    | 80     |\n| Terbium oxide, 99.99% minimum              | 507   | 670   | 1,346  | 2,051  | 1,300  |\n| Employment, mine and mill, annual average, number | 202   | 185   | 293    | 350    | 450    |\n| Net import reliance5 as a percentage of apparent consumption:6 |       |       |        |        |        |\n| Compounds and metals                      | 100   | 100   | >95    | >95    | >95    |\n| Mineral concentrates                      | E     | E     | E      | E      | E      |",
+   "notes": "e = estimated; E = withheld to avoid disclosing company proprietary data; 1 Rare-earth-oxide (REO) equivalent, unless otherwise specified; 2 Includes data for compounds and metals; 3 Apparent consumption = production + imports - exports + adjustments for Government and industry stock changes; 4 Average U.S. market price; 5 Net import reliance = imports - exports + adjustments for Government and industry stock changes, as a percentage of apparent consumption; 6 Apparent consumption; 7 China data includes imports from Malaysia, Japan, and Estonia derived from mineral concentrates and chemical intermediates produced in Australia, China, and elsewhere."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 963
+ },
+ "seconds": 6.9
+}

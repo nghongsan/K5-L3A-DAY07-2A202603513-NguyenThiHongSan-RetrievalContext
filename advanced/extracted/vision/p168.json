@@ -1,0 +1,20 @@
+{
+ "page": 168,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019  | 2020  | 2021  | 2022  | 2023e |\n|-------------------------|-------|-------|-------|-------|-------|\n| Production2             | 11,700| 9,990 | 11,300| 11,300| 11,000|\n| Imports for consumption  | 115   | 98    | 130   | 61    | 8     |\n| Exports                 | 7,020 | 5,590 | 6,840 | 6,490 | 6,600 |\n| Consumption:            |       |       |       |       |       |\n| Apparent3               | 4,830 | 4,470 | 4,580 | 4,740 | 4,100 |\n| Reported                | 4,720 | 4,440 | 4,640 | 4,640 | 4,500 |\n| Price, average unit value of sales (natural source), free on board (f.o.b.) mine or plant: |       |       |       |       |       |\n| Dollars per metric ton  | 153.24| 140.70| 133.37| 178.52| 180   |\n| Dollars per short ton   | 139.02| 127.64| 120.99| 161.95| 160   |\n| Stocks, producer, yearend| 289   | 317   | 278   | 364   | 300   |\n| Employment, mine and plant, numbere | 2,600 | 2,400 | 2,400 | 2,400 | 2,400 |\n| Net import reliance4 as a percentage of apparent consumption | E     | E     | E     | E     | E     |",
+   "notes": "Footnotes: 1, 2, 3, 4, e as printed in the table."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 455
+ },
+ "seconds": 5.0
+}

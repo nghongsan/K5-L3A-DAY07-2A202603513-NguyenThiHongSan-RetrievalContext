@@ -1,0 +1,20 @@
+{
+ "page": 157,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "|                | Mine production |       | Reserves6                                   |\n|----------------|-----------------|-------|---------------------------------------------|\n|                | 2022            | 2023e |                                             |\n| United States  | 953             | 920   | Reserves are controlled largely by land use and (or) environmental concerns.\n| Other countries7| NA              | NA    |                                             |\n| World total    | NA              | NA    |                                             |",
+   "notes": "eEstimated, NA Not available.\n6See Appendix C for resource and reserve definitions and information concerning data sources.\n7No reliable production information is available for most countries owing to the wide variety of ways in which countries report their sand and gravel production. Some countries do not report production for this mineral commodity. Production information for some countries is available in the U.S. Geological Survey Minerals Yearbook, volume III, Area Reports—International."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 214
+ },
+ "seconds": 3.1
+}

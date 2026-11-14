@@ -1,0 +1,20 @@
+{
+ "page": 69,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine and Refinery Production and Reserves",
+   "location": "lower half",
+   "content": "| Country               | Mine production 2022 | Mine production 2023e | Refinery production 2022 | Refinery production 2023e | Reserves   |\n|-----------------------|---------------------|----------------------|-------------------------|--------------------------|------------|\n| United States         | 1,230               | 1,100                | 952                     | 890                      | 50,000     |\n| Australia             | 819                 | 810                  | 401                     | 450                      | 61000,000  |\n| Canada                | 520                 | 480                  | 278                     | 310                      | 7,600      |\n| Chile                 | 5,330               | 5,000                | 2,150                   | 2,000                    | 190,000    |\n| China                 | 1,940               | 1,700                | 11,100                  | 12,000                   | 41,000     |\n| Congo (Kinshasa)      | 2,350               | 2,500                | 1,770                   | 1,900                    | 80,000     |\n| Germany               | —                   | —                    | 609                     | 610                      | —          |\n| Indonesia             | 941                 | 840                  | 310                     | 200                      | 24,000     |\n| Japan                 | —                   | —                    | 1,550                   | 1,500                    | —          |\n| Kazakhstan            | 593                 | 600                  | 494                     | 440                      | 20,000     |\n| Korea, Republic of    | —                   | —                    | 638                     | 620                      | —          |\n| Mexico                | 754                 | 750                  | 486                     | 480                      | 53,000     |\n| Peru                  | 2,450               | 2,600                | 391                     | 400                      | 120,000    |\n| Poland                | 393                 | 400                  | 586                     | 590                      | 34,000     |\n| Russia                | 936e                | 910                  | 1,010e                  | 1,000                    | 80,000     |\n| Zambia                | 797                 | 760                  | 349                     | 380                      | 21,000     |\n| Other countries       | 2,850               | 3,100                | 2,830                   | 2,900                    | 180,000    |\n| World total (rounded) | 21,900              | 22,000               | 25,900                  | 27,000                   | 1,000,000  |",
+   "notes": "eEstimated. — Zero.\n5See Appendix C for resource and reserve definitions and information concerning data sources.\n6For Australia, Joint Ore Reserves Committee-compliant or equivalent reserves were 27 million tons."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 675
+ },
+ "seconds": 5.6
+}

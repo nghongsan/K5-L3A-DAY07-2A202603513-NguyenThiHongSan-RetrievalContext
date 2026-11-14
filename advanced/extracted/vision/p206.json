@@ -1,0 +1,32 @@
+{
+ "page": 206,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|------|------|------|------|-------|\n| Production:                       |      |      |      |      |       |\n| Mine, zinc in concentrates        | 753  | 723  | 704  | 761  | 750   |\n| Refined zince, 1                  | 115  | 180  | 220  | 220  | 220   |\n| Imports for consumption:          |      |      |      |      |       |\n| Zinc in ores and concentrates     | (2)  | 3    | 13   | 5    | 20    |\n| Refined zinc                     | 830  | 700  | 701  | 762  | 750   |\n| Exports:                         |      |      |      |      |       |\n| Zinc in ores and concentrates     | 792  | 546  | 644  | 644  | 730   |\n| Refined zinc                     | 5    | 2    | 13   | 8    | 5     |\n| Shipments from Government stockpile3 | —    | —    | —    | 1    | NA    |\n| Consumption, apparent, refined zinc4 | 939  | 878  | 908  | 975  | 970   |\n| Price, average, cents per pound:  |      |      |      |      |       |\n| North American5                  | 124.1| 110.8| 145.8| 190.2| 152   |\n| London Metal Exchange (LME), cash | 115.6| 102.7| 136.3| 158.1| 120   |\n| Stocks, reported producer and consumer, refined zinc, yearend | 116  | 120  | 120  | 100  | 100   |\n| Employment, number:               |      |      |      |      |       |\n| Mine and mill6                   | 2,470| 2,360| 2,480| 2,500| 2,600 |\n| Smelter, primary                | 250  | 220  | 220  | 220  | 340   |\n| Net import reliance7 as a percentage of apparent consumption: |      |      |      |      |       |\n| Ores and concentrates            | E    | E    | E    | E    | E     |\n| Refined zinc                    | 88   | 79   | 76   | 77   | 77    |",
+   "notes": "Footnotes: 1, 2, 3, 4, 5, 6, 7 as printed in the original table."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "middle right",
+   "content": "| Item                                   | Number       | Normal Trade Relations 12–31–23 |\n|----------------------------------------|--------------|---------------------------------|\n| Zinc ores and concentrates, zinc content | 2608.00.0030 | Free.                           |\n| Zinc oxide; zinc peroxide               | 2817.00.0000 | Free.                           |\n| Zinc sulfate                           | 2833.29.4500 | 1.6% ad valorem.                |\n| Unwrought zinc, not alloyed:           |              |                                 |\n| Containing 99.99% or more zinc          | 7901.11.0000 | 1.5% ad valorem.                |\n| Containing less than 99.99% zinc:       |              |                                 |\n| Casting-grade                          | 7901.12.1000 | 3% ad valorem.                  |\n| Other                                 | 7901.12.5000 | 1.5% ad valorem.                |\n| Zinc alloys                           | 7901.20.0000 | 3% ad valorem.                  |\n| Zinc waste and scrap                  | 7902.00.0000 | Free.                           |"
+  },
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "lower half",
+   "content": "| Material | FY 2023 Potential acquisitions | FY 2023 Potential disposals | FY 2024 Potential acquisitions | FY 2024 Potential disposals |\n|----------|-------------------------------|-----------------------------|-------------------------------|-----------------------------|\n| Zinc     | —                             | 2.27                        | —                             | 2.27                        |"
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1024
+ },
+ "seconds": 7.5
+}

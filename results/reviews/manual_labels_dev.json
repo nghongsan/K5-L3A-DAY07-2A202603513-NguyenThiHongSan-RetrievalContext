@@ -1,0 +1,63 @@
+{
+ "_how": "Labels assigned after reading every answer next to the expected answer and the FULL text of every cited chunk (reviewer: Claude Code as grading assistant; to be re-checked by the student). Rule: answered questions not listed under 'grades' got 2 (correct and complete, every claim of the core answer stated in a cited chunk); abstentions on answerable questions get 0. Citations not listed under 'unsupported_citations' were read and support the sentence they follow.",
+ "A0_dense": {
+  "grades": {
+   "q01": 0,
+   "t05": 0
+  },
+  "unsupported_citations": {
+   "q11": [
+    "p0128:c03"
+   ]
+  },
+  "notes": {
+   "q01": "False abstention; the abstain text adds UNSUPPORTED general knowledge (None, [], {}) — worst kind of refusal.",
+   "t05": "Correct answer rejected by the citation guard (no inline [id]); prompt v1 failure mode.",
+   "q11": "p0128:c03 is only the 'For loop' learning objectives; does not support the preference claim.",
+   "u02": "Abstained correctly."
+  }
+ },
+ "A2_rerank": {
+  "grades": {},
+  "unsupported_citations": {
+   "q11": [
+    "p0144:c00"
+   ]
+  },
+  "notes": {
+   "q11": "p0144:c00 is a syntax table, supports nothing stated.",
+   "u02": "Abstained (says passages do not cover try/except) but adds uncited related content about calc_mpg; still a correct abstention, no false claim."
+  }
+ },
+ "A4_dense_fix": {
+  "grades": {},
+  "unsupported_citations": {
+   "q11": [
+    "p0144:c00"
+   ]
+  },
+  "notes": {
+   "q11": "p0144:c00 is a syntax table cited for 'for loops preferred for counting' — unsupported.",
+   "t02": "Adds 'modifications persist across calls' (true, but not stated in p0170:c00); core answer fully supported, graded 2."
+  }
+ },
+ "A6_rerank_fix": {
+  "grades": {},
+  "unsupported_citations": {
+   "q11": [
+    "p0144:c00"
+   ]
+  },
+  "notes": {
+   "q11": "p0144:c00 unsupported (syntax table)."
+  }
+ },
+ "A7_dense_userfilter": {
+  "grades": {},
+  "unsupported_citations": {},
+  "notes": {
+   "q07": "p0102:c02 supports 'only one branch of if-else executes' (contrast).",
+   "_all": "All citations read; every answer correct and supported."
+  }
+ }
+}

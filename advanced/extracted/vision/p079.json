@@ -1,0 +1,20 @@
+{
+ "page": 79,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Primary production and Production capacity of Gallium",
+   "location": "lower half",
+   "content": "| Country               | Primary production 2022 | Primary production 2023e | Production capacity 2023 |\n|-----------------------|-------------------------|-------------------------|-------------------------|\n| United States         | —                   | —                   | —                   |\n| China                 | 600,000                 | 600,000                 | 1,000,000               |\n| Japane                | 3,000                   | 3,000                   | 10,000                  |\n| Korea, Republic ofe   | 2,000                   | 2,000                   | 16,000                  |\n| Russiae               | 5,000                   | 5,000                   | 10,000                  |\n| Other countries4      | —                   | —                   | e88,000                 |\n| World total (rounded) | 610,000                 | 610,000                 | e1,100,000              |",
+   "notes": "eEstimated. NA Not available. — Zero.\n4Other countries estimated to still have primary low-purity gallium production capacity include Germany, Hungary, Kazakhstan, and Ukraine."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 284
+ },
+ "seconds": 3.9
+}

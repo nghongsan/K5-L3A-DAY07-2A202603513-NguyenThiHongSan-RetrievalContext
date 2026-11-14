@@ -1,0 +1,20 @@
+{
+ "page": 113,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Lime Production and Limestone Reserves",
+   "location": "top half",
+   "content": "| Country                          | Production 2022 | Production 2023e | Reserves                         |\n|---------------------------------|-----------------|------------------|---------------------------------|\n| United States                   | 17,000          | 17,000           | Adequate for all countries with |\n|                                 |                 |                  | listed production.              |\n| Australia                      | 1,990           | 2,000            |                                 |\n| Belgium8                      | 1,710           | 1,200            |                                 |\n| Brazil                        | 8,300           | 8,300            |                                 |\n| Bulgaria                      | 1,420           | 1,400            |                                 |\n| Canada (shipments)             | 1,680           | 1,700            |                                 |\n| China                         | 310,000         | 310,000          |                                 |\n| France                        | 2,500           | 3,000            |                                 |\n| Germany                       | 5,900           | 5,900            |                                 |\n| India                         | 16,000          | 16,000           |                                 |\n| Iran                          | 4,000           | 4,000            |                                 |\n| Italy8                        | 3,500           | 3,500            |                                 |\n| Japan (quicklime only)         | 6,240           | 6,200            |                                 |\n| Korea, Republic of             | 5,100           | 5,100            |                                 |\n| Malaysia                      | 1,500           | 1,500            |                                 |\n| Poland (hydrated and quicklime)| 1,800           | 1,800            |                                 |\n| Romania                       | 1,100           | 1,100            |                                 |\n| Russia (industrial and construction) | 11,400          | 11,000           |                                 |\n| Slovenia                      | 1,100           | 1,100            |                                 |\n| South Africa                  | 1,070           | 1,200            |                                 |\n| Spain                         | 1,700           | 1,700            |                                 |\n| Turkey                        | 4,600           | 4,600            |                                 |\n| Ukraine                       | 2,600           | 2,000            |                                 |\n| United Kingdom                | 1,400           | 1,400            |                                 |\n| Other countries               | 15,400          | 15,000           |                                 |\n| World total (rounded)          | 430,000         | 430,000          |                                 |",
+   "notes": "e Estimated. 6 Only countries that produced 1 million tons or more of lime are listed separately. 7 See Appendix C for resource and reserve definitions and information concerning data sources. 8 Includes hydraulic lime."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 648
+ },
+ "seconds": 5.3
+}

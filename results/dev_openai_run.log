@@ -1,0 +1,342 @@
+W1114 15:27:34.057000 77943 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/intfloat/multilingual-e5-small: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'intfloat/multilingual-e5-small'.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6391.75it/s]
+I3_rerank_k3       Hit@1 21/25  Hit@3 23/25  MRR 0.9  Ctx 23/25  chars 1200  1102.0ms  $0.00681  miss3=['q05', 'q08']
+I4_rerank_k5       Hit@1 21/25  Hit@3 23/25  MRR 0.9  Ctx 25/25  chars 2102  1013.1ms  $0.0068  miss3=['q05', 'q08']
+W1114 15:28:45.908000 78015 torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/intfloat/multilingual-e5-small: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'intfloat/multilingual-e5-small'.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 13369.21it/s]
+[A0_dense] q01  abstain  searches=2 cites=[] ctx_hit=False 4.66s $0.000571
+[A0_dense] q02  answered searches=1 cites=['p0099:c01'] ctx_hit=True 2.98s $0.000295
+[A0_dense] q03  answered searches=1 cites=['p0100:c05'] ctx_hit=True 2.32s $0.000213
+[A0_dense] q04  answered searches=1 cites=['p0102:c02'] ctx_hit=True 2.64s $0.000241
+[A0_dense] q05  answered searches=2 cites=['p0109:c00'] ctx_hit=True 3.46s $0.000353
+[A0_dense] q06  answered searches=1 cites=['p0109:c01'] ctx_hit=True 2.79s $0.000267
+[A0_dense] q07  answered searches=2 cites=['p0111:c02', 'p0111:c03'] ctx_hit=True 7.38s $0.000869
+[A0_dense] q08  answered searches=1 cites=['p0119:c02', 'p0108:c01'] ctx_hit=True 2.69s $0.000269
+[A0_dense] q09  answered searches=1 cites=['p0127:c00'] ctx_hit=True 2.77s $0.000281
+[A0_dense] q10  answered searches=1 cites=['p0130:c00'] ctx_hit=True 2.33s $0.00024
+[A0_dense] q11  answered searches=2 cites=['p0125:c03', 'p0135:c00', 'p0128:c03'] ctx_hit=True 5.08s $0.000683
+[A0_dense] q12  answered searches=2 cites=['p0138:c00'] ctx_hit=True 2.36s $0.00029
+[A0_dense] q13  answered searches=1 cites=['p0139:c00', 'p0143:c02'] ctx_hit=True 2.53s $0.000246
+[A0_dense] q14  answered searches=1 cites=['p0147:c01', 'p0149:c03'] ctx_hit=True 2.61s $0.000267
+[A0_dense] q15  answered searches=1 cites=['p0156:c01'] ctx_hit=True 2.41s $0.000228
+[A0_dense] q16  answered searches=1 cites=['p0157:c02'] ctx_hit=True 2.28s $0.000249
+[A0_dense] q17  answered searches=1 cites=['p0171:c00'] ctx_hit=True 2.56s $0.000224
+[A0_dense] q18  answered searches=1 cites=['p0095:c01'] ctx_hit=True 2.69s $0.000251
+[A0_dense] q19  answered searches=1 cites=['p0132:c03'] ctx_hit=True 2.63s $0.000245
+[A0_dense] t01  answered searches=1 cites=['p0165:c00'] ctx_hit=True 1.88s $0.000209
+[A0_dense] t02  answered searches=1 cites=['p0170:c00'] ctx_hit=True 2.72s $0.000248
+[A0_dense] t03  answered searches=2 cites=['p0162:c02', 'p0163:c01'] ctx_hit=True 3.31s $0.000348
+[A0_dense] t04  answered searches=1 cites=['p0141:c00', 'p0143:c02'] ctx_hit=True 3.09s $0.000274
+[A0_dense] t05  abstain  searches=1 cites=[] ctx_hit=True 2.78s $0.000212
+[A0_dense] t06  answered searches=1 cites=['p0111:c03'] ctx_hit=True 2.64s $0.000242
+[A0_dense] u01  abstain  searches=2 cites=[] ctx_hit=None 3.73s $0.000537
+[A0_dense] u02  abstain  searches=2 cites=[] ctx_hit=None 4.95s $0.000636
+[A0_dense] u03  abstain  searches=2 cites=[] ctx_hit=None 4.9s $0.000537
+{
+ "config": "A0_dense",
+ "split": "dev",
+ "model": "openai/gpt-4o-mini",
+ "n": 28,
+ "errors": 0,
+ "tool_use": "28/28",
+ "searches_distribution": {
+  "1": 19,
+  "2": 9
+ },
+ "status": {
+  "abstain": 5,
+  "answered": 23
+ },
+ "context_evidence_rate": "24/25",
+ "answered_with_gold_citation": "23/25",
+ "false_abstain_auto": "2/25",
+ "abstain_on_unanswerable_auto": "3/3",
+ "avg_context_chars": 1398,
+ "tokens_in": 47020,
+ "tokens_out": 4119,
+ "cost_usd_total": 0.00953,
+ "price_known": true,
+ "median_seconds": 2.705,
+ "total_seconds": 89.2
+}
+[A1_hybrid] q01  answered searches=3 cites=['p0097:c01', 'p0097:c02'] ctx_hit=True 5.76s $0.001189
+[A1_hybrid] q02  answered searches=1 cites=['p0099:c01'] ctx_hit=True 2.92s $0.000322
+[A1_hybrid] q03  answered searches=1 cites=['p0100:c05'] ctx_hit=True 2.46s $0.000247
+[A1_hybrid] q04  answered searches=1 cites=['p0102:c02'] ctx_hit=True 2.99s $0.000279
+[A1_hybrid] q05  answered searches=2 cites=['p0109:c00'] ctx_hit=True 3.3s $0.000444
+[A1_hybrid] q06  answered searches=1 cites=['p0109:c01'] ctx_hit=True 2.65s $0.000285
+[A1_hybrid] q07  answered searches=1 cites=['p0111:c02', 'p0111:c03'] ctx_hit=True 3.67s $0.000344
+[A1_hybrid] q08  answered searches=1 cites=['p0119:c02'] ctx_hit=True 3.89s $0.00029
+[A1_hybrid] q09  answered searches=1 cites=['p0127:c00'] ctx_hit=True 2.85s $0.000334
+[A1_hybrid] q10  answered searches=1 cites=['p0130:c00'] ctx_hit=True 3.04s $0.000298
+[A1_hybrid] q11  answered searches=3 cites=['p0125:c03', 'p0135:c00'] ctx_hit=True 8.74s $0.001616
+[A1_hybrid] q12  answered searches=2 cites=['p0138:c00'] ctx_hit=True 3.76s $0.000372
+[A1_hybrid] q13  answered searches=1 cites=['p0139:c00', 'p0143:c02'] ctx_hit=True 2.66s $0.000282
+[A1_hybrid] q14  answered searches=1 cites=['p0148:c00', 'p0149:c03', 'p0171:c02'] ctx_hit=True 3.18s $0.000301
+[A1_hybrid] q15  answered searches=1 cites=['p0156:c01'] ctx_hit=True 2.71s $0.000265
+[A1_hybrid] q16  answered searches=1 cites=['p0157:c02'] ctx_hit=True 2.41s $0.000281
+[A1_hybrid] q17  answered searches=3 cites=['p0171:c00'] ctx_hit=True 5.06s $0.001151
+[A1_hybrid] q18  answered searches=1 cites=['p0095:c01', 'p0102:c02'] ctx_hit=True 2.81s $0.000301
+[A1_hybrid] q19  answered searches=1 cites=['p0132:c03'] ctx_hit=True 2.65s $0.000306
+[A1_hybrid] t01  answered searches=1 cites=['p0165:c00'] ctx_hit=True 2.41s $0.000262
+[A1_hybrid] t02  answered searches=1 cites=['p0170:c00'] ctx_hit=True 3.08s $0.000286
+[A1_hybrid] t03  answered searches=2 cites=['p0162:c02', 'p0163:c01'] ctx_hit=True 3.47s $0.000449
+[A1_hybrid] t04  answered searches=1 cites=['p0140:c02', 'p0141:c00'] ctx_hit=True 4.06s $0.000304
+[A1_hybrid] t05  abstain  searches=1 cites=[] ctx_hit=True 3.78s $0.000234
+[A1_hybrid] t06  answered searches=1 cites=['p0111:c03'] ctx_hit=True 2.87s $0.000316
+[A1_hybrid] u01  abstain  searches=3 cites=[] ctx_hit=None 5.46s $0.001115
+[A1_hybrid] u02  abstain  searches=3 cites=[] ctx_hit=None 5.09s $0.001198
+[A1_hybrid] u03  abstain  searches=3 cites=[] ctx_hit=None 5.05s $0.001148
+{
+ "config": "A1_hybrid",
+ "split": "dev",
+ "model": "openai/gpt-4o-mini",
+ "n": 28,
+ "errors": 0,
+ "tool_use": "28/28",
+ "searches_distribution": {
+  "1": 19,
+  "2": 3,
+  "3": 6
+ },
+ "status": {
+  "answered": 24,
+  "abstain": 4
+ },
+ "context_evidence_rate": "25/25",
+ "answered_with_gold_citation": "24/25",
+ "false_abstain_auto": "1/25",
+ "abstain_on_unanswerable_auto": "3/3",
+ "avg_context_chars": 2533,
+ "tokens_in": 77188,
+ "tokens_out": 4403,
+ "cost_usd_total": 0.01422,
+ "price_known": true,
+ "median_seconds": 3.13,
+ "total_seconds": 102.8
+}
+[A2_rerank] q01  answered searches=3 cites=['p0097:c01'] ctx_hit=True 9.45s $0.001811
+[A2_rerank] q02  answered searches=1 cites=['p0099:c01'] ctx_hit=True 4.05s $0.000571
+[A2_rerank] q03  answered searches=1 cites=['p0100:c05'] ctx_hit=True 3.12s $0.000489
+[A2_rerank] q04  answered searches=1 cites=['p0102:c02'] ctx_hit=True 3.58s $0.000497
+[A2_rerank] q05  answered searches=2 cites=['p0109:c00'] ctx_hit=True 5.15s $0.00097
+[A2_rerank] q06  answered searches=1 cites=['p0109:c01'] ctx_hit=True 3.62s $0.000543
+[A2_rerank] q07  answered searches=1 cites=['p0111:c02', 'p0111:c03'] ctx_hit=True 4.75s $0.000573
+[A2_rerank] q08  answered searches=3 cites=['p0119:c02', 'p0108:c02'] ctx_hit=True 10.87s $0.001862
+[A2_rerank] q09  answered searches=2 cites=['p0127:c00'] ctx_hit=True 9.16s $0.00137
+[A2_rerank] q10  answered searches=1 cites=['p0130:c00'] ctx_hit=True 5.53s $0.000568
+[A2_rerank] q11  answered searches=2 cites=['p0135:c00', 'p0143:c01', 'p0144:c00', 'p0125:c03'] ctx_hit=True 10.66s $0.001404
+[A2_rerank] q12  answered searches=2 cites=['p0138:c00'] ctx_hit=True 5.33s $0.000774
+[A2_rerank] q13  answered searches=1 cites=['p0139:c00', 'p0143:c02'] ctx_hit=True 3.66s $0.000478
+[A2_rerank] q14  answered searches=1 cites=['p0148:c00', 'p0149:c03', 'p0147:c01', 'p0171:c02'] ctx_hit=True 4.75s $0.000525
+[A2_rerank] q15  answered searches=1 cites=['p0156:c01'] ctx_hit=True 3.52s $0.000485
+[A2_rerank] q16  answered searches=1 cites=['p0157:c02'] ctx_hit=True 4.23s $0.000517
+[A2_rerank] q17  answered searches=3 cites=['p0171:c00'] ctx_hit=True 7.98s $0.001573
+[A2_rerank] q18  answered searches=1 cites=['p0095:c01', 'p0121:c00', 'p0102:c02'] ctx_hit=True 3.84s $0.000512
+[A2_rerank] q19  answered searches=1 cites=['p0132:c03'] ctx_hit=True 3.25s $0.000468
+[A2_rerank] t01  answered searches=1 cites=['p0165:c00'] ctx_hit=True 4.44s $0.00048
+[A2_rerank] t02  answered searches=2 cites=['p0170:c00'] ctx_hit=True 8.2s $0.001202
+[A2_rerank] t03  answered searches=2 cites=['p0162:c02', 'p0163:c01'] ctx_hit=True 5.57s $0.000822
+[A2_rerank] t04  answered searches=3 cites=['p0140:c02', 'p0141:c00', 'p0143:c02'] ctx_hit=True 9.13s $0.001841
+[A2_rerank] t05  answered searches=1 cites=['p0169:c01'] ctx_hit=True 3.15s $0.000456
+[A2_rerank] t06  answered searches=1 cites=['p0111:c03'] ctx_hit=True 3.58s $0.000537
+[A2_rerank] u01  abstain  searches=3 cites=[] ctx_hit=None 7.85s $0.001655
+[A2_rerank] u02  abstain  searches=3 cites=[] ctx_hit=None 8.64s $0.001686
+[A2_rerank] u03  abstain  searches=3 cites=[] ctx_hit=None 7.7s $0.001586
+{
+ "config": "A2_rerank",
+ "split": "dev",
+ "model": "openai/gpt-4o-mini",
+ "n": 28,
+ "errors": 0,
+ "tool_use": "28/28",
+ "searches_distribution": {
+  "1": 15,
+  "2": 6,
+  "3": 7
+ },
+ "status": {
+  "answered": 25,
+  "abstain": 3
+ },
+ "context_evidence_rate": "25/25",
+ "answered_with_gold_citation": "25/25",
+ "false_abstain_auto": "0/25",
+ "abstain_on_unanswerable_auto": "3/3",
+ "avg_context_chars": 2232,
+ "tokens_in": 150781,
+ "tokens_out": 6063,
+ "cost_usd_total": 0.02626,
+ "price_known": true,
+ "median_seconds": 4.95,
+ "total_seconds": 164.8
+}
+[A4_dense_fix] q01  answered searches=1 cites=['p0097:c01'] ctx_hit=True 2.73s $0.000237
+[A4_dense_fix] q02  answered searches=1 cites=['p0099:c01'] ctx_hit=True 3.77s $0.000283
+[A4_dense_fix] q03  answered searches=2 cites=['p0100:c05'] ctx_hit=True 3.29s $0.000396
+[A4_dense_fix] q04  answered searches=1 cites=['p0102:c02'] ctx_hit=True 2.57s $0.000239
+[A4_dense_fix] q05  answered searches=2 cites=['p0109:c00'] ctx_hit=True 3.62s $0.000345
+[A4_dense_fix] q06  answered searches=1 cites=['p0109:c01'] ctx_hit=True 3.03s $0.000255
+[A4_dense_fix] q07  answered searches=2 cites=['p0111:c02', 'p0111:c03'] ctx_hit=True 7.67s $0.00088
+[A4_dense_fix] q08  answered searches=1 cites=['p0119:c02'] ctx_hit=True 3.84s $0.000235
+[A4_dense_fix] q09  answered searches=1 cites=['p0127:c00'] ctx_hit=True 2.98s $0.00027
+[A4_dense_fix] q10  answered searches=1 cites=['p0130:c00'] ctx_hit=True 2.7s $0.00024
+[A4_dense_fix] q11  answered searches=2 cites=['p0135:c00', 'p0125:c03', 'p0144:c00'] ctx_hit=True 8.68s $0.000874
+[A4_dense_fix] q12  answered searches=1 cites=['p0138:c00'] ctx_hit=True 2.61s $0.000221
+[A4_dense_fix] q13  answered searches=1 cites=['p0139:c00', 'p0143:c02'] ctx_hit=True 3.58s $0.000249
+[A4_dense_fix] q14  answered searches=1 cites=['p0149:c03', 'p0147:c01'] ctx_hit=True 3.39s $0.000278
+[A4_dense_fix] q15  answered searches=1 cites=['p0156:c01'] ctx_hit=True 2.63s $0.000232
+[A4_dense_fix] q16  answered searches=1 cites=['p0157:c02'] ctx_hit=True 2.73s $0.000239
+[A4_dense_fix] q17  answered searches=1 cites=['p0171:c00'] ctx_hit=True 2.71s $0.000222
+[A4_dense_fix] q18  answered searches=1 cites=['p0095:c01'] ctx_hit=True 2.8s $0.000236
+[A4_dense_fix] q19  answered searches=1 cites=['p0132:c03'] ctx_hit=True 3.88s $0.000408
+[A4_dense_fix] t01  answered searches=1 cites=['p0165:c00'] ctx_hit=True 2.51s $0.000217
+[A4_dense_fix] t02  answered searches=1 cites=['p0170:c00'] ctx_hit=True 2.99s $0.000257
+[A4_dense_fix] t03  answered searches=2 cites=['p0162:c02', 'p0163:c01'] ctx_hit=True 3.33s $0.000338
+[A4_dense_fix] t04  answered searches=1 cites=['p0141:c00', 'p0143:c02'] ctx_hit=True 2.84s $0.000267
+[A4_dense_fix] t05  answered searches=1 cites=['p0169:c01'] ctx_hit=True 3.15s $0.000214
+[A4_dense_fix] t06  answered searches=1 cites=['p0111:c03'] ctx_hit=True 4.97s $0.000437
+[A4_dense_fix] u01  abstain  searches=2 cites=[] ctx_hit=None 4.54s $0.000552
+[A4_dense_fix] u02  abstain  searches=2 cites=[] ctx_hit=None 4.14s $0.000589
+[A4_dense_fix] u03  abstain  searches=2 cites=[] ctx_hit=None 4.03s $0.000552
+{
+ "config": "A4_dense_fix",
+ "split": "dev",
+ "model": "openai/gpt-4o-mini",
+ "n": 28,
+ "errors": 0,
+ "tool_use": "28/28",
+ "searches_distribution": {
+  "1": 20,
+  "2": 8
+ },
+ "status": {
+  "answered": 25,
+  "abstain": 3
+ },
+ "context_evidence_rate": "25/25",
+ "answered_with_gold_citation": "25/25",
+ "false_abstain_auto": "0/25",
+ "abstain_on_unanswerable_auto": "3/3",
+ "avg_context_chars": 1411,
+ "tokens_in": 48944,
+ "tokens_out": 4034,
+ "cost_usd_total": 0.00976,
+ "price_known": true,
+ "median_seconds": 3.2199999999999998,
+ "total_seconds": 101.7
+}
+[A5_hybrid_fix] q01  answered searches=1 cites=['p0097:c01'] ctx_hit=True 2.6s $0.000265
+[A5_hybrid_fix] q02  answered searches=1 cites=['p0099:c01'] ctx_hit=True 5.44s $0.000594
+[A5_hybrid_fix] q03  abstain  searches=3 cites=[] ctx_hit=False 10.35s $0.001116
+[A5_hybrid_fix] q04  answered searches=1 cites=['p0102:c02'] ctx_hit=True 4.52s $0.000504
+[A5_hybrid_fix] q05  answered searches=2 cites=['p0109:c00'] ctx_hit=True 3.39s $0.000433
+[A5_hybrid_fix] q06  answered searches=1 cites=['p0109:c01'] ctx_hit=True 6.82s $0.000281
+[A5_hybrid_fix] q07  answered searches=1 cites=['p0111:c02', 'p0111:c03'] ctx_hit=True 3.44s $0.00034
+[A5_hybrid_fix] q08  abstain  searches=1 cites=[] ctx_hit=True 4.07s $0.000457
+[A5_hybrid_fix] q09  answered searches=1 cites=['p0127:c00'] ctx_hit=True 5.15s $0.000578
+[A5_hybrid_fix] q10  answered searches=1 cites=['p0130:c00'] ctx_hit=True 2.58s $0.00029
+[A5_hybrid_fix] q11  answered searches=2 cites=['p0135:c00', 'p0125:c03'] ctx_hit=True 7.27s $0.000932
+[A5_hybrid_fix] q12  answered searches=1 cites=['p0138:c00'] ctx_hit=True 2.3s $0.000267
+[A5_hybrid_fix] q13  answered searches=1 cites=['p0139:c00', 'p0143:c02'] ctx_hit=True 3.16s $0.000282
+[A5_hybrid_fix] q14  answered searches=1 cites=['p0148:c00', 'p0149:c03', 'p0147:c01'] ctx_hit=True 3.45s $0.000302
+[A5_hybrid_fix] q15  answered searches=1 cites=['p0156:c01'] ctx_hit=True 2.64s $0.000275
+[A5_hybrid_fix] q16  answered searches=1 cites=['p0157:c02'] ctx_hit=True 2.58s $0.000267
+[A5_hybrid_fix] q17  answered searches=3 cites=['p0171:c00'] ctx_hit=True 7.17s $0.001146
+[A5_hybrid_fix] q18  answered searches=1 cites=['p0095:c01', 'p0102:c02'] ctx_hit=True 3.61s $0.000308
+[A5_hybrid_fix] q19  answered searches=1 cites=['p0132:c03'] ctx_hit=True 4.27s $0.000293
+[A5_hybrid_fix] t01  answered searches=1 cites=['p0165:c00'] ctx_hit=True 2.67s $0.000249
+[A5_hybrid_fix] t02  answered searches=1 cites=['p0170:c00'] ctx_hit=True 3.69s $0.000302
+[A5_hybrid_fix] t03  answered searches=2 cites=['p0162:c02', 'p0163:c01'] ctx_hit=True 4.21s $0.000455
+[A5_hybrid_fix] t04  answered searches=1 cites=['p0140:c02', 'p0141:c00', 'p0143:c02'] ctx_hit=True 3.6s $0.000308
+[A5_hybrid_fix] t05  answered searches=1 cites=['p0169:c01'] ctx_hit=True 2.66s $0.000245
+[A5_hybrid_fix] t06  answered searches=1 cites=['p0111:c03'] ctx_hit=True 2.89s $0.0003
+[A5_hybrid_fix] u01  abstain  searches=3 cites=[] ctx_hit=None 5.27s $0.001133
+[A5_hybrid_fix] u02  abstain  searches=3 cites=[] ctx_hit=None 6.05s $0.001171
+[A5_hybrid_fix] u03  abstain  searches=3 cites=[] ctx_hit=None 5.63s $0.001229
+{
+ "config": "A5_hybrid_fix",
+ "split": "dev",
+ "model": "openai/gpt-4o-mini",
+ "n": 28,
+ "errors": 0,
+ "tool_use": "28/28",
+ "searches_distribution": {
+  "1": 20,
+  "2": 3,
+  "3": 5
+ },
+ "status": {
+  "answered": 23,
+  "abstain": 5
+ },
+ "context_evidence_rate": "24/25",
+ "answered_with_gold_citation": "23/25",
+ "false_abstain_auto": "2/25",
+ "abstain_on_unanswerable_auto": "3/3",
+ "avg_context_chars": 2397,
+ "tokens_in": 78506,
+ "tokens_out": 4240,
+ "cost_usd_total": 0.01432,
+ "price_known": true,
+ "median_seconds": 3.65,
+ "total_seconds": 121.5
+}
+[A6_rerank_fix] q01  answered searches=2 cites=['p0097:c01'] ctx_hit=True 6.02s $0.000938
+[A6_rerank_fix] q02  answered searches=1 cites=['p0099:c01'] ctx_hit=True 4.16s $0.000566
+[A6_rerank_fix] q03  answered searches=1 cites=['p0100:c05'] ctx_hit=True 3.21s $0.000486
+[A6_rerank_fix] q04  answered searches=1 cites=['p0102:c02'] ctx_hit=True 3.76s $0.000495
+[A6_rerank_fix] q05  answered searches=2 cites=['p0109:c00'] ctx_hit=True 7.22s $0.00096
+[A6_rerank_fix] q06  answered searches=1 cites=['p0109:c01'] ctx_hit=True 3.88s $0.000537
+[A6_rerank_fix] q07  answered searches=1 cites=['p0111:c02', 'p0111:c03'] ctx_hit=True 4.19s $0.000572
+[A6_rerank_fix] q08  answered searches=3 cites=['p0119:c02', 'p0108:c02'] ctx_hit=True 11.67s $0.001898
+[A6_rerank_fix] q09  answered searches=1 cites=['p0127:c00'] ctx_hit=True 4.16s $0.000548
+[A6_rerank_fix] q10  answered searches=1 cites=['p0130:c00'] ctx_hit=True 3.62s $0.000532
+[A6_rerank_fix] q11  answered searches=2 cites=['p0135:c00', 'p0143:c01', 'p0144:c00'] ctx_hit=True 10.32s $0.001373
+[A6_rerank_fix] q12  answered searches=2 cites=['p0138:c00'] ctx_hit=True 5.09s $0.000795
+[A6_rerank_fix] q13  answered searches=1 cites=['p0139:c00', 'p0143:c02'] ctx_hit=True 3.64s $0.000477
+[A6_rerank_fix] q14  answered searches=1 cites=['p0148:c00', 'p0149:c03', 'p0147:c01'] ctx_hit=True 4.69s $0.00051
+[A6_rerank_fix] q15  answered searches=1 cites=['p0156:c01'] ctx_hit=True 3.97s $0.000494
+[A6_rerank_fix] q16  answered searches=1 cites=['p0157:c02'] ctx_hit=True 3.42s $0.000496
+[A6_rerank_fix] q17  answered searches=1 cites=['p0171:c00'] ctx_hit=True 3.24s $0.000455
+[A6_rerank_fix] q18  answered searches=1 cites=['p0095:c01', 'p0102:c02'] ctx_hit=True 4.18s $0.000509
+[A6_rerank_fix] q19  answered searches=1 cites=['p0132:c03'] ctx_hit=True 3.66s $0.000468
+[A6_rerank_fix] t01  answered searches=1 cites=['p0165:c00'] ctx_hit=True 3.97s $0.000479
+[A6_rerank_fix] t02  answered searches=2 cites=['p0170:c00', 'p0162:c02'] ctx_hit=True 8.48s $0.001254
+[A6_rerank_fix] t03  answered searches=2 cites=['p0162:c02', 'p0163:c01'] ctx_hit=True 5.62s $0.000839
+[A6_rerank_fix] t04  answered searches=1 cites=['p0140:c02', 'p0141:c00'] ctx_hit=True 4.23s $0.000517
+[A6_rerank_fix] t05  answered searches=1 cites=['p0169:c01'] ctx_hit=True 3.39s $0.000452
+[A6_rerank_fix] t06  answered searches=1 cites=['p0111:c03'] ctx_hit=True 5.83s $0.000751
+[A6_rerank_fix] u01  abstain  searches=3 cites=[] ctx_hit=None 8.44s $0.001612
+[A6_rerank_fix] u02  abstain  searches=3 cites=[] ctx_hit=None 8.58s $0.001891
+[A6_rerank_fix] u03  abstain  searches=3 cites=[] ctx_hit=None 8.24s $0.001605
+{
+ "config": "A6_rerank_fix",
+ "split": "dev",
+ "model": "openai/gpt-4o-mini",
+ "n": 28,
+ "errors": 0,
+ "tool_use": "28/28",
+ "searches_distribution": {
+  "1": 18,
+  "2": 6,
+  "3": 4
+ },
+ "status": {
+  "answered": 25,
+  "abstain": 3
+ },
+ "context_evidence_rate": "25/25",
+ "answered_with_gold_citation": "25/25",
+ "false_abstain_auto": "0/25",
+ "abstain_on_unanswerable_auto": "3/3",
+ "avg_context_chars": 2164,
+ "tokens_in": 129229,
+ "tokens_out": 5208,
+ "cost_usd_total": 0.02251,
+ "price_known": true,
+ "median_seconds": 4.1850000000000005,
+ "total_seconds": 150.9
+}

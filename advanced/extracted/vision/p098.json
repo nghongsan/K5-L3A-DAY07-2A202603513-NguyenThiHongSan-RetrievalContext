@@ -1,0 +1,27 @@
+{
+ "page": 98,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle left",
+   "content": "|                                   | 2019  | 2020  | 2021  | 2022  | 2023e |\n|-----------------------------------|-------|-------|-------|-------|-------|\n| Pig iron production2               | 22.3  | 18.2  | 22.2  | 19.8  | 21    |\n| Raw steel production              | 87.8  | 72.7  | 85.8  | 80.5  | 80    |\n| Distribution of raw steel production, percent: |       |       |       |       |       |\n|    Basic oxygen furnaces       | 30    | 29    | 29    | 28    | 29    |\n|    Electric arc furnaces        | 70    | 71    | 71    | 72    | 71    |\n| Continuously cast steel, percent   | 99.8  | 99.8  | 99.8  | 99.7  | 99.7  |\n| Shipments, steel mill products     | 87.3  | 73.5  | 85.9  | 76.9  | 77    |\n| Imports, steel mill products:       |       |       |       |       |       |\n|    Finished                 | 19.1  | 14.6  | 20.6  | 22.9  | 21    |\n|    Semifinished             | 6.2   | 5.3   | 7.9   | 5.1   | 5     |\n|    Total                   | 25.3  | 20.0  | 28.5  | 28.0  | 25    |\n| Exports, steel mill products:       |       |       |       |       |       |\n|    Finished                 | 6.6   | 6.1   | 7.4   | 7.5   | 8     |\n|    Semifinished             | 0.1   | 0.1   | 0.1   | 0.1   | 0.1   |\n|    Total                   | 6.7   | 6.2   | 7.5   | 7.6   | 8     |\n| Stocks, service centers, yearend3   | 7.4   | 5.8   | 5.8   | 6.8   | 7     |\n| Consumption, apparent (steel mill products)4 | 100   | 82.9  | 98.9  | 96.9  | 93    |\n| Producer price index for steel mill products (1982=100)5 | 204   | 184   | 351   | 382   | 325   |\n| Employment, average, number:         |       |       |       |       |       |\n|    Iron and steel mills5     | 85,700| 83,200| 78,300| 80,800| 80,600|\n|    Steel product manufacturing6 | 57,800| 54,900| 52,700| 55,400| 54,900|\n| Net import reliance7 as a percentage of apparent consumption | 12    | 12    | 13    | 17    | 13    |",
+   "notes": "Footnotes: 2, 3, 4, 5, 6, 7 (not transcribed in detail here)"
+  },
+  {
+   "type": "table",
+   "title": "Tariff: Item, Number, Normal Trade Relations 12-31-23",
+   "location": "lower left",
+   "content": "| Item                         | Number       | Normal Trade Relations 12-31-23 |\n|------------------------------|--------------|---------------------------------|\n| Carbon steel:                |              |                                 |\n|    Semifinished       | 7207.00.0000 | Free.                           |\n|    Flat, hot-rolled    | 7208.00.0000 | Free.                           |\n|    Flat, cold-rolled   | 7209.00.0000 | Free.                           |\n|    Galvanized          | 7210.00.0000 | Free.                           |\n|    Bars and rods, hot-rolled | 7213.00.0000 | Free.                           |\n|    Structural shapes  | 7216.00.0000 | Free.                           |\n| Stainless steel:             |              |                                 |\n|    Semifinished       | 7218.00.0000 | Free.                           |\n|    Flat-rolled sheets | 7219.00.0000 | Free.                           |\n|    Bars and rods      | 7222.00.0000 | Free.                           |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1246
+ },
+ "seconds": 10.5
+}

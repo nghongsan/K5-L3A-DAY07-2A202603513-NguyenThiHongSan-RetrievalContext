@@ -1,0 +1,27 @@
+{
+ "page": 42,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|------|------|------|------|-------|\n| Imports for consumption3 | 172  | 305  | 41   | 224  | (4)   |\n| Exports5                | —    | —    | —    | —    | —     |\n| Consumption, estimated6 | 450  | 450  | 310  | 290  | 150   |\n| Price, average U.S. customs unit value of imports, dollars per ton | 1,570 | 2,110 | 1,880 | 2,630 | — |\n| Net import reliance7 as a percentage of estimated consumption | 100  | 100  | 100  | 100  | 100   |",
+   "notes": "Footnotes 2,3,4,5,6,7 referenced but not transcribed."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower left",
+   "content": "| Item                         | Number       | Normal Trade Relations 12–31–23 |\n|------------------------------|--------------|--------------------------------|\n| Crocidolite                  | 2524.10.0000 | Free.                          |\n| Amosite                     | 2524.90.0010 | Free.                          |\n| Chrysotile:                 |              |                                |\n| - Crudes                    | 2524.90.0030 | Free.                          |\n| - Milled fibers, group 3 grades | 2524.90.0040 | Free.                          |\n| - Milled fibers, group 4 and 5 grades | 2524.90.0045 | Free.                          |\n| - Other                     | 2524.90.0055 | Free.                          |\n| Other, asbestos             | 2524.90.0060 | Free.                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 448
+ },
+ "seconds": 4.5
+}

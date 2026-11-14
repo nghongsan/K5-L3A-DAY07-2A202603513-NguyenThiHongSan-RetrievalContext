@@ -1,0 +1,27 @@
+{
+ "page": 166,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle left",
+   "content": "|                         | 2019 | 2020  | 2021  | 2022  | 2023e |\n|-------------------------|-------|-------|-------|-------|-------|\n| Production:             |       |       |       |       |       |\n|   Mine                  | 981   | 1,080 | 1,020 | 1,010 | 1,000 |\n|   Refinery:             |       |       |       |       |       |\n|     Primary             | 1,360 | 1,360 | 1,920 | 1,850 | 1,900 |\n|     Secondary (new and old scrap) | 627   | 582   | 908   | 1,090 | 1,100 |\n| Imports for consumption2 | 4,760 | 6,730 | 6,160 | 4,490 | 4,700 |\n| Exports2                | 220   | 141   | 137   | 275   | 80    |\n| Consumption, apparent3  | 6,150 | 8,250 | 7,950 | 6,320 | 6,700 |\n| Price, bullion, average, dollars per troy ounce4 | 16.24 | 20.58 | 25.23 | 21.88 | 23.40 |\n| Stocks, yearend:        |       |       |       |       |       |\n|   Industry              | 52    | 55    | 56    | 55    | 58    |\n|   Treasury5             | 498   | 498   | 498   | 498   | 498   |\n|   New York Commodities Exchange—COMEX | 9,865 | 12,334| 11,064| 9,300 | 8,400 |\n| Employment, mine and mill, number6 | 990   | 1,180 | 1,440 | 1,400 | 1,500 |\n| Net import reliance7 as a percentage of apparent consumption | 74    | 80    | 76    | 67    | 69    |",
+   "notes": "Footnotes: 1 Data in metric tons, silver content, unless otherwise specified.\n2 Imports and exports data.\n3 Apparent consumption.\n4 Price per troy ounce.\n5 Treasury stocks.\n6 Employment numbers.\n7 Net import reliance percentage."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower left",
+   "content": "| Item                      | Number       | Normal Trade Relations 12-31-23           |\n|---------------------------|--------------|-------------------------------------------|\n| Silver ores and concentrates | 2616.10.0040 | 0.8 ¢/kg on lead content.                  |\n| Bullion                   | 7106.91.1010 | Free.                                     |\n| Dore                      | 7106.91.1020 | Free.                                     |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 680
+ },
+ "seconds": 5.7
+}

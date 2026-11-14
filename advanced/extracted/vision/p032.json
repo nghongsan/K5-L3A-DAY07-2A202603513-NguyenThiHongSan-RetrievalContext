@@ -1,0 +1,20 @@
+{
+ "page": 32,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "chart",
+   "title": "Figure 13.—Value of Old Scrap Domestically Recycled, Imported, and Exported, as a Percentage of Total Old Scrap Value",
+   "location": "top half",
+   "content": "Chart kind: Stacked bar chart\nY-axis: Percentage of total old scrap value, range from -80 to 100\nX-axis: Commodity and total old scrap value, in million dollars\nLegend:\n- Orange: Old scrap imports\n- Blue: Old scrap domestically recycled\n- Gray: Old scrap exports (negative values)\n\nCommodities (with total old scrap value in parentheses) and approximate bar values:\n- *Antimony (49): 100% recycled, 0% imports, 0% exports\n- Lead (2,663): ~97% recycled, ~0% imports, ~-3% exports\n- *Zinc (519): ~85% recycled, ~4% imports, ~-9% exports\n- *Tin (338): ~83% recycled, ~5% imports, ~-8% exports\n- *Nickel (2,353): ~75% recycled, ~20% imports, ~-5% exports\n- *Magnesium metal (378): ~75% recycled, ~25% imports, 0% exports\n- Iron and steel (34,493): ~70% recycled, ~7% imports, ~-23% exports\n- Gold (9,247): ~60% recycled, ~5% imports, ~-35% exports\n- *Platinum-group metals (4,963): ~60% recycled, ~20% imports, ~-20% exports\n- *Aluminum (9,500): ~45% recycled, ~15% imports, ~-40% exports\n- *Cobalt (69): ~45% recycled, ~30% imports, ~-25% exports\n- *Chromium (1,068): ~35% recycled, ~25% imports, ~-40% exports\n- Copper (6,480): ~20% recycled, ~10% imports, ~-70% exports\n- Silver (4,694): ~18% recycled, ~15% imports, ~-70% exports\n- *Titanium (306): ~3% recycled, ~80% imports, ~-17% exports",
+   "notes": "* Indicates commodity is included in the final 2022 U.S. Critical Minerals List.\nPercentages for exports, imports, and domestically recycled old scrap add to 100 percent of the total old scrap value for each commodity. Exports are shown as negative percentages to indicate value of supply lost."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 555
+ },
+ "seconds": 4.8
+}

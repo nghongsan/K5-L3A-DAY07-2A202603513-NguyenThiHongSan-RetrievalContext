@@ -1,0 +1,27 @@
+{
+ "page": 78,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                                   | 2019  | 2020  | 2021  | 2022  | 2023e |\n|-----------------------------------|-------|-------|-------|-------|-------|\n| Production, primary               | —     | —     | —     | —     | —     |\n| Imports for consumption:          |       |       |       |       |       |\n| Metal                            | 5,740 | 4,430 | 8,890 | 11,400| 9,400 |\n| Gallium arsenide wafers (gross weight) | 289,000 | 208,000 | 306,000 | 424,000 | 150,000 |\n| Exports                          | NA    | NA    | NA    | NA    | NA    |\n| Consumption, reported            | 14,900| 15,700| 17,100| 19,700| 19,000|\n| Price, average unit value of imports, dollars per kilogram: |       |       |       |       |       |\n| High-purity, refined1            | 573   | 596   | 625   | 560   | 450   |\n| Low-purity, primary2             | 153   | 163   | 254   | 394   | 290   |\n| Stocks, consumer, yearend        | 2,850 | 2,920 | 2,810 | 2,780 | 2,700 |\n| Net import reliance3 as a percentage of reported consumption | 100   | 100   | 100   | 100   | 100   |",
+   "notes": "1 High-purity, refined\n2 Low-purity, primary\n3 Net import reliance as a percentage of reported consumption"
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower left",
+   "content": "| Item                          | Number       | Normal Trade Relations 12-31-23 |\n|-------------------------------|--------------|---------------------------------|\n| Gallium arsenide wafers, undoped | 2853.90.9010 | 2.8% ad valorem.                |\n| Gallium arsenide wafers, doped   | 3818.00.0010 | Free.                          |\n| Gallium metal                   | 8112.92.1000 | 3% ad valorem.                  |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 541
+ },
+ "seconds": 6.0
+}

@@ -1,0 +1,20 @@
+{
+ "page": 83,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Gem-Quality Natural Diamond Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country           | Mine production 2022 | Mine production 2023e | Reserves                                   |\n|-------------------|----------------------|----------------------|--------------------------------------------|\n| United States     | —                    | —                    | World reserves of diamond-bearing deposits are substantial. |\n| Angola           | 7,890                | 7,900                | No reserves data were available for other gemstones. |\n| Botswana         | 17,100               | 17,000               |                                            |\n| Brazil           | 158                  | 160                  |                                            |\n| Canada           | 16,200               | 15,000               |                                            |\n| Congo (Kinshasa) | 1,980                | 2,000                |                                            |\n| Guinea           | 103                  | 100                  |                                            |\n| Lesotho          | 728                  | 730                  |                                            |\n| Namibia          | 2,050                | 2,000                |                                            |\n| Russia           | 23,500               | 24,000               |                                            |\n| Sierra Leone     | 551                  | 550                  |                                            |\n| South Africa     | 3,860                | 3,800                |                                            |\n| Tanzania         | 319                  | 320                  |                                            |\n| Zimbabwe         | 446                  | 440                  |                                            |\n| Other countries  | 302                  | 300                  |                                            |\n| World total (rounded) | 75,200           | 74,000               |                                            |",
+   "notes": "eEstimated. — Zero.\n6Data in thousands of carats of gem-quality natural diamond.\n7See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 403
+ },
+ "seconds": 3.6
+}

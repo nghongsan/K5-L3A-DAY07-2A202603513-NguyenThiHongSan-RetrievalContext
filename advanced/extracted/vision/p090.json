@@ -1,0 +1,20 @@
+{
+ "page": 90,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019   | 2020   | 2021   | 2022   | 2023e  |\n|-----------------------------------|--------|--------|--------|--------|--------|\n| Production:                       |        |        |        |        |        |\n| Crude                            | 21,600 | 21,300 | 20,800 | 22,300 | 22,000 |\n| Synthetic2                       | 14,400 | 13,000 | 14,000 | 14,500 | 15,000 |\n| Calcined3                       | 17,900 | 17,900 | 18,600 | 18,700 | 18,000 |\n| Wallboard products sold, million square feet1 | 25,900 | 26,200 | 27,300 | 28,200 | 27,000 |\n| Imports, crude, including anhydrite | 6,140  | 6,030  | 6,520  | 6,870  | 8,100  |\n| Exports, crude, not ground or calcined | 37     | 32     | 42     | 39     | 45     |\n| Consumption, apparent4           | 42,100 | 40,300 | 41,300 | 43,700 | 45,000 |\n| Price, average, dollars per metric ton: |        |        |        |        |        |\n| Crude, free on board (f.o.b.) mine | 8.6    | 8.6    | 11     | 11     | 12     |\n| Calcined, f.o.b. plant           | 34     | 35     | 42     | 50     | 52     |\n| Employment, mine and calcining plant, numbere | 4,500  | 4,500  | 4,500  | 4,500  | 4,500  |\n| Net import reliance5 as a percentage of apparent consumption | 14     | 15     | 16     | 16     | 18     |",
+   "notes": "1 Square feet of 1/2-inch-thick wallboard.\n2 Synthetic gypsum.\n3 Calcined gypsum.\n4 Production + imports - exports + adjustments for Government and industry stock changes.\n5 Net import reliance = imports - exports as a percentage of apparent consumption.\ne Estimated."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 556
+ },
+ "seconds": 5.1
+}

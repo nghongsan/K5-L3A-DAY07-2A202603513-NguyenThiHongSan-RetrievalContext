@@ -1,0 +1,20 @@
+{
+ "page": 93,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Production and Reserves",
+   "location": "middle right",
+   "content": "| Country                              | Production 2022 | Production 2023e | Reserves8 |\n|------------------------------------|-----------------|------------------|-----------|\n| United States (extracted from natural gas) | 65              | 60               | 8,500     |\n| United States (from Cliffside Field)         | 12              | 19               | 52        |\n| Algeria                            | e8              | 10               | e1,800    |\n| Australia                         | e3              | 1                | NA        |\n| Canada                            | 3               | 4                | NA        |\n| Poland                            | 3               | 3                | 24        |\n| Qatar                            | e59             | 66               | eLarge    |\n| Russia                           | e5              | 8                | e1,700    |\n| South Africa                     | NA              | (9)              | NA        |\n| World total (rounded)             | e158            | 170              | NA        |",
+   "notes": "eEstimated. E Net exporter. NA Not available.\n8See Appendix C for resource and reserve definitions and information concerning data sources.\n9Less than ½ unit."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 285
+ },
+ "seconds": 2.8
+}

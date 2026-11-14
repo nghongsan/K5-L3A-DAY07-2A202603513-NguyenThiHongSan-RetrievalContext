@@ -1,0 +1,38 @@
+{
+ "config": "A0_dense",
+ "split": "dev",
+ "model": "openrouter/openai/gpt-4o-mini",
+ "settings": {
+  "name": "A0_dense",
+  "method": "dense",
+  "top_k": 3,
+  "call_budget": 1500,
+  "max_searches": 2,
+  "neighbors_tool": false,
+  "max_turns": 7,
+  "notes": "Baseline: dense Day 6 tool, top-3/1500 chars per call, <=2 searches.",
+  "extra": {}
+ },
+ "n": 28,
+ "errors": 0,
+ "tool_use": "28/28",
+ "searches_distribution": {
+  "1": 19,
+  "2": 9
+ },
+ "status": {
+  "abstain": 15,
+  "answered": 13
+ },
+ "context_evidence_rate": "25/25",
+ "answered_with_gold_citation": "13/25",
+ "false_abstain_auto": "12/25",
+ "abstain_on_unanswerable_auto": "3/3",
+ "avg_context_chars": 1420,
+ "tokens_in": 45980,
+ "tokens_out": 3850,
+ "cost_usd_total": 0.00921,
+ "price_known": true,
+ "median_seconds": 3.205,
+ "total_seconds": 118.4
+}

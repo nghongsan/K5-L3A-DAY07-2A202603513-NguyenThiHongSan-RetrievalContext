@@ -1,0 +1,61 @@
+[
+ {
+  "query_id": "n01",
+  "citation_support": [
+   true
+  ],
+  "note": "First submission had no inline [id]; guard retry fixed it (1 guard rejection).",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "n02",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "n03",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "n04",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "n05",
+  "citation_support": [
+   true
+  ],
+  "note": "Correct, alternative evidence p0151:c04 (see A0 note).",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "n06",
+  "citation_support": [],
+  "note": "False abstention. The model passed chapter=4 to search_textbook for a chapter-6 question, so both searches were filtered to the wrong chapter and never saw p0159:c00. Root cause: model-inferred filter. Unfiltered dense search of the original question ranks the gold chunk #1 (R1_dense).",
+  "answer_grade": 0
+ },
+ {
+  "query_id": "u04",
+  "citation_support": [],
+  "note": "",
+  "abstention_correct": true
+ },
+ {
+  "query_id": "u05",
+  "citation_support": [],
+  "note": "",
+  "abstention_correct": true
+ }
+]

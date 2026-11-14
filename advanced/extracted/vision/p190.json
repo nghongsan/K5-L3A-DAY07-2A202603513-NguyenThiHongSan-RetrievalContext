@@ -1,0 +1,20 @@
+{
+ "page": 190,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle of page",
+   "content": "|                              | 2019      | 2020      | 2021      | 2022      | 2023e     |\n|------------------------------|-----------|-----------|-----------|-----------|-----------|\n| Titanium sponge metal:        |           |           |           |           |           |\n| Production                   | W         | W         | W         | W         | W         |\n| Imports for consumptione     | 30,000    | 19,200    | 16,000    | 30,900    | 42,000    |\n| Exports                     | 869       | 711       | 117       | 105       | 200       |\n| Consumption, apparent2       | W         | W         | 315,9003  | 30,8003   | 42,0003   |\n| Consumption, reported        | W         | W         | W         | W         | W         |\n| Price, dollars per kilogram4 | 10.70     | 10.60     | 11.20     | 11.10     | 12        |\n| Stocks, industry, yearende   | W         | W         | W         | W         | W         |\n| Employment, numbere          | 150       | 150       | 20        | 20        | 20        |\n| Net import reliance5 as a percentage of apparent consumption | >50       | >50       | >95       | >95       | >95       |\n| TiO2 pigment:                |           |           |           |           |           |\n| Production                   | 1,000,000 | 1,000,000 | 1,150,000 | 1,150,000 | 920,000   |\n| Imports for consumption      | 226,000   | 262,000   | 251,000   | 265,000   | 240,000   |\n| Exports                     | 401,000   | 386,000   | 494,000   | 378,000   | 280,000   |\n| Consumption, apparent2       | 825,000   | 880,000   | 906,000   | 1,040,000 | 880,000   |\n| Price, dollars per metric ton4 | 2,750     | 2,710     | 2,920     | 3,450     | 3,300     |\n| Employment, numbere          | 3,050     | 3,100     | 3,200     | 3,200     | 3,200     |\n| Net import reliance5 as a percentage of apparent consumption | E         | E         | E         | E         | E         |",
+   "notes": "Footnotes: e = estimated; 2 = apparent consumption = production + imports - exports ± stock changes; 3 = data withheld to avoid disclosing company proprietary data; 4 = price is average unit value; 5 = net import reliance = imports - exports as a percentage of apparent consumption; W = withheld to avoid disclosing proprietary data; E = net import reliance not applicable or not estimated."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 714
+ },
+ "seconds": 7.6
+}

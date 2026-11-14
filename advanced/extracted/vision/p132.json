@@ -1,0 +1,27 @@
+{
+ "page": 132,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                              | 2019  | 2020  | 2021  | 2022  | 2023e |\n|------------------------------|-------|-------|-------|-------|-------|\n| Production1                  | 13,500| 14,000| 12,700| 13,800| 14,000|\n| Imports for consumption       | 2,020 | 1,990 | 2,080 | 1,930 | 1,800 |\n| Exports                      | 338   | 369   | 231   | 720   | 1,000 |\n| Consumption, apparent2       | 15,200| 15,700| 14,600| 14,800| 15,000|\n| Stocks, producer, yearend    | 420   | 310   | 270   | 440   | 420   |\n| Price, average, free on board Gulf Coast,3 dollars per short ton | 232   | 213   | 578   | 1,070 | 480   |\n| Employment, plant, numbere   | 1,600 | 1,600 | 1,600 | 1,600 | 1,600 |\n| Net import reliance4 as a percentage of apparent consumption | 11    | 11    | 13    | 7     | 6     |",
+   "notes": "1,2,3,4 footnotes referenced but not printed on this page."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower left",
+   "content": "| Item               | Number       | Normal Trade Relations 12-31-23 |\n|--------------------|--------------|--------------------------------|\n| Ammonia, anhydrous | 2814.10.0000 | Free.                          |\n| Urea               | 3102.10.0000 | Free.                          |\n| Ammonium sulfate   | 3102.21.0000 | Free.                          |\n| Ammonium nitrate   | 3102.30.0000 | Free.                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 480
+ },
+ "seconds": 4.3
+}

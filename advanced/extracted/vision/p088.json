@@ -1,0 +1,27 @@
+{
+ "page": 88,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019  | 2020  | 2021  | 2022  | 2023e |\n|-----------------------------------|-------|-------|-------|-------|-------|\n| Production, mine                  | —     | —     | —     | —     | —     |\n| Imports for consumption           | 50,100| 36,000| 53,000| 89,200| 84,000|\n| Exports                          | 5,880 | 5,920 | 8,660 | 9,500 | 8,400 |\n| Consumption, apparent¹            | 44,200| 30,000| 44,300| 79,700| 76,000|\n| Price, average unit value of imports, dollars per metric ton at foreign ports: |       |       |       |       |       |\n| Flake                            | 1,340 | 1,340 | 1,330 | 1,200 | 1,200 |\n| Lump and chip (Sri Lanka)        | 2,380 | 2,940 | 2,010 | 2,590 | 2,500 |\n| Amorphous                        | 511   | 567   | 629   | 563   | 565   |\n| Net import reliance¹ as a percentage of apparent consumption | 100   | 100   | 100   | 100   | 100   |",
+   "notes": "¹ Apparent consumption = Production + Imports - Exports."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "middle right",
+   "content": "| Item                                | Number       | Normal Trade Relations 12–31–23 |\n|------------------------------------|--------------|--------------------------------|\n| Crystalline flake (not including flake dust) | 2504.10.1000 | Free.                          |\n| Powder                             | 2504.10.5000 | Free.                          |\n| Other                             | 2504.90.0000 | Free.                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 468
+ },
+ "seconds": 4.2
+}

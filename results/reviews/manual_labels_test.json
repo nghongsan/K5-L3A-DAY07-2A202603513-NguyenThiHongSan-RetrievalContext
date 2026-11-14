@@ -1,0 +1,21 @@
+{
+ "_how": "Same procedure as dev: every answer read next to the expected answer and the FULL text of every cited chunk. Test gold was NOT edited after the run.",
+ "A0_dense": {
+  "grades": {},
+  "unsupported_citations": {},
+  "context_grades": {"n01": 2, "n02": 2, "n03": 2, "n04": 2, "n05": 2, "n06": 2},
+  "notes": {
+   "n02": "Core answer supported by p0104:c03; extra claim 'not negates' is not stated in cited chunks (minor); p0121:c00/p0108:c02 support the operator list.",
+   "n05": "Correct. Cited p0151:c04 states 'control flow moves back to where the function was called' — valid ALTERNATIVE evidence missing from my gold (gold only lists p.153). Auto Context Evidence counts it as a miss; manual context grade 2.",
+   "u04": "Correct abstention.", "u05": "Correct abstention."}
+ },
+ "A4_dense_fix": {
+  "grades": {"n06": 0},
+  "unsupported_citations": {},
+  "context_grades": {"n01": 2, "n02": 2, "n03": 2, "n04": 2, "n05": 2, "n06": 0},
+  "notes": {
+   "n01": "First submission had no inline [id]; guard retry fixed it (1 guard rejection).",
+   "n05": "Correct, alternative evidence p0151:c04 (see A0 note).",
+   "n06": "False abstention. The model passed chapter=4 to search_textbook for a chapter-6 question, so both searches were filtered to the wrong chapter and never saw p0159:c00. Root cause: model-inferred filter. Unfiltered dense search of the original question ranks the gold chunk #1 (R1_dense)."}
+ }
+}

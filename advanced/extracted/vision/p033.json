@@ -1,0 +1,19 @@
+{
+ "page": 33,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "chart",
+   "title": "Figure 14.—Relation Between Byproduct Elements and Host Metals",
+   "location": "center of page",
+   "content": "Chart kind: Radial circular chart\nAxes: Radial distance from center representing percentage of primary production originating with host metal (0% to 100%)\nLegend/Explanation: Principal host metals in inner circle; byproduct elements in outer circle at distances proportional to percentage of production originating with host metal; companion elements in white region of outer circle with undetermined percentage.\nInner circle (host metals): Au, Al, Ti, Fe, Ni, Cu, Zn, Pb, Sn, Pt\nOuter circle byproduct elements arranged radially around each host metal with approximate percentage distances:\n- Au: Ag, Cu, Cr, Ni, Co\n- Al: Ga, Zr, Hf\n- Ti: V, Y, La, Ce, Pr, Nd, Sm, Eu, Gd, Tb, Ho, Dy, Er, Tm, Yb, Lu\n- Fe: Th, Fe\n- Ni: Mn, Tb, Dy, Gd, Sm, Y\n- Cu: Co, Pd, Te, Se\n- Zn: Cd, In, Ge, Ag\n- Pb: Bi, Sb, As, Hg\n- Sn: Rh, Ru, Os, Ir\n- Pt: Pd\nWhite region companion elements (undetermined %): Ba, As, Sb, U, Hg, Cu, Zn, Ag, Cu, As, Er, Ho, Dy, Tb, Gd, Eu, Sm, Nd, Pr, Ce, La, Y, Tl, Se, Ba, Pb, Sn, Au, U, Fe, Hg, Tl, Bi, In, Sn, Zn, Pb, As, Ba\nNotes: Full element names and abbreviations listed below chart. Source: Nassar, N.T., Graedel, T.E., and Harper, E.M., 2015, By-product metals are technologically essential but have problematic supply: Science Advances, v. 1, no. 3, article E1400180. (Accessed January 19, 2023, at https://doi.org/10.1126/sciadv.1400180.)"
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 470
+ },
+ "seconds": 5.5
+}

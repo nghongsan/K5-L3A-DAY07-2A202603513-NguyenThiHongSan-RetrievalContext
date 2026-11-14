@@ -1,0 +1,20 @@
+{
+ "page": 117,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Magnesite Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country         | Mine productione 2022 | Mine productione 2023 | Reserves7  |\n|-----------------|-----------------------|-----------------------|------------|\n| United States   | W                     | W                     | 35,000     |\n| Australia       | 860                   | 860                   | 8280,000   |\n| Austria         | 810                   | 810                   | 49,000     |\n| Brazil          | 1,700                 | 1,700                 | 200,000    |\n| Canada          | 150                   | 150                   | NA         |\n| China           | 13,000                | 13,000                | 580,000    |\n| Greece          | 380                   | 380                   | 280,000    |\n| India           | 100                   | 100                   | 66,000     |\n| Iran            | 270                   | 270                   | 10,000     |\n| Russia          | 960                   | 960                   | 2,300,000  |\n| Saudi Arabia    | 340                   | 340                   | 2,800      |\n| Slovakia        | 9512                  | 510                   | 1,200,000  |\n| Spain           | 670                   | 670                   | 35,000     |\n| Turkey          | 91,820                | 1,800                 | 110,000    |\n| Other countries | 323                   | 320                   | 2,500,000  |\n| World total (rounded) | 1021,900           | 1022,000               | 7,700,000  |",
+   "notes": "e Estimated. NA Not available. W Withheld to avoid disclosing company proprietary data.\n6 Gross weight of magnesite (magnesium carbonate) in thousand tons.\n7 See Appendix C for resource and reserve definitions and information concerning data sources.\n8 For Australia, Joint Ore Reserves Committee-compliant or equivalent reserves were 37 million tons.\n9 Reported.\n10 Excludes U.S. production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 485
+ },
+ "seconds": 4.4
+}

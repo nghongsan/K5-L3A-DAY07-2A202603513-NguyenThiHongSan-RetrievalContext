@@ -1,0 +1,27 @@
+{
+ "page": 20,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "map",
+   "title": "Value of Construction Sand and Gravel Produced in 2023, by State",
+   "location": "top right",
+   "content": "Map of the United States with states colored by value of construction sand and gravel produced in 2023. Color legend: <100 million dollars (light cream), 100 to 200 million dollars (light orange), >200 to 700 million dollars (orange), >700 million dollars (red). Black dots indicate sand and gravel operations. Insets show Alaska and Hawaii with similar dot markings and color coding.",
+   "notes": "EXPLANATION\nValue, in million dollars\n• Sand and gravel operation"
+  },
+  {
+   "type": "chart",
+   "title": "Value of Construction Sand and Gravel Produced in 2023, by State (Bar Chart)",
+   "location": "bottom half",
+   "content": "Vertical bar chart with y-axis labeled 'Value, in million dollars' ranging from 0 to 1,500. Bars represent each state, colored according to the same legend as the map:\n\n- California: ~1,450\n- Texas: ~1,200\n- Arizona: ~700\n- Colorado: ~500\n- Washington: ~450\n- Michigan: ~400\n- New York: ~400\n- Utah: ~350\n- Ohio: ~350\n- Florida: ~350\n- Minnesota: ~300\n- Nevada: ~250\n- Wisconsin: ~250\n- Indiana: ~200\n- Idaho: ~200\n- Oregon: ~200\n- Alabama: ~180\n- Tennessee: ~180\n- Montana: ~150\n- Louisiana: ~150\n- Illinois: ~140\n- Wyoming: ~130\n- Nebraska: ~120\n- Oklahoma: ~120\n- Iowa: ~110\n- New Jersey: ~110\n- Massachusetts: ~100\n- Mississippi: ~100\n- New Mexico: ~90\n- Kansas: ~90\n- Pennsylvania: ~80\n- New Hampshire: ~80\n- Virginia: ~70\n- South Carolina: ~70\n- Maryland: ~60\n- Kentucky: ~60\n- North Carolina: ~60\n- Arkansas: ~50\n- South Dakota: ~50\n- Georgia: ~50\n- Connecticut: ~40\n- Rhode Island: ~40\n- North Dakota: ~30\n- Alaska: ~30\n- Maine: ~20\n- Missouri: ~20\n- Vermont: ~10\n- Delaware: ~10\n- Hawaii: ~5\n- West Virginia: ~5",
+   "notes": "Bar colors correspond to value ranges:\n<100 million dollars (light cream), 100 to 200 million dollars (light orange), >200 to 700 million dollars (orange), >700 million dollars (red)"
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 566
+ },
+ "seconds": 4.9
+}

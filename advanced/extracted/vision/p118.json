@@ -1,0 +1,27 @@
+{
+ "page": 118,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|-------|-------|-------|-------|-------|\n| Production:             |       |       |       |       |       |\n| Primary                 | W     | W     | W     | W     | W     |\n| Secondary (new and old scrap) | 102   | 95    | 103   | 107   | 100   |\n| Imports for consumption | 59    | 61    | 54    | 89    | 95    |\n| Exports                 | 10    | 15    | 10    | 9     | 4     |\n| Consumption:            |       |       |       |       |       |\n| Reported, primary       | 57    | 54    | 51    | 50    | 55    |\n| Apparent2               | W     | W     | W     | W     | W     |\n| Price, annual average:3 |       |       |       |       |       |\n| U.S. spot Western, dollars per pound | 2.47  | 2.48  | 3.73  | 7.59  | 5.00  |\n| European free market, dollars per metric ton | 2,426 | 2,149 | 5,011 | 5,206 | 3,200 |\n| Stocks, producer, yearend | W     | W     | W     | W     | W     |\n| Employment, numbere     | 400   | 400   | 400   | 400   | 400   |\n| Net import reliance4 as a percentage of apparent consumption | >25   | >25   | >25   | >50   | >50   |",
+   "notes": "W = withheld to avoid disclosing company proprietary data; e = estimated; footnotes 2, 3, 4 referenced but not fully transcribed."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item           | Number       | Normal Trade Relations 12–31–23               |\n|----------------|--------------|-----------------------------------------------|\n| Unwrought metal| 8104.11.0000 | 8% ad valorem.                                 |\n| Unwrought alloys| 8104.19.0000 | 6.5% ad valorem.                               |\n| Waste and scrap| 8104.20.0000 | Free.                                         |\n| Powders and granules| 8104.30.0000 | 4.4% ad valorem.                              |\n| Wrought metal  | 8104.90.0000 | 14.8¢/kg on magnesium content + 3.5% ad valorem.|",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 649
+ },
+ "seconds": 5.1
+}

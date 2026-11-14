@@ -1,0 +1,27 @@
+{
+ "page": 202,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|-------|-------|-------|-------|-------|\n| Production, mine                  | NA    | NA    | NA    | NA    | NA    |\n| Imports for consumption, yttrium, alloys, compounds, and metale, 2 | 360   | 650   | 670   | 1,200 | 250   |\n| Exports, compoundse, 3            | 6     | 1     | 9     | 4     | 23    |\n| Consumption, apparente, 4         | 400   | 600   | 700   | 1,000 | 200   |\n| Price, average, dollars per kilogram:5 |       |       |       |       |       |\n| Y2O3, minimum 99.999% purity      | 3     | 3     | 6     | 12    | 8     |\n| Yttrium metal, minimum 99.9% purity | 34    | 34    | 39    | 41    | 33    |\n| Net import reliance6, 7 as a percentage of apparent consumption | 100   | 100   | 100   | 100   | 100   |",
+   "notes": "e = estimated; NA = not available; superscript numbers refer to footnotes."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower right",
+   "content": "| Item                                                                 | Number       | Normal Trade Relations 12–31–23 |\n|----------------------------------------------------------------------|--------------|---------------------------------|\n| Rare-earth metals, unspecified:                                       |              |                                 |\n| Not alloyed                                                          | 2805.30.0050 | 5% ad valorem.                   |\n| Alloyed                                                             | 2805.30.0090 | 5% ad valorem.                   |\n| Mixtures of rare-earth oxides containing yttrium or scandium as the predominant metal | 2846.90.2015 | Free.                           |\n| Mixtures of rare-earth chlorides containing yttrium or scandium as the predominant metal | 2846.90.2082 | Free.                           |\n| Yttrium-bearing materials and compounds containing by weight >19% to <85% Y2O3 | 2846.90.4000 | Free.                           |\n| Other rare-earth compounds, including yttrium and other compounds    | 2846.90.8090 | 3.7% ad valorem.                 |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 595
+ },
+ "seconds": 5.7
+}

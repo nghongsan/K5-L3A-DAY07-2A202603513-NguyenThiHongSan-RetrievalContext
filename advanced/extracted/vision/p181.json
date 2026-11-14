@@ -1,0 +1,20 @@
+{
+ "page": 181,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country           | Mine production 2022 | Mine production 2023e | Reserves9   |\n|-------------------|----------------------|-----------------------|-------------|\n| United States     | —                    | —                     | —           |\n| Australia         | 46                   | 43                    | 10110,000   |\n| Brazil            | e370                 | 360                   | 40,000      |\n| Burundi           | e59                  | 36                    | NA          |\n| China             | e78                  | 79                    | 240,000     |\n| Congo (Kinshasa)  | e890                 | 980                   | NA          |\n| Nigeria           | e110                 | 110                   | NA          |\n| Russia            | e31                  | 20                    | NA          |\n| Rwanda            | e347                 | 520                   | NA          |\n| Other             | e120                 | 260                   | NA          |\n| World total (rounded) | 1,990             | 2,400                 | NA          |",
+   "notes": "eEstimated, NA Not available. — Zero.\n9See Appendix C for resource and reserve definitions and information concerning data sources.\n10For Australia, Joint Ore Reserves Committee-compliant or equivalent reserves were 28,000 tons."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 309
+ },
+ "seconds": 4.0
+}

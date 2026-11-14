@@ -1,0 +1,20 @@
+{
+ "page": 142,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|------|------|------|------|-------|\n| Production, marketable¹            | 510  | 460  | 480  | 430  | 400   |\n| Sales by producers, marketable¹   | 480  | 500  | 490  | 400  | 470   |\n| Imports for consumption            | 5,150| 5,370| 6,480| 4,940| 5,000 |\n| Exports                          | 145  | 147  | 112  | 267  | 160   |\n| Consumption, apparent¹, ²          | 5,500| 5,700| 6,900| 5,100| 5,300 |\n| Price, average, f.o.b. mine, dollars per metric ton of K2O equivalent: |      |      |      |      |       |\n|   All products³                | 820  | 850  | 1,120| 1,790| 1,210 |\n|   MOP                         | 480  | 450  | 650  | 980  | 640   |\n| Employment, mine and mill, number  | 900  | 900  | 900  | 900  | 900   |\n| Net import reliance⁴ as a percentage of apparent consumption | 91   | 92   | 93   | 92   | 91    |",
+   "notes": "¹ Marketable production is production sold or used by producers, excluding consumption of company material.\n² Apparent consumption is production + imports - exports.\n³ Average price for all products includes MOP and SOP.\n⁴ Net import reliance = (Imports - Exports) / Apparent Consumption x 100."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 450
+ },
+ "seconds": 3.6
+}

@@ -1,0 +1,20 @@
+{
+ "page": 94,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|-------|-------|-------|-------|-------|\n| Production, refinery              | —     | —     | —     | —     | —     |\n| Imports for consumption           | 95    | 115   | 158   | 202   | 300   |\n| Exports                          | NA    | NA    | NA    | NA    | NA    |\n| Consumption, estimated1          | 95    | 115   | 158   | 202   | 300   |\n| Price, annual average, dollars per kilogram: |       |       |       |       |       |\n| New York dealer2                 | 390   | 395   | NA    | NA    | NA    |\n| U.S. warehouse, free on board3  | 182   | 161   | 223   | 250   | 240   |\n| Rotterdam, duties unpaid4        | 177   | 158   | 217   | 252   | 240   |\n| Net import reliance5 as a percentage of estimated consumption | 100   | 100   | 100   | 100   | 100   |",
+   "notes": "1 Estimated\n2 Argus Media Group, Argus Non-Ferrous Markets\n3 Free on board U.S. warehouse\n4 Rotterdam, duties unpaid\n5 Net import reliance = imports for consumption minus exports, plus adjustments for Government and industry stock changes, as a percentage of estimated consumption."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 367
+ },
+ "seconds": 3.9
+}

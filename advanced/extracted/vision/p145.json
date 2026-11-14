@@ -1,0 +1,20 @@
+{
+ "page": 145,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "middle of page",
+   "content": "| Country       | Mine productione |       | Reserves4                              |\n|---------------|------------------|-------|--------------------------------------|\n|               | 2022             | 2023  |                                      |\n| United States1| 5,295            | 310   | Large in the United States.           |\n| Algeria6      | 900              | 900   | Quantitative estimates of reserves   |\n| Cameroon6     | 280              | 280   | for most countries were not available.|\n| Chile6        | 720              | 720   |                                      |\n| Ecuador6      | 800              | 800   |                                      |\n| Ethiopia      | 510              | 510   |                                      |\n| France6       | 280              | 200   |                                      |\n| Greece6       | 1,010            | 1,000 |                                      |\n| Guadeloupe    | 200              | 200   |                                      |\n| Guatemala     | 570              | 570   |                                      |\n| Indonesia     | 200              | 200   |                                      |\n| Saudi Arabia6 | 980              | 980   |                                      |\n| Spain         | 240              | 240   |                                      |\n| Syria6        | 200              | 200   |                                      |\n| Tanzania      | 220              | 230   |                                      |\n| Turkey        | 8,700            | 8,700 |                                      |\n| Uganda        | 1,300            | 1,500 |                                      |\n| Other countries6| 750            | 700   |                                      |\n| World total (rounded) | 18,200     | 18,000|                                      |",
+   "notes": "e Estimated.\n1 Quantity sold and used by producers.\n4 See Appendix C for resource and reserve definitions and information concerning data sources.\n5 Reported.\n6 Includes pozzolan and (or) volcanic tuff."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 451
+ },
+ "seconds": 4.4
+}

@@ -1,0 +1,20 @@
+{
+ "page": 144,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|------|------|------|------|-------|\n| Production, mine1                 | 565  | 578  | 504  | 295  | 310   |\n| Imports for consumption           | 136  | 90   | 87   | 102  | 81    |\n| Exports                          | 11   | 8    | 11   | 14   | 11    |\n| Consumption, apparent2            | 690  | 660  | 580  | 383  | 380   |\n| Price, average unit value, f.o.b. mine or mill, dollars per metric ton | 28   | 31   | 46   | 65   | 68    |\n| Employment, mine and mill, number | 140  | 140  | 140  | 140  | 140   |\n| Net import reliance3 as a percentage of apparent consumption | 18   | 12   | 13   | 23   | 18    |",
+   "notes": "1 Mine production includes pumice and pumicite.\n2 Apparent consumption is production plus imports minus exports.\n3 Net import reliance = (Imports - Exports) / Apparent Consumption x 100.\n2023e = estimated."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 331
+ },
+ "seconds": 3.7
+}

@@ -1,0 +1,32 @@
+{
+ "page": 194,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                                   | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------|-------|-------|-------|-------|-------|\n| Production:                       |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Mine       | —     | —     | —     | —     | —     |\n| &nbsp;&nbsp;&nbsp;&nbsp;Secondary  | W     | W     | W     | W     | W     |\n| Imports for consumption:          |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Ores and concentrates | 2,760 | 2,020 | 1,600 | 2,130 | 1,500 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other forms¹ | 11,100| 8,660 | 10,500| 12,300| 10,000|\n| Exports:                         |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Ores and concentrates | 583   | 480   | 441   | 614   | 550   |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other forms² | 2,780 | 2,470 | 2,970 | 3,680 | 3,300 |\n| Shipments from Government stockpile:³ |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Concentrate | 663   | 728   | 1,030 | 689   | NA    |\n| &nbsp;&nbsp;&nbsp;&nbsp;Other forms | —     | 34    | 93    | —     | NA    |\n| Consumption:                     |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Reported, concentrate | W     | W     | W     | W     | W     |\n| &nbsp;&nbsp;&nbsp;&nbsp;Apparent,⁴ all forms | W     | W     | W     | W     | W     |\n| Price,⁵ concentrate, average in-warehouse Rotterdam, dollars per dry metric ton unit of tungsten trioxide⁶ | 198   | 172   | 225   | 275   | 260   |\n| Stocks, industry, concentrate and other forms, yearend | W     | W     | W     | W     | W     |\n| Net import reliance⁷ as a percentage of apparent consumption | >50   | >50   | >50   | >50   | >50   |",
+   "notes": "¹ Includes ammonium paratungstate, tungsten oxide, and tungsten metal powder.\n² Includes tungsten metal powder, tungsten carbide powder, and tungsten chemicals.\n³ Government stockpile data are for fiscal years ending September 30.\n⁴ Apparent consumption is defined as production plus imports minus exports plus or minus stock changes.\n⁵ Price is for concentrate containing 65% WO3.\n⁶ WO3 = tungsten trioxide.\n⁷ Net import reliance is imports minus exports as a percentage of apparent consumption.\nW = Withheld to avoid disclosing company proprietary data; NA = Not available."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "middle right",
+   "content": "| Item                  | Number       | Normal Trade Relations 12–31–23               |\n|-----------------------|--------------|-----------------------------------------------|\n| Ores                  | 2611.00.3000 | Free.                                         |\n| Concentrates           | 2611.00.6000 | 37.5¢/kg on tungsten content.                  |\n| Tungsten oxides       | 2825.90.3000 | 5.5% ad valorem.                               |\n| Ammonium tungstates    | 2841.80.0010 | 5.5% ad valorem.                               |\n| Tungsten carbides     | 2849.90.3000 | 5.5% ad valorem.                               |\n| Ferrotungsten         | 7202.80.0000 | 5.6% ad valorem.                               |\n| Tungsten powders      | 8101.10.0000 | 7% ad valorem.                                 |\n| Tungsten waste and scrap | 8101.97.0000 | 2.8% ad valorem.                               |"
+  },
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "lower half",
+   "content": "| Material           | FY 2023 Potential acquisitions | FY 2023 Potential disposals | FY 2024 Potential acquisitions | FY 2024 Potential disposals |\n|--------------------|-------------------------------|----------------------------|-------------------------------|----------------------------|\n| Ores and concentrates | —                             | 1,130                      | —                             | 907                        |\n| Tungsten           | —                             | —                          | 266                           | —                          |"
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 1106
+ },
+ "seconds": 10.0
+}

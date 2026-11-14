@@ -1,0 +1,20 @@
+{
+ "page": 53,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Production—All forms and Reserves of Boron",
+   "location": "lower half",
+   "content": "| Country                         | 2022 Production | 2023 Production | Reserves  |\n|--------------------------------|-----------------|-----------------|-----------|\n| United States                  | W               | W               | 48,000    |\n| Argentina, crude ore           | 130             | 130             | NA        |\n| Bolivia, ulexite               | 170             | 170             | NA        |\n| Chile, ulexite                | 360             | 360             | 35,000    |\n| China, boric oxide equivalent  | 200             | 200             | 20,000    |\n| Germany, compounds             | 60              | 60              | NA        |\n| Peru, crude borates           | 200             | 200             | 4,000     |\n| Russia, datolite ore           | 80              | 80              | 40,000    |\n| Turkey, refined borates        | 2,200           | 2,200           | 950,000   |\n| World total                   | XX              | XX              | XX        |",
+   "notes": "e Estimated. E Net exporter. NA Not available. W Withheld to avoid disclosing company proprietary data. XX Not applicable.\n3 See Appendix C for resource and reserve definitions and information concerning data sources.\n4 World totals cannot be calculated because production and reserves are not reported in a consistent manner by all countries."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 335
+ },
+ "seconds": 3.4
+}

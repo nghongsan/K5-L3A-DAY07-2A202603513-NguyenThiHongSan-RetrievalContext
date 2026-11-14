@@ -1,0 +1,20 @@
+{
+ "page": 134,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022e | 2023e |\n|-------------------------|-------|-------|-------|-------|-------|\n| Production              | 366   | 354   | 324   | e350  | 360   |\n| Sales by producers      | 420   | 388   | 386   | e510  | 510   |\n| Imports for consumption | 1,160 | 1,390 | 1,630 | 1,440 | 1,100 |\n| Exports                 | 46    | 46    | 37    | 43    | 46    |\n| Consumption, apparent1  | 1,400 | 1,690 | 1,970 | 1,750 | 1,400 |\n| Price, average unit value, f.o.b. mine, dollars per metric ton | 25.77 | 26.07 | 38.52 | 27.49 | 31.70 |\n| Stocks, producer, yearend | 280 | 288 | 235 | 235 | 240 |\n| Employment, mine and plant, numbere | 520 | 510 | 510 | 510 | 500 |\n| Net import reliance2 as a percentage of apparent consumption | 74 | 79 | 84 | 80 | 74 |",
+   "notes": "1 Apparent consumption = Production + Imports - Exports.\n2 Net import reliance = (Imports - Exports) / Apparent consumption × 100.\nSource: U.S. Geological Survey."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 374
+ },
+ "seconds": 3.9
+}

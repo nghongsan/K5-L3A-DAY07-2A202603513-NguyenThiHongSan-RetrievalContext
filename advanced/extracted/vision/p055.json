@@ -1,0 +1,20 @@
+{
+ "page": 55,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Production and Reserves",
+   "location": "middle right",
+   "content": "| Country       | Production⁾ 2022 (W) | Production⁾ 2023 (W) | Reserves⁹       |\n|---------------|--------------------------|--------------------------|----------------------|\n| United States | W                        | W                        | 11,000,000           |\n| Azerbaijan    | —                     | —                     | 300,000              |\n| China         | 73,000                   | 76,000                   | 130,000              |\n| India         | 3,500                    | 3,500                    | NA                   |\n| Israel⁺  | 178,000                  | 170,000                  | Large                |\n| Japan         | 20,000                   | 20,000                   | NA                   |\n| Jordan        | 115,000                  | 120,000                  | Large                |\n| Ukraine       | 10,800                   | 11,000                   | NA                   |\n| World total (rounded) | 11,400,000             | 11,400,000             | Large                |",
+   "notes": "⁾ Estimated. E Net exporter. NA Not available. W Withheld to avoid disclosing company proprietary data. — Zero.\n⁺ Reported.\n⁹ See Appendix C for resource and reserve definitions and information concerning data sources."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 325
+ },
+ "seconds": 3.0
+}

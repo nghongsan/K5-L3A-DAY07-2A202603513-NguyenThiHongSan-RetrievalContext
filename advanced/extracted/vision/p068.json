@@ -1,0 +1,20 @@
+{
+ "page": 68,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "| Category                                               | 2019  | 2020  | 2021  | 2022  | 2023e |\n|--------------------------------------------------------|-------|-------|-------|-------|-------|\n| Production:                                            |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Mine, recoverable              | 1,260 | 1,200 | 1,230 | 1,230 | 1,100 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Refinery:                      |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primary (from ore) | 985   | 872   | 922   | 912   | 850   |\n| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secondary (from scrap) | 44    | 43    | 49    | 40    | 40    |\n| Copper recovered from old (post-consumer) scrap1      | 166   | 161   | 157   | e150  | 150   |\n| Imports for consumption:                               |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Ore and concentrates           | 27    | 2     | 11    | 12    | 4     |\n| &nbsp;&nbsp;&nbsp;&nbsp;Refined                          | 663   | 676   | 919   | 732   | 890   |\n| Exports:                                               |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Ore and concentrates           | 356   | 383   | 344   | 353   | 350   |\n| &nbsp;&nbsp;&nbsp;&nbsp;Refined                          | 125   | 41    | 48    | 28    | 30    |\n| Consumption:                                           |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;Reported, refined copper       | 1,810 | 1,680 | 1,750 | 1,720 | 1,700 |\n| &nbsp;&nbsp;&nbsp;&nbsp;Apparent, primary refined copper and copper from old scrap2 | 1,820 | 1,660 | 1,950 | 1,800 | 1,800 |\n| Price, annual average, cents per pound:                |       |       |       |       |       |\n| &nbsp;&nbsp;&nbsp;&nbsp;U.S. producer, cathode (COMEX + premium) | 279.6 | 286.7 | 432.3 | 410.8 | 400   |\n| &nbsp;&nbsp;&nbsp;&nbsp;COMEX, high-grade, first position | 272.3 | 279.9 | 424.3 | 400.7 | 390   |\n| &nbsp;&nbsp;&nbsp;&nbsp;London Metal Exchange, grade A, cash | 272.4 | 279.8 | 422.5 | 399.8 | 390   |\n| Stocks, refined, held by U.S. producers, consumers, and metal exchanges, yearend | 110   | 118   | 117   | 83    | 100   |\n| Employment, mine and plant, number                      | 12,000| 11,000| 11,400| 12,000| 12,000|\n| Net import reliance3 as a percentage of apparent consumption | 37    | 38    | 45    | 41    | 46    |",
+   "notes": "1 Copper recovered from old (post-consumer) scrap.\n2 Apparent consumption includes primary refined copper and copper recovered from old scrap.\n3 Net import reliance as a percentage of apparent consumption.\ne = estimated."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 882
+ },
+ "seconds": 7.3
+}

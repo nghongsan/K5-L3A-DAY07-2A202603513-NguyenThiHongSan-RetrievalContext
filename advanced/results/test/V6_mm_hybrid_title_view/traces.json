@@ -1,0 +1,6321 @@
+[
+ {
+  "query_id": "AT-T1",
+  "group": "table",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What was the annual average U.S. price of battery-grade lithium carbonate in 2022 and in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p114-t4",
+    "page": 114
+   },
+   {
+    "rank": 2,
+    "id": "p114-v1",
+    "page": 114
+   },
+   {
+    "rank": 3,
+    "id": "p114-t5",
+    "page": 114
+   },
+   {
+    "rank": 4,
+    "id": "p114-t2",
+    "page": 114
+   },
+   {
+    "rank": 5,
+    "id": "p114-t3",
+    "page": 114
+   },
+   {
+    "rank": 6,
+    "id": "p115-t1",
+    "page": 115
+   }
+  ],
+  "status": "answered",
+  "answer": "The annual average U.S. price of battery-grade lithium carbonate was $68,100 per metric ton in 2022 and $46,000 per metric ton in 2023. These values represent nominal prices and the 2023 price was a decrease of 32% from that in 2022 [p114-v1, p114-t4, p114-t5].",
+  "citations": [
+   "p114-v1",
+   "p114-t4",
+   "p114-t5"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "battery-grade lithium carbonate price 2022 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p114-v1",
+      "page": 114,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03154
+     },
+     {
+      "rank": 4,
+      "id": "p114-t5",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03105
+     },
+     {
+      "rank": 5,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03101
+     },
+     {
+      "rank": 6,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03101
+     }
+    ],
+    "returned_ids": [
+     "p114-t4",
+     "p114-t3",
+     "p114-v1",
+     "p114-t5",
+     "p115-t1",
+     "p114-t2"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 114,
+    "ids": [
+     "p114-t1",
+     "p114-t2",
+     "p114-t3",
+     "p114-t4",
+     "p114-t5",
+     "p114-t6",
+     "p114-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p114-v1",
+     "p114-t4",
+     "p114-t5"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p114-t4",
+   "p114-t3",
+   "p114-v1",
+   "p114-t5",
+   "p115-t1",
+   "p114-t2",
+   "p114-t1",
+   "p114-t6"
+  ],
+  "cited_pages": [
+   114
+  ],
+  "usage": {
+   "in": 8325,
+   "out": 153,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.003575,
+  "seconds": 4.4,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-T2",
+  "group": "table",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "Which country has the largest lithium reserves according to the lithium world reserves table, and how large are they?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p115-t3",
+    "page": 115
+   },
+   {
+    "rank": 2,
+    "id": "p115-v1",
+    "page": 115
+   },
+   {
+    "rank": 3,
+    "id": "p114-t6",
+    "page": 114
+   },
+   {
+    "rank": 4,
+    "id": "p115-t2",
+    "page": 115
+   },
+   {
+    "rank": 5,
+    "id": "p115-t1",
+    "page": 115
+   },
+   {
+    "rank": 6,
+    "id": "p115-t6",
+    "page": 115
+   }
+  ],
+  "status": "answered",
+  "answer": "According to the lithium world reserves table on page 115, Chile has the largest lithium reserves, totaling 9,300,000 tons. This is followed by Australia with 6,200,000 tons and Argentina with 3,600,000 tons. The world total lithium reserves are about 28,000,000 tons [p115-v1, p115-t3].",
+  "citations": [
+   "p115-v1",
+   "p115-t3"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "lithium world reserves table",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p115-t3",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p114-t6",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03105
+     },
+     {
+      "rank": 3,
+      "id": "p115-v1",
+      "page": 115,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03101
+     },
+     {
+      "rank": 4,
+      "id": "p115-t6",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03048
+     },
+     {
+      "rank": 5,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02957
+     },
+     {
+      "rank": 6,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02804
+     }
+    ],
+    "returned_ids": [
+     "p115-t3",
+     "p114-t6",
+     "p115-v1",
+     "p115-t6",
+     "p115-t1",
+     "p114-t4"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 115,
+    "ids": [
+     "p115-t1",
+     "p115-t2",
+     "p115-t3",
+     "p115-t4",
+     "p115-t5",
+     "p115-t6",
+     "p115-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p115-v1",
+     "p115-t3"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p115-t3",
+   "p114-t6",
+   "p115-v1",
+   "p115-t6",
+   "p115-t1",
+   "p114-t4",
+   "p115-t2",
+   "p115-t4",
+   "p115-t5"
+  ],
+  "cited_pages": [
+   115
+  ],
+  "usage": {
+   "in": 7892,
+   "out": 143,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.003386,
+  "seconds": 4.5,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-T3",
+  "group": "table",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "According to Table 1, by how much did the value of U.S. industrial minerals mine production change from 2022 to 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p013-v1",
+    "page": 13
+   },
+   {
+    "rank": 2,
+    "id": "p010-t3",
+    "page": 10
+   },
+   {
+    "rank": 3,
+    "id": "p009-t1",
+    "page": 9
+   },
+   {
+    "rank": 4,
+    "id": "p030-t2",
+    "page": 30
+   },
+   {
+    "rank": 5,
+    "id": "p013-t1",
+    "page": 13
+   },
+   {
+    "rank": 6,
+    "id": "p010-t4",
+    "page": 10
+   }
+  ],
+  "status": "answered",
+  "answer": "According to Table 1, the value of U.S. industrial minerals mine production increased from $65.3 billion in 2022 to an estimated $69.9 billion in 2023. This is a change of $69.9 billion - $65.3 billion = $4.6 billion increase from 2022 to 2023 [p013-v1, p013-t1].",
+  "citations": [
+   "p013-v1",
+   "p013-t1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Table 1 U.S. industrial minerals mine production value 2022 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p013-v1",
+      "page": 13,
+      "kind": "visual",
+      "etype": "table",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p010-t3",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p009-t1",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 4,
+      "id": "p013-t1",
+      "page": 13,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0311
+     },
+     {
+      "rank": 5,
+      "id": "p010-t4",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     },
+     {
+      "rank": 6,
+      "id": "p016-t1",
+      "page": 16,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     }
+    ],
+    "returned_ids": [
+     "p013-v1",
+     "p010-t3",
+     "p009-t1",
+     "p013-t1",
+     "p010-t4",
+     "p016-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 13,
+    "ids": [
+     "p013-t1",
+     "p013-t2",
+     "p013-v1",
+     "p013-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p013-v1",
+     "p013-t1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p013-v1",
+   "p010-t3",
+   "p009-t1",
+   "p013-t1",
+   "p010-t4",
+   "p016-t1",
+   "p013-t2",
+   "p013-v2"
+  ],
+  "cited_pages": [
+   13
+  ],
+  "usage": {
+   "in": 8862,
+   "out": 159,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.003799,
+  "seconds": 4.7,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-T4",
+  "group": "table",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "According to Table 2, how did U.S. light vehicle sales in 2023 compare with 2019?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p013-v2",
+    "page": 13
+   },
+   {
+    "rank": 2,
+    "id": "p013-t2",
+    "page": 13
+   },
+   {
+    "rank": 3,
+    "id": "p114-t4",
+    "page": 114
+   },
+   {
+    "rank": 4,
+    "id": "p083-t2",
+    "page": 83
+   },
+   {
+    "rank": 5,
+    "id": "p134-v1",
+    "page": 134
+   },
+   {
+    "rank": 6,
+    "id": "p042-t3",
+    "page": 42
+   }
+  ],
+  "status": "answered",
+  "answer": "According to Table 2 on page 13, U.S. light vehicle sales in 2013 were 16,961 thousand units, while in 2023 they were estimated to be 15,500 thousand units. This shows that 2023 light vehicle sales were lower than in 2019 by 1,461 thousand units, indicating a decrease in sales compared to 2019 [p013-v2].",
+  "citations": [
+   "p013-v2"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Table 2 U.S. light vehicle sales 2023 2019",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p013-v2",
+      "page": 13,
+      "kind": "visual",
+      "etype": "table",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p013-t2",
+      "page": 13,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02715
+     },
+     {
+      "rank": 4,
+      "id": "p168-v1",
+      "page": 168,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02712
+     },
+     {
+      "rank": 5,
+      "id": "p042-v1",
+      "page": 42,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02612
+     },
+     {
+      "rank": 6,
+      "id": "p134-v1",
+      "page": 134,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02604
+     }
+    ],
+    "returned_ids": [
+     "p013-v2",
+     "p013-t2",
+     "p114-t4",
+     "p168-v1",
+     "p042-v1",
+     "p134-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 13,
+    "ids": [
+     "p013-t1",
+     "p013-t2",
+     "p013-v1",
+     "p013-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p013-v2"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p013-v2"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p013-v2"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p013-v2",
+   "p013-t2",
+   "p114-t4",
+   "p168-v1",
+   "p042-v1",
+   "p134-v1",
+   "p013-t1",
+   "p013-v1"
+  ],
+  "cited_pages": [
+   13
+  ],
+  "usage": {
+   "in": 16466,
+   "out": 251,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.006988,
+  "seconds": 6.3,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-T5",
+  "group": "table",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What share of world primary gallium production in 2023 came from China?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p079-t1",
+    "page": 79
+   },
+   {
+    "rank": 2,
+    "id": "p079-t2",
+    "page": 79
+   },
+   {
+    "rank": 3,
+    "id": "p079-v1",
+    "page": 79
+   },
+   {
+    "rank": 4,
+    "id": "p078-t5",
+    "page": 78
+   },
+   {
+    "rank": 5,
+    "id": "p079-t3",
+    "page": 79
+   },
+   {
+    "rank": 6,
+    "id": "p078-t1",
+    "page": 78
+   }
+  ],
+  "status": "answered",
+  "answer": "In 2023, China accounted for 98% of worldwide primary low-purity gallium production, with a primary production of 600,000 kilograms out of a world total of 610,000 kilograms. This share is directly stated in the report and confirmed by the production figures in the table on page 79 [p079-t1][p079-v1].",
+  "citations": [
+   "p079-t1",
+   "p079-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "gallium production China 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p079-t1",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p078-t5",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p079-t2",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p079-t3",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03077
+     },
+     {
+      "rank": 5,
+      "id": "p078-t4",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03058
+     },
+     {
+      "rank": 6,
+      "id": "p079-v1",
+      "page": 79,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03033
+     }
+    ],
+    "returned_ids": [
+     "p079-t1",
+     "p078-t5",
+     "p079-t2",
+     "p079-t3",
+     "p078-t4",
+     "p079-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 79,
+    "ids": [
+     "p079-t1",
+     "p079-t2",
+     "p079-t3",
+     "p079-t4",
+     "p079-t5",
+     "p079-t6",
+     "p079-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p079-t1",
+     "p079-v1"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p079-t1",
+     "p079-v1"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p079-t1",
+     "p079-v1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p079-t1",
+   "p078-t5",
+   "p079-t2",
+   "p079-t3",
+   "p078-t4",
+   "p079-v1",
+   "p079-t4",
+   "p079-t5",
+   "p079-t6"
+  ],
+  "cited_pages": [
+   79
+  ],
+  "usage": {
+   "in": 13864,
+   "out": 240,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.00593,
+  "seconds": 6.2,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-T6",
+  "group": "table",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What was the average 2023 price of dysprosium oxide (99.5% minimum)?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p029-t1",
+    "page": 29
+   },
+   {
+    "rank": 2,
+    "id": "p148-t3",
+    "page": 148
+   },
+   {
+    "rank": 3,
+    "id": "p029-v1",
+    "page": 29
+   },
+   {
+    "rank": 4,
+    "id": "p202-t4",
+    "page": 202
+   },
+   {
+    "rank": 5,
+    "id": "p202-v1",
+    "page": 202
+   },
+   {
+    "rank": 6,
+    "id": "p148-v1",
+    "page": 148
+   }
+  ],
+  "status": "answered",
+  "answer": "The average price of dysprosium oxide (99.5% minimum) in 2023 was $323 per kilogram according to the USGS Mineral Commodity Summaries 2024 [p148-v1].",
+  "citations": [
+   "p148-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "dysprosium oxide price 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p029-t2",
+      "page": 29,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03078
+     },
+     {
+      "rank": 2,
+      "id": "p160-t1",
+      "page": 160,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03031
+     },
+     {
+      "rank": 3,
+      "id": "p127-t1",
+      "page": 127,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02946
+     },
+     {
+      "rank": 4,
+      "id": "p029-t1",
+      "page": 29,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02818
+     },
+     {
+      "rank": 5,
+      "id": "p148-t3",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02802
+     },
+     {
+      "rank": 6,
+      "id": "p148-v1",
+      "page": 148,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02712
+     }
+    ],
+    "returned_ids": [
+     "p029-t2",
+     "p160-t1",
+     "p127-t1",
+     "p029-t1",
+     "p148-t3",
+     "p148-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 148,
+    "ids": [
+     "p148-t1",
+     "p148-t2",
+     "p148-t3",
+     "p148-t4",
+     "p148-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p148-v1"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p148-v1"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p148-v1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p029-t2",
+   "p160-t1",
+   "p127-t1",
+   "p029-t1",
+   "p148-t3",
+   "p148-v1",
+   "p148-t1",
+   "p148-t2",
+   "p148-t4"
+  ],
+  "cited_pages": [
+   148
+  ],
+  "usage": {
+   "in": 16555,
+   "out": 174,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.0069,
+  "seconds": 5.3,
+  "page_hit1": false,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-I1",
+  "group": "image",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "In the diagram of the role of nonfuel mineral commodities in the U.S. economy, what was the value of shipments of domestically processed mineral materials?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p008-v1",
+    "page": 8
+   },
+   {
+    "rank": 2,
+    "id": "p008-t1",
+    "page": 8
+   },
+   {
+    "rank": 3,
+    "id": "p008-t2",
+    "page": 8
+   },
+   {
+    "rank": 4,
+    "id": "p009-t7",
+    "page": 9
+   },
+   {
+    "rank": 5,
+    "id": "p009-t8",
+    "page": 9
+   },
+   {
+    "rank": 6,
+    "id": "p005-t1",
+    "page": 5
+   }
+  ],
+  "status": "answered",
+  "answer": "The value of shipments of domestically processed mineral materials in the U.S. economy in 2023 was $890 billion, as shown in the diagram \"The Role of Nonfuel Mineral Commodities in the U.S. Economy.\" This value includes materials such as aluminum, brick, cement, copper, fertilizers, steel, and so forth [p008-v1, p008-t1, p008-t2].",
+  "citations": [
+   "p008-v1",
+   "p008-t1",
+   "p008-t2"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "diagram role of nonfuel mineral commodities value of shipments domestically processed mineral materials",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p008-v1",
+      "page": 8,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p008-t1",
+      "page": 8,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p009-t8",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03078
+     },
+     {
+      "rank": 4,
+      "id": "p005-t1",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03058
+     },
+     {
+      "rank": 5,
+      "id": "p008-t2",
+      "page": 8,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03054
+     },
+     {
+      "rank": 6,
+      "id": "p009-t7",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     }
+    ],
+    "returned_ids": [
+     "p008-v1",
+     "p008-t1",
+     "p009-t8",
+     "p005-t1",
+     "p008-t2",
+     "p009-t7"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 8,
+    "ids": [
+     "p008-t1",
+     "p008-t2",
+     "p008-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p008-v1",
+     "p008-t1",
+     "p008-t2"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p008-v1",
+   "p008-t1",
+   "p009-t8",
+   "p005-t1",
+   "p008-t2",
+   "p009-t7"
+  ],
+  "cited_pages": [
+   8
+  ],
+  "usage": {
+   "in": 8304,
+   "out": 179,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.003608,
+  "seconds": 4.0,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-I2",
+  "group": "image",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "Which host metals form the inner circle of the diagram relating byproduct elements to host metals?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p033-t1",
+    "page": 33
+   },
+   {
+    "rank": 2,
+    "id": "p033-v1",
+    "page": 33
+   },
+   {
+    "rank": 3,
+    "id": "p026-t2",
+    "page": 26
+   },
+   {
+    "rank": 4,
+    "id": "p028-v1",
+    "page": 28
+   },
+   {
+    "rank": 5,
+    "id": "p017-v1",
+    "page": 17
+   },
+   {
+    "rank": 6,
+    "id": "p026-t1",
+    "page": 26
+   }
+  ],
+  "status": "answered",
+  "answer": "The host metals forming the inner circle of the diagram relating byproduct elements to host metals are gold (Au), aluminum (Al), titanium (Ti), iron (Fe), nickel (Ni), copper (Cu), zinc (Zn), lead (Pb), tin (Sn), and platinum (Pt) [p033-t1, p033-v1].",
+  "citations": [
+   "p033-t1",
+   "p033-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "diagram relating byproduct elements to host metals inner circle",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p033-t1",
+      "page": 33,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p033-v1",
+      "page": 33,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p026-t2",
+      "page": 26,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p005-t7",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03016
+     },
+     {
+      "rank": 5,
+      "id": "p028-v1",
+      "page": 28,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.02985
+     },
+     {
+      "rank": 6,
+      "id": "p026-t1",
+      "page": 26,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02899
+     }
+    ],
+    "returned_ids": [
+     "p033-t1",
+     "p033-v1",
+     "p026-t2",
+     "p005-t7",
+     "p028-v1",
+     "p026-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 33,
+    "ids": [
+     "p033-t1",
+     "p033-t2",
+     "p033-v1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "host metals inner circle",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p033-t1",
+      "page": 33,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p033-v1",
+      "page": 33,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p026-t2",
+      "page": 26,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p148-t3",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02691
+     },
+     {
+      "rank": 5,
+      "id": "p151-t4",
+      "page": 151,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02683
+     },
+     {
+      "rank": 6,
+      "id": "p026-t1",
+      "page": 26,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02533
+     }
+    ],
+    "returned_ids": [
+     "p033-t1",
+     "p033-v1",
+     "p026-t2",
+     "p148-t3",
+     "p151-t4",
+     "p026-t1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "byproduct elements outer circle",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p033-t1",
+      "page": 33,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p033-v1",
+      "page": 33,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p026-t2",
+      "page": 26,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02688
+     },
+     {
+      "rank": 4,
+      "id": "p052-t4",
+      "page": 52,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02445
+     },
+     {
+      "rank": 5,
+      "id": "p161-t5",
+      "page": 161,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02435
+     },
+     {
+      "rank": 6,
+      "id": "p033-t2",
+      "page": 33,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p033-t1",
+     "p033-v1",
+     "p026-t2",
+     "p052-t4",
+     "p161-t5",
+     "p033-t2"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "The host metals that form the inner circle of the diagram relating byproduct elements to host metals are: gold (Au), aluminum (Al), titanium (Ti), iron (Fe), nickel (Ni), copper (Cu), zinc (Zn), lead (Pb), tin (Sn), and platinum (Pt) [p033-t1, p033-v1]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 4,
+    "abstain": false,
+    "citations": [
+     "p033-t1",
+     "p033-v1"
+    ]
+   }
+  ],
+  "n_searches": 3,
+  "n_views": 1,
+  "context_ids": [
+   "p033-t1",
+   "p033-v1",
+   "p026-t2",
+   "p005-t7",
+   "p028-v1",
+   "p026-t1",
+   "p033-t2",
+   "p148-t3",
+   "p151-t4",
+   "p052-t4",
+   "p161-t5"
+  ],
+  "cited_pages": [
+   33
+  ],
+  "usage": {
+   "in": 27270,
+   "out": 264,
+   "llm_calls": 5
+  },
+  "cost_usd": 0.01133,
+  "seconds": 9.3,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-I3",
+  "group": "image",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "In the mineral-resource classification diagram (Figure C1), what is the category for identified resources that are inferred and marginally economic?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p213-v1",
+    "page": 213
+   },
+   {
+    "rank": 2,
+    "id": "p213-v2",
+    "page": 213
+   },
+   {
+    "rank": 3,
+    "id": "p213-t1",
+    "page": 213
+   },
+   {
+    "rank": 4,
+    "id": "p212-t3",
+    "page": 212
+   },
+   {
+    "rank": 5,
+    "id": "p211-t8",
+    "page": 211
+   },
+   {
+    "rank": 6,
+    "id": "p212-t7",
+    "page": 212
+   }
+  ],
+  "status": "answered",
+  "answer": "In the mineral-resource classification diagram (Figure C1), identified resources that are inferred and marginally economic are categorized as \"Inferred Marginal Reserves.\" This category is located under the IDENTIFIED RESOURCES column and the MARGINALLY ECONOMIC row in the diagram [p213-v1].",
+  "citations": [
+   "p213-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "mineral-resource classification diagram Figure C1 identified resources inferred marginally economic",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p213-v1",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p213-t1",
+      "page": 213,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p213-v2",
+      "page": 213,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.032
+     },
+     {
+      "rank": 4,
+      "id": "p211-t8",
+      "page": 211,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03077
+     },
+     {
+      "rank": 5,
+      "id": "p211-t6",
+      "page": 211,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03033
+     },
+     {
+      "rank": 6,
+      "id": "p212-t3",
+      "page": 212,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03012
+     }
+    ],
+    "returned_ids": [
+     "p213-v1",
+     "p213-t1",
+     "p213-v2",
+     "p211-t8",
+     "p211-t6",
+     "p212-t3"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 213,
+    "ids": [
+     "p213-t1",
+     "p213-v1",
+     "p213-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p213-v1",
+     "p213-t1"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p213-v1",
+     "p213-t1"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p213-v1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p213-v1",
+   "p213-t1",
+   "p213-v2",
+   "p211-t8",
+   "p211-t6",
+   "p212-t3"
+  ],
+  "cited_pages": [
+   213
+  ],
+  "usage": {
+   "in": 12533,
+   "out": 214,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.005356,
+  "seconds": 5.7,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-I4",
+  "group": "image",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "On the world map of leading import sources for commodities with greater than 50% U.S. net import reliance (Figure 3), which countries are in the highest class, and what is that class?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p012-v1",
+    "page": 12
+   },
+   {
+    "rank": 2,
+    "id": "p010-t2",
+    "page": 10
+   },
+   {
+    "rank": 3,
+    "id": "p012-t1",
+    "page": 12
+   },
+   {
+    "rank": 4,
+    "id": "p010-t1",
+    "page": 10
+   },
+   {
+    "rank": 5,
+    "id": "p011-v1d",
+    "page": 11
+   },
+   {
+    "rank": 6,
+    "id": "p011-v1a",
+    "page": 11
+   }
+  ],
+  "status": "answered",
+  "answer": "On the world map of leading import sources for nonfuel mineral commodities for which the United States was greater than 50% net import reliant (Figure 3), the countries in the highest class are Canada and China. The highest class is \"19 to 24\" commodities, indicated by the color red on the map. This means Canada and China were leading import sources for 19 to 24 such commodities during 2019–22 [p012-v1, p012-t1].",
+  "citations": [
+   "p012-v1",
+   "p012-t1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 3 leading import sources highest class",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p012-v1",
+      "page": 12,
+      "kind": "visual",
+      "etype": "map",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p012-t1",
+      "page": 12,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03154
+     },
+     {
+      "rank": 3,
+      "id": "p011-v1a",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.0308
+     },
+     {
+      "rank": 4,
+      "id": "p011-v1d",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02896
+     },
+     {
+      "rank": 5,
+      "id": "p010-t2",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02879
+     },
+     {
+      "rank": 6,
+      "id": "p028-t1",
+      "page": 28,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02844
+     }
+    ],
+    "returned_ids": [
+     "p012-v1",
+     "p012-t1",
+     "p011-v1a",
+     "p011-v1d",
+     "p010-t2"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 12,
+    "ids": [
+     "p012-t1",
+     "p012-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p012-v1",
+     "p012-t1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p012-v1",
+   "p012-t1",
+   "p011-v1a",
+   "p011-v1d",
+   "p010-t2"
+  ],
+  "cited_pages": [
+   12
+  ],
+  "usage": {
+   "in": 9653,
+   "out": 166,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.004127,
+  "seconds": 4.4,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-I5",
+  "group": "image",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "On the regional map of metals and metallic minerals produced in 2023 (Figure 5), which region is in the highest value class and what is that value?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p017-v1",
+    "page": 17
+   },
+   {
+    "rank": 2,
+    "id": "p017-t1",
+    "page": 17
+   },
+   {
+    "rank": 3,
+    "id": "p018-v1",
+    "page": 18
+   },
+   {
+    "rank": 4,
+    "id": "p010-t5",
+    "page": 10
+   },
+   {
+    "rank": 5,
+    "id": "p010-t4",
+    "page": 10
+   },
+   {
+    "rank": 6,
+    "id": "p016-v1",
+    "page": 16
+   }
+  ],
+  "status": "answered",
+  "answer": "The West region is in the highest value class for metals and metallic minerals produced in 2023, with an estimated value of $25 billion. This is indicated by the darkest red color on the map in Figure 5 and confirmed by the text stating the West region was the leading region with an estimated value of $25 billion in 2023 [p017-v1, p017-t1, p010-t5].",
+  "citations": [
+   "p017-v1",
+   "p017-t1",
+   "p010-t5"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 5 regional map metals metallic minerals produced 2023 highest value class",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p017-v1",
+      "page": 17,
+      "kind": "visual",
+      "etype": "map",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p017-t1",
+      "page": 17,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p018-v1",
+      "page": 18,
+      "kind": "visual",
+      "etype": "map",
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p010-t5",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03054
+     },
+     {
+      "rank": 5,
+      "id": "p016-v1",
+      "page": 16,
+      "kind": "visual",
+      "etype": "map",
+      "score": 0.02872
+     },
+     {
+      "rank": 6,
+      "id": "p010-t4",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02869
+     }
+    ],
+    "returned_ids": [
+     "p017-v1",
+     "p017-t1",
+     "p018-v1",
+     "p010-t5",
+     "p016-v1",
+     "p010-t4"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 17,
+    "ids": [
+     "p017-t1",
+     "p017-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p017-v1",
+     "p017-t1",
+     "p010-t5"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p017-v1",
+   "p017-t1",
+   "p018-v1",
+   "p010-t5",
+   "p016-v1",
+   "p010-t4"
+  ],
+  "cited_pages": [
+   10,
+   17
+  ],
+  "usage": {
+   "in": 9053,
+   "out": 165,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.003885,
+  "seconds": 4.2,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-C1",
+  "group": "chart",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What was the 2023 U.S. net import reliance for cobalt, and what were its leading import sources for 2019-22?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p066-t3",
+    "page": 66
+   },
+   {
+    "rank": 2,
+    "id": "p010-t2",
+    "page": 10
+   },
+   {
+    "rank": 3,
+    "id": "p067-t1",
+    "page": 67
+   },
+   {
+    "rank": 4,
+    "id": "p011-v1a",
+    "page": 11
+   },
+   {
+    "rank": 5,
+    "id": "p010-t1",
+    "page": 10
+   },
+   {
+    "rank": 6,
+    "id": "p028-t1",
+    "page": 28
+   }
+  ],
+  "status": "answered",
+  "answer": "The 2023 U.S. net import reliance for cobalt was 67% of apparent consumption. The leading import sources for cobalt during 2019–22 were Norway (25%), Canada (15%), Finland (13%), Japan (12%), and other sources accounting for 35% of imports. This information is from the cobalt section and Figure 2 on page 11 of the Mineral Commodity Summaries 2024 report [p066-t3, p011-v1a].",
+  "citations": [
+   "p066-t3",
+   "p011-v1a"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "cobalt net import reliance 2023 import sources 2019-22",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p066-t3",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p011-v1a",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.03105
+     },
+     {
+      "rank": 3,
+      "id": "p067-t5",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02903
+     },
+     {
+      "rank": 4,
+      "id": "p011-v1d",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02858
+     },
+     {
+      "rank": 5,
+      "id": "p028-t1",
+      "page": 28,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02808
+     },
+     {
+      "rank": 6,
+      "id": "p028-v1",
+      "page": 28,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.02769
+     }
+    ],
+    "returned_ids": [
+     "p066-t3",
+     "p011-v1a",
+     "p067-t5",
+     "p011-v1d",
+     "p028-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 11,
+    "ids": [
+     "p011-t1",
+     "p011-t2",
+     "p011-t3",
+     "p011-v1a",
+     "p011-v1b",
+     "p011-v1c",
+     "p011-v1d"
+    ]
+   },
+   {
+    "event": "no_tool_call",
+    "text": "The 2023 U.S. net import reliance for cobalt was 67% of apparent consumption. The leading import sources for cobalt during 2019–22 were Norway (25%), Canada (15%), Finland (13%), Japan (12%), and other sources making up 35% [p066-t3, p011-v1a]."
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p066-t3",
+     "p011-v1a"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p066-t3",
+   "p011-v1a",
+   "p067-t5",
+   "p011-v1d",
+   "p028-t1",
+   "p011-t1",
+   "p011-t2",
+   "p011-t3",
+   "p011-v1b",
+   "p011-v1c"
+  ],
+  "cited_pages": [
+   11,
+   66
+  ],
+  "usage": {
+   "in": 15512,
+   "out": 243,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.006594,
+  "seconds": 5.9,
+  "page_hit1": false,
+  "page_hit3": false,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-C2",
+  "group": "chart",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "Which critical mineral had the largest 1-year price increase from 2022 to 2023 in Figure 10, and how large was it?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p029-v1",
+    "page": 29
+   },
+   {
+    "rank": 2,
+    "id": "p025-t6",
+    "page": 25
+   },
+   {
+    "rank": 3,
+    "id": "p029-t2",
+    "page": 29
+   },
+   {
+    "rank": 4,
+    "id": "p025-t2",
+    "page": 25
+   },
+   {
+    "rank": 5,
+    "id": "p005-t6",
+    "page": 5
+   },
+   {
+    "rank": 6,
+    "id": "p010-t2",
+    "page": 10
+   }
+  ],
+  "status": "answered",
+  "answer": "The critical mineral with the largest 1-year price increase from 2022 to 2023 was Beryllium, with a 112% increase in price according to Figure 10 in the report [p029-v1].",
+  "citations": [
+   "p029-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 10 price increase 2022 to 2023 critical minerals",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p029-v1",
+      "page": 29,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p025-t6",
+      "page": 25,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 3,
+      "id": "p029-t2",
+      "page": 29,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 4,
+      "id": "p030-t2",
+      "page": 30,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02985
+     },
+     {
+      "rank": 5,
+      "id": "p025-t2",
+      "page": 25,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02927
+     },
+     {
+      "rank": 6,
+      "id": "p030-v1",
+      "page": 30,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02927
+     }
+    ],
+    "returned_ids": [
+     "p029-v1",
+     "p025-t6",
+     "p029-t2",
+     "p030-t2",
+     "p025-t2",
+     "p030-v1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 29,
+    "ids": [
+     "p029-t1",
+     "p029-t2",
+     "p029-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p029-v1"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p029-v1"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p029-v1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p029-v1",
+   "p025-t6",
+   "p029-t2",
+   "p030-t2",
+   "p025-t2",
+   "p030-v1",
+   "p029-t1"
+  ],
+  "cited_pages": [
+   29
+  ],
+  "usage": {
+   "in": 17248,
+   "out": 185,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.007195,
+  "seconds": 12.2,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-C3",
+  "group": "chart",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "In Figure 11, which commodity had the largest percentage decrease in U.S. consumption from 2022 to 2023, and roughly how large was it?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p030-v1",
+    "page": 30
+   },
+   {
+    "rank": 2,
+    "id": "p030-t2",
+    "page": 30
+   },
+   {
+    "rank": 3,
+    "id": "p031-t2",
+    "page": 31
+   },
+   {
+    "rank": 4,
+    "id": "p010-t1",
+    "page": 10
+   },
+   {
+    "rank": 5,
+    "id": "p025-t8",
+    "page": 25
+   },
+   {
+    "rank": 6,
+    "id": "p087-t1",
+    "page": 87
+   }
+  ],
+  "status": "answered",
+  "answer": "In Figure 11, the commodity with the largest percentage decrease in U.S. consumption from 2022 to 2023 was Yttrium, with a decrease of approximately 80% [p030-v1].",
+  "citations": [
+   "p030-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 11 U.S. consumption percentage change 2022 to 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p030-v1",
+      "page": 30,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p030-t2",
+      "page": 30,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 3,
+      "id": "p031-t2",
+      "page": 31,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 4,
+      "id": "p010-t1",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0276
+     },
+     {
+      "rank": 5,
+      "id": "p144-v1",
+      "page": 144,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.0252
+     },
+     {
+      "rank": 6,
+      "id": "p005-t6",
+      "page": 5,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     }
+    ],
+    "returned_ids": [
+     "p030-v1",
+     "p030-t2",
+     "p031-t2",
+     "p010-t1",
+     "p144-v1",
+     "p005-t6"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 30,
+    "ids": [
+     "p030-t1",
+     "p030-t2",
+     "p030-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p030-v1"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p030-v1"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p030-v1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p030-v1",
+   "p030-t2",
+   "p031-t2",
+   "p010-t1",
+   "p144-v1",
+   "p005-t6",
+   "p030-t1"
+  ],
+  "cited_pages": [
+   30
+  ],
+  "usage": {
+   "in": 14873,
+   "out": 183,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.006242,
+  "seconds": 4.7,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-C4",
+  "group": "chart",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "In Figure 13, which commodity has the largest total old scrap value, and how much is it?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p032-v1",
+    "page": 32
+   },
+   {
+    "rank": 2,
+    "id": "p032-t1",
+    "page": 32
+   },
+   {
+    "rank": 3,
+    "id": "p025-t9",
+    "page": 25
+   },
+   {
+    "rank": 4,
+    "id": "p026-t1",
+    "page": 26
+   },
+   {
+    "rank": 5,
+    "id": "p025-t8",
+    "page": 25
+   },
+   {
+    "rank": 6,
+    "id": "p100-t4",
+    "page": 100
+   }
+  ],
+  "status": "answered",
+  "answer": "In Figure 13, the commodity with the largest total old scrap value is Iron and Steel, with a total old scrap value of $34,493 million. This is the highest value among the listed commodities in the figure [p032-v1, p032-t1].",
+  "citations": [
+   "p032-v1",
+   "p032-t1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 13 total old scrap value",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p032-v1",
+      "page": 32,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p032-t1",
+      "page": 32,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p025-t9",
+      "page": 25,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 4,
+      "id": "p026-t1",
+      "page": 26,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03102
+     },
+     {
+      "rank": 5,
+      "id": "p025-t8",
+      "page": 25,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02753
+     },
+     {
+      "rank": 6,
+      "id": "p100-t6",
+      "page": 100,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02648
+     }
+    ],
+    "returned_ids": [
+     "p032-v1",
+     "p032-t1",
+     "p025-t9",
+     "p026-t1",
+     "p025-t8",
+     "p100-t6"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 32,
+    "ids": [
+     "p032-t1",
+     "p032-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p032-v1",
+     "p032-t1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p032-v1",
+   "p032-t1",
+   "p025-t9",
+   "p026-t1",
+   "p025-t8",
+   "p100-t6"
+  ],
+  "cited_pages": [
+   32
+  ],
+  "usage": {
+   "in": 8275,
+   "out": 122,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.003505,
+  "seconds": 4.1,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-C5",
+  "group": "chart",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "In Figure 7, which state produced the highest value of crushed stone in 2023, and approximately how much?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p019-v1",
+    "page": 19
+   },
+   {
+    "rank": 2,
+    "id": "p019-t1",
+    "page": 19
+   },
+   {
+    "rank": 3,
+    "id": "p010-t5",
+    "page": 10
+   },
+   {
+    "rank": 4,
+    "id": "p015-t1",
+    "page": 15
+   },
+   {
+    "rank": 5,
+    "id": "p019-v2",
+    "page": 19
+   },
+   {
+    "rank": 6,
+    "id": "p170-t1",
+    "page": 170
+   }
+  ],
+  "status": "answered",
+  "answer": "According to Figure 7 on page 19, Texas produced the highest value of crushed stone in 2023, with a value of approximately 3,000 million dollars. This is indicated by the tallest bar on the bar chart and the darkest red color on the map, representing values greater than 1,000 million dollars, with Texas clearly the highest among all states shown [p019-t1, p019-v1].",
+  "citations": [
+   "p019-t1",
+   "p019-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 7 crushed stone value 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p019-t1",
+      "page": 19,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p019-v1",
+      "page": 19,
+      "kind": "visual",
+      "etype": "map",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p170-t1",
+      "page": 170,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02886
+     },
+     {
+      "rank": 4,
+      "id": "p170-t2",
+      "page": 170,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02885
+     },
+     {
+      "rank": 5,
+      "id": "p170-t3",
+      "page": 170,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02879
+     },
+     {
+      "rank": 6,
+      "id": "p171-t1",
+      "page": 171,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02854
+     }
+    ],
+    "returned_ids": [
+     "p019-t1",
+     "p019-v1",
+     "p170-t1",
+     "p170-t2",
+     "p170-t3",
+     "p171-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 19,
+    "ids": [
+     "p019-t1",
+     "p019-v1",
+     "p019-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p019-t1",
+     "p019-v1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p019-t1",
+   "p019-v1",
+   "p170-t1",
+   "p170-t2",
+   "p170-t3",
+   "p171-t1",
+   "p019-v2"
+  ],
+  "cited_pages": [
+   19
+  ],
+  "usage": {
+   "in": 7727,
+   "out": 155,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.003339,
+  "seconds": 4.4,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-M1",
+  "group": "multihop",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What was the 2023 annual average U.S. battery-grade lithium carbonate price, and what 1-year price change for battery-grade lithium does Figure 10 report?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p029-v1",
+    "page": 29
+   },
+   {
+    "rank": 2,
+    "id": "p114-t4",
+    "page": 114
+   },
+   {
+    "rank": 3,
+    "id": "p114-v1",
+    "page": 114
+   },
+   {
+    "rank": 4,
+    "id": "p114-t3",
+    "page": 114
+   },
+   {
+    "rank": 5,
+    "id": "p114-t2",
+    "page": 114
+   },
+   {
+    "rank": 6,
+    "id": "p115-t1",
+    "page": 115
+   }
+  ],
+  "status": "answered",
+  "answer": "The 2023 annual average U.S. battery-grade lithium carbonate price was $46,000 per metric ton. Figure 10 reports a 1-year price change for battery-grade lithium of -32% from 2022 to 2023 [p029-v1, p114-t4, p114-v1].",
+  "citations": [
+   "p029-v1",
+   "p114-t4",
+   "p114-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 10 battery-grade lithium price",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p029-v1",
+      "page": 29,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p114-v1",
+      "page": 114,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.032
+     },
+     {
+      "rank": 4,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 5,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03101
+     },
+     {
+      "rank": 6,
+      "id": "p088-t2",
+      "page": 88,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03031
+     }
+    ],
+    "returned_ids": [
+     "p029-v1",
+     "p114-t4",
+     "p114-v1",
+     "p114-t3",
+     "p114-t2",
+     "p088-t2"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 29,
+    "ids": [
+     "p029-t1",
+     "p029-t2",
+     "p029-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p029-v1",
+     "p114-t4",
+     "p114-v1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p029-v1",
+   "p114-t4",
+   "p114-v1",
+   "p114-t3",
+   "p114-t2",
+   "p088-t2",
+   "p029-t1",
+   "p029-t2"
+  ],
+  "cited_pages": [
+   29,
+   114
+  ],
+  "usage": {
+   "in": 9837,
+   "out": 137,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.004154,
+  "seconds": 4.2,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-M2",
+  "group": "multihop",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "Using the 2023 GDP in Table 2 and the value added by major industries that consume processed mineral materials in Figure 1, what share of GDP did that value added represent?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p013-v2",
+    "page": 13
+   },
+   {
+    "rank": 2,
+    "id": "p008-t2",
+    "page": 8
+   },
+   {
+    "rank": 3,
+    "id": "p008-v1",
+    "page": 8
+   },
+   {
+    "rank": 4,
+    "id": "p010-t1",
+    "page": 10
+   },
+   {
+    "rank": 5,
+    "id": "p008-t1",
+    "page": 8
+   },
+   {
+    "rank": 6,
+    "id": "p009-t7",
+    "page": 9
+   }
+  ],
+  "status": "answered",
+  "answer": "The 2023 estimated U.S. Gross Domestic Product (GDP) was $27,356 billion, and the value added to GDP by major industries that consume processed mineral materials was $3,840 billion. The share of GDP represented by this value added is calculated as (3,840 / 27,356) = 0.1404, or approximately 14.0%. Thus, the value added by these major industries represented about 14.0% of the 2023 U.S. GDP [p013-v2, p008-v1].",
+  "citations": [
+   "p013-v2",
+   "p008-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Table 2 GDP 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p013-v2",
+      "page": 13,
+      "kind": "visual",
+      "etype": "table",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p058-t5",
+      "page": 58,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p168-v1",
+      "page": 168,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02765
+     },
+     {
+      "rank": 4,
+      "id": "p091-v1",
+      "page": 91,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02647
+     },
+     {
+      "rank": 5,
+      "id": "p013-t1",
+      "page": 13,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02639
+     },
+     {
+      "rank": 6,
+      "id": "p135-v1",
+      "page": 135,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02568
+     }
+    ],
+    "returned_ids": [
+     "p013-v2",
+     "p058-t5",
+     "p168-v1",
+     "p091-v1",
+     "p013-t1",
+     "p135-v1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 1 value added by major industries consuming processed mineral materials",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p008-t2",
+      "page": 8,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p008-v1",
+      "page": 8,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.03226
+     },
+     {
+      "rank": 3,
+      "id": "p008-t1",
+      "page": 8,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 4,
+      "id": "p009-t7",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     },
+     {
+      "rank": 5,
+      "id": "p009-t8",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02947
+     },
+     {
+      "rank": 6,
+      "id": "p010-t1",
+      "page": 10,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02896
+     }
+    ],
+    "returned_ids": [
+     "p008-t2",
+     "p008-v1",
+     "p008-t1",
+     "p009-t7",
+     "p009-t8",
+     "p010-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 8,
+    "ids": [
+     "p008-t1",
+     "p008-t2",
+     "p008-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p013-v2",
+     "p008-v1"
+    ]
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 1,
+  "context_ids": [
+   "p013-v2",
+   "p058-t5",
+   "p168-v1",
+   "p091-v1",
+   "p013-t1",
+   "p135-v1",
+   "p008-t2",
+   "p008-v1",
+   "p008-t1",
+   "p009-t7",
+   "p009-t8",
+   "p010-t1"
+  ],
+  "cited_pages": [
+   8,
+   13
+  ],
+  "usage": {
+   "in": 13562,
+   "out": 408,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.006078,
+  "seconds": 6.3,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-M3",
+  "group": "multihop",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What was the 2023 U.S. net import reliance for gallium, and what was the value of U.S. gallium metal imports in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p078-t4",
+    "page": 78
+   },
+   {
+    "rank": 2,
+    "id": "p078-t3",
+    "page": 78
+   },
+   {
+    "rank": 3,
+    "id": "p078-t1",
+    "page": 78
+   },
+   {
+    "rank": 4,
+    "id": "p079-t6",
+    "page": 79
+   },
+   {
+    "rank": 5,
+    "id": "p079-t2",
+    "page": 79
+   },
+   {
+    "rank": 6,
+    "id": "p078-t5",
+    "page": 78
+   }
+  ],
+  "status": "answered",
+  "answer": "The 2023 U.S. net import reliance for gallium was 100% of reported consumption. The value of U.S. gallium metal imports in 2023 was about $3 million. The quantity of gallium metal imports for consumption in 2023 was 9,400 kilograms. Additionally, gallium arsenide (GaAs) wafer imports were valued at about $110 million in 2023 [p078-v1].",
+  "citations": [
+   "p078-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "gallium net import reliance 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p078-v1",
+      "page": 78,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03125
+     },
+     {
+      "rank": 2,
+      "id": "p078-t3",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03083
+     },
+     {
+      "rank": 3,
+      "id": "p028-t1",
+      "page": 28,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03002
+     },
+     {
+      "rank": 4,
+      "id": "p028-v1",
+      "page": 28,
+      "kind": "visual",
+      "etype": "diagram",
+      "score": 0.02939
+     },
+     {
+      "rank": 5,
+      "id": "p079-t2",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02938
+     },
+     {
+      "rank": 6,
+      "id": "p011-v1a",
+      "page": 11,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 0.02938
+     }
+    ],
+    "returned_ids": [
+     "p078-v1",
+     "p078-t3",
+     "p028-t1",
+     "p028-v1",
+     "p079-t2",
+     "p011-v1a"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 78,
+    "ids": [
+     "p078-t1",
+     "p078-t2",
+     "p078-t3",
+     "p078-t4",
+     "p078-t5",
+     "p078-v1",
+     "p078-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p078-v1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p078-v1",
+   "p078-t3",
+   "p028-t1",
+   "p028-v1",
+   "p079-t2",
+   "p011-v1a",
+   "p078-t1",
+   "p078-t2",
+   "p078-t4",
+   "p078-t5",
+   "p078-v2"
+  ],
+  "cited_pages": [
+   78
+  ],
+  "usage": {
+   "in": 9609,
+   "out": 154,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.00409,
+  "seconds": 4.2,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": false,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": false
+ },
+ {
+  "query_id": "AT-M4",
+  "group": "multihop",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "Compare the total old scrap value of cobalt shown in Figure 13 with the total estimated value of cobalt consumed in the United States in 2023.",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p032-v1",
+    "page": 32
+   },
+   {
+    "rank": 2,
+    "id": "p066-t2",
+    "page": 66
+   },
+   {
+    "rank": 3,
+    "id": "p032-t1",
+    "page": 32
+   },
+   {
+    "rank": 4,
+    "id": "p026-t1",
+    "page": 26
+   },
+   {
+    "rank": 5,
+    "id": "p066-t3",
+    "page": 66
+   },
+   {
+    "rank": 6,
+    "id": "p066-t1",
+    "page": 66
+   }
+  ],
+  "status": "answered",
+  "answer": "The total old scrap value of cobalt shown in Figure 13 is $69 million. The total estimated value of cobalt consumed in the United States in 2023 was $270 million. Thus, the total old scrap value of cobalt ($69 million) is about 25.6% of the total estimated value of cobalt consumed in the U.S. in 2023 ($270 million). This comparison is based on the total old scrap value for cobalt given in Figure 13 and the estimated cobalt consumption value stated in the cobalt section of the report [p032-v1, p066-t2].",
+  "citations": [
+   "p032-v1",
+   "p066-t2"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Figure 13 cobalt old scrap value",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p032-v1",
+      "page": 32,
+      "kind": "visual",
+      "etype": "chart",
+      "score": 1.0
+     },
+     {
+      "rank": 2,
+      "id": "p032-t1",
+      "page": 32,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p026-t1",
+      "page": 26,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03128
+     },
+     {
+      "rank": 4,
+      "id": "p066-t3",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03062
+     },
+     {
+      "rank": 5,
+      "id": "p066-t4",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03009
+     },
+     {
+      "rank": 6,
+      "id": "p025-t9",
+      "page": 25,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     }
+    ],
+    "returned_ids": [
+     "p032-v1",
+     "p032-t1",
+     "p026-t1",
+     "p066-t3",
+     "p066-t4",
+     "p025-t9"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "cobalt estimated value consumed United States 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p066-t2",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p066-t1",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03128
+     },
+     {
+      "rank": 3,
+      "id": "p067-t1",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02963
+     },
+     {
+      "rank": 4,
+      "id": "p066-t3",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02886
+     },
+     {
+      "rank": 5,
+      "id": "p067-t3",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02837
+     },
+     {
+      "rank": 6,
+      "id": "p067-t5",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02782
+     }
+    ],
+    "returned_ids": [
+     "p066-t2",
+     "p066-t1",
+     "p067-t1",
+     "p066-t3",
+     "p067-t3",
+     "p067-t5"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 2,
+    "page": 32,
+    "ids": [
+     "p032-t1",
+     "p032-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p032-v1",
+     "p066-t2"
+    ]
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 1,
+  "context_ids": [
+   "p032-v1",
+   "p032-t1",
+   "p026-t1",
+   "p066-t3",
+   "p066-t4",
+   "p025-t9",
+   "p066-t2",
+   "p066-t1",
+   "p067-t1",
+   "p067-t3",
+   "p067-t5"
+  ],
+  "cited_pages": [
+   32,
+   66
+  ],
+  "usage": {
+   "in": 14040,
+   "out": 337,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.006155,
+  "seconds": 7.9,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-X1",
+  "group": "text",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What share of global lithium end use was accounted for by batteries?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p114-t1",
+    "page": 114
+   },
+   {
+    "rank": 2,
+    "id": "p114-t2",
+    "page": 114
+   },
+   {
+    "rank": 3,
+    "id": "p115-t5",
+    "page": 115
+   },
+   {
+    "rank": 4,
+    "id": "p115-t1",
+    "page": 115
+   },
+   {
+    "rank": 5,
+    "id": "p114-t6",
+    "page": 114
+   },
+   {
+    "rank": 6,
+    "id": "p023-t5",
+    "page": 23
+   }
+  ],
+  "status": "answered",
+  "answer": "The share of global lithium end use accounted for by batteries was estimated at 87% [p114-t1].",
+  "citations": [
+   "p114-t1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "lithium end use batteries share",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p114-t1",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p114-t2",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03041
+     },
+     {
+      "rank": 3,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     },
+     {
+      "rank": 4,
+      "id": "p115-t5",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02971
+     },
+     {
+      "rank": 5,
+      "id": "p023-t5",
+      "page": 23,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02927
+     },
+     {
+      "rank": 6,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02903
+     }
+    ],
+    "returned_ids": [
+     "p114-t1",
+     "p114-t2",
+     "p115-t1",
+     "p115-t5",
+     "p023-t5",
+     "p114-t3"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 114,
+    "ids": [
+     "p114-t1",
+     "p114-t2",
+     "p114-t3",
+     "p114-t4",
+     "p114-t5",
+     "p114-t6",
+     "p114-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p114-t1"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p114-t1"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p114-t1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p114-t1",
+   "p114-t2",
+   "p115-t1",
+   "p115-t5",
+   "p023-t5",
+   "p114-t3",
+   "p114-t4",
+   "p114-t5",
+   "p114-t6",
+   "p114-v1"
+  ],
+  "cited_pages": [
+   114
+  ],
+  "usage": {
+   "in": 13506,
+   "out": 130,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.00561,
+  "seconds": 6.4,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-X2",
+  "group": "text",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What share of cobalt consumed in the United States was used in superalloys, and mainly for what?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p066-t2",
+    "page": 66
+   },
+   {
+    "rank": 2,
+    "id": "p066-t1",
+    "page": 66
+   },
+   {
+    "rank": 3,
+    "id": "p067-t1",
+    "page": 67
+   },
+   {
+    "rank": 4,
+    "id": "p130-t1",
+    "page": 130
+   },
+   {
+    "rank": 5,
+    "id": "p067-t4",
+    "page": 67
+   },
+   {
+    "rank": 6,
+    "id": "p062-t1",
+    "page": 62
+   }
+  ],
+  "status": "answered",
+  "answer": "In 2023, an estimated 50% of cobalt consumed in the United States was used in superalloys, mainly for aircraft gas turbine engines [p066-t1][p066-t2].",
+  "citations": [
+   "p066-t1",
+   "p066-t2"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "cobalt consumption superalloys United States",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p066-t2",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p066-t1",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 3,
+      "id": "p066-t3",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03126
+     },
+     {
+      "rank": 4,
+      "id": "p067-t3",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03078
+     },
+     {
+      "rank": 5,
+      "id": "p067-t1",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03058
+     },
+     {
+      "rank": 6,
+      "id": "p130-t1",
+      "page": 130,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03012
+     }
+    ],
+    "returned_ids": [
+     "p066-t2",
+     "p066-t1",
+     "p066-t3",
+     "p067-t3",
+     "p067-t1",
+     "p130-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 66,
+    "ids": [
+     "p066-t1",
+     "p066-t2",
+     "p066-t3",
+     "p066-t4",
+     "p066-v1",
+     "p066-v2",
+     "p066-v3"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p066-t1",
+     "p066-t2"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p066-t1",
+     "p066-t2"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p066-t1",
+     "p066-t2"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p066-t2",
+   "p066-t1",
+   "p066-t3",
+   "p067-t3",
+   "p067-t1",
+   "p130-t1",
+   "p066-t4",
+   "p066-v1",
+   "p066-v2",
+   "p066-v3"
+  ],
+  "cited_pages": [
+   66
+  ],
+  "usage": {
+   "in": 14108,
+   "out": 172,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.005918,
+  "seconds": 5.8,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-X3",
+  "group": "text",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "Since what year has no domestic primary gallium been recovered in the United States?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p079-t2",
+    "page": 79
+   },
+   {
+    "rank": 2,
+    "id": "p078-t1",
+    "page": 78
+   },
+   {
+    "rank": 3,
+    "id": "p079-t1",
+    "page": 79
+   },
+   {
+    "rank": 4,
+    "id": "p079-t3",
+    "page": 79
+   },
+   {
+    "rank": 5,
+    "id": "p079-t4",
+    "page": 79
+   },
+   {
+    "rank": 6,
+    "id": "p078-t2",
+    "page": 78
+   }
+  ],
+  "status": "answered",
+  "answer": "No domestic primary (low-purity, unrefined) gallium has been recovered in the United States since 1987 [p078-t1][p078-t2].",
+  "citations": [
+   "p078-t1",
+   "p078-t2"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "domestic primary gallium recovery United States",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p079-t2",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p079-t1",
+      "page": 79,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p078-t1",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p079-v1",
+      "page": 79,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03031
+     },
+     {
+      "rank": 5,
+      "id": "p078-t4",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0303
+     },
+     {
+      "rank": 6,
+      "id": "p078-t2",
+      "page": 78,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03016
+     }
+    ],
+    "returned_ids": [
+     "p079-t2",
+     "p079-t1",
+     "p078-t1",
+     "p079-v1",
+     "p078-t4",
+     "p078-t2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 1,
+    "abstain": false,
+    "citations": [
+     "p078-t1",
+     "p078-t2"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p078-t1",
+     "p078-t2"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p078-t1",
+     "p078-t2"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 0,
+  "context_ids": [
+   "p079-t2",
+   "p079-t1",
+   "p078-t1",
+   "p079-v1",
+   "p078-t4",
+   "p078-t2"
+  ],
+  "cited_pages": [
+   78
+  ],
+  "usage": {
+   "in": 4901,
+   "out": 148,
+   "llm_calls": 3
+  },
+  "cost_usd": 0.002197,
+  "seconds": 4.1,
+  "page_hit1": false,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-X4",
+  "group": "text",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What was the estimated value of rare-earth compounds and metals imported by the United States in 2023, and how did it change from 2022?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p148-t1",
+    "page": 148
+   },
+   {
+    "rank": 2,
+    "id": "p148-t2",
+    "page": 148
+   },
+   {
+    "rank": 3,
+    "id": "p148-v1",
+    "page": 148
+   },
+   {
+    "rank": 4,
+    "id": "p148-t4",
+    "page": 148
+   },
+   {
+    "rank": 5,
+    "id": "p148-t3",
+    "page": 148
+   },
+   {
+    "rank": 6,
+    "id": "p149-t4",
+    "page": 149
+   }
+  ],
+  "status": "answered",
+  "answer": "The estimated value of rare-earth compounds and metals imported by the United States in 2023 was $190 million, which was a 7% decrease from $208 million in 2022 [p148-t1].",
+  "citations": [
+   "p148-t1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "rare-earth compounds and metals import value 2023 2022",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p148-t4",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03252
+     },
+     {
+      "rank": 2,
+      "id": "p148-t1",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 3,
+      "id": "p148-t2",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 4,
+      "id": "p148-t3",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 5,
+      "id": "p148-v1",
+      "page": 148,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03031
+     },
+     {
+      "rank": 6,
+      "id": "p202-t5",
+      "page": 202,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02908
+     }
+    ],
+    "returned_ids": [
+     "p148-t4",
+     "p148-t1",
+     "p148-t2",
+     "p148-t3",
+     "p148-v1",
+     "p202-t5"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 1,
+    "page": 148,
+    "ids": [
+     "p148-t1",
+     "p148-t2",
+     "p148-t3",
+     "p148-t4",
+     "p148-v1"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p148-t1"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p148-t1"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p148-t1"
+    ]
+   }
+  ],
+  "n_searches": 1,
+  "n_views": 1,
+  "context_ids": [
+   "p148-t4",
+   "p148-t1",
+   "p148-t2",
+   "p148-t3",
+   "p148-v1",
+   "p202-t5"
+  ],
+  "cited_pages": [
+   148
+  ],
+  "usage": {
+   "in": 16158,
+   "out": 180,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.006751,
+  "seconds": 5.3,
+  "page_hit1": true,
+  "page_hit3": true,
+  "all_gold_pages_top6": true,
+  "context_all_gold_pages": true,
+  "cited_all_gold_pages": true
+ },
+ {
+  "query_id": "AT-U1",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "How much crude oil did the United States produce in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p177-v1a",
+    "page": 177
+   },
+   {
+    "rank": 2,
+    "id": "p080-t4",
+    "page": 80
+   },
+   {
+    "rank": 3,
+    "id": "p035-t2",
+    "page": 35
+   },
+   {
+    "rank": 4,
+    "id": "p080-t5",
+    "page": 80
+   },
+   {
+    "rank": 5,
+    "id": "p009-t1",
+    "page": 9
+   },
+   {
+    "rank": 6,
+    "id": "p177-t4",
+    "page": 177
+   }
+  ],
+  "status": "answered",
+  "answer": "The United States produced an estimated 8,600 thousand metric tons (or 8.6 million metric tons) of crude oil in 2023. However, the report does not provide the production quantity explicitly in barrels or barrels per day for 2023. The closest available data is the sulfur production table which lists the United States crude oil production in thousand metric tons for 2023 as 8,600 (estimated) [p177-v1a].",
+  "citations": [
+   "p177-v1a"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "United States crude oil production 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p177-v1a",
+      "page": 177,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03009
+     },
+     {
+      "rank": 2,
+      "id": "p009-t1",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 3,
+      "id": "p177-t4",
+      "page": 177,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 4,
+      "id": "p080-v1",
+      "page": 80,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01613
+     },
+     {
+      "rank": 5,
+      "id": "p044-t1",
+      "page": 44,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 6,
+      "id": "p182-v1",
+      "page": 182,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p177-v1a",
+     "p009-t1",
+     "p177-t4",
+     "p080-v1",
+     "p044-t1",
+     "p182-v1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "crude oil production United States 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p177-v1a",
+      "page": 177,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.0292
+     },
+     {
+      "rank": 2,
+      "id": "p136-t1",
+      "page": 136,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02686
+     },
+     {
+      "rank": 3,
+      "id": "p080-t4",
+      "page": 80,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02501
+     },
+     {
+      "rank": 4,
+      "id": "p009-t1",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 5,
+      "id": "p177-t4",
+      "page": 177,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 6,
+      "id": "p080-v1",
+      "page": 80,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01613
+     }
+    ],
+    "returned_ids": [
+     "p177-v1a",
+     "p136-t1",
+     "p080-t4",
+     "p009-t1",
+     "p177-t4",
+     "p080-v1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "crude oil production United States 2023 barrels",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p044-t1",
+      "page": 44,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03083
+     },
+     {
+      "rank": 2,
+      "id": "p177-v1a",
+      "page": 177,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.0292
+     },
+     {
+      "rank": 3,
+      "id": "p136-t1",
+      "page": 136,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02674
+     },
+     {
+      "rank": 4,
+      "id": "p136-v1",
+      "page": 136,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02415
+     },
+     {
+      "rank": 5,
+      "id": "p045-t1",
+      "page": 45,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 6,
+      "id": "p177-t4",
+      "page": 177,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     }
+    ],
+    "returned_ids": [
+     "p044-t1",
+     "p177-v1a",
+     "p136-t1",
+     "p136-v1",
+     "p045-t1",
+     "p177-t4"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 3,
+    "query": "United States crude oil production 2023 barrels",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p177-v1a",
+      "page": 177,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02963
+     },
+     {
+      "rank": 2,
+      "id": "p044-v1",
+      "page": 44,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01639
+     },
+     {
+      "rank": 3,
+      "id": "p177-t4",
+      "page": 177,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 4,
+      "id": "p009-t1",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 5,
+      "id": "p044-t1",
+      "page": 44,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 6,
+      "id": "p080-v1",
+      "page": 80,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p177-v1a",
+     "p044-v1",
+     "p177-t4",
+     "p009-t1",
+     "p044-t1",
+     "p080-v1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 4,
+    "query": "United States crude oil production 2023 barrels per day",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p177-v1a",
+      "page": 177,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02786
+     },
+     {
+      "rank": 2,
+      "id": "p136-v1",
+      "page": 136,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02671
+     },
+     {
+      "rank": 3,
+      "id": "p044-v1",
+      "page": 44,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01639
+     },
+     {
+      "rank": 4,
+      "id": "p177-t4",
+      "page": 177,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 5,
+      "id": "p080-v1",
+      "page": 80,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01613
+     },
+     {
+      "rank": 6,
+      "id": "p044-t1",
+      "page": 44,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     }
+    ],
+    "returned_ids": [
+     "p177-v1a",
+     "p136-v1",
+     "p044-v1",
+     "p177-t4",
+     "p080-v1",
+     "p044-t1"
+    ]
+   },
+   {
+    "event": "search_limit"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 6,
+    "abstain": false,
+    "citations": [
+     "p177-v1a"
+    ]
+   }
+  ],
+  "n_searches": 5,
+  "n_views": 0,
+  "context_ids": [
+   "p177-v1a",
+   "p009-t1",
+   "p177-t4",
+   "p080-v1",
+   "p044-t1",
+   "p182-v1",
+   "p136-t1",
+   "p080-t4",
+   "p136-v1",
+   "p045-t1",
+   "p044-v1"
+  ],
+  "cited_pages": [
+   177
+  ],
+  "usage": {
+   "in": 40727,
+   "out": 257,
+   "llm_calls": 7
+  },
+  "cost_usd": 0.016702,
+  "seconds": 15.3
+ },
+ {
+  "query_id": "AT-U2",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "How many short tons of coal did the United States produce in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p013-t1",
+    "page": 13
+   },
+   {
+    "rank": 2,
+    "id": "p177-t2",
+    "page": 177
+   },
+   {
+    "rank": 3,
+    "id": "p103-t3",
+    "page": 103
+   },
+   {
+    "rank": 4,
+    "id": "p087-t2",
+    "page": 87
+   },
+   {
+    "rank": 5,
+    "id": "p023-t1",
+    "page": 23
+   },
+   {
+    "rank": 6,
+    "id": "p104-t1",
+    "page": 104
+   }
+  ],
+  "status": "abstain",
+  "answer": "The USGS Mineral Commodity Summaries 2024 report provides the total value of coal production in the United States in 2023 as $31.7 billion but does not specify the quantity of coal produced in short tons. Therefore, the report does not contain the information on the amount of coal produced in short tons in 2023, and I must abstain from answering this question.",
+  "citations": [],
+  "reason": "model_abstained",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "coal production United States 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p009-t1",
+      "page": 9,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02863
+     },
+     {
+      "rank": 2,
+      "id": "p013-t1",
+      "page": 13,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02789
+     },
+     {
+      "rank": 3,
+      "id": "p093-t2",
+      "page": 93,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02435
+     },
+     {
+      "rank": 4,
+      "id": "p087-t2",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 5,
+      "id": "p123-t1",
+      "page": 123,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 6,
+      "id": "p069-t3",
+      "page": 69,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p009-t1",
+     "p013-t1",
+     "p093-t2",
+     "p087-t2",
+     "p123-t1",
+     "p069-t3"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "coal production short tons 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p189-t1",
+      "page": 189,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03151
+     },
+     {
+      "rank": 2,
+      "id": "p087-t2",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 3,
+      "id": "p132-t4",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 4,
+      "id": "p177-t2",
+      "page": 177,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 5,
+      "id": "p189-t3",
+      "page": 189,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     },
+     {
+      "rank": 6,
+      "id": "p103-t7",
+      "page": 103,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p189-t1",
+     "p087-t2",
+     "p132-t4",
+     "p177-t2",
+     "p189-t3",
+     "p103-t7"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "coal production short tons United States 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p087-t2",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 2,
+      "id": "p132-t4",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01639
+     },
+     {
+      "rank": 3,
+      "id": "p177-t2",
+      "page": 177,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 4,
+      "id": "p123-t1",
+      "page": 123,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 5,
+      "id": "p189-t3",
+      "page": 189,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     },
+     {
+      "rank": 6,
+      "id": "p189-t1",
+      "page": 189,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p087-t2",
+     "p132-t4",
+     "p177-t2",
+     "p123-t1",
+     "p189-t3",
+     "p189-t1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 3,
+    "query": "coal production short tons United States 2023 table",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p168-v1",
+      "page": 168,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02905
+     },
+     {
+      "rank": 2,
+      "id": "p013-t1",
+      "page": 13,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02816
+     },
+     {
+      "rank": 3,
+      "id": "p087-t2",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 4,
+      "id": "p132-t4",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 5,
+      "id": "p072-v1",
+      "page": 72,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01587
+     },
+     {
+      "rank": 6,
+      "id": "p123-t1",
+      "page": 123,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p168-v1",
+     "p013-t1",
+     "p087-t2",
+     "p132-t4",
+     "p072-v1",
+     "p123-t1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 4,
+    "query": "coal production short tons United States 2023 table",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p168-v1",
+      "page": 168,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02905
+     },
+     {
+      "rank": 2,
+      "id": "p013-t1",
+      "page": 13,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02816
+     },
+     {
+      "rank": 3,
+      "id": "p087-t2",
+      "page": 87,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 4,
+      "id": "p132-t4",
+      "page": 132,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01613
+     },
+     {
+      "rank": 5,
+      "id": "p072-v1",
+      "page": 72,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.01587
+     },
+     {
+      "rank": 6,
+      "id": "p123-t1",
+      "page": 123,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.01587
+     }
+    ],
+    "returned_ids": [
+     "p168-v1",
+     "p013-t1",
+     "p087-t2",
+     "p132-t4",
+     "p072-v1",
+     "p123-t1"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 5,
+    "page": 13,
+    "ids": [
+     "p013-t1",
+     "p013-t2",
+     "p013-v1",
+     "p013-v2"
+    ]
+   },
+   {
+    "event": "search_limit"
+   },
+   {
+    "event": "search_limit"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 8,
+    "abstain": true,
+    "citations": [
+     "p013-t1"
+    ]
+   }
+  ],
+  "n_searches": 5,
+  "n_views": 1,
+  "context_ids": [
+   "p009-t1",
+   "p013-t1",
+   "p093-t2",
+   "p087-t2",
+   "p123-t1",
+   "p069-t3",
+   "p189-t1",
+   "p132-t4",
+   "p177-t2",
+   "p189-t3",
+   "p103-t7",
+   "p168-v1",
+   "p072-v1",
+   "p013-t2",
+   "p013-v1",
+   "p013-v2"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 61354,
+   "out": 362,
+   "llm_calls": 9
+  },
+  "cost_usd": 0.025121,
+  "seconds": 12.6
+ },
+ {
+  "query_id": "AT-U3",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What share of global cobalt mine production in 2023 came from seabed polymetallic nodules?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p067-t3",
+    "page": 67
+   },
+   {
+    "rank": 2,
+    "id": "p067-t1",
+    "page": 67
+   },
+   {
+    "rank": 3,
+    "id": "p066-t1",
+    "page": 66
+   },
+   {
+    "rank": 4,
+    "id": "p067-t5",
+    "page": 67
+   },
+   {
+    "rank": 5,
+    "id": "p067-v1",
+    "page": 67
+   },
+   {
+    "rank": 6,
+    "id": "p066-t3",
+    "page": 66
+   }
+  ],
+  "status": "answered",
+  "answer": "According to the USGS Mineral Commodity Summaries 2024, no share of global cobalt mine production in 2023 came from seabed polymetallic nodules. The report states that more than 120 million tons of cobalt resources have been identified in polymetallic nodules and crusts on the ocean floor, but it does not report any actual mine production from these seabed sources in 2023. Global cobalt mine production in 2023 was mainly from terrestrial sources, with Congo (Kinshasa) accounting for 74% and Indonesia 7% of world cobalt mine production, with no production from seabed polymetallic nodules reported [p066-t1][p067-t3][p067-t1][p067-v1].",
+  "citations": [
+   "p066-t1",
+   "p067-t3",
+   "p067-t1",
+   "p067-v1"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "cobalt mine production seabed polymetallic nodules 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p066-t1",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03202
+     },
+     {
+      "rank": 2,
+      "id": "p067-t3",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 3,
+      "id": "p067-t1",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 4,
+      "id": "p067-v1",
+      "page": 67,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.03021
+     },
+     {
+      "rank": 5,
+      "id": "p066-t3",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02986
+     },
+     {
+      "rank": 6,
+      "id": "p067-t5",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02985
+     }
+    ],
+    "returned_ids": [
+     "p066-t1",
+     "p067-t3",
+     "p067-t1",
+     "p067-v1",
+     "p066-t3",
+     "p067-t5"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "seabed polymetallic nodules cobalt production",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p067-t3",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03279
+     },
+     {
+      "rank": 2,
+      "id": "p066-t1",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 3,
+      "id": "p067-t5",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0308
+     },
+     {
+      "rank": 4,
+      "id": "p066-t3",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03078
+     },
+     {
+      "rank": 5,
+      "id": "p067-t1",
+      "page": 67,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03058
+     },
+     {
+      "rank": 6,
+      "id": "p066-t4",
+      "page": 66,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     }
+    ],
+    "returned_ids": [
+     "p067-t3",
+     "p066-t1",
+     "p067-t5",
+     "p066-t3",
+     "p067-t1",
+     "p066-t4"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 2,
+    "abstain": false,
+    "citations": [
+     "p066-t1",
+     "p067-t3",
+     "p067-t1",
+     "p067-v1"
+    ]
+   },
+   {
+    "event": "invalid_citations",
+    "bad": [],
+    "missing_inline": [
+     "p066-t1",
+     "p067-t3",
+     "p067-t1",
+     "p067-v1"
+    ]
+   },
+   {
+    "event": "guard_retry"
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p066-t1",
+     "p067-t3",
+     "p067-t1",
+     "p067-v1"
+    ]
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 0,
+  "context_ids": [
+   "p066-t1",
+   "p067-t3",
+   "p067-t1",
+   "p067-v1",
+   "p066-t3",
+   "p067-t5",
+   "p066-t4"
+  ],
+  "cited_pages": [
+   66,
+   67
+  ],
+  "usage": {
+   "in": 10615,
+   "out": 426,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.004928,
+  "seconds": 7.5
+ },
+ {
+  "query_id": "AT-U4",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "How many lithium-ion battery gigafactories were operating in the United States in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p088-t2",
+    "page": 88
+   },
+   {
+    "rank": 2,
+    "id": "p023-t4",
+    "page": 23
+   },
+   {
+    "rank": 3,
+    "id": "p114-t4",
+    "page": 114
+   },
+   {
+    "rank": 4,
+    "id": "p115-t1",
+    "page": 115
+   },
+   {
+    "rank": 5,
+    "id": "p114-t3",
+    "page": 114
+   },
+   {
+    "rank": 6,
+    "id": "p023-t5",
+    "page": 23
+   }
+  ],
+  "status": "answered",
+  "answer": "According to the USGS Mineral Commodity Summaries 2024 report, the number of lithium-ion battery manufacturing facilities in the United States increased to 10 in 2023 from 3 in operation during 2019. This indicates that there were 10 lithium-ion battery gigafactories operating in the United States in 2023. Additionally, 28 more facilities were under development at that time [p088-t2].",
+  "citations": [
+   "p088-t2"
+  ],
+  "reason": "submitted",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "lithium-ion battery gigafactories United States 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p023-t4",
+      "page": 23,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03227
+     },
+     {
+      "rank": 2,
+      "id": "p088-t2",
+      "page": 88,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 3,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0311
+     },
+     {
+      "rank": 4,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03055
+     },
+     {
+      "rank": 5,
+      "id": "p023-t5",
+      "page": 23,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03055
+     },
+     {
+      "rank": 6,
+      "id": "p114-t4",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03054
+     }
+    ],
+    "returned_ids": [
+     "p023-t4",
+     "p088-t2",
+     "p115-t1",
+     "p114-t3",
+     "p023-t5",
+     "p114-t4"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "lithium-ion battery gigafactories United States",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p088-t2",
+      "page": 88,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 2,
+      "id": "p023-t4",
+      "page": 23,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0311
+     },
+     {
+      "rank": 3,
+      "id": "p115-t1",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03089
+     },
+     {
+      "rank": 4,
+      "id": "p115-t2",
+      "page": 115,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0308
+     },
+     {
+      "rank": 5,
+      "id": "p114-t3",
+      "page": 114,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03009
+     },
+     {
+      "rank": 6,
+      "id": "p023-t5",
+      "page": 23,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02991
+     }
+    ],
+    "returned_ids": [
+     "p088-t2",
+     "p023-t4",
+     "p115-t1",
+     "p115-t2",
+     "p114-t3",
+     "p023-t5"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 2,
+    "page": 88,
+    "ids": [
+     "p088-t1",
+     "p088-t2",
+     "p088-t3",
+     "p088-t4",
+     "p088-t5",
+     "p088-t6",
+     "p088-v1",
+     "p088-v2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 3,
+    "abstain": false,
+    "citations": [
+     "p088-t2"
+    ]
+   }
+  ],
+  "n_searches": 2,
+  "n_views": 1,
+  "context_ids": [
+   "p023-t4",
+   "p088-t2",
+   "p115-t1",
+   "p114-t3",
+   "p023-t5",
+   "p114-t4",
+   "p115-t2",
+   "p088-t1",
+   "p088-t3",
+   "p088-t4",
+   "p088-t5",
+   "p088-t6",
+   "p088-v1",
+   "p088-v2"
+  ],
+  "cited_pages": [
+   88
+  ],
+  "usage": {
+   "in": 12745,
+   "out": 179,
+   "llm_calls": 4
+  },
+  "cost_usd": 0.005384,
+  "seconds": 6.8
+ },
+ {
+  "query_id": "AT-U5",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "What is the forecast U.S. copper consumption for 2026?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p068-t3",
+    "page": 68
+   },
+   {
+    "rank": 2,
+    "id": "p069-t2",
+    "page": 69
+   },
+   {
+    "rank": 3,
+    "id": "p068-v1",
+    "page": 68
+   },
+   {
+    "rank": 4,
+    "id": "p068-t1",
+    "page": 68
+   },
+   {
+    "rank": 5,
+    "id": "p069-t5",
+    "page": 69
+   },
+   {
+    "rank": 6,
+    "id": "p068-t4",
+    "page": 68
+   }
+  ],
+  "status": "abstain",
+  "answer": "The USGS Mineral Commodity Summaries 2024 report does not provide a forecast for U.S. copper consumption specifically for the year 2026. The latest available data and estimates are for 2023, with apparent consumption at about 1.8 million metric tons of copper. No explicit forecast for 2026 consumption is given in the report.",
+  "citations": [],
+  "reason": "model_abstained",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "U.S. copper consumption forecast 2026",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p068-t3",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 2,
+      "id": "p069-t2",
+      "page": 69,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02908
+     },
+     {
+      "rank": 3,
+      "id": "p068-v1",
+      "page": 68,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02903
+     },
+     {
+      "rank": 4,
+      "id": "p068-t1",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02874
+     },
+     {
+      "rank": 5,
+      "id": "p069-t5",
+      "page": 69,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0276
+     },
+     {
+      "rank": 6,
+      "id": "p068-t4",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02743
+     }
+    ],
+    "returned_ids": [
+     "p068-t3",
+     "p069-t2",
+     "p068-v1",
+     "p068-t1",
+     "p069-t5",
+     "p068-t4"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "U.S. copper consumption forecast 2026",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p068-t3",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0315
+     },
+     {
+      "rank": 2,
+      "id": "p069-t2",
+      "page": 69,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02908
+     },
+     {
+      "rank": 3,
+      "id": "p068-v1",
+      "page": 68,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02903
+     },
+     {
+      "rank": 4,
+      "id": "p068-t1",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02874
+     },
+     {
+      "rank": 5,
+      "id": "p069-t5",
+      "page": 69,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0276
+     },
+     {
+      "rank": 6,
+      "id": "p068-t4",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02743
+     }
+    ],
+    "returned_ids": [
+     "p068-t3",
+     "p069-t2",
+     "p068-v1",
+     "p068-t1",
+     "p069-t5",
+     "p068-t4"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "U.S. copper consumption forecast 2026 forecast",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p068-t3",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02951
+     },
+     {
+      "rank": 2,
+      "id": "p099-t2",
+      "page": 99,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02881
+     },
+     {
+      "rank": 3,
+      "id": "p068-v1",
+      "page": 68,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02822
+     },
+     {
+      "rank": 4,
+      "id": "p068-t1",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02816
+     },
+     {
+      "rank": 5,
+      "id": "p069-t2",
+      "page": 69,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02804
+     },
+     {
+      "rank": 6,
+      "id": "p068-t4",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02661
+     }
+    ],
+    "returned_ids": [
+     "p068-t3",
+     "p099-t2",
+     "p068-v1",
+     "p068-t1",
+     "p069-t2",
+     "p068-t4"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 3,
+    "query": "copper consumption forecast 2026",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p068-t2",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03041
+     },
+     {
+      "rank": 2,
+      "id": "p068-t3",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03009
+     },
+     {
+      "rank": 3,
+      "id": "p099-t2",
+      "page": 99,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0289
+     },
+     {
+      "rank": 4,
+      "id": "p068-v1",
+      "page": 68,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02861
+     },
+     {
+      "rank": 5,
+      "id": "p104-t4",
+      "page": 104,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0284
+     },
+     {
+      "rank": 6,
+      "id": "p068-t1",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02778
+     }
+    ],
+    "returned_ids": [
+     "p068-t2",
+     "p068-t3",
+     "p099-t2",
+     "p068-v1",
+     "p104-t4",
+     "p068-t1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 4,
+    "query": "copper consumption forecast 2026 forecast",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p068-t3",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02973
+     },
+     {
+      "rank": 2,
+      "id": "p068-t2",
+      "page": 68,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02964
+     },
+     {
+      "rank": 3,
+      "id": "p104-t4",
+      "page": 104,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02927
+     },
+     {
+      "rank": 4,
+      "id": "p099-t2",
+      "page": 99,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02914
+     },
+     {
+      "rank": 5,
+      "id": "p068-v1",
+      "page": 68,
+      "kind": "visual",
+      "etype": "table",
+      "score": 0.02845
+     },
+     {
+      "rank": 6,
+      "id": "p111-t2",
+      "page": 111,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02822
+     }
+    ],
+    "returned_ids": [
+     "p068-t3",
+     "p068-t2",
+     "p104-t4",
+     "p099-t2",
+     "p068-v1",
+     "p111-t2"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 5,
+    "abstain": true,
+    "citations": [
+     "p068-t3",
+     "p068-v1"
+    ]
+   }
+  ],
+  "n_searches": 5,
+  "n_views": 0,
+  "context_ids": [
+   "p068-t3",
+   "p069-t2",
+   "p068-v1",
+   "p068-t1",
+   "p069-t5",
+   "p068-t4",
+   "p099-t2",
+   "p068-t2",
+   "p104-t4",
+   "p111-t2"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 36181,
+   "out": 211,
+   "llm_calls": 6
+  },
+  "cost_usd": 0.01481,
+  "seconds": 8.6
+ },
+ {
+  "query_id": "AT-U6",
+  "group": "unanswerable",
+  "split": "test",
+  "config": "V6_mm_hybrid_title_view",
+  "model": "gpt-4.1-mini",
+  "question": "How many metric tons of rare earths did Vietnam export in 2023?",
+  "ranking_original_query": [
+   {
+    "rank": 1,
+    "id": "p148-t1",
+    "page": 148
+   },
+   {
+    "rank": 2,
+    "id": "p149-t1",
+    "page": 149
+   },
+   {
+    "rank": 3,
+    "id": "p203-t2",
+    "page": 203
+   },
+   {
+    "rank": 4,
+    "id": "p149-t2",
+    "page": 149
+   },
+   {
+    "rank": 5,
+    "id": "p149-t4",
+    "page": 149
+   },
+   {
+    "rank": 6,
+    "id": "p203-t3",
+    "page": 203
+   }
+  ],
+  "status": "abstain",
+  "answer": "The Mineral Commodity Summaries 2024 report does not provide specific data on the quantity of rare earths exported by Vietnam in 2023. It only provides Vietnam's mine production of 600 metric tons of rare-earth-oxide (REO) equivalent in 2023 and reserves of 22,000,000 metric tons, but export quantities are not reported. Therefore, the exact metric tons of rare earths exported by Vietnam in 2023 is not available in the report.",
+  "citations": [],
+  "reason": "model_abstained",
+  "events": [
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 0,
+    "query": "Vietnam rare earth exports 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p148-t1",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03175
+     },
+     {
+      "rank": 2,
+      "id": "p203-t2",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0311
+     },
+     {
+      "rank": 3,
+      "id": "p203-t3",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03062
+     },
+     {
+      "rank": 4,
+      "id": "p149-t1",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03028
+     },
+     {
+      "rank": 5,
+      "id": "p148-t2",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03008
+     },
+     {
+      "rank": 6,
+      "id": "p148-t4",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02988
+     }
+    ],
+    "returned_ids": [
+     "p148-t1",
+     "p203-t2",
+     "p203-t3",
+     "p149-t1",
+     "p148-t2",
+     "p148-t4"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 1,
+    "query": "Vietnam rare earth exports",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p148-t1",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.032
+     },
+     {
+      "rank": 2,
+      "id": "p148-t4",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03132
+     },
+     {
+      "rank": 3,
+      "id": "p203-t3",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03062
+     },
+     {
+      "rank": 4,
+      "id": "p203-t2",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03048
+     },
+     {
+      "rank": 5,
+      "id": "p148-t2",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02971
+     },
+     {
+      "rank": 6,
+      "id": "p023-t6",
+      "page": 23,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02904
+     }
+    ],
+    "returned_ids": [
+     "p148-t1",
+     "p148-t4",
+     "p203-t3",
+     "p203-t2",
+     "p148-t2",
+     "p023-t6"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 2,
+    "query": "Vietnam rare earth exports metric tons 2023",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p148-t1",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 2,
+      "id": "p149-t1",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 3,
+      "id": "p149-t2",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03102
+     },
+     {
+      "rank": 4,
+      "id": "p203-t2",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03089
+     },
+     {
+      "rank": 5,
+      "id": "p203-t3",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02951
+     },
+     {
+      "rank": 6,
+      "id": "p149-t3",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02899
+     }
+    ],
+    "returned_ids": [
+     "p148-t1",
+     "p149-t1",
+     "p149-t2",
+     "p203-t2",
+     "p203-t3",
+     "p149-t3"
+    ]
+   },
+   {
+    "event": "view_page",
+    "turn": 3,
+    "page": 149,
+    "ids": [
+     "p149-t1",
+     "p149-t2",
+     "p149-t3",
+     "p149-t4",
+     "p149-t5",
+     "p149-v1"
+    ]
+   },
+   {
+    "event": "search",
+    "tool": "search_report",
+    "turn": 4,
+    "query": "Vietnam rare earth exports 2023 metric tons",
+    "results": [
+     {
+      "rank": 1,
+      "id": "p148-t1",
+      "page": 148,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03226
+     },
+     {
+      "rank": 2,
+      "id": "p149-t1",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03178
+     },
+     {
+      "rank": 3,
+      "id": "p203-t2",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.0311
+     },
+     {
+      "rank": 4,
+      "id": "p149-t2",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.03102
+     },
+     {
+      "rank": 5,
+      "id": "p203-t3",
+      "page": 203,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02951
+     },
+     {
+      "rank": 6,
+      "id": "p149-t3",
+      "page": 149,
+      "kind": "text",
+      "etype": "text",
+      "score": 0.02899
+     }
+    ],
+    "returned_ids": [
+     "p148-t1",
+     "p149-t1",
+     "p203-t2",
+     "p149-t2",
+     "p203-t3",
+     "p149-t3"
+    ]
+   },
+   {
+    "event": "submit_answer",
+    "turn": 5,
+    "abstain": true,
+    "citations": [
+     "p149-t3",
+     "p148-t1",
+     "p148-t4"
+    ]
+   }
+  ],
+  "n_searches": 4,
+  "n_views": 1,
+  "context_ids": [
+   "p148-t1",
+   "p203-t2",
+   "p203-t3",
+   "p149-t1",
+   "p148-t2",
+   "p148-t4",
+   "p023-t6",
+   "p149-t2",
+   "p149-t3",
+   "p149-t4",
+   "p149-t5",
+   "p149-v1"
+  ],
+  "cited_pages": [],
+  "usage": {
+   "in": 28165,
+   "out": 358,
+   "llm_calls": 6
+  },
+  "cost_usd": 0.011839,
+  "seconds": 10.0
+ }
+]

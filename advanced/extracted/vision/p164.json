@@ -1,0 +1,20 @@
+{
+ "page": 164,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                                      | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-----------------------------------------------|-------|-------|-------|-------|-------|\n| Production, ferrosilicon1 and silicon metal2  | 310   | W     | W     | 265   | W     |\n| Imports for consumption:                       |       |       |       |       |       |\n|  Ferrosilicon, all grades                      | 127   | 140   | 125   | 175   | 160   |\n|  Silicon metal                                 | 124   | 97    | 96    | 117   | 80    |\n| Exports:                                       |       |       |       |       |       |\n|  Ferrosilicon, all grades                      | 8     | 4     | 7     | 9     | 6     |\n|  Silicon metal                                 | 40    | 32    | 53    | 47    | 40    |\n| Consumption, apparent,3 ferrosilicon1 and silicon metal2 | 517   | W     | W     | 495   | W     |\n| Price, average, cents per pound of silicon:   |       |       |       |       |       |\n|  Ferrosilicon, 50% silicon4                    | 102.35| 103.38| 137.94| NA    | NA    |\n|  Ferrosilicon, 75% silicon5                    | 89.15 | 87.40 | 192.28| 312.10| 150   |\n|  Silicon metal2, 5                             | 105.70| 96.84 | 220.31| 361.86| 190   |\n| Stocks, producer, ferrosilicon1 and silicon metal,2 yearend | 15    | W     | 11    | 17    | 19    |\n| Net import reliance6 as a percentage of apparent consumption: |       |       |       |       |       |\n|  Ferrosilicon, all grades                      | <50   | >50   | <50   | >50   | >50   |\n|  Silicon metal2                                | <50   | <50   | <25   | <50   | <50   |\n|  Total                                         | 40    | <50   | <50   | 46    | <50   |",
+   "notes": "Footnotes: 1 Ferrosilicon data; 2 Silicon metal data; 3 Apparent consumption; 4 Price for 50% silicon; 5 Price for 75% silicon and silicon metal; 6 Net import reliance."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 620
+ },
+ "seconds": 7.7
+}

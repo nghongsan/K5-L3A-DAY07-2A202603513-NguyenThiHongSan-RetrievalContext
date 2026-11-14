@@ -1,0 +1,27 @@
+{
+ "page": 46,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "|                         | 2019 | 2020 | 2021 | 2022 | 2023e |\n|-------------------------|-------|-------|-------|-------|-------|\n| Bauxite:                |       |       |       |       |       |\n| Production, mine        | W     | W     | W     | W     | W     |\n| Imports for consumption2| 4,620 | 3,760 | 3,880 | 3,630 | 3,100 |\n| Exports2                | 16    | 16    | 13    | 10    | 12    |\n| Stocks, industry, yearend e, 2 | 300   | 250   | 200   | 200   | 240   |\n| Consumption:            |       |       |       |       |       |\n| Apparent3               | W     | W     | W     | W     | W     |\n| Reported                | 3,680 | 3,330 | 2,790 | 2,170 | 1,800 |\n| Price, average unit value of imports, free alongside ship (f.a.s.), dollars per metric ton | 32    | 30    | 31    | 32    | 30    |\n| Net import reliance4 as a percentage of apparent consumption | >75   | >75   | >75   | >75   | >75   |\n| Alumina:                |       |       |       |       |       |\n| Production, refinery e, 5 | 1,400 | 1,300 | 1,000 | 920   | 780   |\n| Imports for consumption5 | 1,930 | 1,340 | 1,550 | 1,880 | 1,300 |\n| Exports5                | 200   | 153   | 180   | 174   | 140   |\n| Stocks, industry, yearend5 | 275   | 234   | 202   | 213   | 230   |\n| Consumption, apparent3  | 3,130 | 2,530 | 2,410 | 2,620 | 1,900 |\n| Price, average unit value of imports, f.a.s., dollars per metric ton | 472   | 394   | 462   | 518   | 500   |\n| Net import reliance4 as a percentage of apparent consumption | 55    | 49    | 58    | 65    | 59    |",
+   "notes": "Footnotes: 1, 2, 3, 4, 5 as printed in the original table."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower half",
+   "content": "| Item                              | Number       | Normal Trade Relations 12-31-23 |\n|-----------------------------------|--------------|--------------------------------|\n| Bauxite, calcined (refractory grade) | 2606.00.0030 | Free.                          |\n| Bauxite, calcined (other)          | 2606.00.0060 | Free.                          |\n| Bauxite, crude dry (metallurgical grade) | 2606.00.0090 | Free.                          |\n| Aluminum oxide (alumina)           | 2818.20.0000 | Free.                          |\n| Aluminum hydroxide                 | 2818.30.0000 | Free.                          |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 782
+ },
+ "seconds": 6.8
+}

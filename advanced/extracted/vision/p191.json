@@ -1,0 +1,27 @@
+{
+ "page": 191,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Government Stockpile",
+   "location": "top half",
+   "content": "| Material | Potential acquisitions | Potential disposals | Potential acquisitions | Potential disposals |\n|----------|-----------------------|---------------------|-----------------------|---------------------|\n|          | FY 2023               |                     | FY 2024               |                     |\n| Titanium | 15,000                | —                | 15,000                | —                |",
+   "notes": "Footnote 6: See Appendix B for definitions."
+  },
+  {
+   "type": "table",
+   "title": "World Sponge Metal Production and Sponge and Pigment Capacity",
+   "location": "lower half",
+   "content": "| Country         | Sponge productione 2022 | Sponge productione 2023 | Capacity, 20237 Sponge | Capacity, 20237 Pigment |\n|-----------------|-------------------------|-------------------------|-----------------------|-------------------------|\n| United States   | W                       | W                       | 500                   | 1,360,000               |\n| Australia      | —                    | —                    | —                  | 260,000                 |\n| Canada         | —                    | —                    | —                  | 108,000                 |\n| China          | 180,000                 | 220,000                 | 260,000               | 5,500,000               |\n| Germany        | —                    | —                    | —                  | 339,000                 |\n| India          | 300                     | 300                     | 500                   | 91,000                  |\n| Japan          | 47,000                  | 60,000                  | 65,200                | 322,000                 |\n| Kazakhstan     | 15,000                  | 14,000                  | 26,000                | —                    |\n| Mexico         | —                    | —                    | —                  | 350,000                 |\n| Russia         | 20,000                  | 20,000                  | 46,500                | 55,000                  |\n| Saudi Arabia   | 9,700                   | 12,000                  | 15,600                | 200,000                 |\n| Ukraine        | 1,000                   | —                    | —                  | 122,000                 |\n| United Kingdom | —                    | —                    | —                  | 315,000                 |\n| Other countries| —                    | —                    | —                  | 820,000                 |\n| World total (rounded) | 8270,000             | 8330,000                 | 410,000               | 9,800,000               |",
+   "notes": "e Estimated. W Withheld to avoid disclosing company proprietary data. — Zero.\n7 Yearend operating capacity.\n8 Excludes U.S. production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 665
+ },
+ "seconds": 5.3
+}

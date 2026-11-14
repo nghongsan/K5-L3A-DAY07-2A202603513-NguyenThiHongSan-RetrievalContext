@@ -1,0 +1,20 @@
+{
+ "page": 143,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "lower half",
+   "content": "| Country         | Mine production 2022 | Mine production 2023e | Recoverable ore | K2O equivalent |\n|-----------------|----------------------|-----------------------|-----------------|---------------|\n| United States¹  | 430                  | 400                   | 970,000         | 220,000       |\n| Belarus         | e4,000               | 3,800                 | 3,300,000       | 750,000       |\n| Brazil          | e200                 | 200                   | 10,000          | 2,300         |\n| Canada          | 14,600               | 13,000                | 4,500,000       | 1,100,000     |\n| Chile           | e600                 | 600                   | NA              | 100,000       |\n| China           | e6,000               | 6,000                 | NA              | 180,000       |\n| Germany         | e2,700               | 2,600                 | NA              | 150,000       |\n| Israel          | 2,450                | 2,400                 | NA              | 6Large        |\n| Jordan          | 1,640                | 1,800                 | NA              | 6Large        |\n| Laos            | e700                 | 1,400                 | 1,000,000       | 75,000        |\n| Russia          | e6,800               | 6,500                 | NA              | 650,000       |\n| Spain           | e420                 | 250                   | NA              | 68,000        |\n| Other countries | 400                  | 400                   | 1,500,000       | 300,000       |\n| World total (rounded) | 40,900          | 39,000                | >11,000,000     | >3,600,000    |",
+   "notes": "¹Data are rounded to no more than two significant digits to avoid disclosing company proprietary data.\neEstimated. NA Not available.\n⁵See Appendix C for resource and reserve definitions and information concerning data sources.\n⁶Israel and Jordan recover potash from the Dead Sea, which contains nearly 2 billion tons of potassium chloride."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 517
+ },
+ "seconds": 5.1
+}

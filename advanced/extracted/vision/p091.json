@@ -1,0 +1,20 @@
+{
+ "page": 91,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "top half",
+   "content": "| Country       | Mine productione 2022 | Mine productione 2023 | Reserves6  |\n|---------------|-----------------------|-----------------------|------------|\n| United States | 22,300                | 22,000                | 700,000    |\n| Algeria       | 2,500                 | 2,500                 | NA         |\n| Brazil        | 2,900                 | 2,900                 | 450,000    |\n| Canada        | 2,400                 | 2,400                 | 450,000    |\n| China         | 12,000                | 12,000                | 2,100,000  |\n| France        | 2,000                 | 2,400                 | 350,000    |\n| Germany       | 5,200                 | 5,200                 | NA         |\n| India         | 4,300                 | 4,300                 | 37,000     |\n| Iran          | 16,000                | 16,000                | 900,000    |\n| Japan         | 4,300                 | 4,300                 | NA         |\n| Mexico        | 5,400                 | 5,400                 | NA         |\n| Oman          | 12,000                | 12,000                | NA         |\n| Pakistan      | 1,800                 | 1,800                 | 760,000    |\n| Russia        | 4,100                 | 4,100                 | NA         |\n| Saudi Arabia  | 4,000                 | 4,000                 | NA         |\n| Spain         | 11,000                | 11,000                | NA         |\n| Thailand      | 10,400                | 10,000                | 910,000    |\n| Turkey        | 9,300                 | 10,000                | 200,000    |\n| Ukraine       | 1,800                 | 1,500                 | NA         |\n| Uzbekistan    | 2,000                 | 2,000                 | NA         |\n| Other countries| 19,000                | 19,000                | NA         |\n| World total (rounded) | 155,000         | 160,000               | Large      |",
+   "notes": "e Estimated. NA Not available.\n6 See Appendix C for resource and reserve definitions and information concerning data sources.\n7 Reported."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 568
+ },
+ "seconds": 6.1
+}

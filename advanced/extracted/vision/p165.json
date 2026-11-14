@@ -1,0 +1,20 @@
+{
+ "page": 165,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Production of Ferrosilicon and Silicon Metal",
+   "location": "lower half",
+   "content": "| Country        | Ferrosilicone 2022 | Ferrosilicone 2023 | Silicon metale 2022 | Silicon metale 2023 |\n|----------------|--------------------|--------------------|---------------------|---------------------|\n| United States7 | W                  | W                  | W                   | W                   |\n| Australia      | —                  | —                  | 48                  | 50                  |\n| Bhutan         | 75                 | 80                 | —                   | —                   |\n| Brazil         | 189                | 190                | 202                 | 200                 |\n| Canada         | 20                 | 20                 | 29                  | 30                  |\n| China          | 3,770              | 3,600              | 2,900               | 3,000               |\n| France         | 25                 | 20                 | 96                  | 90                  |\n| Germany        | —                  | —                  | 62                  | 60                  |\n| Iceland        | 79                 | 80                 | 49                  | 50                  |\n| India          | 59                 | 60                 | —                   | —                   |\n| Kazakhstan     | 96                 | 120                | 5                   | 5                   |\n| Malaysia       | 91                 | 80                 | —                   | —                   |\n| Norway         | 195                | 200                | 144                 | 140                 |\n| Poland         | 47                 | 50                 | —                   | —                   |\n| Russia         | 572                | 570                | 54                  | 50                  |\n| Spain          | 46                 | 50                 | 6                   | 6                   |\n| Ukraine        | 28                 | 2                  | —                   | —                   |\n| Other countries| 144                | 100                | 79                  | 80                  |\n| World total (rounded)8 | 5,440        | 5,200              | 3,670               | 3,800               |",
+   "notes": "e Estimated. NA Not available. W Withheld to avoid disclosing company proprietary data. — Zero.\n7 To avoid disclosing proprietary data, U.S. ferrosilicon and silicon production are not reported separately.\n8 Excludes U.S. production."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 541
+ },
+ "seconds": 4.3
+}

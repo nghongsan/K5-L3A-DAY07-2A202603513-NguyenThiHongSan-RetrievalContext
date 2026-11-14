@@ -1,0 +1,27 @@
+{
+ "page": 112,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "|                         | 2019  | 2020  | 2021  | 2022  | 2023e |\n|-------------------------|-------|-------|-------|-------|-------|\n| Production2, 3          | 16,900| 15,800| 16,800| 17,000| 17,000|\n| Imports for consumption  | 342   | 308   | 323   | 354   | 340   |\n| Exports                 | 347   | 266   | 335   | 303   | 350   |\n| Consumption, apparent4  | 16,900| 15,900| 16,800| 17,000| 17,000|\n| Price, average value, dollars per metric ton at plant: |       |       |       |       |       |\n| Quicklime               | 128.3 | 131.4 | 133.4 | 151.3 | 155   |\n| Hydrated                | 154.6 | 156.0 | 159.6 | 183.1 | 185   |\n| Net import reliance5 as a percentage of apparent consumption | E     | <1    | E     | <1    | E     |",
+   "notes": "Footnotes: 1,2,3,4,5 as printed in the original table."
+  },
+  {
+   "type": "table",
+   "title": "Tariff",
+   "location": "lower right",
+   "content": "| Item           | Number       | Normal Trade Relations 12-31-23 |\n|----------------|--------------|---------------------------------|\n| Calcined dolomite | 2518.20.0000 | 3% ad valorem.                  |\n| Quicklime      | 2522.10.0000 | Free.                           |\n| Slaked lime    | 2522.20.0000 | Free.                           |\n| Hydraulic lime | 2522.30.0000 | Free.                           |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 456
+ },
+ "seconds": 3.8
+}

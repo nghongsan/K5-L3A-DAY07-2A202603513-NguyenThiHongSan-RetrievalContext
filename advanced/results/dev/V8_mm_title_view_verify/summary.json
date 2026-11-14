@@ -1,0 +1,42 @@
+{
+ "config": "V8_mm_title_view_verify",
+ "split": "dev",
+ "model": "gpt-4.1-mini",
+ "settings": {
+  "name": "V8_mm_title_view_verify",
+  "method": "hybrid",
+  "kinds": [
+   "text",
+   "visual"
+  ],
+  "top_k": 6,
+  "call_budget": 9000,
+  "view_page": true,
+  "max_searches": 5,
+  "max_views": 3,
+  "max_turns": 14,
+  "model": "gpt-4.1-mini",
+  "title_lookup": true,
+  "prompt_v2": true,
+  "verify": true
+ },
+ "n": 22,
+ "errors": 0,
+ "page_hit1": "14/15",
+ "page_hit3": "15/15",
+ "all_gold_pages_top6": "14/15",
+ "context_all_gold_pages": "14/15",
+ "cited_all_gold_pages": "13/15",
+ "answered": 16,
+ "abstained": 6,
+ "abstain_on_unanswerable": "5/7",
+ "abstain_on_answerable": "1/15",
+ "searches_mean": 1.95,
+ "views_mean": 0.82,
+ "tokens_in": 411120,
+ "tokens_out": 6206,
+ "cost_usd_llm": 0.1744,
+ "embedding_query_tokens": 921,
+ "median_seconds": 6.800000000000001,
+ "wall_seconds": 48.4
+}

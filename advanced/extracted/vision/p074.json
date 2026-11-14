@@ -1,0 +1,20 @@
+{
+ "page": 74,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "middle right",
+   "content": "| Category                                   | 2019  | 2020 | 2021  | 2022  | 2023e |\n|--------------------------------------------|-------|------|-------|-------|-------|\n| Production, feldspar, marketable¹           | e450  | 420  | e380  | e540  | 590   |\n| Imports for consumption:                     |       |      |       |       |       |\n|  Feldspar                                   | 64    | 43   | 169   | 276   | 85    |\n|  Nepheline syenite                          | 508   | 503  | 529   | 484   | 380   |\n| Exports, feldspar                           | 4     | 3    | 4     | 3     | 6     |\n| Consumption, apparent:¹, ²                   |       |      |       |       |       |\n|  Feldspar only                              | e510  | 460  | e550  | e810  | 670   |\n|  Feldspar and nepheline syenite            | 1,000 | 960  | 1,100 | 1,300 | 1,200 |\n| Price, average unit value, dollars per metric ton: |       |      |       |       |       |\n|  Feldspar only, marketable productione     | 107   | 108  | 110   | 104   | 102   |\n|  Nepheline syenite, imports                | 156   | 163  | 164   | 183   | 200   |\n| Employment, mine, preparation plant, and office, numbere | 240   | 240  | 220   | 220   | 240   |\n| Net import reliance³ as a percentage of apparent consumption: |       |      |       |       |       |\n|  Feldspar                                   | 12    | 9    | 30    | 34    | 12    |\n|  Nepheline syenite                          | >95   | >95  | >95   | >95   | >95   |",
+   "notes": "¹, ², ³ Footnotes referenced but not fully transcribed here."
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 521
+ },
+ "seconds": 4.6
+}

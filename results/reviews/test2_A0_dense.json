@@ -1,0 +1,62 @@
+[
+ {
+  "query_id": "m01",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m02",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m03",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "Correct; p0165:c00 ('finishes the function execution and can specify a value to return to the function's caller') is valid alternative evidence to the p.164 gold; auto Context Evidence counts a miss.",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m04",
+  "citation_support": [],
+  "note": "False abstention: model-chosen filter chapter=5 + short queries 'for loop range'/'while loop' never retrieved p.131 (Example 5.2).",
+  "answer_grade": 0
+ },
+ {
+  "query_id": "m05",
+  "citation_support": [
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "m06",
+  "citation_support": [
+   true,
+   true
+  ],
+  "note": "",
+  "answer_grade": 2
+ },
+ {
+  "query_id": "v01",
+  "citation_support": [],
+  "note": "",
+  "abstention_correct": true
+ },
+ {
+  "query_id": "v02",
+  "citation_support": [],
+  "note": "",
+  "abstention_correct": true
+ }
+]

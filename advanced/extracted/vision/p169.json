@@ -1,0 +1,20 @@
+{
+ "page": 169,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "World Mine Production and Reserves",
+   "location": "top half",
+   "content": "| Natural:         | Mine production 2022 | Mine production 2023e | Reserves5, 6   |\n|------------------|----------------------|-----------------------|----------------|\n| United States    | 11,300               | 11,000                | 723,000,000    |\n| Botswana        | 285                  | 270                   | 16,000         |\n| Ethiopia        | e18                  | 20                    | 400,000        |\n| Kenya           | e280                 | 280                   | 7,000          |\n| Turkey          | e11,500              | 11,000                | 840,000        |\n| Other countries8| NA                   | NA                    | 280,000        |\n| World total, natural | 23,400            | 23,000                | 25,000,000     |\n| World total, synthetic | 42,100           | 42,000                | XX             |\n| World total, natural and synthetic | 65,500 | 65,000               | XX             |",
+   "notes": "e Estimated. E Net exporter. NA Not available. XX Not applicable.\n5 The reported quantities are sodium carbonate only. About 1.8 tons of trona yield 1 ton of sodium carbonate.\n6 See Appendix C for resource and reserve definitions and information concerning data sources.\n8 China is estimated to produce natural trona but because the majority of soda ash production is synthetic, China’s production is included in “World total, synthetic.”"
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 355
+ },
+ "seconds": 3.6
+}

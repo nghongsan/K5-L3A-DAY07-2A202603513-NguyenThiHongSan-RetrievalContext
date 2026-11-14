@@ -1,0 +1,27 @@
+{
+ "page": 104,
+ "model": "gpt-4.1-mini",
+ "elements": [
+  {
+   "type": "table",
+   "title": "Salient Statistics—United States",
+   "location": "top half",
+   "content": "| Category                                   | 2019   | 2020   | 2021   | 2022   | 2023e  |\n|--------------------------------------------|--------|--------|--------|--------|--------|\n| Production:                                |        |        |        |        |        |\n| Iron ore                                   | 46,900 | 38,100 | 47,500 | 39,000 | 44,000 |\n| Iron metallics                             | 3,660  | 3,500  | 5,010  | 5,240  | 5,300  |\n| Shipments                                  | 47,000 | 38,000 | 43,400 | 39,000 | 45,000 |\n| Imports for consumption                    | 3,980  | 3,240  | 3,750  | 3,040  | 3,500  |\n| Exports                                    | 11,400 | 10,400 | 14,400 | 11,400 | 11,000 |\n| Consumption:                               |        |        |        |        |        |\n| Reported                                   | 34,800 | NA     | NA     | NA     | NA     |\n| Apparent2                                  | 39,100 | 31,100 | 37,000 | 30,600 | 36,000 |\n| Price, average unit value reported by mines, dollars per metric ton | 92.94  | 91.27  | 141.78 | 156.42 | 170    |\n| Stocks, mine, dock, and consuming plant, yearend | 3,470  | 3,290  | 3,170  | 3,190  | 3,500  |\n| Employment, mine, concentrating and pelletizing plant, number | 4,960  | 4,300  | 4,980  | 4,790  | 4,900  |\n| Net import reliance3 as a percentage of apparent consumption | E      | E      | E      | E      | E      |",
+   "notes": "e = estimated, NA = not available, E = net import reliance estimate\nFootnotes:\n2 Apparent consumption = production + imports - exports\n3 Net import reliance = imports - exports as a percentage of apparent consumption."
+  },
+  {
+   "type": "table",
+   "title": "Tariff: Iron ores and concentrates",
+   "location": "lower half",
+   "content": "| Item               | Number       | Normal Trade Relations 12-31-23 |\n|--------------------|--------------|---------------------------------|\n| Concentrates        | 2601.11.0030 | Free.                           |\n| Coarse ores        | 2601.11.0060 | Free.                           |\n| Other ores          | 2601.11.0090 | Free.                           |\n| Pellets            | 2601.12.0030 | Free.                           |\n| Briquettes         | 2601.12.0060 | Free.                           |\n| Sinter             | 2601.12.0090 | Free.                           |\n| Roasted iron pyrites| 2601.20.0000 | Free.                           |",
+   "notes": ""
+  }
+ ],
+ "parse_ok": true,
+ "error": null,
+ "usage": {
+  "in": 3726,
+  "out": 722
+ },
+ "seconds": 6.2
+}
